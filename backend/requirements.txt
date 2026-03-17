@@ -1,0 +1,14 @@
+# Chemlens backend (pip requirements)
+# Note: RDKit is typically installed via conda in the 'chemlens' env.
+fastapi>=0.110
+uvicorn[standard]
+websockets>=10.4
+python-multipart>=0.0.9
+requests>=2.31
+pydantic>=2.0
+python-dotenv>=1.0
+Pillow>=10.0
+pytesseract>=0.3.10
+# Optional (heavy): PaddleOCR
+# paddleocr
+pymupdf>=1.23.0  # PDF text extraction (PyMuPDF)

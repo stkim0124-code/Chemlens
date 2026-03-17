@@ -1,0 +1,13 @@
+Chemlens checked patch (frontend+backend)
+
+What was fixed:
+- Backend: DOCS_DB_PATH default typo fixed (labint_docs.db)
+- Backend: thumbnails filename compatibility (doc_{id}.png and doc{id}_p0.png)
+- Backend: /api/health enhanced (counts + docs paths + OCR availability)
+- Backend: app package init added (__init__.py) for stable imports
+- Frontend: tabs implemented (Ingest/DB/Docs) so placeholder text removed
+- Frontend: uses /api/ocr/info, /api/docs*, /cards endpoints and shows results.
+
+Notes:
+- node_modules intentionally excluded.
+- If you already have data (labint.db, data/labint_docs.db, data/thumbs, data/pdfs), keep them.

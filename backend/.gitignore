@@ -1,0 +1,17 @@
+# secrets
+.env
+
+# python
+__pycache__/
+*.pyc
+
+# local DB and generated data (keep local, don't commit)
+app/data/
+*.db
+*.db-shm
+*.db-wal
+*.bak_*
+
+# reports
+sync_report.csv
+pdfs_inventory.csv

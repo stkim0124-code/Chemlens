@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ketcher Iframe Redirect</title>
+  </head>
+  <body>
+    <noscript>
+      <p>
+        JavaScript is required. Open
+        <a href="/ketcher/index.html">/ketcher/index.html</a>.
+      </p>
+    </noscript>
+    <script>
+      // Backward-compatible entrypoint.
+      // The real standalone lives in /public/ketcher/index.html (Dependency Cut seal).
+      window.location.replace("/ketcher/index.html");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Ketcher is a web-based chemical structure editor"/><link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/><link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png"/><link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png"/><link rel="manifest" href="./manifest.json"/><title>Ketcher v3.7.0</title><script defer="defer" src="./static/js/main.8617f334.js"></script><link href="./static/css/main.748bd42d.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div>
+<!-- CHEMLENS Route1 Guard: hide reaction UI affordances (best-effort) -->
+<style>
+  /* Ketcher 3.x: best-effort selectors across builds/locales */
+  [data-testid*="reaction"],
+  [data-testid*="arrow"],
+  [aria-label*="Reaction"],
+  [title*="Reaction"],
+  [aria-label*="reaction"],
+  [title*="reaction"] { display:none !important; }
+</style>
+
+<!-- CHEMLENS_KETCHER_BRIDGE v4 (single-listener / no getMolfile / no readiness probe spam) -->
+<script>
+(() => {
+  const ORIGIN = window.location.origin;
+  const READY_TYPE = "KETCHER_READY";
+  const ERROR_TYPE = "KETCHER_ERROR";
+  const DATA_TYPE  = "KETCHER_DATA";
+
+  if (window.__CHEMLENS_BRIDGE_INSTALLED__) return;
+  window.__CHEMLENS_BRIDGE_INSTALLED__ = true;
+
+  let isReady = false;
+  let isBusy = false;
+  let lastReadySentAt = 0;
+
+  function post(msg) {
+    try { window.parent && window.parent.postMessage(msg, ORIGIN); } catch (_) {}
+  }
+
+  function sendReady(force) {
+    const now = Date.now();
+    if (!force && now - lastReadySentAt < 100) return;
+    lastReadySentAt = now;
+    post({ type: READY_TYPE });
+  }
+
+  function sendError(message, requestId) {
+    post({ type: ERROR_TYPE, requestId, payload: String(message || "UNKNOWN_ERROR") });
+  }
+
+  async function waitForKetcher(maxMs) {
+    const start = Date.now();
+    while (Date.now() - start < maxMs) {
+      const k = window.ketcher;
+      if (k && typeof k.getSmiles === "function") return k;
+      await new Promise(r => setTimeout(r, 100));
+    }
+    return null;
+  }
+
+  async function handleCommand(data) {
+    const { type, requestId, payload } = data || {};
+
+    if (type === "PING") {
+      if (isReady && window.ketcher) sendReady(false);
+      return;
+    }
+
+    const k = window.ketcher;
+    if (!isReady || !k) {
+      sendError("KETCHER_NOT_READY", requestId);
+      return;
+    }
+
+    if (isBusy) {
+      sendError("KETCHER_BUSY", requestId);
+      return;
+    }
+
+    isBusy = true;
+    try {
+      if (type === "SET_MOLECULE") {
+        if (payload && payload.smiles && typeof k.setMolecule === "function") {
+          await k.setMolecule(payload.smiles);
+          return;
+        }
+        throw new Error("SET_MOLECULE payload missing smiles");
+      }
+
+      if (type === "GET_SMILES") {
+        const smiles = typeof k.getSmiles === "function" ? await k.getSmiles() : "";
+        post({ type: DATA_TYPE, requestId, payload: { smiles: smiles || "", mol: "" } });
+        return;
+      }
+
+      if (type === "GET_MOLECULE") {
+        const smiles = typeof k.getSmiles === "function" ? await k.getSmiles() : "";
+        post({ type: DATA_TYPE, requestId, payload: { smiles: smiles || "", mol: "" } });
+        return;
+      }
+
+      if (type === "GET_MOLFILE") {
+        sendError("GET_MOLFILE_DISABLED_IN_ROUTE1", requestId);
+        return;
+      }
+
+      sendError("UNKNOWN_COMMAND: " + type, requestId);
+    } catch (err) {
+      sendError((err && err.message) ? err.message : err, requestId);
+    } finally {
+      isBusy = false;
+    }
+  }
+
+  window.addEventListener("message", (e) => {
+    if (e.origin !== ORIGIN) return;
+    if (!e.data || typeof e.data !== "object") return;
+    handleCommand(e.data);
+  }, { passive: true });
+
+  waitForKetcher(20000).then((k) => {
+    if (!k) {
+      sendError("INIT_TIMEOUT");
+      return;
+    }
+    isReady = true;
+    sendReady(true);
+  });
+})();
+</script>
+
+</body></html>
