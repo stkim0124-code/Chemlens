@@ -1,6 +1,6 @@
 import React, { Suspense, useMemo, useState } from "react";
 import KetcherEditor from "./components/KetcherEditor.tsx";
-const API_BASE = (import.meta.env.VITE_API_BASE || "").trim();
+const API_BASE = import.meta.env.VITE_API_BASE || "";
 
 /** Error Boundary */
 class ErrorBoundary extends React.Component {
@@ -180,28 +180,39 @@ export default function App() {
       return;
     }
     try {
-      const raw = await ketcherApi.getSmiles();
-      const smi = String(raw || "").trim();
-      if (!smi) {
-        setStatus("Ketcher에서 유효한 구조를 읽지 못했습니다. 분자 1개를 다시 그려주세요.");
+      // 1) Always try Reaction-SMILES first (safe way to detect reaction arrows / multi-CTAB).
+      //    If the build doesn't support it, it will fall back internally.
+      const rxnOrSmiles = await ketcherApi.getSmiles(true);
+
+      // 2) Smart fallback: if reaction SMILES detected (A.B>>C), search by Product (C)
+      if (typeof rxnOrSmiles === "string" && rxnOrSmiles.includes(">>")) {
+        const product = String(rxnOrSmiles.split(">>")[1] || "").trim();
+        if (!product) {
+          setStatus("반응식(>>)이 감지되었지만 생성물(Product)이 비어있습니다. 화살표 오른쪽에 생성물을 넣어주세요.");
+          return;
+        }
+        setSmilesText(product);
+        setMolfile("");
+        setStatus("💡 반응식이 감지되어 생성물(Product) 기준으로 구조 검색을 수행합니다.");
+        await searchSimilar({ kind: "smiles", value: product });
         return;
       }
 
-      let finalSmiles = smi;
-      if (smi.includes(">>")) {
-        finalSmiles = String(smi.split(">>")[1] || "").trim();
-        if (!finalSmiles) {
-          setStatus("반응식이 감지되었지만 생성물(Product)이 비어 있습니다. 화살표 오른쪽에 생성물을 넣어주세요.");
-          return;
+      // 3) Normal single-molecule flow: try molfile export. If it fails, fall back to SMILES.
+      const s = rxnOrSmiles || (await ketcherApi.getSmiles(false));
+      let m = "";
+      try {
+        m = await ketcherApi.getMolfile();
+      } catch (err) {
+        const msg = String(err || "");
+        if (msg.toLowerCase().includes("reaction") && msg.toLowerCase().includes("arrow")) {
+          setStatus("⚠️ Route1(단일 분자 검색)에서는 반응 화살표가 포함된 스케치를 MOL로 저장할 수 없습니다. 화살표를 제거하거나 생성물만 남겨주세요.");
         }
-        setStatus("💡 반응식이 감지되어 생성물(Product) 기준으로 검색합니다.");
-      } else {
-        setStatus("Ketcher 구조를 SMILES로 변환했습니다.");
       }
 
-      setSmilesText(finalSmiles);
-      setMolfile("");
-      await searchSimilar({ kind: "smiles", value: finalSmiles });
+      setSmilesText(s || "");
+      setMolfile(m || "");
+      await searchSimilar(m ? { kind: "molfile", value: m } : { kind: "smiles", value: s });
     } catch (e) {
       setStatus(`Ketcher 읽기 실패: ${String(e)}`);
     }
@@ -224,6 +235,30 @@ export default function App() {
     return data;
   }
 
+  async function molfileToSmiles(molText) {
+    // backend: POST /upload/mol (multipart form-data, field name: file)
+    const blob = new Blob([molText], { type: "chemical/x-mdl-molfile" });
+    const file = new File([blob], "input.mol", { type: "chemical/x-mdl-molfile" });
+    const fd = new FormData();
+    fd.append("file", file);
+
+    const r = await fetch(`${API_BASE}/upload/mol`, {
+      method: "POST",
+      body: fd,
+    });
+
+    const text = await r.text();
+    let data;
+    try {
+      data = JSON.parse(text);
+    } catch {
+      data = { raw: text };
+    }
+    if (!r.ok) throw new Error(data?.detail || data?.message || text || `HTTP ${r.status}`);
+    if (!data?.smiles) throw new Error("upload/mol did not return smiles");
+    return data.smiles;
+  }
+
   async function searchSimilar(forcedQuery) {
     setStatus("검색 중...");
     setResults([]);
@@ -234,12 +269,14 @@ export default function App() {
     // - forcedQuery (optional)
     const query =
       forcedQuery ??
-      (smilesText?.trim()
+      (molfile?.trim()
+        ? { kind: "molfile", value: molfile.trim() }
+        : smilesText?.trim()
         ? { kind: "smiles", value: smilesText.trim() }
         : null);
 
     if (!query) {
-      setStatus("입력값이 없습니다. Ketcher에서 구조를 그리거나 SMILES를 입력하세요.");
+      setStatus("입력값이 없습니다. (Molfile 또는 SMILES를 입력하세요)");
       return;
     }
 
@@ -248,6 +285,8 @@ export default function App() {
 
       if (query.kind === "smiles") {
         smiles = query.value;
+      } else if (query.kind === "molfile") {
+        smiles = await molfileToSmiles(query.value);
       } else if (typeof query === "string") {
         // legacy: if someone passes plain smiles
         smiles = query;
@@ -256,7 +295,7 @@ export default function App() {
       }
 
       if (!smiles) {
-        setStatus("SMILES를 만들 수 없습니다. Ketcher 또는 SMILES 입력을 확인하세요.");
+        setStatus("SMILES를 만들 수 없습니다. (Molfile/SMILES 입력을 확인하세요)");
         return;
       }
 
@@ -365,7 +404,7 @@ export default function App() {
               </div>
 
               <div style={{ marginTop: 10, fontSize: 12, opacity: 0.8 }}>
-                SciFinder처럼 구조를 입력한 뒤 검색합니다. 현재 안정판 Route1은 SMILES 기반 검색만 사용합니다.
+                SciFinder처럼 구조를 입력/업로드한 뒤 검색합니다.
               </div>
 
               {/* Ketcher는 부모 컨테이너 높이가 0이면 "initialized"만 찍고 화면이 비어버립니다. 높이를 고정해 렌더링을 보장합니다. */}
@@ -395,7 +434,7 @@ export default function App() {
               </div>
 
               <div style={{ marginTop: 12 }}>
-                <div style={styles.subTitle}>Molfile (표시 전용 / Route1 검색 미사용)</div>
+                <div style={styles.subTitle}>Molfile</div>
                 <textarea
                   value={molfile}
                   onChange={(e) => setMolfile(e.target.value)}
@@ -751,7 +790,7 @@ export default function App() {
                       <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
                         <div style={{ width: 84, height: 108, border: "1px solid #eee", borderRadius: 8, overflow: "hidden", background: "#fafafa" }}>
                           <img
-                            src={d.thumb_url ? `${API_BASE}${d.thumb_url}` : ""}
+                            src={d.thumb_url ? `${API_BASE}${d.thumb_url}` : `${API_BASE}/api/docs/${d.id}/thumb`}
                             alt="thumb"
                             style={{ width: "100%", height: "100%", objectFit: "cover" }}
                             onError={(e) => {
@@ -861,7 +900,7 @@ const styles = {
     cursor: "pointer",
     fontWeight: 700,
   },
-  tabBtnActive: { background: "#111", color: "#fff", border: "1px solid #111" },
+  tabBtnActive: { background: "#111", color: "#fff", borderColor: "#111" },
   grid: {
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
@@ -891,7 +930,7 @@ const styles = {
     cursor: "pointer",
     fontWeight: 700,
   },
-  btnPrimary: { background: "#111", color: "#fff", border: "1px solid #111" },
+  btnPrimary: { background: "#111", color: "#fff", borderColor: "#111" },
   pill: {
     fontSize: 12,
     border: "1px solid #ddd",

@@ -27,8 +27,8 @@ export type KetcherEditorHandle = {
 type Props = {
   initialSmiles?: string;
   onChange?: (payload: any) => void;
-  /** App.jsx expects this to receive an object with getSmiles/setMolecule */
-  onInit?: (api: { getSmiles: () => Promise<string>; setMolecule: (smiles: string) => void }) => void;
+  /** App.jsx expects this to receive an object with getSmiles/getMolfile/setMolecule */
+  onInit?: (api: { getSmiles: (reaction?: boolean) => Promise<string>; getMolfile: () => Promise<string>; setMolecule: (smiles: string) => void }) => void;
   height?: number | string;
   className?: string;
   style?: React.CSSProperties;
@@ -80,7 +80,7 @@ const KetcherEditor = forwardRef<KetcherEditorHandle, Props>(
       pingInterval.current = window.setInterval(() => {
         const win = iframeRef.current?.contentWindow;
         if (!win) return;
-        win.postMessage({ type: "PING" }, window.location.origin);
+        win.postMessage({ type: "PING" }, "*");
       }, 200);
     }, [stopPing]);
 
@@ -104,14 +104,19 @@ const KetcherEditor = forwardRef<KetcherEditorHandle, Props>(
 
         promiseMap.current.set(requestId, { resolve, reject, timeoutId });
 
-        win.postMessage({ type, requestId, payload }, window.location.origin);
+        win.postMessage({ type, requestId, payload }, "*");
       });
     }, []);
 
     const getMoleculeViaPostMessage = useCallback(() => requestViaPostMessage("GET_MOLECULE"), [requestViaPostMessage]);
 
     const getSmilesViaPostMessage = useCallback(
-      () => requestViaPostMessage("GET_SMILES").then((r) => r.smiles),
+      (reaction?: boolean) => requestViaPostMessage("GET_SMILES", { reaction: !!reaction }).then((r) => r.smiles),
+      [requestViaPostMessage]
+    );
+
+    const getMolfileViaPostMessage = useCallback(
+      () => requestViaPostMessage("GET_MOLFILE").then((r) => r.mol),
       [requestViaPostMessage]
     );
 
@@ -127,31 +132,28 @@ const KetcherEditor = forwardRef<KetcherEditorHandle, Props>(
       }, 20000);
 
       const handleMessage = (event: MessageEvent) => {
-        // SECURITY: same-origin only (recommended)
-        if (event.origin !== window.location.origin) return;
         // Source pinning: only accept messages from the current iframe window
         if (!iframeRef.current || event.source !== iframeRef.current.contentWindow) return;
         const data = event.data || {};
         const { type } = data;
 
-        if (type === "PONG") {
+        if (type === "PONG" || type === "KETCHER_READY") {
           markReady();
           window.clearTimeout(bootTimer);
-          return;
-        }
 
-        if (type === "KETCHER_READY") {
-          markReady();
-          window.clearTimeout(bootTimer);
+          if (type === "PONG") {
+            return;
+          }
 
           // Provide a small API shim for the parent App (compat with existing App.jsx)
           // so App can call getSmiles/getMolfile without knowing about postMessage.
           propsRef.current.onInit?.({
-            getSmiles: async () => await getSmilesViaPostMessage(),
+            getSmiles: async (reaction?: boolean) => await getSmilesViaPostMessage(reaction),
+            getMolfile: async () => await getMolfileViaPostMessage(),
             setMolecule: (smiles: string) => {
               iframeRef.current?.contentWindow?.postMessage(
                 { type: "SET_MOLECULE", payload: { smiles } },
-                window.location.origin
+                "*"
               );
             },
           });
@@ -159,7 +161,7 @@ const KetcherEditor = forwardRef<KetcherEditorHandle, Props>(
           if (initialSmiles) {
             iframeRef.current?.contentWindow?.postMessage(
               { type: "SET_MOLECULE", payload: { smiles: initialSmiles } },
-              window.location.origin
+              "*"
             );
           }
         } else if (type === "KETCHER_DATA") {
@@ -222,7 +224,7 @@ const KetcherEditor = forwardRef<KetcherEditorHandle, Props>(
         if (!isReadyRef.current || !iframeRef.current?.contentWindow) return;
         iframeRef.current.contentWindow.postMessage(
           { type: "SET_MOLECULE", payload: { smiles } },
-          window.location.origin
+          "*"
         );
       },
     }));

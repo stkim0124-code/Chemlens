@@ -25,9 +25,9 @@ type KetcherType = {
 
 const ORIGIN = window.location.origin;
 
-function post(type: string, payload?: any) {
+function post(type: string, payload?: any, requestId?: string) {
   try {
-    window.parent?.postMessage({ type, payload }, ORIGIN);
+    window.parent?.postMessage({ type, payload, requestId }, "*");
   } catch {
     // ignore
   }
@@ -44,11 +44,10 @@ function IframeApp() {
 
   React.useEffect(() => {
     const onMessage = async (event: MessageEvent) => {
-      if (event.origin !== ORIGIN) return;
       const data: any = event.data || {};
 
       if (data.type === "PING") {
-        window.parent?.postMessage({ type: "PONG" }, ORIGIN);
+        post("PONG");
         return;
       }
 
@@ -65,7 +64,25 @@ function IframeApp() {
           const requestId = String(data.requestId || "");
           const smiles = await ketcher.getSmiles();
           const mol = await ketcher.getMolfile();
-          post("KETCHER_DATA", { requestId, smiles, mol });
+          post("KETCHER_DATA", { smiles, mol }, requestId);
+        }
+
+        if (data.type === "GET_SMILES") {
+          const requestId = String(data.requestId || "");
+          const wantReaction = !!data.payload?.reaction;
+          let smiles = "";
+          try {
+            smiles = wantReaction ? await (ketcher as any).getSmiles(true) : await ketcher.getSmiles();
+          } catch {
+            smiles = await ketcher.getSmiles();
+          }
+          post("KETCHER_DATA", { smiles, mol: "" }, requestId);
+        }
+
+        if (data.type === "GET_MOLFILE") {
+          const requestId = String(data.requestId || "");
+          const mol = await ketcher.getMolfile();
+          post("KETCHER_DATA", { smiles: "", mol }, requestId);
         }
       } catch (e: any) {
         post("KETCHER_ERROR", { message: String(e?.message || e) });

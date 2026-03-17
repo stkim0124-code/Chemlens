@@ -452,7 +452,9 @@ def api_docs_thumb(doc_id: int):
         raise HTTPException(status_code=404, detail="Thumbnail not found")
     # infer media type
     mt = "image/png" if thumb_path.suffix.lower()==".png" else "image/jpeg"
-    return FileResponse(str(thumb_path), media_type=mt, headers={"Cross-Origin-Resource-Policy": "cross-origin", "Cache-Control": "public, max-age=3600"})
+    resp = FileResponse(str(thumb_path), media_type=mt)
+    resp.headers["Cross-Origin-Resource-Policy"] = "cross-origin"
+    return resp
 
 
 
@@ -490,7 +492,9 @@ def api_docs_pdf(doc_id: int):
             detail=f"PDF not found. Expected: {pdf_path} (put the original PDF under backend/app/data/pdfs/)",
         )
 
-    return FileResponse(str(pdf_path), media_type="application/pdf", filename=filename, headers={"Cross-Origin-Resource-Policy": "cross-origin", "Cache-Control": "public, max-age=3600"})
+    resp = FileResponse(str(pdf_path), media_type="application/pdf", filename=filename)
+    resp.headers["Cross-Origin-Resource-Policy"] = "cross-origin"
+    return resp
 
 
 # -----------------------------
@@ -779,12 +783,13 @@ def ingest_from_docs(req: IngestFromDocsRequest):
                 scanned_pages += 1
 
                 cards: List[ExtractedCard] = []
+                rdkit_ok = Chem is not None
                 if mode in {"procedure", "both"}:
                     blocks = extract_procedure_blocks(text)
-                    cards.extend(build_procedure_cards(doc_title, page_no, blocks, rdkit_available=Chem is not None))
+                    cards.extend(build_procedure_cards(doc_title, page_no, blocks, rdkit_available=rdkit_ok))
                 if mode in {"concept", "both"}:
                     headings = extract_concept_headings(text)
-                    cards.extend(build_concept_cards(doc_title, page_no, headings, rdkit_available=Chem is not None))
+                    cards.extend(build_concept_cards(doc_title, page_no, headings, rdkit_available=rdkit_ok))
 
                 if cards:
                     produced += len(cards)
@@ -821,23 +826,23 @@ def ingest_all(pdfs_limit: int = 0, images_limit: int = 500):
       2) /api/ingest/from-docs (procedure+concept)
       3) /api/ingest/from-images (procedure+concept)
     """
-    errors = {}
+    errors = []
     try:
         res_pdfs = ingest_pdfs(IngestPdfsRequest(limit=pdfs_limit))
     except Exception as e:
-        res_pdfs = {"ok": False}
-        errors["pdfs"] = str(getattr(e, "detail", e))
+        res_pdfs = {"ok": False, "error": str(e)}
+        errors.append({"step": "pdfs", "error": str(e)})
     try:
         res_docs = ingest_from_docs(IngestFromDocsRequest(mode="both", doc_ids=None, max_pages_per_doc=200, max_cards=200000))
     except Exception as e:
-        res_docs = {"ok": False}
-        errors["from_docs"] = str(getattr(e, "detail", e))
+        res_docs = {"ok": False, "error": str(e)}
+        errors.append({"step": "from_docs", "error": str(e)})
     try:
         res_imgs = ingest_from_images(IngestFromImagesRequest(mode="both", glob="**/*.*", max_images=images_limit, max_cards=200000))
     except Exception as e:
-        res_imgs = {"ok": False}
-        errors["from_images"] = str(getattr(e, "detail", e))
-    return {"ok": not bool(errors), "pdfs": res_pdfs, "from_docs": res_docs, "from_images": res_imgs, "errors": errors}
+        res_imgs = {"ok": False, "error": str(e)}
+        errors.append({"step": "from_images", "error": str(e)})
+    return {"ok": len(errors) == 0, "pdfs": res_pdfs, "from_docs": res_docs, "from_images": res_imgs, "errors": errors}
 
 
 @app.post("/api/ingest/from-images")
@@ -884,12 +889,13 @@ def ingest_from_images(req: IngestFromImagesRequest):
             except Exception:
                 page_no = 0
         cards: List[ExtractedCard] = []
+        rdkit_ok = Chem is not None
         if mode in {"procedure", "both"}:
             blocks = extract_procedure_blocks(text)
-            cards.extend(build_procedure_cards(doc_title, page_no, blocks, rdkit_available=Chem is not None))
+            cards.extend(build_procedure_cards(doc_title, page_no, blocks, rdkit_available=rdkit_ok))
         if mode in {"concept", "both"}:
             headings = extract_concept_headings(text)
-            cards.extend(build_concept_cards(doc_title, page_no, headings, rdkit_available=Chem is not None))
+            cards.extend(build_concept_cards(doc_title, page_no, headings, rdkit_available=rdkit_ok))
 
         # Strengthen source to point to image filename
         for c in cards:

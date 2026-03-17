@@ -114,8 +114,7 @@ def ingest_pdfs_to_docs_db(
     inserted_pages=0
     inserted_chunks=0
     skipped=0
-    failed=0
-    failed_files=[]
+    failed_files: List[Dict[str, str]] = []
 
     con = sqlite3.connect(str(docs_db_path))
     try:
@@ -208,7 +207,6 @@ def ingest_pdfs_to_docs_db(
                     )
                     inserted_chunks += 1
             except Exception as e:
-                failed += 1
                 failed_files.append({"file": str(pdf), "error": str(e)})
                 continue
 
@@ -222,7 +220,6 @@ def ingest_pdfs_to_docs_db(
         "pages_inserted": inserted_pages,
         "chunks_inserted": inserted_chunks,
         "skipped_existing": skipped,
-        "failed": failed,
-        "failed_files": failed_files[:50],
+        "failed_files": failed_files,
         "docs_db_path": str(docs_db_path),
     }

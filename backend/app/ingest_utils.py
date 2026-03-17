@@ -232,12 +232,7 @@ def pick_valid_smiles(cands: List[str], rdkit_available: bool = False) -> str:
 #   build_procedure_cards(doc_title, page_no, blocks) -> List[ExtractedCard]
 #   build_concept_cards(doc_title, page_no, headings) -> List[ExtractedCard]
 # ------------------------------------------------------------
-def build_procedure_cards(
-    doc_title: str,
-    page_no: int,
-    blocks: List[str],
-    rdkit_available: bool = False,
-) -> List[ExtractedCard]:
+def build_procedure_cards(doc_title: str, page_no: int, blocks: List[str], rdkit_available: bool = False) -> List[ExtractedCard]:
     cards: List[ExtractedCard] = []
     for i, blk in enumerate(blocks or [], start=1):
         y = _extract_yield(blk)
@@ -262,12 +257,7 @@ def build_procedure_cards(
         )
     return cards
 
-def build_concept_cards(
-    doc_title: str,
-    page_no: int,
-    headings: List[str],
-    rdkit_available: bool = False,
-) -> List[ExtractedCard]:
+def build_concept_cards(doc_title: str, page_no: int, headings: List[str], rdkit_available: bool = False) -> List[ExtractedCard]:
     cards: List[ExtractedCard] = []
     for i, h in enumerate(headings or [], start=1):
         title = h.strip()
