@@ -114,6 +114,8 @@ def ingest_pdfs_to_docs_db(
     inserted_pages=0
     inserted_chunks=0
     skipped=0
+    failed=0
+    failed_files=[]
 
     con = sqlite3.connect(str(docs_db_path))
     try:
@@ -125,93 +127,90 @@ def ingest_pdfs_to_docs_db(
         has_stored = "stored_name" in cols
 
         for pdf in files:
-            title=_safe_title_from_path(pdf)
-
-            # --- content hash (strict de-dupe) ---
-            content_hash = None
             try:
-                h = hashlib.sha256()
-                with pdf.open("rb") as f:
-                    for chunk in iter(lambda: f.read(1024 * 1024), b""):
-                        h.update(chunk)
-                content_hash = h.hexdigest()
-            except Exception:
-                content_hash = None
+                title=_safe_title_from_path(pdf)
 
-            if has_hash and content_hash:
+                # --- content hash (strict de-dupe) ---
+                content_hash = None
+                try:
+                    h = hashlib.sha256()
+                    with pdf.open("rb") as f:
+                        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+                            h.update(chunk)
+                    content_hash = h.hexdigest()
+                except Exception:
+                    content_hash = None
+
+                if has_hash and content_hash:
+                    row = con.execute(
+                        "SELECT id FROM documents WHERE content_hash = ? LIMIT 1",
+                        (content_hash,),
+                    ).fetchone()
+                    if row:
+                        skipped += 1
+                        continue
+
+                canonicalize = (os.environ.get("LABINT_CANONICALIZE_PDFS", "1").strip() != "0")
+                problematic = bool(re.search(r"[^A-Za-z0-9._-]", pdf.name))
+                if canonicalize or problematic:
+                    stored_name = f"{uuid.uuid4().hex}.pdf"
+                    dst = pdfs_dir / stored_name
+                    if not dst.exists():
+                        try:
+                            shutil.copy2(str(pdf), str(dst))
+                        except Exception:
+                            stored_name = pdf.name
+                    stored = f"pdfs/{stored_name}"
+                else:
+                    stored_name = pdf.name
+                    stored = f"pdfs/{stored_name}"
+
                 row = con.execute(
-                    "SELECT id FROM documents WHERE content_hash = ? LIMIT 1",
-                    (content_hash,),
+                    "SELECT id FROM documents WHERE file_path = ? OR file_path = ? OR lower(file_path) = lower(?) OR lower(file_path) = lower(?) OR file_path LIKE ? LIMIT 1",
+                    (stored, stored_name, stored, stored_name, f"%{stored_name}")
                 ).fetchone()
                 if row:
                     skipped += 1
                     continue
 
-            # --- canonicalize stored filename to prevent collisions / OS edge cases ---
-            # Policy:
-            # - DB stores: pdfs/<stored_name>
-            # - stored_name is uuid.pdf by default
-            # - original file is not deleted; we COPY into the canonical name
-            canonicalize = (os.environ.get("LABINT_CANONICALIZE_PDFS", "1").strip() != "0")
-            problematic = bool(re.search(r"[^A-Za-z0-9._-]", pdf.name))
-            if canonicalize or problematic:
-                stored_name = f"{uuid.uuid4().hex}.pdf"
-                dst = pdfs_dir / stored_name
-                if not dst.exists():
-                    try:
-                        shutil.copy2(str(pdf), str(dst))
-                    except Exception:
-                        # fallback: keep original name if copy fails
-                        stored_name = pdf.name
-                stored = f"pdfs/{stored_name}"
-            else:
-                stored_name = pdf.name
-                stored = f"pdfs/{stored_name}"
+                pages, engine = _extract_pdf_text_pages(pdf)
+                if has_hash or has_original or has_stored:
+                    cur = con.execute(
+                        """
+                        INSERT INTO documents(title, file_path, page_count, original_name, stored_name, content_hash)
+                        VALUES (?,?,?,?,?,?)
+                        """,
+                        (
+                            title,
+                            stored,
+                            len(pages),
+                            pdf.name if has_original else None,
+                            stored_name if has_stored else None,
+                            content_hash if has_hash else None,
+                        ),
+                    )
+                else:
+                    cur = con.execute(
+                        "INSERT INTO documents(title, file_path, page_count) VALUES (?,?,?)",
+                        (title, stored, len(pages)),
+                    )
+                doc_id = int(cur.lastrowid)
+                inserted_docs += 1
 
-            # legacy de-dupe by filename if hash not available
-            row = con.execute(
-                "SELECT id FROM documents WHERE file_path = ? OR file_path = ? OR lower(file_path) = lower(?) OR lower(file_path) = lower(?) OR file_path LIKE ? LIMIT 1",
-                (stored, stored_name, stored, stored_name, f"%{stored_name}")
-            ).fetchone()
-            if row:
-                skipped += 1
+                for i, txt in enumerate(pages):
+                    con.execute("INSERT OR REPLACE INTO pages(doc_id, page_no, text) VALUES (?,?,?)", (doc_id, i, txt or ""))
+                    inserted_pages += 1
+
+                for page_from, page_to, chunk in _chunk_text(pages):
+                    con.execute(
+                        "INSERT INTO chunks(doc_id, page_from, page_to, text) VALUES (?,?,?,?)",
+                        (doc_id, page_from, page_to, chunk),
+                    )
+                    inserted_chunks += 1
+            except Exception as e:
+                failed += 1
+                failed_files.append({"file": str(pdf), "error": str(e)})
                 continue
-
-            pages, engine = _extract_pdf_text_pages(pdf)
-            # Insert with optional provenance columns when present
-            if has_hash or has_original or has_stored:
-                cur = con.execute(
-                    """
-                    INSERT INTO documents(title, file_path, page_count, original_name, stored_name, content_hash)
-                    VALUES (?,?,?,?,?,?)
-                    """,
-                    (
-                        title,
-                        stored,
-                        len(pages),
-                        pdf.name if has_original else None,
-                        stored_name if has_stored else None,
-                        content_hash if has_hash else None,
-                    ),
-                )
-            else:
-                cur = con.execute(
-                    "INSERT INTO documents(title, file_path, page_count) VALUES (?,?,?)",
-                    (title, stored, len(pages)),
-                )
-            doc_id = int(cur.lastrowid)
-            inserted_docs += 1
-
-            for i, txt in enumerate(pages):
-                con.execute("INSERT OR REPLACE INTO pages(doc_id, page_no, text) VALUES (?,?,?)", (doc_id, i, txt or ""))
-                inserted_pages += 1
-
-            for page_from, page_to, chunk in _chunk_text(pages):
-                con.execute(
-                    "INSERT INTO chunks(doc_id, page_from, page_to, text) VALUES (?,?,?,?)",
-                    (doc_id, page_from, page_to, chunk),
-                )
-                inserted_chunks += 1
 
         con.commit()
     finally:
@@ -223,5 +222,7 @@ def ingest_pdfs_to_docs_db(
         "pages_inserted": inserted_pages,
         "chunks_inserted": inserted_chunks,
         "skipped_existing": skipped,
+        "failed": failed,
+        "failed_files": failed_files[:50],
         "docs_db_path": str(docs_db_path),
     }

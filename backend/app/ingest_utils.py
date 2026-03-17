@@ -232,16 +232,24 @@ def pick_valid_smiles(cands: List[str], rdkit_available: bool = False) -> str:
 #   build_procedure_cards(doc_title, page_no, blocks) -> List[ExtractedCard]
 #   build_concept_cards(doc_title, page_no, headings) -> List[ExtractedCard]
 # ------------------------------------------------------------
-def build_procedure_cards(doc_title: str, page_no: int, blocks: List[str]) -> List[ExtractedCard]:
+def build_procedure_cards(
+    doc_title: str,
+    page_no: int,
+    blocks: List[str],
+    rdkit_available: bool = False,
+) -> List[ExtractedCard]:
     cards: List[ExtractedCard] = []
     for i, blk in enumerate(blocks or [], start=1):
         y = _extract_yield(blk)
         cond = _extract_conditions(blk)
         title = f"{doc_title} p{page_no+1} proc#{i}"
+        cands = extract_smiles_candidates(blk)
+        smiles = pick_valid_smiles(cands, rdkit_available=rdkit_available)
         cards.append(
             ExtractedCard(
                 title=title,
                 transformation="",
+                substrate_smiles=smiles,
                 reagents="",
                 solvent="",
                 conditions=cond,
@@ -254,16 +262,24 @@ def build_procedure_cards(doc_title: str, page_no: int, blocks: List[str]) -> Li
         )
     return cards
 
-def build_concept_cards(doc_title: str, page_no: int, headings: List[str]) -> List[ExtractedCard]:
+def build_concept_cards(
+    doc_title: str,
+    page_no: int,
+    headings: List[str],
+    rdkit_available: bool = False,
+) -> List[ExtractedCard]:
     cards: List[ExtractedCard] = []
     for i, h in enumerate(headings or [], start=1):
         title = h.strip()
         if not title:
             continue
+        cands = extract_smiles_candidates(h)
+        smiles = pick_valid_smiles(cands, rdkit_available=rdkit_available)
         cards.append(
             ExtractedCard(
                 title=title[:300],
                 transformation="",
+                substrate_smiles=smiles,
                 source=f"{doc_title}#p{page_no+1}",
                 notes=f"(heading) {h[:2000]}",
                 doc_title=doc_title,

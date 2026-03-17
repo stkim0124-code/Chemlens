@@ -134,6 +134,12 @@ const KetcherEditor = forwardRef<KetcherEditorHandle, Props>(
         const data = event.data || {};
         const { type } = data;
 
+        if (type === "PONG") {
+          markReady();
+          window.clearTimeout(bootTimer);
+          return;
+        }
+
         if (type === "KETCHER_READY") {
           markReady();
           window.clearTimeout(bootTimer);

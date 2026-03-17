@@ -18,6 +18,10 @@ export default defineConfig(({ mode }) => {
       global: "globalThis",
     },
     server: {
+      headers: {
+        'Cross-Origin-Embedder-Policy': 'require-corp',
+        'Cross-Origin-Opener-Policy': 'same-origin',
+      },
       // Dev DX: call backend without CORS pain.
       proxy: {
         "/api": { target: apiBase, changeOrigin: true },

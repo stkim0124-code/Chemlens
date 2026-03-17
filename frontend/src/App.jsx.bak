@@ -1,6 +1,6 @@
 import React, { Suspense, useMemo, useState } from "react";
 import KetcherEditor from "./components/KetcherEditor.tsx";
-const API_BASE = (import.meta.env.VITE_API_BASE || "").trim();
+const API_BASE = import.meta.env.VITE_API_BASE || "http://127.0.0.1:8000";
 
 /** Error Boundary */
 class ErrorBoundary extends React.Component {
@@ -751,7 +751,7 @@ export default function App() {
                       <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
                         <div style={{ width: 84, height: 108, border: "1px solid #eee", borderRadius: 8, overflow: "hidden", background: "#fafafa" }}>
                           <img
-                            src={d.thumb_url ? `${API_BASE}${d.thumb_url}` : ""}
+                            src={`${API_BASE}/api/docs/${d.id}/thumb`}
                             alt="thumb"
                             style={{ width: "100%", height: "100%", objectFit: "cover" }}
                             onError={(e) => {
@@ -861,7 +861,7 @@ const styles = {
     cursor: "pointer",
     fontWeight: 700,
   },
-  tabBtnActive: { background: "#111", color: "#fff", border: "1px solid #111" },
+  tabBtnActive: { background: "#111", color: "#fff", borderColor: "#111" },
   grid: {
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
@@ -891,7 +891,7 @@ const styles = {
     cursor: "pointer",
     fontWeight: 700,
   },
-  btnPrimary: { background: "#111", color: "#fff", border: "1px solid #111" },
+  btnPrimary: { background: "#111", color: "#fff", borderColor: "#111" },
   pill: {
     fontSize: 12,
     border: "1px solid #ddd",

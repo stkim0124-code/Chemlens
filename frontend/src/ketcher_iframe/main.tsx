@@ -46,6 +46,12 @@ function IframeApp() {
     const onMessage = async (event: MessageEvent) => {
       if (event.origin !== ORIGIN) return;
       const data: any = event.data || {};
+
+      if (data.type === "PING") {
+        window.parent?.postMessage({ type: "PONG" }, ORIGIN);
+        return;
+      }
+
       const ketcher = ketcherRef.current;
       if (!ketcher) return;
 
