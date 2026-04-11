@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import math
 import sqlite3
 import threading
 from pathlib import Path
@@ -65,7 +66,6 @@ ROLE_WEIGHTS = {
     "reactant": 1.00,
     "agent": 0.75,
 }
-
 
 FAMILY_NAME_KO = {
     "Buchner Reaction": "부흐너 고리 확장 반응",
@@ -202,6 +202,8 @@ def _naturalize_item(item: Dict[str, Any], family_profile: Optional[Dict[str, An
     item['product_type_hint'] = _product_type_hint(item, family_profile)
     item['source_page'] = f"p.{item.get('page_no') or '?'}"
 
+
+
 # Patch-2: extract_kind quality multiplier
 # canonical_overview / overview → highest representativeness
 # mechanism → reliable but reaction-step-specific
@@ -219,6 +221,378 @@ EXTRACT_KIND_WEIGHTS: Dict[str, float] = {
 # Molecules with heavy-atom count ≤ this threshold get a score penalty.
 SMALL_FRAGMENT_HA_THRESHOLD = 6       # ≤6 heavy atoms → common solvent/reagent range
 SMALL_FRAGMENT_PENALTY = 0.70         # multiply match score by this factor
+
+
+# Patch-B1: reaction delta scoring feature patterns
+_REACTION_FEATURE_SMARTS: Dict[str, str] = {
+    "carbonyl": "[CX3]=[OX1]",
+    "alcohol": "[OX2H][#6]",
+    "carboxylic_acid": "[CX3](=O)[OX2H1]",
+    "acid_chloride": "[CX3](=O)Cl",
+    "ester": "[CX3](=O)O[#6]",
+    "amide": "[NX3][CX3](=O)",
+    "amine": "[NX3;H2,H1;!$(NC=O)]",
+    "aryl_halide": "[c][F,Cl,Br,I]",
+    "boron": "[B,b]",
+    "nitro": "[$([N+](=O)[O-])]",
+    "oxime": "[CX3]=[NX2][OX2H,OX1-]",
+    "alkene": "C=C",
+    "alkyne": "C#C",
+    "ether": "[#6]-O-[#6]",
+    "aromatic_ring": "a1aaaaa1",
+}
+_REACTION_FEATURE_MOLS = {k: Chem.MolFromSmarts(v) for k, v in _REACTION_FEATURE_SMARTS.items()} if Chem is not None else {}
+
+def _count_reaction_features(smiles: Optional[str]) -> Dict[str, int]:
+    counts = {k: 0 for k in _REACTION_FEATURE_SMARTS.keys()}
+    counts["heavy_atoms"] = 0
+    if not smiles or Chem is None:
+        return counts
+    mol = Chem.MolFromSmiles(smiles)
+    if mol is None:
+        return counts
+    counts["heavy_atoms"] = mol.GetNumHeavyAtoms()
+    for key, patt in _REACTION_FEATURE_MOLS.items():
+        if patt is None:
+            continue
+        try:
+            counts[key] = len(mol.GetSubstructMatches(patt))
+        except Exception:
+            counts[key] = 0
+    # robust diazo fallback from text form
+    diazo_txt = smiles.count('N+]=[N-') + smiles.count('=[N+]=[N-') + smiles.count('N=[N+]=[N-')
+    counts["diazo"] = max(counts.get("diazo", 0), diazo_txt)
+    return counts
+
+def _merge_feature_counts(base: Dict[str, int], add: Dict[str, int]) -> None:
+    for k, v in add.items():
+        base[k] = int(base.get(k, 0)) + int(v or 0)
+
+def _reaction_delta_from_components(parsed: Optional[Dict[str, List[str]]]) -> Dict[str, Any]:
+    keys = list(_REACTION_FEATURE_SMARTS.keys()) + ["heavy_atoms"]
+    react = {k: 0 for k in keys}
+    prod = {k: 0 for k in keys}
+    if not parsed:
+        return {"reactants": react, "products": prod, "delta": {k: 0 for k in keys}}
+    for side in (parsed.get("reactants") or []) + (parsed.get("agents") or []):
+        _merge_feature_counts(react, _count_reaction_features(side))
+    for side in (parsed.get("products") or []):
+        _merge_feature_counts(prod, _count_reaction_features(side))
+    delta = {k: int(prod.get(k, 0)) - int(react.get(k, 0)) for k in keys}
+    return {"reactants": react, "products": prod, "delta": delta}
+
+
+_COARSE_SIGNAL_LABELS_KO: Dict[str, str] = {
+    "ring_expansion": "고리 확장",
+    "diazo_arene_combo": "diazo + arene 조합",
+    "coupling": "커플링",
+    "oxidation": "산화",
+    "reduction": "환원",
+    "dehydration": "탈수",
+    "deoxygenation": "탈산소화",
+    "decarboxylation": "탈카복실화",
+    "ester_insertion_oxidation": "ester/lactone 삽입형 산화",
+    "oxime_rearrangement": "oxime 재배열",
+    "multicomponent_condensation": "다성분 축합",
+    "carbohydrate_rearrangement": "당/다가산소 재배열",
+}
+
+
+# Step-2.5: coarse mismatch residual noise clipping
+# If a family survives only with a very small score *and* a very low coarse gate multiplier,
+# it is almost always cross-family noise rather than useful experimental guidance.
+LOW_SCORE_MISMATCH_MAX_SCORE = 0.03
+LOW_SCORE_MISMATCH_MAX_MULTIPLIER = 0.12
+
+def _reaction_coarse_signals(reaction_delta: Optional[Dict[str, Any]]) -> Dict[str, bool]:
+    if not reaction_delta:
+        return {k: False for k in _COARSE_SIGNAL_LABELS_KO.keys()}
+    r = reaction_delta.get("reactants", {}) or {}
+    p = reaction_delta.get("products", {}) or {}
+    d = reaction_delta.get("delta", {}) or {}
+
+    signals: Dict[str, bool] = {}
+    signals["diazo_arene_combo"] = (r.get("diazo", 0) >= 1 and r.get("aromatic_ring", 0) >= 1)
+
+    oxygenated_reactant_load = (
+        int(r.get("alcohol", 0) or 0)
+        + int(r.get("ether", 0) or 0)
+        + int(r.get("carbonyl", 0) or 0)
+        + int(r.get("ester", 0) or 0)
+    )
+
+    signals["ring_expansion"] = bool(
+        signals["diazo_arene_combo"]
+        or (
+            r.get("aromatic_ring", 0) >= 1
+            and p.get("aromatic_ring", 0) >= 1
+            and (p.get("heavy_atoms", 0) - r.get("heavy_atoms", 0)) >= -2
+            and r.get("diazo", 0) >= 1
+        )
+    )
+    signals["coupling"] = bool(
+        r.get("aryl_halide", 0) >= 1
+        and (r.get("amine", 0) + r.get("alcohol", 0) + r.get("boron", 0)) >= 1
+    )
+    signals["oxidation"] = bool(
+        d.get("ester", 0) > 0
+        or (d.get("carbonyl", 0) > 0 and d.get("alcohol", 0) <= 0)
+    )
+    signals["reduction"] = bool(
+        d.get("carbonyl", 0) < 0
+        and (d.get("alcohol", 0) > 0 or p.get("amine", 0) > r.get("amine", 0))
+    )
+    signals["dehydration"] = bool(d.get("alcohol", 0) < 0 and d.get("alkene", 0) > 0)
+    signals["deoxygenation"] = bool(
+        d.get("alcohol", 0) < 0
+        and d.get("alkene", 0) <= 0
+        and d.get("carbonyl", 0) <= 0
+        and d.get("ester", 0) <= 0
+    )
+    signals["decarboxylation"] = bool(
+        (r.get("carboxylic_acid", 0) + r.get("acid_chloride", 0)) >= 1
+        and (
+            d.get("carboxylic_acid", 0) < 0
+            or d.get("acid_chloride", 0) < 0
+            or d.get("carbonyl", 0) < 0
+        )
+    )
+    signals["ester_insertion_oxidation"] = bool(r.get("carbonyl", 0) >= 1 and d.get("ester", 0) > 0)
+    signals["oxime_rearrangement"] = bool(r.get("oxime", 0) >= 1)
+    signals["multicomponent_condensation"] = bool(r.get("carbonyl", 0) >= 2 and r.get("amine", 0) >= 1)
+    signals["carbohydrate_rearrangement"] = bool(
+        oxygenated_reactant_load >= 4
+        and r.get("amine", 0) >= 1
+        and (r.get("alcohol", 0) >= 2 or r.get("ether", 0) >= 2)
+    )
+    return signals
+
+def _active_reaction_types(signals: Dict[str, bool]) -> List[str]:
+    return [name for name, active in signals.items() if active]
+
+def _family_coarse_profile(family_name: Optional[str]) -> Optional[Dict[str, Any]]:
+    if not family_name:
+        return None
+    fam = family_name.strip().lower()
+    if not fam:
+        return None
+
+    if fam.startswith("buchner") or "buchner method of ring expansion" in fam:
+        return {
+            "need_any": ["ring_expansion", "diazo_arene_combo"],
+            "boost_any": ["ring_expansion", "diazo_arene_combo"],
+            "forbid_any": ["carbohydrate_rearrangement", "multicomponent_condensation", "dehydration", "deoxygenation", "decarboxylation", "coupling", "oxidation", "ester_insertion_oxidation", "oxime_rearrangement"],
+            "missing_need_factor": 0.72,
+            "forbidden_factor": 0.22,
+            "boost_factor": 1.18,
+        }
+    if "amadori" in fam:
+        return {
+            "need_any": ["carbohydrate_rearrangement"],
+            "boost_any": ["carbohydrate_rearrangement"],
+            "forbid_any": ["ring_expansion", "diazo_arene_combo", "coupling", "dehydration", "deoxygenation", "decarboxylation", "oxidation", "reduction", "ester_insertion_oxidation", "oxime_rearrangement"],
+            "missing_need_factor": 0.08,
+            "forbidden_factor": 0.15,
+            "boost_factor": 1.08,
+        }
+    if "buchwald-hartwig" in fam:
+        return {
+            "need_any": ["coupling"],
+            "boost_any": ["coupling"],
+            "forbid_any": ["ring_expansion", "carbohydrate_rearrangement", "dehydration", "deoxygenation"],
+            "missing_need_factor": 0.40,
+            "forbidden_factor": 0.35,
+            "boost_factor": 1.15,
+        }
+    if "baeyer-villiger" in fam:
+        return {
+            "need_any": ["ester_insertion_oxidation", "oxidation"],
+            "boost_any": ["ester_insertion_oxidation"],
+            "forbid_any": ["reduction", "coupling", "dehydration", "deoxygenation", "ring_expansion", "diazo_arene_combo"],
+            "missing_need_factor": 0.28,
+            "forbidden_factor": 0.25,
+            "boost_factor": 1.12,
+        }
+    if "beckmann" in fam:
+        return {
+            "need_any": ["oxime_rearrangement"],
+            "boost_any": ["oxime_rearrangement"],
+            "forbid_any": ["coupling", "ring_expansion", "multicomponent_condensation", "decarboxylation"],
+            "missing_need_factor": 0.30,
+            "forbidden_factor": 0.40,
+            "boost_factor": 1.12,
+        }
+    if "barton radical decarboxylation" in fam:
+        return {
+            "need_any": ["decarboxylation"],
+            "boost_any": ["decarboxylation"],
+            "forbid_any": ["carbohydrate_rearrangement", "coupling", "multicomponent_condensation", "ester_insertion_oxidation"],
+            "missing_need_factor": 0.30,
+            "forbidden_factor": 0.38,
+            "boost_factor": 1.10,
+        }
+    if "barton-mccombie" in fam:
+        return {
+            "need_any": ["deoxygenation"],
+            "boost_any": ["deoxygenation"],
+            "forbid_any": ["carbohydrate_rearrangement", "coupling", "multicomponent_condensation", "ester_insertion_oxidation"],
+            "missing_need_factor": 0.35,
+            "forbidden_factor": 0.40,
+            "boost_factor": 1.10,
+        }
+    if "biginelli" in fam:
+        return {
+            "need_any": ["multicomponent_condensation"],
+            "boost_any": ["multicomponent_condensation"],
+            "forbid_any": ["ring_expansion", "deoxygenation", "dehydration", "reduction"],
+            "missing_need_factor": 0.25,
+            "forbidden_factor": 0.35,
+            "boost_factor": 1.10,
+        }
+    if "burgess" in fam:
+        return {
+            "need_any": ["dehydration"],
+            "boost_any": ["dehydration"],
+            "forbid_any": ["ring_expansion", "carbohydrate_rearrangement", "coupling", "ester_insertion_oxidation", "reduction"],
+            "missing_need_factor": 0.35,
+            "forbidden_factor": 0.35,
+            "boost_factor": 1.12,
+        }
+    return None
+
+def _family_coarse_gate_adjustment(family_name: Optional[str], reaction_delta: Optional[Dict[str, Any]]) -> Tuple[float, List[str], Dict[str, bool]]:
+    if not family_name or not reaction_delta:
+        return 1.0, [], {}
+    profile = _family_coarse_profile(family_name)
+    if not profile:
+        return 1.0, [], _reaction_coarse_signals(reaction_delta)
+
+    signals = _reaction_coarse_signals(reaction_delta)
+    mult = 1.0
+    notes: List[str] = []
+
+    need_any = profile.get("need_any") or []
+    if need_any and not any(signals.get(sig, False) for sig in need_any):
+        mult *= float(profile.get("missing_need_factor", 0.55))
+        missing_desc = " / ".join(_COARSE_SIGNAL_LABELS_KO.get(sig, sig) for sig in need_any[:3])
+        notes.append(f"반응 타입 게이트 미충족: {missing_desc}")
+
+    forbid_hits = [sig for sig in (profile.get("forbid_any") or []) if signals.get(sig, False)]
+    if forbid_hits:
+        factor = float(profile.get("forbidden_factor", 0.45))
+        for idx, sig in enumerate(forbid_hits[:3]):
+            mult *= factor if idx == 0 else max(0.60, factor + 0.20)
+            notes.append(f"반응 타입 불일치: {_COARSE_SIGNAL_LABELS_KO.get(sig, sig)}")
+
+    boost_hits = [sig for sig in (profile.get("boost_any") or []) if signals.get(sig, False)]
+    if boost_hits:
+        mult *= float(profile.get("boost_factor", 1.10))
+        if notes is not None:
+            notes.append(f"반응 타입 적합: {_COARSE_SIGNAL_LABELS_KO.get(boost_hits[0], boost_hits[0])}")
+
+    mult = max(0.03, min(mult, 2.0))
+    return mult, notes, signals
+
+
+
+def _should_prune_low_confidence_mismatch(item: Dict[str, Any], query_mode: str) -> bool:
+    """
+    Drop microscopic cross-family residue after coarse gating.
+    This is intentionally conservative:
+    - reaction queries only
+    - score already tiny
+    - coarse gate multiplier already in the strong mismatch zone
+    """
+    if query_mode != "reaction":
+        return False
+    fam = item.get("reaction_family_name")
+    if not fam:
+        return False
+    score = float(item.get("match_score") or 0.0)
+    coarse = float(item.get("coarse_gate_multiplier") or 1.0)
+    if score >= LOW_SCORE_MISMATCH_MAX_SCORE:
+        return False
+    if coarse > LOW_SCORE_MISMATCH_MAX_MULTIPLIER:
+        return False
+    notes = item.get("coarse_gate_notes") or []
+    if not notes:
+        return False
+    return True
+
+def _family_delta_adjustment(family_name: Optional[str], reaction_delta: Optional[Dict[str, Any]]) -> Tuple[float, List[str]]:
+    if not family_name or not reaction_delta:
+        return 1.0, []
+    fam = family_name.lower()
+    r = reaction_delta.get("reactants", {})
+    p = reaction_delta.get("products", {})
+    d = reaction_delta.get("delta", {})
+    mult = 1.0
+    notes: List[str] = []
+
+    def penalize(f: float, note: str):
+        nonlocal mult
+        mult *= f
+        notes.append(note)
+
+    def boost(f: float, note: str):
+        nonlocal mult
+        mult *= f
+        notes.append(note)
+
+    if "barton radical decarboxylation" in fam:
+        if (r.get("carboxylic_acid", 0) + r.get("acid_chloride", 0)) < 1:
+            penalize(0.20, "산/산염화물 전구체 부족")
+        if p.get("carboxylic_acid", 0) + p.get("acid_chloride", 0) > 0:
+            penalize(0.40, "생성물에 산/산염화물 유지")
+        if d.get("carbonyl", 0) < 0:
+            boost(1.10, "carbonyl 감소")
+    elif "barton-mccombie" in fam:
+        if r.get("alcohol", 0) < 1:
+            penalize(0.20, "알코올 전구체 부족")
+        if d.get("alcohol", 0) >= 0:
+            penalize(0.30, "deoxygenation 방향 불일치")
+        else:
+            boost(1.10, "알코올 감소")
+    elif "baeyer-villiger" in fam:
+        if r.get("carbonyl", 0) < 1:
+            penalize(0.25, "케톤/카보닐 전구체 부족")
+        if d.get("ester", 0) <= 0:
+            penalize(0.35, "ester/lactone 증가 신호 부족")
+        else:
+            boost(1.20, "ester 증가")
+    elif "beckmann" in fam:
+        if r.get("oxime", 0) < 1:
+            penalize(0.20, "oxime 전구체 부족")
+        if d.get("amide", 0) > 0:
+            boost(1.15, "amide 증가")
+    elif "buchwald-hartwig" in fam:
+        if r.get("aryl_halide", 0) < 1:
+            penalize(0.25, "aryl halide 전구체 부족")
+        if (r.get("amine", 0) + r.get("alcohol", 0)) < 1:
+            penalize(0.35, "amine/alcohol coupling partner 부족")
+        if r.get("aryl_halide", 0) >= 1 and (r.get("amine", 0) + r.get("alcohol", 0)) >= 1:
+            boost(1.15, "coupling partner 조합 적합")
+    elif fam.startswith('buchner') or 'buchner method of ring expansion' in fam:
+        if r.get("diazo", 0) < 1:
+            penalize(0.20, "diazo 전구체 부족")
+        if r.get("aromatic_ring", 0) < 1:
+            penalize(0.35, "arene 전구체 부족")
+        if r.get("diazo", 0) >= 1 and r.get("aromatic_ring", 0) >= 1:
+            boost(1.25, "diazo + arene 조합 적합")
+    elif "amadori" in fam:
+        if r.get("carbonyl", 0) < 1 or r.get("amine", 0) < 1:
+            penalize(0.30, "carbonyl/amine 재배열 전구체 부족")
+    elif "biginelli" in fam:
+        if r.get("carbonyl", 0) < 2 or r.get("amine", 0) < 1:
+            penalize(0.25, "다성분 축합 전구체 부족")
+    elif "burgess" in fam:
+        if r.get("alcohol", 0) < 1 and r.get("amide", 0) < 1:
+            penalize(0.30, "탈수 대상 작용기 부족")
+        if d.get("alkene", 0) > 0:
+            boost(1.10, "alkene 증가")
+
+    mult = max(0.05, min(mult, 2.0))
+    return mult, notes
 
 
 def _norm_role(role: Optional[str]) -> str:
@@ -515,24 +889,28 @@ def _search_by_family(family: str, top_k: int = 12) -> Dict[str, Any]:
             """,
             (f"%{family.lower()}%", top_k),
         ).fetchall()
+        family_profile = _fetch_family_profile(conn, family) if conn.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='reaction_family_patterns'").fetchone() else None
+        results = [
+            {
+                **dict(row),
+                "match_type": "family_text",
+                "role": "family",
+                "match_score": 0.0,
+                "matched_smiles": None,
+                "quality_tier": 3,
+            }
+            for row in rows
+        ]
+        for item in results:
+            _naturalize_item(item, family_profile)
         return {
             "query_mode": "family",
             "query_family": family,
             "direct_count": 0,
             "generic_count": 0,
             "family_count": len(rows),
-            "family_profile": _fetch_family_profile(conn, family),
-            "results": [
-                {
-                    **dict(row),
-                    "match_type": "family_text",
-                    "role": "family",
-                    "match_score": 0.0,
-                    "matched_smiles": None,
-                    "quality_tier": 3,
-                }
-                for row in rows
-            ],
+            "family_profile": family_profile,
+            "results": results,
         }
     finally:
         conn.close()
@@ -674,79 +1052,172 @@ def _family_fallback_from_families(family_names: List[str], used_extract_ids: Li
 
 
 
-def _finalize_results(hit_map: Dict[int, Dict[str, Any]], req: StructureEvidenceRequest, query_mode: str, extra: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
-    results = list(hit_map.values())
-    results.sort(key=lambda x: (-float(x.get("match_score") or 0.0), int(x.get("quality_tier") or 99), int(x["extract_id"])))
-    results = results[: req.top_k]
+def _result_sort_key(item: Dict[str, Any]) -> Tuple[float, int, int]:
+    return (
+        -float(item.get("match_score") or 0.0),
+        int(item.get("quality_tier") or 99),
+        int(item.get("extract_id") or 0),
+    )
 
-    details = _fetch_extract_details([r["extract_id"] for r in results])
-    for item in results:
+
+def _family_group_key(item: Dict[str, Any]) -> str:
+    fam = str(item.get("reaction_family_name") or "").strip().lower()
+    if fam:
+        return f"family::{fam}"
+    return f"extract::{int(item.get('extract_id') or 0)}"
+
+
+def _family_evidence_preview(item: Dict[str, Any]) -> Dict[str, Any]:
+    return {
+        "extract_id": item.get("extract_id"),
+        "match_score": round(float(item.get("match_score") or 0.0), 3),
+        "extract_kind": item.get("extract_kind"),
+        "page_no": item.get("page_no"),
+        "source_zip": item.get("source_zip"),
+        "image_filename": item.get("image_filename"),
+        "transformation_text": item.get("transformation_text"),
+        "reactants_text": item.get("reactants_text"),
+        "products_text": item.get("products_text"),
+        "matched_components": list(item.get("matched_components") or []),
+    }
+
+
+def _aggregate_results_by_family(results: List[Dict[str, Any]], top_k: int) -> Tuple[List[Dict[str, Any]], int]:
+    groups: Dict[str, List[Dict[str, Any]]] = {}
+    ordered_keys: List[str] = []
+    for item in sorted(results, key=_result_sort_key):
+        key = _family_group_key(item)
+        if key not in groups:
+            groups[key] = []
+            ordered_keys.append(key)
+        groups[key].append(item)
+
+    aggregated: List[Dict[str, Any]] = []
+    collapsed_evidence_count = 0
+    member_weights = [1.0, 0.35, 0.20, 0.12, 0.08]
+
+    for key in ordered_keys:
+        members = sorted(groups[key], key=_result_sort_key)
+        rep = dict(members[0])
+        rep["representative_extract_id"] = rep.get("extract_id")
+        rep["representative_match_score"] = round(float(rep.get("match_score") or 0.0), 3)
+
+        previews = [_family_evidence_preview(m) for m in members[:6]]
+        rep["family_evidence_items"] = previews
+        rep["family_member_extract_ids"] = [m.get("extract_id") for m in members]
+        rep["family_hit_count"] = len(members)
+        rep["additional_evidence_count"] = max(0, len(members) - 1)
+        rep["family_group_key"] = key
+        rep["family_grouped"] = True
+        if rep["additional_evidence_count"]:
+            collapsed_evidence_count += rep["additional_evidence_count"]
+
+        aggregate_score = 0.0
+        for idx, member in enumerate(members):
+            weight = member_weights[idx] if idx < len(member_weights) else 0.05
+            aggregate_score += float(member.get("match_score") or 0.0) * weight
+        base_score = float(members[0].get("match_score") or 0.0)
+        cap_factor = 1.0 if len(members) <= 1 else 1.35
+        rep["match_score"] = round(min(aggregate_score, base_score * cap_factor), 3)
+        if len(members) > 1:
+            rep["family_aggregation_boost"] = round(rep["match_score"] / max(base_score, 1e-9), 3)
+
+        aggregated.append(rep)
+
+    aggregated.sort(key=_result_sort_key)
+    return aggregated[:top_k], collapsed_evidence_count
+
+
+def _finalize_results(hit_map: Dict[int, Dict[str, Any]], req: StructureEvidenceRequest, query_mode: str, extra: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    candidate_limit = max(req.top_k * 6, 48)
+    raw_results = list(hit_map.values())
+    raw_results.sort(key=_result_sort_key)
+    raw_results = raw_results[:candidate_limit]
+
+    reaction_delta = None
+    query_type_signals: Dict[str, bool] = {}
+    if extra and isinstance(extra.get("reaction_components"), dict):
+        reaction_delta = _reaction_delta_from_components(extra.get("reaction_components"))
+        query_type_signals = _reaction_coarse_signals(reaction_delta)
+
+    details = _fetch_extract_details([r["extract_id"] for r in raw_results])
+    for item in raw_results:
         detail = details.get(item["extract_id"])
         if detail:
             item.update(detail)
 
-        # Patch-2: apply extract_kind weight to match_score
+        delta_multiplier, delta_notes = _family_delta_adjustment(item.get("reaction_family_name"), reaction_delta)
+        item["match_score"] = float(item.get("match_score") or 0.0) * delta_multiplier
+        item["delta_multiplier"] = round(delta_multiplier, 3)
+        if delta_notes:
+            item["delta_notes"] = delta_notes
+
+        coarse_multiplier, coarse_notes, _ = _family_coarse_gate_adjustment(item.get("reaction_family_name"), reaction_delta)
+        item["match_score"] = float(item.get("match_score") or 0.0) * coarse_multiplier
+        item["coarse_gate_multiplier"] = round(coarse_multiplier, 3)
+        if coarse_notes:
+            item["coarse_gate_notes"] = coarse_notes
+
         extract_kind = (item.get("extract_kind") or "").strip().lower()
         kind_multiplier = EXTRACT_KIND_WEIGHTS.get(extract_kind, 1.0)
         item["match_score"] = float(item.get("match_score") or 0.0) * kind_multiplier
         item["extract_kind_weight"] = round(kind_multiplier, 2)
         item["match_score"] = round(item["match_score"], 3)
 
-    # Patch-4: family diversity penalty — re-sort then penalise repeated families
-    results.sort(key=lambda x: (-float(x.get("match_score") or 0.0), int(x.get("quality_tier") or 99), int(x["extract_id"])))
-    family_seen: Dict[str, int] = {}
-    FAMILY_REPEAT_FREE = 2        # first N hits from same family: no penalty
-    FAMILY_REPEAT_DECAY = 0.70    # each subsequent hit from same family is multiplied by this
-    for item in results:
-        fam = (item.get("reaction_family_name") or "").strip().lower()
-        if not fam:
+    raw_results.sort(key=_result_sort_key)
+    pruned_results: List[Dict[str, Any]] = []
+    pruned_mismatch_count = 0
+    for item in raw_results:
+        if _should_prune_low_confidence_mismatch(item, query_mode=query_mode):
+            pruned_mismatch_count += 1
             continue
-        count = family_seen.get(fam, 0)
-        if count >= FAMILY_REPEAT_FREE:
-            decay = FAMILY_REPEAT_DECAY ** (count - FAMILY_REPEAT_FREE + 1)
-            item["match_score"] = round(float(item["match_score"]) * decay, 3)
-            item["family_diversity_decay"] = round(decay, 3)
-        family_seen[fam] = count + 1
+        pruned_results.append(item)
 
-    # Final sort after all adjustments
-    results.sort(key=lambda x: (-float(x.get("match_score") or 0.0), int(x.get("quality_tier") or 99), int(x["extract_id"])))
+    raw_results = pruned_results
+    final, collapsed_evidence_count = _aggregate_results_by_family(raw_results, top_k=req.top_k)
 
-    family_hits: List[Dict[str, Any]] = []
-    if req.include_family_fallback:
-        family_names = [item.get("reaction_family_name") for item in results if item.get("reaction_family_name")]
-        family_hits = _family_fallback_from_families(
-            family_names=family_names,
-            used_extract_ids=[r["extract_id"] for r in results],
-            top_k=max(0, req.top_k - len(results)),
-        )
-
-    final = results + family_hits
-    final.sort(key=lambda x: (int(x.get("quality_tier") or 99), -float(x.get("match_score") or 0.0), int(x.get("page_no") or 0)))
-    final = final[: req.top_k]
+    conn = _db_connect()
+    try:
+        has_family_patterns = bool(conn.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='reaction_family_patterns'").fetchone())
+        family_profile_cache: Dict[str, Optional[Dict[str, Any]]] = {}
+        for item in final:
+            fam = item.get("reaction_family_name")
+            profile: Optional[Dict[str, Any]] = None
+            if has_family_patterns and fam:
+                key = str(fam).lower()
+                if key not in family_profile_cache:
+                    family_profile_cache[key] = _fetch_family_profile(conn, fam)
+                profile = family_profile_cache.get(key)
+            _naturalize_item(item, profile)
+    finally:
+        conn.close()
 
     payload = {
         "query_mode": query_mode,
-        "direct_count": len([r for r in results if r.get("quality_tier") == 1]),
-        "generic_count": len([r for r in results if r.get("quality_tier") == 2]),
-        "family_count": len(family_hits),
+        "direct_count": len([r for r in final if r.get("quality_tier") == 1]),
+        "generic_count": len([r for r in final if r.get("quality_tier") == 2]),
+        "family_count": 0,
+        "family_group_count": len(final),
+        "collapsed_evidence_count": collapsed_evidence_count,
+        "raw_candidate_count": len(raw_results),
+        "pruned_mismatch_count": pruned_mismatch_count,
         "results": final,
     }
     if final:
         conn = _db_connect()
         try:
-            profile_table = conn.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='reaction_family_patterns'").fetchone()
-            fam_cache = {}
-            if profile_table:
-                for fam in {r.get("reaction_family_name") for r in final if r.get("reaction_family_name")}:
-                    fam_cache[fam] = _fetch_family_profile(conn, fam) if fam else None
-            for item in final:
-                _naturalize_item(item, fam_cache.get(item.get("reaction_family_name")))
             families = [r.get("reaction_family_name") for r in final if r.get("reaction_family_name")]
-            families = list(dict.fromkeys(families))[:5]
-            if families and profile_table:
-                payload["family_profiles"] = [fam_cache.get(f) for f in families if fam_cache.get(f)]
+            families = list(dict.fromkeys(families))[:3]
+            if families and conn.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='reaction_family_patterns'").fetchone():
+                payload["family_profiles"] = [p for p in (_fetch_family_profile(conn, fam) for fam in families) if p]
         finally:
             conn.close()
+    if query_type_signals:
+        payload["query_reaction_types"] = _active_reaction_types(query_type_signals)
+        payload["query_reaction_types_ko"] = [_COARSE_SIGNAL_LABELS_KO.get(x, x) for x in payload["query_reaction_types"]]
+        payload["query_reaction_type_signals"] = query_type_signals
+    if reaction_delta:
+        payload["reaction_delta_summary"] = reaction_delta
     if extra:
         payload.update(extra)
     return payload

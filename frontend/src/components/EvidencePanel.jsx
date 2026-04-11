@@ -94,7 +94,8 @@ export default function EvidencePanel({ data, loading, error }) {
               <span style={chipStyle}>{queryModeLabel(data.query_mode)}</span>
               <span style={chipStyle}>직접 {data.direct_count || 0}</span>
               <span style={chipStyle}>제네릭 {data.generic_count || 0}</span>
-              <span style={chipStyle}>family {data.family_count || 0}</span>
+              <span style={chipStyle}>family 그룹 {data.family_group_count || results.length || 0}</span>
+              <span style={chipStyle}>접힌 evidence {data.collapsed_evidence_count || 0}</span>
             </div>
 
             {data.query_reaction_smiles ? (
@@ -153,6 +154,7 @@ export default function EvidencePanel({ data, loading, error }) {
                       <span style={confidenceChip(item.confidence_label)}>{item.confidence_label || "참고용"}</span>
                       <span style={mutedChipStyle}>{matchLabel(item.match_type)}</span>
                       <span style={mutedChipStyle}>{item.extract_kind || "unknown"}</span>
+                      {item.family_hit_count > 1 ? <span style={mutedChipStyle}>family evidence {item.family_hit_count}개</span> : null}
                     </div>
                   </div>
                   <div style={{ textAlign: "right", flexShrink: 0 }}>
@@ -179,6 +181,16 @@ export default function EvidencePanel({ data, loading, error }) {
                         {item.matched_components.map((mc, mIdx) => (
                           <div key={mIdx} style={{ fontSize: 12, lineHeight: 1.45, marginTop: mIdx ? 4 : 0 }}>
                             <strong>{mc.query_role || "query"}</strong> {mc.query_smiles || "?"} → <strong>{mc.matched_role || "indexed"}</strong> {mc.matched_smiles || "?"} ({matchLabel(mc.match_type)}, {Number(mc.match_score || 0).toFixed(2)})
+                          </div>
+                        ))}
+                      </div>
+                    ) : null}
+                    {Array.isArray(item.family_evidence_items) && item.family_evidence_items.length > 1 ? (
+                      <div style={{ marginBottom: 10 }}>
+                        <div style={{ fontSize: 12, fontWeight: 700, marginBottom: 4 }}>같은 family의 추가 evidence</div>
+                        {item.family_evidence_items.slice(1).map((ev, evIdx) => (
+                          <div key={ev.extract_id || evIdx} style={{ fontSize: 12, lineHeight: 1.45, marginTop: evIdx ? 4 : 0 }}>
+                            extract #{ev.extract_id} · {ev.extract_kind || "unknown"} · p.{ev.page_no || "?"} · score {Number(ev.match_score || 0).toFixed(2)}
                           </div>
                         ))}
                       </div>

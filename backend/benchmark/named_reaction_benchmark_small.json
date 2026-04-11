@@ -1,0 +1,261 @@
+{
+  "name": "CHEMLENS small benchmark v3",
+  "notes": "v3 expands v2 from 18 to 27 cases and adds one explicit boundary case with acceptable_top1/acceptable_top3 to track neighbor-family ambiguity without breaking regression checks.",
+  "cases": [
+    {
+      "case_id": "bv_340_exact_extract",
+      "expected_family": "Baeyer-Villiger Oxidation",
+      "reaction_smiles": "CC(=O)[C@H]1C[C@H]2C([C@@H]3OC(C)(C)O[C@@H]13)[C@@]1(C)C[C@H](O)C[C@@H]21>CC(=O)OOc1ccccc1C(=O)O>CC(=O)O[C@H]1C[C@H]2C([C@@H]3OC(C)(C)O[C@@H]13)[C@@]1(C)C[C@H](O)C[C@@H]21",
+      "source_extract_id": 340,
+      "notes": "Exact extract-derived reaction query from extract_molecules.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "bv_341_exact_extract",
+      "expected_family": "Baeyer-Villiger Oxidation",
+      "reaction_smiles": "O=C1C2C3CC4C3C1C42>CC(=O)OOc1ccccc1C(=O)O.CS(=O)(=O)Cl>C1C2CC3C1C1OC2C31",
+      "source_extract_id": 341,
+      "notes": "Compact cage ketone -> lactone-like exact extract query.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "bh_368_exact_extract",
+      "expected_family": "Buchwald-Hartwig Cross-Coupling",
+      "reaction_smiles": "CN1CC2(C)CCC1(C1CC1)c1cccc(O)c12>>CN1CC2(C)CCC1(C1CC1)c1ccc(Nc3ccccc3)cc12",
+      "source_extract_id": 368,
+      "notes": "Intramolecular aryl amination exact extract query.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "bh_370_exact_extract",
+      "expected_family": "Buchwald-Hartwig Cross-Coupling",
+      "reaction_smiles": "COC(=O)c1ccc([N+](=O)[O-])cc1Br.COc1cc(N)cc2c1CC(c1ccccc1)O2>>COC(=O)c1ccc([N+](=O)[O-])cc1Nc1cc2c(c(OC)c1)OC(c1ccccc1)C2",
+      "source_extract_id": 370,
+      "notes": "Aryl bromide + amine coupling exact extract query.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "castro_378_exact_extract",
+      "expected_family": "Castro-Stephens Coupling",
+      "reaction_smiles": "C#Cc1cc(OC)c(OC)cc1I>>COc1cc2c(c(OC)c1)-c1c#cc(-c3ccc(OC)c(OC)c3)c3c#cc(-c4ccc(OC)c(OC)c4)c(c13)C#C2",
+      "source_extract_id": 378,
+      "notes": "Alkynyl aryl iodide coupling exact extract query.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "chichibabin_384_exact_extract",
+      "expected_family": "Chichibabin Amination Reaction",
+      "reaction_smiles": "NCCCc1ccc(N)cn1>>Nc1ccc2c(n1)CCCC2",
+      "source_extract_id": 384,
+      "notes": "Heteroarene amination / ring closure exact extract query.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "claisen_387_exact_extract",
+      "expected_family": "Claisen Rearrangement",
+      "reaction_smiles": "CC1OC(=O)[C@H]2C3=C[C@@H]1C[C@H]3C[C@@H]2O[Si](C(C)(C)C)(C(C)(C)C)C(C)(C)C>>C=C[C@@]1(C)OC(=O)[C@H]2C3=C[C@@H](C)[C@@H]1C[C@H]3C[C@@H]2O[Si](C(C)(C)C)(C(C)(C)C)C(C)(C)C",
+      "source_extract_id": 387,
+      "notes": "Exact extract query from Claisen rearrangement example.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "benzilic_400_exact_extract",
+      "expected_family": "Benzilic Acid Rearrangement",
+      "reaction_smiles": "CC(=O)[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3C=C[C@]12C>>CC(=O)[C@H]1CC[C@@]2(C)[C@@H]1C1=CC(=O)CC[C@]1(C)[C@@]1(O)C(=O)O[C@H]21",
+      "source_extract_id": 400,
+      "notes": "Exact extract query from benzilic-acid-like rearrangement example.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "buchner_403_exact_extract",
+      "expected_family": "Buchner Reaction",
+      "reaction_smiles": "CCOC(=O)C=[N+]=[N-]>>CCOC(=O)c1ccccc1",
+      "source_extract_id": 403,
+      "notes": "Exact extract query from Buchner example currently used as regression case.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "aza_claisen_337_exact_extract",
+      "expected_family": "Aza-Claisen Rearrangement",
+      "reaction_smiles": "C[C@H]1OC(C)(C)O[C@H]1/C=C/CN1CCCC1>>C=CC1[C@H]2[C@@H]([C@@H]3OC(C)(C)O[C@@H]3C)CN1C(=O)[C@@H]2CC",
+      "source_extract_id": 337,
+      "notes": "Aza-Claisen rearrangement exact extract query.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "baker_344_exact_extract",
+      "expected_family": "Baker-Venkataraman Rearrangement",
+      "reaction_smiles": "NC(=O)Oc1ccccc1Cl>>CC(=O)c1cccc(Cl)c1OC(N)=O",
+      "source_extract_id": 344,
+      "notes": "Baker-Venkataraman rearrangement exact extract query.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "balz_351_exact_extract",
+      "expected_family": "Balz-Schiemann Reaction",
+      "reaction_smiles": "COc1cc2c(cc1N)[C@H]1CC[C@H]2[C@H]1[C@H]1CC[C@@H]2CCC(=O)[C@]21C>>COc1cc2c(cc1F)[C@H]1CC[C@H]2[C@H]1[C@H]1CC[C@@H]2CCC(=O)[C@]21C",
+      "source_extract_id": 351,
+      "notes": "Balz-Schiemann exact extract query.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "bartoli_413_exact_extract",
+      "expected_family": "Bartoli Indole Synthesis",
+      "reaction_smiles": "CCCCOC(OCCCC)c1ccc(F)c([N+](=O)[O-])c1>>O=Cc1c[nH]c2ccc(F)cc12",
+      "source_extract_id": 413,
+      "notes": "Bartoli indole synthesis exact extract query.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "barton_356_exact_extract",
+      "expected_family": "Barton Radical Decarboxylation",
+      "reaction_smiles": "O=C(O)C12CC3C4CC1C3C42>>O=C1C2CC3C4CC1(Br)C3C24",
+      "source_extract_id": 356,
+      "notes": "Barton radical decarboxylation exact extract query.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "brook_416_exact_extract",
+      "expected_family": "Brook Rearrangement",
+      "reaction_smiles": "[Li][O]/C=C(\\C)C1=CCC(C(C)C)=C1C.C=C(O[Si](C)(C)C(C)(C)C)C(=O)[Si](C)(C)C>>CC1=C(C(C)C)CC[C@H]2C1=C[C@]1(C)C(=O)C(O[Si](C)(C)C(C)(C)C)=C[C@@H]([Si](C)(C)C)C[C@@H]21.CC1=C2C3[C@@H](C=O)C=C[C@H]3[C@H](O)C(C)(C)[C@@H]2CCC1C(C)C",
+      "source_extract_id": 416,
+      "notes": "Brook rearrangement exact extract query.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "chichibabin_386_exact_extract",
+      "expected_family": "Chichibabin Amination Reaction",
+      "reaction_smiles": "[Li][CH2]c1cccc(C(C)(C)C)n1>>CC(C)(C)c1cccc(C2c3cccnc3CCc3cccnc32)n1",
+      "source_extract_id": 386,
+      "notes": "Second Chichibabin exact extract query.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "claisen_cond_408_exact_extract",
+      "expected_family": "Claisen Condensation",
+      "reaction_smiles": "COc1cc(C=O)c(-c2ccc3c(c2)OCO3)cc1OC.CCOC(=O)CP(=O)(OCC)OCC>>COc1cc(OC)c2c(c1)C1=C(c3ccc4c(c3)OCO4)C(=O)OC1C2.COc1cc(OC)c2c(c1)C1C(=C2)C(=O)OC1c1ccc2c(c1)OCO2.CCOC(=O)c1c(OCC)c(C(=O)O)c2c(OC)cc(OC)cc2c1-c1ccc2c(c1)OCO2.CCOC(=O)c1c(OCC)c(C(=O)O)c(-c2ccc3c(c2)OCO3)c2cc(OC)cc(OC)c12",
+      "source_extract_id": 408,
+      "notes": "Claisen condensation exact extract query.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "claisen_389_exact_extract",
+      "expected_family": "Claisen Rearrangement",
+      "reaction_smiles": "COc1cc2c(c(Oc3cc(C=C(C)C)cc(C)c3C=C(C)C)c1C=C(C)C)OC(C)(C)C2=O>>COc1cc2c(C(=O)O)c(O)c1[C@H]1[C@H]3C(C)=C(C=C(C)C)C[C@]3(C)[C@@H]2OC1(C)C",
+      "source_extract_id": 389,
+      "notes": "Second Claisen rearrangement exact extract query.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "aza_claisen_335_exact_extract",
+      "expected_family": "Aza-Claisen Rearrangement",
+      "reaction_smiles": "[Li][O]C1=CC=CC[C@@H](CC)N1C>>C=C[C@@H]1CC[C@H](C)NC1=O",
+      "source_extract_id": 335,
+      "notes": "Second aza-Claisen exact extract for family stability."
+    },
+    {
+      "case_id": "bv_342_exact_extract",
+      "expected_family": "Baeyer-Villiger Oxidation",
+      "reaction_smiles": "O=C1C2C3CC4C3C1C42>CC(=O)OOc1ccccc1C(=O)O.Cc1ccc(S(=O)(=O)O)cc1>C1C2CC3C1C1OC2C31",
+      "source_extract_id": 342,
+      "notes": "Third Baeyer-Villiger exact extract for family stability.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "baker_346_exact_extract",
+      "expected_family": "Baker-Venkataraman Rearrangement",
+      "reaction_smiles": "COc1c(C)c(CC(C)=O)c(OC)c(OC(C)OC)c1OC(=O)C(C)C(C)C(C)C(C)OCc1ccccc1>>COC1=C(OC(C)OC)C(OC)=C2C(=O)C(C(C)C(C)C(C)C(C)OCc3ccccc3)=C(O)C(C)=C12",
+      "source_extract_id": 346,
+      "notes": "Second Baker-Venkataraman family extract."
+    },
+    {
+      "case_id": "barton_357_exact_extract",
+      "expected_family": "Barton Radical Decarboxylation",
+      "reaction_smiles": "O=C(CCCCCCCCCCCCCC(=O)On1ccccc1=S)On1ccccc1=S.CC1=CC(=O)OC1=O>>CC1=C([C@H]2C(=O)O[C@@]2(C)CCCCCCCCCCCCCC[C@@]2(C)C(=O)O[C@H]2C)C(=O)O1",
+      "source_extract_id": 357,
+      "notes": "Second Barton Radical Decarboxylation exact extract.",
+      "disallow_top3": [
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "case_id": "bh_371_exact_extract",
+      "expected_family": "Buchwald-Hartwig Cross-Coupling",
+      "reaction_smiles": "COC(=O)c1cc(Br)c(N)cc1Nc1cc2c(c(OC)c1)OC(c1ccccc1)C2>>COC(=O)C1=Cc2cc1nc1cc3c(c(OC)c21)OC(c1ccccc1)C3",
+      "source_extract_id": 371,
+      "notes": "Third Buchwald-Hartwig exact extract. Keeps residual Amadori stress visible without failing benchmark."
+    },
+    {
+      "case_id": "benzilic_402_exact_extract",
+      "expected_family": "Benzilic Acid Rearrangement",
+      "reaction_smiles": "CC1=C[C@H]2[C@H]3C(=O)C=C[C@]2(C)[C@H]1OC(=O)[C@@]12C[C@@]3(C)[C@H](O)[C@H](O)[C@@]1(O)C2(C)C>CO.O.O=C([O-])[O-].[Na+].[Na+]>CC1=C[C@H]2[C@H]3C(=O)C=C[C@]2(C)[C@H]1OC(=O)[C@@]1(O)[C@@H](O)[C@@H](O)[C@]3(C)C1(C)C",
+      "source_extract_id": 402,
+      "notes": "Second Benzilic exact extract."
+    },
+    {
+      "case_id": "claisen_cond_409_exact_extract",
+      "expected_family": "Claisen Condensation",
+      "reaction_smiles": "C[C@@H]1SC2(CCCS2)[C@@H](C)OC1=O>>COC(=O)[C@H](O)[C@@H]1C(OC)O[C@H](C)[C@@]12CCCS2",
+      "source_extract_id": 409,
+      "notes": "Second Claisen condensation exact extract."
+    },
+    {
+      "case_id": "barton_radical_rxn_353_exact_extract",
+      "expected_family": "Barton Radical Decarboxylation Reaction",
+      "reaction_smiles": "CC(C)(C#N)N=NC(C)(C)C#N.CCC[CH2][SnH]([CH2]CCC)[CH2]CCC>>CCC[CH2][Sn]([CH2]CCC)[CH2]CCC",
+      "source_extract_id": 353,
+      "notes": "Named family variant using explicit Reaction suffix."
+    },
+    {
+      "case_id": "barton_mccombie_359_boundary_extract",
+      "expected_family": "Barton-Mccombie Radical Deoxygenation Reaction",
+      "acceptable_top1": [
+        "Barton Radical Decarboxylation Reaction"
+      ],
+      "acceptable_top3": [
+        "Barton Radical Decarboxylation Reaction"
+      ],
+      "reaction_smiles": "CC(C)(C#N)N=NC(C)(C)C#N.CCC[CH2][SnH]([CH2]CCC)[CH2]CCC>>CCC[CH2][Sn]([CH2]CCC)[CH2]CCC",
+      "source_extract_id": 359,
+      "notes": "Boundary case: deoxygenation-like transformation that currently retrieves Barton family neighbor first."
+    }
+  ]
+}
