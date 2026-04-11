@@ -1,0 +1,60 @@
+CHEMLENS ROUND 9 - PATCHED v3 (pipeline_sample_v4)
+생성: 2026-04-05T07:14:33Z
+파이프라인 버전: v4 | 프롬프트 버전: nr_page_v3
+
+=== v3 (pipeline_sample_v3) 대비 변경사항 ===
+
+1. RECITATION 재시도 로직 추가
+   - RecitationError 전용 예외 클래스
+   - gemini_call_with_retry(): 최대 3회 시도
+     * 1차: 원래 프롬프트
+     * 2차: RETRY_SLEEP(5초) 후 동일 프롬프트 재시도
+     * 3차: RETRY_SLEEP 후 보수 fallback 프롬프트 (더 짧고 단순)
+   - 3회 모두 실패 시 fail 기록 (파이프라인 중단 없음)
+   - p54 같은 RECITATION 에러 페이지 복구 목적
+
+2. reaction_family_name Title Case 정규화
+   - canonical_family() + to_title_case() 함수
+   - 하이픈 포함 단어 처리 (Simmons-Smith, 2-aza-Cope 등)
+   - 대문자 전체 (ACETOACETIC ESTER SYNTHESIS) → Title Case
+   - 소문자 전체 → Title Case
+   - 페이지 내 모든 extract가 동일한 canonical family name 사용
+   - reaction_family_name_norm: 소문자 정규화된 검색 키
+
+3. 전체 132장 모드 지원
+   - --all 플래그: named_reactions.zip 전체 처리
+   - 기본값: 샘플 15장 (하위 호환)
+   - GPT 승인 후 전체 확대 실행
+
+4. 추출 요약 중복 제거
+   - GROUP BY로 동일 page/scheme/family 중복 출력 억제
+
+=== 실행 방법 ===
+
+샘플 15장 (재실행):
+    python pipeline_sample_v4.py --rebuild
+
+전체 132장 (GPT 승인 후):
+    python pipeline_sample_v4.py --all --batch full_batch1
+
+ZIP 직접 지정:
+    python pipeline_sample_v4.py --zip "named reactions.zip" --all
+
+=== GPT 승인 조건 (v3에서 충족) ===
+✓ p14~p16: meta_explanatory, family=null, schemes=0
+✓ p46~p53: toc, family=null, schemes=0
+✓ p55/p57: list → object 정상화 (reaction_content)
+✓ manifest 에러 없이 생성
+✓ reaction_cards 11371행 변경 없음
+✓ placeholder scheme 생성 없음
+
+=== 이번 추가 수정 ===
+✓ RECITATION 재시도 (p54 복구 목적)
+✓ family name Title Case 정규화
+✓ 전체 132장 모드
+
+=== 아직 하면 안 되는 것 ===
+✗ reaction_cards 반영
+✗ promote 자동화
+✗ 다른 named reactions (2)~(7).zip 확장
+  (전체 132장이 안정 확인된 후)

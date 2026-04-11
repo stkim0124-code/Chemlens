@@ -1,0 +1,626 @@
+{
+  "run_at": "2026-04-06T13:43:39Z",
+  "batch": "full_batch1",
+  "tag": "manual_retry6",
+  "targets": [
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 72,
+      "image_filename": "named reactions_72.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "AZA-CLAISEN REARRANGEMENT (3-AZA-COPE REARRANGEMENT)",
+        "reaction_family_name": "Aza-Claisen Rearrangement",
+        "page_section_hints": [
+          "Importance",
+          "Mechanism",
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_index": 1,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview",
+            "bbox_note": "Upper half overview schemes comparing Claisen and aza-Claisen variants.",
+            "vision_summary": "Overview of Claisen vs aza-Claisen rearrangements, including neutral, charged, and keteneimine variants of 3-aza-1,5-hexadienes.",
+            "caption_text": null,
+            "nearby_text": "The thermal [3,3]-sigmatropic rearrangement of N-allyl enamines is called the aza-Claisen rearrangement; milder temperatures are required as one progresses from neutral to charged to keteneimine systems.",
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Aza-Claisen Rearrangement",
+                "transformation_text": "Thermal or Lewis-acid-promoted aza-Claisen rearrangement of N-allyl enamines / aza-hexadiene systems.",
+                "reactants_text": "3-aza-1,5-hexadiene; 3-azonia-1,5-hexadiene; 3-aza-1,2,5-hexatriene",
+                "products_text": "Rearranged imine / iminium / keteneimine products",
+                "intermediates_text": null,
+                "reagents_text": "heat or Lewis acid",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": "170–250 °C (neutral); 25–110 °C (charged); <25 °C (keteneimine)",
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Page compares ordinary Claisen rearrangement with aza-Claisen variants.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          },
+          {
+            "scheme_index": 2,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step",
+            "bbox_note": "Chairlike transition-state scheme in the middle-lower panel.",
+            "vision_summary": "Concerted aza-Claisen rearrangement proceeding through a chairlike transition state with quasi-equatorial substituent arrangement.",
+            "caption_text": "transition state",
+            "nearby_text": "The aza-Claisen rearrangement is a concerted process and usually takes place via a chairlike transition state.",
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Aza-Claisen Rearrangement",
+                "transformation_text": "Concerted aza-Claisen rearrangement through a chairlike transition state.",
+                "reactants_text": "3-aza-1,5-hexadiene-type substrate",
+                "products_text": "Rearranged unsaturated imine / enamine product",
+                "intermediates_text": "chairlike transition state",
+                "reagents_text": "heat",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          },
+          {
+            "scheme_index": 3,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "bbox_note": "Bottom synthetic application toward isoiridomyrmecin.",
+            "vision_summary": "Carboxamide enolate aza-Claisen rearrangement used in the enantioselective total synthesis of (-)-isoiridomyrmecin.",
+            "caption_text": "(-)-Isoiridomyrmecin",
+            "nearby_text": "S. Ito et al. utilized the aza-Claisen rearrangement of carboxamide enolates for the enantioselective total synthesis of (-)-isoiridomyrmecin.",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Aza-Claisen Rearrangement",
+                "transformation_text": "Carboxamide enolate aza-Claisen rearrangement in the synthesis of (-)-isoiridomyrmecin.",
+                "reactants_text": "Chiral carboxamide / allyl substrate shown on page",
+                "products_text": "(-)-Isoiridomyrmecin",
+                "intermediates_text": null,
+                "reagents_text": "1. LiHMDS, toluene; 2. heat",
+                "catalysts_text": null,
+                "solvents_text": "toluene",
+                "temperature_text": "-78 °C then 100 °C",
+                "time_text": "30 min then 8 h",
+                "yield_text": "77% for 2 steps",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Product isolated as a single (R,R) stereoisomer according to page text.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 85,
+      "image_filename": "named reactions_85.jpg",
+      "result": {
+        "page_kind": "meta_explanatory",
+        "page_title": "BALDWIN'S RULES / GUIDELINES FOR RING-CLOSING REACTIONS",
+        "reaction_family_name": null,
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": []
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 103,
+      "image_filename": "named reactions_103.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BECKMANN REARRANGEMENT",
+        "reaction_family_name": "Beckmann Rearrangement",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_index": 1,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "bbox_note": "Top panel: codeine synthesis.",
+            "vision_summary": "Oxime brosylate undergoes Beckmann rearrangement to lactam intermediates, then onward to (+)-codeine.",
+            "caption_text": "(+)-Codeine",
+            "nearby_text": "J.D. White used a Beckmann rearrangement of a cyclopentanone oxime derivative in the asymmetric total synthesis of non-natural (+)-codeine.",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Beckmann Rearrangement",
+                "transformation_text": "Beckmann rearrangement en route to (+)-codeine.",
+                "reactants_text": "Cyclopentanone-derived oxime precursor",
+                "products_text": "Lactam intermediates; (+)-Codeine",
+                "intermediates_text": "oxime brosylate",
+                "reagents_text": "1. HONH2·HCl, NaOAc; 2. BsCl, Et3N, DMAP; 3. AcOH",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": "25 °C",
+                "time_text": null,
+                "yield_text": "90% (oxime formation); 69% for 2 steps after brosylation / rearrangement",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Two lactam isomers formed in an 11:1 ratio favoring the desired isomer.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          },
+          {
+            "scheme_index": 2,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "bbox_note": "Middle panel: ibogamine route.",
+            "vision_summary": "anti-Oxime converted under sulfonylation / Beckmann conditions to a seven-membered lactam, then elaborated to (-)-ibogamine.",
+            "caption_text": "(-)-Ibogamine",
+            "nearby_text": "J.D. White reported synthesis of (-)-ibogamine via a Beckmann rearrangement of an anti oxime in the presence of p-toluenesulfonyl chloride.",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Beckmann Rearrangement",
+                "transformation_text": "Beckmann rearrangement en route to (-)-ibogamine.",
+                "reactants_text": "Bicyclic ketone precursor",
+                "products_text": "Seven-membered lactam intermediate; (-)-Ibogamine",
+                "intermediates_text": "anti oxime",
+                "reagents_text": "HONH2·HCl, NaOAc; p-TsCl, Et3N, DMAP (cat.)",
+                "catalysts_text": null,
+                "solvents_text": "MeOH; DCM",
+                "temperature_text": null,
+                "time_text": "3 h reflux for oxime formation; 3 h for sulfonylation / rearrangement",
+                "yield_text": "81% (anti oxime); 74% (lactam-forming step)",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "The azatricyclic framework was established through Beckmann rearrangement.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          },
+          {
+            "scheme_index": 3,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "bbox_note": "Bottom panel: photo-Beckmann in sparteine synthesis.",
+            "vision_summary": "Hydroxylamine precursor converted in situ to nitrone and photolyzed to lactam, then reduced to (+)-sparteine.",
+            "caption_text": "(+)-Sparteine",
+            "nearby_text": "J. Aubé used a photo-Beckmann rearrangement in the endgame of (+)-sparteine synthesis.",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Beckmann Rearrangement",
+                "transformation_text": "Photo-Beckmann rearrangement en route to (+)-sparteine.",
+                "reactants_text": "Hydroxylamine / ketone precursor shown on page",
+                "products_text": "Lactam intermediate; (+)-Sparteine",
+                "intermediates_text": "nitrone",
+                "reagents_text": "TFA, 4A molecular sieves; NaHCO3; hν (254 nm); LAH",
+                "catalysts_text": null,
+                "solvents_text": "benzene; THF",
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "98% (nitrone formation); 76% (photolysis); 95% (LAH reduction)",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Hydroxylamine is generated in situ and reacts intramolecularly with the ketone before photolysis.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 125,
+      "image_filename": "named reactions_125.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BURGESS DEHYDRATION REACTION",
+        "reaction_family_name": "Burgess Dehydration Reaction",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_index": 1,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "bbox_note": "Top panel: taxol intermediate.",
+            "vision_summary": "Complex tricyclic tertiary alcohol dehydrated with Burgess reagent to an exocyclic alkene in the taxol synthesis.",
+            "caption_text": "Exocyclic alkene",
+            "nearby_text": "R. Holton used the Burgess dehydration reaction to install an exo-methylene group in the first total synthesis of taxol.",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Burgess Dehydration Reaction",
+                "transformation_text": "Burgess dehydration of a tricyclic tertiary alcohol to an exocyclic alkene.",
+                "reactants_text": "Taxol ABC-ring tertiary alcohol intermediate",
+                "products_text": "Exocyclic alkene",
+                "intermediates_text": null,
+                "reagents_text": "1. Burgess reagent; 2. acidic work-up",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "63%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Used to set the stage for D-ring (oxetane) formation in taxol synthesis.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          },
+          {
+            "scheme_index": 2,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "bbox_note": "Middle panel: streptogramin route.",
+            "vision_summary": "Burgess cyclodehydration gives an oxazoline, followed by oxidation to an oxazole in the synthesis of (-)-madumycin II.",
+            "caption_text": "(-)-Madumycin II",
+            "nearby_text": "A.I. Meyers used Burgess cyclodehydration followed by oxidation in the first enantioselective synthesis of (-)-madumycin II.",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Burgess Dehydration Reaction",
+                "transformation_text": "Burgess cyclodehydration / oxidation sequence in the synthesis of (-)-madumycin II.",
+                "reactants_text": "Hydroxy amide / masked dehydropeptide precursor shown on page",
+                "products_text": "Oxazole-containing intermediate; (-)-Madumycin II",
+                "intermediates_text": null,
+                "reagents_text": "1. Burgess reagent; 2. t-Buylperbenzoate, Cu(I)Br, Cu(OAc)2",
+                "catalysts_text": null,
+                "solvents_text": "benzene",
+                "temperature_text": null,
+                "time_text": "7.5 h reflux",
+                "yield_text": "56% for 2 steps",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "The oxazole moiety is introduced in two steps via Burgess cyclodehydration then oxidation.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          },
+          {
+            "scheme_index": 3,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "bbox_note": "Bottom panel: herbicidin B route.",
+            "vision_summary": "Secondary alcohol removed with Burgess reagent to form an α,β-unsaturated ketone, followed by hydrogenation / deprotection steps to herbicidin B.",
+            "caption_text": "Herbicidin B",
+            "nearby_text": "A. Matsuda used the Burgess reagent to remove a secondary alcohol functionality in a route to herbicidin B.",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Burgess Dehydration Reaction",
+                "transformation_text": "Burgess-reagent-mediated dehydration en route to Herbicidin B.",
+                "reactants_text": "C-glycoside precursor (R1 = TBDPS, R2 = TBS)",
+                "products_text": "enone intermediate; Herbicidin B",
+                "intermediates_text": null,
+                "reagents_text": "Burgess reagent; 1. Pd/C, HCO2NH4; 2. Sm, I2; 3. TBAF",
+                "catalysts_text": null,
+                "solvents_text": "toluene; MeOH; THF",
+                "temperature_text": "room temperature for Burgess step",
+                "time_text": null,
+                "yield_text": "79% (enone formation); 31% for 3 subsequent steps",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "The corresponding α,β-unsaturated ketone was isolated in good yield before conversion to herbicidin B.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 143,
+      "image_filename": "named reactions_143.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "CLAISEN-IRELAND REARRANGEMENT",
+        "reaction_family_name": "Claisen-Ireland Rearrangement",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_index": 1,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "bbox_note": "Top panel: ebelactone A/B route.",
+            "vision_summary": "Ireland-Claisen rearrangement used to set three stereocenters in a substituted alkene precursor, followed by hydrolysis / homologation to ebelactone A.",
+            "caption_text": "(-)-Ebelactone A",
+            "nearby_text": "I. Paterson used the Ireland-Claisen rearrangement in the synthesis of (-)-ebelactone A and B.",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Claisen-Ireland Rearrangement",
+                "transformation_text": "Ireland-Claisen rearrangement en route to (-)-Ebelactone A / B.",
+                "reactants_text": "β-Lactone-containing allyl ester precursor shown on page",
+                "products_text": "Rearranged acid / ester intermediate; (-)-Ebelactone A",
+                "intermediates_text": "(E)-silyl ketene acetal and chairlike [3,3]-transition state",
+                "reagents_text": "TMSCl, Et3N, LDA; 1 N HCl; CH2N2 / Et2O",
+                "catalysts_text": null,
+                "solvents_text": "THF; Et2O",
+                "temperature_text": "-78 °C then 20–60 °C",
+                "time_text": "1 h for silyl ketene acetal formation",
+                "yield_text": "83%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Page text states 96:4 diastereoselectivity, indicating highly (E)-selective silyl ketene acetal formation.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          },
+          {
+            "scheme_index": 2,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "bbox_note": "Middle panel: aspidophytine intermediate.",
+            "vision_summary": "Claisen-Ireland rearrangement of a bicyclic allyl ester followed by esterification gives an intermediate used in the convergent synthesis of aspidophytine.",
+            "caption_text": "Aspidophytine",
+            "nearby_text": "E.J. Corey used the Claisen-Ireland rearrangement to construct a key intermediate in the first convergent enantioselective total synthesis of aspidophytine.",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Claisen-Ireland Rearrangement",
+                "transformation_text": "Claisen-Ireland rearrangement en route to Aspidophytine.",
+                "reactants_text": "Bicyclic allyl ester substrate shown on page",
+                "products_text": "Rearranged intermediate for Aspidophytine",
+                "intermediates_text": null,
+                "reagents_text": "1. LDA / TBSCl, THF, -78 °C then heat ([3,3]); 2. EDCI, i-PrOH, DMAP",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "57% for 2 steps",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Used to create a key convergent intermediate in the aspidophytine synthesis.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          },
+          {
+            "scheme_index": 3,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "bbox_note": "Bottom panel: trichodiene route.",
+            "vision_summary": "Optically active trichodiene prepared via Claisen-Ireland rearrangement that forges vicinal quaternary centers with complete facial selectivity.",
+            "caption_text": "(-)-Trichodiene",
+            "nearby_text": "J.C. Gilbert used a Claisen-Ireland rearrangement as the key step in the first chemical synthesis of optically active (-)-trichodiene.",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Claisen-Ireland Rearrangement",
+                "transformation_text": "Claisen-Ireland rearrangement en route to (-)-Trichodiene.",
+                "reactants_text": "Methoxy-substituted allyl ester / cyclopentyl substrate shown on page",
+                "products_text": "Predominant rearranged product mixture (92:8); (-)-Trichodiene",
+                "intermediates_text": "Predominantly one chairlike transition state shown on page",
+                "reagents_text": "1. LDA, TMSCl, TEA, THF; 2. reflux; 3. H3O+; 4. CH2N2, Et2O",
+                "catalysts_text": null,
+                "solvents_text": "THF; Et2O",
+                "temperature_text": "-110 °C then reflux",
+                "time_text": "12 h reflux",
+                "yield_text": "75% for 3 steps",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Page states complete facial selectivity and excellent diastereoselectivity.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 145,
+      "image_filename": "named reactions_145.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "CLEMMENSEN REDUCTION",
+        "reaction_family_name": "Clemmensen Reduction",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_index": 1,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "bbox_note": "Top panel: quinolone / pyranone examples.",
+            "vision_summary": "Acyl-substituted 1,3-dicarbonyl heterocycles reduced to corresponding alkyl analogs under Zn / acid Clemmensen conditions.",
+            "caption_text": null,
+            "nearby_text": "T. Kappe reduced 3-acyl-4-hydroxy-2(1H)-quinolones and 3-acyl-4-hydroxy-6-methylpyran-2-ones using zinc powder in acetic acid / hydrochloric acid.",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Clemmensen Reduction",
+                "transformation_text": "Reduction of acyl-substituted heterocyclic 1,3-dicarbonyl compounds to alkyl analogs.",
+                "reactants_text": "3-acyl-4-hydroxy-2(1H)-quinolones; 3-acyl-4-hydroxy-6-methylpyran-2-ones",
+                "products_text": "3-alkyl-4-hydroxy-2(1H)-quinolones; 3-alkyl-4-hydroxy-6-methylpyran-2-ones",
+                "intermediates_text": null,
+                "reagents_text": "Zn / AcOH; EtOH / HCl",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": "80 °C",
+                "time_text": "2.5 h; 5 h",
+                "yield_text": "97%; 66%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Representative examples shown for R = CH2Ph and R = CH3.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          },
+          {
+            "scheme_index": 2,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "bbox_note": "Second panel: pumiliotoxin C route.",
+            "vision_summary": "cis-Fused decahydroquinolone deoxygenated under Clemmensen conditions in the synthesis of pumiliotoxin C.",
+            "caption_text": "5-Epi-Pumiliotoxin C",
+            "nearby_text": "C. Kibayashi used the Clemmensen reduction in the endgame of (-)-pumiliotoxin C synthesis.",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Clemmensen Reduction",
+                "transformation_text": "Clemmensen reduction en route to 5-Epi-Pumiliotoxin C.",
+                "reactants_text": "cis-Fused decahydroquinolone precursor",
+                "products_text": "Deoxygenated product mixture (dr = 2:1); 5-Epi-Pumiliotoxin C",
+                "intermediates_text": null,
+                "reagents_text": "Zn / Et2O; HCl; H2 / Pd(C)",
+                "catalysts_text": null,
+                "solvents_text": "Et2O; HCl-MeOH",
+                "temperature_text": "-5 °C",
+                "time_text": null,
+                "yield_text": "57% (deoxygenation); 91% (hydrogenolysis / debenzylation)",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Subsequent debenzylation converted the major isomer into 5-epi-pumiliotoxin C.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          },
+          {
+            "scheme_index": 3,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "bbox_note": "Third panel: lepadiformine revision.",
+            "vision_summary": "Tricyclic piperidone exposed to Clemmensen conditions gives mainly elimination product and minor desired alkane, relevant to structure revision of lepadiformine.",
+            "caption_text": "Putative structure of Lepadiformine",
+            "nearby_text": "S.M. Weinreb used Clemmensen conditions to remove a ketone in a lepadiformine synthesis, leading mainly to elimination and prompting structure revision.",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Clemmensen Reduction",
+                "transformation_text": "Clemmensen reduction / elimination sequence in the revision of lepadiformine.",
+                "reactants_text": "Tricyclic piperidone intermediate",
+                "products_text": "Elimination product; desired reduced alkane; putative structure of Lepadiformine",
+                "intermediates_text": null,
+                "reagents_text": "Zn(Hg), conc. HCl; H2, 10% Pd/C",
+                "catalysts_text": null,
+                "solvents_text": "toluene; EtOH",
+                "temperature_text": "90 °C",
+                "time_text": "23 h; 6 h",
+                "yield_text": "51% elimination product; 6% reduced alkane; 70% hydrogenation of elimination product",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Under these conditions the minor elimination product was formed predominantly.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          },
+          {
+            "scheme_index": 4,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "bbox_note": "Bottom panel: tetracyclic undecane derivatives.",
+            "vision_summary": "Ketone functionality removed under Clemmensen conditions in a route to novel tetracyclic undecane derivatives, followed by hydrogenation and oxidation.",
+            "caption_text": "Novel tetracyclic undecane derivative",
+            "nearby_text": "F.J.C. Martins used the Clemmensen reduction in a synthesis of novel tetracyclic undecane derivatives.",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Clemmensen Reduction",
+                "transformation_text": "Clemmensen reduction in a route to a novel tetracyclic undecane derivative.",
+                "reactants_text": "Tetracyclic ketone / alcohol precursor shown on page",
+                "products_text": "Reduced intermediate; novel tetracyclic undecane derivative",
+                "intermediates_text": null,
+                "reagents_text": "6 N HCl / DCM, Zn(Hg); H2 / Pt; AcOH, CrO3",
+                "catalysts_text": null,
+                "solvents_text": "DCM; MeOH; AcOH",
+                "temperature_text": null,
+                "time_text": "36 h",
+                "yield_text": "73%; 81%; 71%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Three-step sequence shown after the Clemmensen deoxygenation.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.72
+              }
+            ],
+            "confidence": 0.75
+          }
+        ]
+      }
+    }
+  ]
+}

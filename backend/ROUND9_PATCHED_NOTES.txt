@@ -1,0 +1,103 @@
+CHEMLENS ROUND 9 - PATCHED PREP
+생성: 2026-04-05T06:20:13Z
+파이프라인 버전: v2
+
+=== prep ZIP 대비 변경사항 ===
+
+1. scheme_candidates: page-level 1행 → scheme별 1행 저장
+   - Gemini가 반환하는 scheme_candidates[] 배열을 순회
+   - scheme_index별로 scheme_candidates에 1행씩 INSERT
+   - 각 reaction_extracts는 자신의 scheme_candidate_id에 연결
+
+2. 파일명 자동 인식 (find_zip 함수)
+   - "named reactions.zip" / "named_reactions.zip" 둘 다 자동 인식
+   - --zip 인자로 직접 지정 가능
+   - 사용자 수동 파일명 변경 불필요
+
+3. DDL 전면 보강 (GPT 합의 명세 100% 반영)
+   - page_images: 15개 칼럼 (source_zip, source_doc, page_no, image_filename,
+     sha256, file_size_bytes, width, height, ingest_batch, ingest_status,
+     error_message, created_at, updated_at 등)
+   - scheme_candidates: 21개 칼럼 (scheme_index, scheme_role, bbox_x1~y2,
+     crop_path, nearby_text, caption_text, vision_summary, vision_raw_json,
+     confidence, review_status, review_notes, detector_model,
+     detector_prompt_version 등)
+   - reaction_extracts: 30개 칼럼 (reaction_family_name_norm, extract_kind,
+     transformation_text, reactants/products/intermediates/reagents/catalysts/
+     solvents/temperature/time/yield/workup/conditions/notes_text,
+     reactant_smiles=NULL, product_smiles=NULL, smiles_confidence,
+     extraction_confidence, parse_status, promote_decision, rejection_reason,
+     extractor_model, extractor_prompt_version, extraction_raw_json 등)
+
+4. 프롬프트/JSON 형식 GPT 합의본으로 통일
+   - page_title / reaction_family_name / page_section_hints /
+     scheme_candidates[] / extracts[] 3층 구조
+   - 별도 파일: prompt_named_reactions_v1.txt (PROMPT_VERSION="nr_page_v1")
+
+5. JSON 강제 응답
+   - response_mime_type: "application/json" 설정
+   - system_instruction 분리 지정
+   - temperature: 0.1 (deterministic)
+
+6. delete-and-rebuild 재실행 전략
+   - --rebuild 플래그: 동일 batch의 page_images/scheme_candidates/reaction_extracts 삭제 후 재처리
+   - ingest_batch 기준 식별
+   - 프롬프트/모델 변경 시 안전하게 재실행 가능
+
+7. provenance 완전 보존
+   - source_zip, source_doc, page_no, image_filename, sha256
+   - detector_model / extractor_model = gemini-2.5-pro
+   - detector_prompt_version / extractor_prompt_version = nr_page_v1
+   - vision_raw_json (페이지 전체 Gemini 응답)
+   - extraction_raw_json (extract별 원문 JSON)
+   - created_at, updated_at 모든 테이블
+
+8. reactant_smiles / product_smiles 반드시 NULL
+   - generic R-group 도식 억지 확정 완전 차단
+   - 코드 주석으로 명시: "반드시 NULL (generic R-group 보호)"
+
+9. reaction_cards 변경 없음 (11371행 그대로)
+
+=== 실행 방법 ===
+
+기본 실행:
+    conda activate chemlens
+    python pipeline_sample_v2.py
+
+ZIP 직접 지정:
+    python pipeline_sample_v2.py --zip "named reactions.zip"
+
+배치 이름 지정:
+    python pipeline_sample_v2.py --batch sample_batch1
+
+재실행 (delete-and-rebuild):
+    python pipeline_sample_v2.py --rebuild --batch sample_batch1
+
+=== 필요 파일 (같은 폴더에 위치) ===
+- labint_round9_patched.db
+- named reactions.zip (또는 named_reactions.zip)
+- prompt_named_reactions_v1.txt
+- .env (GEMINI_API_KEY=...)
+
+=== 이번 라운드 범위 ===
+샘플 15장 only:
+- 약어 테이블 3장 (p14, p15, p16)
+- 실제 반응 페이지 12장 (p46~p57)
+
+=== DB 상태 ===
+labint_docs_round9.db:
+  - documents: 154
+  - pages: 13216
+  - chunks: 14541
+
+labint_round9_patched.db:
+  - reaction_cards: 11371 (변경 없음)
+  - page_images: 0 → 파이프라인 실행 후 채워짐
+  - scheme_candidates: 0 → 파이프라인 실행 후 채워짐
+  - reaction_extracts: 0 → 파이프라인 실행 후 채워짐
+
+=== 다음 단계 ===
+1. 로컬에서 pipeline_sample_v2.py 실행
+2. 결과를 GPT에게 제출하여 품질 검증
+3. 검증 통과 → 전체 132장 확대
+4. 전체 확대 통과 → named reactions (2)~(7).zip 순차 처리

@@ -1,0 +1,4 @@
+@echo off
+cd /d %~dp0
+python upgrade_labint_frontmatter_batch2.py --db app\labint.db --db app\labint_round9_bridge_work.db --export-templates-dir seed_templates
+pause

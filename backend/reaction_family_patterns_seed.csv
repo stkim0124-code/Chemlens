@@ -1,0 +1,50 @@
+family_name,transformation_type,reactant_fg_smarts,product_fg_smarts,key_reagents_clue,hierarchy_parent,priority,active,notes
+Acetoacetic Ester Synthesis,"alkylation,decarboxylation",[CX3](=O)[CH2][CX3](=O)O,[CX3](=O)[CH]([#6])[CX3](=O)O,base; alkyl halide; H3O+; heat,Carbonyl Chemistry,70,1,β-keto ester alkylation and optional hydrolysis/decarboxylation family.
+Acyloin Condensation,reductive coupling,[CX3](=O)O[#6],[CX3](=O)[CH]([OH])[#6],Na; sodium; metal; silyl chloride,Reductive Coupling,70,1,Diester to α-hydroxy ketone/acyloin.
+Alder (ene) Reaction,"pericyclic,ene reaction",C=C,C=C,heat; Lewis acid,Pericyclic Reaction,80,1,Ene reaction with allylic H transfer; generic alkene patterns only.
+Alder Ene Reaction,"pericyclic,ene reaction",C=C,C=C,heat; Lewis acid,Pericyclic Reaction,80,1,Alias/variant of Alder ene reaction.
+Aldol Reaction,"addition,C-C bond formation",[CX3](=O)[#6],[CX3](=O)[CH]([#6])[CH]([OH])[#6],base; LDA; NaOH; KOH; TiCl4,Carbonyl Addition,40,1,Carbonyl donor/acceptor to β-hydroxy carbonyl; can also dehydrate further.
+Alkene (olefin) Metathesis,metathesis,C=C,C=C,Grubbs; Schrock; Ru; Mo,Olefin Transformation,60,1,Olefin exchange; reaction center best recognized by catalyst clue.
+Alkyne Metathesis,metathesis,C#C,C#C,Mo; W; alkyne metathesis catalyst,Alkyne Transformation,60,1,Alkyne exchange/metathesis family.
+Amadori Rearrangement,"rearrangement,amine-carbonyl chemistry",[NX3][CH]([OH])[CX3](=O),[NX3][CH2][CX3](=O),acid; p-TsOH,Carbonyl Rearrangement,85,1,Sugar/amine rearrangement to amino ketone; generic pattern only.
+Arbuzov Reaction,"substitution,phosphonate formation",[P;X3]([O])([O])[O],[P](=O)([#6])([O])[O],trialkyl phosphite; alkyl halide,Organophosphorus Chemistry,55,1,Michaelis-Arbuzov conversion of phosphite + alkyl halide to phosphonate.
+Arndt-Eistert Homologation / Synthesis,homologation,[CX3](=O)Cl,[CX3](=O)[CH2][OX2H],diazomethane; Wolff; Ag2O; hv,Homologation,55,1,Acid chloride/diazoketone to homologated acid/ester.
+Aza-Claisen Rearrangement,"rearrangement,[3,3]-sigmatropic",[NX3]-C=C,[NX3][CH2][CH]=[CH],heat; Lewis acid,Sigmatropic Rearrangement,75,1,Allylic amine/amide rearrangement.
+Aza-Cope Rearrangement,"rearrangement,[3,3]-sigmatropic",[NX3]-C=C,[NX3]-C=C,heat; iminium; Mannich,Sigmatropic Rearrangement,80,1,Generic aza-Cope; often iminium-mediated cascade.
+Aza-Wittig Reaction,"olefination,imine formation",N=P,[CX3]=N,iminophosphorane; PPh3; azide,Olefination / Imine Formation,65,1,Iminophosphorane plus carbonyl/heterocumulene gives imine/isocyanate products.
+"Aza-[2,3]-Wittig Rearrangement","rearrangement,[2,3]-sigmatropic",[NX3]-C=C,[NX3][CH]([#6])C=C,base; DBU; K2CO3,Sigmatropic Rearrangement,75,1,Allylic amino ester rearrangement family.
+Baeyer-Villiger Oxidation,"oxidation,rearrangement",[CX3](=O)[#6],[CX3](=O)O[#6],mCPBA; peracid; H2O2,Oxidation,35,1,Ketone/aldehyde to ester/lactone.
+Baeyer-Villiger Oxidation/rearrangement,"oxidation,rearrangement",[CX3](=O)[#6],[CX3](=O)O[#6],mCPBA; peracid; H2O2,Oxidation,35,1,Alias/variant of Baeyer-Villiger oxidation.
+Baker-Venkataraman Rearrangement,"acyl transfer,rearrangement",cO[C](=O)[#6],[CX3](=O)[CH2][CX3](=O),base; NaH; KOH; pyridine,Acyl Transfer / Rearrangement,55,1,"O-acylated phenol to 1,3-dicarbonyl rearrangement."
+Balz-Schiemann Reaction,"substitution,fluorination",[c][NH2],[c]F,NaNO2; HBF4; diazonium; heat,Aromatic Substitution,50,1,Aryl amine to aryl fluoride via diazonium tetrafluoroborate.
+Bamford-Stevens-Shapiro Olefination,"olefination,elimination",NNS(=O)(=O),C=C,tosylhydrazone; base; BuLi; NaH,Olefination,65,1,Tosylhydrazone decomposition to alkene/organolithium-derived alkene.
+Barbier Coupling Reaction,"addition,C-C bond formation",[CX3](=O)[#6],[CX4]([OH])([#6])[#6],metal; Mg; Zn; In; allyl halide; R-X,Carbonyl Addition,35,1,Carbonyl plus organohalide/metal gives alcohol; reagent clues are critical.
+Bartoli Indole Synthesis,heterocycle formation,[c][N+](=O)[O-],c1ccc2[nH]ccc2c1,vinyl Grignard; organomagnesium; THF,Indole Synthesis,50,1,o-Nitroaryl/vinyl organometallic to indole.
+Barton Nitrite Ester Reaction,radical functionalization,O[N]=O,[CX4][OH],hv; nitrite ester; radical,Radical Reaction,80,1,Barton nitrite photolysis/remote oxidation family.
+Barton Radical Decarboxylation,"decarboxylation,radical substitution",[CX3](=O)[OX2H1],[CX4],AIBN; Bu3SnH; N-hydroxypyridine-2-thione; SOCl2,Radical Decarboxylation,45,1,Core family includes pre-activation to thiohydroxamate ester then radical decarboxylation.
+Barton Radical Decarboxylation Reaction,"decarboxylation,radical substitution",[CX3](=O)[OX2H1],[CX4],AIBN; Bu3SnH; N-hydroxypyridine-2-thione; SOCl2,Radical Decarboxylation,45,1,Alias/variant of Barton radical decarboxylation.
+Barton-Mccombie Radical Deoxygenation Reaction,"deoxygenation,radical reduction",O[CX3](=S)S,[CX4],AIBN; Bu3SnH; xanthate,Radical Reduction,45,1,Alcohol-derived xanthate/thionocarbonyl to deoxygenated product.
+Baylis-Hillman Reaction,"addition,C-C bond formation",[CX3](=O)[#6],C=C[CH]([OH])[#6],DABCO; tertiary amine; activated alkene,Carbonyl Addition,55,1,Aldehyde plus activated alkene to allylic alcohol/adduct.
+Beckmann Rearrangement,rearrangement,[CX3](=N[OH])[#6],[NX3][CX3](=O),acid; SOCl2; P2O5; TsCl,Nitrogen Rearrangement,35,1,Oxime to amide/lactam.
+Benzilic Acid Rearrangement,rearrangement,[CX3](=O)[CX3](=O),[CX4]([OH])([#6])C(=O)O,base; hydroxide,Carbonyl Rearrangement,55,1,"1,2-diketone to α-hydroxy acid / rearranged carboxyl derivative."
+Benzoin and Retro-Benzoin Condensation,umpolung coupling/cleavage,[CX3H1](=O)[#6],[CX3](=O)[CH]([OH])[#6],cyanide; thiazolium; NHC,Carbonyl Coupling,50,1,Aldehyde to α-hydroxy ketone and reverse cleavage.
+Bergman Cycloaromatization Reaction,"cycloaromatization,radical",C#CC=CC#C,c1ccccc1,enediyne; heat; radical trap,Cycloaromatization,70,1,Enediyne cyclization to aromatic/radical-trapped products.
+Biginelli Reaction,multicomponent condensation,[CX3](=O)[#6],N1C=CC(=O)NC1,urea; thiourea; aldehyde; beta-ketoester,Multicomponent Reaction,45,1,Aldehyde + β-ketoester + urea/thiourea to dihydropyrimidinone.
+Birch Reduction,reduction,c1ccccc1,C1=CCC=CC1,Na; Li; NH3; alcohol,Reduction,45,1,"Arene to 1,4-cyclohexadiene."
+Bischler-Napieralski Isoquinoline Synthesis,cyclization,[NX3][CH2][CH2]c1ccccc1,n1ccc2ccccc2c1,POCl3; P2O5; SOCl2,Isoquinoline Synthesis,50,1,β-Phenethylamide to dihydroisoquinoline/isoquinoline family.
+Brook Rearrangement,"silyl migration,rearrangement",[Si]-[CX4]-[O],O[Si],base; silyl; lithium,Anionic Rearrangement,75,1,"1,2-migration of silyl group from carbon to oxygen."
+Brown Hydroboration Reaction,"addition,hydroboration",C=C,[CX4][OH],BH3; borane; 9-BBN; H2O2,Hydroboration / Oxidation,40,1,Alkene/alkyne hydroboration to organoborane/alcohol after oxidation.
+Buchner Method of Ring Expansion,"carbene addition,ring expansion",c1ccccc1,C1=CC=CC=C1C1CC1,diazo; Rh; hv; heat,Carbene Chemistry,60,1,Arene plus diazo/carbenoid to cycloheptatriene/norcaradiene family.
+Buchner Reaction,"carbene addition,ring expansion",c1ccccc1,C1=CC=CC=C1C1CC1,diazo; Rh; hv; heat,Carbene Chemistry,60,1,Alias/variant of Buchner ring expansion family.
+Buchwald-Hartwig Cross-Coupling,"cross-coupling,C-N bond formation","[c][Cl,Br,I]",[c][NX3],Pd; BINAP; BrettPhos; amine; base,Cross-Coupling,35,1,Aryl halide/triflate plus amine to aryl amine.
+Burgess Dehydration Reaction,"dehydration,elimination",[CX4][OH],C=C,Burgess reagent,Elimination,40,1,Alcohol/formamide/amide dehydration family; alcohol to alkene is the canonical core.
+Cannizzaro Reaction,"disproportionation,redox",[CX3H1](=O)[#6],[CX4][OH],strong base; NaOH; KOH,Carbonyl Redox,55,1,Non-enolizable aldehyde disproportionation gives alcohol + carboxylate.
+Carroll Rearrangement,"rearrangement,decarboxylative sigmatropic",O[C](=O)OCC=C,C=CC[CH2][CX3](=O),heat; allyl beta-keto ester,Sigmatropic Rearrangement,70,1,"Allyl β-keto ester to γ,δ-unsaturated carbonyl."
+Castro-Stephens Coupling,"cross-coupling,C-C bond formation",C#C,C#C,Cu; copper acetylide; aryl halide,Cross-Coupling,55,1,Copper acetylide with aryl/vinyl halide to internal alkyne.
+Chichibabin Amination Reaction,"amination,heteroaromatic substitution",n1cccc1,n1ccc([NH2])cc1,NaNH2; ammonia,Heteroaromatic Substitution,50,1,Aza-arene amination at 2-position/activated positions.
+Chugaev Elimination Reaction,"elimination,deoxygenation",O[CX3](=S)S,C=C,xanthate; heat,Elimination,55,1,Alcohol-derived xanthate to alkene.
+Ciamician-Dennstedt Rearrangement,"ring expansion,rearrangement",c1cc[nH]c1,n1ccccc1,dichlorocarbene; CHCl3; base,Heterocycle Rearrangement,70,1,Pyrrole to chloropyridine ring expansion.
+Claisen Condensation,"condensation,C-C bond formation",[CX3](=O)O[#6],[CX3](=O)[CH2][CX3](=O)O,alkoxide base; NaOEt; LDA,Carbonyl Condensation,35,1,"Ester enolate plus ester/acyl component to β-keto ester or 1,3-dicarbonyl."
+Claisen Rearrangement,"rearrangement,[3,3]-sigmatropic",C=CCO[#6],C=CCc1ccccc1O,heat; allyl vinyl ether; allyl aryl ether,Sigmatropic Rearrangement,40,1,"Canonical allyl ether to γ,δ-unsaturated carbonyl / ortho-allyl phenol family."
+Claisen-Ireland Rearrangement,"rearrangement,[3,3]-sigmatropic",C=CCOC(=O)[#6],C=CC[CH]([#6])C(=O)O,LDA; TMSCl; silyl ketene acetal,Sigmatropic Rearrangement,45,1,"Allyl ester/silyl ketene acetal to γ,δ-unsaturated acid."
+Clemmensen Reduction,"reduction,deoxygenation",[CX3](=O)[#6],[CX4][#6],Zn(Hg); HCl,Reduction,35,1,Carbonyl to methylene under strongly acidic zinc amalgam conditions.

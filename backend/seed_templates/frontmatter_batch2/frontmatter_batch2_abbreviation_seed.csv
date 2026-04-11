@@ -1,0 +1,179 @@
+alias,canonical_name,entity_type,source_page,notes
+DEAD,diethyl azodicarboxylate,reagent,24,
+DEIPS,diethylisopropylsilyl,protecting_group,24,
+DEPBT,"3-(diethoxyphosphoryloxy)-1,2,3-benzotriazin-4(3H)-one",reagent,24,
+DET,diethyl tartrate,ligand,24,Chiral tartrate derivative / reagent.
+DHP,"3,4-dihydro-2H-pyran",protecting_group,24,THP precursor / protecting-group reagent.
+DHQ,dihydroquinine,ligand,24,
+(DHQ)2PHAL,bis(dihydroquinino)phthalazine,ligand,24,
+DHQD,dihydroquinidine,ligand,24,
+(DHQD)2PHAL,bis(dihydroquinidino)phthalazine,ligand,24,
+DIAD,diisopropyl azodicarboxylate,reagent,24,
+DIB,(diacetoxyiodo)benzene,reagent,24,Shown with synonyms BAIB or PIDA.
+BAIB,(diacetoxyiodo)benzene,reagent,24,Synonym of DIB on glossary page.
+PIDA,(diacetoxyiodo)benzene,reagent,24,Synonym of DIB on glossary page.
+DIBAL,diisobutylaluminum hydride,reagent,25,
+DIBAH,diisobutylaluminum hydride,reagent,25,Alias of DIBAL-H.
+DIBAL-H,diisobutylaluminum hydride,reagent,25,
+DIC,diisopropyl carbodiimide,reagent,25,
+diop,"4,5-bis[(diphenylphosphanyl)methyl]-2,2-dimethyl-[1,3]dioxolane",ligand,25,
+DIPAMP,"1,2-bis(o-anisylphenylphosphino)ethane",ligand,25,
+DIPEA,diisopropylethylamine,base,25,Hünig's base.
+Hünig's base,diisopropylethylamine,base,25,Synonym shown for DIPEA.
+DIPT,diisopropyl tartrate,ligand,25,
+DLP,dilauroyl peroxide,reagent,25,
+DMA,"N,N-dimethylacetamide",solvent,25,Shown as DMA (DMAC).
+DMAC,"N,N-dimethylacetamide",solvent,25,Alias shown with DMA.
+DMAD,dimethyl acetylenedicarboxylate,reagent,25,
+DMAP,4-dimethylaminopyridine,base,25,
+DMB,m-dimethoxybenzene,solvent,25,
+DMDO,dimethyl dioxirane,reagent,25,
+DME,"1,2-dimethoxyethane",solvent,25,
+DMF,"N,N-dimethylformamide",solvent,26,
+DMI,"1,3-dimethylimidazolidin-2-one",solvent,26,
+DMP,Dess-Martin periodinane,reagent,26,
+DMPS,dimethylphenylsilyl,protecting_group,26,
+DMPU,"1,3-dimethyl-3,4,5,6-tetrahydro-2(1H)-pyrimidinone",solvent,26,"N,N-dimethylpropylene urea."
+DMTSF,dimethyl(methylthio)sulfonium tetrafluoroborate,reagent,26,
+DMS,dimethyl sulfide,reagent,26,
+DMSO,dimethyl sulfoxide,solvent,26,
+DMT,"4,4'-dimethoxytrityl",protecting_group,26,
+DMTMM,"4-(4,6-dimethoxy[1,3,5]triazin-2-yl)-4-methylmorpholinium chloride",reagent,26,
+DMTr,"4,4'-dimethyltrityl",protecting_group,26,
+DMTST,(dimethylthio)methylsulfonium trifluoromethanesulfonate,reagent,26,
+DNA,deoxyribonucleic acid,general_term,26,
+DPA,diisopropylamine,base,27,Shown as DPA (DIPA).
+DIPA,diisopropylamine,base,27,Shown as DPA (DIPA).
+DPBP,"2,2'-bis(diphenylphosphino)biphenyl",ligand,27,
+DPDC,diisopropyl peroxydicarbonate,reagent,27,
+DPDM,diphenyldiazomethane,reagent,27,
+DPEDA,"1,2-diamino-1,2-diphenylethane",ligand,27,
+DPIBF,diphenylisobenzofuran,reagent,27,
+DPPA,diphenylphosphoryl azide,reagent,27,diphenylphosphorazidate
+Dppb,"1,4-bis(diphenylphosphino)butane",ligand,27,Shown as Dppb (ddpb).
+ddpb,"1,4-bis(diphenylphosphino)butane",ligand,27,Alias shown with Dppb.
+dppe,"1,2-bis(diphenylphosphino)ethane",ligand,27,
+dppf,"1,1'-bis(diphenylphosphino)ferrocene",ligand,27,
+dppm,bis(diphenylphosphino)methane,ligand,27,
+dppp,"1,3-bis(diphenylphosphino)propane",ligand,27,
+DPS,tert-butyldiphenylsilyl,protecting_group,27,Shown as also TBDPS or BPS.
+DPTC,"O,O'-di(2'-pyridyl)thiocarbonate",reagent,28,
+dr,diastereomeric ratio,condition_term,28,
+DTBAD,di-tert-butyl azodicarboxylate,reagent,28,Shown as DTBAD (DBAD).
+DBAD,di-tert-butyl azodicarboxylate,reagent,28,Alias shown with DTBAD.
+DTBB,"4,4'-di-tert-butylbiphenyl",reagent,28,
+DTBP,"2,6-di-tert-butylpyridine",base,28,
+DTBMP,"2,6-di-tert-butyl-4-methylpyridine",base,28,
+DTE,"1,4-dithioerythritol",reagent,28,
+DVS,"1,3-divinyl-1,1,3,3-tetramethyldisiloxane",reagent,28,
+E+,electrophile,general_term,28,Denotes any electrophile in general.
+E2,bimolecular elimination,reaction_term,28,
+ED,effective dosage,condition_term,28,
+EDA,ethyl diazoacetate,reagent,28,
+EDDA,ethylenediamine diacetate,additive,28,
+EDC,1-ethyl-3-(3-dimethylaminopropyl)carbodiimide,reagent,28,Shown as EDC (EDAC).
+EDAC,1-ethyl-3-(3-dimethylaminopropyl)carbodiimide,reagent,28,Alias shown with EDC.
+EDCI,1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride,reagent,28,
+EDCP,"2,3-bis-phosphonopentanedioic acid",reagent,28,"ethylene dicarboxylic 2,3-diphosphonic acid"
+EDG,electron-donating group,general_term,28,
+EDTA,ethylenediamine tetraacetic acid,reagent,28,
+ee,enantiomeric excess,condition_term,29,
+EE,ethoxyethyl,protecting_group,29,
+Ei,intramolecular syn elimination,reaction_term,29,
+en,ethylenediamine,ligand,29,
+EOM,ethoxymethyl,protecting_group,29,
+ESR,electron spin resonance,analysis_term,29,spectroscopy
+Et,ethyl,substituent,29,
+ETSA,ethyl trimethylsilylacetate,reagent,29,
+EVE,ethyl vinyl ether,reagent,29,
+EWG,electron-withdrawing group,general_term,29,
+Fc,ferrocenyl,substituent,29,
+FDP,"fructose-1,6-diphosphate",general_term,29,
+FDPP,pentafluorophenyl diphenylphosphinate,reagent,29,
+Fl,fluorenyl,substituent,29,
+FMO,frontier molecular orbital,orbital_term,29,
+Fmoc,9-fluorenylmethoxycarbonyl,protecting_group,29,
+fod,"6,6,7,7,8,8,8-heptafluoro-2,2-dimethyl-3,5-octanedione",ligand,29,
+fp,flash point,condition_term,29,
+FSM,mesoporous silica,support,29,
+FTT,"1-fluoro-2,4,6-trimethylpyridinium triflate",reagent,29,
+FVP,flash vacuum pyrolysis,reaction_term,30,
+GEBC,gel entrapped base catalyst,catalyst,30,
+h,hours,condition_term,30,Length of reaction time.
+hv,irradiation with light,condition_term,30,
+HATU,"O-(7-azabenzotriazol-1-yl)-N,N,N',N'-tetramethyluronium hexafluorophosphate",reagent,30,
+Het,heterocycle,general_term,30,
+hfacac,hexafluoroacetylacetone,ligand,30,
+HFIP,"1,1,1,3,3,3-hexafluoro-2-propanol",solvent,30,hexafluoroisopropanol
+HGK,4-hydroxy-2-ketoglutarate,general_term,30,
+Hgmm,millimeter of mercury,condition_term,30,760 Hgmm = 1 atm = 760 Torr
+HLE,horse liver esterase,catalyst,30,
+Hmb,2-hydroxy-4-methoxybenzyl,protecting_group,30,
+HMDS,"1,1,1,3,3,3-hexamethyldisilazane",reagent,30,
+HMPA,hexamethylphosphoric acid triamide,solvent,30,hexamethylphosphoramide
+HMPT,hexamethylphosphorous triamide,reagent,30,
+HOAt,1-hydroxy-7-azabenzotriazole,reagent,30,
+HOBt,1-hydroxybenzotriazole,reagent,30,Shown as HOBt (HOBT).
+HOBT,1-hydroxybenzotriazole,reagent,30,Alias shown with HOBt.
+HOMO,highest occupied molecular orbital,orbital_term,30,
+HOSu,N-hydroxysuccinimide,reagent,30,
+HPLC,high-pressure liquid chromatography,analysis_term,30,
+HWE,Horner-Wadsworth-Emmons,reaction_term,30,
+i,iso,substituent,30,
+IBA,2-iodosobenzoic acid,reagent,31,
+IBX,o-iodoxybenzoic acid,reagent,31,
+IDCP,"bis(2,4,6-collidine)iodonium perchlorate",reagent,31,
+Imid,imidazole,base,31,Shown as Imid (Im).
+Im,imidazole,base,31,Alias shown with Imid.
+INOC,intramolecular nitrile oxide cycloaddition,reaction_term,31,
+IPA,isopropyl alcohol,solvent,31,
+Ipc,isopinocampheyl,substituent,31,
+IR,infrared spectroscopy,analysis_term,31,
+K-10,a type of Montmorillonite clay,catalyst,31,
+KDA,potassium diisopropylamide,base,31,
+KHMDS,potassium bis(trimethylsilyl)amide,base,31,
+KSF,a type of Montmorillonite clay,catalyst,31,
+L,ligand,general_term,31,
+L.R.,Lawesson's reagent,reagent,31,Shown with full phosphorous-sulfur reagent name.
+LA,Lewis acid,general_term,31,
+LAB,lithium amidotrihydroborate,reagent,31,
+LAH,lithium aluminum hydride,reagent,31,
+LD50,dose that is lethal to 50% of the test subjects,condition_term,31,"cells, animals, humans etc."
+LDA,lithium diisopropylamide,base,31,
+LDBB,"lithium 4,4'-tert-butylbiphenylide",reagent,31,
+LDE,lithium diethylamide,base,32,
+LDPE,lithium perchlorate-diethyl etherate,reagent,32,
+LHMDS,lithium bis(trimethylsilyl)amide,base,32,Shown as LHMDS (LiHMDS).
+LiHMDS,lithium bis(trimethylsilyl)amide,base,32,Alias shown with LHMDS.
+LICA,lithium isopropylcyclohexylamide,base,32,
+LICKOR,butyllithium-potassium tert-butoxide,base,32,super base
+liq.,liquid,condition_term,32,
+LiTMP,"lithium 2,2,6,6-tetramethylpiperidide",base,32,Shown as LiTMP (LTMP).
+LTMP,"lithium 2,2,6,6-tetramethylpiperidide",base,32,Alias shown with LiTMP.
+LPT,lithium pyrrolidotrihydroborate,reagent,32,lithium pyrrolidide-borane
+L-selectride,lithium tri-sec-butylborohydride,reagent,32,
+LTA,lead tetraacetate,reagent,32,
+LUMO,lowest unoccupied molecular orbital,orbital_term,32,
+lut,"2,6-lutidine",base,32,
+m,meta,substituent,32,
+MA,maleic anhydride,reagent,32,
+MAD,"methyl aluminum bis(2,6-di-tert-butyl-4-methylphenoxide)",reagent,32,
+MAT,"methyl aluminum bis(2,4,6-tri-tert-butylphenoxide)",reagent,32,
+MBT,2-mercaptobenzothiazole,reagent,33,
+m-CPBA,meta-chloroperbenzoic acid,reagent,33,
+Me,methyl,substituent,33,
+MEM,(2-methoxyethoxy)methyl,protecting_group,33,
+MEPY,methyl 2-pyrrolidone-5(S)-carboxylate,reagent,33,
+Mes,mesityl,substituent,33,
+mesal,N-methylsalicylaldimine,ligand,33,
+MIC,methyl isocyanate,reagent,33,
+MMPP,magnesium monoperoxyphthalate,reagent,33,Shown as MMPP (MMPT).
+MMPT,magnesium monoperoxyphthalate,reagent,33,Alias shown with MMPP.
+MOM,methoxymethyl,protecting_group,33,
+MoOPH,oxodiperoxymolybdenum(pyridine)(hexamethylphosphoric triamide),reagent,33,
+mp,melting point,condition_term,33,
+MPa,megapascal,condition_term,33,10^6 Pa = 10 atm (pressure)
+MPD,N-methyl-2-pyrrolidinone,solvent,33,Shown as MPD (NMP).
+NMP,N-methyl-2-pyrrolidinone,solvent,33,Alias shown with MPD.
+MPM,methoxy(phenylthio)methyl,protecting_group,33,Also used for p-methoxybenzyl on the page; ambiguity retained.
+PMB,p-methoxybenzyl,protecting_group,33,Shown on page as MPM (PMB).

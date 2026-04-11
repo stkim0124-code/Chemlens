@@ -1,0 +1,53 @@
+# reaction_family_patterns seed audit
+
+Total families in staging: 49
+
+- Acetoacetic Ester Synthesis: extracts=18, parent=Carbonyl Chemistry, type=alkylation,decarboxylation
+- Acyloin Condensation: extracts=11, parent=Reductive Coupling, type=reductive coupling
+- Alder (ene) Reaction: extracts=4, parent=Pericyclic Reaction, type=pericyclic,ene reaction
+- Alder Ene Reaction: extracts=1, parent=Pericyclic Reaction, type=pericyclic,ene reaction
+- Aldol Reaction: extracts=8, parent=Carbonyl Addition, type=addition,C-C bond formation
+- Alkene (olefin) Metathesis: extracts=8, parent=Olefin Transformation, type=metathesis
+- Alkyne Metathesis: extracts=4, parent=Alkyne Transformation, type=metathesis
+- Amadori Rearrangement: extracts=3, parent=Carbonyl Rearrangement, type=rearrangement,amine-carbonyl chemistry
+- Arbuzov Reaction: extracts=7, parent=Organophosphorus Chemistry, type=substitution,phosphonate formation
+- Arndt-Eistert Homologation / Synthesis: extracts=7, parent=Homologation, type=homologation
+- Aza-Claisen Rearrangement: extracts=6, parent=Sigmatropic Rearrangement, type=rearrangement,[3,3]-sigmatropic
+- Aza-Cope Rearrangement: extracts=4, parent=Sigmatropic Rearrangement, type=rearrangement,[3,3]-sigmatropic
+- Aza-Wittig Reaction: extracts=7, parent=Olefination / Imine Formation, type=olefination,imine formation
+- Aza-[2,3]-Wittig Rearrangement: extracts=5, parent=Sigmatropic Rearrangement, type=rearrangement,[2,3]-sigmatropic
+- Baeyer-Villiger Oxidation: extracts=5, parent=Oxidation, type=oxidation,rearrangement
+- Baeyer-Villiger Oxidation/rearrangement: extracts=1, parent=Oxidation, type=oxidation,rearrangement
+- Baker-Venkataraman Rearrangement: extracts=5, parent=Acyl Transfer / Rearrangement, type=acyl transfer,rearrangement
+- Balz-Schiemann Reaction: extracts=5, parent=Aromatic Substitution, type=substitution,fluorination
+- Bamford-Stevens-Shapiro Olefination: extracts=11, parent=Olefination, type=olefination,elimination
+- Barbier Coupling Reaction: extracts=2, parent=Carbonyl Addition, type=addition,C-C bond formation
+- Bartoli Indole Synthesis: extracts=6, parent=Indole Synthesis, type=heterocycle formation
+- Barton Nitrite Ester Reaction: extracts=5, parent=Radical Reaction, type=radical functionalization
+- Barton Radical Decarboxylation: extracts=2, parent=Radical Decarboxylation, type=decarboxylation,radical substitution
+- Barton Radical Decarboxylation Reaction: extracts=4, parent=Radical Decarboxylation, type=decarboxylation,radical substitution
+- Barton-Mccombie Radical Deoxygenation Reaction: extracts=5, parent=Radical Reduction, type=deoxygenation,radical reduction
+- Baylis-Hillman Reaction: extracts=2, parent=Carbonyl Addition, type=addition,C-C bond formation
+- Beckmann Rearrangement: extracts=4, parent=Nitrogen Rearrangement, type=rearrangement
+- Benzilic Acid Rearrangement: extracts=7, parent=Carbonyl Rearrangement, type=rearrangement
+- Benzoin and Retro-Benzoin Condensation: extracts=11, parent=Carbonyl Coupling, type=umpolung coupling/cleavage
+- Bergman Cycloaromatization Reaction: extracts=4, parent=Cycloaromatization, type=cycloaromatization,radical
+- Biginelli Reaction: extracts=4, parent=Multicomponent Reaction, type=multicomponent condensation
+- Birch Reduction: extracts=2, parent=Reduction, type=reduction
+- Bischler-Napieralski Isoquinoline Synthesis: extracts=5, parent=Isoquinoline Synthesis, type=cyclization
+- Brook Rearrangement: extracts=4, parent=Anionic Rearrangement, type=silyl migration,rearrangement
+- Brown Hydroboration Reaction: extracts=4, parent=Hydroboration / Oxidation, type=addition,hydroboration
+- Buchner Method of Ring Expansion: extracts=3, parent=Carbene Chemistry, type=carbene addition,ring expansion
+- Buchner Reaction: extracts=1, parent=Carbene Chemistry, type=carbene addition,ring expansion
+- Buchwald-Hartwig Cross-Coupling: extracts=7, parent=Cross-Coupling, type=cross-coupling,C-N bond formation
+- Burgess Dehydration Reaction: extracts=9, parent=Elimination, type=dehydration,elimination
+- Cannizzaro Reaction: extracts=4, parent=Carbonyl Redox, type=disproportionation,redox
+- Carroll Rearrangement: extracts=2, parent=Sigmatropic Rearrangement, type=rearrangement,decarboxylative sigmatropic
+- Castro-Stephens Coupling: extracts=9, parent=Cross-Coupling, type=cross-coupling,C-C bond formation
+- Chichibabin Amination Reaction: extracts=7, parent=Heteroaromatic Substitution, type=amination,heteroaromatic substitution
+- Chugaev Elimination Reaction: extracts=11, parent=Elimination, type=elimination,deoxygenation
+- Ciamician-Dennstedt Rearrangement: extracts=9, parent=Heterocycle Rearrangement, type=ring expansion,rearrangement
+- Claisen Condensation: extracts=4, parent=Carbonyl Condensation, type=condensation,C-C bond formation
+- Claisen Rearrangement: extracts=4, parent=Sigmatropic Rearrangement, type=rearrangement,[3,3]-sigmatropic
+- Claisen-Ireland Rearrangement: extracts=7, parent=Sigmatropic Rearrangement, type=rearrangement,[3,3]-sigmatropic
+- Clemmensen Reduction: extracts=7, parent=Reduction, type=reduction,deoxygenation

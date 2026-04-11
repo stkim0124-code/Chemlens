@@ -40,6 +40,24 @@ from app.ocr_utils import get_ocr_info, ocr_image
 from app.docs_init import ensure_docs_db
 from app.pdf_ingest import ingest_pdfs_to_docs_db
 from app.image_ingest import ingest_images_to_docs_db
+from app.labint_v2 import (
+    ensure_labint_v2_schema,
+    get_labint_v2_counts,
+    list_v2_reactions,
+    list_v2_substances,
+    migrate_reaction_cards_to_v2,
+    sync_reaction_card_to_v2,
+)
+from app.labint_intel import (
+    ensure_labint_intel_schema,
+    get_labint_intel_counts,
+)
+from app.labint_frontmatter import (
+    ensure_frontmatter_schema,
+    get_frontmatter_counts,
+)
+
+from app.evidence_search import router as evidence_router, StructureEvidenceRequest, _search_by_structure
 
 
 # -----------------------------
@@ -95,10 +113,32 @@ except Exception as _e:
     # Don't crash server on startup; surface via /api/ocr_info etc.
     pass
 
+# Ensure LabInt v2 core schema exists in the main chemistry DB.
+try:
+    ensure_labint_v2_schema(DB_PATH)
+except Exception:
+    # Keep server boot resilient even if migration has not been applied yet.
+    pass
+
+# Ensure intelligence/search-support schema exists too.
+try:
+    ensure_labint_intel_schema(DB_PATH)
+except Exception:
+    pass
+
+# Ensure manual front-matter ingestion schema exists too.
+try:
+    ensure_frontmatter_schema(DB_PATH)
+except Exception:
+    pass
+
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-1.5-pro").strip() or "gemini-1.5-pro"
 
 app = FastAPI(title="Chemlens Backend")
+
+# Structure-evidence bridge routes (round9 work DB when LABINT_DB_PATH is pointed to it)
+app.include_router(evidence_router, prefix="/api")
 
 def _parse_allowed_origins() -> List[str]:
     """Parse ALLOWED_ORIGINS env (comma-separated).
@@ -174,6 +214,11 @@ class IngestPdfsRequest(BaseModel):
 
 class IngestImagesToDocsRequest(BaseModel):
     limit: int = Field(0, ge=0, le=200000, description="0이면 전체 이미지, 1 이상이면 최대 N개만 OCR 인제스트")
+
+
+class LabintV2MigrateRequest(BaseModel):
+    limit: int = Field(0, ge=0, le=500000, description="0이면 미마이그레이션된 모든 reaction_cards를 처리")
+    since_id: int = Field(0, ge=0, le=10_000_000, description="이 ID보다 큰 reaction_cards만 처리")
 
 # -----------------------------
 # Helpers
@@ -341,13 +386,14 @@ def list_cards(limit: int = 200) -> List[Dict[str, Any]]:
 
 
 def _insert_cards(cards: List[ExtractedCard]) -> Dict[str, int]:
-    """Insert extracted cards into reaction_cards, de-duplicating by (source, notes tag)."""
+    """Insert extracted cards into reaction_cards, then sync each new card into LabInt v2."""
     if not cards:
-        return {"inserted": 0, "skipped": 0}
+        return {"inserted": 0, "skipped": 0, "v2_synced": 0, "v2_failed": 0}
     conn = db_connect()
     cur = conn.cursor()
     inserted = 0
     skipped = 0
+    new_ids: List[int] = []
     for c in cards:
         tag = (c.notes.split("\n", 1)[0] if c.notes else "")
         if tag:
@@ -377,10 +423,24 @@ def _insert_cards(cards: List[ExtractedCard]) -> Dict[str, int]:
                 c.notes,
             ),
         )
+        new_id = int(cur.lastrowid)
+        new_ids.append(new_id)
         inserted += 1
     conn.commit()
     conn.close()
-    return {"inserted": inserted, "skipped": skipped}
+
+    v2_synced = 0
+    v2_failed = 0
+    for card_id in new_ids:
+        try:
+            res = sync_reaction_card_to_v2(DB_PATH, card_id)
+            if res.get("ok"):
+                v2_synced += 1
+            else:
+                v2_failed += 1
+        except Exception:
+            v2_failed += 1
+    return {"inserted": inserted, "skipped": skipped, "v2_synced": v2_synced, "v2_failed": v2_failed}
 
 
 def fp(mol):
@@ -534,14 +594,22 @@ def api_health_alias():
 @app.get("/health")
 def health():
     # Summarize server readiness for the React UI
-    docs_ok = DOCS_DB_PATH.exists()
     try:
-        conn = sqlite3.connect(str(DB_PATH))
-        cur = conn.execute("SELECT count(*) FROM reaction_cards")
-        cards_count = int(cur.fetchone()[0])
-        conn.close()
+        v2 = get_labint_v2_counts(DB_PATH)
+        intel = get_labint_intel_counts(DB_PATH)
+        frontmatter = get_frontmatter_counts(DB_PATH)
+        cards_count = v2.get("reaction_cards")
     except Exception:
-        cards_count = None
+        v2 = None
+        intel = None
+        frontmatter = None
+        try:
+            conn = sqlite3.connect(str(DB_PATH))
+            cur = conn.execute("SELECT count(*) FROM reaction_cards")
+            cards_count = int(cur.fetchone()[0])
+            conn.close()
+        except Exception:
+            cards_count = None
     try:
         conn = sqlite3.connect(str(DOCS_DB_PATH))
         cur = conn.execute("SELECT count(*) FROM documents")
@@ -554,6 +622,9 @@ def health():
         "ok": True,
         "db_path": str(DB_PATH),
         "cards_count": cards_count,
+        "labint_v2": v2,
+        "labint_intel": intel,
+        "frontmatter_manual": frontmatter,
         "docs_db_path": str(DOCS_DB_PATH),
         "docs_count": docs_count,
         "thumbs_dir": str(THUMBS_DIR),
@@ -594,6 +665,9 @@ def api_search(req: SearchRequest):
       transformation, reagents, solvent, conditions, yield_pct, source, notes,
       substrate_smiles, product_smiles,
       substrate_svg, product_svg
+
+    추가 보강:
+    - reaction_cards 구조 hit가 부족하면 structure-evidence bridge 결과를 같은 hits 형식으로 이어붙인다.
     """
     _ensure_rdkit()
 
@@ -610,7 +684,6 @@ def api_search(req: SearchRequest):
         sub = (c.get("substrate_smiles") or "").strip()
         prod = (c.get("product_smiles") or "").strip()
 
-        # substrate가 비었으면 product도 후보로 사용
         best_sim = -1.0
 
         if sub:
@@ -633,11 +706,93 @@ def api_search(req: SearchRequest):
                     "similarity": float(best_sim),
                     "substrate_svg": mol_to_svg(sub) if sub else None,
                     "product_svg": mol_to_svg(prod) if prod else None,
+                    "hit_source": "reaction_card",
                 }
             )
 
     hits.sort(key=lambda x: x["similarity"], reverse=True)
-    return {"query_canonical_smiles": q_smi, "hits": hits[: req.top_k]}
+    base_hits = hits[: req.top_k]
+
+    evidence_hits_added = 0
+    evidence_error = None
+    seen_keys = {
+        (str(h.get("title") or "").strip().lower(), str(h.get("source") or "").strip().lower(), str(h.get("notes") or "").strip().lower())
+        for h in base_hits
+    }
+
+    if len(base_hits) < req.top_k:
+        try:
+            evidence_req = StructureEvidenceRequest(
+                smiles=q_smi,
+                top_k=req.top_k * 2,
+                min_tanimoto=req.min_tanimoto,
+                include_family_fallback=True,
+            )
+            evidence_payload = _search_by_structure(evidence_req)
+            for ev in evidence_payload.get("results", []):
+                family_name = (ev.get("reaction_family_name") or ev.get("title") or "Structure evidence hit").strip()
+                page_no = ev.get("page_no")
+                source_zip = ev.get("source_zip") or ev.get("image_filename") or "structure_evidence"
+                section_bits = [
+                    ev.get("extract_kind"),
+                    ev.get("section_type"),
+                    ev.get("scheme_role"),
+                ]
+                section_text = " / ".join([str(x) for x in section_bits if x])
+                notes_parts = []
+                if section_text:
+                    notes_parts.append(section_text)
+                if ev.get("transformation_text"):
+                    notes_parts.append(str(ev.get("transformation_text")))
+                if ev.get("reagents_text"):
+                    notes_parts.append(f"reagents: {ev.get('reagents_text')}")
+                if ev.get("conditions_text"):
+                    notes_parts.append(f"conditions: {ev.get('conditions_text')}")
+                if page_no is not None:
+                    notes_parts.append(f"page {page_no}")
+                notes = " | ".join(notes_parts)
+                dedupe_key = (family_name.lower(), str(source_zip).lower(), notes.lower())
+                if dedupe_key in seen_keys:
+                    continue
+                seen_keys.add(dedupe_key)
+                transformed = {
+                    "id": f"evidence:{ev.get('extract_id')}",
+                    "title": family_name,
+                    "transformation": ev.get("transformation_text") or ev.get("extract_kind") or family_name,
+                    "substrate_smiles": None,
+                    "product_smiles": None,
+                    "reagents": ev.get("reagents_text"),
+                    "solvent": None,
+                    "conditions": ev.get("conditions_text") or ev.get("temperature_text") or ev.get("time_text"),
+                    "yield_pct": ev.get("yield_text"),
+                    "source": source_zip,
+                    "notes": notes,
+                    "substrate_svg": None,
+                    "product_svg": None,
+                    "similarity": float(ev.get("match_score") or 0.0),
+                    "hit_source": "structure_evidence",
+                    "page_no": page_no,
+                    "image_filename": ev.get("image_filename"),
+                    "reaction_family_name": ev.get("reaction_family_name"),
+                    "quality_tier": ev.get("quality_tier"),
+                    "matched_components": ev.get("matched_components", []),
+                }
+                base_hits.append(transformed)
+                evidence_hits_added += 1
+                if len(base_hits) >= req.top_k:
+                    break
+        except Exception as e:
+            evidence_error = str(e)
+
+    return {
+        "query_canonical_smiles": q_smi,
+        "hits": base_hits[: req.top_k],
+        "reaction_card_hits": len([h for h in base_hits[: req.top_k] if h.get("hit_source") == "reaction_card"]),
+        "structure_evidence_hits": len([h for h in base_hits[: req.top_k] if h.get("hit_source") == "structure_evidence"]),
+        "structure_evidence_attempted": True,
+        "structure_evidence_added": evidence_hits_added,
+        "structure_evidence_error": evidence_error,
+    }
 
 
 def _call_gemini(prompt: str, system_instruction: str) -> str:
@@ -686,7 +841,7 @@ async def upload_mol(file: UploadFile = File(...)):
 
 @app.post("/ingest/mol-card")
 def ingest_mol_card(req: IngestMolCardRequest):
-    """React에서 DB에 카드 추가(프로토)"""
+    """React에서 DB에 카드 추가(프로토) + LabInt v2 동기화."""
     conn = db_connect()
     cur = conn.cursor()
     cur.execute(
@@ -707,10 +862,41 @@ def ingest_mol_card(req: IngestMolCardRequest):
         ),
     )
     conn.commit()
-    new_id = cur.lastrowid
+    new_id = int(cur.lastrowid)
     conn.close()
-    return {"ok": True, "id": new_id}
+    sync = sync_reaction_card_to_v2(DB_PATH, new_id)
+    return {"ok": True, "id": new_id, "v2_sync": sync}
 
+
+
+@app.get("/api/v2/summary")
+def api_v2_summary():
+    return {"ok": True, **get_labint_v2_counts(DB_PATH)}
+
+
+@app.get("/api/intel/summary")
+def api_intel_summary():
+    return {"ok": True, **get_labint_intel_counts(DB_PATH), "frontmatter_manual": get_frontmatter_counts(DB_PATH)}
+
+
+@app.get("/api/v2/substances")
+def api_v2_substances(q: str = Query("", description="SMILES or name query"), limit: int = Query(20, ge=1, le=200)):
+    return {"ok": True, "items": list_v2_substances(DB_PATH, query=q, limit=limit)}
+
+
+@app.get("/api/v2/reactions")
+def api_v2_reactions(
+    q: str = Query("", description="title/transformation/notes query"),
+    structure_only: bool = Query(False),
+    limit: int = Query(50, ge=1, le=500),
+):
+    return {"ok": True, "items": list_v2_reactions(DB_PATH, query=q, structure_only=structure_only, limit=limit)}
+
+
+@app.post("/api/v2/migrate/reaction-cards")
+def api_v2_migrate_reaction_cards(req: LabintV2MigrateRequest):
+    res = migrate_reaction_cards_to_v2(DB_PATH, limit=req.limit, since_id=req.since_id)
+    return {"ok": True, **res, "summary": get_labint_v2_counts(DB_PATH)}
 
 
 @app.post("/api/ingest/images-to-docs")

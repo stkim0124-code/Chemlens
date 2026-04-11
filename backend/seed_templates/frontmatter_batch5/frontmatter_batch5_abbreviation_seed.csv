@@ -1,0 +1,16 @@
+alias,canonical_name,entity_type,source_page
+RCM,ring-closing metathesis,reaction_term,10
+CM,cross metathesis,reaction_term,10
+ROM,ring-opening metathesis,reaction_term,10
+ROMP,ring-opening metathesis polymerization,reaction_term,10
+ADMET,acyclic diene metathesis polymerization,reaction_term,10
+MVK,methyl vinyl ketone,reagent,7
+PPTS,pyridinium p-toluenesulfonate,reagent,11
+BBr3,boron tribromide,reagent,11
+TMSCl,trimethylsilyl chloride,reagent,4
+LiAlH4,lithium aluminium hydride,reagent,3
+DBU,"1,8-diazabicyclo[5.4.0]undec-7-ene",base,7
+KOtBu,potassium tert-butoxide,base,3
+LiClO4,lithium perchlorate,additive,3
+NaHMDS,sodium bis(trimethylsilyl)amide,base,2
+LiHMDS,lithium bis(trimethylsilyl)amide,base,2

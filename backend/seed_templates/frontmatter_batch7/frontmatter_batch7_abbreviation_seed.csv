@@ -1,0 +1,14 @@
+alias,canonical_name,entity_type,source_page
+PTSA,p-toluenesulfonic acid,acid,22
+KH,potassium hydride,base,23
+18-crown-6,18-crown-6,additive,23
+PPh3,triphenylphosphine,reagent,24
+NaBH4,sodium borohydride,reagent,25
+K2CO3,potassium carbonate,base,27
+MeLi,methyllithium,reagent,27
+mCPBA,meta-chloroperoxybenzoic acid,oxidant,28
+TFAA,trifluoroacetic anhydride,reagent,29
+LiH,lithium hydride,base,30
+s-BuLi,sec-butyllithium,base,31
+ZnCl2,zinc chloride,Lewis acid,31
+DIBAH,diisobutylaluminum hydride,reagent,31

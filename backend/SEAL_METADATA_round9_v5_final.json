@@ -1,0 +1,14 @@
+{
+  "sealed_at": "20260407_005421",
+  "backend_root": "C:\\chemlens\\backend",
+  "seal_dir": "C:\\chemlens\\backend\\sealed_baselines\\round9_v5_final_staging_20260407_005421",
+  "copied_artifacts": 14,
+  "missing_artifacts": 0,
+  "fixed_db": "created",
+  "fixed_db_sha256": "33fab5595685052c53f46aa717257ee46dca86ea12631851a1f00db9e4a3234f",
+  "official_db_name": "labint_round9_v5_final_staging.db",
+  "policy": {
+    "staging_only": true,
+    "promote_reaction_cards_forbidden": true
+  }
+}

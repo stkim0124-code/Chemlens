@@ -1,5 +1,6 @@
 import React, { Suspense, useMemo, useState } from "react";
 import KetcherEditor from "./components/KetcherEditor.tsx";
+import EvidencePanel from "./components/EvidencePanel.jsx";
 const API_BASE = import.meta.env.VITE_API_BASE || "";
 
 /** Error Boundary */
@@ -72,6 +73,9 @@ export default function App() {
   // Results / status
   const [status, setStatus] = useState("");
   const [results, setResults] = useState([]);
+  const [evidenceData, setEvidenceData] = useState(null);
+  const [evidenceError, setEvidenceError] = useState("");
+  const [evidenceLoading, setEvidenceLoading] = useState(false);
 
   // Health / OCR / Docs / Cards
   const [health, setHealth] = useState(null);
@@ -174,31 +178,26 @@ export default function App() {
     e.target.value = "";
   }
 
+  function isReactionQueryText(value) {
+    return typeof value === "string" && value.includes(">") && value.includes(">>");
+  }
+
   async function applyFromKetcherAndSearch() {
     if (!ketcherApi) {
       setStatus("Ketcher not initialized");
       return;
     }
     try {
-      // 1) Always try Reaction-SMILES first (safe way to detect reaction arrows / multi-CTAB).
-      //    If the build doesn't support it, it will fall back internally.
       const rxnOrSmiles = await ketcherApi.getSmiles(true);
 
-      // 2) Smart fallback: if reaction SMILES detected (A.B>>C), search by Product (C)
-      if (typeof rxnOrSmiles === "string" && rxnOrSmiles.includes(">>")) {
-        const product = String(rxnOrSmiles.split(">>")[1] || "").trim();
-        if (!product) {
-          setStatus("반응식(>>)이 감지되었지만 생성물(Product)이 비어있습니다. 화살표 오른쪽에 생성물을 넣어주세요.");
-          return;
-        }
-        setSmilesText(product);
+      if (isReactionQueryText(rxnOrSmiles)) {
+        setSmilesText(rxnOrSmiles);
         setMolfile("");
-        setStatus("💡 반응식이 감지되어 생성물(Product) 기준으로 구조 검색을 수행합니다.");
-        await searchSimilar({ kind: "smiles", value: product });
+        setStatus("🧪 반응 화살표가 감지되었습니다. 반응식(reactant/agent/product) 기준 evidence 검색을 수행합니다.");
+        await searchSimilar({ kind: "reaction_smiles", value: rxnOrSmiles });
         return;
       }
 
-      // 3) Normal single-molecule flow: try molfile export. If it fails, fall back to SMILES.
       const s = rxnOrSmiles || (await ketcherApi.getSmiles(false));
       let m = "";
       try {
@@ -206,7 +205,7 @@ export default function App() {
       } catch (err) {
         const msg = String(err || "");
         if (msg.toLowerCase().includes("reaction") && msg.toLowerCase().includes("arrow")) {
-          setStatus("⚠️ Route1(단일 분자 검색)에서는 반응 화살표가 포함된 스케치를 MOL로 저장할 수 없습니다. 화살표를 제거하거나 생성물만 남겨주세요.");
+          setStatus("⚠️ 반응 화살표가 있는 스케치는 MOL 대신 반응 SMILES로 읽어옵니다. 그대로 Apply를 누르면 reaction evidence 검색이 동작합니다.");
         }
       }
 
@@ -262,40 +261,59 @@ export default function App() {
   async function searchSimilar(forcedQuery) {
     setStatus("검색 중...");
     setResults([]);
+    setEvidenceData(null);
+    setEvidenceError("");
+    setEvidenceLoading(false);
 
-    // UI inputs:
-    // - molfile textarea (Molfile)
-    // - smilesText textarea (SMILES)
-    // - forcedQuery (optional)
     const query =
       forcedQuery ??
       (molfile?.trim()
         ? { kind: "molfile", value: molfile.trim() }
         : smilesText?.trim()
-        ? { kind: "smiles", value: smilesText.trim() }
+        ? { kind: isReactionQueryText(smilesText.trim()) ? "reaction_smiles" : "smiles", value: smilesText.trim() }
         : null);
 
     if (!query) {
-      setStatus("입력값이 없습니다. (Molfile 또는 SMILES를 입력하세요)");
+      setStatus("입력값이 없습니다. (Molfile 또는 SMILES/반응 SMILES를 입력하세요)");
       return;
     }
 
     try {
       let smiles = null;
+      let reactionSmiles = null;
 
-      if (query.kind === "smiles") {
+      if (query.kind === "reaction_smiles") {
+        reactionSmiles = query.value;
+      } else if (query.kind === "smiles") {
         smiles = query.value;
       } else if (query.kind === "molfile") {
         smiles = await molfileToSmiles(query.value);
       } else if (typeof query === "string") {
-        // legacy: if someone passes plain smiles
-        smiles = query;
+        if (isReactionQueryText(query)) reactionSmiles = query;
+        else smiles = query;
       } else if (query?.smiles) {
         smiles = query.smiles;
       }
 
-      if (!smiles) {
-        setStatus("SMILES를 만들 수 없습니다. (Molfile/SMILES 입력을 확인하세요)");
+      if (!smiles && !reactionSmiles) {
+        setStatus("SMILES를 만들 수 없습니다. (Molfile/SMILES/반응 SMILES 입력을 확인하세요)");
+        return;
+      }
+
+      setEvidenceLoading(true);
+
+      if (reactionSmiles) {
+        const evidenceRes = await callJson(`${API_BASE}/api/search/structure-evidence`, {
+          reaction_smiles: reactionSmiles,
+          top_k: Math.max(topK, 8),
+          min_tanimoto: Math.max(Math.min(minSim, 0.95), 0.2),
+          include_family_fallback: true,
+        });
+        setResults([]);
+        setEvidenceData(evidenceRes);
+        setEvidenceError("");
+        const evidenceCount = evidenceRes?.results?.length || 0;
+        setStatus(`반응식 기준 evidence ${evidenceCount}개`);
         return;
       }
 
@@ -305,18 +323,48 @@ export default function App() {
         min_tanimoto: minSim,
       };
 
-      // New backend endpoint (no /api prefix)
-      const data = await callJson(`${API_BASE}/search`, payload);
+      const [cardRes, evidenceRes] = await Promise.allSettled([
+        callJson(`${API_BASE}/search`, payload),
+        fetchJson(
+          `${API_BASE}/api/search/structure-evidence?smiles=${encodeURIComponent(smiles)}&top_k=${Math.max(
+            topK,
+            8
+          )}&min_tanimoto=${Math.max(Math.min(minSim, 0.95), 0.2)}`
+        ),
+      ]);
 
-      const rows = data?.hits || [];
-      setResults(Array.isArray(rows) ? rows : []);
-      setStatus(
-        Array.isArray(rows) && rows.length
-          ? `결과 ${rows.length}개`
-          : "조건 후보가 없습니다. (유사도 값을 낮추거나 DB를 확장하세요.)"
-      );
+      let rows = [];
+      if (cardRes.status === "fulfilled") {
+        rows = cardRes.value?.hits || [];
+        setResults(Array.isArray(rows) ? rows : []);
+      } else {
+        setResults([]);
+      }
+
+      if (evidenceRes.status === "fulfilled") {
+        setEvidenceData(evidenceRes.value);
+        setEvidenceError("");
+      } else {
+        setEvidenceData(null);
+        setEvidenceError(String(evidenceRes.reason?.message || evidenceRes.reason || "unknown"));
+      }
+
+      const cardsCount = Array.isArray(rows) ? rows.length : 0;
+      const evidenceCount =
+        evidenceRes.status === "fulfilled" ? evidenceRes.value?.results?.length || 0 : 0;
+
+      if (cardsCount || evidenceCount) {
+        setStatus(`구조 카드 ${cardsCount}개 · named reaction evidence ${evidenceCount}개`);
+      } else {
+        setStatus("직접 구조 카드 히트는 없지만, evidence도 거의 없습니다. 다른 구조나 유사도 컷을 시도해보세요.");
+      }
     } catch (e) {
+      setResults([]);
+      setEvidenceData(null);
+      setEvidenceError("");
       setStatus(`검색 실패: ${String(e?.message || e || "unknown")}`);
+    } finally {
+      setEvidenceLoading(false);
     }
   }
 
@@ -404,7 +452,7 @@ export default function App() {
               </div>
 
               <div style={{ marginTop: 10, fontSize: 12, opacity: 0.8 }}>
-                SciFinder처럼 구조를 입력/업로드한 뒤 검색합니다.
+                SciFinder처럼 구조 또는 반응식을 입력/업로드한 뒤 검색합니다. 이제 Ketcher 반응 화살표도 사용할 수 있습니다.
               </div>
 
               {/* Ketcher는 부모 컨테이너 높이가 0이면 "initialized"만 찍고 화면이 비어버립니다. 높이를 고정해 렌더링을 보장합니다. */}
@@ -416,7 +464,7 @@ export default function App() {
 
               <div style={{ marginTop: 12, display: "flex", gap: 8, alignItems: "center" }}>
                 <Button variant="primary" onClick={applyFromKetcherAndSearch}>
-                  Apply (SMILES로 변환 → 검색)
+                  Apply (분자/반응식 자동 감지 → 검색)
                 </Button>
                 <div style={{ fontSize: 12, opacity: 0.7 }}>
                   {ketcherApi ? "Ketcher initialized" : "Ketcher not initialized"}
@@ -428,7 +476,7 @@ export default function App() {
                 <textarea
                   value={smilesText}
                   onChange={(e) => setSmilesText(e.target.value)}
-                  placeholder="예: CCO, c1ccccc1, ... (SMILES)"
+                  placeholder="예: CCO / c1ccccc1 / CCO>>CC=O (SMILES 또는 reaction SMILES)"
                   style={styles.textarea}
                 />
               </div>
@@ -460,13 +508,15 @@ export default function App() {
                     setSmilesText("");
                     setCdxmlText("");
                     setResults([]);
+                    setEvidenceData(null);
+                    setEvidenceError("");
                     setStatus("초기화 완료");
                   }}
                 >
                   초기화
                 </Button>
                 <div style={{ fontSize: 12, opacity: 0.75 }}>
-                  요청: top_k={topK}, min_tanimoto={minSim}
+                  요청: top_k={topK}, min_tanimoto={minSim} · 반응 화살표가 있으면 reactant/product 모두 evidence 검색
                 </div>
               </div>
 
@@ -474,7 +524,7 @@ export default function App() {
             </div>
 
             <div style={styles.panel}>
-              <div style={styles.panelTitle}>유사 조건 추천(로컬 DB)</div>
+              <div style={styles.panelTitle}>구조 / 반응 검색 결과 + Named Reaction Evidence</div>
 
               <div style={{ marginTop: 10 }}>
                 <div style={styles.sliderRow}>
@@ -514,10 +564,16 @@ export default function App() {
                   results.map(renderResultCard)
                 ) : (
                   <div style={{ marginTop: 10, opacity: 0.75 }}>
-                    조건 후보가 없습니다. (유사도 컷을 낮추거나 DB를 확장하세요.)
+                    직접 구조 카드 히트는 아직 없습니다. 아래 evidence 패널도 함께 확인하세요.
                   </div>
                 )}
               </div>
+
+              <EvidencePanel
+                data={evidenceData}
+                loading={evidenceLoading}
+                error={evidenceError}
+              />
             </div>
           </div>
         )}

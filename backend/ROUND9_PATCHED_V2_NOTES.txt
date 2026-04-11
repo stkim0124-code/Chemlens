@@ -1,0 +1,80 @@
+CHEMLENS ROUND 9 - PATCHED v2 (pipeline_sample_v3)
+생성: 2026-04-05T06:56:50Z
+파이프라인 버전: v3 | 프롬프트 버전: nr_page_v2
+
+=== v2 (pipeline_sample_v2) 대비 변경사항 ===
+
+1. page_kind 게이트 추가 (최우선 수정)
+   - Gemini가 page_kind를 먼저 분류: toc / meta_explanatory / reaction_content / unknown
+   - toc / meta_explanatory 페이지:
+     * scheme_candidates = [] 강제
+     * reaction_family_name = null 강제
+     * DB에 scheme_candidates / reaction_extracts row 0개
+     * placeholder row 생성 금지
+   - 해당 페이지: p14(색상설명), p15(설명), p16(설명), p46~p53(TOC/구분)
+
+2. JSON schema normalizer 추가 (p55, p57 list 버그 해결)
+   - normalize_response() 함수가 Gemini 응답을 항상 dict로 정규화
+   - list 응답 → 첫 원소 자동 unwrap
+   - 필수 key 누락 → 기본값 자동 보충
+   - page_kind 유효값 검증
+   - scheme_candidates가 list가 아닌 경우 [] 로 보정
+
+3. SMILES 정책 강화
+   - smiles_confidence < 0.85 → reactant_smiles=None, product_smiles=None 강제
+   - meta/toc 페이지: 정규화 단계에서 SMILES 전면 NULL
+   - pipeline 코드에서도 None, None 하드코딩 유지
+
+4. 빈 페이지 placeholder 제거
+   - scheme_candidates=[] 이면 DB에도 0행 (fake scheme#1 생성 금지)
+   - raw JSON / DB / manifest 일관성 유지
+
+5. manifest fieldnames 보강
+   - error 칼럼 포함 (MF_FIELDS 정의)
+   - extrasaction="ignore" 추가로 CSV 생성 버그 방지
+   - page_kind, scheme_count, extract_count 칼럼 추가
+
+6. page_images에 page_kind 칼럼 저장
+   - DB에서 page_kind 기반 필터링 가능
+   - 추후 promote 필터 기준으로 활용
+
+7. 프롬프트 v2 (prompt_named_reactions_v2.txt)
+   - STEP 1: page_kind 분류 지시 추가
+   - toc/meta_explanatory: scheme_candidates=[] 명시
+   - 항상 단일 JSON object 반환 (array 금지) 명시
+   - SMILES: 불확실하면 null 강화
+
+=== 실행 방법 ===
+
+기본 실행:
+    conda activate chemlens
+    python pipeline_sample_v3.py
+
+재실행 (delete-and-rebuild):
+    python pipeline_sample_v3.py --rebuild
+
+ZIP 직접 지정:
+    python pipeline_sample_v3.py --zip "named reactions.zip"
+
+=== 필요 파일 (같은 폴더에 위치) ===
+- labint_round9_patched_v2.db
+- named reactions.zip (또는 named_reactions.zip)
+- prompt_named_reactions_v2.txt
+- .env (GEMINI_API_KEY=...)
+
+=== 기대 결과 (GPT 승인 기준) ===
+- p46~p53: scheme_candidates=[], extract 0, placeholder 0  ✓
+- p14~p16: reaction_family_name=null, schemes=0           ✓
+- p54: Acetoacetic Ester Synthesis + overview/mechanism   ✓ (유지)
+- p56: Acyloin Condensation + overview/mech A/mech B      ✓ (유지)
+- p55, p57: list → object 정상화 + reaction_content 처리  ✓
+- manifest: error 없이 생성                                ✓
+- reaction_cards: 변경 없음                                ✓
+
+=== DB 상태 ===
+labint_round9_patched_v2.db:
+  - reaction_cards: 11371 (변경 없음)
+  - page_images: 16칼럼 (page_kind 추가)
+  - scheme_candidates: 21칼럼
+  - reaction_extracts: 30칼럼
+  - staging 테이블 모두 비어있음 (파이프라인 실행 후 채워짐)

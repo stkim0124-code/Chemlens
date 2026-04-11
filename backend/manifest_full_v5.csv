@@ -1,0 +1,133 @@
+page_no,image_filename,page_kind,local_classified,status,scheme_count,extract_count,reaction_family_name,error
+14,named reactions_14.jpg,meta_explanatory,True,ok,0,0,,
+15,named reactions_15.jpg,meta_explanatory,True,ok,0,0,,
+16,named reactions_16.jpg,meta_explanatory,True,ok,0,0,,
+17,named reactions_17.jpg,toc,True,ok,0,0,,
+18,named reactions_18.jpg,toc,True,ok,0,0,,
+19,named reactions_19.jpg,toc,True,ok,0,0,,
+20,named reactions_20.jpg,toc,True,ok,0,0,,
+21,named reactions_21.jpg,toc,True,ok,0,0,,
+22,named reactions_22.jpg,toc,True,ok,0,0,,
+23,named reactions_23.jpg,toc,True,ok,0,0,,
+24,named reactions_24.jpg,toc,True,ok,0,0,,
+25,named reactions_25.jpg,toc,True,ok,0,0,,
+26,named reactions_26.jpg,toc,True,ok,0,0,,
+27,named reactions_27.jpg,toc,True,ok,0,0,,
+28,named reactions_28.jpg,toc,True,ok,0,0,,
+29,named reactions_29.jpg,toc,True,ok,0,0,,
+30,named reactions_30.jpg,toc,True,ok,0,0,,
+31,named reactions_31.jpg,toc,True,ok,0,0,,
+32,named reactions_32.jpg,toc,True,ok,0,0,,
+33,named reactions_33.jpg,toc,True,ok,0,0,,
+34,named reactions_34.jpg,toc,True,ok,0,0,,
+35,named reactions_35.jpg,toc,True,ok,0,0,,
+36,named reactions_36.jpg,toc,True,ok,0,0,,
+37,named reactions_37.jpg,toc,True,ok,0,0,,
+38,named reactions_38.jpg,toc,True,ok,0,0,,
+39,named reactions_39.jpg,toc,True,ok,0,0,,
+40,named reactions_40.jpg,toc,True,ok,0,0,,
+41,named reactions_41.jpg,toc,True,ok,0,0,,
+42,named reactions_42.jpg,toc,True,ok,0,0,,
+43,named reactions_43.jpg,toc,True,ok,0,0,,
+44,named reactions_44.jpg,toc,True,ok,0,0,,
+45,named reactions_45.jpg,toc,True,ok,0,0,,
+46,named reactions_46.jpg,toc,True,ok,0,0,,
+47,named reactions_47.jpg,toc,True,ok,0,0,,
+48,named reactions_48.jpg,toc,True,ok,0,0,,
+49,named reactions_49.jpg,toc,True,ok,0,0,,
+50,named reactions_50.jpg,toc,True,ok,0,0,,
+51,named reactions_51.jpg,toc,True,ok,0,0,,
+52,named reactions_52.jpg,toc,True,ok,0,0,,
+53,named reactions_53.jpg,toc,True,ok,0,0,,
+54,named reactions_54.jpg,reaction_content,False,ok,2,9,Acetoacetic Ester Synthesis,
+55,named reactions_55.jpg,reaction_content,False,ok,4,9,Acetoacetic Ester Synthesis,
+56,named reactions_56.jpg,reaction_content,False,ok,3,3,Acyloin Condensation,
+57,named reactions_57.jpg,reaction_content,False,ok,6,8,Acyloin Condensation,
+58,named reactions_58.jpg,reaction_content,False,ok,4,4,Alder Ene Reaction,
+59,named reactions_59.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+60,named reactions_60.jpg,reaction_content,False,ok,4,4,Aldol Reaction,
+61,named reactions_61.jpg,reaction_content,False,ok,4,4,Aldol Reaction,
+62,named reactions_62.jpg,reaction_content,False,ok,2,5,Alkene (olefin) Metathesis,
+63,named reactions_63.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+64,named reactions_64.jpg,reaction_content,False,ok,2,2,Alkyne Metathesis,
+65,named reactions_65.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+66,named reactions_66.jpg,reaction_content,False,ok,4,4,Amadori Rearrangement,
+67,named reactions_67.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+68,named reactions_68.jpg,reaction_content,False,ok,4,4,Arbuzov Reaction,
+69,named reactions_69.jpg,reaction_content,False,ok,3,3,Arbuzov Reaction,
+70,named reactions_70.jpg,reaction_content,False,ok,2,2,Arndt-Eistert Homologation / Synthesis,
+71,named reactions_71.jpg,reaction_content,False,ok,4,6,Arndt-Eistert Homologation / Synthesis,
+72,named reactions_72.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+73,named reactions_73.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+74,named reactions_74.jpg,reaction_content,False,ok,6,6,Aza-Cope Rearrangement,
+75,named reactions_75.jpg,reaction_content,False,ok,3,3,Aza-Cope Rearrangement,
+76,named reactions_76.jpg,reaction_content,False,ok,4,6,Aza-Wittig Reaction,
+77,named reactions_77.jpg,reaction_content,False,ok,3,3,Aza-Wittig Reaction,
+78,named reactions_78.jpg,reaction_content,False,ok,3,4,"Aza-[2,3]-Wittig Rearrangement",
+79,named reactions_79.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+80,named reactions_80.jpg,reaction_content,False,ok,3,3,Baeyer-Villiger Oxidation/rearrangement,
+81,named reactions_81.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+82,named reactions_82.jpg,reaction_content,False,ok,4,4,Baker-Venkataraman Rearrangement,
+83,named reactions_83.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+84,named reactions_84.jpg,meta_explanatory,False,ok,0,0,,
+85,named reactions_85.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+86,named reactions_86.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+87,named reactions_87.jpg,reaction_content,False,ok,4,4,Balz-Schiemann Reaction,
+88,named reactions_88.jpg,reaction_content,False,ok,4,7,Bamford-Stevens-Shapiro Olefination,
+89,named reactions_89.jpg,reaction_content,False,ok,4,4,Bamford-Stevens-Shapiro Olefination,
+90,named reactions_90.jpg,reaction_content,False,ok,6,6,Barbier Coupling Reaction,
+91,named reactions_91.jpg,reaction_content,False,ok,5,5,Barbier Coupling Reaction,
+92,named reactions_92.jpg,reaction_content,False,ok,5,5,Bartoli Indole Synthesis,
+93,named reactions_93.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+94,named reactions_94.jpg,reaction_content,False,ok,4,4,Barton Nitrite Ester Reaction,
+95,named reactions_95.jpg,reaction_content,False,ok,4,4,Barton Nitrite Ester Reaction,
+96,named reactions_96.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+97,named reactions_97.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+98,named reactions_98.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+99,named reactions_99.jpg,reaction_content,False,ok,4,4,Barton-Mccombie Radical Deoxygenation Reaction,
+100,named reactions_100.jpg,reaction_content,False,ok,4,4,Baylis-Hillman Reaction,
+101,named reactions_101.jpg,reaction_content,False,ok,4,4,Baylis-Hillman Reaction,
+102,named reactions_102.jpg,reaction_content,False,ok,4,4,Beckmann Rearrangement,
+103,named reactions_103.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+104,named reactions_104.jpg,reaction_content,False,ok,4,4,Benzilic Acid Rearrangement,
+105,named reactions_105.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+106,named reactions_106.jpg,reaction_content,False,ok,1,1,Benzoin and Retro-Benzoin Condensation,
+107,named reactions_107.jpg,reaction_content,False,ok,5,10,Benzoin and Retro-Benzoin Condensation,
+108,named reactions_108.jpg,reaction_content,False,ok,3,3,Bergman Cycloaromatization Reaction,
+109,named reactions_109.jpg,reaction_content,False,ok,5,5,Bergman Cycloaromatization Reaction,
+110,named reactions_110.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+111,named reactions_111.jpg,reaction_content,False,ok,3,3,Biginelli Reaction,
+112,named reactions_112.jpg,reaction_content,False,ok,7,7,Birch Reduction,
+113,named reactions_113.jpg,reaction_content,False,ok,3,3,Birch Reduction,
+114,named reactions_114.jpg,reaction_content,False,ok,3,3,Bischler-Napieralski Isoquinoline Synthesis,
+115,named reactions_115.jpg,reaction_content,False,ok,4,4,Bischler-Napieralski Isoquinoline Synthesis,
+116,named reactions_116.jpg,reaction_content,False,ok,5,5,Brook Rearrangement,
+117,named reactions_117.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+118,named reactions_118.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+119,named reactions_119.jpg,reaction_content,False,ok,4,4,Brown Hydroboration Reaction,
+120,named reactions_120.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+121,named reactions_121.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+122,named reactions_122.jpg,reaction_content,False,ok,3,3,Buchwald-Hartwig Cross-Coupling,
+123,named reactions_123.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+124,named reactions_124.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+125,named reactions_125.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+126,named reactions_126.jpg,reaction_content,False,ok,3,3,Cannizzaro Reaction,
+127,named reactions_127.jpg,reaction_content,False,ok,4,4,Cannizzaro Reaction,
+128,named reactions_128.jpg,reaction_content,False,ok,3,3,Carroll Rearrangement,
+129,named reactions_129.jpg,reaction_content,False,ok,3,3,Carroll Rearrangement,
+130,named reactions_130.jpg,reaction_content,False,ok,4,4,Castro-Stephens Coupling,
+131,named reactions_131.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+132,named reactions_132.jpg,reaction_content,False,ok,3,3,Chichibabin Amination Reaction,
+133,named reactions_133.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+134,named reactions_134.jpg,reaction_content,False,ok,3,4,Chugaev Elimination Reaction,
+135,named reactions_135.jpg,reaction_content,False,ok,4,7,Chugaev Elimination Reaction,
+136,named reactions_136.jpg,reaction_content,False,ok,5,6,Ciamician-Dennstedt Rearrangement,
+137,named reactions_137.jpg,reaction_content,False,ok,3,3,Ciamician-Dennstedt Rearrangement,
+138,named reactions_138.jpg,reaction_content,False,ok,4,4,Claisen Condensation,
+139,named reactions_139.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+140,named reactions_140.jpg,reaction_content,False,ok,4,4,Claisen Rearrangement,
+141,named reactions_141.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+142,named reactions_142.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+143,named reactions_143.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+144,named reactions_144.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"
+145,named reactions_145.jpg,reaction_content,False,fail,0,0,,"unknown after 4 attempts: API 404: models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available mode"

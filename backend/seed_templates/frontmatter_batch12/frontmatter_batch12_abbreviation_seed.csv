@@ -1,0 +1,11 @@
+alias,canonical_name,entity_type
+BR,Burgess reagent,reagent
+NaNH2,sodium amide,reagent
+9-BBN,9-borabicyclo[3.3.1]nonane,reagent
+LDA,lithium diisopropylamide,base
+KHMDS,potassium bis(trimethylsilyl)amide,base
+DBU,"1,8-diazabicyclo[5.4.0]undec-7-ene",base
+p-cymene,p-cymene,solvent
+CuI,copper(I) iodide,catalyst
+Ph3P,triphenylphosphine,reagent
+DMS,dimethyl sulfide,solvent

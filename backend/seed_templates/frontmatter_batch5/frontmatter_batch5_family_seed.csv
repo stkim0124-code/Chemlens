@@ -1,0 +1,6 @@
+family_name,family_class,transformation_type,mechanism_type,key_reagents_clue
+Acetoacetic Ester Synthesis,alkylation,β-keto ester alkylation and decarboxylative ketone synthesis,enolate alkylation,NaH|NaOR|LiHMDS|NaHMDS|alkyl halide|H3O+|heat
+Acyloin Condensation,reductive coupling,ester reductive dimerization to α-hydroxy ketones,reductive coupling,Na|TMSCl|xylene|H+|H2O
+Alder (Ene) Reaction (Hydro-Allyl Addition),pericyclic addition,ene reaction / allylic transposition addition,pericyclic,enophile|Lewis acid|MVK|DBU
+Aldol Reaction,carbon-carbon bond formation,enolate addition to carbonyl / β-hydroxy carbonyl formation,enolate addition,enolate|boron enolate|Ti|Si|Zn|acid|base|TiCl4|i-Pr2NEt
+Alkene (Olefin) Metathesis,metathesis,olefin exchange via metal carbene / alkene redistribution,organometallic,Grubbs catalyst|Schrock catalyst|Ru carbene|RCM|CM|ROMP|ADMET|PCy3

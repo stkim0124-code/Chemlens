@@ -1,0 +1,13 @@
+alias,canonical_name,entity_type
+POCl3,phosphorus oxychloride,reagent
+P2O5,phosphorus pentoxide,reagent
+PPA,polyphosphoric acid,reagent
+Tf2O,trifluoromethanesulfonic anhydride,reagent
+BINAP,"2,2-bis(diphenylphosphino)-1,1-binaphthyl",ligand
+dppf,"1,1-bis(diphenylphosphino)ferrocene",ligand
+dba,dibenzylideneacetone,ligand_component
+XANTPHOS,"4,5-bis(diphenylphosphino)-9,9-dimethylxanthene",ligand
+9-BBN,9-borabicyclo[3.3.1]nonane,borane_reagent
+BH3·DMS,borane-dimethyl sulfide complex,borane_reagent
+Rh2(OAc)4,dirhodium tetraacetate,catalyst
+Pd2(dba)3,tris(dibenzylideneacetone)dipalladium(0),catalyst

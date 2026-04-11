@@ -1,0 +1,11 @@
+alias,canonical_name,entity_type,source_page
+RCAM,ring-closing alkyne metathesis,reaction_term,12
+Mo(CO)6,molybdenum hexacarbonyl,catalyst,12
+Lindlar cat.,Lindlar catalyst,catalyst,13
+p-TsOH,p-toluenesulfonic acid,acid,15
+P(OMe)3,trimethyl phosphite,reagent,17
+SOCl2,thionyl chloride,reagent,18
+CH2N2,diazomethane,reagent,18
+Ag2O,silver oxide,reagent,18
+LiHMDS,lithium bis(trimethylsilyl)amide,base,21
+NaHMDS,sodium bis(trimethylsilyl)amide,base,21

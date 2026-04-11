@@ -1,0 +1,30 @@
+CHEMLENS LabInt v2 patch
+
+핵심 변화
+- reaction_cards는 유지하되 staging 역할로 격하
+- 같은 labint.db 안에 v2 core schema 추가
+  - substances
+  - substance_names
+  - reactions
+  - reaction_participants
+  - reaction_conditions
+  - reaction_occurrences
+  - ingest_jobs
+  - card_migration_map
+- 기존 reaction_cards를 v2 구조로 백필하는 마이그레이션 도구 추가
+- 신규 카드 삽입 시 reaction_cards + v2 구조를 동시에 갱신하도록 main.py 수정
+- /api/v2/summary, /api/v2/substances, /api/v2/reactions, /api/v2/migrate/reaction-cards 추가
+
+덮어쓰기 파일
+- backend/app/main.py
+- backend/app/labint_v2.py
+- backend/app/labint.db
+- backend/tools/migrate_labint_v2.py
+
+실행
+1) 파일 덮어쓰기
+2) conda activate chemlens
+3) cd /d C:\chemlensackend
+4) python tools\migrate_labint_v2.py --db app\labint.db
+5) python run_backend.bat 또는 기존 방식으로 백엔드 재실행
+6) http://127.0.0.1:8000/health 와 /api/v2/summary 확인

@@ -1,0 +1,16 @@
+alias,canonical_name,entity_type,source_page
+NOCl,nitrosyl chloride,reagent,42
+AIBN,azobisisobutyronitrile,radical_initiator,44
+Bu3SnH,tributyltin hydride,reagent,44
+EDCI,1-ethyl-3-(3-dimethylaminopropyl)carbodiimide,coupling_reagent,44
+DMAP,4-dimethylaminopyridine,base,44
+DCC,dicyclohexylcarbodiimide,coupling_reagent,45
+PPh3,triphenylphosphine,phosphine,45
+CS2,carbon disulfide,reagent,46
+MeI,methyl iodide,alkylating_agent,46
+DABCO,"1,4-diazabicyclo[2.2.2]octane",base,48
+PhSeLi,lithium phenylselenide,nucleophile,49
+LAH,lithium aluminium hydride,reducing_agent,51
+AcOH,acetic acid,acid,51
+TsCl,p-toluenesulfonyl chloride,activating_agent,51
+HONH2·HCl,hydroxylamine hydrochloride,reagent,50

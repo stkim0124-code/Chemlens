@@ -1,0 +1,34 @@
+source_zip,page_no,image_filename,status,schemes,extracts,error
+named reactions.zip,59,named reactions_59.jpg,ok,4,4,
+named reactions.zip,63,named reactions_63.jpg,fail,0,0,primary_only_retry_failed after 3 attempts: RECITATION
+named reactions.zip,65,named reactions_65.jpg,ok,3,3,
+named reactions.zip,67,named reactions_67.jpg,ok,2,2,
+named reactions.zip,72,named reactions_72.jpg,fail,0,0,primary_only_retry_failed after 3 attempts: RECITATION
+named reactions.zip,73,named reactions_73.jpg,ok,3,3,
+named reactions.zip,79,named reactions_79.jpg,ok,1,1,
+named reactions.zip,81,named reactions_81.jpg,ok,5,5,
+named reactions.zip,83,named reactions_83.jpg,ok,4,4,
+named reactions.zip,85,named reactions_85.jpg,fail,0,0,primary_only_retry_failed after 3 attempts: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+named reactions.zip,86,named reactions_86.jpg,ok,4,4,
+named reactions.zip,93,named reactions_93.jpg,fail,0,0,primary_only_retry_failed after 3 attempts: RECITATION
+named reactions.zip,96,named reactions_96.jpg,ok,4,4,
+named reactions.zip,97,named reactions_97.jpg,ok,2,2,
+named reactions.zip,98,named reactions_98.jpg,ok,4,4,
+named reactions.zip,103,named reactions_103.jpg,fail,0,0,"primary_only_retry_failed after 3 attempts: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
+named reactions.zip,105,named reactions_105.jpg,fail,0,0,primary_only_retry_failed after 3 attempts: RECITATION
+named reactions.zip,110,named reactions_110.jpg,ok,3,3,
+named reactions.zip,117,named reactions_117.jpg,fail,0,0,primary_only_retry_failed after 3 attempts: RECITATION
+named reactions.zip,118,named reactions_118.jpg,ok,3,3,
+named reactions.zip,120,named reactions_120.jpg,fail,0,0,primary_only_retry_failed after 3 attempts: RECITATION
+named reactions.zip,121,named reactions_121.jpg,fail,0,0,primary_only_retry_failed after 3 attempts: RECITATION
+named reactions.zip,123,named reactions_123.jpg,ok,4,4,
+named reactions.zip,124,named reactions_124.jpg,ok,6,6,
+named reactions.zip,125,named reactions_125.jpg,fail,0,0,primary_only_retry_failed after 3 attempts: RECITATION
+named reactions.zip,131,named reactions_131.jpg,ok,5,5,
+named reactions.zip,133,named reactions_133.jpg,ok,4,4,
+named reactions.zip,139,named reactions_139.jpg,fail,0,0,primary_only_retry_failed after 3 attempts: RECITATION
+named reactions.zip,141,named reactions_141.jpg,ok,3,3,
+named reactions.zip,142,named reactions_142.jpg,ok,4,4,
+named reactions.zip,143,named reactions_143.jpg,fail,0,0,primary_only_retry_failed after 3 attempts: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+named reactions.zip,144,named reactions_144.jpg,ok,3,3,
+named reactions.zip,145,named reactions_145.jpg,fail,0,0,primary_only_retry_failed after 3 attempts: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.

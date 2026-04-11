@@ -1,0 +1,6 @@
+alias,canonical_name,entity_type
+Zn(Hg),zinc amalgam,reagent
+conc. HCl,concentrated hydrochloric acid,acid
+dry HX,anhydrous hydrogen halide,acid
+Zn/HCl,zinc in hydrochloric acid,reduction_system
+AcOH/HCl,acetic acid and hydrochloric acid,solvent_system

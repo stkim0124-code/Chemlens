@@ -1,0 +1,4538 @@
+{
+  "run_at": "2026-04-06T10:57:19Z",
+  "batch": "full_batch1",
+  "tag": "schema_backfill_retry404",
+  "targets": [
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 59,
+      "image_filename": "named reactions_59.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "ALDER (ENE) REACTION (HYDRO-ALLYL ADDITION)",
+        "reaction_family_name": "Alder (ene) Reaction",
+        "page_section_hints": [
+          "Synthetic Applications:"
+        ],
+        "scheme_candidates": [
+          {
+            "reaction_name": "Aza-ene reaction",
+            "step_key": "A",
+            "reactants": [
+              "ArOC-protected imidazolidine"
+            ],
+            "products": [
+              "acyclic adduct"
+            ],
+            "reagents": [
+              "MVK",
+              "CH3CN"
+            ],
+            "yield": "56-75%",
+            "reaction_details": {
+              "conditions": "r.t."
+            },
+            "final_product_of_synthesis": null,
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Alder (ene) Reaction",
+                "transformation_text": "Aza-ene reaction",
+                "reactants_text": "ArOC-protected imidazolidine",
+                "products_text": "acyclic adduct",
+                "intermediates_text": null,
+                "reagents_text": "MVK; CH3CN",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "56-75%",
+                "workup_text": null,
+                "conditions_text": "conditions: r.t.",
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "reaction_name": "Intramolecular cyclization",
+            "step_key": "A",
+            "reactants": [
+              "racemic acyclic adduct"
+            ],
+            "products": [
+              "Imidazo[1,2,3-ij][1,8]naphthyridine derivative"
+            ],
+            "reagents": [
+              "MVK",
+              "CH3CN / H2O"
+            ],
+            "yield": "70%",
+            "reaction_details": {
+              "conditions": "r.t."
+            },
+            "final_product_of_synthesis": null,
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Alder (ene) Reaction",
+                "transformation_text": "Intramolecular cyclization",
+                "reactants_text": "racemic acyclic adduct",
+                "products_text": "Imidazo[1,2,3-ij][1,8]naphthyridine derivative",
+                "intermediates_text": null,
+                "reagents_text": "MVK; CH3CN / H2O",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "70%",
+                "workup_text": null,
+                "conditions_text": "conditions: r.t.",
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "reaction_name": "Asymmetric metal-promoted ene cyclization",
+            "step_key": "B",
+            "reactants": [
+              "N-benzoyl-oxazolidinone derivative"
+            ],
+            "products": [
+              "pyrrolidine derivative"
+            ],
+            "reagents": [
+              "Mg(ClO4)2",
+              "chiral bis-oxazoline ligand",
+              "DCM"
+            ],
+            "yield": "72%",
+            "reaction_details": {
+              "conditions": "r.t., 3h",
+              "stereochemistry": "cis:trans > 20:1, 65% ee"
+            },
+            "final_product_of_synthesis": "(-)-alpha-Kainic acid",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Alder (ene) Reaction",
+                "transformation_text": "Asymmetric metal-promoted ene cyclization",
+                "reactants_text": "N-benzoyl-oxazolidinone derivative",
+                "products_text": "pyrrolidine derivative",
+                "intermediates_text": null,
+                "reagents_text": "Mg(ClO4)2; chiral bis-oxazoline ligand; DCM",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "72%",
+                "workup_text": null,
+                "conditions_text": "conditions: r.t., 3h",
+                "notes_text": "stereochemistry: cis:trans > 20:1, 65% ee; (-)-alpha-Kainic acid",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "reaction_name": "Tandem oxy-Cope/transannular ene reaction",
+            "step_key": null,
+            "reactants": [
+              "divinyl cyclohexenol derivative"
+            ],
+            "products": [
+              "tricyclic intermediate"
+            ],
+            "reagents": [
+              "DBU",
+              "toluene"
+            ],
+            "yield": "55-60%",
+            "reaction_details": {
+              "conditions": "220 °C",
+              "mechanism": "[3,3]"
+            },
+            "final_product_of_synthesis": "(+)-Arteannuin M",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Alder (ene) Reaction",
+                "transformation_text": "Tandem oxy-Cope/transannular ene reaction",
+                "reactants_text": "divinyl cyclohexenol derivative",
+                "products_text": "tricyclic intermediate",
+                "intermediates_text": null,
+                "reagents_text": "DBU; toluene",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "55-60%",
+                "workup_text": null,
+                "conditions_text": "conditions: 220 °C; mechanism: [3,3]",
+                "notes_text": "(+)-Arteannuin M",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 4,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 65,
+      "image_filename": "named reactions_65.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "ALKYNE METATHESIS",
+        "reaction_family_name": "Alkyne Metathesis",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "reaction_id": "13_Alkyne_Metathesis_1",
+            "reaction_name": "Ring-Closing Alkyne Metathesis in Azamacrolide Synthesis",
+            "reactants": [
+              "C#CCO[C@](=O)C[C@H](CC#C)N(CC)Fmoc"
+            ],
+            "reagents": [
+              {
+                "reagent_name": "(t-BuO)3W≡C-t-Bu",
+                "reagent_role": "catalyst",
+                "conditions": null
+              },
+              {
+                "reagent_name": "Mo(CO)6",
+                "reagent_role": "catalyst",
+                "conditions": null
+              },
+              {
+                "reagent_name": "p-ClC6H4OH",
+                "reagent_role": "co-catalyst",
+                "conditions": "1 equiv"
+              },
+              {
+                "reagent_name": "H2, Lindlar's cat.",
+                "reagent_role": "reagent",
+                "conditions": null
+              },
+              {
+                "reagent_name": "TBAF·3H2O",
+                "reagent_role": "reagent",
+                "conditions": null
+              }
+            ],
+            "products": [
+              {
+                "product_name": "Azamacrolide",
+                "product_smiles": "O=C1OCCC/C=C\\[C@H](NCC)C1",
+                "product_yield": null,
+                "product_role": "product"
+              }
+            ],
+            "reaction_details": {
+              "notes": "The reaction proceeds in multiple steps. First, a ring-closing alkyne metathesis (RCAM) is performed using either a tungsten or molybdenum catalyst. The resulting cycloalkyne is then reduced with Lindlar's catalyst and deprotected with TBAF to yield the final product. Yields for the RCAM step are 71% (W cat.) or 67% (Mo cat.). The hydrogenation yield is 94% and the deprotection yield is 62%."
+            },
+            "intermediate_products": [
+              {
+                "product_name": null,
+                "product_smiles": "O=C1OCCC#CC[C@H](N(CC)Fmoc)C1",
+                "product_yield": null,
+                "product_role": "intermediate"
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Alkyne Metathesis",
+                "transformation_text": "Ring-Closing Alkyne Metathesis in Azamacrolide Synthesis",
+                "reactants_text": "C#CCO[C@](=O)C[C@H](CC#C)N(CC)Fmoc",
+                "products_text": "Azamacrolide",
+                "intermediates_text": null,
+                "reagents_text": "H2, Lindlar's cat.; TBAF·3H2O",
+                "catalysts_text": "(t-BuO)3W≡C-t-Bu; Mo(CO)6; p-ClC6H4OH | 1 equiv",
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "The reaction proceeds in multiple steps. First, a ring-closing alkyne metathesis (RCAM) is performed using either a tungsten or molybdenum catalyst. The resulting cycloalkyne is then reduced with Lindlar's catalyst and deprotected with TBAF to yield the final product. Yields for the RCAM step are 71% (W cat.) or 67% (Mo cat.). The hydrogenation yield is 94% and the deprotection yield is 62%.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "reaction_id": "13_Alkyne_Metathesis_2",
+            "reaction_name": "Ring-Closing Alkyne Metathesis in Prostaglandin E2-1,15-lactone Synthesis",
+            "reactants": [
+              "CCCCC#CCC[C@H]1[C@H](C(=O)OCCC#C)[C@@H]2C[C@H]1C(=O)C2OTBS"
+            ],
+            "reagents": [
+              {
+                "reagent_name": "[Mo{N(tBu)(Ar)}3] (Ar = 3,5-dimethylphenyl)",
+                "reagent_role": "catalyst",
+                "conditions": "7.5 mol%"
+              },
+              {
+                "reagent_name": "DCM/toluene",
+                "reagent_role": "solvent",
+                "conditions": "80 °C, 16h"
+              },
+              {
+                "reagent_name": "H2",
+                "reagent_role": "reagent",
+                "conditions": "1 atm"
+              },
+              {
+                "reagent_name": "Lindlar's catalyst",
+                "reagent_role": "catalyst",
+                "conditions": null
+              },
+              {
+                "reagent_name": "quinoline",
+                "reagent_role": "catalyst poison",
+                "conditions": "cat."
+              },
+              {
+                "reagent_name": "hexane",
+                "reagent_role": "solvent",
+                "conditions": "r.t., 2h"
+              },
+              {
+                "reagent_name": "HF (aq.)",
+                "reagent_role": "reagent",
+                "conditions": "r.t., 1h"
+              },
+              {
+                "reagent_name": "MeCN",
+                "reagent_role": "solvent",
+                "conditions": null
+              }
+            ],
+            "products": [
+              {
+                "product_name": "PGE2-1,15-lactone",
+                "product_smiles": "O=C1OCCC/C=C\\[C@@H]2[C@H](CC#CCCCC)[C@H]3C[C@@H]2C(=O)C3O",
+                "product_yield": "88",
+                "product_role": "product"
+              }
+            ],
+            "reaction_details": {
+              "notes": "A three-step synthesis involving RCAM (68-73% yield), Lindlar reduction (86% yield), and TBS deprotection (88% yield)."
+            },
+            "intermediate_products": [
+              {
+                "product_name": null,
+                "product_smiles": "O=C1OCCC#CC[C@@H]2[C@H](CC#CCCCC)[C@H]3C[C@@H]2C(=O)C3OTBS",
+                "product_yield": "68-73",
+                "product_role": "intermediate"
+              },
+              {
+                "product_name": null,
+                "product_smiles": "O=C1OCCC/C=C\\[C@@H]2[C@H](CC#CCCCC)[C@H]3C[C@@H]2C(=O)C3OTBS",
+                "product_yield": "86",
+                "product_role": "intermediate"
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Alkyne Metathesis",
+                "transformation_text": "Ring-Closing Alkyne Metathesis in Prostaglandin E2-1,15-lactone Synthesis",
+                "reactants_text": "CCCCC#CCC[C@H]1[C@H](C(=O)OCCC#C)[C@@H]2C[C@H]1C(=O)C2OTBS",
+                "products_text": "PGE2-1,15-lactone",
+                "intermediates_text": null,
+                "reagents_text": "H2 | 1 atm; HF (aq.) | r.t., 1h",
+                "catalysts_text": "[Mo{N(tBu)(Ar)}3] (Ar = 3,5-dimethylphenyl) | 7.5 mol%; Lindlar's catalyst; quinoline | cat.",
+                "solvents_text": "DCM/toluene | 80 °C, 16h; hexane | r.t., 2h; MeCN",
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "A three-step synthesis involving RCAM (68-73% yield), Lindlar reduction (86% yield), and TBS deprotection (88% yield).",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "reaction_id": "13_Alkyne_Metathesis_3",
+            "reaction_name": "Ring-Closing Alkyne Metathesis in Turriane Synthesis",
+            "reactants": [
+              "C#CCOc1c(OR)c(OC)cc(c1-c1cc(OC)c(OR)c(OCCCCCCCC#C)c1)OR. R = PMB"
+            ],
+            "reagents": [
+              {
+                "reagent_name": "[Mo(CO)6]",
+                "reagent_role": "catalyst",
+                "conditions": null
+              },
+              {
+                "reagent_name": "F3CC6H4OH",
+                "reagent_role": "co-catalyst",
+                "conditions": null
+              },
+              {
+                "reagent_name": "chlorobenzene",
+                "reagent_role": "solvent",
+                "conditions": "150 °C, 4h, microwave heating"
+              }
+            ],
+            "products": [
+              {
+                "product_name": "Turriane",
+                "product_smiles": "O1CCCCCCCC#CCOc2c(O)c(OC)cc(c2-c2c1c(O)c(OC)cc2O)O",
+                "product_yield": null,
+                "product_role": "product"
+              }
+            ],
+            "reaction_details": {
+              "notes": "The RCAM step to form the cyclophane proceeds in 83% yield. The final product, Turriane, is obtained after subsequent deprotection steps."
+            },
+            "intermediate_products": [
+              {
+                "product_name": null,
+                "product_smiles": "O1CCCCCCCC#CCOc2c(OR)c(OC)cc(c2-c2c1c(OR)c(OC)cc2OR)OR. R = PMB",
+                "product_yield": "83",
+                "product_role": "intermediate"
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Alkyne Metathesis",
+                "transformation_text": "Ring-Closing Alkyne Metathesis in Turriane Synthesis",
+                "reactants_text": "C#CCOc1c(OR)c(OC)cc(c1-c1cc(OC)c(OR)c(OCCCCCCCC#C)c1)OR. R = PMB",
+                "products_text": "Turriane",
+                "intermediates_text": null,
+                "reagents_text": null,
+                "catalysts_text": "[Mo(CO)6]; F3CC6H4OH",
+                "solvents_text": "chlorobenzene | 150 °C, 4h, microwave heating",
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "The RCAM step to form the cyclophane proceeds in 83% yield. The final product, Turriane, is obtained after subsequent deprotection steps.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 67,
+      "image_filename": "named reactions_67.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "AMADORI REACTION / REARRANGEMENT",
+        "reaction_family_name": "Amadori Rearrangement",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_id": "01",
+            "reaction_name": "Amadori Reaction",
+            "reaction_summary": "Intramolecular cyclization of amino ketols via an Amadori reaction to synthesize piperidin-3-one derivatives.",
+            "reactants": [
+              {
+                "reactant_id": "1",
+                "smiles": "COC(=O)NCCCC(O)C(=O)c1cc(OC)c(OBn)cc1OC",
+                "name": ""
+              },
+              {
+                "reactant_id": "2",
+                "smiles": "C[C@H]1OC(=O)N[C@H]1CCCC(O)C(=O)c1cc(OC)c(OR)cc1OC",
+                "name": "R = TBDMS"
+              }
+            ],
+            "reagents": [
+              {
+                "reagent_id": "3",
+                "smiles": "Cc1ccc(S(=O)(=O)O)cc1",
+                "name": "p-TsOH"
+              },
+              {
+                "reagent_id": "4",
+                "smiles": "Cc1ccccc1",
+                "name": "toluene"
+              },
+              {
+                "reagent_id": "5",
+                "name": "reflux",
+                "smiles": null
+              }
+            ],
+            "products": [
+              {
+                "product_id": "6",
+                "smiles": "COC(=O)[C@H]1CC(=O)C[C@@H](c2cc(OC)c(OBn)cc2OC)N1",
+                "name": "",
+                "yield": "82"
+              },
+              {
+                "product_id": "7",
+                "smiles": "C[C@H]1OC(=O)N2[C@H]1CCC(=O)C[C@@H]2c1cc(OC)c(OR)cc1OC",
+                "name": "R = TBDMS",
+                "yield": "85"
+              }
+            ],
+            "intermediates": [
+              {
+                "intermediate_id": "8",
+                "smiles": "COC(=O)N1CCCC(O)(C1)c1cc(OC)c(OBn)cc1OC",
+                "name": ""
+              },
+              {
+                "intermediate_id": "9",
+                "smiles": "C[C@H]1OC(=O)N2[C@H]1CCCC(O)(C2)c1cc(OC)c(OR)cc1OC",
+                "name": "R = TBDMS"
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Amadori Rearrangement",
+                "transformation_text": "Amadori Reaction",
+                "reactants_text": "COC(=O)NCCCC(O)C(=O)c1cc(OC)c(OBn)cc1OC; R = TBDMS | C[C@H]1OC(=O)N[C@H]1CCCC(O)C(=O)c1cc(OC)c(OR)cc1OC",
+                "products_text": "82 | COC(=O)[C@H]1CC(=O)C[C@@H](c2cc(OC)c(OBn)cc2OC)N1; R = TBDMS | 85 | C[C@H]1OC(=O)N2[C@H]1CCC(=O)C[C@@H]2c1cc(OC)c(OR)cc1OC",
+                "intermediates_text": "COC(=O)N1CCCC(O)(C1)c1cc(OC)c(OBn)cc1OC; R = TBDMS | C[C@H]1OC(=O)N2[C@H]1CCCC(O)(C2)c1cc(OC)c(OR)cc1OC",
+                "reagents_text": "p-TsOH | Cc1ccc(S(=O)(=O)O)cc1; toluene | Cc1ccccc1; reflux",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "COC(=O)[C@H]1CC(=O)C[C@@H](c2cc(OC)c(OBn)cc2OC)N1: 82; R = TBDMS: 85",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Intramolecular cyclization of amino ketols via an Amadori reaction to synthesize piperidin-3-one derivatives.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "scheme_id": "02",
+            "reaction_name": "Intramolecular Amadori Rearrangement",
+            "reaction_summary": "Intramolecular Amadori rearrangement of monosaccharide esters of leucine-enkephaline to afford bicyclic ketoses.",
+            "reactants": [
+              {
+                "reactant_id": "10",
+                "smiles": "",
+                "name": "D-glucose derivative"
+              },
+              {
+                "reactant_id": "11",
+                "smiles": "",
+                "name": "D-mannose derivative"
+              },
+              {
+                "reactant_id": "12",
+                "smiles": "",
+                "name": "D-galactose derivative"
+              }
+            ],
+            "reagents": [
+              {
+                "reagent_id": "13",
+                "smiles": "c1ccncc1",
+                "name": "dry pyridine"
+              },
+              {
+                "reagent_id": "14",
+                "smiles": "CC(=O)O",
+                "name": "AcOH"
+              },
+              {
+                "reagent_id": "15",
+                "name": "24h, r.t.",
+                "smiles": null
+              }
+            ],
+            "products": [
+              {
+                "product_id": "16",
+                "smiles": "",
+                "name": "Bicyclic ketoses (I: R1=H, R2=OH; II: R1=OH, R2=H)",
+                "yield": "20-50"
+              }
+            ],
+            "intermediates": [],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Amadori Rearrangement",
+                "transformation_text": "Intramolecular Amadori Rearrangement",
+                "reactants_text": "D-glucose derivative; D-mannose derivative; D-galactose derivative",
+                "products_text": "Bicyclic ketoses (I: R1=H, R2=OH; II: R1=OH, R2=H) | 20-50",
+                "intermediates_text": null,
+                "reagents_text": "dry pyridine | c1ccncc1; AcOH | CC(=O)O; 24h, r.t.",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "Bicyclic ketoses (I: R1=H, R2=OH; II: R1=OH, R2=H): 20-50",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Intramolecular Amadori rearrangement of monosaccharide esters of leucine-enkephaline to afford bicyclic ketoses.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 73,
+      "image_filename": "named reactions_73.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "AZA-CLAISEN REARRANGEMENT (3-AZA-COPE REARRANGEMENT)",
+        "reaction_family_name": "Aza-Claisen Rearrangement",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "reaction_name": "Amide enolate induced aza-Claisen rearrangement in the synthesis of fluvircinine A1",
+            "reactants": [
+              "[Li]OC(=C/C=C/C[C@H]1CC)N1C"
+            ],
+            "reagents": [
+              "[3,3]"
+            ],
+            "products": [
+              "C[C@H]1CC[C@@H](C=C)C(=O)N1"
+            ],
+            "yield": "74%",
+            "other_info": null,
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Aza-Claisen Rearrangement",
+                "transformation_text": "Amide enolate induced aza-Claisen rearrangement in the synthesis of fluvircinine A1",
+                "reactants_text": "[Li]OC(=C/C=C/C[C@H]1CC)N1C",
+                "products_text": "C[C@H]1CC[C@@H](C=C)C(=O)N1",
+                "intermediates_text": null,
+                "reagents_text": "[3,3]",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "74%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "reaction_name": "Asymmetric aza-Claisen rearrangement in the synthesis of antimycin A3b",
+            "reactants": [
+              "CCCCC(=O)N([C@H](C)c1ccccc1)[C@@H](C=C)Si(C(C)C)C(C)C"
+            ],
+            "reagents": [
+              "1. LHMDS, toluene, -78 °C",
+              "2. 120 °C, 6h"
+            ],
+            "products": [
+              "C=C[C@H](OSi(C(C)C)C(C)C)N([C@H](C)c1ccccc1)C(=O)[C@H](C=C)CCCC"
+            ],
+            "yield": "78%",
+            "other_info": "82:18 (64% ee)",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Aza-Claisen Rearrangement",
+                "transformation_text": "Asymmetric aza-Claisen rearrangement in the synthesis of antimycin A3b",
+                "reactants_text": "CCCCC(=O)N([C@H](C)c1ccccc1)[C@@H](C=C)Si(C(C)C)C(C)C",
+                "products_text": "C=C[C@H](OSi(C(C)C)C(C)C)N([C@H](C)c1ccccc1)C(=O)[C@H](C=C)CCCC",
+                "intermediates_text": null,
+                "reagents_text": "1. LHMDS, toluene, -78 °C; 2. 120 °C, 6h",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "78%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "82:18 (64% ee)",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "reaction_name": "Diastereoselective zwitterionic aza-Claisen rearrangement in the synthesis of (+)-dihydrocanadensolide",
+            "reactants": [
+              "C[C@H]1OC(C)(C)O[C@H]1/C=C/CN1CCCC1"
+            ],
+            "reagents": [
+              "CH3CH2COCl",
+              "K2CO3, Me3Al",
+              "CHCl3, 0 °C"
+            ],
+            "products": [
+              "C[C@H]1OC(C)(C)O[C@H]1[C@H]2CN3C(=O)[C@H](CC)[C@H]2C3C=C"
+            ],
+            "yield": "77%",
+            "other_info": null,
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Aza-Claisen Rearrangement",
+                "transformation_text": "Diastereoselective zwitterionic aza-Claisen rearrangement in the synthesis of (+)-dihydrocanadensolide",
+                "reactants_text": "C[C@H]1OC(C)(C)O[C@H]1/C=C/CN1CCCC1",
+                "products_text": "C[C@H]1OC(C)(C)O[C@H]1[C@H]2CN3C(=O)[C@H](CC)[C@H]2C3C=C",
+                "intermediates_text": null,
+                "reagents_text": "CH3CH2COCl; K2CO3, Me3Al; CHCl3, 0 °C",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "77%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 79,
+      "image_filename": "named reactions_79.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": null,
+        "reaction_family_name": "Aza-[2,3]-Wittig Rearrangement",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "name": "aza-[2,3]-Wittig rearrangement of N-alkyl-N-allyl-amino esters",
+            "reactants": [
+              {
+                "smiles": "COC(=O)CN(CC=Cc1ccccc1)R",
+                "role": "reactant",
+                "name": "N-alkyl-N-allyl-amino ester",
+                "comment": "R=H or R=Me"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "CI",
+                "role": "reagent",
+                "name": "MeI"
+              },
+              {
+                "smiles": "O=C([O-])[O-].[K+].[K+]",
+                "role": "base",
+                "name": "K2CO3"
+              },
+              {
+                "smiles": "C1CN=C2N(C1)CCCC2",
+                "role": "base",
+                "name": "DBU"
+              },
+              {
+                "smiles": "CN(C)C=O",
+                "role": "solvent",
+                "name": "DMF"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "COC(=O)[C@H](N(C)R)[C@@H](c1ccccc1)C=C",
+                "role": "product",
+                "name": "N-alkyl-C-allyl glycine ester",
+                "yield": "51; 63",
+                "diastereoselectivity": "~60:40",
+                "selectivity_comment": "anti:syn. Yields correspond to R=H (51%) and R=Me (63%)."
+              }
+            ],
+            "conditions": {
+              "temperature": "40"
+            },
+            "reaction_arrows": [
+              {
+                "type": "normal"
+              }
+            ],
+            "reaction_steps": null,
+            "comment": null,
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Aza-[2,3]-Wittig Rearrangement",
+                "transformation_text": null,
+                "reactants_text": "N-alkyl-N-allyl-amino ester | R=H or R=Me | COC(=O)CN(CC=Cc1ccccc1)R | reactant",
+                "products_text": "N-alkyl-C-allyl glycine ester | 51; 63 | ~60:40 | COC(=O)[C@H](N(C)R)[C@@H](c1ccccc1)C=C | product",
+                "intermediates_text": null,
+                "reagents_text": "MeI | CI | reagent; K2CO3 | O=C([O-])[O-].[K+].[K+] | base; DBU | C1CN=C2N(C1)CCCC2 | base",
+                "catalysts_text": null,
+                "solvents_text": "DMF | CN(C)C=O | solvent",
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "N-alkyl-C-allyl glycine ester: 51; 63",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 81,
+      "image_filename": "named reactions_81.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BAEYER-VILLIGER OXIDATION/REARRANGEMENT",
+        "reaction_family_name": "Baeyer-Villiger Oxidation",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "reaction_id": "29_01",
+            "is_overall_reaction": true,
+            "reactants": [
+              {
+                "smiles": "Cl[C@]12[C@H](C(=O)O[C@H]1[C@H]1OBn)[C@H](OBn)[C@H](OBn)O1",
+                "name": null,
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "CC(=O)OOC1=CC=CC=C1C(=O)O",
+                "name": "mCPBA",
+                "role": "oxidant"
+              },
+              {
+                "smiles": "[Na+].OC([O-])=O",
+                "name": "NaHCO3",
+                "role": "reagent"
+              },
+              {
+                "smiles": "C(Cl)Cl",
+                "name": "CH2Cl2",
+                "role": "solvent"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "COC1O[C@H](CHO)[C@@H](OBn)[C@H](OBn)[C@H]1OBn",
+                "name": "C1-Methyl glucitol derivative",
+                "role": "product"
+              }
+            ],
+            "reaction_name": "Baeyer-Villiger oxidation",
+            "yield": [],
+            "conditions": [],
+            "notes": "The reaction is a multi-step sequence where the Baeyer-Villiger oxidation is a key step.",
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Baeyer-Villiger Oxidation",
+                "transformation_text": "Baeyer-Villiger oxidation",
+                "reactants_text": "Cl[C@]12[C@H](C(=O)O[C@H]1[C@H]1OBn)[C@H](OBn)[C@H](OBn)O1 | reactant",
+                "products_text": "C1-Methyl glucitol derivative | COC1O[C@H](CHO)[C@@H](OBn)[C@H](OBn)[C@H]1OBn | product",
+                "intermediates_text": null,
+                "reagents_text": "mCPBA | CC(=O)OOC1=CC=CC=C1C(=O)O | oxidant; NaHCO3 | [Na+].OC([O-])=O | reagent",
+                "catalysts_text": null,
+                "solvents_text": "CH2Cl2 | C(Cl)Cl | solvent",
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "The reaction is a multi-step sequence where the Baeyer-Villiger oxidation is a key step.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "reaction_id": "29_02",
+            "is_overall_reaction": true,
+            "reactants": [
+              {
+                "smiles": "C[C@]12C[C@H](O)C[C@H]1[C@H]1C[C@H](C(C)=O)[C@@H]3OC(C)(C)O[C@H]3C12",
+                "name": null,
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "CC(=O)OOC1=CC=CC=C1C(=O)O",
+                "name": "mCPBA",
+                "role": "oxidant"
+              },
+              {
+                "smiles": "C(Cl)Cl",
+                "name": "CH2Cl2",
+                "role": "solvent"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "C[C@]12C[C@H](O)C[C@H]1[C@H]1C[C@H](OC(C)=O)[C@@H]3OC(C)(C)O[C@H]3C12",
+                "name": "Functionalized CD ring of Taxol",
+                "role": "product"
+              }
+            ],
+            "reaction_name": "Baeyer-Villiger oxidation",
+            "yield": [
+              {
+                "value": 90,
+                "unit": "%"
+              }
+            ],
+            "conditions": [],
+            "notes": "The reaction is a multi-step sequence where the Baeyer-Villiger oxidation is a key step.",
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Baeyer-Villiger Oxidation",
+                "transformation_text": "Baeyer-Villiger oxidation",
+                "reactants_text": "C[C@]12C[C@H](O)C[C@H]1[C@H]1C[C@H](C(C)=O)[C@@H]3OC(C)(C)O[C@H]3C12 | reactant",
+                "products_text": "Functionalized CD ring of Taxol | C[C@]12C[C@H](O)C[C@H]1[C@H]1C[C@H](OC(C)=O)[C@@H]3OC(C)(C)O[C@H]3C12 | product",
+                "intermediates_text": null,
+                "reagents_text": "mCPBA | CC(=O)OOC1=CC=CC=C1C(=O)O | oxidant",
+                "catalysts_text": null,
+                "solvents_text": "CH2Cl2 | C(Cl)Cl | solvent",
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "90 | %",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "The reaction is a multi-step sequence where the Baeyer-Villiger oxidation is a key step.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "reaction_id": "29_03",
+            "is_overall_reaction": true,
+            "reactants": [
+              {
+                "smiles": "O=C1C2C3CC4C2C1C43",
+                "name": null,
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "CC(=O)OOC1=CC=CC=C1C(=O)O",
+                "name": "mCPBA",
+                "role": "reagent"
+              },
+              {
+                "smiles": "[Li+].[AlH4-]",
+                "name": "LiAlH4",
+                "role": "reagent"
+              },
+              {
+                "smiles": "CS(=O)(=O)Cl",
+                "name": "MsCl",
+                "role": "reagent"
+              },
+              {
+                "smiles": null,
+                "name": "TMP",
+                "role": "reagent"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "C1C2CC3C1C4C2OC43",
+                "name": "Cage-annulated ether",
+                "role": "product"
+              }
+            ],
+            "reaction_name": "Baeyer-Villiger oxidation",
+            "yield": [],
+            "conditions": [],
+            "notes": "Multi-step synthesis of cage-annulated ethers. Stepwise yields are provided: 93% (BV), 73% (reduction), 80% (cyclization).",
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Baeyer-Villiger Oxidation",
+                "transformation_text": "Baeyer-Villiger oxidation",
+                "reactants_text": "O=C1C2C3CC4C2C1C43 | reactant",
+                "products_text": "Cage-annulated ether | C1C2CC3C1C4C2OC43 | product",
+                "intermediates_text": null,
+                "reagents_text": "mCPBA | CC(=O)OOC1=CC=CC=C1C(=O)O | reagent; LiAlH4 | [Li+].[AlH4-] | reagent; MsCl | CS(=O)(=O)Cl | reagent; TMP | reagent",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Multi-step synthesis of cage-annulated ethers. Stepwise yields are provided: 93% (BV), 73% (reduction), 80% (cyclization).",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "reaction_id": "29_04",
+            "is_overall_reaction": true,
+            "reactants": [
+              {
+                "smiles": "O=C1C2C3CC4C2C1C43",
+                "name": null,
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "CC(=O)OOC1=CC=CC=C1C(=O)O",
+                "name": "mCPBA (xs)",
+                "role": "reagent"
+              },
+              {
+                "smiles": "[Li+].[AlH4-]",
+                "name": "LAH",
+                "role": "reagent"
+              },
+              {
+                "smiles": "CC1=CC=C(S(=O)(=O)O)C=C1",
+                "name": "TsOH",
+                "role": "reagent"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "C1C2CC3C1C4C2OC43",
+                "name": "Cage-annulated ether",
+                "role": "product"
+              }
+            ],
+            "reaction_name": "Baeyer-Villiger oxidation",
+            "yield": [],
+            "conditions": [],
+            "notes": "Alternative multi-step synthesis of cage-annulated ethers. Stepwise yields are provided: 20% (BV), 80% (reduction), 60% (cyclization).",
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Baeyer-Villiger Oxidation",
+                "transformation_text": "Baeyer-Villiger oxidation",
+                "reactants_text": "O=C1C2C3CC4C2C1C43 | reactant",
+                "products_text": "Cage-annulated ether | C1C2CC3C1C4C2OC43 | product",
+                "intermediates_text": null,
+                "reagents_text": "mCPBA (xs) | CC(=O)OOC1=CC=CC=C1C(=O)O | reagent; LAH | [Li+].[AlH4-] | reagent; TsOH | CC1=CC=C(S(=O)(=O)O)C=C1 | reagent",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Alternative multi-step synthesis of cage-annulated ethers. Stepwise yields are provided: 20% (BV), 80% (reduction), 60% (cyclization).",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 4,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "reaction_id": "29_05",
+            "is_overall_reaction": true,
+            "reactants": [
+              {
+                "smiles": "C[C@H]1CC(=O)CC[C@@]2(C)[C@H]1CC[C@@H](O)C2(C)C",
+                "name": "trans-3beta-hydroxy-4,4,10beta-trimethyl-9-decalone",
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "O=C(OC(=O)C(F)(F)F)C(F)(F)F",
+                "name": "TFAA",
+                "role": "reagent"
+              },
+              {
+                "smiles": "OO",
+                "name": "H2O2",
+                "role": "reagent"
+              },
+              {
+                "smiles": "O=C(O)C(F)(F)F",
+                "name": "TFA",
+                "role": "reagent"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "CC(=C)CC[C@H](c1ccc2oc(=O)ccc2c1)[C@H]1CC[C@@H](O)C(C)(C)[C@H]1C",
+                "name": "(+/-)-Farnesiferol C",
+                "role": "product"
+              }
+            ],
+            "reaction_name": "peroxytrifluoroacetic acid-mediated Baeyer-Villiger oxidation",
+            "yield": [],
+            "conditions": [],
+            "notes": "Multi-step synthesis involving a Baeyer-Villiger oxidation followed by a trifluoroacetic acid-catalyzed cleavage and rearrangement. The yield for the first step (BV oxidation) is 80%.",
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Baeyer-Villiger Oxidation",
+                "transformation_text": "peroxytrifluoroacetic acid-mediated Baeyer-Villiger oxidation",
+                "reactants_text": "trans-3beta-hydroxy-4,4,10beta-trimethyl-9-decalone | C[C@H]1CC(=O)CC[C@@]2(C)[C@H]1CC[C@@H](O)C2(C)C | reactant",
+                "products_text": "(+/-)-Farnesiferol C | CC(=C)CC[C@H](c1ccc2oc(=O)ccc2c1)[C@H]1CC[C@@H](O)C(C)(C)[C@H]1C | product",
+                "intermediates_text": null,
+                "reagents_text": "TFAA | O=C(OC(=O)C(F)(F)F)C(F)(F)F | reagent; H2O2 | OO | reagent; TFA | O=C(O)C(F)(F)F | reagent",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Multi-step synthesis involving a Baeyer-Villiger oxidation followed by a trifluoroacetic acid-catalyzed cleavage and rearrangement. The yield for the first step (BV oxidation) is 80%.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 5,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 83,
+      "image_filename": "named reactions_83.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BAKER-VENKATARAMAN REARRANGEMENT",
+        "reaction_family_name": "Baker-Venkataraman Rearrangement",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_id": "baker-venkataraman_rearrangement_snieckus_1",
+            "reaction_type": "Negishi Cross-Coupling",
+            "reactants": [
+              {
+                "smiles": "NC(=O)Oc1c(Cl)cccc1",
+                "label": "arylcarbamate"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "C[CH](CC)Li",
+                "label": "s-BuLi"
+              },
+              {
+                "smiles": "C1CCOC1",
+                "label": "THF"
+              },
+              {
+                "smiles": "[Cl-].[Cl-].[Zn+2]",
+                "label": "ZnCl2"
+              },
+              {
+                "smiles": "CC(=O)Cl",
+                "label": "CH3COCl"
+              },
+              {
+                "smiles": "Cl[Pd](Cl)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1",
+                "label": "PdCl2(PPh3)2"
+              },
+              {
+                "smiles": "CC(C)C[AlH]C(C)C",
+                "label": "DIBAH"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "CC(=O)c1c(OC(=O)N)c(Cl)ccc1",
+                "label": "arylalkyl ketone"
+              }
+            ],
+            "yield": "79%",
+            "reaction_name": "directed ortho metallation",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Baker-Venkataraman Rearrangement",
+                "transformation_text": "directed ortho metallation",
+                "reactants_text": "arylcarbamate | NC(=O)Oc1c(Cl)cccc1",
+                "products_text": "arylalkyl ketone | CC(=O)c1c(OC(=O)N)c(Cl)ccc1",
+                "intermediates_text": null,
+                "reagents_text": "s-BuLi | C[CH](CC)Li; THF | C1CCOC1; ZnCl2 | [Cl-].[Cl-].[Zn+2]; CH3COCl | CC(=O)Cl; PdCl2(PPh3)2 | Cl[Pd](Cl)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1; DIBAH | CC(C)C[AlH]C(C)C",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "79%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "scheme_id": "baker-venkataraman_rearrangement_snieckus_2",
+            "reaction_type": "Baker-Venkataraman Rearrangement",
+            "reactants": [
+              {
+                "smiles": "CCN(CC)CC(=O)c1c(O)c(Cl)ccc1",
+                "label": "2-hydroxyaryl acetamide"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "[Na+].[H-]",
+                "label": "NaH"
+              },
+              {
+                "smiles": "C1CCOC1",
+                "label": "THF"
+              },
+              {
+                "smiles": "O=C(O)C(F)(F)F",
+                "label": "TFA"
+              },
+              {
+                "smiles": "Cc1ccccc1",
+                "label": "PhCH3"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "O=c1cc(O)c2c(o1)c(Cl)ccc2",
+                "label": "4-Hydroxycoumarin"
+              }
+            ],
+            "yield": "82%",
+            "reaction_name": "Baker-Venkataraman rearrangement",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Baker-Venkataraman Rearrangement",
+                "transformation_text": "Baker-Venkataraman rearrangement",
+                "reactants_text": "2-hydroxyaryl acetamide | CCN(CC)CC(=O)c1c(O)c(Cl)ccc1",
+                "products_text": "4-Hydroxycoumarin | O=c1cc(O)c2c(o1)c(Cl)ccc2",
+                "intermediates_text": null,
+                "reagents_text": "NaH | [Na+].[H-]; THF | C1CCOC1; TFA | O=C(O)C(F)(F)F; PhCH3 | Cc1ccccc1",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "82%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "scheme_id": "baker-venkataraman_rearrangement_enders_stigmatellin_a",
+            "reaction_type": "Baker-Venkataraman Rearrangement",
+            "reactants": [
+              {
+                "smiles": "CC(=O)Cc1c(C)c(OC)c(OC(=O)C(C)C(C)C(C(C)OCc2ccccc2)C)c(OC(C)OC)c1OC",
+                "label": ""
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "CO",
+                "label": "MeOH"
+              },
+              {
+                "smiles": "[Na]",
+                "label": "Na (metal)"
+              },
+              {
+                "smiles": "[H+].[Cl-]",
+                "label": "1N HCl"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "Cc1c2c(c(OC)c(OC(C)OC)c2OC)C(=O)C(=C1O)C(C)C(C)C(C(C)OCc1ccccc1)C",
+                "label": ""
+              }
+            ],
+            "yield": "75%",
+            "reaction_name": "Baker-Venkataraman rearrangement",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Baker-Venkataraman Rearrangement",
+                "transformation_text": "Baker-Venkataraman rearrangement",
+                "reactants_text": "CC(=O)Cc1c(C)c(OC)c(OC(=O)C(C)C(C)C(C(C)OCc2ccccc2)C)c(OC(C)OC)c1OC",
+                "products_text": "Cc1c2c(c(OC)c(OC(C)OC)c2OC)C(=O)C(=C1O)C(C)C(C)C(C(C)OCc1ccccc1)C",
+                "intermediates_text": null,
+                "reagents_text": "MeOH | CO; Na (metal) | [Na]; 1N HCl | [H+].[Cl-]",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "75%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "scheme_id": "baker-venkataraman_rearrangement_ruchiwarat_domino",
+            "reaction_type": "Baker-Venkataraman Rearrangement",
+            "reactants": [
+              {
+                "smiles": "CC(=Cc1ccccc1)C(=O)Oc1ccccc1C(=O)OC",
+                "label": ""
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "[K+].[OH-]",
+                "label": "KOH"
+              },
+              {
+                "smiles": "c1ccncc1",
+                "label": "pyridine"
+              },
+              {
+                "smiles": "[H+].[Cl-]",
+                "label": "2N HCl"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "O=C1c2ccccc2-c2c(oc3ccccc3c21)C(=O)c1ccccc1",
+                "label": "Benz[b]indeno[2,1-e]pyran-10,11-dione"
+              }
+            ],
+            "yield": "74%",
+            "reaction_name": "domino reaction",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Baker-Venkataraman Rearrangement",
+                "transformation_text": "domino reaction",
+                "reactants_text": "CC(=Cc1ccccc1)C(=O)Oc1ccccc1C(=O)OC",
+                "products_text": "Benz[b]indeno[2,1-e]pyran-10,11-dione | O=C1c2ccccc2-c2c(oc3ccccc3c21)C(=O)c1ccccc1",
+                "intermediates_text": null,
+                "reagents_text": "KOH | [K+].[OH-]; pyridine | c1ccncc1; 2N HCl | [H+].[Cl-]",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "74%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 4,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 86,
+      "image_filename": "named reactions_86.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BALZ-SCHIEMANN REACTION",
+        "reaction_family_name": "Balz-Schiemann Reaction",
+        "page_section_hints": [
+          "Importance",
+          "Mechanism",
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "id": 1,
+            "description": "Overall scheme for the Balz-Schiemann reaction, where an aryl amine is converted to an aryl fluoride via an aryl diazonium tetrafluoroborate intermediate.",
+            "reaction_type": "Named Reaction",
+            "reaction_name": "Balz-Schiemann Reaction",
+            "reactants": [
+              {
+                "smiles": "[*:1]N",
+                "role": "Reactant",
+                "name": "aryl amine"
+              }
+            ],
+            "agents": [
+              {
+                "smiles": "O=NO.F[B-](F)(F)F",
+                "role": "Reagent",
+                "name": "HNO2\nHBF4"
+              },
+              {
+                "smiles": null,
+                "role": "Condition",
+                "name": "heat"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "[*:1]F",
+                "role": "Product",
+                "name": "Aryl fluoride"
+              },
+              {
+                "smiles": "N#N",
+                "role": "Product",
+                "name": null
+              },
+              {
+                "smiles": "B(F)(F)F",
+                "role": "Product",
+                "name": null
+              }
+            ],
+            "intermediates": [
+              {
+                "smiles": "[*:1][N+]#N.F[B-](F)(F)F",
+                "role": "Intermediate",
+                "name": "aryl diazonium\ntetrafluoroborate"
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Balz-Schiemann Reaction",
+                "transformation_text": "Balz-Schiemann Reaction",
+                "reactants_text": "aryl amine | [*:1]N | Reactant",
+                "products_text": "Aryl fluoride | [*:1]F | Product; N#N | Product; B(F)(F)F | Product",
+                "intermediates_text": "aryl diazonium\ntetrafluoroborate | [*:1][N+]#N.F[B-](F)(F)F | Intermediate",
+                "reagents_text": "HNO2\nHBF4 | O=NO.F[B-](F)(F)F | Reagent",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": "heat | Condition",
+                "notes_text": "Overall scheme for the Balz-Schiemann reaction, where an aryl amine is converted to an aryl fluoride via an aryl diazonium tetrafluoroborate intermediate.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "id": 2,
+            "description": "Mechanism for the formation of the aryldiazonium salt from an aryl amine and nitrosonium ion, which is generated from nitrous acid.",
+            "reaction_type": "Mechanism Step",
+            "reaction_name": "Formation of the aryldiazonium salt",
+            "reactants": [
+              {
+                "smiles": "[*:1]N",
+                "role": "Reactant",
+                "name": "Ar-NH2"
+              }
+            ],
+            "agents": [
+              {
+                "smiles": "O=NO.F[B-](F)(F)F",
+                "role": "Reagent",
+                "name": null
+              }
+            ],
+            "products": [
+              {
+                "smiles": "[*:1][N+]#N.F[B-](F)(F)F",
+                "role": "Product",
+                "name": "Aryldiazonium salt"
+              }
+            ],
+            "intermediates": [],
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Balz-Schiemann Reaction",
+                "transformation_text": "Formation of the aryldiazonium salt",
+                "reactants_text": "Ar-NH2 | [*:1]N | Reactant",
+                "products_text": "Aryldiazonium salt | [*:1][N+]#N.F[B-](F)(F)F | Product",
+                "intermediates_text": null,
+                "reagents_text": "O=NO.F[B-](F)(F)F | Reagent",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Mechanism for the formation of the aryldiazonium salt from an aryl amine and nitrosonium ion, which is generated from nitrous acid.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step"
+          },
+          {
+            "id": 3,
+            "description": "Mechanism for the decomposition of the aryldiazonium salt to an aryl fluoride, involving an aryl cation intermediate.",
+            "reaction_type": "Mechanism Step",
+            "reaction_name": "Decomposition of the aryldiazonium salt",
+            "reactants": [
+              {
+                "smiles": "[*:1][N+]#N.F[B-](F)(F)F",
+                "role": "Reactant",
+                "name": null
+              }
+            ],
+            "agents": [],
+            "products": [
+              {
+                "smiles": "[*:1]F",
+                "role": "Product",
+                "name": "Ar-F"
+              },
+              {
+                "smiles": "N#N",
+                "role": "Product",
+                "name": null
+              },
+              {
+                "smiles": "B(F)(F)F",
+                "role": "Product",
+                "name": null
+              }
+            ],
+            "intermediates": [
+              {
+                "smiles": "[*:1]+",
+                "role": "Intermediate",
+                "name": null
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Balz-Schiemann Reaction",
+                "transformation_text": "Decomposition of the aryldiazonium salt",
+                "reactants_text": "[*:1][N+]#N.F[B-](F)(F)F | Reactant",
+                "products_text": "Ar-F | [*:1]F | Product; N#N | Product; B(F)(F)F | Product",
+                "intermediates_text": "[*:1]+ | Intermediate",
+                "reagents_text": null,
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Mechanism for the decomposition of the aryldiazonium salt to an aryl fluoride, involving an aryl cation intermediate.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step"
+          },
+          {
+            "id": 4,
+            "description": "A synthetic application of the Balz-Schiemann reaction to incorporate a fluorine atom into an estrone derivative.",
+            "reaction_type": "Synthetic Application",
+            "reaction_name": "Balz-Schiemann Reaction",
+            "reactants": [
+              {
+                "smiles": "COc1cc2c(cc1N)[C@H]1CC[C@H]2[C@H]1[C@H]1CC[C@H]2[C@@]1(C)C(=O)CC2",
+                "role": "Reactant",
+                "name": null
+              }
+            ],
+            "agents": [
+              {
+                "smiles": "[Na+].[O-][N]=O.Cl.F[B-](F)(F)F",
+                "role": "Reagent",
+                "name": "1. NaNO2, HCl, HBF4"
+              },
+              {
+                "smiles": "c1ccccc1",
+                "role": "Solvent",
+                "name": "2. xylene, reflux"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "COc1cc2c(cc1F)[C@H]1CC[C@H]2[C@H]1[C@H]1CC[C@H]2[C@@]1(C)C(=O)CC2",
+                "role": "Product",
+                "name": null
+              }
+            ],
+            "intermediates": [],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Balz-Schiemann Reaction",
+                "transformation_text": "Balz-Schiemann Reaction",
+                "reactants_text": "COc1cc2c(cc1N)[C@H]1CC[C@H]2[C@H]1[C@H]1CC[C@H]2[C@@]1(C)C(=O)CC2 | Reactant",
+                "products_text": "COc1cc2c(cc1F)[C@H]1CC[C@H]2[C@H]1[C@H]1CC[C@H]2[C@@]1(C)C(=O)CC2 | Product",
+                "intermediates_text": null,
+                "reagents_text": "1. NaNO2, HCl, HBF4 | [Na+].[O-][N]=O.Cl.F[B-](F)(F)F | Reagent",
+                "catalysts_text": null,
+                "solvents_text": "2. xylene, reflux | c1ccccc1 | Solvent",
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "A synthetic application of the Balz-Schiemann reaction to incorporate a fluorine atom into an estrone derivative.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 4,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 96,
+      "image_filename": "named reactions_96.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BARTON RADICAL DECARBOXYLATION REACTION",
+        "reaction_family_name": "Barton Radical Decarboxylation Reaction",
+        "page_section_hints": [
+          "Importance",
+          "Mechanism",
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_text": "Overall reaction for the Barton Radical Decarboxylation, converting a carboxylic acid to an alkane.",
+            "reaction_string": "R-C(=O)OH >> R-H",
+            "reaction_name": "Barton Radical Decarboxylation Reaction",
+            "reaction_stage": "Overall Reaction",
+            "reactants": [
+              {
+                "smiles": "O=C(O)R",
+                "role": "Reactant",
+                "name": "carboxylic acid"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "O=S(Cl)Cl",
+                "role": "Reagent",
+                "name": "SOCl2"
+              },
+              {
+                "smiles": "ClC(=O)Cl",
+                "role": "Reagent",
+                "name": "(COCl)2"
+              },
+              {
+                "smiles": "[Na+].[O-]c1ncccc1=S",
+                "role": "Reagent",
+                "name": "(N-hydroxypyridine-2-thione sodium salt)"
+              },
+              {
+                "smiles": "CCCC[SnH](CCCC)CCCC",
+                "role": "Reagent",
+                "name": "(n-Bu)3SnH"
+              },
+              {
+                "smiles": "CC(C)(C#N)N=NC(C)(C#N)C",
+                "role": "Reagent",
+                "name": "AIBN"
+              },
+              {
+                "smiles": "c1ccccc1",
+                "role": "Reagent",
+                "name": "PhH"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "[H]R",
+                "role": "Product",
+                "name": "Alkane"
+              },
+              {
+                "smiles": "O=C=O",
+                "role": "Product",
+                "name": null
+              },
+              {
+                "smiles": "S=c1ncccc1S[Sn](CCCC)(CCCC)CCCC",
+                "role": "Product",
+                "name": null
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Barton Radical Decarboxylation Reaction",
+                "transformation_text": "Barton Radical Decarboxylation Reaction",
+                "reactants_text": "carboxylic acid | O=C(O)R | Reactant",
+                "products_text": "Alkane | [H]R | Product; O=C=O | Product; S=c1ncccc1S[Sn](CCCC)(CCCC)CCCC | Product",
+                "intermediates_text": null,
+                "reagents_text": "SOCl2 | O=S(Cl)Cl | Reagent; (COCl)2 | ClC(=O)Cl | Reagent; (N-hydroxypyridine-2-thione sodium salt) | [Na+].[O-]c1ncccc1=S | Reagent; (n-Bu)3SnH | CCCC[SnH](CCCC)CCCC | Reagent; AIBN | CC(C)(C#N)N=NC(C)(C#N)C | Reagent; PhH | c1ccccc1 | Reagent",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "scheme_text": "Initiation step of the Barton Radical Decarboxylation mechanism, showing the formation of the tri-n-butyltin radical.",
+            "reaction_string": "AIBN + (n-Bu)3Sn-H >> (n-Bu)3Sn.",
+            "reaction_name": "Barton Radical Decarboxylation Reaction",
+            "reaction_stage": "Mechanism (Initiation)",
+            "reactants": [
+              {
+                "smiles": "CC(C)(C#N)N=NC(C)(C#N)C",
+                "role": "Reactant",
+                "name": "AIBN"
+              },
+              {
+                "smiles": "CCCC[SnH](CCCC)CCCC",
+                "role": "Reactant",
+                "name": "(n-Bu)3Sn-H"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": null,
+                "role": "Condition",
+                "name": "heat"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "N#N",
+                "role": "Product",
+                "name": "N2"
+              },
+              {
+                "smiles": "[Sn](CCCC)(CCCC)CCCC",
+                "role": "Product",
+                "name": "(n-Bu)3Sn."
+              },
+              {
+                "smiles": "CC(C#N)(C)H",
+                "role": "Product",
+                "name": null
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Barton Radical Decarboxylation Reaction",
+                "transformation_text": "Barton Radical Decarboxylation Reaction",
+                "reactants_text": "AIBN | CC(C)(C#N)N=NC(C)(C#N)C | Reactant; (n-Bu)3Sn-H | CCCC[SnH](CCCC)CCCC | Reactant",
+                "products_text": "N2 | N#N | Product; (n-Bu)3Sn. | [Sn](CCCC)(CCCC)CCCC | Product; CC(C#N)(C)H | Product",
+                "intermediates_text": null,
+                "reagents_text": null,
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": "heat | Condition",
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step"
+          },
+          {
+            "scheme_text": "Propagation step of the Barton Radical Decarboxylation mechanism.",
+            "reaction_string": "Thiohydroxamate ester + (n-Bu)3Sn-H >> R-H",
+            "reaction_name": "Barton Radical Decarboxylation Reaction",
+            "reaction_stage": "Mechanism (Propagation)",
+            "reactants": [
+              {
+                "smiles": "O=C(R)Oc1ncccc1=S",
+                "role": "Reactant",
+                "name": null
+              },
+              {
+                "smiles": "CCCC[SnH](CCCC)CCCC",
+                "role": "Reactant",
+                "name": "H-Sn(n-Bu)3"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "[Sn](CCCC)(CCCC)CCCC",
+                "role": "Catalyst",
+                "name": ".Sn(n-Bu)3"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "[H]R",
+                "role": "Product",
+                "name": "R-H"
+              },
+              {
+                "smiles": "O=C=O",
+                "role": "Product",
+                "name": null
+              },
+              {
+                "smiles": "S=c1ncccc1S[Sn](CCCC)(CCCC)CCCC",
+                "role": "Product",
+                "name": null
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Barton Radical Decarboxylation Reaction",
+                "transformation_text": "Barton Radical Decarboxylation Reaction",
+                "reactants_text": "O=C(R)Oc1ncccc1=S | Reactant; H-Sn(n-Bu)3 | CCCC[SnH](CCCC)CCCC | Reactant",
+                "products_text": "R-H | [H]R | Product; O=C=O | Product; S=c1ncccc1S[Sn](CCCC)(CCCC)CCCC | Product",
+                "intermediates_text": null,
+                "reagents_text": null,
+                "catalysts_text": ".Sn(n-Bu)3 | [Sn](CCCC)(CCCC)CCCC | Catalyst",
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step"
+          },
+          {
+            "scheme_text": "Synthetic application of the Barton decarboxylation procedure in the total synthesis of (-)-verrucarol.",
+            "reaction_string": "Verrucarol precursor carboxylic acid >> (-)-Verrucarol",
+            "reaction_name": "Barton Radical Decarboxylation Reaction",
+            "reaction_stage": "Synthetic Application",
+            "reactants": [
+              {
+                "smiles": null,
+                "role": "Reactant",
+                "name": null
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "CCN=C=NCCCN(C)C",
+                "role": "Reagent",
+                "name": "EDCI"
+              },
+              {
+                "smiles": "CN(C)c1ccncc1",
+                "role": "Reagent",
+                "name": "DMAP"
+              },
+              {
+                "smiles": "CC(C)(C)SH",
+                "role": "Reagent",
+                "name": "t-BuSH"
+              },
+              {
+                "smiles": "O=O",
+                "role": "Reagent",
+                "name": "O2"
+              },
+              {
+                "smiles": "O=c1[nH]cccc1S",
+                "role": "Reagent",
+                "name": null
+              }
+            ],
+            "products": [
+              {
+                "smiles": null,
+                "role": "Product",
+                "name": "(-)-Verrucarol"
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Barton Radical Decarboxylation Reaction",
+                "transformation_text": "Barton Radical Decarboxylation Reaction",
+                "reactants_text": "Reactant",
+                "products_text": "(-)-Verrucarol | Product",
+                "intermediates_text": null,
+                "reagents_text": "EDCI | CCN=C=NCCCN(C)C | Reagent; DMAP | CN(C)c1ccncc1 | Reagent; t-BuSH | CC(C)(C)SH | Reagent; O2 | O=O | Reagent; O=c1[nH]cccc1S | Reagent",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 4,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 97,
+      "image_filename": "named reactions_97.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BARTON RADICAL DECARBOXYLATION REACTION",
+        "reaction_family_name": "Barton Radical Decarboxylation",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_text": "1,3-bishomocubane carboxylic acid is converted to X=Br (87%) or X=SePh (94%) using CCl3Br or (PhSe)2 under Barton Reaction conditions.",
+            "reaction_string": "1,3-bishomocubane carboxylic acid -> Halogenated/Selenated 1,3-bishomocubane",
+            "reaction_name": "Barton Reaction",
+            "reactants": [
+              {
+                "name": "1,3-bishomocubane carboxylic acid",
+                "smiles": "O=C(O)C12CC3C4CC1C3C42",
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "name": "CCl3Br",
+                "smiles": "BrC(Cl)(Cl)Cl",
+                "role": "reagent"
+              },
+              {
+                "name": "(PhSe)2",
+                "smiles": "c1ccc(SeSeC2=CC=CC=C2)cc1",
+                "role": "reagent"
+              }
+            ],
+            "products": [
+              {
+                "name": "X = Br",
+                "smiles": "O=C1C2CC3C4CC1(Br)C3C42",
+                "role": "product",
+                "yield": "87"
+              },
+              {
+                "name": "X = SePh",
+                "smiles": "O=C1C2CC3C4CC1(SeC1=CC=CC=C1)C3C42",
+                "role": "product",
+                "yield": "94"
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Barton Radical Decarboxylation",
+                "transformation_text": "Barton Reaction",
+                "reactants_text": "1,3-bishomocubane carboxylic acid | O=C(O)C12CC3C4CC1C3C42 | reactant",
+                "products_text": "X = Br | 87 | O=C1C2CC3C4CC1(Br)C3C42 | product; X = SePh | 94 | O=C1C2CC3C4CC1(SeC1=CC=CC=C1)C3C42 | product",
+                "intermediates_text": null,
+                "reagents_text": "CCl3Br | BrC(Cl)(Cl)Cl | reagent; (PhSe)2 | c1ccc(SeSeC2=CC=CC=C2)cc1 | reagent",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "X = Br: 87; X = SePh: 94",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "scheme_text": "A bis-thiohydroxamic ester is irradiated in the presence of citraconic anhydride to form Tyromycin A in 79% yield.",
+            "reaction_string": "bis-thiohydroxamic ester + citraconic anhydride -> Tyromycin A",
+            "reaction_name": "double Barton radical decarboxylation",
+            "reactants": [
+              {
+                "name": "bis-thiohydroxamic ester",
+                "smiles": "O=C(ON1C(=S)C=CC=C1)CCCCCCCCCCCCCC(=O)ON1C(=S)C=CC=C1",
+                "role": "reactant"
+              },
+              {
+                "name": null,
+                "smiles": "CC1=CC(=O)OC1=O",
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "name": "hν",
+                "smiles": null,
+                "role": "reagent"
+              },
+              {
+                "name": "DCM",
+                "smiles": "C(Cl)Cl",
+                "role": "solvent"
+              },
+              {
+                "name": "stir, r.t.",
+                "smiles": null,
+                "role": "reagent"
+              }
+            ],
+            "products": [
+              {
+                "name": "Tyromycin A",
+                "smiles": "CC1=C([C@H]2C(=O)O[C@@]2(C)CCCCCCCCCCCCCC[C@@]2(C)C(=O)O[C@H]2C)C(=O)O1",
+                "role": "product",
+                "yield": "79"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "temperature",
+                "value": "10-15 °C"
+              },
+              {
+                "type": "time",
+                "value": "30 min"
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Barton Radical Decarboxylation",
+                "transformation_text": "double Barton radical decarboxylation",
+                "reactants_text": "bis-thiohydroxamic ester | O=C(ON1C(=S)C=CC=C1)CCCCCCCCCCCCCC(=O)ON1C(=S)C=CC=C1 | reactant; CC1=CC(=O)OC1=O | reactant",
+                "products_text": "Tyromycin A | 79 | CC1=C([C@H]2C(=O)O[C@@]2(C)CCCCCCCCCCCCCC[C@@]2(C)C(=O)O[C@H]2C)C(=O)O1 | product",
+                "intermediates_text": null,
+                "reagents_text": "hν | reagent; stir, r.t. | reagent",
+                "catalysts_text": null,
+                "solvents_text": "DCM | C(Cl)Cl | solvent",
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "Tyromycin A: 79",
+                "workup_text": null,
+                "conditions_text": "10-15 °C; 30 min",
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 98,
+      "image_filename": "named reactions_98.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BARTON-McCOMBIE RADICAL DEOXYGENATION REACTION",
+        "reaction_family_name": "Barton-Mccombie Radical Deoxygenation Reaction",
+        "page_section_hints": [
+          "Importance",
+          "Mechanism",
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_id": 1,
+            "description": "General scheme for the Barton-McCombie radical deoxygenation reaction.",
+            "reactants": [
+              "R1C(R2)(R3)OH"
+            ],
+            "reagents": [
+              "X, base",
+              "NaH, CS2 then MeI",
+              "(n-Bu)3SnH",
+              "AIBN"
+            ],
+            "products": [
+              "R1C(R2)(R3)H"
+            ],
+            "intermediates": [
+              "R1C(R2)(R3)OC(=S)Y"
+            ],
+            "solvents": [
+              "PhCH3"
+            ],
+            "other_conditions": [
+              "reflux"
+            ],
+            "reaction_type": "deoxygenation",
+            "is_mechanism": false,
+            "yields": [],
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Barton-Mccombie Radical Deoxygenation Reaction",
+                "transformation_text": "deoxygenation",
+                "reactants_text": "R1C(R2)(R3)OH",
+                "products_text": "R1C(R2)(R3)H",
+                "intermediates_text": "R1C(R2)(R3)OC(=S)Y",
+                "reagents_text": "X, base; NaH, CS2 then MeI; (n-Bu)3SnH; AIBN",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": "reflux",
+                "notes_text": "General scheme for the Barton-McCombie radical deoxygenation reaction.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "scheme_id": 2,
+            "description": "Initiation step of the Barton-McCombie reaction mechanism.",
+            "reactants": [
+              "CC(C)(C#N)N=NC(C)(C)C#N",
+              "CCCC[SnH](CCCC)CCCC"
+            ],
+            "reagents": [
+              "heat"
+            ],
+            "products": [
+              "N#N",
+              "CCCC[Sn](CCCC)CCCC",
+              "CC(C)(C#N)H"
+            ],
+            "intermediates": [
+              "[C](C)(C)C#N"
+            ],
+            "solvents": [],
+            "other_conditions": [],
+            "reaction_type": "mechanism",
+            "is_mechanism": true,
+            "yields": [],
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Barton-Mccombie Radical Deoxygenation Reaction",
+                "transformation_text": "mechanism",
+                "reactants_text": "CC(C)(C#N)N=NC(C)(C)C#N; CCCC[SnH](CCCC)CCCC",
+                "products_text": "N#N; CCCC[Sn](CCCC)CCCC; CC(C)(C#N)H",
+                "intermediates_text": "[C](C)(C)C#N",
+                "reagents_text": "heat",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Initiation step of the Barton-McCombie reaction mechanism.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step"
+          },
+          {
+            "scheme_id": 3,
+            "description": "Propagation step of the Barton-McCombie reaction mechanism.",
+            "reactants": [
+              "R1C(R2)(R3)OC(=S)Y",
+              "CCCC[SnH](CCCC)CCCC"
+            ],
+            "reagents": [],
+            "products": [
+              "R1C(R2)(R3)H",
+              "O=C(Y)S[Sn](CCCC)(CCCC)CCCC"
+            ],
+            "intermediates": [
+              "R1[C](R2)R3",
+              "CCCC[Sn](CCCC)CCCC"
+            ],
+            "solvents": [],
+            "other_conditions": [],
+            "reaction_type": "mechanism",
+            "is_mechanism": true,
+            "yields": [],
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Barton-Mccombie Radical Deoxygenation Reaction",
+                "transformation_text": "mechanism",
+                "reactants_text": "R1C(R2)(R3)OC(=S)Y; CCCC[SnH](CCCC)CCCC",
+                "products_text": "R1C(R2)(R3)H; O=C(Y)S[Sn](CCCC)(CCCC)CCCC",
+                "intermediates_text": "R1[C](R2)R3; CCCC[Sn](CCCC)CCCC",
+                "reagents_text": null,
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Propagation step of the Barton-McCombie reaction mechanism.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step"
+          },
+          {
+            "scheme_id": 4,
+            "description": "Application of the Barton-McCombie deoxygenation in the asymmetric synthesis of the C1-C19 fragment of kabiramide C.",
+            "reactants": [
+              "[STARTING_MATERIAL_S4]"
+            ],
+            "reagents": [
+              "1. NaH / CS2 / MeI",
+              "2. OsO4 / TMANO",
+              "3. Pb(OAc)4",
+              "4. NaBH4",
+              "(n-Bu)3SnH",
+              "AIBN"
+            ],
+            "products": [
+              "[DEOXYGENATED_PRODUCT_S4]"
+            ],
+            "intermediates": [
+              "[XANTHATE_INTERMEDIATE_S4]"
+            ],
+            "solvents": [
+              "toluene"
+            ],
+            "other_conditions": [
+              "reflux"
+            ],
+            "reaction_type": "deoxygenation",
+            "is_mechanism": false,
+            "yields": [
+              "72 % overall",
+              "97 %"
+            ],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Barton-Mccombie Radical Deoxygenation Reaction",
+                "transformation_text": "deoxygenation",
+                "reactants_text": "[STARTING_MATERIAL_S4]",
+                "products_text": "[DEOXYGENATED_PRODUCT_S4]",
+                "intermediates_text": "[XANTHATE_INTERMEDIATE_S4]",
+                "reagents_text": "1. NaH / CS2 / MeI; 2. OsO4 / TMANO; 3. Pb(OAc)4; 4. NaBH4; (n-Bu)3SnH; AIBN",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "72 % overall; 97 %",
+                "workup_text": null,
+                "conditions_text": "reflux",
+                "notes_text": "Application of the Barton-McCombie deoxygenation in the asymmetric synthesis of the C1-C19 fragment of kabiramide C.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 4,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 110,
+      "image_filename": "named reactions_110.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BIGINELLI REACTION",
+        "reaction_family_name": "Biginelli Reaction",
+        "page_section_hints": [
+          "Importance",
+          "Biginelli reaction",
+          "Atwal modification",
+          "Mechanism"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_name": "Biginelli reaction",
+            "reactants": [
+              {
+                "smiles": "[R1]C(=O)CC(=O)[R2]",
+                "role": "reactant"
+              },
+              {
+                "smiles": "[R3]C=O",
+                "role": "reactant"
+              },
+              {
+                "smiles": "N[C](=X)N[R4]",
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": null,
+                "role": "catalyst"
+              },
+              {
+                "smiles": null,
+                "role": "solvent"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "[R1]C1=C(C(=O)[R2])C([R3])NC(=X)N1[R4]",
+                "role": "product",
+                "name": "Biginelli compounds"
+              }
+            ],
+            "is_mechanism": false,
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Biginelli Reaction",
+                "transformation_text": "Biginelli reaction",
+                "reactants_text": "[R1]C(=O)CC(=O)[R2] | reactant; [R3]C=O | reactant; N[C](=X)N[R4] | reactant",
+                "products_text": "Biginelli compounds | [R1]C1=C(C(=O)[R2])C([R3])NC(=X)N1[R4] | product",
+                "intermediates_text": null,
+                "reagents_text": null,
+                "catalysts_text": "catalyst",
+                "solvents_text": "solvent",
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "scheme_name": "Atwal modification",
+            "reactants": [
+              {
+                "smiles": "[R1]C(=O)C([R2])=C[R3]",
+                "role": "reactant"
+              },
+              {
+                "smiles": "N[C](=X)N[R5]",
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "[Na+].[HCO3-]",
+                "role": "reagent",
+                "name": "NaHCO3",
+                "step": 1
+              },
+              {
+                "smiles": "CN(C)C=O",
+                "role": "solvent",
+                "name": "DMF",
+                "step": 1
+              },
+              {
+                "smiles": "Cl",
+                "role": "reagent",
+                "name": "HCl",
+                "step": 2
+              },
+              {
+                "smiles": "O=C(O)C(F)(F)F",
+                "role": "reagent",
+                "name": "TFA",
+                "step": 2
+              },
+              {
+                "smiles": "CCS",
+                "role": "reagent",
+                "name": "EtSH",
+                "step": 2
+              }
+            ],
+            "products": [
+              {
+                "smiles": "[R1]C1=C(C(=O)[R2])C([R3])NC(=X)N1",
+                "role": "product",
+                "name": "Biginelli compounds"
+              }
+            ],
+            "is_mechanism": false,
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Biginelli Reaction",
+                "transformation_text": "Atwal modification",
+                "reactants_text": "[R1]C(=O)C([R2])=C[R3] | reactant; N[C](=X)N[R5] | reactant",
+                "products_text": "Biginelli compounds | [R1]C1=C(C(=O)[R2])C([R3])NC(=X)N1 | product",
+                "intermediates_text": null,
+                "reagents_text": "NaHCO3 | [Na+].[HCO3-] | reagent; HCl | Cl | reagent; TFA | O=C(O)C(F)(F)F | reagent; EtSH | CCS | reagent",
+                "catalysts_text": null,
+                "solvents_text": "DMF | CN(C)C=O | solvent",
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "scheme_name": "Mechanism",
+            "reactants": [
+              {
+                "smiles": "N[C](=X)N[R4]",
+                "role": "reactant"
+              },
+              {
+                "smiles": "[R3]C=O",
+                "role": "reactant"
+              },
+              {
+                "smiles": "[R1]C(=O)CC(=O)[R2]",
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "[H+]",
+                "role": "catalyst"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "[R1]C1=C(C(=O)[R2])C([R3])NC(=X)N1[R4]",
+                "role": "product"
+              }
+            ],
+            "is_mechanism": true,
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Biginelli Reaction",
+                "transformation_text": "Mechanism",
+                "reactants_text": "N[C](=X)N[R4] | reactant; [R3]C=O | reactant; [R1]C(=O)CC(=O)[R2] | reactant",
+                "products_text": "[R1]C1=C(C(=O)[R2])C([R3])NC(=X)N1[R4] | product",
+                "intermediates_text": null,
+                "reagents_text": null,
+                "catalysts_text": "[H+] | catalyst",
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 118,
+      "image_filename": "named reactions_118.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BROWN HYDROBORATION REACTION",
+        "reaction_family_name": "Brown Hydroboration Reaction",
+        "page_section_hints": [
+          "Importance",
+          "Mechanism"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_id": "page_66_scheme_1",
+            "description": "Stepwise hydroboration of an alkene with borane to form a trialkylborane.",
+            "reactants": [
+              {
+                "smiles": "C=CR",
+                "role": "reactant",
+                "name": "alkene"
+              },
+              {
+                "smiles": "[BH3]",
+                "role": "reactant",
+                "name": "BH3"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "B(CC[R])(CC[R])CC[R]",
+                "role": "product",
+                "name": "Trialkylborane"
+              }
+            ],
+            "intermediates": [
+              {
+                "smiles": "[BH2]CC[R]",
+                "role": "intermediate",
+                "name": "monoalkylborane"
+              },
+              {
+                "smiles": "[BH](CC[R])CC[R]",
+                "role": "intermediate",
+                "name": "dialkylborane"
+              }
+            ],
+            "catalysts": [],
+            "solvents": [],
+            "other_reagents": [],
+            "reaction_type": "hydroboration",
+            "is_overall_scheme": true,
+            "is_mechanistic_scheme": false,
+            "is_catalytic_cycle": false,
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Brown Hydroboration Reaction",
+                "transformation_text": "hydroboration",
+                "reactants_text": "alkene | C=CR | reactant; BH3 | [BH3] | reactant",
+                "products_text": "Trialkylborane | B(CC[R])(CC[R])CC[R] | product",
+                "intermediates_text": "monoalkylborane | [BH2]CC[R] | intermediate; dialkylborane | [BH](CC[R])CC[R] | intermediate",
+                "reagents_text": null,
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Stepwise hydroboration of an alkene with borane to form a trialkylborane.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "scheme_id": "page_66_scheme_2",
+            "description": "Mechanism for the concerted addition of borane to a double bond via a four-centered transition state.",
+            "reactants": [
+              {
+                "smiles": "C=CR",
+                "role": "reactant",
+                "name": ""
+              },
+              {
+                "smiles": "[BH2]1[H][BH2][H]1",
+                "role": "reactant",
+                "name": ""
+              }
+            ],
+            "products": [
+              {
+                "smiles": "[BH2]CC[R]",
+                "role": "product",
+                "name": ""
+              }
+            ],
+            "intermediates": [],
+            "catalysts": [],
+            "solvents": [],
+            "other_reagents": [],
+            "transition_states": [
+              {
+                "smiles": null,
+                "role": "transition_state",
+                "name": "four-centered TS"
+              }
+            ],
+            "reaction_type": "hydroboration",
+            "is_overall_scheme": false,
+            "is_mechanistic_scheme": true,
+            "is_catalytic_cycle": false,
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Brown Hydroboration Reaction",
+                "transformation_text": "hydroboration",
+                "reactants_text": "C=CR | reactant; [BH2]1[H][BH2][H]1 | reactant",
+                "products_text": "[BH2]CC[R] | product",
+                "intermediates_text": null,
+                "reagents_text": null,
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Mechanism for the concerted addition of borane to a double bond via a four-centered transition state.; four-centered TS | transition_state",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step"
+          },
+          {
+            "scheme_id": "page_66_scheme_3",
+            "description": "Catalytic cycle for the Cp2Ti-catalyzed hydroboration of alkenes.",
+            "reactants": [
+              {
+                "smiles": "C=CR",
+                "role": "reactant",
+                "name": ""
+              },
+              {
+                "smiles": "[BH]([R'])([R'])",
+                "role": "reactant",
+                "name": "HBR'2"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "B(CC[R])([R'])([R'])",
+                "role": "product",
+                "name": "Trialkylborane"
+              }
+            ],
+            "intermediates": [
+              {
+                "smiles": null,
+                "role": "intermediate",
+                "name": "Cp2Ti(HBR'2)2"
+              },
+              {
+                "smiles": null,
+                "role": "intermediate",
+                "name": "Cp2Ti(HBR'2)"
+              },
+              {
+                "smiles": null,
+                "role": "intermediate",
+                "name": "Cp2Ti(H)(BR'2)"
+              },
+              {
+                "smiles": null,
+                "role": "intermediate",
+                "name": "Cp2Ti(CH(R)CH2BR'2)"
+              }
+            ],
+            "catalysts": [
+              {
+                "smiles": null,
+                "role": "catalyst",
+                "name": "Cp2Ti species"
+              }
+            ],
+            "solvents": [],
+            "other_reagents": [],
+            "reaction_type": "hydroboration",
+            "is_overall_scheme": false,
+            "is_mechanistic_scheme": false,
+            "is_catalytic_cycle": true,
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Brown Hydroboration Reaction",
+                "transformation_text": "hydroboration",
+                "reactants_text": "C=CR | reactant; HBR'2 | [BH]([R'])([R']) | reactant",
+                "products_text": "Trialkylborane | B(CC[R])([R'])([R']) | product",
+                "intermediates_text": "Cp2Ti(HBR'2)2 | intermediate; Cp2Ti(HBR'2) | intermediate; Cp2Ti(H)(BR'2) | intermediate; Cp2Ti(CH(R)CH2BR'2) | intermediate",
+                "reagents_text": null,
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Catalytic cycle for the Cp2Ti-catalyzed hydroboration of alkenes.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 123,
+      "image_filename": "named reactions_123.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BUCHWALD-HARTWIG CROSS-COUPLING",
+        "reaction_family_name": "Buchwald-Hartwig Cross-Coupling",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_id": "page_71_scheme_1",
+            "internal_id": 1,
+            "reaction_name": "Buchwald-Hartwig Cross-Coupling",
+            "is_multistep": true,
+            "reactants": [
+              "c1ccc2c(c1O)C3(C)CCC2(C4CC4)N(C)C3"
+            ],
+            "reagents": [
+              "1. Tf2O; pyr; DCM",
+              "2. PhNH2; Pd2(dba)3; dppf; NaOt-Bu; toluene"
+            ],
+            "products": [
+              "c1ccc(cc1)Nc1ccc2c(c1)C3(C)CCC2(C4CC4)N(C)C3"
+            ],
+            "yields": [
+              "94%",
+              "57%"
+            ],
+            "reaction_details": {
+              "temperature": "80 °C"
+            },
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Buchwald-Hartwig Cross-Coupling",
+                "transformation_text": "Buchwald-Hartwig Cross-Coupling",
+                "reactants_text": "c1ccc2c(c1O)C3(C)CCC2(C4CC4)N(C)C3",
+                "products_text": "c1ccc(cc1)Nc1ccc2c(c1)C3(C)CCC2(C4CC4)N(C)C3",
+                "intermediates_text": null,
+                "reagents_text": "1. Tf2O; pyr; DCM; 2. PhNH2; Pd2(dba)3; dppf; NaOt-Bu; toluene",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": "80 °C",
+                "time_text": null,
+                "yield_text": "94%; 57%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "scheme_id": "page_71_scheme_2",
+            "internal_id": 2,
+            "reaction_name": "Buchwald-Hartwig Coupling",
+            "is_multistep": false,
+            "reactants": [
+              "c1ccc(c(c1)Br)I",
+              "C1C(N1[Si](C(C)(C)C)(c1ccccc1)c1ccccc1)OR"
+            ],
+            "reagents": [
+              "Pd2(dba)3; BINAP; NaOt-Bu; PhCH3"
+            ],
+            "products": [
+              "c1ccc(c(c1)Br)N2C(C2OR)[Si](C(C)(C)C)(c1ccccc1)c1ccccc1"
+            ],
+            "yields": [
+              "66%"
+            ],
+            "reaction_details": {
+              "temperature": "80 °C"
+            },
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Buchwald-Hartwig Cross-Coupling",
+                "transformation_text": "Buchwald-Hartwig Coupling",
+                "reactants_text": "c1ccc(c(c1)Br)I; C1C(N1[Si](C(C)(C)C)(c1ccccc1)c1ccccc1)OR",
+                "products_text": "c1ccc(c(c1)Br)N2C(C2OR)[Si](C(C)(C)C)(c1ccccc1)c1ccccc1",
+                "intermediates_text": null,
+                "reagents_text": "Pd2(dba)3; BINAP; NaOt-Bu; PhCH3",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": "80 °C",
+                "time_text": null,
+                "yield_text": "66%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "scheme_id": "page_71_scheme_3",
+            "internal_id": 3,
+            "reaction_name": "Buchwald-Hartwig Amination",
+            "is_multistep": false,
+            "reactants": [
+              "COC(=O)c1c(Br)cc(cc1)[N+](=O)[O-]",
+              "COc1c2c(cc(N)c1)OC(c1ccccc1)(C2)"
+            ],
+            "reagents": [
+              "Pd(OAc)2; BINAP; Cs2CO3; PhMe"
+            ],
+            "products": [
+              "COC(=O)c1c(Nc2cc3c(c(OC)c2)OC(c2ccccc2)(C3))cc(cc1)[N+](=O)[O-]"
+            ],
+            "yields": [
+              "99%"
+            ],
+            "reaction_details": {
+              "temperature": "100 °C"
+            },
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Buchwald-Hartwig Cross-Coupling",
+                "transformation_text": "Buchwald-Hartwig Amination",
+                "reactants_text": "COC(=O)c1c(Br)cc(cc1)[N+](=O)[O-]; COc1c2c(cc(N)c1)OC(c1ccccc1)(C2)",
+                "products_text": "COC(=O)c1c(Nc2cc3c(c(OC)c2)OC(c2ccccc2)(C3))cc(cc1)[N+](=O)[O-]",
+                "intermediates_text": null,
+                "reagents_text": "Pd(OAc)2; BINAP; Cs2CO3; PhMe",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": "100 °C",
+                "time_text": null,
+                "yield_text": "99%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "scheme_id": "page_71_scheme_4",
+            "internal_id": 4,
+            "reaction_name": "Intramolecular Buchwald-Hartwig Amination",
+            "is_multistep": false,
+            "reactants": [
+              "COC(=O)c1c(Nc2cc3c(c(OC)c2)OC(c2ccccc2)(C3))cc(N)c(Br)c1"
+            ],
+            "reagents": [
+              "Pd(OAc)2; BINAP; Cs2CO3; PhMe"
+            ],
+            "products": [
+              "COC(=O)c1c2nc3cc4c(c(OC)c3c(c2)c1)OC(c1ccccc1)(C4)"
+            ],
+            "yields": [
+              "50%"
+            ],
+            "reaction_details": {
+              "temperature": "100 °C"
+            },
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Buchwald-Hartwig Cross-Coupling",
+                "transformation_text": "Intramolecular Buchwald-Hartwig Amination",
+                "reactants_text": "COC(=O)c1c(Nc2cc3c(c(OC)c2)OC(c2ccccc2)(C3))cc(N)c(Br)c1",
+                "products_text": "COC(=O)c1c2nc3cc4c(c(OC)c3c(c2)c1)OC(c1ccccc1)(C4)",
+                "intermediates_text": null,
+                "reagents_text": "Pd(OAc)2; BINAP; Cs2CO3; PhMe",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": "100 °C",
+                "time_text": null,
+                "yield_text": "50%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 4,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 124,
+      "image_filename": "named reactions_124.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BURGESS DEHYDRATION REACTION",
+        "reaction_family_name": "Burgess Dehydration Reaction",
+        "page_section_hints": [
+          "Importance",
+          "Mechanism"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_id": "a",
+            "reaction_type": "Dehydration",
+            "reactants": [
+              {
+                "smiles": "[H]O[C]([R1])([R2])[C]([H])([R3])[R4]",
+                "role": "Reactant",
+                "name": "2° or 3° alcohol"
+              },
+              {
+                "name": "Burgess reagent",
+                "role": "Reagent",
+                "smiles": "CCN(CC)CC.O=C(OC)N=S(=O)=O"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "[R1][C]([R2])=C([R3])[R4]",
+                "role": "Product",
+                "name": "Alkene"
+              }
+            ],
+            "intermediate_species": [
+              {
+                "smiles": "[R1][C]([R2])([C]([H])([R3])[R4])O[S](=O)(=O)N([H])C(=O)OC",
+                "role": "Intermediate",
+                "name": "sulfamate ester"
+              }
+            ],
+            "reaction_name": "Burgess Dehydration Reaction",
+            "reaction_details": {
+              "stereochemistry": "syn elimination"
+            },
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Burgess Dehydration Reaction",
+                "transformation_text": "Burgess Dehydration Reaction",
+                "reactants_text": "2° or 3° alcohol | [H]O[C]([R1])([R2])[C]([H])([R3])[R4] | Reactant; Burgess reagent | CCN(CC)CC.O=C(OC)N=S(=O)=O | Reagent",
+                "products_text": "Alkene | [R1][C]([R2])=C([R3])[R4] | Product",
+                "intermediates_text": "sulfamate ester | [R1][C]([R2])([C]([H])([R3])[R4])O[S](=O)(=O)N([H])C(=O)OC | Intermediate",
+                "reagents_text": null,
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "stereochemistry: syn elimination",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "scheme_id": "b",
+            "reaction_type": "Functional Group Interconversion",
+            "reactants": [
+              {
+                "smiles": "RC([H])([H])O",
+                "role": "Reactant",
+                "name": "1° alcohol"
+              },
+              {
+                "name": "Burgess reagent",
+                "role": "Reagent"
+              },
+              {
+                "smiles": "[H+]",
+                "role": "Reagent"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "RC([H])([H])N([H])[H]",
+                "role": "Product",
+                "name": "1° Amine"
+              }
+            ],
+            "intermediate_species": [
+              {
+                "smiles": "RC([H])([H])OC(=O)N([H])[H]",
+                "role": "Intermediate",
+                "name": "carbamate"
+              }
+            ],
+            "reaction_name": null,
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Burgess Dehydration Reaction",
+                "transformation_text": "Functional Group Interconversion",
+                "reactants_text": "1° alcohol | RC([H])([H])O | Reactant; Burgess reagent | Reagent; [H+] | Reagent",
+                "products_text": "1° Amine | RC([H])([H])N([H])[H] | Product",
+                "intermediates_text": "carbamate | RC([H])([H])OC(=O)N([H])[H] | Intermediate",
+                "reagents_text": null,
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "scheme_id": "c",
+            "reaction_type": "Dehydration",
+            "reactants": [
+              {
+                "smiles": "RN([H])C=O",
+                "role": "Reactant",
+                "name": "formamide"
+              },
+              {
+                "name": "Burgess reagent",
+                "role": "Reagent"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "R[N+]#[C-]",
+                "role": "Product",
+                "name": "Isonitrile"
+              }
+            ],
+            "intermediate_species": [],
+            "reaction_name": null,
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Burgess Dehydration Reaction",
+                "transformation_text": "Dehydration",
+                "reactants_text": "formamide | RN([H])C=O | Reactant; Burgess reagent | Reagent",
+                "products_text": "Isonitrile | R[N+]#[C-] | Product",
+                "intermediates_text": null,
+                "reagents_text": null,
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "scheme_id": "d",
+            "reaction_type": "Dehydration",
+            "reactants": [
+              {
+                "smiles": "RC(=O)N([H])[H]",
+                "role": "Reactant",
+                "name": "1° amide"
+              },
+              {
+                "name": "Burgess reagent",
+                "role": "Reagent"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "RC#N",
+                "role": "Product",
+                "name": "Nitrile"
+              }
+            ],
+            "intermediate_species": [],
+            "reaction_name": null,
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Burgess Dehydration Reaction",
+                "transformation_text": "Dehydration",
+                "reactants_text": "1° amide | RC(=O)N([H])[H] | Reactant; Burgess reagent | Reagent",
+                "products_text": "Nitrile | RC#N | Product",
+                "intermediates_text": null,
+                "reagents_text": null,
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 4,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "scheme_id": "e",
+            "reaction_type": "Dehydration",
+            "reactants": [
+              {
+                "smiles": "RC([H])([H])N(=O)=O",
+                "role": "Reactant",
+                "name": "1° nitro alkane"
+              },
+              {
+                "name": "Burgess reagent",
+                "role": "Reagent"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "RC#[N+][O-]",
+                "role": "Product",
+                "name": "Nitrile-oxide"
+              }
+            ],
+            "intermediate_species": [],
+            "reaction_name": null,
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Burgess Dehydration Reaction",
+                "transformation_text": "Dehydration",
+                "reactants_text": "1° nitro alkane | RC([H])([H])N(=O)=O | Reactant; Burgess reagent | Reagent",
+                "products_text": "Nitrile-oxide | RC#[N+][O-] | Product",
+                "intermediates_text": null,
+                "reagents_text": null,
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 5,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "scheme_id": "mechanism_1",
+            "reaction_type": "Elimination",
+            "reactants": [
+              {
+                "smiles": "[H][N+](CC)(CC)CC.[R1][C]([R2])([C]([H])([R3])[R4])O[S](=O)(=O)[N-]C(=O)OC",
+                "role": "Reactant",
+                "name": "sulfamate ester"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "[R1][C]([R2])=C([R3])[R4]",
+                "role": "Product",
+                "name": "Alkene"
+              },
+              {
+                "smiles": "[H][N+](CC)(CC)CC.[O-]S(=O)N([H])C(=O)OC",
+                "role": "Product"
+              }
+            ],
+            "intermediate_species": [],
+            "reaction_name": "Burgess Dehydration Reaction",
+            "reaction_details": {
+              "mechanism": "syn-elimination via ion-pair formation"
+            },
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Burgess Dehydration Reaction",
+                "transformation_text": "Burgess Dehydration Reaction",
+                "reactants_text": "sulfamate ester | [H][N+](CC)(CC)CC.[R1][C]([R2])([C]([H])([R3])[R4])O[S](=O)(=O)[N-]C(=O)OC | Reactant",
+                "products_text": "Alkene | [R1][C]([R2])=C([R3])[R4] | Product; [H][N+](CC)(CC)CC.[O-]S(=O)N([H])C(=O)OC | Product",
+                "intermediates_text": null,
+                "reagents_text": null,
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": "mechanism: syn-elimination via ion-pair formation",
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 6,
+            "confidence": 0.75,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 131,
+      "image_filename": "named reactions_131.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "CASTRO-STEPHENS COUPLING",
+        "reaction_family_name": "Castro-Stephens Coupling",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "reaction_id": "079_S1",
+            "reaction_name": "Castro-Stephens Coupling",
+            "reactants": [
+              "COc1cc(I)c(C#C)cc1OC"
+            ],
+            "reagents": [
+              "CuCl / NH4OH / EtOH",
+              "pyridine"
+            ],
+            "products": [
+              "COc1cc(c2c(c1)C#Cc1c(c3cc(OC)c(OC)cc3)C#Cc3c(c4cc(OC)c(OC)cc4)C#Cc2c13)OC"
+            ],
+            "yields": [
+              "80%"
+            ],
+            "reaction_conditions": [
+              "reflux / 24h"
+            ],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Castro-Stephens Coupling",
+                "transformation_text": "Castro-Stephens Coupling",
+                "reactants_text": "COc1cc(I)c(C#C)cc1OC",
+                "products_text": "COc1cc(c2c(c1)C#Cc1c(c3cc(OC)c(OC)cc3)C#Cc3c(c4cc(OC)c(OC)cc4)C#Cc2c13)OC",
+                "intermediates_text": null,
+                "reagents_text": "CuCl / NH4OH / EtOH; pyridine",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "80%",
+                "workup_text": null,
+                "conditions_text": "reflux / 24h",
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "reaction_id": "079_S2_1",
+            "reaction_name": "Castro-Stephens Coupling",
+            "reactants": [
+              "C#CCCOc1oc2ccccc2c1=O"
+            ],
+            "reagents": [
+              "CuI",
+              "PPh3",
+              "K2CO3",
+              "DMF"
+            ],
+            "products": [
+              "O=C1OC(=Cc2ccccc21)CCCC#C"
+            ],
+            "yields": [
+              "37%"
+            ],
+            "reaction_conditions": [
+              "120 °C"
+            ],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Castro-Stephens Coupling",
+                "transformation_text": "Castro-Stephens Coupling",
+                "reactants_text": "C#CCCOc1oc2ccccc2c1=O",
+                "products_text": "O=C1OC(=Cc2ccccc21)CCCC#C",
+                "intermediates_text": null,
+                "reagents_text": "CuI; PPh3; K2CO3; DMF",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "37%",
+                "workup_text": null,
+                "conditions_text": "120 °C",
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "reaction_id": "079_S2_2",
+            "reaction_name": "Stereoselective reduction",
+            "reactants": [
+              "O=C1OC(=Cc2ccccc21)CCCC#C"
+            ],
+            "reagents": [
+              "Zn",
+              "LiBr",
+              "CuBr",
+              "EtOH",
+              "BrCH2CH2Br"
+            ],
+            "products": [
+              "O=C1OC/C=C\\C=C/c2ccccc21"
+            ],
+            "yields": [
+              "71%"
+            ],
+            "reaction_conditions": [],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Castro-Stephens Coupling",
+                "transformation_text": "Stereoselective reduction",
+                "reactants_text": "O=C1OC(=Cc2ccccc21)CCCC#C",
+                "products_text": "O=C1OC/C=C\\C=C/c2ccccc21",
+                "intermediates_text": null,
+                "reagents_text": "Zn; LiBr; CuBr; EtOH; BrCH2CH2Br",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "71%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "reaction_id": "079_S3_1",
+            "reaction_name": "Modified Castro-Stephens Reaction",
+            "reactants": [
+              "CC1=NC=CS1/C=C(\\C)/C[C@H](O[Si](C)(C)C(C)(C)C)[C@H](C)Br",
+              "COC(=O)[C@H]1OC(=O)[C@H](O[Si](C)(C)C(C)(C)C)[C@H](C)[C@@]1(C#C)O[Si](C)(C)C(C)(C)C"
+            ],
+            "reagents": [
+              "CuI",
+              "Et3N",
+              "Et2O-DMF"
+            ],
+            "products": [
+              "COC(=O)[C@H]1OC(=O)[C@H](O[Si](C)(C)C(C)(C)C)[C@H](C)[C@]1(C#C[C@H](C)[C@H](O[Si](C)(C)C(C)(C)C)C/C=C(\\C)/c2sccn2)O[Si](C)(C)C(C)(C)C"
+            ],
+            "yields": [
+              "60%"
+            ],
+            "reaction_conditions": [],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Castro-Stephens Coupling",
+                "transformation_text": "Modified Castro-Stephens Reaction",
+                "reactants_text": "CC1=NC=CS1/C=C(\\C)/C[C@H](O[Si](C)(C)C(C)(C)C)[C@H](C)Br; COC(=O)[C@H]1OC(=O)[C@H](O[Si](C)(C)C(C)(C)C)[C@H](C)[C@@]1(C#C)O[Si](C)(C)C(C)(C)C",
+                "products_text": "COC(=O)[C@H]1OC(=O)[C@H](O[Si](C)(C)C(C)(C)C)[C@H](C)[C@]1(C#C[C@H](C)[C@H](O[Si](C)(C)C(C)(C)C)C/C=C(\\C)/c2sccn2)O[Si](C)(C)C(C)(C)C",
+                "intermediates_text": null,
+                "reagents_text": "CuI; Et3N; Et2O-DMF",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "60%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 4,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "reaction_id": "079_S3_2",
+            "reaction_name": null,
+            "reactants": [
+              "COC(=O)[C@H]1OC(=O)[C@H](O[Si](C)(C)C(C)(C)C)[C@H](C)[C@]1(C#C[C@H](C)[C@H](O[Si](C)(C)C(C)(C)C)C/C=C(\\C)/c2sccn2)O[Si](C)(C)C(C)(C)C"
+            ],
+            "reagents": [
+              "steps"
+            ],
+            "products": [
+              "C[C@H]1[C@H](/C=C/C[C@@H](c2sccn2)/C(C)=C/[C@H](O)[C@H](C)C(=O)O2)[C@H](O)[C@H](C)[C@]12O"
+            ],
+            "yields": [],
+            "reaction_conditions": [],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Castro-Stephens Coupling",
+                "transformation_text": null,
+                "reactants_text": "COC(=O)[C@H]1OC(=O)[C@H](O[Si](C)(C)C(C)(C)C)[C@H](C)[C@]1(C#C[C@H](C)[C@H](O[Si](C)(C)C(C)(C)C)C/C=C(\\C)/c2sccn2)O[Si](C)(C)C(C)(C)C",
+                "products_text": "C[C@H]1[C@H](/C=C/C[C@@H](c2sccn2)/C(C)=C/[C@H](O)[C@H](C)C(=O)O2)[C@H](O)[C@H](C)[C@]12O",
+                "intermediates_text": null,
+                "reagents_text": "steps",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 5,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 133,
+      "image_filename": "named reactions_133.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "CHICHIBABIN AMINATION REACTION",
+        "reaction_family_name": "Chichibabin Amination Reaction",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "reaction_string": "3-phenylpyridine -> 2-amino-5-phenylpyridine",
+            "reactants": [
+              {
+                "smiles": "c1ccc(cc1)c2cnccc2",
+                "name": "3-phenylpyridine",
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "[Na+].[NH2-]",
+                "name": "NaNH2",
+                "role": "reagent"
+              },
+              {
+                "smiles": "Cc1ccccc1",
+                "name": "toluene",
+                "role": "solvent"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "Nc1ccc(cn1)c2ccccc2",
+                "name": "",
+                "role": "product"
+              }
+            ],
+            "reaction_details": {
+              "conditions": "reflux",
+              "yield": "58%"
+            },
+            "annotations": [
+              {
+                "text": "The product shown, 2-amino-5-phenylpyridine, is an isomer of the expected product from 3-phenylpyridine, which would be 2-amino-3-phenylpyridine or 6-amino-3-phenylpyridine.",
+                "type": "note"
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Chichibabin Amination Reaction",
+                "transformation_text": "3-phenylpyridine -> 2-amino-5-phenylpyridine",
+                "reactants_text": "3-phenylpyridine | c1ccc(cc1)c2cnccc2 | reactant",
+                "products_text": "Nc1ccc(cn1)c2ccccc2 | product",
+                "intermediates_text": null,
+                "reagents_text": "NaNH2 | [Na+].[NH2-] | reagent",
+                "catalysts_text": null,
+                "solvents_text": "toluene | Cc1ccccc1 | solvent",
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": "conditions: reflux",
+                "notes_text": "yield: 58%",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "reaction_string": "3-(5-aminopyridin-2-yl)propan-1-amine -> Tetrahydronaphthyridine derivative",
+            "reactants": [
+              {
+                "smiles": "NCCCc1ccc(N)cn1",
+                "name": "3-(5-aminopyridin-2-yl)propan-1-amine",
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "[Na+].[NH2-]",
+                "name": "NaNH2",
+                "role": "reagent"
+              },
+              {
+                "smiles": "Cc1ccccc1",
+                "name": "toluene",
+                "role": "solvent"
+              },
+              {
+                "smiles": "O",
+                "name": "H2O",
+                "role": "reagent"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "Nc1ccc2c(n1)CCCC2",
+                "name": "Tetrahydronaphthyridine derivative",
+                "role": "product"
+              }
+            ],
+            "reaction_details": {
+              "conditions": "90 °C, 15h",
+              "yield": "94%"
+            },
+            "annotations": [
+              {
+                "text": "This is the final intramolecular Chichibabin cyclization step of a multi-step synthesis. The yield of 94% is for the last two steps of the sequence (deprotection and cyclization). The reactant structure is inferred from the overall transformation.",
+                "type": "note"
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Chichibabin Amination Reaction",
+                "transformation_text": "3-(5-aminopyridin-2-yl)propan-1-amine -> Tetrahydronaphthyridine derivative",
+                "reactants_text": "3-(5-aminopyridin-2-yl)propan-1-amine | NCCCc1ccc(N)cn1 | reactant",
+                "products_text": "Tetrahydronaphthyridine derivative | Nc1ccc2c(n1)CCCC2 | product",
+                "intermediates_text": null,
+                "reagents_text": "NaNH2 | [Na+].[NH2-] | reagent; H2O | O | reagent",
+                "catalysts_text": null,
+                "solvents_text": "toluene | Cc1ccccc1 | solvent",
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": "conditions: 90 °C, 15h",
+                "notes_text": "yield: 94%",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "reaction_string": "3-(benzyl)pyridine -> 2-amino-3-(benzyl)pyridine",
+            "reactants": [
+              {
+                "smiles": "c1ccc(cc1)Cc2cnccc2",
+                "name": "",
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "[Na+].[NH2-]",
+                "name": "NaNH2",
+                "role": "reagent"
+              },
+              {
+                "name": "p-cymene",
+                "role": "solvent"
+              },
+              {
+                "smiles": "O",
+                "name": "H2O",
+                "role": "reagent"
+              },
+              {
+                "smiles": "Cl",
+                "name": "HCl",
+                "role": "reagent"
+              },
+              {
+                "smiles": "[Na+].[OH-]",
+                "name": "NaOH",
+                "role": "reagent"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "Nc1ncccc1Cc1ccccc1",
+                "name": "",
+                "role": "product"
+              },
+              {
+                "name": "isomers",
+                "role": "product"
+              }
+            ],
+            "reaction_details": {
+              "conditions": "155-160 °C, 8h",
+              "yield": "17%"
+            },
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Chichibabin Amination Reaction",
+                "transformation_text": "3-(benzyl)pyridine -> 2-amino-3-(benzyl)pyridine",
+                "reactants_text": "c1ccc(cc1)Cc2cnccc2 | reactant",
+                "products_text": "Nc1ncccc1Cc1ccccc1 | product; isomers | product",
+                "intermediates_text": null,
+                "reagents_text": "NaNH2 | [Na+].[NH2-] | reagent; H2O | O | reagent; HCl | Cl | reagent; NaOH | [Na+].[OH-] | reagent",
+                "catalysts_text": null,
+                "solvents_text": "p-cymene | solvent",
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": "conditions: 155-160 °C, 8h",
+                "notes_text": "yield: 17%",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          },
+          {
+            "reaction_string": "1,2-bis(pyridin-2-yl)ethane + 2-(tert-butyl)-6-(lithiomethyl)pyridine -> 12-t-Bu-[2.1.1]-(2,6)-pyridinophane",
+            "reactants": [
+              {
+                "smiles": "c1cc(ccn1)CCc1ncccc1",
+                "name": "",
+                "role": "reactant"
+              },
+              {
+                "smiles": "[Li]Cc1cccc(n1)C(C)(C)C",
+                "name": "",
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": "CO",
+                "name": "MeOH",
+                "role": "reagent"
+              },
+              {
+                "smiles": "O",
+                "name": "H2O",
+                "role": "reagent"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "CC(C)(C)c1cccc(n1)C2c3ncccc3CCc3ncccc32",
+                "name": "12-t-Bu-[2.1.1]-(2,6)-pyridinophane",
+                "role": "product"
+              }
+            ],
+            "reaction_details": {
+              "conditions": "170 °C, 24h",
+              "yield": "60%"
+            },
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Chichibabin Amination Reaction",
+                "transformation_text": "1,2-bis(pyridin-2-yl)ethane + 2-(tert-butyl)-6-(lithiomethyl)pyridine -> 12-t-Bu-[2.1.1]-(2,6)-pyridinophane",
+                "reactants_text": "c1cc(ccn1)CCc1ncccc1 | reactant; [Li]Cc1cccc(n1)C(C)(C)C | reactant",
+                "products_text": "12-t-Bu-[2.1.1]-(2,6)-pyridinophane | CC(C)(C)c1cccc(n1)C2c3ncccc3CCc3ncccc32 | product",
+                "intermediates_text": null,
+                "reagents_text": "MeOH | CO | reagent; H2O | O | reagent",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": "conditions: 170 °C, 24h",
+                "notes_text": "yield: 60%",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 4,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 141,
+      "image_filename": "named reactions_141.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "Claisen Rearrangement",
+        "reaction_family_name": "Claisen Rearrangement",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "reaction_name": "Tebbe-Claisen Rearrangement",
+            "reactants": [
+              "CC1[C@H]2C[C@H]3C[C@H](O[Si](C(C)(C)C)(C(C)(C)C)C(C)(C)C)[C@@H](C(=O)O1)C3=C2"
+            ],
+            "products": [
+              "C=C[C@]1(C)[C@H]2C[C@H]3C[C@H](O[Si](C(C)(C)C)(C(C)(C)C)C(C)(C)C)[C@@H](C(=O)O1)C3=C[C@H]2C"
+            ],
+            "reagents": [
+              "1. Cp2Ti(Cl)AlMe2, pyr, THF, (-50 to 20 °C)",
+              "2. p-cymene, 130 °C, 1.5 h"
+            ],
+            "yield": [
+              "61%",
+              "76%"
+            ],
+            "reaction_type": "pericyclic",
+            "is_overall_reaction_of_page": true,
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Claisen Rearrangement",
+                "transformation_text": "Tebbe-Claisen Rearrangement",
+                "reactants_text": "CC1[C@H]2C[C@H]3C[C@H](O[Si](C(C)(C)C)(C(C)(C)C)C(C)(C)C)[C@@H](C(=O)O1)C3=C2",
+                "products_text": "C=C[C@]1(C)[C@H]2C[C@H]3C[C@H](O[Si](C(C)(C)C)(C(C)(C)C)C(C)(C)C)[C@@H](C(=O)O1)C3=C[C@H]2C",
+                "intermediates_text": null,
+                "reagents_text": "1. Cp2Ti(Cl)AlMe2, pyr, THF, (-50 to 20 °C); 2. p-cymene, 130 °C, 1.5 h",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "61%; 76%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "reaction_name": "Lewis Acid Mediated Stereoselective Claisen Rearrangement",
+            "reactants": [
+              "COC(=O)[C@@H]1C=C(COCC=C)[C@H](OR)C[C@H]2[C@H]1C2(C)C"
+            ],
+            "products": [
+              "C=C[C@H]1[C@H](C(=O)OC)C(=C)CO[C@H]2[C@H](OR)C[C@H]3[C@H]2C31C"
+            ],
+            "reagents": [
+              "TiCl4, Me3Al, 4A MS, CH2Cl2, -65 °C"
+            ],
+            "yield": [
+              "65%"
+            ],
+            "reaction_type": "pericyclic",
+            "is_overall_reaction_of_page": true,
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Claisen Rearrangement",
+                "transformation_text": "Lewis Acid Mediated Stereoselective Claisen Rearrangement",
+                "reactants_text": "COC(=O)[C@@H]1C=C(COCC=C)[C@H](OR)C[C@H]2[C@H]1C2(C)C",
+                "products_text": "C=C[C@H]1[C@H](C(=O)OC)C(=C)CO[C@H]2[C@H](OR)C[C@H]3[C@H]2C31C",
+                "intermediates_text": null,
+                "reagents_text": "TiCl4, Me3Al, 4A MS, CH2Cl2, -65 °C",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "65%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "reaction_name": "Double Claisen Rearrangement/Intramolecular Diels-Alder Reaction Cascade",
+            "reactants": [
+              "COc1cc2c(c(OC3=C(C=C(C)C)C(C)=CC(=C3)C=C(C)C)c1C=C(C)C)OC(C)(C)C2=O"
+            ],
+            "products": [
+              "COc1cc2c(c(O)c1[C@H]1[C@H]3C(C)=C(C=C(C)C)C[C@]3(C)[C@@H]2OC1(C)C)C(=O)O"
+            ],
+            "reagents": [
+              "DMF, 120 °C"
+            ],
+            "yield": [
+              "63%"
+            ],
+            "reaction_type": "pericyclic",
+            "is_overall_reaction_of_page": true,
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Claisen Rearrangement",
+                "transformation_text": "Double Claisen Rearrangement/Intramolecular Diels-Alder Reaction Cascade",
+                "reactants_text": "COc1cc2c(c(OC3=C(C=C(C)C)C(C)=CC(=C3)C=C(C)C)c1C=C(C)C)OC(C)(C)C2=O",
+                "products_text": "COc1cc2c(c(O)c1[C@H]1[C@H]3C(C)=C(C=C(C)C)C[C@]3(C)[C@@H]2OC1(C)C)C(=O)O",
+                "intermediates_text": null,
+                "reagents_text": "DMF, 120 °C",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "63%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 142,
+      "image_filename": "named reactions_142.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "CLAISEN-IRELAND REARRANGEMENT",
+        "reaction_family_name": "Claisen-Ireland Rearrangement",
+        "page_section_hints": [
+          "Importance",
+          "Mechanism"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_id": "claisen-ireland_rearrangement_1",
+            "reaction_name": "Claisen-Ireland Rearrangement",
+            "reactants": [
+              {
+                "name": "allyl ester",
+                "smiles": "C=C[CH](R2)OC(=O)[CH]R1"
+              }
+            ],
+            "reagents": [
+              {
+                "name": "LDA / THF",
+                "smiles": "C1CC[N-]C1.C1CCOC1.[Li+]"
+              },
+              {
+                "name": "TMSCl",
+                "smiles": "C[Si](C)(C)Cl"
+              },
+              {
+                "name": "NaOH/H2O",
+                "smiles": "O.[Na+].[OH-]"
+              }
+            ],
+            "products": [
+              {
+                "name": "anti γ,δ-Unsaturated acid",
+                "smiles": "O=C(O)[C@@H]([C@H](C=C)R2)R1"
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Claisen-Ireland Rearrangement",
+                "transformation_text": "Claisen-Ireland Rearrangement",
+                "reactants_text": "allyl ester | C=C[CH](R2)OC(=O)[CH]R1",
+                "products_text": "anti γ,δ-Unsaturated acid | O=C(O)[C@@H]([C@H](C=C)R2)R1",
+                "intermediates_text": null,
+                "reagents_text": "LDA / THF | C1CC[N-]C1.C1CCOC1.[Li+]; TMSCl | C[Si](C)(C)Cl; NaOH/H2O | O.[Na+].[OH-]",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "scheme_id": "claisen-ireland_rearrangement_2",
+            "reaction_name": "Claisen-Ireland Rearrangement",
+            "reactants": [
+              {
+                "name": "allyl ester",
+                "smiles": "C=C[CH](R2)OC(=O)[CH]R1"
+              }
+            ],
+            "reagents": [
+              {
+                "name": "LDA / HMPA / THF",
+                "smiles": "C1CC[N-]C1.C1CCOC1.CN(C)P(=O)(N(C)C)N(C)C.[Li+]"
+              },
+              {
+                "name": "TMSCl",
+                "smiles": "C[Si](C)(C)Cl"
+              },
+              {
+                "name": "NaOH/H2O",
+                "smiles": "O.[Na+].[OH-]"
+              }
+            ],
+            "products": [
+              {
+                "name": "syn γ,δ-Unsaturated acid",
+                "smiles": "O=C(O)[C@H]([C@H](C=C)R2)R1"
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Claisen-Ireland Rearrangement",
+                "transformation_text": "Claisen-Ireland Rearrangement",
+                "reactants_text": "allyl ester | C=C[CH](R2)OC(=O)[CH]R1",
+                "products_text": "syn γ,δ-Unsaturated acid | O=C(O)[C@H]([C@H](C=C)R2)R1",
+                "intermediates_text": null,
+                "reagents_text": "LDA / HMPA / THF | C1CC[N-]C1.C1CCOC1.CN(C)P(=O)(N(C)C)N(C)C.[Li+]; TMSCl | C[Si](C)(C)Cl; NaOH/H2O | O.[Na+].[OH-]",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview"
+          },
+          {
+            "scheme_id": "claisen-ireland_rearrangement_mechanism_acyclic",
+            "reaction_name": "Claisen-Ireland Rearrangement",
+            "reactants": [
+              {
+                "name": "acyclic allyl ester",
+                "smiles": "C=C[CH](R2)OC(=O)CR1"
+              }
+            ],
+            "reagents": [
+              {
+                "name": "LDA/THF",
+                "smiles": "C1CC[N-]C1.C1CCOC1.[Li+]"
+              },
+              {
+                "name": "TMSCl",
+                "smiles": "C[Si](C)(C)Cl"
+              }
+            ],
+            "products": [
+              {
+                "name": "anti γ,δ-unsaturated acid",
+                "smiles": "O=C(O)[C@@H]([C@H](C=C)R2)CR1"
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Claisen-Ireland Rearrangement",
+                "transformation_text": "Claisen-Ireland Rearrangement",
+                "reactants_text": "acyclic allyl ester | C=C[CH](R2)OC(=O)CR1",
+                "products_text": "anti γ,δ-unsaturated acid | O=C(O)[C@@H]([C@H](C=C)R2)CR1",
+                "intermediates_text": null,
+                "reagents_text": "LDA/THF | C1CC[N-]C1.C1CCOC1.[Li+]; TMSCl | C[Si](C)(C)Cl",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step"
+          },
+          {
+            "scheme_id": "claisen-ireland_rearrangement_mechanism_cyclic",
+            "reaction_name": "Claisen-Ireland Rearrangement",
+            "reactants": [
+              {
+                "name": "cyclic allyl ester",
+                "smiles": "R1CC(=O)OC1CCC(R2)C=C1"
+              }
+            ],
+            "reagents": [
+              {
+                "name": "LDA/THF",
+                "smiles": "C1CC[N-]C1.C1CCOC1.[Li+]"
+              },
+              {
+                "name": "TMSCl",
+                "smiles": "C[Si](C)(C)Cl"
+              }
+            ],
+            "products": [
+              {
+                "name": null,
+                "smiles": "O=C(O)C1(CR1)C[C@H](R2)CCC2C12"
+              }
+            ],
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Claisen-Ireland Rearrangement",
+                "transformation_text": "Claisen-Ireland Rearrangement",
+                "reactants_text": "cyclic allyl ester | R1CC(=O)OC1CCC(R2)C=C1",
+                "products_text": "O=C(O)C1(CR1)C[C@H](R2)CCC2C12",
+                "intermediates_text": null,
+                "reagents_text": "LDA/THF | C1CC[N-]C1.C1CCOC1.[Li+]; TMSCl | C[Si](C)(C)Cl",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ],
+            "scheme_index": 4,
+            "confidence": 0.75,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step"
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 144,
+      "image_filename": "named reactions_144.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "CLEMMENSEN REDUCTION",
+        "reaction_family_name": "Clemmensen Reduction",
+        "page_section_hints": [
+          "Importance",
+          "Mechanism"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_index": 1,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview",
+            "bbox_note": null,
+            "vision_summary": "An aldehyde or ketone is reduced to an alkane using zinc amalgam (Zn(Hg)) and hydrochloric acid (HCl) or another hydrogen halide (HX) in an organic solvent.",
+            "caption_text": "aldehyde or ketone; Alkane",
+            "nearby_text": "In 1913, E. Clemmensen reported that simple ketones and aldehydes were converted to the corresponding alkanes upon refluxing for several hours with 40% aqueous hydrochloric acid, amalgamated zinc (Zn/Hg), and a hydrophobic organic co-solvent such as toluene. This method of converting a carbonyl group to the corresponding methylene group is known as the Clemmensen reduction.",
+            "confidence": 0.95,
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Clemmensen Reduction",
+                "transformation_text": "Reduction of an aldehyde or ketone to an alkane.",
+                "reactants_text": "aldehyde or ketone",
+                "products_text": "Alkane",
+                "intermediates_text": null,
+                "reagents_text": "Zn(Hg)",
+                "catalysts_text": null,
+                "solvents_text": "organic solvent",
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": "40% HCl (aq.) or dry HX; X = Cl or Br",
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.9
+              }
+            ]
+          },
+          {
+            "scheme_index": 2,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step",
+            "bbox_note": null,
+            "vision_summary": "A multi-step carbanionic mechanism for the Clemmensen reduction is shown, starting from a ketone reacting with zinc and chloride, proceeding through protonation, dehydration, further reaction with zinc to form a carbanion, and final protonation to yield the alkane.",
+            "caption_text": "carbanion; Alkane",
+            "nearby_text": "Carbanionic mechanism:",
+            "confidence": 0.9,
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Clemmensen Reduction",
+                "transformation_text": "Carbanionic mechanism for the Clemmensen reduction.",
+                "reactants_text": "ketone",
+                "products_text": "Alkane",
+                "intermediates_text": "carbanion",
+                "reagents_text": "Zn",
+                "catalysts_text": "H+",
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.85
+              }
+            ]
+          },
+          {
+            "scheme_index": 3,
+            "section_type": "mechanism",
+            "scheme_role": "mechanism_step",
+            "bbox_note": null,
+            "vision_summary": "A multi-step carbenoid mechanism for the Clemmensen reduction is depicted, starting with a ketone reacting with zinc, followed by further reaction with zinc, protonation, dehydration to form a zinc carbenoid intermediate, and final protonation to yield the alkane.",
+            "caption_text": "zinc carbenoid; Alkane",
+            "nearby_text": "Carbenoid mechanism:",
+            "confidence": 0.9,
+            "extracts": [
+              {
+                "extract_kind": "mechanism_step",
+                "reaction_family_name": "Clemmensen Reduction",
+                "transformation_text": "Carbenoid mechanism for the Clemmensen reduction.",
+                "reactants_text": "ketone",
+                "products_text": "Alkane",
+                "intermediates_text": "zinc carbenoid",
+                "reagents_text": "Zn",
+                "catalysts_text": "H+",
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.85
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

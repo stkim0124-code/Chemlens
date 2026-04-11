@@ -1,0 +1,863 @@
+{
+  "run_at": "2026-04-06T10:58:13Z",
+  "batch": "full_batch1",
+  "tag": "retry13_remaining",
+  "targets": [
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 63,
+      "image_filename": "named reactions_63.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "ALKENE (OLEFIN) METATHESIS",
+        "reaction_family_name": "Alkene (olefin) Metathesis",
+        "page_section_hints": [
+          "Synthetic Applications:"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_id": "1",
+            "reactants": [
+              {
+                "name": "2",
+                "smiles": "COc1cc(CC=C)c(OC)c(CC=C)c1"
+              }
+            ],
+            "reagents": [
+              {
+                "name": "RCM catalyst, benzene or DCM"
+              },
+              {
+                "name": "H2 / Pd(C)"
+              },
+              {
+                "name": "BBr3, DCM"
+              }
+            ],
+            "products": [
+              {
+                "name": "(-)-Cylindrocyclophane F",
+                "smiles": null
+              }
+            ],
+            "conditions": "1. RCM catalyst,benzene or DCM, (48-72%) A (30 mol%), C6H6, 2h, 20 °C (72%) B (15 mol%), DCM, 75h, 20 °C (61%) C (15 mol%), DCM, 4h, 40 °C (48%) 2. H2 / Pd(C) (quantitative) 3. BBr3, DCM (84% for 2 steps)",
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Alkene (olefin) Metathesis",
+                "transformation_text": null,
+                "reactants_text": "2 | COc1cc(CC=C)c(OC)c(CC=C)c1",
+                "products_text": "(-)-Cylindrocyclophane F",
+                "intermediates_text": null,
+                "reagents_text": "RCM catalyst, benzene or DCM; H2 / Pd(C); BBr3, DCM",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": "1. RCM catalyst,benzene or DCM, (48-72%) A (30 mol%), C6H6, 2h, 20 °C (72%) B (15 mol%), DCM, 75h, 20 °C (61%) C (15 mol%), DCM, 4h, 40 °C (48%) 2. H2 / Pd(C) (quantitative) 3. BBr3, DCM (84% for 2 steps)",
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          },
+          {
+            "scheme_id": "2",
+            "reactants": [
+              {
+                "name": null,
+                "smiles": null
+              }
+            ],
+            "reagents": [
+              {
+                "name": "Grubbs catalyst"
+              },
+              {
+                "name": "PPTS, acetone / H2O"
+              }
+            ],
+            "products": [
+              {
+                "name": "(-)-Griseoviridin",
+                "smiles": null
+              }
+            ],
+            "conditions": "1. (30 mol%), PhCH3, 100 °C, 0.001M, 37-42% 2. PPTS, acetone / H2O, 68%",
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Alkene (olefin) Metathesis",
+                "transformation_text": null,
+                "reactants_text": null,
+                "products_text": "(-)-Griseoviridin",
+                "intermediates_text": null,
+                "reagents_text": "Grubbs catalyst; PPTS, acetone / H2O",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": "1. (30 mol%), PhCH3, 100 °C, 0.001M, 37-42% 2. PPTS, acetone / H2O, 68%",
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          },
+          {
+            "scheme_id": "3",
+            "reactants": [
+              {
+                "name": null,
+                "smiles": "C=C[C@H](O[Si](C)(C)C(C)(C)C)[C@H](O[Si](C)(C)C(C)(C)C)[C@@H](C=C)OCH2c1ccccc1"
+              }
+            ],
+            "reagents": [
+              {
+                "name": "Grubbs catalyst"
+              }
+            ],
+            "products": [
+              {
+                "name": null,
+                "smiles": "c1ccccc1CO[C@@H]2[C@H](O[Si](C)(C)C(C)(C)C)[C@H](O[Si](C)(C)C(C)(C)C)/C=C\\C2"
+              },
+              {
+                "name": "(+)-Prelaureatin",
+                "smiles": null
+              }
+            ],
+            "conditions": "DCM (0.005M), 95%",
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Alkene (olefin) Metathesis",
+                "transformation_text": null,
+                "reactants_text": "C=C[C@H](O[Si](C)(C)C(C)(C)C)[C@H](O[Si](C)(C)C(C)(C)C)[C@@H](C=C)OCH2c1ccccc1",
+                "products_text": "c1ccccc1CO[C@@H]2[C@H](O[Si](C)(C)C(C)(C)C)[C@H](O[Si](C)(C)C(C)(C)C)/C=C\\C2; (+)-Prelaureatin",
+                "intermediates_text": null,
+                "reagents_text": "Grubbs catalyst",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": "DCM (0.005M), 95%",
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 105,
+      "image_filename": "named reactions_105.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BENZILIC ACID REARRANGEMENT",
+        "reaction_family_name": "Benzilic Acid Rearrangement",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "reaction_id": "a066531c775704940562572176229555",
+            "reaction_name": "Benzilic Acid Rearrangement",
+            "reactants": [
+              {
+                "name": "16-dehydroprogesterone",
+                "smiles": "CC(=O)[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3C=C[C@]12C"
+              }
+            ],
+            "reagents": [
+              {
+                "name": "CTAP / DCM",
+                "smiles": ""
+              }
+            ],
+            "products": [
+              {
+                "name": "Novel 5-ring D-homosteroid",
+                "smiles": "C[C@]12CC[C@H](C(C)=O)[C@H]1C1=CC(=O)CC[C@]1(C)[C@@]1(O)C(=O)O[C@H]21"
+              }
+            ],
+            "reaction_details": {
+              "intermediate": [
+                {
+                  "name": "diketone",
+                  "smiles": "CC(=O)[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3C(=O)C1=O"
+                },
+                {
+                  "name": "ketolactol",
+                  "smiles": "C[C@]12CC[C@H](C(C)=O)[C@H]1C1=CC(=O)CC[C@]1(C)[C@]1(O)C(=O)C2O1"
+                }
+              ]
+            },
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Benzilic Acid Rearrangement",
+                "transformation_text": "Benzilic Acid Rearrangement",
+                "reactants_text": "16-dehydroprogesterone | CC(=O)[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3C=C[C@]12C",
+                "products_text": "Novel 5-ring D-homosteroid | C[C@]12CC[C@H](C(C)=O)[C@H]1C1=CC(=O)CC[C@]1(C)[C@@]1(O)C(=O)O[C@H]21",
+                "intermediates_text": null,
+                "reagents_text": "CTAP / DCM",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "intermediate: [{'name': 'diketone', 'smiles': 'CC(=O)[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3C(=O)C1=O'}, {'name': 'ketolactol', 'smiles': 'C[C@]12CC[C@H](C(C)=O)[C@H]1C1=CC(=O)CC[C@]1(C)[C@]1(O)C(=O)C2O1'}]",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          },
+          {
+            "reaction_id": "84813589943485741639891845124115",
+            "reaction_name": "Retro-Benzilic Acid Rearrangement",
+            "reactants": [
+              {
+                "name": null,
+                "smiles": "CC(C)C1=CCC(C)=CC1"
+              },
+              {
+                "name": null,
+                "smiles": "C=C(C=O)C(=O)OC"
+              }
+            ],
+            "reagents": [
+              {
+                "name": "hv",
+                "smiles": ""
+              },
+              {
+                "name": "Na2CO3 (aq.)",
+                "smiles": "O.[Na+].[Na+].[O-]C([O-])=O"
+              }
+            ],
+            "products": [
+              {
+                "name": "Hinesol",
+                "smiles": null
+              },
+              {
+                "name": "Agarospirol",
+                "smiles": null
+              }
+            ],
+            "reaction_details": {
+              "intermediate": [
+                {
+                  "name": null,
+                  "smiles": "COC(=O)[C@@H]1[C@H](C(=O)C)[C@@]2(O)[C@H](C(C)C)C=CC(C)=C12"
+                },
+                {
+                  "name": null,
+                  "smiles": "COC(=O)[C@@H]1[C@H](C(=O)C)[C@@]2(O)[C@@H](C(C)C)C=CC(C)=C12"
+                }
+              ]
+            },
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Benzilic Acid Rearrangement",
+                "transformation_text": "Retro-Benzilic Acid Rearrangement",
+                "reactants_text": "CC(C)C1=CCC(C)=CC1; C=C(C=O)C(=O)OC",
+                "products_text": "Hinesol; Agarospirol",
+                "intermediates_text": null,
+                "reagents_text": "hv; Na2CO3 (aq.) | O.[Na+].[Na+].[O-]C([O-])=O",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "intermediate: [{'name': None, 'smiles': 'COC(=O)[C@@H]1[C@H](C(=O)C)[C@@]2(O)[C@H](C(C)C)C=CC(C)=C12'}, {'name': None, 'smiles': 'COC(=O)[C@@H]1[C@H](C(=O)C)[C@@]2(O)[C@@H](C(C)C)C=CC(C)=C12'}]",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          },
+          {
+            "reaction_id": "54238714041795085425424754321312",
+            "reaction_name": "Benzilic Acid-Type Rearrangement",
+            "reactants": [
+              {
+                "name": null,
+                "smiles": "C[C@]12[C@H](O)[C@H](O)[C@@]3(O)C(C)(C)[C@]3(C(=O)O[C@H]4C(C)=C[C@H]5[C@H]1C(=O)C=C[C@]45C)C2"
+              }
+            ],
+            "reagents": [
+              {
+                "name": "1. Na2CO3 (3 equiv), MeOH:H2O (1:1), 95 °C, 30 min then r.t.",
+                "smiles": "CO.O.[Na+].[Na+].[O-]C([O-])=O"
+              },
+              {
+                "name": "2. 10% HCl (aq.)",
+                "smiles": "O.Cl"
+              }
+            ],
+            "products": [
+              {
+                "name": "(±)-Shinjudilactone",
+                "smiles": "C[C@]12[C@H](O)[C@H](O)[C@](O)(C(=O)O[C@H]3C(C)=C[C@H]4[C@H]1C(=O)C=C[C@]34C)[C@@]2(C)C"
+              },
+              {
+                "name": "(±)-13-epi-Shinjudilactone",
+                "smiles": "C[C@]12[C@H](O)[C@H](O)[C@](O)(C(=O)O[C@H]3C(C)=C[C@H]4[C@H]1C(=O)C=C[C@]34C)[C@]2(C)C"
+              }
+            ],
+            "reaction_details": {
+              "yield": "63%"
+            },
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Benzilic Acid Rearrangement",
+                "transformation_text": "Benzilic Acid-Type Rearrangement",
+                "reactants_text": "C[C@]12[C@H](O)[C@H](O)[C@@]3(O)C(C)(C)[C@]3(C(=O)O[C@H]4C(C)=C[C@H]5[C@H]1C(=O)C=C[C@]45C)C2",
+                "products_text": "(±)-Shinjudilactone | C[C@]12[C@H](O)[C@H](O)[C@](O)(C(=O)O[C@H]3C(C)=C[C@H]4[C@H]1C(=O)C=C[C@]34C)[C@@]2(C)C; (±)-13-epi-Shinjudilactone | C[C@]12[C@H](O)[C@H](O)[C@](O)(C(=O)O[C@H]3C(C)=C[C@H]4[C@H]1C(=O)C=C[C@]34C)[C@]2(C)C",
+                "intermediates_text": null,
+                "reagents_text": "1. Na2CO3 (3 equiv), MeOH:H2O (1:1), 95 °C, 30 min then r.t. | CO.O.[Na+].[Na+].[O-]C([O-])=O; 2. 10% HCl (aq.) | O.Cl",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "yield: 63%",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 120,
+      "image_filename": "named reactions_120.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BUCHNER METHOD OF RING EXPANSION",
+        "reaction_family_name": "Buchner Reaction",
+        "page_section_hints": [
+          "Importance",
+          "Mechanism"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_id": 1,
+            "description": "The Buchner reaction, involving the thermal or photochemical reaction of ethyl diazoacetate with benzene to form a cycloheptatriene derivative via a norcaradiene intermediate.",
+            "reactants": [
+              {
+                "smiles": "O=C(OCC)C=[N+]=[N-]",
+                "label": "ethyl-diazoacetate"
+              },
+              {
+                "smiles": "c1ccccc1",
+                "label": null
+              }
+            ],
+            "reagents": [
+              {
+                "smiles": null,
+                "label": "hv or Δ or Rh-catalyst"
+              }
+            ],
+            "products": [
+              {
+                "smiles": "O=C(OCC)C1=CC=CC=C1",
+                "label": "Cycloheptatriene derivative"
+              }
+            ],
+            "intermediates": [
+              {
+                "smiles": "O=C(OCC)[CH]",
+                "label": "carbenoid"
+              },
+              {
+                "smiles": "O=C(OCC)C1C2C=CC=C2C1",
+                "label": "norcaradiene derivative"
+              }
+            ],
+            "reaction_arrows": [
+              {
+                "type": "normal"
+              }
+            ],
+            "reaction_name_in_text": [
+              "Buchner reaction",
+              "Buchner ring expansion"
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "overview",
+            "scheme_role": "canonical_overview",
+            "extracts": [
+              {
+                "extract_kind": "canonical_overview",
+                "reaction_family_name": "Buchner Reaction",
+                "transformation_text": "The Buchner reaction, involving the thermal or photochemical reaction of ethyl diazoacetate with benzene to form a cycloheptatriene derivative via a norcaradiene intermediate.",
+                "reactants_text": "ethyl-diazoacetate | O=C(OCC)C=[N+]=[N-]; c1ccccc1",
+                "products_text": "Cycloheptatriene derivative | O=C(OCC)C1=CC=CC=C1",
+                "intermediates_text": "carbenoid | O=C(OCC)[CH]; norcaradiene derivative | O=C(OCC)C1C2C=CC=C2C1",
+                "reagents_text": "hv or Δ or Rh-catalyst",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "The Buchner reaction, involving the thermal or photochemical reaction of ethyl diazoacetate with benzene to form a cycloheptatriene derivative via a norcaradiene intermediate.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 121,
+      "image_filename": "named reactions_121.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BUCHNER METHOD OF RING EXPANSION",
+        "reaction_family_name": "Buchner Method of Ring Expansion",
+        "page_section_hints": [
+          "Synthetic Applications:"
+        ],
+        "scheme_candidates": [
+          {
+            "internal_id": 1,
+            "reaction_name": "Buchner Reaction in the Synthesis of Egualen Sodium",
+            "reactants": [
+              "CC(C)c1cccc(C(=O)C(Br)C=[N+]=[N-])c1"
+            ],
+            "reagents": [
+              "Rh2(OCOt-Bu)4",
+              "PhNTf2",
+              "DMAP"
+            ],
+            "products": [
+              "CC(C)c1c(OS(=O)(=O)C(F)(F)F)c2cccc(C)c2c1"
+            ],
+            "yields": [],
+            "reaction_details": null,
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Buchner Method of Ring Expansion",
+                "transformation_text": "Buchner Reaction in the Synthesis of Egualen Sodium",
+                "reactants_text": "CC(C)c1cccc(C(=O)C(Br)C=[N+]=[N-])c1",
+                "products_text": "CC(C)c1c(OS(=O)(=O)C(F)(F)F)c2cccc(C)c2c1",
+                "intermediates_text": null,
+                "reagents_text": "Rh2(OCOt-Bu)4; PhNTf2; DMAP",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          },
+          {
+            "internal_id": 2,
+            "reaction_name": "Fullerene Functionalization via Carbene Addition",
+            "reactants": [
+              "C60-fullerene",
+              "CCOC(=O)C=[N+]=[N-]"
+            ],
+            "reagents": [
+              "Rh2(OAc)4"
+            ],
+            "products": [
+              "[6,6]-closed",
+              "[6,5]-open"
+            ],
+            "yields": [
+              "42%"
+            ],
+            "reaction_details": "Reaction can also be performed thermally (110 °C, 7h, toluene) with a 35% yield, but gives a different product ratio.",
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Buchner Method of Ring Expansion",
+                "transformation_text": "Fullerene Functionalization via Carbene Addition",
+                "reactants_text": "C60-fullerene; CCOC(=O)C=[N+]=[N-]",
+                "products_text": "[6,6]-closed; [6,5]-open",
+                "intermediates_text": null,
+                "reagents_text": "Rh2(OAc)4",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "42%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          },
+          {
+            "internal_id": 3,
+            "reaction_name": "Intramolecular Buchner Reaction in the Synthesis of Harringtonolide",
+            "reactants": [
+              "MeOC1=C2C(C(=C=[N+]=[N-])C(=O)[C@H]3[C@@H](C)C(OC)[C@H](OR)[C@@]23C)=CC=C1C(=O)OC"
+            ],
+            "reagents": [
+              "Rh2(mandelate)4",
+              "DBU"
+            ],
+            "products": [
+              "MeOC1=C2C3=C(C=C[C@H]1C(=O)OC)[C@H]4[C@@H](C)C(OC)[C@H](OR)[C@]4(C2)C3=O"
+            ],
+            "yields": [
+              "84%"
+            ],
+            "reaction_details": "R = DEIPS",
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Buchner Method of Ring Expansion",
+                "transformation_text": "Intramolecular Buchner Reaction in the Synthesis of Harringtonolide",
+                "reactants_text": "MeOC1=C2C(C(=C=[N+]=[N-])C(=O)[C@H]3[C@@H](C)C(OC)[C@H](OR)[C@@]23C)=CC=C1C(=O)OC",
+                "products_text": "MeOC1=C2C3=C(C=C[C@H]1C(=O)OC)[C@H]4[C@@H](C)C(OC)[C@H](OR)[C@]4(C2)C3=O",
+                "intermediates_text": null,
+                "reagents_text": "Rh2(mandelate)4; DBU",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "84%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 139,
+      "image_filename": "named reactions_139.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "CLAISEN CONDENSATION / CLAISEN REACTION",
+        "reaction_family_name": "Claisen Condensation",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "scheme_id": "20240528_1100_page87_scheme1",
+            "description": "Synthesis of (-)-secodaphniphylline via a mixed Claisen condensation followed by Krapcho decarboxylation.",
+            "reaction_name": "Mixed Claisen Condensation",
+            "reactants": [
+              {
+                "name": null,
+                "smiles": "C[C@]12C[C@H](C(C)(C)C)[C@H](C(=O)OC)N1C1CC[C@H]2C[C@@H]1N",
+                "role": "reactant"
+              },
+              {
+                "name": null,
+                "smiles": "C[C@]1(C)O[C@H](C(=O)Cl)[C@@H](C)O1",
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "name": "LDA, THF",
+                "smiles": null,
+                "role": "reagent"
+              },
+              {
+                "name": "NaCN, DMSO",
+                "smiles": null,
+                "role": "reagent"
+              }
+            ],
+            "products": [
+              {
+                "name": "(-)-Secodaphniphylline",
+                "smiles": "C[C@]12C[C@H](C(C)(C)C)[C@H]([C@H](C)[C@@H]3C(=O)[C@H]4O[C@](C)(C)O[C@@H]4C)N1C1CC[C@H]2C[C@@H]1N",
+                "role": "product"
+              },
+              {
+                "name": null,
+                "smiles": "C[C@]12C[C@H](C(C)(C)C)[C@H](C(C(=O)OC)[C@@H]3C(=O)[C@H]4O[C@](C)(C)O[C@@H]4C)N1C1CC[C@H]2C[C@@H]1N",
+                "role": "intermediate"
+              }
+            ],
+            "yield": "43% for two steps",
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Claisen Condensation",
+                "transformation_text": "Mixed Claisen Condensation",
+                "reactants_text": "C[C@]12C[C@H](C(C)(C)C)[C@H](C(=O)OC)N1C1CC[C@H]2C[C@@H]1N | reactant; C[C@]1(C)O[C@H](C(=O)Cl)[C@@H](C)O1 | reactant",
+                "products_text": "(-)-Secodaphniphylline | C[C@]12C[C@H](C(C)(C)C)[C@H]([C@H](C)[C@@H]3C(=O)[C@H]4O[C@](C)(C)O[C@@H]4C)N1C1CC[C@H]2C[C@@H]1N | product; C[C@]12C[C@H](C(C)(C)C)[C@H](C(C(=O)OC)[C@@H]3C(=O)[C@H]4O[C@](C)(C)O[C@@H]4C)N1C1CC[C@H]2C[C@@H]1N | intermediate",
+                "intermediates_text": null,
+                "reagents_text": "LDA, THF | reagent; NaCN, DMSO | reagent",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "43% for two steps",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Synthesis of (-)-secodaphniphylline via a mixed Claisen condensation followed by Krapcho decarboxylation.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          },
+          {
+            "scheme_id": "20240528_1100_page87_scheme2",
+            "description": "Multi-step synthesis of Justicidin B and Retrojusticidin B. The first step is a Horner-Emmons olefination/annulation (73% yield). The second step is a selective saponification (93% yield). The third step is a selective reduction and lactonization to give Justicidin B (76% yield) or Retrojusticidin B (67% yield).",
+            "reaction_name": "Horner-Emmons Olefination",
+            "reactants": [
+              {
+                "name": null,
+                "smiles": "O=Cc1c(c2cc3OCOc3cc2)cc(OC)c(OC)c1",
+                "role": "reactant"
+              },
+              {
+                "name": null,
+                "smiles": "CCOP(=O)(CC(=O)OCC)OCC",
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "name": "NaOEt, THF / EtOH",
+                "smiles": null,
+                "role": "reagent"
+              },
+              {
+                "name": "Me3SiOK, THF, then HCl",
+                "smiles": null,
+                "role": "reagent"
+              },
+              {
+                "name": "BH3·SMe2, THF, then EtOH/HCl",
+                "smiles": null,
+                "role": "reagent"
+              },
+              {
+                "name": "NaH, LiBH4, 1,4-dioxane, then 0.5 M HCl",
+                "smiles": null,
+                "role": "reagent"
+              }
+            ],
+            "products": [
+              {
+                "name": "Justicidin B",
+                "smiles": "COc1cc(OC)c2c(c1)C1=C(c3cc4c(cc3)OCO4)C(=O)OC1C2",
+                "role": "product"
+              },
+              {
+                "name": "Retrojusticidin B",
+                "smiles": "COc1cc(OC)c2c(c1)C1C(C(=O)OC1c1cc3c(cc1)OCO3)=C2",
+                "role": "product"
+              },
+              {
+                "name": null,
+                "smiles": "CCOc1c(C(=O)OCC)c(c2cc3OCOc3cc2)c2c(c(OC)cc(OC)c2)c1C(=O)O",
+                "role": "intermediate"
+              },
+              {
+                "name": null,
+                "smiles": "CCOc1c(C(=O)O)c(c2cc3OCOc3cc2)c2c(c(OC)cc(OC)c2)c1C(=O)OCC",
+                "role": "intermediate"
+              }
+            ],
+            "yield": null,
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Claisen Condensation",
+                "transformation_text": "Horner-Emmons Olefination",
+                "reactants_text": "O=Cc1c(c2cc3OCOc3cc2)cc(OC)c(OC)c1 | reactant; CCOP(=O)(CC(=O)OCC)OCC | reactant",
+                "products_text": "Justicidin B | COc1cc(OC)c2c(c1)C1=C(c3cc4c(cc3)OCO4)C(=O)OC1C2 | product; Retrojusticidin B | COc1cc(OC)c2c(c1)C1C(C(=O)OC1c1cc3c(cc1)OCO3)=C2 | product; CCOc1c(C(=O)OCC)c(c2cc3OCOc3cc2)c2c(c(OC)cc(OC)c2)c1C(=O)O | intermediate; CCOc1c(C(=O)O)c(c2cc3OCOc3cc2)c2c(c(OC)cc(OC)c2)c1C(=O)OCC | intermediate",
+                "intermediates_text": null,
+                "reagents_text": "NaOEt, THF / EtOH | reagent; Me3SiOK, THF, then HCl | reagent; BH3·SMe2, THF, then EtOH/HCl | reagent; NaH, LiBH4, 1,4-dioxane, then 0.5 M HCl | reagent",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Multi-step synthesis of Justicidin B and Retrojusticidin B. The first step is a Horner-Emmons olefination/annulation (73% yield). The second step is a selective saponification (93% yield). The third step is a selective reduction and lactonization to give Justicidin B (76% yield) or Retrojusticidin B (67% yield).",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          },
+          {
+            "scheme_id": "20240528_1100_page87_scheme3",
+            "description": "Synthesis of an intermediate for (+)-methyl-7-benzoylpedate via a diastereoselective Claisen condensation.",
+            "reaction_name": "Diastereoselective Claisen Condensation",
+            "reactants": [
+              {
+                "name": null,
+                "smiles": "C[C@H]1OC(=O)[C@H](C)SC12SCCC2",
+                "role": "reactant"
+              },
+              {
+                "name": "MeOC(Me2)OCH2CO2Me",
+                "smiles": "COC(C)(C)OCH2C(=O)OC",
+                "role": "reactant"
+              }
+            ],
+            "reagents": [
+              {
+                "name": "LDA, THF, HMPA, ZnCl2-ether",
+                "smiles": null,
+                "role": "reagent"
+              },
+              {
+                "name": "CSA, CH(OMe)3, MeOH, CH2Cl2",
+                "smiles": null,
+                "role": "reagent"
+              }
+            ],
+            "products": [
+              {
+                "name": null,
+                "smiles": "COC(=O)[C@H](O)[C@@H]1C(OC)O[C@H](C)[C@]12SCCC2",
+                "role": "product"
+              }
+            ],
+            "yield": "82% for 2 steps",
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Claisen Condensation",
+                "transformation_text": "Diastereoselective Claisen Condensation",
+                "reactants_text": "C[C@H]1OC(=O)[C@H](C)SC12SCCC2 | reactant; MeOC(Me2)OCH2CO2Me | COC(C)(C)OCH2C(=O)OC | reactant",
+                "products_text": "COC(=O)[C@H](O)[C@@H]1C(OC)O[C@H](C)[C@]12SCCC2 | product",
+                "intermediates_text": null,
+                "reagents_text": "LDA, THF, HMPA, ZnCl2-ether | reagent; CSA, CH(OMe)3, MeOH, CH2Cl2 | reagent",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "82% for 2 steps",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "Synthesis of an intermediate for (+)-methyl-7-benzoylpedate via a diastereoselective Claisen condensation.",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

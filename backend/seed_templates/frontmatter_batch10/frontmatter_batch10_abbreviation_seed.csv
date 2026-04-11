@@ -1,0 +1,16 @@
+alias,canonical_name,entity_type,source_page
+NaOH,sodium hydroxide,base,52
+CuCl,copper(I) chloride,additive,52
+CTAP,cetyltrimethylammonium permanganate,oxidant,53
+KCN,potassium cyanide,catalyst,54
+NaCN,sodium cyanide,catalyst,54
+DBU,"1,8-diazabicyclo[5.4.0]undec-7-ene",base,55
+MgCl2,magnesium chloride,metal_salt,56
+AIBN,azobisisobutyronitrile,radical_initiator,57
+Bu3SnH,tributyltin hydride,reagent,57
+HCl,hydrochloric acid,acid,58
+FeCl3,iron(III) chloride,Lewis_acid,58
+BF3·OEt2,boron trifluoride diethyl etherate,Lewis_acid,58
+Yb(OTf)3,ytterbium(III) triflate,Lewis_acid,59
+NH3(l),liquid ammonia,solvent,60
+t-BuOH,tert-butanol,proton_source,61

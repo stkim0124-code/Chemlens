@@ -1,0 +1,19 @@
+alias,canonical_name,entity_type,source_page,notes
+TPS,triphenylsilyl,protecting_group,44,
+Tr,trityl (triphenylmethyl),protecting_group,44,
+Trisyl,"2,4,6-triisopropylbenzenesulfonyl",protecting_group,44,
+Troc,"2,2,2-trichloroethoxycarbonyl",protecting_group,44,
+TS,transition state (or transition structure),general_term,44,
+Ts,p-toluenesulfonyl,protecting_group,44,Shown as Ts (Tos).
+Tos,p-toluenesulfonyl,protecting_group,44,Synonym shown with Ts.
+TSE,2-(trimethylsilyl)ethyl,protecting_group,44,Shown as TSE (TMSE).
+TMSE,2-(trimethylsilyl)ethyl,protecting_group,44,Synonym shown with TSE.
+TTBP,"2,4,5-tri-tert-butylpyrimidine",base,44,
+TTMSS,tris(trimethylsilyl)silane,reagent,44,
+TTN,thallium(III)-trinitrate,oxidant,44,
+UHP,urea-hydrogen peroxide complex,oxidant,44,
+Vitride,sodium bis(2-methoxyethoxy)aluminum hydride,reducing_agent,44,Shown as Vitride (Red-Al).
+Red-Al,sodium bis(2-methoxyethoxy)aluminum hydride,reducing_agent,44,Synonym shown with Vitride.
+wk,weeks (length of reaction time),condition_term,44,
+Z,benzyloxycarbonyl,protecting_group,44,Shown as Z (Cbz).
+Cbz,benzyloxycarbonyl,protecting_group,44,Synonym shown with Z.

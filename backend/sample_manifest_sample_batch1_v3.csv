@@ -1,0 +1,16 @@
+page_no,image_filename,page_kind,status,scheme_count,extract_count,reaction_family_name,error
+14,named reactions_14.jpg,meta_explanatory,ok,0,0,,
+15,named reactions_15.jpg,meta_explanatory,ok,0,0,,
+16,named reactions_16.jpg,meta_explanatory,ok,0,0,,
+46,named reactions_46.jpg,toc,ok,0,0,,
+47,named reactions_47.jpg,toc,ok,0,0,,
+48,named reactions_48.jpg,toc,ok,0,0,,
+49,named reactions_49.jpg,toc,ok,0,0,,
+50,named reactions_50.jpg,toc,ok,0,0,,
+51,named reactions_51.jpg,toc,ok,0,0,,
+52,named reactions_52.jpg,toc,ok,0,0,,
+53,named reactions_53.jpg,toc,ok,0,0,,
+54,named reactions_54.jpg,unknown,fail,0,0,,finishReason: RECITATION
+55,named reactions_55.jpg,reaction_content,ok,4,9,ACETOACETIC ESTER SYNTHESIS,
+56,named reactions_56.jpg,reaction_content,ok,3,16,Acyloin Condensation,
+57,named reactions_57.jpg,reaction_content,ok,6,8,Acyloin Condensation,

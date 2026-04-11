@@ -1,0 +1,5 @@
+{
+  "source_main_db": "/mnt/data/labint.db",
+  "source_staging_db": "/mnt/data/labint_round9_v5_final_staging.db",
+  "output_db": "backend/app/labint.db"
+}

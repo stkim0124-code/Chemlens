@@ -1,0 +1,466 @@
+{
+  "run_at": "2026-04-06T12:39:46Z",
+  "batch": "full_batch1",
+  "tag": "retry8_remaining",
+  "targets": [
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 93,
+      "image_filename": "named reactions_93.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "Bartoli Indole Synthesis",
+        "reaction_family_name": "Bartoli Indole Synthesis",
+        "page_section_hints": [
+          "Synthetic Applications"
+        ],
+        "scheme_candidates": [
+          {
+            "reaction_id": "BARTOLI_INDOLE_SYNTHESIS_1",
+            "reaction_name": "Bartoli Indole Synthesis",
+            "reactants": [
+              "Clc1nccc(C)c1N(=O)=O"
+            ],
+            "reagents": [
+              "C=C.[Mg]Br",
+              "THF"
+            ],
+            "products": [
+              "Cc1cc2[nH]cc(Cl)c2n1"
+            ],
+            "reaction_details": {
+              "temperature": "-78 to -20 °C",
+              "time": "20 min",
+              "yield": "50%"
+            },
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Bartoli Indole Synthesis",
+                "transformation_text": "Bartoli Indole Synthesis",
+                "reactants_text": "Clc1nccc(C)c1N(=O)=O",
+                "products_text": "Cc1cc2[nH]cc(Cl)c2n1",
+                "intermediates_text": null,
+                "reagents_text": "C=C.[Mg]Br; THF",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": "-78 to -20 °C",
+                "time_text": "20 min",
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "yield: 50%",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          },
+          {
+            "reaction_id": "BARTOLI_INDOLE_SYNTHESIS_2",
+            "reaction_name": "Bartoli Indole Synthesis",
+            "reactants": [
+              "O=[N+]([O-])c1c(Cl)cc(Br)cn1"
+            ],
+            "reagents": [
+              "C=C.[Mg]Br",
+              "THF"
+            ],
+            "products": [
+              "Clc1cc2[nH]cc(Br)c2n1"
+            ],
+            "reaction_details": {
+              "temperature": "-78 to -20 °C",
+              "time": "20 min",
+              "yield": "35%"
+            },
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Bartoli Indole Synthesis",
+                "transformation_text": "Bartoli Indole Synthesis",
+                "reactants_text": "O=[N+]([O-])c1c(Cl)cc(Br)cn1",
+                "products_text": "Clc1cc2[nH]cc(Br)c2n1",
+                "intermediates_text": null,
+                "reagents_text": "C=C.[Mg]Br; THF",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": "-78 to -20 °C",
+                "time_text": "20 min",
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "yield: 35%",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          },
+          {
+            "reaction_id": "BARTOLI_INDOLE_SYNTHESIS_3",
+            "reaction_name": "Bartoli Indole Synthesis",
+            "reactants": [
+              "O=[N+]([O-])c1ccccc1Br"
+            ],
+            "reagents": [
+              "C=C.[Mg]Cl",
+              "THF"
+            ],
+            "products": [
+              "Brc1cccc2c1[nH]c2"
+            ],
+            "reaction_details": {
+              "temperature": "-70 °C",
+              "time": "3h",
+              "yield": "53%"
+            },
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Bartoli Indole Synthesis",
+                "transformation_text": "Bartoli Indole Synthesis",
+                "reactants_text": "O=[N+]([O-])c1ccccc1Br",
+                "products_text": "Brc1cccc2c1[nH]c2",
+                "intermediates_text": null,
+                "reagents_text": "C=C.[Mg]Cl; THF",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": "-70 °C",
+                "time_text": "3h",
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "yield: 53%",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          },
+          {
+            "reaction_id": "BARTOLI_INDOLE_SYNTHESIS_4",
+            "reaction_name": "Bartoli Indole Synthesis",
+            "reactants": [
+              "FC1=CC=C(C=C1[N+]([O-])=O)C(OCCCC)OCCCC"
+            ],
+            "reagents": [
+              "C=C.[Mg]Br",
+              "THF",
+              "HCl"
+            ],
+            "products": [
+              "O=Cc1c[nH]c2ccc(F)cc12"
+            ],
+            "reaction_details": {
+              "temperature": "-40 °C",
+              "yield": "55% for 2 steps"
+            },
+            "scheme_index": 4,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Bartoli Indole Synthesis",
+                "transformation_text": "Bartoli Indole Synthesis",
+                "reactants_text": "FC1=CC=C(C=C1[N+]([O-])=O)C(OCCCC)OCCCC",
+                "products_text": "O=Cc1c[nH]c2ccc(F)cc12",
+                "intermediates_text": null,
+                "reagents_text": "C=C.[Mg]Br; THF; HCl",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": "-40 °C",
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "yield: 55% for 2 steps",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          },
+          {
+            "reaction_id": "BARTOLI_INDOLE_SYNTHESIS_5",
+            "reaction_name": "Bartoli Indole Synthesis",
+            "reactants": [
+              "COC(=O)C1CC2C(C)(C)CCCC2(C)c2c1cc(N(=O)=O)c(c2Br)C(C)C"
+            ],
+            "reagents": [
+              "C=C.[Mg]Br",
+              "THF"
+            ],
+            "products": [
+              "COC(=O)C1CC2C(C)(C)CCCC2(C)c2c1cc1[nH]c2c(c1Br)C(C)C"
+            ],
+            "reaction_details": {
+              "temperature": "-78 °C",
+              "time": "3h",
+              "yield": "70%"
+            },
+            "scheme_index": 5,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Bartoli Indole Synthesis",
+                "transformation_text": "Bartoli Indole Synthesis",
+                "reactants_text": "COC(=O)C1CC2C(C)(C)CCCC2(C)c2c1cc(N(=O)=O)c(c2Br)C(C)C",
+                "products_text": "COC(=O)C1CC2C(C)(C)CCCC2(C)c2c1cc1[nH]c2c(c1Br)C(C)C",
+                "intermediates_text": null,
+                "reagents_text": "C=C.[Mg]Br; THF",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": "-78 °C",
+                "time_text": "3h",
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": "yield: 70%",
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_zip": "named reactions.zip",
+      "page_no": 117,
+      "image_filename": "named reactions_117.jpg",
+      "result": {
+        "page_kind": "reaction_content",
+        "page_title": "BROOK REARRANGEMENT",
+        "reaction_family_name": "Brook Rearrangement",
+        "page_section_hints": [
+          "Synthetic Applications:"
+        ],
+        "scheme_candidates": [
+          {
+            "reaction_string": "arene chromium tricarbonyl complex + ester -> spirocyclic core of fredericamycin A",
+            "reaction_name": "Brook rearrangement mediated [3+2] annulation",
+            "reactants": [
+              "O=C[c]1c(C)cc(C)c([Si](C)(C)C)c1.[Cr](C#O)(C#O)C#O",
+              "[Li]O[C@H](R)C(=O)OC"
+            ],
+            "products": [
+              "Me3SiO[C@H]1[C@H](R)C(=O)c2c(C)cc(C)c1c2.[Cr](C#O)(C#O)C#O",
+              "COc1c2c(c3c(c1O)C(=O)c1c(c(O)c4c(c1C3=O)C(=O)C[C@@]41C)C1=O)C(=O)N/C=C/C=C/C"
+            ],
+            "reagents": [],
+            "yields": [],
+            "step_reagents": [
+              [
+                "[1,4]-silyl migration"
+              ],
+              [
+                "cyclization",
+                "- MeO Li"
+              ],
+              [
+                "Future work"
+              ]
+            ],
+            "step_intermediates": [
+              "[Li]O[C@H](c1c(C)cc(C)c([Si](C)(C)C)c1)[C@H](R)C(=O)OC.[Cr](C#O)(C#O)C#O",
+              "[Li]c1c(C)cc(C)c([C@H](O[Si](C)(C)C)[C@H](R)C(=O)OC)c1.[Cr](C#O)(C#O)C#O"
+            ],
+            "step_products": [
+              "[Li]c1c(C)cc(C)c([C@H](O[Si](C)(C)C)[C@H](R)C(=O)OC)c1.[Cr](C#O)(C#O)C#O",
+              "Me3SiO[C@H]1[C@H](R)C(=O)c2c(C)cc(C)c1c2.[Cr](C#O)(C#O)C#O",
+              "COc1c2c(c3c(c1O)C(=O)c1c(c(O)c4c(c1C3=O)C(=O)C[C@@]41C)C1=O)C(=O)N/C=C/C=C/C"
+            ],
+            "scheme_index": 1,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Brook Rearrangement",
+                "transformation_text": "Brook rearrangement mediated [3+2] annulation",
+                "reactants_text": "O=C[c]1c(C)cc(C)c([Si](C)(C)C)c1.[Cr](C#O)(C#O)C#O; [Li]O[C@H](R)C(=O)OC",
+                "products_text": "Me3SiO[C@H]1[C@H](R)C(=O)c2c(C)cc(C)c1c2.[Cr](C#O)(C#O)C#O; COc1c2c(c3c(c1O)C(=O)c1c(c(O)c4c(c1C3=O)C(=O)C[C@@]41C)C1=O)C(=O)N/C=C/C=C/C",
+                "intermediates_text": null,
+                "reagents_text": null,
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": null,
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          },
+          {
+            "reaction_string": "divinyl lithium alkoxide + acyl silane -> tricyclic core of cyathins",
+            "reaction_name": "Brook rearrangement mediated-[4+3] annulation reaction",
+            "reactants": [
+              "CC1=C(C(C)C)CC=C1/C(C)=C/O[Li]",
+              "C=C(O[Si](C)(C)C(C)(C)C)C(=O)[Si](C)(C)C"
+            ],
+            "products": [
+              "CC1=C(C(C)C)CC[C@H]2C1=C[C@@]1(C)[C@H]2C[C@H]([Si](C)(C)C)C=C(O[Si](C)(C)C(C)(C)C)C1=O",
+              "O=C[C@H]1C=C[C@H]2[C@H](O)C(C)(C)[C@H]3C(=C(C)C(C(C)C)CC3)C12"
+            ],
+            "reagents": [
+              [
+                "-80 to 0 C",
+                "THF"
+              ]
+            ],
+            "yields": [
+              "60%"
+            ],
+            "step_reagents": [
+              [
+                "[1,2]"
+              ],
+              [
+                "\"[4+3]\" oxy-Cope rearrangement"
+              ],
+              [
+                "Future work"
+              ]
+            ],
+            "step_intermediates": [
+              "CC1=C(C(C)C)CC=C1/C(C)=C/[C@H](O[Li])C(=O)[C@H]([Si](C)(C)C)C(=C)O[Si](C)(C)C(C)(C)C",
+              "CC1=C(C(C)C)CC=C1/C(C)=C/[C@H](O[Si](C)(C)C)C(=C([O-].[Li+]))C(=C)O[Si](C)(C)C(C)(C)C"
+            ],
+            "step_products": [
+              "CC1=C(C(C)C)CC=C1/C(C)=C/[C@H](O[Si](C)(C)C)C(=C([O-].[Li+]))C(=C)O[Si](C)(C)C(C)(C)C",
+              "CC1=C(C(C)C)CC[C@H]2C1=C[C@@]1(C)[C@H]2C[C@H]([Si](C)(C)C)C=C(O[Si](C)(C)C(C)(C)C)C1=O",
+              "O=C[C@H]1C=C[C@H]2[C@H](O)C(C)(C)[C@H]3C(=C(C)C(C(C)C)CC3)C12"
+            ],
+            "scheme_index": 2,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Brook Rearrangement",
+                "transformation_text": "Brook rearrangement mediated-[4+3] annulation reaction",
+                "reactants_text": "CC1=C(C(C)C)CC=C1/C(C)=C/O[Li]; C=C(O[Si](C)(C)C(C)(C)C)C(=O)[Si](C)(C)C",
+                "products_text": "CC1=C(C(C)C)CC[C@H]2C1=C[C@@]1(C)[C@H]2C[C@H]([Si](C)(C)C)C=C(O[Si](C)(C)C(C)(C)C)C1=O; O=C[C@H]1C=C[C@H]2[C@H](O)C(C)(C)[C@H]3C(=C(C)C(C(C)C)CC3)C12",
+                "intermediates_text": null,
+                "reagents_text": "-80 to 0 C; THF",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "60%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          },
+          {
+            "reaction_string": "farnesyl acetate-derived acyl silane -> (+)-onocerin",
+            "reaction_name": "spontaneous Brook rearrangement",
+            "reactants": [
+              "C[C@@H](O[Si](C)(C)C(C)(C)C)/C=C/C[C@@H](C)C(=O)[Si](C)(C)C"
+            ],
+            "products": [
+              "(+)-Onocerin"
+            ],
+            "reagents": [
+              [
+                "vinyllithium (1.1 equiv)",
+                "Et2O",
+                "-78 C, 1h"
+              ],
+              [
+                "I2 (0.5 equiv)",
+                "THF",
+                "-78 C"
+              ]
+            ],
+            "yields": [
+              "73%"
+            ],
+            "step_reagents": [
+              [
+                "I2 (0.5 equiv)",
+                "THF",
+                "-78 C"
+              ],
+              [
+                "steps"
+              ]
+            ],
+            "step_intermediates": [
+              "C[C@@H](O[Si](C)(C)C(C)(C)C)/C=C/C[C@@H](C)/C(=C(\\[O-].[Li+])[Si](C)(C)C)C=C"
+            ],
+            "step_products": [
+              "desired diepoxide",
+              "(+)-Onocerin"
+            ],
+            "scheme_index": 3,
+            "confidence": 0.75,
+            "section_type": "synthetic_application",
+            "scheme_role": "application_example",
+            "extracts": [
+              {
+                "extract_kind": "application_example",
+                "reaction_family_name": "Brook Rearrangement",
+                "transformation_text": "spontaneous Brook rearrangement",
+                "reactants_text": "C[C@@H](O[Si](C)(C)C(C)(C)C)/C=C/C[C@@H](C)C(=O)[Si](C)(C)C",
+                "products_text": "(+)-Onocerin",
+                "intermediates_text": null,
+                "reagents_text": "vinyllithium (1.1 equiv); Et2O; -78 C, 1h; I2 (0.5 equiv); THF; -78 C",
+                "catalysts_text": null,
+                "solvents_text": null,
+                "temperature_text": null,
+                "time_text": null,
+                "yield_text": "73%",
+                "workup_text": null,
+                "conditions_text": null,
+                "notes_text": null,
+                "reactant_smiles": null,
+                "product_smiles": null,
+                "smiles_confidence": 0.0,
+                "extraction_confidence": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

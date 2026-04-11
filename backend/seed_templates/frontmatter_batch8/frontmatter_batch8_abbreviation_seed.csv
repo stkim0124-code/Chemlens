@@ -1,0 +1,16 @@
+alias,canonical_name,entity_type,source_page
+AIBN,azobisisobutyronitrile,radical_initiator,33
+Bu3SnH,tributyltin hydride,reagent,33
+CSA,camphorsulfonic acid,acid,33
+Et2O,diethyl ether,solvent,35
+HBF4,tetrafluoroboric acid,acid,34
+PPTS,pyridinium p-toluenesulfonate,acid,37
+TsNHNH2,p-toluenesulfonyl hydrazide,reagent,36
+LDA,lithium diisopropylamide,base,37
+NaH2PO2,sodium hypophosphite,reducing_agent,37
+Sn,tin,metal,38
+In,indium,metal,38
+Sm,samarium,metal,38
+Bal2,barium iodide,salt,39
+TsOH,p-toluenesulfonic acid,acid,41
+GSK3,glycogen synthase kinase 3,biological_target,41

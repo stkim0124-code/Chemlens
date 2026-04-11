@@ -1,0 +1,2 @@
+alias,canonical_name,entity_type,smiles,notes,source_label,source_page,confidence
+DBU,"1,8-diazabicyclo[5.4.0]undec-7-ene",base,,,manual_seed,23,0.95

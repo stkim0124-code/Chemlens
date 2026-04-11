@@ -47,7 +47,7 @@ python -V 2>nul
 
 if "%NO_INSTALL%"=="0" (
   echo.
-  echo [1/2] Install/upgrade pip deps (RDKit should be installed via conda separately)...
+  echo [1/2] Install/upgrade pip deps ^(RDKit should be installed via conda separately^)...
   python -m pip install -r requirements.txt
   if errorlevel 1 (
     echo [ERR] pip install failed. Check the output above.
@@ -56,11 +56,11 @@ if "%NO_INSTALL%"=="0" (
   )
 ) else (
   echo.
-  echo [1/2] Skipping pip install (--no-install)
+  echo [1/2] Skipping pip install ^(--no-install^)
 )
 
 echo.
-echo [2/2] Start FastAPI (Uvicorn)...
+echo [2/2] Start FastAPI ^(Uvicorn^)...
 echo     URL: http://127.0.0.1:8000
 echo.
 python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload

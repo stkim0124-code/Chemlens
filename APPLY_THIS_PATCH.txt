@@ -1,0 +1,29 @@
+Apply target: project root (C:\chemlens)
+
+What this patch includes
+- backend/app/main.py (patched)
+- backend/app/named_reactions_search.py (new)
+- backend/app/labint.db (already merged test DB)
+- backend/merge_round9_staging_into_labint.py (merge script, idempotent)
+- backend/run_merge_round9_staging_into_labint.bat
+- frontend/src/App.jsx (patched)
+- frontend/src/components/NamedReactionsTab.jsx (new)
+
+Recommended safest order
+1) Back up your current files.
+2) Extract this ZIP into C:\chemlens and overwrite existing files.
+3) If you want to trust the bundled merged DB, keep backend/app/labint.db from this patch.
+4) If you want to merge on your machine instead, overwrite code files only, then run:
+   backend\run_merge_round9_staging_into_labint.bat
+5) Start backend and frontend.
+6) Open the new '🧪 Named Reactions' tab and test:
+   - Aldol Reaction
+   - Claisen Rearrangement
+   - Buchwald-Hartwig
+   - Clemmensen Reduction
+   - Grubbs catalyst
+
+Important policy
+- This patch merges page_images / scheme_candidates / reaction_extracts only.
+- reaction_cards automatic promote is still forbidden.
+- This is the named reactions.zip test integration, not the full multi-zip rollout.
