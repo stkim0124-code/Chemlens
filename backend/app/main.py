@@ -665,9 +665,7 @@ def api_search(req: SearchRequest):
       transformation, reagents, solvent, conditions, yield_pct, source, notes,
       substrate_smiles, product_smiles,
       substrate_svg, product_svg
-
-    추가 보강:
-    - reaction_cards 구조 hit가 부족하면 structure-evidence bridge 결과를 같은 hits 형식으로 이어붙인다.
+    구조 evidence가 있으면 같은 hits 형식으로 보강한다.
     """
     _ensure_rdkit()
 
@@ -685,12 +683,10 @@ def api_search(req: SearchRequest):
         prod = (c.get("product_smiles") or "").strip()
 
         best_sim = -1.0
-
         if sub:
             m = Chem.MolFromSmiles(sub)
             if m:
                 best_sim = max(best_sim, tanimoto(qfp, fp(m)))
-
         if prod:
             m = Chem.MolFromSmiles(prod)
             if m:
@@ -698,7 +694,6 @@ def api_search(req: SearchRequest):
 
         if best_sim < 0:
             continue
-
         if best_sim >= req.min_tanimoto:
             hits.append(
                 {
@@ -706,94 +701,69 @@ def api_search(req: SearchRequest):
                     "similarity": float(best_sim),
                     "substrate_svg": mol_to_svg(sub) if sub else None,
                     "product_svg": mol_to_svg(prod) if prod else None,
-                    "hit_source": "reaction_card",
                 }
             )
 
     hits.sort(key=lambda x: x["similarity"], reverse=True)
-    base_hits = hits[: req.top_k]
+    final_hits = hits[: req.top_k]
 
-    evidence_hits_added = 0
+    evidence_added = 0
     evidence_error = None
-    seen_keys = {
-        (str(h.get("title") or "").strip().lower(), str(h.get("source") or "").strip().lower(), str(h.get("notes") or "").strip().lower())
-        for h in base_hits
-    }
+    evidence_total = 0
+    try:
+        ev_req = StructureEvidenceRequest(
+            smiles=req.smiles,
+            top_k=max(req.top_k, 8),
+            min_tanimoto=max(min(req.min_tanimoto, 0.95), 0.2),
+            include_family_fallback=True,
+        )
+        ev = _search_by_structure(ev_req)
+        ev_results = ev.get("results") or []
+        evidence_total = len(ev_results)
 
-    if len(base_hits) < req.top_k:
-        try:
-            evidence_req = StructureEvidenceRequest(
-                smiles=q_smi,
-                top_k=req.top_k * 2,
-                min_tanimoto=req.min_tanimoto,
-                include_family_fallback=True,
-            )
-            evidence_payload = _search_by_structure(evidence_req)
-            for ev in evidence_payload.get("results", []):
-                family_name = (ev.get("reaction_family_name") or ev.get("title") or "Structure evidence hit").strip()
-                page_no = ev.get("page_no")
-                source_zip = ev.get("source_zip") or ev.get("image_filename") or "structure_evidence"
-                section_bits = [
-                    ev.get("extract_kind"),
-                    ev.get("section_type"),
-                    ev.get("scheme_role"),
-                ]
-                section_text = " / ".join([str(x) for x in section_bits if x])
-                notes_parts = []
-                if section_text:
-                    notes_parts.append(section_text)
-                if ev.get("transformation_text"):
-                    notes_parts.append(str(ev.get("transformation_text")))
-                if ev.get("reagents_text"):
-                    notes_parts.append(f"reagents: {ev.get('reagents_text')}")
-                if ev.get("conditions_text"):
-                    notes_parts.append(f"conditions: {ev.get('conditions_text')}")
-                if page_no is not None:
-                    notes_parts.append(f"page {page_no}")
-                notes = " | ".join(notes_parts)
-                dedupe_key = (family_name.lower(), str(source_zip).lower(), notes.lower())
-                if dedupe_key in seen_keys:
-                    continue
-                seen_keys.add(dedupe_key)
-                transformed = {
-                    "id": f"evidence:{ev.get('extract_id')}",
-                    "title": family_name,
-                    "transformation": ev.get("transformation_text") or ev.get("extract_kind") or family_name,
+        seen = {str(h.get("id") or h.get("title") or h.get("name") or "") for h in final_hits}
+        for idx, row in enumerate(ev_results, 1):
+            key = f"evidence::{row.get('extract_id')}::{row.get('reaction_family_name') or idx}"
+            if key in seen:
+                continue
+            seen.add(key)
+            final_hits.append(
+                {
+                    "id": key,
+                    "title": row.get("reaction_family_name") or f"evidence_{idx}",
+                    "similarity": float(row.get("match_score") or 0.0),
+                    "transformation": row.get("transformation_text"),
+                    "reagents": row.get("reagents_text"),
+                    "solvent": None,
+                    "conditions": row.get("conditions_text") or row.get("temperature_text") or row.get("time_text"),
+                    "yield_pct": row.get("yield_text"),
+                    "source": "structure_evidence",
+                    "notes": row.get("image_filename") or row.get("extract_kind"),
                     "substrate_smiles": None,
                     "product_smiles": None,
-                    "reagents": ev.get("reagents_text"),
-                    "solvent": None,
-                    "conditions": ev.get("conditions_text") or ev.get("temperature_text") or ev.get("time_text"),
-                    "yield_pct": ev.get("yield_text"),
-                    "source": source_zip,
-                    "notes": notes,
                     "substrate_svg": None,
                     "product_svg": None,
-                    "similarity": float(ev.get("match_score") or 0.0),
-                    "hit_source": "structure_evidence",
-                    "page_no": page_no,
-                    "image_filename": ev.get("image_filename"),
-                    "reaction_family_name": ev.get("reaction_family_name"),
-                    "quality_tier": ev.get("quality_tier"),
-                    "matched_components": ev.get("matched_components", []),
+                    "reaction_family_name": row.get("reaction_family_name"),
+                    "page_no": row.get("page_no"),
+                    "page_label": row.get("image_filename"),
+                    "match_type": row.get("match_type"),
                 }
-                base_hits.append(transformed)
-                evidence_hits_added += 1
-                if len(base_hits) >= req.top_k:
-                    break
-        except Exception as e:
-            evidence_error = str(e)
+            )
+            evidence_added += 1
+            if len(final_hits) >= req.top_k:
+                break
+    except Exception as e:
+        evidence_error = str(e)
 
     return {
         "query_canonical_smiles": q_smi,
-        "hits": base_hits[: req.top_k],
-        "reaction_card_hits": len([h for h in base_hits[: req.top_k] if h.get("hit_source") == "reaction_card"]),
-        "structure_evidence_hits": len([h for h in base_hits[: req.top_k] if h.get("hit_source") == "structure_evidence"]),
+        "hits": final_hits[: req.top_k],
+        "reaction_card_hits": len(hits),
+        "structure_evidence_hits": evidence_total,
         "structure_evidence_attempted": True,
-        "structure_evidence_added": evidence_hits_added,
+        "structure_evidence_added": evidence_added,
         "structure_evidence_error": evidence_error,
     }
-
 
 def _call_gemini(prompt: str, system_instruction: str) -> str:
     if not GEMINI_API_KEY:

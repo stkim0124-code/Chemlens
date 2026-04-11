@@ -26,7 +26,7 @@ else:
 router = APIRouter()
 
 APP_DIR = Path(__file__).resolve().parent
-DEFAULT_DB = APP_DIR / "labint_round9_bridge_work.db"
+DEFAULT_DB = APP_DIR / "labint.db"
 DB_PATH = Path(os.environ.get("LABINT_DB_PATH", str(DEFAULT_DB)))
 
 
@@ -65,6 +65,160 @@ ROLE_WEIGHTS = {
     "reactant": 1.00,
     "agent": 0.75,
 }
+
+
+FAMILY_NAME_KO = {
+    "Buchner Reaction": "부흐너 고리 확장 반응",
+    "Burgess Dehydration Reaction": "버지스 탈수 반응",
+    "Amadori Rearrangement": "아마도리 재배열",
+    "Amadori Reaction / Rearrangement": "아마도리 반응/재배열",
+    "Beckmann Rearrangement": "베크만 재배열",
+    "Baeyer-Villiger Oxidation": "바이어-빌리거 산화",
+    "Baeyer-Villiger Oxidation/Rearrangement": "바이어-빌리거 산화/재배열",
+    "Barton Radical Decarboxylation Reaction": "바튼 라디칼 탈카복실화 반응",
+    "Barton-McCombie Radical Deoxygenation Reaction": "바튼-맥컴비 라디칼 탈산소화 반응",
+    "Barton Nitrite Ester Reaction": "바튼 나이트라이트 에스터 반응",
+    "Baylis-Hillman Reaction": "베일리스-힐만 반응",
+    "Buchwald-Hartwig Cross-Coupling": "부흐발트-하트비히 교차 커플링",
+    "Claisen Rearrangement": "클라이젠 재배열",
+    "Claisen-Ireland Rearrangement": "클라이젠-아일랜드 재배열",
+    "Claisen Condensation / Claisen Reaction": "클라이젠 축합 반응",
+    "Chugaev Elimination Reaction": "추가예프 제거 반응",
+    "Clemmensen Reduction": "클레멘젠 환원",
+    "Brook Rearrangement": "브룩 재배열",
+    "Brown Hydroboration Reaction": "브라운 하이드로보레이션 반응",
+    "Bischler-Napieralski Isoquinoline Synthesis": "비슐러-나피에랄스키 아이소퀴놀린 합성",
+    "Biginelli Reaction": "비기넬리 반응",
+    "Buchner Method of Ring Expansion": "부흐너 고리 확장법",
+    "Chichibabin Amination Reaction": "치치바빈 아미노화 반응",
+    "Ciamician-Dennstedt Rearrangement": "치아미치안-덴슈테트 재배열",
+    "Castro-Stephens Coupling": "카스트로-스티븐스 커플링",
+}
+
+REACTION_CLASS_KO = {
+    'rearrangement':'재배열', 'oxidation':'산화', 'reduction':'환원', 'coupling':'커플링',
+    'cyclization':'고리화', 'ring_expansion':'고리 확장', 'elimination':'제거반응',
+    'substitution':'치환반응', 'amination':'아미노화', 'condensation':'축합', 'other':'기타'
+}
+
+def _truncate_text(text: Optional[str], max_len: int = 120) -> str:
+    s = ' '.join(str(text or '').replace('\n', ' ').split())
+    if not s:
+        return ''
+    return s if len(s) <= max_len else s[: max_len - 1].rstrip() + '…'
+
+def _display_name_ko(name: Optional[str]) -> str:
+    return FAMILY_NAME_KO.get(str(name or '').strip(), '')
+
+def _reaction_class_ko(item: Dict[str, Any], family_profile: Optional[Dict[str, Any]]) -> str:
+    cand = None
+    if family_profile:
+        cand = family_profile.get('transformation_type') or family_profile.get('family_class') or family_profile.get('mechanism_type')
+    cand = str(cand or item.get('extract_kind') or '').strip().lower()
+    if 'rearr' in cand:
+        return '재배열'
+    if 'oxid' in cand:
+        return '산화'
+    if 'reduct' in cand:
+        return '환원'
+    if 'coupl' in cand:
+        return '커플링'
+    if 'cycl' in cand or 'annulation' in cand:
+        return '고리화'
+    if 'elimin' in cand:
+        return '제거반응'
+    if 'aminat' in cand:
+        return '아미노화'
+    if 'condens' in cand:
+        return '축합'
+    return REACTION_CLASS_KO.get(cand, '기타')
+
+def _confidence_label(score: float) -> str:
+    if score >= 1.2:
+        return '높음'
+    if score >= 0.45:
+        return '중간'
+    return '참고용'
+
+def _summarize_change(item: Dict[str, Any], family_profile: Optional[Dict[str, Any]]) -> str:
+    txt = _truncate_text(item.get('transformation_text'))
+    if txt:
+        low = txt.lower()
+        reps = [('ketone','케톤'),('aldehyde','알데하이드'),('alcohol','알코올'),('ester','에스터'),('lactone','락톤'),('amide','아마이드'),('amine','아민'),('aryl halide','아릴 할라이드'),('oxime','옥심'),('acid','산'),('alkene','알켄')]
+        for a,b in reps:
+            low = low.replace(a,b)
+        return _truncate_text(low[:1].upper()+low[1:], 110)
+    if family_profile:
+        rp = _truncate_text(family_profile.get('reactant_pattern_text'), 40)
+        pp = _truncate_text(family_profile.get('product_pattern_text'), 40)
+        if rp or pp:
+            return f'{rp or "출발물질"} → {pp or "생성물"}'
+        ds = _truncate_text(family_profile.get('description_short'), 110)
+        if ds:
+            return ds
+    return ''
+
+def _summarize_reagents(item: Dict[str, Any], family_profile: Optional[Dict[str, Any]]) -> str:
+    text = item.get('reagents_text') or (family_profile or {}).get('key_reagents_clue')
+    return _truncate_text(text, 90)
+
+def _summarize_conditions(item: Dict[str, Any], family_profile: Optional[Dict[str, Any]]) -> str:
+    parts=[]
+    cond = _truncate_text(item.get('conditions_text') or (family_profile or {}).get('common_conditions'), 50)
+    temp = _truncate_text(item.get('temperature_text'), 24)
+    time = _truncate_text(item.get('time_text'), 24)
+    if cond: parts.append(cond)
+    if temp: parts.append(temp)
+    if time: parts.append(time)
+    if not parts and family_profile:
+        sol = _truncate_text(family_profile.get('common_solvents'), 30)
+        if sol: parts.append(sol)
+    return ' · '.join(parts[:3])
+
+def _summarize_yield(item: Dict[str, Any]) -> str:
+    y = _truncate_text(item.get('yield_text'), 24)
+    return y
+
+def _substrate_scope_hint(item: Dict[str, Any], family_profile: Optional[Dict[str, Any]]) -> str:
+    text = (family_profile or {}).get('reactant_pattern_text') or item.get('reactants_text')
+    return _truncate_text(text, 80)
+
+def _product_type_hint(item: Dict[str, Any], family_profile: Optional[Dict[str, Any]]) -> str:
+    text = (family_profile or {}).get('product_pattern_text') or item.get('products_text')
+    return _truncate_text(text, 80)
+
+def _naturalize_item(item: Dict[str, Any], family_profile: Optional[Dict[str, Any]]) -> None:
+    score = float(item.get('match_score') or 0.0)
+    item['family_profile'] = family_profile
+    item['display_name_en'] = item.get('reaction_family_name') or '(family 없음)'
+    item['display_name_ko'] = _display_name_ko(item.get('reaction_family_name'))
+    item['reaction_class_ko'] = _reaction_class_ko(item, family_profile)
+    item['confidence_label'] = _confidence_label(score)
+    item['key_change_summary'] = _summarize_change(item, family_profile)
+    item['key_reagents_summary'] = _summarize_reagents(item, family_profile)
+    item['key_conditions_summary'] = _summarize_conditions(item, family_profile)
+    item['yield_summary'] = _summarize_yield(item)
+    item['substrate_scope_hint'] = _substrate_scope_hint(item, family_profile)
+    item['product_type_hint'] = _product_type_hint(item, family_profile)
+    item['source_page'] = f"p.{item.get('page_no') or '?'}"
+
+# Patch-2: extract_kind quality multiplier
+# canonical_overview / overview → highest representativeness
+# mechanism → reliable but reaction-step-specific
+# application_example / synthetic_application → noisier (specific substrate)
+EXTRACT_KIND_WEIGHTS: Dict[str, float] = {
+    "canonical_overview": 1.20,
+    "overview": 1.15,
+    "mechanism": 1.10,
+    "mechanism_step": 1.05,
+    "application_example": 0.85,
+    "synthetic_application": 0.85,
+}
+
+# Patch-3: small fragment penalty
+# Molecules with heavy-atom count ≤ this threshold get a score penalty.
+SMALL_FRAGMENT_HA_THRESHOLD = 6       # ≤6 heavy atoms → common solvent/reagent range
+SMALL_FRAGMENT_PENALTY = 0.70         # multiply match score by this factor
 
 
 def _norm_role(role: Optional[str]) -> str:
@@ -367,7 +521,7 @@ def _search_by_family(family: str, top_k: int = 12) -> Dict[str, Any]:
             "direct_count": 0,
             "generic_count": 0,
             "family_count": len(rows),
-            "family_profile": family_profile,
+            "family_profile": _fetch_family_profile(conn, family),
             "results": [
                 {
                     **dict(row),
@@ -385,19 +539,59 @@ def _search_by_family(family: str, top_k: int = 12) -> Dict[str, Any]:
 
 
 def _role_bonus(query_role: str, indexed_role: str) -> float:
+    """
+    Role-aware scoring multiplier.
+
+    Design intent (Patch-1):
+      - Same role match is strongly rewarded.
+      - reactant ↔ product cross-match is heavily penalised (they are
+        semantically opposite ends of a transformation).
+      - agent ↔ reactant has a mild penalty (common to confuse solvent/base
+        with substrate, but not catastrophic).
+      - unknown roles get a neutral multiplier so single-SMILES queries
+        are not accidentally penalised.
+    """
     q = _norm_role(query_role)
     i = _norm_role(indexed_role)
     if q == "unknown" or i == "unknown":
         return 1.0
     if q == i:
-        return 1.15
+        return 1.25          # same-role: +25% reward (was 1.15)
     if {q, i} == {"agent", "reactant"}:
-        return 0.95
-    return 0.88
+        return 0.80          # mild penalty: agent/reactant confusion (was 0.95)
+    if {q, i} == {"agent", "product"}:
+        return 0.60          # moderate penalty: agent ≠ product
+    # reactant ↔ product: opposite ends of the transformation — heavy penalty
+    return 0.30              # was 0.88
 
+
+
+def _small_fragment_penalty(smiles: Optional[str]) -> float:
+    """Return a penalty multiplier for common small fragments (Patch-3).
+
+    Molecules with ≤ SMALL_FRAGMENT_HA_THRESHOLD heavy atoms are likely
+    solvents/reagents (AcOH, Et3N, EtOAc, ...) and provide little
+    family-discriminating signal, so we down-weight them.
+    Returns 1.0 (no penalty) for unknown / unparseable SMILES.
+    """
+    if not smiles or Chem is None:
+        return 1.0
+    try:
+        mol = Chem.MolFromSmiles(smiles)
+        if mol is None:
+            return 1.0
+        ha = mol.GetNumHeavyAtoms()
+        return SMALL_FRAGMENT_PENALTY if ha <= SMALL_FRAGMENT_HA_THRESHOLD else 1.0
+    except Exception:
+        return 1.0
 
 
 def _append_component_hit(target: Dict[int, Dict[str, Any]], extract_id: int, payload: Dict[str, Any]) -> None:
+    # Patch-3: apply small fragment penalty to the query molecule
+    raw_score = float(payload.get("match_score") or 0.0)
+    frag_factor = _small_fragment_penalty(payload.get("query_smiles"))
+    adjusted_score = raw_score * frag_factor
+
     slot = target.setdefault(
         extract_id,
         {
@@ -408,7 +602,7 @@ def _append_component_hit(target: Dict[int, Dict[str, Any]], extract_id: int, pa
             "matched_components": [],
         },
     )
-    slot["match_score"] += float(payload.get("match_score") or 0.0)
+    slot["match_score"] += adjusted_score
     slot["quality_tier"] = min(int(slot.get("quality_tier") or 99), int(payload["quality_tier"]))
     comps = slot.setdefault("matched_components", [])
     comps.append(
@@ -418,7 +612,8 @@ def _append_component_hit(target: Dict[int, Dict[str, Any]], extract_id: int, pa
             "matched_role": payload.get("matched_role"),
             "matched_smiles": payload.get("matched_smiles"),
             "match_type": payload.get("match_type"),
-            "match_score": round(float(payload.get("match_score") or 0.0), 3),
+            "match_score": round(adjusted_score, 3),
+            "frag_penalty": round(frag_factor, 2),
         }
     )
 
@@ -489,7 +684,32 @@ def _finalize_results(hit_map: Dict[int, Dict[str, Any]], req: StructureEvidence
         detail = details.get(item["extract_id"])
         if detail:
             item.update(detail)
-        item["match_score"] = round(float(item.get("match_score") or 0.0), 3)
+
+        # Patch-2: apply extract_kind weight to match_score
+        extract_kind = (item.get("extract_kind") or "").strip().lower()
+        kind_multiplier = EXTRACT_KIND_WEIGHTS.get(extract_kind, 1.0)
+        item["match_score"] = float(item.get("match_score") or 0.0) * kind_multiplier
+        item["extract_kind_weight"] = round(kind_multiplier, 2)
+        item["match_score"] = round(item["match_score"], 3)
+
+    # Patch-4: family diversity penalty — re-sort then penalise repeated families
+    results.sort(key=lambda x: (-float(x.get("match_score") or 0.0), int(x.get("quality_tier") or 99), int(x["extract_id"])))
+    family_seen: Dict[str, int] = {}
+    FAMILY_REPEAT_FREE = 2        # first N hits from same family: no penalty
+    FAMILY_REPEAT_DECAY = 0.70    # each subsequent hit from same family is multiplied by this
+    for item in results:
+        fam = (item.get("reaction_family_name") or "").strip().lower()
+        if not fam:
+            continue
+        count = family_seen.get(fam, 0)
+        if count >= FAMILY_REPEAT_FREE:
+            decay = FAMILY_REPEAT_DECAY ** (count - FAMILY_REPEAT_FREE + 1)
+            item["match_score"] = round(float(item["match_score"]) * decay, 3)
+            item["family_diversity_decay"] = round(decay, 3)
+        family_seen[fam] = count + 1
+
+    # Final sort after all adjustments
+    results.sort(key=lambda x: (-float(x.get("match_score") or 0.0), int(x.get("quality_tier") or 99), int(x["extract_id"])))
 
     family_hits: List[Dict[str, Any]] = []
     if req.include_family_fallback:
@@ -511,13 +731,20 @@ def _finalize_results(hit_map: Dict[int, Dict[str, Any]], req: StructureEvidence
         "family_count": len(family_hits),
         "results": final,
     }
-    if results:
+    if final:
         conn = _db_connect()
         try:
+            profile_table = conn.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='reaction_family_patterns'").fetchone()
+            fam_cache = {}
+            if profile_table:
+                for fam in {r.get("reaction_family_name") for r in final if r.get("reaction_family_name")}:
+                    fam_cache[fam] = _fetch_family_profile(conn, fam) if fam else None
+            for item in final:
+                _naturalize_item(item, fam_cache.get(item.get("reaction_family_name")))
             families = [r.get("reaction_family_name") for r in final if r.get("reaction_family_name")]
-            families = list(dict.fromkeys(families))[:3]
-            if families and conn.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='reaction_family_patterns'").fetchone():
-                payload["family_profiles"] = [p for p in (_fetch_family_profile(conn, fam) for fam in families) if p]
+            families = list(dict.fromkeys(families))[:5]
+            if families and profile_table:
+                payload["family_profiles"] = [fam_cache.get(f) for f in families if fam_cache.get(f)]
         finally:
             conn.close()
     if extra:

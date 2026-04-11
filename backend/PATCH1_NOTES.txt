@@ -1,0 +1,24 @@
+
+=== 패치 1: extract_molecules backfill ===
+적용 대상: C:\chemlens\backend\app\
+
+변경사항:
+1. labint.db - extract_molecules 테이블 채움
+   - Tier 1 (exact SMILES + overview): 58개
+   - Tier 2 (exact+application / generic): 86개  
+   - Tier 3 (text only): 1431개
+   - queryable (구조검색 가능): 144개
+   - 커버된 family: 43개
+
+2. evidence_search.py - DB 경로 수정
+   - 기존: labint_round9_bridge_work.db (존재하지 않음)
+   - 수정: labint.db (실제 메인 DB)
+
+=== 설치 방법 ===
+1. C:\chemlens\backend\app\labint.db 덮어쓰기
+2. C:\chemlens\backend\app\evidence_search.py 덮어쓰기
+3. 백엔드 재시작
+
+=== 검증 ===
+http://localhost:8000/api/search/structure-evidence/stats
+→ extract_molecules: 1575, queryable: 144 이면 성공
