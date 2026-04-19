@@ -1,0 +1,11 @@
+alias,canonical_name,entity_type
+PdCl2(PPh3)2,bis(triphenylphosphine)palladium(II) chloride,catalyst
+PdCl2(MeCN)2,bis(acetonitrile)palladium(II) chloride,catalyst
+Bu3SnSnBu3,hexabutylditin,stannane_reagent
+Bu3SnCl,tributyltin chloride,organotin_reagent
+Bu4NBr,tetrabutylammonium bromide,phase_transfer_additive
+Me3SiSnBu3,trimethylsilyltributylstannane,organotin_reagent
+KOt-Bu,potassium tert-butoxide,base
+P(o-furyl)3,tris(2-furyl)phosphine,ligand
+MgSO4,magnesium sulfate,drying_agent
+Dean-Stark,Dean-Stark trap,apparatus

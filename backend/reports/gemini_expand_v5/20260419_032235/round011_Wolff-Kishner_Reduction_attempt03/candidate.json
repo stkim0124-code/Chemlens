@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCCC(=O)CC"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane). This is a classic textbook example of the Wolff-Kishner reduction, clearly demonstrating the deoxygenation of a carbonyl group to a methylene group under basic conditions (hydrazine and KOH). The use of a symmetric ketone avoids any ambiguity or potential side reactions.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic ketone, avoiding arenes (which could trigger Friedel-Crafts or Clemmensen reduction queries), esters (avoiding Claisen), or other functional groups. This specific transformation (ketone to alkane) is highly characteristic of the Wolff-Kishner (or Clemmensen) reduction, and the specified basic reagents (hydrazine/KOH) strongly select for Wolff-Kishner, minimizing overlap with other named reactions.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[K+].[OH-]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane). This is a classic textbook example of the Wolff-Kishner reduction, clearly demonstrating the deoxygenation of a carbonyl group to a methylene group under basic conditions (hydrazine and KOH). The use of a symmetric ketone avoids any ambiguity or potential side reactions.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic ketone, avoiding arenes (which could trigger Friedel-Crafts or Clemmensen reduction queries), esters (avoiding Claisen), or other functional groups. This specific transformation (ketone to alkane) is highly characteristic of the Wolff-Kishner (or Clemmensen) reduction, and the specified basic reagents (hydrazine/KOH) strongly select for Wolff-Kishner, minimizing overlap with other named reactions.\"\n  }\n}"
+}

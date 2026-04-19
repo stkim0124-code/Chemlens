@@ -1,0 +1,17 @@
+{
+  "family": "Pinner Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "CC(C)(C)C#N"
+    ],
+    "product_smiles": [
+      "COC(=[NH2+])C(C)(C)C.[Cl-]"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This example demonstrates the classic Pinner reaction, where a nitrile (pivalonitrile) reacts with an alcohol (methanol) under anhydrous acidic conditions (dry HCl) to form the corresponding imidate salt (methyl pivalimidate hydrochloride). The bulky tert-butyl group is sterically distinct and helps prevent side reactions, making it a clear and unambiguous illustration of the Pinner pathway.",
+    "collision_avoidance_note": "The substrate is pivalonitrile, a sterically hindered nitrile, which is less likely to be a generic seed for all nitrile chemistry. The product is explicitly shown as the protonated imidate salt (Pinner salt), which is the characteristic intermediate of this reaction, distinguishing it from Ritter or Houben-Hoesch reactions which involve further steps or different electrophiles.",
+    "reagents_text": "methanol, dry HCl gas",
+    "conditions_text": "anhydrous conditions, typically at low temperature (e.g., 0 C)"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "family": "Charette Asymmetric Cyclopropanation",
+  "substrates": [
+    "C=CCO"
+  ],
+  "products": [
+    "OC1CC1"
+  ],
+  "reagents": [
+    "CC(C)B1OB(c2ccccc2)OC1C(C)C.C[CH2][Zn][CH2]C.ICI"
+  ],
+  "rationale": "This is a canonical example of the Charette asymmetric cyclopropanation of a simple allylic alcohol (allyl alcohol) to form an optically active cyclopropylmethanol. It uses the standard Simmons-Smith reagents (Et2Zn, CH2I2) in combination with a chiral dioxaborolane ligand derived from tartaric acid, which is characteristic of the Charette method. The substrate is simple, acyclic, and avoids complex motifs.",
+  "collision_avoidance_note": "The reaction specifically involves an allylic alcohol, which directs the cyclopropanation and is key to the Charette method. This avoids collision with general Simmons-Smith cyclopropanations of unfunctionalized alkenes. The use of a specific chiral ligand (dioxaborolane) and zinc-based reagents distinguishes it from other asymmetric cyclopropanation methods (e.g., those using copper or rhodium catalysts with diazo compounds).",
+  "raw_text": "{\n  \"family\": \"Charette Asymmetric Cyclopropanation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C=CCO\"\n    ],\n    \"product_smiles\": [\n      \"O[C@H]1CC1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"C(I)I.CC[Zn]CC.CC(C)C1OB(C2=CC=CC=C2)OB1C(C)C\"\n    ],\n    \"rationale\": \"This is a canonical example of the Charette asymmetric cyclopropanation of a simple allylic alcohol (allyl alcohol) to form an optically active cyclopropylmethanol. It uses the standard Simmons-Smith reagents (Et2Zn, CH2I2) in combination with a chiral dioxaborolane ligand derived from tartaric acid, which is characteristic of the Charette method. The substrate is simple, acyclic, and avoids complex motifs.\",\n    \"collision_avoidance_note\": \"The reaction specifically involves an allylic alcohol, which directs the cyclopropanation and is key to the Charette method. This avoids collision with general Simmons-Smith cyclopropanations of unfunctionalized alkenes. The use of a specific chiral ligand (dioxaborolane) and zinc-based reagents distinguishes it from other asymmetric cyclopropanation methods (e.g., those using copper or rhodium catalysts with diazo compounds).\"\n  }\n}"
+}

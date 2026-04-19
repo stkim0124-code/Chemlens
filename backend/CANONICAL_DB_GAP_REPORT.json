@@ -1,0 +1,492 @@
+{
+  "canonical_db": "C:\\chemlens\\backend\\app\\labint.db",
+  "current_state": {
+    "manual_page_knowledge": 809,
+    "manual_page_entities": 1862,
+    "reaction_extracts": 280,
+    "extract_molecules_total": 1816,
+    "queryable": 443,
+    "tier1": 357,
+    "tier2": 86,
+    "tier3": 1373
+  },
+  "structure_source_counts": [
+    [
+      "NULL",
+      1517
+    ],
+    [
+      "vision_raw_json_promote",
+      224
+    ],
+    [
+      "pubchem_name_lookup",
+      43
+    ],
+    [
+      "manual_curated_seed",
+      17
+    ],
+    [
+      "rdkit_direct_parse",
+      15
+    ]
+  ],
+  "manual_family_total": 251,
+  "manual_family_covered": 32,
+  "manual_family_uncovered": 219,
+  "top_uncovered_families": [
+    {
+      "family": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Aldol Reaction",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Alkene (Olefin) Metathesis",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Amadori Reaction / Rearrangement",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Appendix",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Baeyer-Villiger Oxidation/Rearrangement",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Baldwin's Rules / Guidelines for Ring-Closing Reactions",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Barbier Coupling Reaction",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Barton-McCombie Radical Deoxygenation Reaction",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Baylis-Hillman Reaction",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Birch Reduction",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Carroll Rearrangement",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Claisen Condensation / Claisen Reaction",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Combes Quinoline Synthesis",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Cope Elimination / Cope Reaction",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Cope Rearrangement",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Corey-Fuchs Alkyne Synthesis",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Corey-Kim Oxidation",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Corey-Nicolaou Macrolactonization",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Corey-Winter Olefination",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Cornforth Rearrangement",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Criegee Oxidation",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Curtius Rearrangement",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Dakin Oxidation",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Dakin-West Reaction",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    },
+    {
+      "family": "Danheiser Benzannulation",
+      "page_count": 2,
+      "queryable_count": 0,
+      "tier1_count": 0,
+      "tier2_count": 0
+    }
+  ],
+  "top_covered_families": [
+    {
+      "family": "Benzoin and Retro-Benzoin Condensation",
+      "page_count": 2,
+      "queryable_count": 80,
+      "tier1_count": 80,
+      "tier2_count": 0
+    },
+    {
+      "family": "Acyloin Condensation",
+      "page_count": 2,
+      "queryable_count": 50,
+      "tier1_count": 50,
+      "tier2_count": 0
+    },
+    {
+      "family": "Acetoacetic Ester Synthesis",
+      "page_count": 2,
+      "queryable_count": 39,
+      "tier1_count": 39,
+      "tier2_count": 0
+    },
+    {
+      "family": "Ciamician-Dennstedt Rearrangement",
+      "page_count": 2,
+      "queryable_count": 29,
+      "tier1_count": 29,
+      "tier2_count": 0
+    },
+    {
+      "family": "Arndt-Eistert Homologation / Synthesis",
+      "page_count": 2,
+      "queryable_count": 16,
+      "tier1_count": 16,
+      "tier2_count": 0
+    },
+    {
+      "family": "Baker-Venkataraman Rearrangement",
+      "page_count": 2,
+      "queryable_count": 15,
+      "tier1_count": 3,
+      "tier2_count": 12
+    },
+    {
+      "family": "Barton Radical Decarboxylation Reaction",
+      "page_count": 2,
+      "queryable_count": 12,
+      "tier1_count": 11,
+      "tier2_count": 1
+    },
+    {
+      "family": "Benzilic Acid Rearrangement",
+      "page_count": 2,
+      "queryable_count": 12,
+      "tier1_count": 3,
+      "tier2_count": 9
+    },
+    {
+      "family": "Bartoli Indole Synthesis",
+      "page_count": 2,
+      "queryable_count": 11,
+      "tier1_count": 0,
+      "tier2_count": 11
+    },
+    {
+      "family": "Claisen-Ireland Rearrangement",
+      "page_count": 2,
+      "queryable_count": 11,
+      "tier1_count": 11,
+      "tier2_count": 0
+    },
+    {
+      "family": "Buchwald-Hartwig Cross-Coupling",
+      "page_count": 2,
+      "queryable_count": 10,
+      "tier1_count": 3,
+      "tier2_count": 7
+    },
+    {
+      "family": "Chichibabin Amination Reaction",
+      "page_count": 2,
+      "queryable_count": 9,
+      "tier1_count": 5,
+      "tier2_count": 4
+    },
+    {
+      "family": "Balz-Schiemann Reaction",
+      "page_count": 2,
+      "queryable_count": 8,
+      "tier1_count": 5,
+      "tier2_count": 3
+    },
+    {
+      "family": "Castro-Stephens Coupling",
+      "page_count": 2,
+      "queryable_count": 8,
+      "tier1_count": 2,
+      "tier2_count": 6
+    },
+    {
+      "family": "Aza-Cope Rearrangement",
+      "page_count": 2,
+      "queryable_count": 6,
+      "tier1_count": 6,
+      "tier2_count": 0
+    },
+    {
+      "family": "Brook Rearrangement",
+      "page_count": 2,
+      "queryable_count": 6,
+      "tier1_count": 1,
+      "tier2_count": 5
+    },
+    {
+      "family": "Bischler-Napieralski Isoquinoline Synthesis",
+      "page_count": 2,
+      "queryable_count": 5,
+      "tier1_count": 5,
+      "tier2_count": 0
+    },
+    {
+      "family": "Claisen Rearrangement",
+      "page_count": 2,
+      "queryable_count": 5,
+      "tier1_count": 5,
+      "tier2_count": 0
+    },
+    {
+      "family": "Aza-Wittig Reaction",
+      "page_count": 2,
+      "queryable_count": 4,
+      "tier1_count": 4,
+      "tier2_count": 0
+    },
+    {
+      "family": "Bergman Cycloaromatization Reaction",
+      "page_count": 2,
+      "queryable_count": 4,
+      "tier1_count": 4,
+      "tier2_count": 0
+    },
+    {
+      "family": "Burgess Dehydration Reaction",
+      "page_count": 2,
+      "queryable_count": 4,
+      "tier1_count": 4,
+      "tier2_count": 0
+    },
+    {
+      "family": "Cannizzaro Reaction",
+      "page_count": 2,
+      "queryable_count": 4,
+      "tier1_count": 4,
+      "tier2_count": 0
+    },
+    {
+      "family": "Clemmensen Reduction",
+      "page_count": 2,
+      "queryable_count": 4,
+      "tier1_count": 4,
+      "tier2_count": 0
+    },
+    {
+      "family": "Aza-[2,3]-Wittig Rearrangement",
+      "page_count": 2,
+      "queryable_count": 3,
+      "tier1_count": 0,
+      "tier2_count": 3
+    },
+    {
+      "family": "Bamford-Stevens-Shapiro Olefination",
+      "page_count": 2,
+      "queryable_count": 3,
+      "tier1_count": 3,
+      "tier2_count": 0
+    },
+    {
+      "family": "Beckmann Rearrangement",
+      "page_count": 2,
+      "queryable_count": 3,
+      "tier1_count": 3,
+      "tier2_count": 0
+    },
+    {
+      "family": "Chugaev Elimination Reaction",
+      "page_count": 2,
+      "queryable_count": 3,
+      "tier1_count": 3,
+      "tier2_count": 0
+    },
+    {
+      "family": "Alkyne Metathesis",
+      "page_count": 2,
+      "queryable_count": 2,
+      "tier1_count": 2,
+      "tier2_count": 0
+    },
+    {
+      "family": "Barton Nitrite Ester Reaction",
+      "page_count": 2,
+      "queryable_count": 2,
+      "tier1_count": 2,
+      "tier2_count": 0
+    },
+    {
+      "family": "Biginelli Reaction",
+      "page_count": 2,
+      "queryable_count": 2,
+      "tier1_count": 2,
+      "tier2_count": 0
+    }
+  ],
+  "reaction_cards": {
+    "total": 11371,
+    "substrate_nonempty": 46,
+    "product_nonempty": 5,
+    "any_nonempty": 46
+  },
+  "benchmark_summary": {
+    "benchmark_name": "CHEMLENS small benchmark v3",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 27,
+    "top1_accuracy": 1.0,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "bridge_work_status": {
+    "exists": true,
+    "should_use_as_baseline": false,
+    "reason": "app/labint.db is the canonical baseline. Any bridge/work DB is disposable.",
+    "queryable": 144
+  },
+  "recommended_next_order": [
+    "1) Treat app/labint.db as the only canonical baseline",
+    "2) Expand queryable family coverage beyond the current level with structure-bearing pages first",
+    "3) Expand benchmark from small to medium after each dataization batch",
+    "4) Only then consider reaction_cards direct SMILES backfill with a reviewed mapping strategy"
+  ]
+}

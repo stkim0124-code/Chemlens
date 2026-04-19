@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Payne Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C[C@H](O)[C@@H]1CO1\"\n    ],\n    \"product_smiles\": [\n      \"C[C@@H]1O[C@H]1CO\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[OH-]\"\n    ],\n    \"rationale\": \"This is a simple, acyclic, and stereochemically defined example of the Payne rearrangement. It features a 2,3-epoxy alcohol (1,2-epoxypropan-1-ol) isomerizing to another 2,3-epoxy alcohol (2,3-epoxypropan-1-ol) under basic conditions. The reaction involves the deprotonation of the alcohol, followed by intramolecular nucleophilic attack on the adjacent epoxide carbon, leading to the formation of a new epoxide at the original alcohol position. The stereochemistry is inverted at both chiral centers, which is a hallmark of the reaction. This example clearly illustrates the core epoxide migration.\",\n    \"collision_avoidance_note\": \"The structure is kept simple and acyclic to avoid overlap with more complex natural product syntheses or other named reactions involving rings. It avoids arenes, diazo groups, or other highly reactive functional groups that could trigger false positives for unrelated reaction families. The use of a simple alkyl backbone focuses the query specifically on the epoxy alcohol isomerization characteristic of the Payne rearrangement.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 464,
+    "candidatesTokenCount": 333,
+    "totalTokenCount": 867,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 464
+      }
+    ],
+    "thoughtsTokenCount": 70
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "u8_jaez1INme2roP9-LjyQ8"
+}

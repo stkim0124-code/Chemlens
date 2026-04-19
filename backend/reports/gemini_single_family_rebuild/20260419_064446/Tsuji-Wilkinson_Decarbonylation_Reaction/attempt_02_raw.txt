@@ -1,0 +1,17 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "O=CC1(CCCC1)C1CCCCC1"
+    ],
+    "product_smiles": [
+      "C1CCC(C2CCCCC2)CC1"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This example demonstrates the decarbonylation of a spirocyclic aldehyde, 1-cyclohexylspiro[4.4]nonane-1-carbaldehyde, to the corresponding spiroalkane. The removal of the formyl group (CHO) from a quaternary carbon center is a clear and unambiguous transformation characteristic of the Tsuji-Wilkinson reaction. The spirocyclic structure provides sufficient complexity to avoid being a trivial example while clearly illustrating the core C-C bond cleavage of the formyl group and its replacement with a hydrogen atom.",
+    "collision_avoidance_note": "The substrate is a non-trivial spirocyclic aldehyde, which is structurally distinct from simple linear, branched, or monocyclic aldehydes. This specific topology helps to avoid overlap with generic aldehyde reactions or simple decarbonylation examples that might be easily predicted by less specific models. The quaternary center bearing the aldehyde also makes other reaction pathways less likely.",
+    "reagents_text": "Tris(triphenylphosphine)rhodium(I) chloride (Wilkinson's catalyst)",
+    "conditions_text": "Heat (e.g., in xylene or benzonitrile)"
+  }
+}

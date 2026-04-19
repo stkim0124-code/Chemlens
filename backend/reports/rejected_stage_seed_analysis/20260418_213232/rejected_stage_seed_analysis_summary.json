@@ -1,0 +1,1575 @@
+{
+  "generated_at": "2026-04-18T21:32:32",
+  "canonical_db": "C:\\chemlens\\backend\\app\\labint.db",
+  "stage_db": "C:\\chemlens\\backend\\app\\labint_v5_stage.db",
+  "rejected_json": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\rejected_families.json",
+  "diagnose_summary": "reports\\v5_rejected_diagnose\\20260418_201257\\rejected_diagnosis_summary.json",
+  "apply_summary": "reports\\gemini_salvage_apply\\20260418_201125\\gemini_salvage_apply_summary.json",
+  "base_rejected_count": 13,
+  "applied_families": [],
+  "families": [
+    {
+      "family_name": "Enyne Metathesis",
+      "rejected_reason": "top1 regression: baseline=1.0000 current=0.9259",
+      "benchmark_top1_after_merge": 0.9259,
+      "benchmark_top3_after_merge": 1.0,
+      "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_040_Enyne_Metathesis.json",
+      "reaction_extract_ids_from_rejected_json": [
+        504
+      ],
+      "extract_molecule_ids_from_rejected_json": [
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "diagnose_changed_case_count": 2,
+      "diagnose_first_changed_case": "barton_radical_rxn_353_exact_extract",
+      "diagnose_first_changed_top1": "Enyne Metathesis",
+      "diagnose_cluster": "barton",
+      "canonical_extract_count": 0,
+      "canonical_molecule_count": 0,
+      "stage_extract_count": 1,
+      "stage_molecule_count": 4,
+      "stage_only_extract_ids": [
+        504
+      ],
+      "stage_seed_extracts": [
+        {
+          "id": 504,
+          "scheme_candidate_id": 1,
+          "extract_kind": "canonical_overview",
+          "reactants_text": null,
+          "products_text": null,
+          "intermediates_text": null,
+          "reagents_text": null,
+          "parse_status": "gemini_auto_seed",
+          "promote_decision": "promote",
+          "rejection_reason": null
+        }
+      ],
+      "stage_seed_molecules": [
+        {
+          "id": 2027,
+          "extract_id": 504,
+          "role": "reactant",
+          "smiles": "C=CCCCCCC",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "C=CCCCCCC"
+          }
+        },
+        {
+          "id": 2028,
+          "extract_id": 504,
+          "role": "reactant",
+          "smiles": "C#CCCCC",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "C#CCCCC"
+          }
+        },
+        {
+          "id": 2029,
+          "extract_id": 504,
+          "role": "product",
+          "smiles": "CCCC/C=C/C=C/CCCCCC",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "product",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCCC/C=C/C=C/CCCCCC"
+          }
+        },
+        {
+          "id": 2030,
+          "extract_id": 504,
+          "role": "reagent",
+          "smiles": "Cc1cc(C)c(N2CCN(c3c(C)cc(C)cc3C)[C]2=[Ru]([Cl])([Cl])(=[CH]c2ccccc2)[PH]C(C2CCCCC2)(C2CCCCC2)C2CCCCC2)c(C)c1",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "Cc1cc(C)c(N2CCN(c3c(C)cc(C)cc3C)[C]2=[Ru]([Cl])([Cl])(=[CH]c2ccccc2)[PH]C(C2CCCCC2)(C2CCCCC2)C2CCCCC2)c(C)c1"
+          }
+        }
+      ],
+      "suspicion_flags": [
+        "organometallic_reagent_present",
+        "multiple_queryable_core_molecules"
+      ],
+      "recommendation": "likely_needs_single_smiles_exposure_review_or_seed_replacement"
+    },
+    {
+      "family_name": "Hofmann-Loffler-Freytag Reaction",
+      "rejected_reason": "top1 regression: baseline=1.0000 current=0.9259",
+      "benchmark_top1_after_merge": 0.9259,
+      "benchmark_top3_after_merge": 1.0,
+      "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_066_Hofmann-Loffler-Freytag_Reaction.json",
+      "reaction_extract_ids_from_rejected_json": [
+        530
+      ],
+      "extract_molecule_ids_from_rejected_json": [
+        2153,
+        2154,
+        2155,
+        2156,
+        2157,
+        2158
+      ],
+      "diagnose_changed_case_count": 2,
+      "diagnose_first_changed_case": "barton_radical_rxn_353_exact_extract",
+      "diagnose_first_changed_top1": "Hofmann-Loffler-Freytag Reaction",
+      "diagnose_cluster": "barton",
+      "canonical_extract_count": 0,
+      "canonical_molecule_count": 0,
+      "stage_extract_count": 1,
+      "stage_molecule_count": 6,
+      "stage_only_extract_ids": [
+        530
+      ],
+      "stage_seed_extracts": [
+        {
+          "id": 530,
+          "scheme_candidate_id": 1,
+          "extract_kind": "canonical_overview",
+          "reactants_text": null,
+          "products_text": null,
+          "intermediates_text": null,
+          "reagents_text": null,
+          "parse_status": "gemini_auto_seed",
+          "promote_decision": "promote",
+          "rejection_reason": null
+        }
+      ],
+      "stage_seed_molecules": [
+        {
+          "id": 2153,
+          "extract_id": 530,
+          "role": "reactant",
+          "smiles": "CCCCN(C)Cl",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCCCN(C)Cl"
+          }
+        },
+        {
+          "id": 2154,
+          "extract_id": 530,
+          "role": "product",
+          "smiles": "CN1CCCC1",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "product",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CN1CCCC1"
+          }
+        },
+        {
+          "id": 2155,
+          "extract_id": 530,
+          "role": "reagent",
+          "smiles": "O=S(=O)(O)O",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "O=S(=O)(O)O"
+          }
+        },
+        {
+          "id": 2156,
+          "extract_id": 530,
+          "role": "reagent",
+          "smiles": "[OH-]",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "[OH-]"
+          }
+        },
+        {
+          "id": 2157,
+          "extract_id": 530,
+          "role": "intermediate",
+          "smiles": "[CH2]CCCNC",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "intermediate",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "[CH2]CCCNC"
+          }
+        },
+        {
+          "id": 2158,
+          "extract_id": 530,
+          "role": "intermediate",
+          "smiles": "CNCCCCCl",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "intermediate",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CNCCCCCl"
+          }
+        }
+      ],
+      "suspicion_flags": [
+        "explicit_intermediate_species_present"
+      ],
+      "recommendation": "likely_needs_single_smiles_exposure_review_or_seed_replacement"
+    },
+    {
+      "family_name": "Horner-Wadsworth-Emmons Olefination",
+      "rejected_reason": "top1 regression: baseline=1.0000 current=0.9630",
+      "benchmark_top1_after_merge": 0.963,
+      "benchmark_top3_after_merge": 1.0,
+      "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_068_Horner-Wadsworth-Emmons_Olefination.json",
+      "reaction_extract_ids_from_rejected_json": [
+        532
+      ],
+      "extract_molecule_ids_from_rejected_json": [
+        2164,
+        2165,
+        2166,
+        2167
+      ],
+      "diagnose_changed_case_count": 2,
+      "diagnose_first_changed_case": "buchner_403_exact_extract",
+      "diagnose_first_changed_top1": "Horner-Wadsworth-Emmons Olefination",
+      "diagnose_cluster": "buchner",
+      "canonical_extract_count": 0,
+      "canonical_molecule_count": 0,
+      "stage_extract_count": 1,
+      "stage_molecule_count": 4,
+      "stage_only_extract_ids": [
+        532
+      ],
+      "stage_seed_extracts": [
+        {
+          "id": 532,
+          "scheme_candidate_id": 1,
+          "extract_kind": "canonical_overview",
+          "reactants_text": null,
+          "products_text": null,
+          "intermediates_text": null,
+          "reagents_text": null,
+          "parse_status": "gemini_auto_seed",
+          "promote_decision": "promote",
+          "rejection_reason": null
+        }
+      ],
+      "stage_seed_molecules": [
+        {
+          "id": 2164,
+          "extract_id": 532,
+          "role": "reactant",
+          "smiles": "CCOC(=O)CP(=O)(OCC)OCC",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCOC(=O)CP(=O)(OCC)OCC"
+          }
+        },
+        {
+          "id": 2165,
+          "extract_id": 532,
+          "role": "reactant",
+          "smiles": "O=Cc1ccccc1",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "O=Cc1ccccc1"
+          }
+        },
+        {
+          "id": 2166,
+          "extract_id": 532,
+          "role": "product",
+          "smiles": "CCOC(=O)/C=C/c1ccccc1",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "product",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCOC(=O)/C=C/c1ccccc1"
+          }
+        },
+        {
+          "id": 2167,
+          "extract_id": 532,
+          "role": "reagent",
+          "smiles": "[NaH]",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "[NaH]"
+          }
+        }
+      ],
+      "suspicion_flags": [
+        "multiple_queryable_core_molecules"
+      ],
+      "recommendation": "likely_needs_core_pair_simplification_or_seed_replacement"
+    },
+    {
+      "family_name": "Krapcho Dealkoxycarbonylation",
+      "rejected_reason": "top1 regression: baseline=1.0000 current=0.9630",
+      "benchmark_top1_after_merge": 0.963,
+      "benchmark_top3_after_merge": 1.0,
+      "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_085_Krapcho_Dealkoxycarbonylation.json",
+      "reaction_extract_ids_from_rejected_json": [
+        549
+      ],
+      "extract_molecule_ids_from_rejected_json": [
+        2247,
+        2248,
+        2249,
+        2250
+      ],
+      "diagnose_changed_case_count": 2,
+      "diagnose_first_changed_case": "buchner_403_exact_extract",
+      "diagnose_first_changed_top1": "Krapcho Dealkoxycarbonylation",
+      "diagnose_cluster": "buchner",
+      "canonical_extract_count": 0,
+      "canonical_molecule_count": 0,
+      "stage_extract_count": 1,
+      "stage_molecule_count": 4,
+      "stage_only_extract_ids": [
+        549
+      ],
+      "stage_seed_extracts": [
+        {
+          "id": 549,
+          "scheme_candidate_id": 1,
+          "extract_kind": "canonical_overview",
+          "reactants_text": null,
+          "products_text": null,
+          "intermediates_text": null,
+          "reagents_text": null,
+          "parse_status": "gemini_auto_seed",
+          "promote_decision": "promote",
+          "rejection_reason": null
+        }
+      ],
+      "stage_seed_molecules": [
+        {
+          "id": 2247,
+          "extract_id": 549,
+          "role": "reactant",
+          "smiles": "CCOC(=O)C(C)(C(=O)OCC)c1ccccc1",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCOC(=O)C(C)(C(=O)OCC)c1ccccc1"
+          }
+        },
+        {
+          "id": 2248,
+          "extract_id": 549,
+          "role": "product",
+          "smiles": "CCOC(=O)C(C)c1ccccc1",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "product",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCOC(=O)C(C)c1ccccc1"
+          }
+        },
+        {
+          "id": 2249,
+          "extract_id": 549,
+          "role": "reagent",
+          "smiles": "CS(C)=O",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CS(C)=O"
+          }
+        },
+        {
+          "id": 2250,
+          "extract_id": 549,
+          "role": "reagent",
+          "smiles": "O",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "O"
+          }
+        }
+      ],
+      "suspicion_flags": [],
+      "recommendation": "likely_needs_core_pair_simplification_or_seed_replacement"
+    },
+    {
+      "family_name": "Mitsunobu Reaction",
+      "rejected_reason": "top1 regression: baseline=1.0000 current=0.9259",
+      "benchmark_top1_after_merge": 0.9259,
+      "benchmark_top3_after_merge": 1.0,
+      "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_099_Mitsunobu_Reaction.json",
+      "reaction_extract_ids_from_rejected_json": [
+        563
+      ],
+      "extract_molecule_ids_from_rejected_json": [
+        2307,
+        2308,
+        2309,
+        2310,
+        2311,
+        2312
+      ],
+      "diagnose_changed_case_count": 2,
+      "diagnose_first_changed_case": "barton_radical_rxn_353_exact_extract",
+      "diagnose_first_changed_top1": "Mitsunobu Reaction",
+      "diagnose_cluster": "barton",
+      "canonical_extract_count": 0,
+      "canonical_molecule_count": 0,
+      "stage_extract_count": 1,
+      "stage_molecule_count": 6,
+      "stage_only_extract_ids": [
+        563
+      ],
+      "stage_seed_extracts": [
+        {
+          "id": 563,
+          "scheme_candidate_id": 1,
+          "extract_kind": "canonical_overview",
+          "reactants_text": null,
+          "products_text": null,
+          "intermediates_text": null,
+          "reagents_text": null,
+          "parse_status": "gemini_auto_seed",
+          "promote_decision": "promote",
+          "rejection_reason": null
+        }
+      ],
+      "stage_seed_molecules": [
+        {
+          "id": 2307,
+          "extract_id": 563,
+          "role": "reactant",
+          "smiles": "CCCCCC[C@H](C)O",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCCCCC[C@H](C)O"
+          }
+        },
+        {
+          "id": 2308,
+          "extract_id": 563,
+          "role": "reactant",
+          "smiles": "O=C(O)c1ccccc1",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "O=C(O)c1ccccc1"
+          }
+        },
+        {
+          "id": 2309,
+          "extract_id": 563,
+          "role": "product",
+          "smiles": "CCCCCC[C@@H](C)OC(=O)c1ccccc1",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "product",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCCCCC[C@@H](C)OC(=O)c1ccccc1"
+          }
+        },
+        {
+          "id": 2310,
+          "extract_id": 563,
+          "role": "reagent",
+          "smiles": "c1ccc(P(c2ccccc2)c2ccccc2)cc1",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "c1ccc(P(c2ccccc2)c2ccccc2)cc1"
+          }
+        },
+        {
+          "id": 2311,
+          "extract_id": 563,
+          "role": "reagent",
+          "smiles": "CCOC(=O)N=NC(=O)OCC",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCOC(=O)N=NC(=O)OCC"
+          }
+        },
+        {
+          "id": 2312,
+          "extract_id": 563,
+          "role": "intermediate",
+          "smiles": "CCCCCC[C@H](C)O[P+](c1ccccc1)(c1ccccc1)c1ccccc1",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "intermediate",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCCCCC[C@H](C)O[P+](c1ccccc1)(c1ccccc1)c1ccccc1"
+          }
+        }
+      ],
+      "suspicion_flags": [
+        "explicit_intermediate_species_present",
+        "multiple_queryable_core_molecules"
+      ],
+      "recommendation": "likely_needs_single_smiles_exposure_review_or_seed_replacement"
+    },
+    {
+      "family_name": "Claisen Condensation / Claisen Reaction",
+      "rejected_reason": "top1 regression: baseline=1.0000 current=0.9630",
+      "benchmark_top1_after_merge": 0.963,
+      "benchmark_top3_after_merge": 1.0,
+      "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_015_Claisen_Condensation_Claisen_Reaction.json",
+      "reaction_extract_ids_from_rejected_json": [
+        479
+      ],
+      "extract_molecule_ids_from_rejected_json": [
+        1914,
+        1915,
+        1916
+      ],
+      "diagnose_changed_case_count": 1,
+      "diagnose_first_changed_case": "buchner_403_exact_extract",
+      "diagnose_first_changed_top1": "Claisen Condensation / Claisen Reaction",
+      "diagnose_cluster": "buchner",
+      "canonical_extract_count": 0,
+      "canonical_molecule_count": 0,
+      "stage_extract_count": 1,
+      "stage_molecule_count": 3,
+      "stage_only_extract_ids": [
+        479
+      ],
+      "stage_seed_extracts": [
+        {
+          "id": 479,
+          "scheme_candidate_id": 1,
+          "extract_kind": "canonical_overview",
+          "reactants_text": null,
+          "products_text": null,
+          "intermediates_text": null,
+          "reagents_text": null,
+          "parse_status": "gemini_auto_seed",
+          "promote_decision": "promote",
+          "rejection_reason": null
+        }
+      ],
+      "stage_seed_molecules": [
+        {
+          "id": 1914,
+          "extract_id": 479,
+          "role": "reactant",
+          "smiles": "CCOC(C)=O",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCOC(C)=O"
+          }
+        },
+        {
+          "id": 1915,
+          "extract_id": 479,
+          "role": "product",
+          "smiles": "CCOC(=O)CC(C)=O",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "product",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCOC(=O)CC(C)=O"
+          }
+        },
+        {
+          "id": 1916,
+          "extract_id": 479,
+          "role": "intermediate",
+          "smiles": "[CH2-]C(=O)OCC",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "intermediate",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "[CH2-]C(=O)OCC"
+          }
+        }
+      ],
+      "suspicion_flags": [
+        "explicit_intermediate_species_present"
+      ],
+      "recommendation": "likely_needs_core_pair_simplification_or_seed_replacement"
+    },
+    {
+      "family_name": "Michael Addition Reaction",
+      "rejected_reason": "top1 regression: baseline=1.0000 current=0.9630",
+      "benchmark_top1_after_merge": 0.963,
+      "benchmark_top3_after_merge": 1.0,
+      "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_095_Michael_Addition_Reaction.json",
+      "reaction_extract_ids_from_rejected_json": [
+        559
+      ],
+      "extract_molecule_ids_from_rejected_json": [
+        2290,
+        2291,
+        2292,
+        2293
+      ],
+      "diagnose_changed_case_count": 1,
+      "diagnose_first_changed_case": "buchner_403_exact_extract",
+      "diagnose_first_changed_top1": "Michael Addition Reaction",
+      "diagnose_cluster": "buchner",
+      "canonical_extract_count": 0,
+      "canonical_molecule_count": 0,
+      "stage_extract_count": 1,
+      "stage_molecule_count": 4,
+      "stage_only_extract_ids": [
+        559
+      ],
+      "stage_seed_extracts": [
+        {
+          "id": 559,
+          "scheme_candidate_id": 1,
+          "extract_kind": "canonical_overview",
+          "reactants_text": null,
+          "products_text": null,
+          "intermediates_text": null,
+          "reagents_text": null,
+          "parse_status": "gemini_auto_seed",
+          "promote_decision": "promote",
+          "rejection_reason": null
+        }
+      ],
+      "stage_seed_molecules": [
+        {
+          "id": 2290,
+          "extract_id": 559,
+          "role": "reactant",
+          "smiles": "CCOC(=O)CC(=O)OCC",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCOC(=O)CC(=O)OCC"
+          }
+        },
+        {
+          "id": 2291,
+          "extract_id": 559,
+          "role": "reactant",
+          "smiles": "C=CC(C)=O",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "C=CC(C)=O"
+          }
+        },
+        {
+          "id": 2292,
+          "extract_id": 559,
+          "role": "product",
+          "smiles": "CCOC(=O)C(CCC(C)=O)C(=O)OCC",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "product",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCOC(=O)C(CCC(C)=O)C(=O)OCC"
+          }
+        },
+        {
+          "id": 2293,
+          "extract_id": 559,
+          "role": "intermediate",
+          "smiles": "CCOC(=O)[C-]C(=O)OCC",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "intermediate",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCOC(=O)[C-]C(=O)OCC"
+          }
+        }
+      ],
+      "suspicion_flags": [
+        "explicit_intermediate_species_present",
+        "multiple_queryable_core_molecules"
+      ],
+      "recommendation": "likely_needs_core_pair_simplification_or_seed_replacement"
+    },
+    {
+      "family_name": "Regitz Diazo Transfer",
+      "rejected_reason": "top1 regression: baseline=1.0000 current=0.9630",
+      "benchmark_top1_after_merge": 0.963,
+      "benchmark_top3_after_merge": 1.0,
+      "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_011_Regitz_Diazo_Transfer.json",
+      "reaction_extract_ids_from_rejected_json": [
+        475
+      ],
+      "extract_molecule_ids_from_rejected_json": [
+        1902,
+        1903,
+        1904,
+        1905
+      ],
+      "diagnose_changed_case_count": 1,
+      "diagnose_first_changed_case": "buchner_403_exact_extract",
+      "diagnose_first_changed_top1": "Regitz Diazo Transfer",
+      "diagnose_cluster": "buchner",
+      "canonical_extract_count": 0,
+      "canonical_molecule_count": 0,
+      "stage_extract_count": 1,
+      "stage_molecule_count": 4,
+      "stage_only_extract_ids": [
+        475
+      ],
+      "stage_seed_extracts": [
+        {
+          "id": 475,
+          "scheme_candidate_id": 1,
+          "extract_kind": "canonical_overview",
+          "reactants_text": null,
+          "products_text": null,
+          "intermediates_text": null,
+          "reagents_text": null,
+          "parse_status": "gemini_auto_seed",
+          "promote_decision": "promote",
+          "rejection_reason": null
+        }
+      ],
+      "stage_seed_molecules": [
+        {
+          "id": 1902,
+          "extract_id": 475,
+          "role": "reactant",
+          "smiles": "CCOC(=O)CC(=O)OCC",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCOC(=O)CC(=O)OCC"
+          }
+        },
+        {
+          "id": 1903,
+          "extract_id": 475,
+          "role": "product",
+          "smiles": "CCOC(=O)C(=[N+]=[N-])C(=O)OCC",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "product",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCOC(=O)C(=[N+]=[N-])C(=O)OCC"
+          }
+        },
+        {
+          "id": 1904,
+          "extract_id": 475,
+          "role": "reagent",
+          "smiles": "Cc1ccc(S(=O)(=O)N=[N+]=[N-])cc1",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "Cc1ccc(S(=O)(=O)N=[N+]=[N-])cc1"
+          }
+        },
+        {
+          "id": 1905,
+          "extract_id": 475,
+          "role": "reagent",
+          "smiles": "CCN(CC)CC",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCN(CC)CC"
+          }
+        }
+      ],
+      "suspicion_flags": [],
+      "recommendation": "likely_needs_core_pair_simplification_or_seed_replacement"
+    },
+    {
+      "family_name": "Diels-Alder Cycloaddition",
+      "rejected_reason": "top1 regression: baseline=1.0000 current=0.9630",
+      "benchmark_top1_after_merge": 0.963,
+      "benchmark_top3_after_merge": 1.0,
+      "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_003_Diels-Alder_Cycloaddition.json",
+      "reaction_extract_ids_from_rejected_json": [
+        467
+      ],
+      "extract_molecule_ids_from_rejected_json": [
+        1870,
+        1871,
+        1872
+      ],
+      "diagnose_changed_case_count": 0,
+      "diagnose_first_changed_case": "",
+      "diagnose_first_changed_top1": "",
+      "diagnose_cluster": "",
+      "canonical_extract_count": 1,
+      "canonical_molecule_count": 2,
+      "stage_extract_count": 1,
+      "stage_molecule_count": 3,
+      "stage_only_extract_ids": [
+        467
+      ],
+      "stage_seed_extracts": [
+        {
+          "id": 467,
+          "scheme_candidate_id": 1,
+          "extract_kind": "canonical_overview",
+          "reactants_text": null,
+          "products_text": null,
+          "intermediates_text": null,
+          "reagents_text": null,
+          "parse_status": "gemini_auto_seed",
+          "promote_decision": "promote",
+          "rejection_reason": null
+        }
+      ],
+      "stage_seed_molecules": [
+        {
+          "id": 1870,
+          "extract_id": 467,
+          "role": "reactant",
+          "smiles": "C1=CCC=C1",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "C1=CCC=C1"
+          }
+        },
+        {
+          "id": 1871,
+          "extract_id": 467,
+          "role": "reactant",
+          "smiles": "O=C1C=CC(=O)O1",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "O=C1C=CC(=O)O1"
+          }
+        },
+        {
+          "id": 1872,
+          "extract_id": 467,
+          "role": "product",
+          "smiles": "O=C1OC(=O)[C@H]2[C@@H]1[C@@H]1C=C[C@@H]2C1",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "product",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "O=C1OC(=O)[C@H]2[C@@H]1[C@@H]1C=C[C@@H]2C1"
+          }
+        }
+      ],
+      "suspicion_flags": [
+        "multiple_queryable_core_molecules"
+      ],
+      "recommendation": "inspect_stage_seed"
+    },
+    {
+      "family_name": "Finkelstein Reaction",
+      "rejected_reason": "top1 regression: baseline=1.0000 current=0.9259",
+      "benchmark_top1_after_merge": 0.9259,
+      "benchmark_top3_after_merge": 1.0,
+      "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_048_Finkelstein_Reaction.json",
+      "reaction_extract_ids_from_rejected_json": [
+        512
+      ],
+      "extract_molecule_ids_from_rejected_json": [
+        2066,
+        2067,
+        2068
+      ],
+      "diagnose_changed_case_count": 0,
+      "diagnose_first_changed_case": "",
+      "diagnose_first_changed_top1": "",
+      "diagnose_cluster": "",
+      "canonical_extract_count": 1,
+      "canonical_molecule_count": 3,
+      "stage_extract_count": 1,
+      "stage_molecule_count": 3,
+      "stage_only_extract_ids": [
+        512
+      ],
+      "stage_seed_extracts": [
+        {
+          "id": 512,
+          "scheme_candidate_id": 1,
+          "extract_kind": "canonical_overview",
+          "reactants_text": null,
+          "products_text": null,
+          "intermediates_text": null,
+          "reagents_text": null,
+          "parse_status": "gemini_auto_seed",
+          "promote_decision": "promote",
+          "rejection_reason": null
+        }
+      ],
+      "stage_seed_molecules": [
+        {
+          "id": 2066,
+          "extract_id": 512,
+          "role": "reactant",
+          "smiles": "CCCBr",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCCBr"
+          }
+        },
+        {
+          "id": 2067,
+          "extract_id": 512,
+          "role": "product",
+          "smiles": "CCCI",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "product",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCCI"
+          }
+        },
+        {
+          "id": 2068,
+          "extract_id": 512,
+          "role": "reagent",
+          "smiles": "CC(C)=O",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CC(C)=O"
+          }
+        }
+      ],
+      "suspicion_flags": [],
+      "recommendation": "inspect_stage_seed"
+    },
+    {
+      "family_name": "Fries Rearrangement",
+      "rejected_reason": "top1 regression: baseline=1.0000 current=0.9630",
+      "benchmark_top1_after_merge": 0.963,
+      "benchmark_top3_after_merge": 1.0,
+      "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_052_Fries_Rearrangement.json",
+      "reaction_extract_ids_from_rejected_json": [
+        516
+      ],
+      "extract_molecule_ids_from_rejected_json": [
+        2082,
+        2083,
+        2084,
+        2085
+      ],
+      "diagnose_changed_case_count": 0,
+      "diagnose_first_changed_case": "",
+      "diagnose_first_changed_top1": "",
+      "diagnose_cluster": "",
+      "canonical_extract_count": 1,
+      "canonical_molecule_count": 2,
+      "stage_extract_count": 1,
+      "stage_molecule_count": 4,
+      "stage_only_extract_ids": [
+        516
+      ],
+      "stage_seed_extracts": [
+        {
+          "id": 516,
+          "scheme_candidate_id": 1,
+          "extract_kind": "canonical_overview",
+          "reactants_text": null,
+          "products_text": null,
+          "intermediates_text": null,
+          "reagents_text": null,
+          "parse_status": "gemini_auto_seed",
+          "promote_decision": "promote",
+          "rejection_reason": null
+        }
+      ],
+      "stage_seed_molecules": [
+        {
+          "id": 2082,
+          "extract_id": 516,
+          "role": "reactant",
+          "smiles": "CC(=O)Oc1ccccc1",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CC(=O)Oc1ccccc1"
+          }
+        },
+        {
+          "id": 2083,
+          "extract_id": 516,
+          "role": "product",
+          "smiles": "CC(=O)c1ccc(O)cc1",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "product",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CC(=O)c1ccc(O)cc1"
+          }
+        },
+        {
+          "id": 2084,
+          "extract_id": 516,
+          "role": "product",
+          "smiles": "CC(=O)c1ccccc1O",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "product",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CC(=O)c1ccccc1O"
+          }
+        },
+        {
+          "id": 2085,
+          "extract_id": 516,
+          "role": "reagent",
+          "smiles": "[Cl][Al]([Cl])[Cl]",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "[Cl][Al]([Cl])[Cl]"
+          }
+        }
+      ],
+      "suspicion_flags": [
+        "multiple_queryable_core_molecules"
+      ],
+      "recommendation": "inspect_stage_seed"
+    },
+    {
+      "family_name": "Houben-Hoesch Reaction",
+      "rejected_reason": "top1 regression: baseline=1.0000 current=0.9259",
+      "benchmark_top1_after_merge": 0.9259,
+      "benchmark_top3_after_merge": 1.0,
+      "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_069_Houben-Hoesch_Reaction.json",
+      "reaction_extract_ids_from_rejected_json": [
+        533
+      ],
+      "extract_molecule_ids_from_rejected_json": [
+        2168,
+        2169,
+        2170,
+        2171,
+        2172,
+        2173,
+        2174
+      ],
+      "diagnose_changed_case_count": 0,
+      "diagnose_first_changed_case": "",
+      "diagnose_first_changed_top1": "",
+      "diagnose_cluster": "",
+      "canonical_extract_count": 1,
+      "canonical_molecule_count": 2,
+      "stage_extract_count": 1,
+      "stage_molecule_count": 7,
+      "stage_only_extract_ids": [
+        533
+      ],
+      "stage_seed_extracts": [
+        {
+          "id": 533,
+          "scheme_candidate_id": 1,
+          "extract_kind": "canonical_overview",
+          "reactants_text": null,
+          "products_text": null,
+          "intermediates_text": null,
+          "reagents_text": null,
+          "parse_status": "gemini_auto_seed",
+          "promote_decision": "promote",
+          "rejection_reason": null
+        }
+      ],
+      "stage_seed_molecules": [
+        {
+          "id": 2168,
+          "extract_id": 533,
+          "role": "reactant",
+          "smiles": "Oc1cc(O)cc(O)c1",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "Oc1cc(O)cc(O)c1"
+          }
+        },
+        {
+          "id": 2169,
+          "extract_id": 533,
+          "role": "reactant",
+          "smiles": "CC#N",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CC#N"
+          }
+        },
+        {
+          "id": 2170,
+          "extract_id": 533,
+          "role": "product",
+          "smiles": "CC(=O)c1c(O)cc(O)cc1O",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "product",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CC(=O)c1c(O)cc(O)cc1O"
+          }
+        },
+        {
+          "id": 2171,
+          "extract_id": 533,
+          "role": "reagent",
+          "smiles": "[Cl][Zn][Cl]",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "[Cl][Zn][Cl]"
+          }
+        },
+        {
+          "id": 2172,
+          "extract_id": 533,
+          "role": "reagent",
+          "smiles": "Cl",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "Cl"
+          }
+        },
+        {
+          "id": 2173,
+          "extract_id": 533,
+          "role": "reagent",
+          "smiles": "O",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "O"
+          }
+        },
+        {
+          "id": 2174,
+          "extract_id": 533,
+          "role": "intermediate",
+          "smiles": "CC(=[NH2+])c1c(O)cc(O)cc1O",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "intermediate",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CC(=[NH2+])c1c(O)cc(O)cc1O"
+          }
+        }
+      ],
+      "suspicion_flags": [
+        "explicit_intermediate_species_present",
+        "multiple_queryable_core_molecules"
+      ],
+      "recommendation": "inspect_stage_seed"
+    },
+    {
+      "family_name": "Hunsdiecker Reaction",
+      "rejected_reason": "top1 regression: baseline=1.0000 current=0.9259",
+      "benchmark_top1_after_merge": 0.9259,
+      "benchmark_top3_after_merge": 1.0,
+      "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_070_Hunsdiecker_Reaction.json",
+      "reaction_extract_ids_from_rejected_json": [
+        534
+      ],
+      "extract_molecule_ids_from_rejected_json": [
+        2175,
+        2176,
+        2177,
+        2178
+      ],
+      "diagnose_changed_case_count": 0,
+      "diagnose_first_changed_case": "",
+      "diagnose_first_changed_top1": "",
+      "diagnose_cluster": "",
+      "canonical_extract_count": 1,
+      "canonical_molecule_count": 3,
+      "stage_extract_count": 1,
+      "stage_molecule_count": 4,
+      "stage_only_extract_ids": [
+        534
+      ],
+      "stage_seed_extracts": [
+        {
+          "id": 534,
+          "scheme_candidate_id": 1,
+          "extract_kind": "canonical_overview",
+          "reactants_text": null,
+          "products_text": null,
+          "intermediates_text": null,
+          "reagents_text": null,
+          "parse_status": "gemini_auto_seed",
+          "promote_decision": "promote",
+          "rejection_reason": null
+        }
+      ],
+      "stage_seed_molecules": [
+        {
+          "id": 2175,
+          "extract_id": 534,
+          "role": "reactant",
+          "smiles": "CCCC(=O)[O-]",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "reactant",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCCC(=O)[O-]"
+          }
+        },
+        {
+          "id": 2176,
+          "extract_id": 534,
+          "role": "product",
+          "smiles": "CCCBr",
+          "quality_tier": 1,
+          "queryable": 1,
+          "source_field": "product",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCCBr"
+          }
+        },
+        {
+          "id": 2177,
+          "extract_id": 534,
+          "role": "reagent",
+          "smiles": "BrBr",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "reagent",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "BrBr"
+          }
+        },
+        {
+          "id": 2178,
+          "extract_id": 534,
+          "role": "intermediate",
+          "smiles": "CCCC(=O)OBr",
+          "quality_tier": 1,
+          "queryable": 0,
+          "source_field": "intermediate",
+          "normalized_text": null,
+          "structure_source": "gemini_auto_seed",
+          "rdkit": {
+            "rdkit_available": true,
+            "parse_ok": true,
+            "sanitize_ok": true,
+            "canonical_smiles": "CCCC(=O)OBr"
+          }
+        }
+      ],
+      "suspicion_flags": [],
+      "recommendation": "inspect_stage_seed"
+    }
+  ]
+}

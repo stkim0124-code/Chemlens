@@ -1,0 +1,16 @@
+{
+  "family": "Ritter Reaction",
+  "substrates": [
+    "CC(C)(C)O",
+    "CC#N"
+  ],
+  "products": [
+    "CC(=O)NC(C)(C)C"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This reaction is a classic textbook example of the Ritter reaction, demonstrating the formation of a stable tert-butyl carbocation from tert-butanol under strong acid (sulfuric acid) catalysis. This carbocation is then trapped by a simple nitrile, acetonitrile, which after hydrolysis yields the corresponding N-tert-butylacetamide. All components are simple, acyclic, and clearly illustrate the core transformation of an alcohol and a nitrile into an N-substituted amide.",
+  "collision_avoidance_note": "This example uses simple, acyclic, non-aromatic substrates (tert-butanol and acetonitrile) to avoid overlap with other named reactions. It specifically avoids complex carbocation sources, intramolecular cyclizations, or functional groups that might trigger other reaction family classifications (e.g., Beckmann rearrangement, Friedel-Crafts reactions).",
+  "raw_text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This reaction is a classic textbook example of the Ritter reaction, demonstrating the formation of a stable tert-butyl carbocation from tert-butanol under strong acid (sulfuric acid) catalysis. This carbocation is then trapped by a simple nitrile, acetonitrile, which after hydrolysis yields the corresponding N-tert-butylacetamide. All components are simple, acyclic, and clearly illustrate the core transformation of an alcohol and a nitrile into an N-substituted amide.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic, non-aromatic substrates (tert-butanol and acetonitrile) to avoid overlap with other named reactions. It specifically avoids complex carbocation sources, intramolecular cyclizations, or functional groups that might trigger other reaction family classifications (e.g., Beckmann rearrangement, Friedel-Crafts reactions).\"\n  }\n}"
+}

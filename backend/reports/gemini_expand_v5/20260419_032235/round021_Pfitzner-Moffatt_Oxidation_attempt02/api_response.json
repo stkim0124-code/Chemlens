@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Pfitzner-Moffatt Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"C1CCCCC1N=C=NC1CCCCC1\",\n      \"c1cc[nH+]cc1.O=C(O)C(F)(F)F\"\n    ],\n    \"rationale\": \"This example shows the oxidation of a simple primary alcohol (1-butanol) to the corresponding aldehyde (butanal). This is a classic textbook transformation for the Pfitzner-Moffatt oxidation. The reagents shown are dimethyl sulfoxide (DMSO), dicyclohexylcarbodiimide (DCC), and pyridinium trifluoroacetate, which are the characteristic components of this reaction. The use of a simple, acyclic, saturated substrate avoids potential side reactions and focuses on the core functional group transformation.\",\n    \"collision_avoidance_note\": \"The substrate is a simple primary alcohol, which is the key functional group for this oxidation. The reagents (DMSO, DCC, acid catalyst) are highly specific to this and related activated-DMSO oxidations, distinguishing it from other oxidation methods (e.g., Swern, PCC, Dess-Martin). The lack of aromatic rings, complex scaffolds, or other reactive functional groups minimizes the risk of collision with unrelated named reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 442,
+    "candidatesTokenCount": 336,
+    "totalTokenCount": 866,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 442
+      }
+    ],
+    "thoughtsTokenCount": 88
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "Md7jaYOqAryc0-kPrMicqA0"
+}

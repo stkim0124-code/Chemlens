@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCCC(=O)CC"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "CC(C)(C)[O-].[K+]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to the corresponding alkane (n-hexane). This is a classic textbook example of the Wolff-Kishner reduction, specifically the Huang-Minlon modification which uses a high-boiling solvent (often diethylene glycol, omitted for simplicity) and a strong base like potassium tert-butoxide. The use of a simple, symmetrical ketone avoids any potential side reactions or ambiguity and clearly demonstrates the core transformation of C=O to CH2.",
+  "collision_avoidance_note": "This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation followed by reduction), which could be confused with the Clemmensen reduction. It avoids aldehydes which could undergo aldol-type side reactions under strong base. The acyclic nature prevents confusion with ring-contraction reactions (e.g., Wolff rearrangement). The reagents (hydrazine and a strong base) are specific to this transformation.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[O-]C(C)(C)C.[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to the corresponding alkane (n-hexane). This is a classic textbook example of the Wolff-Kishner reduction, specifically the Huang-Minlon modification which uses a high-boiling solvent (often diethylene glycol, omitted for simplicity) and a strong base like potassium tert-butoxide. The use of a simple, symmetrical ketone avoids any potential side reactions or ambiguity and clearly demonstrates the core transformation of C=O to CH2.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation followed by reduction), which could be confused with the Clemmensen reduction. It avoids aldehydes which could undergo aldol-type side reactions under strong base. The acyclic nature prevents confusion with ring-contraction reactions (e.g., Wolff rearrangement). The reagents (hydrazine and a strong base) are specific to this transformation.\"\n  }\n}"
+}

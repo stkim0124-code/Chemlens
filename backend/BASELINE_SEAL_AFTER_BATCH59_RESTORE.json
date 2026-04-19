@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-04-18T01:22:59",
+  "knowledge_rows_in_patch": 52,
+  "entity_rows_in_patch": 13,
+  "db_results": [
+    {
+      "db": "C:\\chemlens\\backend\\app\\labint.db",
+      "backup": "C:\\chemlens\\backend\\app\\labint.backup_before_batch59_restore_20260418_012259.db",
+      "before": {
+        "manual_page_knowledge": 757,
+        "manual_page_entities": 1849,
+        "p502_553_records": 0
+      },
+      "after": {
+        "manual_page_knowledge": 809,
+        "manual_page_entities": 1862,
+        "p502_553_records": 52,
+        "distinct_pages": 809,
+        "page_range": [
+          2,
+          810
+        ],
+        "queryable": 426,
+        "tier1": 340,
+        "tier2": 86,
+        "tier3": 1373,
+        "queryable_family_coverage": 36,
+        "structure_source_counts": [
+          [
+            "NULL",
+            1517
+          ],
+          [
+            "vision_raw_json_promote",
+            224
+          ],
+          [
+            "pubchem_name_lookup",
+            43
+          ],
+          [
+            "rdkit_direct_parse",
+            15
+          ]
+        ]
+      },
+      "inserted_knowledge": 52,
+      "inserted_entities": 13,
+      "skipped": false
+    },
+    {
+      "db": "C:\\chemlens\\backend\\app\\labint_round9_bridge_work.db",
+      "backup": "C:\\chemlens\\backend\\app\\labint_round9_bridge_work.backup_before_batch59_restore_20260418_012259.db",
+      "before": {
+        "manual_page_knowledge": 757,
+        "manual_page_entities": 1849,
+        "p502_553_records": 0
+      },
+      "after": {
+        "manual_page_knowledge": 809,
+        "manual_page_entities": 1862,
+        "p502_553_records": 52,
+        "distinct_pages": 809,
+        "page_range": [
+          2,
+          810
+        ],
+        "queryable": 144,
+        "tier1": 119,
+        "tier2": 25,
+        "tier3": 344,
+        "queryable_family_coverage": 23,
+        "structure_source_counts": [
+          [
+            "text_only",
+            344
+          ],
+          [
+            "text_smiles",
+            119
+          ],
+          [
+            "text_smarts",
+            25
+          ]
+        ]
+      },
+      "inserted_knowledge": 52,
+      "inserted_entities": 13,
+      "skipped": false
+    }
+  ],
+  "benchmark": {
+    "path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small_results.json",
+    "sha256": "bb9d4afd0e9c5a471fc8b759afabdd270158cefc9ed236864c68267c9fd16efa",
+    "bad_top1_cases": []
+  },
+  "evidence_search_sha256": "2cd81f4d64ab931216fdc94396bf172045d927eb546902589f5b832b9c2838e1"
+}

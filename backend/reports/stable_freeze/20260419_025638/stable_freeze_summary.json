@@ -1,0 +1,63 @@
+{
+  "timestamp": "20260419_025638",
+  "canonical_db": "C:\\chemlens\\backend\\app\\labint.db",
+  "stage_db": "C:\\chemlens\\backend\\app\\labint_v5_stage.db",
+  "canonical_backup": "C:\\chemlens\\backend\\backups\\stable_freeze\\20260419_025638\\labint.stable_20260419_025638.db",
+  "stage_backup": "C:\\chemlens\\backend\\backups\\stable_freeze\\20260419_025638\\labint_v5_stage.stable_20260419_025638.db",
+  "state": {
+    "queryable": 752,
+    "tier1": 859,
+    "tier2": 86,
+    "tier3": 1373,
+    "reaction_extracts": 395,
+    "extract_molecules_total": 2318,
+    "queryable_family_coverage": 156,
+    "total_registry_families": 305,
+    "structure_source_counts": [
+      [
+        "NULL",
+        1517
+      ],
+      [
+        "gemini_auto_seed",
+        466
+      ],
+      [
+        "vision_raw_json_promote",
+        224
+      ],
+      [
+        "pubchem_name_lookup",
+        43
+      ],
+      [
+        "gemini_rebuild_seed",
+        19
+      ],
+      [
+        "manual_curated_seed",
+        17
+      ],
+      [
+        "gemini_salvage_seed",
+        17
+      ],
+      [
+        "rdkit_direct_parse",
+        15
+      ]
+    ]
+  },
+  "benchmark": {
+    "benchmark_name": "CHEMLENS small benchmark v3",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 27,
+    "top1_accuracy": 1.0,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  }
+}

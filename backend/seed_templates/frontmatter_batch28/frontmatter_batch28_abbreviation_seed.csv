@@ -1,0 +1,35 @@
+alias,canonical_name,entity_type
+HNO2,nitrous acid,acid
+NaOAc,sodium acetate,base
+CO2,carbon dioxide,byproduct
+H2O,water,solvent
+KOH,potassium hydroxide,base
+EtOH,ethanol,solvent
+NaNO2,sodium nitrite,nitrosating_agent
+TsOH,p-toluenesulfonic acid,acid
+PivOH,pivalic acid,acid
+TBS,tert-butyldimethylsilyl,protecting_group
+CrO3,chromium trioxide,oxidant
+PCC,pyridinium chlorochromate,oxidant
+PDC,pyridinium dichromate,oxidant
+H2SO4,sulfuric acid,acid
+TiCl4,titanium tetrachloride,Lewis_acid
+DMDO,dimethyldioxirane,oxidant
+Na(Hg),sodium amalgam,reductant
+MeOH,methanol,solvent
+SmI2,samarium diiodide,reductant
+PT-sulfone,1-phenyl-1H-tetrazol-5-yl sulfone,sulfone_reagent
+NaHMDS,sodium hexamethyldisilazide,base
+HMPA,hexamethylphosphoramide,additive
+TFA,trifluoroacetic acid,acid
+TBAF,tetrabutylammonium fluoride,fluoride_source
+THF,tetrahydrofuran,solvent
+NiI2,nickel(II) iodide,additive
+Fe(DBM)3,iron(III) dibenzoylmethanate,catalyst
+RuCl3,ruthenium(III) chloride,catalyst
+NaIO4,sodium periodate,oxidant
+MeCN,acetonitrile,solvent
+CCl4,carbon tetrachloride,solvent
+DCC,dicyclohexylcarbodiimide,coupling_reagent
+DMAP,4-dimethylaminopyridine,catalyst
+LDA,lithium diisopropylamide,base

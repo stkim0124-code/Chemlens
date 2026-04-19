@@ -1,0 +1,12 @@
+{
+  "substrate_smiles": [
+    "CCCCOC(=O)C(C)(C)C(=O)OCCCC"
+  ],
+  "product_smiles": [
+    "CCCCOC(=O)C(C)(C)C"
+  ],
+  "optional_reagent_smiles": [
+    "O",
+    "[Li+].[Cl-]"
+  ]
+}

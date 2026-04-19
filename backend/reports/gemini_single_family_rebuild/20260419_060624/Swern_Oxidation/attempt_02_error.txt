@@ -1,0 +1,7 @@
+HTTP 400: {
+  "error": {
+    "code": 400,
+    "message": "The thinking budget 64 is invalid. Please choose a value between 128 and 32768.",
+    "status": "INVALID_ARGUMENT"
+  }
+}

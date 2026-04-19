@@ -1,0 +1,16 @@
+{
+  "family": "Stille Carbonylative Cross-Coupling",
+  "substrates": [
+    "[CH3][Sn]([CH3])([CH3])[CH3]",
+    "CI"
+  ],
+  "products": [
+    "CC(C)=O"
+  ],
+  "reagents": [
+    "[C-]#[O+]"
+  ],
+  "rationale": "This reaction exemplifies the Stille carbonylative cross-coupling by coupling a simple organostannane (trimethyl(methyl)stannane) with a simple organic halide (iodomethane) in the presence of carbon monoxide to form a simple ketone (acetone). This represents the core transformation of R-Sn + CO + R'-X -> R-C(=O)-R' without introducing complex or potentially confounding structural motifs.",
+  "collision_avoidance_note": "The use of simple, acyclic alkyl groups (methyl) for both the organostannane and the halide avoids overlap with reactions that are defined by aromatic or vinylic substrates (e.g., Suzuki, Heck). The explicit inclusion of carbon monoxide as a reagent and the formation of a ketone are key differentiators. This avoids generic cross-coupling queries and focuses specifically on the carbonylative variant of the Stille reaction.",
+  "raw_text": "{\n  \"family\": \"Stille Carbonylative Cross-Coupling\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C[Sn](C)(C)C\",\n      \"CI\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[C-]#[O+]\"\n    ],\n    \"rationale\": \"This reaction exemplifies the Stille carbonylative cross-coupling by coupling a simple organostannane (trimethyl(methyl)stannane) with a simple organic halide (iodomethane) in the presence of carbon monoxide to form a simple ketone (acetone). This represents the core transformation of R-Sn + CO + R'-X -> R-C(=O)-R' without introducing complex or potentially confounding structural motifs.\",\n    \"collision_avoidance_note\": \"The use of simple, acyclic alkyl groups (methyl) for both the organostannane and the halide avoids overlap with reactions that are defined by aromatic or vinylic substrates (e.g., Suzuki, Heck). The explicit inclusion of carbon monoxide as a reagent and the formation of a ketone are key differentiators. This avoids generic cross-coupling queries and focuses specifically on the carbonylative variant of the Stille reaction.\"\n  }\n}"
+}

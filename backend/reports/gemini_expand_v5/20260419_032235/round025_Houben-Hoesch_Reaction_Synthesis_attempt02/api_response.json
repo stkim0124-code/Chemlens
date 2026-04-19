@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Houben-Hoesch Reaction/Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"COc1cc(OC)cc(OC)c1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1cc(OC)cc(OC)c1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Zn]Cl\",\n      \"Cl\"\n    ],\n    \"rationale\": \"This is a canonical example of the Houben-Hoesch reaction, featuring the acylation of a highly activated, electron-rich aromatic ring (1,3,5-trimethoxybenzene) with a simple nitrile (acetonitrile). The reaction is catalyzed by a Lewis acid (ZnCl2) and HCl, followed by aqueous workup to hydrolyze the intermediate ketimine, yielding the final aryl ketone product. This example clearly illustrates the key transformation: the formation of a C(aryl)-C(acyl) bond from an arene and a nitrile.\",\n    \"collision_avoidance_note\": \"This example uses a simple, highly activated arene (1,3,5-trimethoxybenzene) and a simple nitrile (acetonitrile). It avoids using phenol directly as the substrate, which could be confused with Fries or Kolbe-Schmitt reactions. It also avoids complex structures or other functional groups that might trigger unrelated named reaction classifiers. The core transformation is specific to the nitrile-based acylation of an activated arene, characteristic of the Houben-Hoesch reaction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 369,
+    "candidatesTokenCount": 351,
+    "totalTokenCount": 780,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 369
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "yOHjacHcD-mmvr0P98OH8QY"
+}

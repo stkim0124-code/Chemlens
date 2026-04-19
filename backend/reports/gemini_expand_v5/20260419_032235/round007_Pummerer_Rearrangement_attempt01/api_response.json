@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Pummerer Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CS(=O)C\"\n    ],\n    \"product_smiles\": [\n      \"CS(=O)C(OC(C)=O)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CC(=O)OC(=O)C\"\n    ],\n    \"rationale\": \"This is the classic and simplest example of the Pummerer rearrangement, using dimethyl sulfoxide (DMSO) as the substrate and acetic anhydride as the activating agent. The reaction proceeds via an acylsulfonium ylide intermediate, which rearranges to form an electrophilic thionium ion. This cation is then trapped by the acetate nucleophile to yield the characteristic \\u03b1-acyloxy sulfide product. This example clearly illustrates the core transformation of a sulfoxide to an \\u03b1-functionalized sulfide, which is the hallmark of the Pummerer rearrangement.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic, aliphatic structures (DMSO and acetic anhydride) to avoid overlap with reactions involving aromatic rings, complex ring systems, or other reactive functional groups. It specifically avoids motifs common in other named reactions like arenes (Friedel-Crafts), diazo compounds (Wolff rearrangement), or complex rearrangements (Beckmann, Pinacol), ensuring the query is specific to the Pummerer rearrangement's core sulfoxide activation chemistry.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 457,
+    "candidatesTokenCount": 330,
+    "totalTokenCount": 870,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 457
+      }
+    ],
+    "thoughtsTokenCount": 83
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "GNDjaYiIAbfP2roP8ajG2QQ"
+}

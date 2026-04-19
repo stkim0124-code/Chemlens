@@ -1,0 +1,43 @@
+{
+  "mode": "dry-run",
+  "selective_summary": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\selective_merge_summary.json",
+  "rejected_candidates_loaded": [
+    "Claisen Condensation / Claisen Reaction",
+    "Diels-Alder Cycloaddition",
+    "Enyne Metathesis",
+    "Finkelstein Reaction",
+    "Fries Rearrangement",
+    "Hofmann-Loffler-Freytag Reaction",
+    "Horner-Wadsworth-Emmons Olefination",
+    "Houben-Hoesch Reaction",
+    "Hunsdiecker Reaction",
+    "Krapcho Dealkoxycarbonylation",
+    "Michael Addition Reaction",
+    "Mitsunobu Reaction",
+    "Regitz Diazo Transfer"
+  ],
+  "accepted": [],
+  "still_rejected": [],
+  "missing_in_stage": [],
+  "before": {
+    "queryable": 712,
+    "tier1": 626,
+    "tier2": 86,
+    "family_coverage": 143,
+    "reaction_extracts": 382,
+    "extract_molecules_total": 2276,
+    "reaction_family_patterns": 305,
+    "gemini_like_rows": 460
+  },
+  "after": {
+    "queryable": 712,
+    "tier1": 626,
+    "tier2": 86,
+    "family_coverage": 143,
+    "reaction_extracts": 382,
+    "extract_molecules_total": 2276,
+    "reaction_family_patterns": 305,
+    "gemini_like_rows": 460
+  },
+  "backup": null
+}

@@ -1,0 +1,15 @@
+Generate exactly one benchmark-safe canonical example for the named reaction family 'Hofmann-Loffler-Freytag Reaction'.
+Cluster risk: barton ; forbid signals: decarboxylation, deoxygenation.
+Current rejected stage seed to avoid copying:
+- role=reactant smiles=CCCCN(C)Cl
+- role=product smiles=CN1CCCC1
+Goal: Propose a textbook HLF intramolecular C-H amination example from a simple N-haloamine to a cyclic amine. Avoid carboxylates, decarboxylation, deoxygenation, thioesters, or Barton-like radical precursors.
+Rules:
+- keep it textbook and minimal
+- avoid the forbidden signals above
+- do not repeat the current rejected stage topology
+- provide valid organic SMILES only; no catalyst metals in SMILES unless absolutely necessary
+- keep reagent list short or empty if not essential
+Return a structurally different topology than any prior attempt. Avoid repeating the same substrate skeleton.
+Return JSON only with this schema:
+{"substrate_smiles":["..."],"product_smiles":["..."],"optional_reagent_smiles":["..."]}

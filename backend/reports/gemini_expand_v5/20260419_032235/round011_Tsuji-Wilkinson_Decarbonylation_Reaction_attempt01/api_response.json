@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=CCCCCCCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh](P(c1ccccc1)(c1ccccc1)c1ccccc1)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This example shows the decarbonylation of a simple, long-chain aliphatic aldehyde (nonanal) to the corresponding alkane (octane) using Wilkinson's catalyst. This is a classic textbook illustration of the Tsuji-Wilkinson reaction, demonstrating the conversion of an aldehyde functional group to a C-H bond with the loss of carbon monoxide. The acyclic, saturated substrate is chosen for its simplicity and to avoid ambiguity with other named reactions involving aromatic rings or more complex functional groups.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde, avoiding aromatic rings (which could trigger reactions like Friedel-Crafts acylation/deacylation), unsaturation (which could suggest hydroformylation or hydrogenation), or other reactive functional groups. This focuses squarely on the decarbonylation of an aldehyde, which is the core transformation of this named reaction, minimizing potential overlap with other reaction families.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 440,
+    "candidatesTokenCount": 331,
+    "totalTokenCount": 871,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 440
+      }
+    ],
+    "thoughtsTokenCount": 100
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "itPjaZL_KNOT1e8PuumyyQQ"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[O-]C(C)(C)C.[K+]\"\n    ],\n    \"rationale\": \"This is a classic, simple, and acyclic example of the Wolff-Kishner reduction. It uses a simple dialkyl ketone, 3-pentanone, which is reduced to the corresponding alkane, n-pentane. The reagents, hydrazine (NN) and potassium tert-butoxide ([O-]C(C)(C)C.[K+]), are standard for this transformation. The structure is minimal and clearly demonstrates the conversion of a C=O group to a CH2 group without introducing any other reactive functional groups or complex ring systems.\",\n    \"collision_avoidance_note\": \"This example uses a simple, acyclic dialkyl ketone to avoid overlap with other named reactions. It avoids arenes (which could trigger Friedel-Crafts or other aromatic chemistry), alpha,beta-unsaturated systems (to avoid confusion with conjugate reductions like the Michael addition), and other functional groups. The focus is purely on the C=O to CH2 conversion, which is the core of the Wolff-Kishner reduction, distinguishing it from acidic reductions like the Clemmensen reduction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 447,
+    "candidatesTokenCount": 330,
+    "totalTokenCount": 858,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 447
+      }
+    ],
+    "thoughtsTokenCount": 81
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "ZtbjadbcF8HM2roPi6u4yQc"
+}

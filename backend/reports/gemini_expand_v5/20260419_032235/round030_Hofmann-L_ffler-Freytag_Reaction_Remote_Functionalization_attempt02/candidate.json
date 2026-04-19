@@ -1,0 +1,15 @@
+{
+  "family": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+  "substrates": [
+    "CCCCN(C)Cl"
+  ],
+  "products": [
+    "CN1CCCC1"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutan-1-amine, upon treatment with acid (like sulfuric acid) and then heat or light, undergoes a 1,5-hydrogen atom transfer from the delta-carbon to the nitrogen radical. The resulting carbon radical then abstracts the chlorine atom, forming a delta-chloroamine. Subsequent intramolecular nucleophilic substitution upon treatment with base yields the final product, N-methylpyrrolidine. This example clearly demonstrates the key steps: N-halogenation, radical-mediated remote C-H functionalization (1,5-HAT), and intramolecular cyclization to form a five-membered ring.",
+  "collision_avoidance_note": "The core transformation is the formation of a pyrrolidine ring from an acyclic N-haloamine via a radical C-H abstraction. This specific intramolecular C-N bond formation via a 1,5-hydrogen atom transfer is characteristic and avoids collision with other named reactions. The substrate is a simple acyclic alkylamine derivative, avoiding complex scaffolds, arenes, or other reactive functional groups that could trigger unrelated reaction classifiers.",
+  "raw_text": "{\n  \"family\": \"Hofmann-L\\u00f6ffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCCN1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-L\\u00f6ffler-Freytag reaction. N-chloro-N-methylbutan-1-amine, upon treatment with acid (like sulfuric acid) and then heat or light, undergoes a 1,5-hydrogen atom transfer from the delta-carbon to the nitrogen radical. The resulting carbon radical then abstracts the chlorine atom, forming a delta-chloroamine. Subsequent intramolecular nucleophilic substitution upon treatment with base yields the final product, N-methylpyrrolidine. This example clearly demonstrates the key steps: N-halogenation, radical-mediated remote C-H functionalization (1,5-HAT), and intramolecular cyclization to form a five-membered ring.\",\n    \"collision_avoidance_note\": \"The core transformation is the formation of a pyrrolidine ring from an acyclic N-haloamine via a radical C-H abstraction. This specific intramolecular C-N bond formation via a 1,5-hydrogen atom transfer is characteristic and avoids collision with other named reactions. The substrate is a simple acyclic alkylamine derivative, avoiding complex scaffolds, arenes, or other reactive functional groups that could trigger unrelated reaction classifiers.\"\n  }\n}"
+}

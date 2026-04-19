@@ -1,0 +1,16 @@
+{
+  "family": "Ritter Reaction",
+  "substrates": [
+    "CC(C)(C)O",
+    "CC#N"
+  ],
+  "products": [
+    "CC(=O)NC(C)(C)C"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This is a classic and widely cited textbook example of the Ritter reaction, demonstrating the formation of a stable tert-butyl carbocation from tert-butanol under strong acid catalysis, followed by trapping with acetonitrile and subsequent hydrolysis to form N-tert-butylacetamide. The reactants are simple, acyclic, and clearly illustrate the core transformation: an alcohol (carbocation precursor) and a nitrile react to form a secondary N-alkyl amide.",
+  "collision_avoidance_note": "This example uses simple, acyclic, saturated alkyl groups (tert-butyl and methyl) to avoid overlap with reactions involving aromatic rings, unsaturation, or complex functional groups. The use of tert-butanol as the carbocation source is specific and less likely to be confused with other named reactions involving alcohols or nitriles under different conditions. The product is a simple N-alkyl amide, avoiding motifs common in other named reactions like rearrangements or cyclizations.",
+  "raw_text": "```json\n{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is a classic and widely cited textbook example of the Ritter reaction, demonstrating the formation of a stable tert-butyl carbocation from tert-butanol under strong acid catalysis, followed by trapping with acetonitrile and subsequent hydrolysis to form N-tert-butylacetamide. The reactants are simple, acyclic, and clearly illustrate the core transformation: an alcohol (carbocation precursor) and a nitrile react to form a secondary N-alkyl amide.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic, saturated alkyl groups (tert-butyl and methyl) to avoid overlap with reactions involving aromatic rings, unsaturation, or complex functional groups. The use of tert-butanol as the carbocation source is specific and less likely to be confused with other named reactions involving alcohols or nitriles under different conditions. The product is a simple N-alkyl amide, avoiding motifs common in other named reactions like rearrangements or cyclizations.\"\n  }\n}\n```"
+}

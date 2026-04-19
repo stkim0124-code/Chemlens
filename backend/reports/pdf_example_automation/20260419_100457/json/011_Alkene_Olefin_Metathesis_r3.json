@@ -1,0 +1,29 @@
+{
+  "family_name": "Alkene (Olefin) Metathesis",
+  "region_confidence": 0.95,
+  "example_target_name": "(+)-prelaureatin",
+  "example_summary": "The first enantioselective total synthesis of (+)-prelaureatin was achieved by M.T. Crimmins et al. The oxocene core of the natural product was constructed in high yield by a RCM reaction using the first generation Grubbs catalyst.",
+  "extracts": [
+    {
+      "extract_kind": "application_example",
+      "reaction_family_name": "Alkene (Olefin) Metathesis",
+      "transformation_text": "RCM reaction",
+      "reactants_text": null,
+      "products_text": null,
+      "intermediates_text": null,
+      "reagents_text": null,
+      "catalysts_text": "first generation Grubbs catalyst",
+      "solvents_text": "DCM",
+      "temperature_text": null,
+      "time_text": null,
+      "yield_text": "95%",
+      "workup_text": null,
+      "conditions_text": "DCM (0.005M)",
+      "notes_text": "The oxocene core of the natural product was constructed in high yield by a RCM reaction using the first generation Grubbs catalyst.",
+      "reactant_smiles": "C=CCC[C@H](O[Si](C)(C)C(C)(C)C)[C@@H](CO[Si](C)(C)C(C)(C)C)O[C@H](CC=C)COCc1ccccc1",
+      "product_smiles": "c1ccccc1CO[C@H]2C/C=C\\C[C@H](O[Si](C)(C)C(C)(C)C)[C@@H](CO[Si](C)(C)C(C)(C)C)O2",
+      "smiles_confidence": 0.9,
+      "extraction_confidence": 0.95
+    }
+  ]
+}

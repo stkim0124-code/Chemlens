@@ -1,0 +1,16 @@
+{
+  "family": "Simmons-Smith Cyclopropanation",
+  "substrates": [
+    "C/C=C/C"
+  ],
+  "products": [
+    "C[C@@H]1C[C@H]1C"
+  ],
+  "reagents": [
+    "ICI",
+    "[Zn]"
+  ],
+  "rationale": "This is a classic textbook example of the Simmons-Smith cyclopropanation. It uses a simple, acyclic alkene, (E)-but-2-ene, to demonstrate the stereospecific nature of the reaction. The concerted addition of the methylene group from the zinc carbenoid (formed from diiodomethane and zinc) to the trans-alkene results in the formation of the trans-dimethylcyclopropane product. This example is simple, RDKit-parseable, and clearly illustrates the core transformation without introducing confounding functional groups.",
+  "collision_avoidance_note": "The substrate is a simple acyclic alkene, avoiding complex ring systems, arenes, or other reactive functional groups that could trigger unrelated named reaction queries (e.g., Diels-Alder, Friedel-Crafts). The reagents are specific to the Simmons-Smith reaction (diiodomethane and zinc), distinguishing it from other cyclopropanation methods like those involving diazo compounds (e.g., Buchner ring expansion) or other carbenoids.",
+  "raw_text": "{\n  \"family\": \"Simmons-Smith Cyclopropanation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C/C=C/C\"\n    ],\n    \"product_smiles\": [\n      \"C[C@H]1[C@H](C)C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"I[CH2]I\",\n      \"[Zn]\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Simmons-Smith cyclopropanation. It uses a simple, acyclic alkene, (E)-but-2-ene, to demonstrate the stereospecific nature of the reaction. The concerted addition of the methylene group from the zinc carbenoid (formed from diiodomethane and zinc) to the trans-alkene results in the formation of the trans-dimethylcyclopropane product. This example is simple, RDKit-parseable, and clearly illustrates the core transformation without introducing confounding functional groups.\",\n    \"collision_avoidance_note\": \"The substrate is a simple acyclic alkene, avoiding complex ring systems, arenes, or other reactive functional groups that could trigger unrelated named reaction queries (e.g., Diels-Alder, Friedel-Crafts). The reagents are specific to the Simmons-Smith reaction (diiodomethane and zinc), distinguishing it from other cyclopropanation methods like those involving diazo compounds (e.g., Buchner ring expansion) or other carbenoids.\"\n  }\n}"
+}

@@ -1,0 +1,10 @@
+{
+  "family": "Pfitzner-Moffatt Oxidation",
+  "family_norm": "pfitzner-moffatt oxidation",
+  "prompt_version": "pfitzner_moffatt_round1",
+  "source_tag": "gemini_rebuild_pfitzner_moffatt_round1",
+  "transformation_text": "alcohol oxidation to carbonyl under Pfitzner-Moffatt conditions",
+  "reagents_text": "DMSO, DCC, acid promoter",
+  "conditions_text": "mild oxidation conditions",
+  "prompt": "You are generating exactly ONE benchmark-safe canonical example for the named reaction family \"Pfitzner-Moffatt Oxidation\".\n\nGoal:\nCreate a very clear alcohol-to-carbonyl oxidation example that represents Pfitzner-Moffatt oxidation, while avoiding parser problems and avoiding broad generic single-smiles hijack.\n\nHard constraints:\n- Return exactly ONE candidate only.\n- Use only parse-safe substrate/product SMILES.\n- Do NOT encode DMSO, DCC, protonated pyridinium species, TFA salts, or any ionic reagent as SMILES.\n- Put all reagent and condition information in plain text fields only.\n- Prefer a simple but not trivial primary or secondary alcohol oxidation.\n- Make the substrate/product pair specific enough that it does not look like a hyper-generic oxidation seed.\n- Avoid stage-seed copying.\n- Avoid aromatic cationic reagent SMILES entirely.\n- JSON only.\n\nReturn JSON in this exact schema:\n{\n  \"family\": \"Pfitzner-Moffatt Oxidation\",\n  \"candidate\": {\n    \"candidate_id\": \"C1\",\n    \"substrate_smiles\": [\"...\"],\n    \"product_smiles\": [\"...\"],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"...\",\n    \"collision_avoidance_note\": \"...\",\n    \"reagents_text\": \"DMSO, DCC, acid promoter\",\n    \"conditions_text\": \"mild oxidation conditions\"\n  }\n}"
+}

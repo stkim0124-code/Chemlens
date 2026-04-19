@@ -1,0 +1,16 @@
+{
+  "family": "Retro-Claisen Reaction",
+  "substrates": [
+    "CCOC(=O)C(C)C(=O)CC"
+  ],
+  "products": [
+    "CCC(C)=O",
+    "CCOC(C)=O"
+  ],
+  "reagents": [
+    "[Na+].[OH-]"
+  ],
+  "rationale": "This reaction shows the base-catalyzed cleavage of ethyl 2-methyl-3-oxopentanoate, a classic beta-keto ester substrate. The strong base (sodium hydroxide) attacks the ketone carbonyl, leading to the cleavage of the C-C bond between the alpha and beta carbons, ultimately forming butan-2-one and ethyl acetate. This is a simple, acyclic, and unambiguous example of the retro-Claisen reaction.",
+  "collision_avoidance_note": "The chosen substrate is a simple acyclic beta-keto ester, avoiding complex ring systems or additional functional groups that could trigger other named reaction classifiers. The reagents are a simple strong base, characteristic of this reaction, and distinct from reagents used in reductions, oxidations, or organometallic additions. The transformation is a clear C-C bond cleavage, distinguishing it from condensation reactions like the forward Claisen condensation.",
+  "raw_text": "{\n  \"family\": \"Retro-Claisen Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)C(C)C(=O)OCC\"\n    ],\n    \"product_smiles\": [\n      \"CCC(=O)C\",\n      \"CC(=O)OCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[OH-].[Na+]\"\n    ],\n    \"rationale\": \"This reaction shows the base-catalyzed cleavage of ethyl 2-methyl-3-oxopentanoate, a classic beta-keto ester substrate. The strong base (sodium hydroxide) attacks the ketone carbonyl, leading to the cleavage of the C-C bond between the alpha and beta carbons, ultimately forming butan-2-one and ethyl acetate. This is a simple, acyclic, and unambiguous example of the retro-Claisen reaction.\",\n    \"collision_avoidance_note\": \"The chosen substrate is a simple acyclic beta-keto ester, avoiding complex ring systems or additional functional groups that could trigger other named reaction classifiers. The reagents are a simple strong base, characteristic of this reaction, and distinct from reagents used in reductions, oxidations, or organometallic additions. The transformation is a clear C-C bond cleavage, distinguishing it from condensation reactions like the forward Claisen condensation.\"\n  }\n}"
+}

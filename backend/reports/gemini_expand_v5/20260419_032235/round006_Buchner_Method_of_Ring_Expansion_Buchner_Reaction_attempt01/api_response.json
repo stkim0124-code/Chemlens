@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Buchner Method of Ring Expansion (Buchner Reaction)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C1=CC=CC=C1\",\n      \"O=C(OC)C=[N+]=[N-]\"\n    ],\n    \"product_smiles\": [\n      \"COC(=O)C1=CC=CC=C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Cu]\"\n    ],\n    \"rationale\": \"This reaction shows the archetypal Buchner reaction: the expansion of a benzene ring to a cycloheptatriene derivative using a diazo compound. Benzene is the simplest aromatic substrate, and methyl diazoacetate is a common and simple diazo reagent used for this transformation. The product, methyl cyclohepta-1,3,5-triene-7-carboxylate, is the direct result of carbene addition to the aromatic ring followed by rearrangement. A copper catalyst is typically used.\",\n    \"collision_avoidance_note\": \"The use of benzene as the aromatic substrate and methyl diazoacetate as the diazo component provides a specific and simple example. This avoids overly complex or functionalized aromatic systems that might trigger other named reactions. The core transformation, C6H6 -> C7H8, is highly characteristic of the Buchner reaction, minimizing overlap with other ring expansion methods that typically involve different substrates or mechanisms (e.g., Tiffeneau-Demjanov, Baeyer-Villiger).\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 374,
+    "candidatesTokenCount": 335,
+    "totalTokenCount": 794,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 374
+      }
+    ],
+    "thoughtsTokenCount": 85
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "Fs_jafzgA8Dm1e8PkKKWsQQ"
+}

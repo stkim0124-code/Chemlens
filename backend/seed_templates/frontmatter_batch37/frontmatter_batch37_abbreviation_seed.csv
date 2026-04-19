@@ -1,0 +1,16 @@
+alias,canonical_name,entity_type
+Co2(CO)8,dicobalt octacarbonyl,organometallic_reagent
+BF3·OEt2,boron trifluoride etherate,Lewis_acid
+CAN,ceric ammonium nitrate,oxidant
+NMO,N-methylmorpholine N-oxide,oxidant
+TMANO,trimethylamine N-oxide,oxidant
+TBAF,tetrabutylammonium fluoride,fluoride_source
+BINAP-Ru catalyst,BINAP-ruthenium catalyst,chiral_catalyst
+H2,hydrogen gas,reductant
+HCO2H/NEt3,formic acid / triethylamine,transfer_hydrogenation_system
+CrCl2,chromium(II) chloride,metal_reductant
+NiCl2,nickel(II) chloride,metal_catalyst
+DMF,"N,N-dimethylformamide",solvent
+DMP,Dess-Martin periodinane,oxidant
+LiBH4,lithium borohydride,reducing_agent
+NHK reaction,Nozaki-Hiyama-Kishi Reaction,reaction_alias

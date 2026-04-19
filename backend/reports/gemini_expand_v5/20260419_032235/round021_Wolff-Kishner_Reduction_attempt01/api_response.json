@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic ketone (3-pentanone) to its corresponding alkane (n-pentane) using hydrazine and potassium hydroxide, which are the classic reagents for the Wolff-Kishner reduction. The substrate is symmetrical and lacks other functional groups, making it a clear and unambiguous example of the transformation. It avoids aromatic rings and other complex features, focusing solely on the core C=O to CH2 conversion.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/alkylation) or other reducible groups. It is distinct from the Clemmensen reduction, which uses acidic conditions (Zn(Hg), HCl) and is often used for acid-stable substrates. The choice of a simple ketone avoids potential side reactions or ambiguities with ester reductions (e.g., Bouveault-Blanc) or other deoxygenation methods.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 447,
+    "candidatesTokenCount": 303,
+    "totalTokenCount": 832,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 447
+      }
+    ],
+    "thoughtsTokenCount": 82
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "st7jafKjNMq01e8PqJjXwA8"
+}

@@ -1,0 +1,17 @@
+{
+  "family": "Swern Oxidation",
+  "substrates": [
+    "CCCCO"
+  ],
+  "products": [
+    "CCCC=O"
+  ],
+  "reagents": [
+    "CS(C)=O",
+    "O=C(Cl)C(=O)Cl",
+    "CCN(CC)CC"
+  ],
+  "rationale": "The oxidation of a simple primary alcohol, 1-butanol, to the corresponding aldehyde, butanal, is a classic and straightforward textbook example of the Swern oxidation. It clearly demonstrates the transformation of a primary alcohol to an aldehyde without over-oxidation to a carboxylic acid, which is a key feature of this reaction. The reactants and product are simple, acyclic, and lack complex functional groups, making it an ideal canonical representation.",
+  "collision_avoidance_note": "This example uses a simple aliphatic primary alcohol. It avoids using secondary alcohols that could be oxidized by many other reagents (e.g., Jones, PCC), and avoids complex structures like benzylic or allylic alcohols which are reactive in many other named reactions. The choice of a simple, non-conjugated substrate helps isolate the specific transformation characteristic of the Swern oxidation.",
+  "raw_text": "{\n  \"family\": \"Swern Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"O=C(Cl)C(=O)Cl\",\n      \"CCN(CC)CC\"\n    ],\n    \"rationale\": \"The oxidation of a simple primary alcohol, 1-butanol, to the corresponding aldehyde, butanal, is a classic and straightforward textbook example of the Swern oxidation. It clearly demonstrates the transformation of a primary alcohol to an aldehyde without over-oxidation to a carboxylic acid, which is a key feature of this reaction. The reactants and product are simple, acyclic, and lack complex functional groups, making it an ideal canonical representation.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic primary alcohol. It avoids using secondary alcohols that could be oxidized by many other reagents (e.g., Jones, PCC), and avoids complex structures like benzylic or allylic alcohols which are reactive in many other named reactions. The choice of a simple, non-conjugated substrate helps isolate the specific transformation characteristic of the Swern oxidation.\"\n  }\n}"
+}

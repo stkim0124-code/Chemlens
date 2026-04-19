@@ -1,0 +1,17 @@
+{
+  "family": "Still-Gennari Modification",
+  "substrates": [
+    "CCC=O",
+    "COC(=O)CP(=O)(OCC(F)(F)F)OCC(F)(F)F"
+  ],
+  "products": [
+    "CC/C=C\\C(=O)OC"
+  ],
+  "reagents": [
+    "C1COCCOOCCOCCO1",
+    "C[Si](C)(C)N[Si](C)(C)C.[K+]"
+  ],
+  "rationale": "This reaction shows the Z-selective olefination of a simple aliphatic aldehyde (propanal) with a bis(2,2,2-trifluoroethyl) phosphonate ester, which is the hallmark of the Still-Gennari modification. The use of KHMDS as the base and 18-crown-6 as the additive is standard protocol for this transformation, leading to the formation of the (Z)-alpha,beta-unsaturated ester. The reactants and product are simple, acyclic, and clearly illustrate the stereochemical outcome and functional group transformation characteristic of this named reaction.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic aldehyde, avoiding aromatic rings that could trigger other named reactions (e.g., Wittig, Perkin). The phosphonate is the specific bis(trifluoroethyl) type, distinguishing it from the standard Horner-Wadsworth-Emmons reaction which typically uses less electron-withdrawing phosphonates (like diethyl) and often gives E-selectivity. The product is a simple Z-alkene, avoiding complex structures or other reactive functional groups.",
+  "raw_text": "{\n  \"family\": \"Still-Gennari Modification\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC=O\",\n      \"O=P(OCC(F)(F)F)(OCC(F)(F)F)CC(=O)OC\"\n    ],\n    \"product_smiles\": [\n      \"CC/C=C\\\\C(=O)OC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O1CCOCCOCCOCCO1\",\n      \"N([Si](C)(C)C)[Si](C)(C)C.[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the Z-selective olefination of a simple aliphatic aldehyde (propanal) with a bis(2,2,2-trifluoroethyl) phosphonate ester, which is the hallmark of the Still-Gennari modification. The use of KHMDS as the base and 18-crown-6 as the additive is standard protocol for this transformation, leading to the formation of the (Z)-alpha,beta-unsaturated ester. The reactants and product are simple, acyclic, and clearly illustrate the stereochemical outcome and functional group transformation characteristic of this named reaction.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde, avoiding aromatic rings that could trigger other named reactions (e.g., Wittig, Perkin). The phosphonate is the specific bis(trifluoroethyl) type, distinguishing it from the standard Horner-Wadsworth-Emmons reaction which typically uses less electron-withdrawing phosphonates (like diethyl) and often gives E-selectivity. The product is a simple Z-alkene, avoiding complex structures or other reactive functional groups.\"\n  }\n}"
+}

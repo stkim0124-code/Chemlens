@@ -1,0 +1,15 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "substrates": [
+    "CCCCCCC=O"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "[Cl][Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1"
+  ],
+  "rationale": "This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, showing the conversion of a simple aliphatic aldehyde (heptanal) to its corresponding alkane (hexane) using Wilkinson's catalyst. The reaction is stoichiometric with respect to the rhodium complex, which is consumed to form Rh(CO)Cl(PPh3)2. The use of a simple, acyclic, saturated aldehyde avoids potential side reactions or ambiguities with other named reactions involving aromatic rings, unsaturation, or complex functional groups.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic aldehyde to avoid overlap with reactions involving aromatic aldehydes (e.g., some condensations or reductions) or acyl halides (e.g., Rosenmund reduction). The product is a simple alkane, minimizing collision with functional group interconversion benchmarks. The explicit use of Wilkinson's catalyst as a reagent helps to specifically target this named reaction.",
+  "raw_text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, showing the conversion of a simple aliphatic aldehyde (heptanal) to its corresponding alkane (hexane) using Wilkinson's catalyst. The reaction is stoichiometric with respect to the rhodium complex, which is consumed to form Rh(CO)Cl(PPh3)2. The use of a simple, acyclic, saturated aldehyde avoids potential side reactions or ambiguities with other named reactions involving aromatic rings, unsaturation, or complex functional groups.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde to avoid overlap with reactions involving aromatic aldehydes (e.g., some condensations or reductions) or acyl halides (e.g., Rosenmund reduction). The product is a simple alkane, minimizing collision with functional group interconversion benchmarks. The explicit use of Wilkinson's catalyst as a reagent helps to specifically target this named reaction.\"\n  }\n}"
+}

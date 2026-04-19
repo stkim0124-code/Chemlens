@@ -1,0 +1,16 @@
+{
+  "family": "Schwartz Hydrozirconation",
+  "substrates": [
+    "C#CCCCCCCCCC"
+  ],
+  "products": [
+    "CCCCCCCCCC=CI"
+  ],
+  "reagents": [
+    "[Cl-].[Zr+4].c1cc[cH-]c1.c1cc[cH-]c1",
+    "I"
+  ],
+  "rationale": "This example shows the hydrozirconation of a terminal alkyne (1-dodecyne) with Schwartz's reagent (Cp2ZrHCl), followed by quenching of the resulting vinylzirconocene intermediate with iodine to yield the corresponding vinyl iodide. This is a classic textbook transformation demonstrating the syn-addition of H-Zr across the triple bond and the subsequent functionalization of the organozirconium species, a hallmark of the Schwartz reaction's utility.",
+  "collision_avoidance_note": "The reaction uses a simple, long-chain alkyne to avoid aromatic rings or other functional groups that could trigger unrelated named reaction queries. The two-step sequence (hydrozirconation then iodination) is explicitly shown to highlight the formation and trapping of the key organozirconium intermediate, which is central to this reaction family. The product is a simple vinyl iodide, a common outcome that is less likely to overlap with complex rearrangement or cyclization reactions.",
+  "raw_text": "{\n  \"family\": \"Schwartz Hydrozirconation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCCCCC#C\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCCCCCC=CI\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[cH-]1cccc1.[cH-]1cccc1.[Cl-].[Zr+4]\",\n      \"I\"\n    ],\n    \"rationale\": \"This example shows the hydrozirconation of a terminal alkyne (1-dodecyne) with Schwartz's reagent (Cp2ZrHCl), followed by quenching of the resulting vinylzirconocene intermediate with iodine to yield the corresponding vinyl iodide. This is a classic textbook transformation demonstrating the syn-addition of H-Zr across the triple bond and the subsequent functionalization of the organozirconium species, a hallmark of the Schwartz reaction's utility.\",\n    \"collision_avoidance_note\": \"The reaction uses a simple, long-chain alkyne to avoid aromatic rings or other functional groups that could trigger unrelated named reaction queries. The two-step sequence (hydrozirconation then iodination) is explicitly shown to highlight the formation and trapping of the key organozirconium intermediate, which is central to this reaction family. The product is a simple vinyl iodide, a common outcome that is less likely to overlap with complex rearrangement or cyclization reactions.\"\n  }\n}"
+}

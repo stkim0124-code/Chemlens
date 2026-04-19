@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wagner-Meerwein Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)C(C)O\"\n    ],\n    \"product_smiles\": [\n      \"CC(C)(Cl)C(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction is a classic textbook example of the Wagner-Meerwein rearrangement. The substrate, 3,3-dimethyl-2-butanol, is protonated by an acid (represented here by HCl, with Cl- as the nucleophile). Loss of water generates a secondary carbocation. A 1,2-methyl shift (a Wagner-Meerwein rearrangement) occurs to form a more stable tertiary carbocation. Finally, nucleophilic attack by the chloride ion yields the rearranged product, 2-chloro-2,3-dimethylbutane. This example clearly demonstrates the core concept of a 1,2-alkyl shift to a more stable carbocation intermediate.\",\n    \"collision_avoidance_note\": \"This example uses a simple, acyclic, saturated alcohol substrate and a simple acid. It avoids complex ring systems (like camphene or pinacol), arenes, or other functional groups that could cause collisions with other named reactions such as the Pinacol rearrangement, Friedel-Crafts alkylation, or various ring expansion/contraction reactions. The focus is purely on the skeletal reorganization via a 1,2-alkyl shift.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 429,
+    "candidatesTokenCount": 339,
+    "totalTokenCount": 841,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 429
+      }
+    ],
+    "thoughtsTokenCount": 73
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "Z87jaefrF5a20-kPoN7KoA4"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to the corresponding alkane (hexane) using Wilkinson's catalyst (RhCl(PPh3)3). This is a classic textbook example that clearly illustrates the core transformation of R-CHO to R-H, which is the hallmark of the Tsuji-Wilkinson decarbonylation.\",\n    \"collision_avoidance_note\": \"The use of a simple, saturated, acyclic aldehyde avoids overlap with reactions involving aromatic aldehydes (which could be confused with various condensation or coupling reactions) or acyl halides (which could be confused with Rosenmund reduction). The transformation is a specific deformylation, distinct from general decarboxylation (R-COOH -> R-H) or deoxygenation (e.g., Wolff-Kishner, Clemmensen).\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 440,
+    "candidatesTokenCount": 319,
+    "totalTokenCount": 824,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 440
+      }
+    ],
+    "thoughtsTokenCount": 65
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "4drjacWYEdeh2roPltW-qAM"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Pfitzner-Moffatt Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"C1CCN(CC1)C(=N)C2CCCCN2\",\n      \"C1=CC=NC=C1.O=S(=O)(O)C(F)(F)F\"\n    ],\n    \"rationale\": \"This example shows the oxidation of a simple primary alcohol (1-pentanol) to the corresponding aldehyde (pentanal). This is a classic textbook transformation for the Pfitzner-Moffatt oxidation. The reagents selected are dimethyl sulfoxide (DMSO), N,N'-dicyclohexylcarbodiimide (DCC), and pyridinium trifluoroacetate as the mild acid catalyst, which are the defining components of this reaction. The acyclic, unfunctionalized substrate avoids potential side reactions and focuses on the core transformation.\",\n    \"collision_avoidance_note\": \"The use of a simple aliphatic alcohol and the specific combination of DMSO, a carbodiimide (DCC), and a mild acid catalyst is characteristic of the Pfitzner-Moffatt oxidation. This avoids overlap with other named oxidations like the Swern (which uses oxalyl chloride/TFAA), Parikh-Doering (SO3-pyridine), or Corey-Kim (NCS/DMS) oxidations, which use different DMSO activators. The simple substrate avoids motifs common in other named reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 442,
+    "candidatesTokenCount": 370,
+    "totalTokenCount": 900,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 442
+      }
+    ],
+    "thoughtsTokenCount": 88
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "QtjjaZSyDKe_1e8PnP_ZwQ8"
+}

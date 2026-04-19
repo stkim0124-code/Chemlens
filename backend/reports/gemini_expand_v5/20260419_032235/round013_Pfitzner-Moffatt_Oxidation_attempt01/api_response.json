@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Pfitzner-Moffatt Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCCCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"C1CCN(CC1)C(=N)C1CC(N)CCC1\",\n      \"Cl.c1cc(C)ccn1\"\n    ],\n    \"rationale\": \"This example shows the oxidation of a simple, acyclic primary alcohol (1-nonanol) to the corresponding aldehyde (nonanal). This is a classic textbook transformation for the Pfitzner-Moffatt oxidation. The reagents shown are dimethyl sulfoxide (DMSO), dicyclohexylcarbodiimide (DCC), and pyridinium hydrochloride as the mild acid catalyst, which are the defining components of this reaction. The long alkyl chain helps avoid volatility and ensures the core transformation is the focus, while remaining simple and acyclic.\",\n    \"collision_avoidance_note\": \"The substrate is a simple primary alcohol, avoiding complex functional groups, rings, or aromatic systems that could trigger other named reaction queries. The transformation is a straightforward oxidation, which is specific to this family when combined with the characteristic reagents (DMSO, carbodiimide, acid catalyst). This avoids overlap with other oxidation methods (e.g., Swern, Corey-Kim, Dess-Martin) which use different activating agents for DMSO or different oxidants entirely.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 442,
+    "candidatesTokenCount": 344,
+    "totalTokenCount": 840,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 442
+      }
+    ],
+    "thoughtsTokenCount": 54
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "zNTjaazHG4iJvr0P9vXzsQc"
+}

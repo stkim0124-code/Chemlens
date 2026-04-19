@@ -1,0 +1,15 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "substrates": [
+    "CCCCCCC=O"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "[Cl][Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1"
+  ],
+  "rationale": "This reaction shows the decarbonylation of a simple aliphatic aldehyde, heptanal, to its corresponding alkane, hexane, using Wilkinson's catalyst (RhCl(PPh3)3). This is a classic and straightforward textbook example of the Tsuji-Wilkinson decarbonylation, demonstrating the conversion of an aldehyde functional group to a C-H bond with the extrusion of carbon monoxide.",
+  "collision_avoidance_note": "The substrate is a simple, acyclic aliphatic aldehyde to avoid overlap with reactions involving aromatic aldehydes (which can be more complex or slower) or acyl halides. This specific transformation (aldehyde to alkane) is highly characteristic of this named reaction and avoids collision with general decarboxylation (of carboxylic acids), deoxygenation (e.g., Wolff-Kishner), or other metal-catalyzed C-C bond formations.",
+  "raw_text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple aliphatic aldehyde, heptanal, to its corresponding alkane, hexane, using Wilkinson's catalyst (RhCl(PPh3)3). This is a classic and straightforward textbook example of the Tsuji-Wilkinson decarbonylation, demonstrating the conversion of an aldehyde functional group to a C-H bond with the extrusion of carbon monoxide.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, acyclic aliphatic aldehyde to avoid overlap with reactions involving aromatic aldehydes (which can be more complex or slower) or acyl halides. This specific transformation (aldehyde to alkane) is highly characteristic of this named reaction and avoids collision with general decarboxylation (of carboxylic acids), deoxygenation (e.g., Wolff-Kishner), or other metal-catalyzed C-C bond formations.\"\n  }\n}"
+}

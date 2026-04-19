@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Al](Cl)Cl\"\n    ],\n    \"rationale\": \"The Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone is a classic textbook example. It clearly demonstrates the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring under Lewis acid catalysis. The reactants and products are simple, acyclic where possible, and lack complex functional groups, making it a canonical and unambiguous representation of the reaction family.\",\n    \"collision_avoidance_note\": \"This example uses a simple phenyl acetate substrate to avoid complex aromatic systems that could overlap with other named reactions involving arenes. The acyl group migration is specific to the Fries rearrangement and distinct from Claisen (allyl migration), Hofmann-Martius (alkyl migration), or other rearrangements. The use of a simple acetyl group avoids potential side reactions or ambiguities associated with more complex acyl groups.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 387,
+    "candidatesTokenCount": 281,
+    "totalTokenCount": 739,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 387
+      }
+    ],
+    "thoughtsTokenCount": 71
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "_9zjaZ_5JYGe0-kP8suEuQc"
+}

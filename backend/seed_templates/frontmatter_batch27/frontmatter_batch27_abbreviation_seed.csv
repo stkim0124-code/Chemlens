@@ -1,0 +1,33 @@
+alias,canonical_name,entity_type
+KH,potassium hydride,base
+KHMDS,potassium hexamethyldisilazide,base
+18-crown-6,18-crown-6,additive
+THF,tetrahydrofuran,solvent
+K2CO3,potassium carbonate,base
+HCl,hydrogen chloride,acid
+H2SO4,sulfuric acid,acid
+ZnCl2,zinc chloride,Lewis_acid
+ZnBr2,zinc bromide,Lewis_acid
+AlCl3,aluminum chloride,Lewis_acid
+FeSO4,iron(II) sulfate,catalyst
+t-BuOOH,tert-butyl hydroperoxide,oxidant
+AcOH,acetic acid,solvent
+BF3·OEt2,boron trifluoride etherate,Lewis_acid
+DCM,dichloromethane,solvent
+Br2,bromine,halogenating_agent
+I2,iodine,halogenating_agent
+HgO,mercury(II) oxide,oxidant
+Pb(OAc)4,lead tetraacetate,oxidant
+DCC,dicyclohexylcarbodiimide,coupling_reagent
+DMAP,4-dimethylaminopyridine,catalyst
+NBS,N-bromosuccinimide,halogenating_agent
+H2O,water,solvent
+Co(III)salen,cobalt(III) salen complex,catalyst
+MTBE,methyl tert-butyl ether,solvent
+NaOCl,sodium hypochlorite,oxidant
+PhIO,iodosylbenzene,oxidant
+mCPBA,meta-chloroperoxybenzoic acid,oxidant
+NMO,N-methylmorpholine N-oxide,oxidant
+Dibal-H,diisobutylaluminum hydride,reductant
+Bu3P,tributylphosphine,reductant
+MsCl,methanesulfonyl chloride,activator

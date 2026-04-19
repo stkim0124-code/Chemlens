@@ -1,0 +1,82 @@
+You are generating benchmark-safe canonical examples for the named reaction family "Enyne Metathesis".
+
+I need exactly 3 candidate examples, not 1.
+
+Diagnosis context:
+- changed_cases: 0
+- first_case hijacked: 
+- wrong top1 family observed in benchmark: 
+- cluster: barton
+- cluster avoidance: Avoid Barton-like hijack patterns: thiohydroxamate ester, radical bromination, peroxide/hv motifs, decarboxylative halogenation confusion, generic leaving-group activation without family identity.
+
+Goal:
+Create a highly distinctive enyne metathesis example that will not hijack Barton radical benchmark cases.
+
+Hard constraints:
+- Must clearly involve one alkene + one alkyne undergoing metathesis
+- Product should clearly be the expected metathesis-derived diene / ring-closed enyne-metathesis outcome
+- Prefer a textbook Ru-catalyzed example
+- Avoid halogen-rich substrates
+- Avoid radical chemistry, Barton-type reagents, peroxide/hv motifs
+- Avoid examples where simple unsaturation pattern is too generic
+- Make the alkene/alkyne reorganization obvious
+
+Common hard constraints:
+- broad regeneration is forbidden
+- generate textbook, highly discriminative, benchmark-safe examples only
+- keep reagent context minimal; at most 1-2 optional reagents
+- avoid reaction examples whose identity is obvious only from reagent list
+- product topology must make the family identity obvious
+- do not include commentary outside JSON
+
+Existing stage examples for context only (do not copy blindly):
+[{"id": 2027, "extract_id": 504, "role": "reactant", "smiles": "C=CCCCCCC", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Enyne Metathesis", "source_zip": null, "page_no": 152, "queryable": 1, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "reactant", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T14:49:20.074132"}, {"id": 2028, "extract_id": 504, "role": "reactant", "smiles": "C#CCCCC", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Enyne Metathesis", "source_zip": null, "page_no": 152, "queryable": 1, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "reactant", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T14:49:20.074132"}, {"id": 2029, "extract_id": 504, "role": "product", "smiles": "CCCC/C=C/C=C/CCCCCC", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Enyne Metathesis", "source_zip": null, "page_no": 152, "queryable": 1, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "product", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T14:49:20.074132"}, {"id": 2030, "extract_id": 504, "role": "reagent", "smiles": "Cc1cc(C)c(N2CCN(c3c(C)cc(C)cc3C)[C]2=[Ru]([Cl])([Cl])(=[CH]c2ccccc2)[PH]C(C2CCCCC2)(C2CCCCC2)C2CCCCC2)c(C)c1", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Enyne Metathesis", "source_zip": null, "page_no": 152, "queryable": 0, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "reagent", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 0.95, "created_at": "2026-04-18T14:49:20.074132"}]
+
+Return JSON only in this exact schema:
+{
+  "family": "Enyne Metathesis",
+  "candidates": [
+    {
+      "candidate_id": "C1",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    },
+    {
+      "candidate_id": "C2",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    },
+    {
+      "candidate_id": "C3",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "family": "Jones Oxidation/Oxidation of Alcohols by Chromium Reagents",
+  "substrates": [
+    "CCCCO"
+  ],
+  "products": [
+    "CCCC(=O)O"
+  ],
+  "reagents": [
+    "O.O.[O]=[Cr](=[O])[OH]"
+  ],
+  "rationale": "The Jones oxidation is a classic method for oxidizing a primary alcohol to a carboxylic acid. This example uses 1-butanol, a simple, acyclic primary alcohol, which is oxidized to butanoic acid. This transformation is a hallmark of the Jones reagent (chromic acid, often generated in situ from chromium trioxide and sulfuric acid in acetone/water). It clearly demonstrates the functional group change (primary alcohol to carboxylic acid) that defines this reaction family.",
+  "collision_avoidance_note": "This example uses a simple acyclic aliphatic alcohol (1-butanol) to avoid aromatic rings that could be confused with other oxidation reactions (e.g., benzylic oxidation). The substrate is simple and lacks other reactive functional groups, ensuring the focus remains on the specific oxidation of a primary alcohol to a carboxylic acid, which is characteristic of the Jones oxidation.",
+  "raw_text": "{\n  \"family\": \"Jones Oxidation/Oxidation of Alcohols by Chromium Reagents\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC(=O)O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O.O.O=[Cr](=O)O\"\n    ],\n    \"rationale\": \"The Jones oxidation is a classic method for oxidizing a primary alcohol to a carboxylic acid. This example uses 1-butanol, a simple, acyclic primary alcohol, which is oxidized to butanoic acid. This transformation is a hallmark of the Jones reagent (chromic acid, often generated in situ from chromium trioxide and sulfuric acid in acetone/water). It clearly demonstrates the functional group change (primary alcohol to carboxylic acid) that defines this reaction family.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic aliphatic alcohol (1-butanol) to avoid aromatic rings that could be confused with other oxidation reactions (e.g., benzylic oxidation). The substrate is simple and lacks other reactive functional groups, ensuring the focus remains on the specific oxidation of a primary alcohol to a carboxylic acid, which is characteristic of the Jones oxidation.\"\n  }\n}"
+}

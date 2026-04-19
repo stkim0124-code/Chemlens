@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Sharpless Asymmetric Dihydroxylation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C/C=C/c1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"C[C@H](O)[C@H](O)c1ccccc1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S1(=O)N2[C@H]3[C@H](C=C4C=CC(OC)=CC4)C[N@]3CC[C@@H]2[C@@H](O)[C@H]1C=C\"\n    ],\n    \"rationale\": \"This reaction shows the asymmetric dihydroxylation of (E)-1-phenylpropene (trans-beta-methylstyrene) to the corresponding (1R,2R)-diol. This is a classic textbook example used to illustrate the stereoselectivity of the Sharpless Asymmetric Dihydroxylation using an AD-mix-beta type ligand (a DHQD-based ligand is shown). The substrate is simple, acyclic (in the reactive part), and clearly demonstrates the syn-addition of two hydroxyl groups across the double bond with high enantioselectivity.\",\n    \"collision_avoidance_note\": \"The substrate is a simple alkene with a phenyl group, which is common in examples but avoids overly complex or reactive arene systems. The reaction is a straightforward addition of two hydroxyl groups, avoiding motifs like decarboxylation, ring expansion, or radical processes that could cause collisions with other named reaction families. The use of a specific chiral ligand in the reagents field helps to anchor the query to this specific asymmetric transformation.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 448,
+    "candidatesTokenCount": 380,
+    "totalTokenCount": 905,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 448
+      }
+    ],
+    "thoughtsTokenCount": 77
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "lc3jaafGBczP2roPpNvZ-Q0"
+}

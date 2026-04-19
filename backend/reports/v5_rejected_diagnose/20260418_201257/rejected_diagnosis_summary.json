@@ -1,0 +1,1012 @@
+{
+  "summary_path": "C:\\chemlens\\backend\\reports\\v5_rejected_retry\\20260418_175952\\rejected_retry_summary.json",
+  "apply_summary_path": "C:\\chemlens\\backend\\reports\\gemini_salvage_apply\\20260418_201125\\gemini_salvage_apply_summary.json",
+  "summary_rejected_count": 10,
+  "applied_family_exclusions": [
+    "Finkelstein Reaction",
+    "Hunsdiecker Reaction"
+  ],
+  "effective_rejected_count": 8,
+  "baseline": {
+    "top1_accuracy": 1.0,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "db_used": "C:\\chemlens\\backend\\app\\labint.db"
+  },
+  "summary_path_used": "C:\\chemlens\\backend\\reports\\v5_rejected_retry\\20260418_175952\\rejected_retry_summary.json",
+  "rejected_count": 8,
+  "families": [
+    {
+      "family_name": "Claisen Condensation / Claisen Reaction",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Claisen Condensation / Claisen Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_uo5o1j6x\\temp.db"
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Claisen Condensation / Claisen Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_5efuab25\\temp.db"
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Claisen Condensation / Claisen Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_i8feqvwl\\temp.db"
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Claisen Condensation / Claisen Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_cfat9rwt\\temp.db"
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Claisen Condensation / Claisen Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_hzk5l56c\\temp.db"
+        },
+        {
+          "variant": "queryable_only",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Claisen Condensation / Claisen Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_lmvy5m5h\\temp.db"
+        },
+        {
+          "variant": "all_original",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Claisen Condensation / Claisen Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_g9ch3hgb\\temp.db"
+        }
+      ]
+    },
+    {
+      "family_name": "Enyne Metathesis",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Enyne Metathesis",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_03o4z65a\\temp.db"
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Enyne Metathesis",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_g1dqrks8\\temp.db"
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Enyne Metathesis",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_f0q2b4f0\\temp.db"
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Enyne Metathesis",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 4,
+            "total_changes_delta": 5
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_whi6p2_r\\temp.db"
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Enyne Metathesis",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 4,
+            "total_changes_delta": 5
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_uzqu5i2b\\temp.db"
+        },
+        {
+          "variant": "queryable_only",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Enyne Metathesis",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_p7ny6tj5\\temp.db"
+        },
+        {
+          "variant": "all_original",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Enyne Metathesis",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 4,
+            "total_changes_delta": 5
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_nlvu4dp4\\temp.db"
+        }
+      ]
+    },
+    {
+      "family_name": "Hofmann-Loffler-Freytag Reaction",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Hofmann-Loffler-Freytag Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_exug3mhv\\temp.db"
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Hofmann-Loffler-Freytag Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_hsxuj5ig\\temp.db"
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Hofmann-Loffler-Freytag Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_vk_7zuef\\temp.db"
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Hofmann-Loffler-Freytag Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_z5ee6ybo\\temp.db"
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Hofmann-Loffler-Freytag Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_f1wlknii\\temp.db"
+        },
+        {
+          "variant": "queryable_only",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Hofmann-Loffler-Freytag Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_1fdtaf51\\temp.db"
+        },
+        {
+          "variant": "all_original",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Hofmann-Loffler-Freytag Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 6,
+            "total_changes_delta": 7
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_eej93pxr\\temp.db"
+        }
+      ]
+    },
+    {
+      "family_name": "Horner-Wadsworth-Emmons Olefination",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Horner-Wadsworth-Emmons Olefination",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_35jbnl5y\\temp.db"
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Horner-Wadsworth-Emmons Olefination",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_fxr2ytw_\\temp.db"
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Horner-Wadsworth-Emmons Olefination",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_f6ennak6\\temp.db"
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Horner-Wadsworth-Emmons Olefination",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 4,
+            "total_changes_delta": 5
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_4zzi4b5u\\temp.db"
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Horner-Wadsworth-Emmons Olefination",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 4,
+            "total_changes_delta": 5
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_1ee8gx3p\\temp.db"
+        },
+        {
+          "variant": "queryable_only",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Horner-Wadsworth-Emmons Olefination",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_e6dzgn1x\\temp.db"
+        },
+        {
+          "variant": "all_original",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Horner-Wadsworth-Emmons Olefination",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 4,
+            "total_changes_delta": 5
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_w1ehnhki\\temp.db"
+        }
+      ]
+    },
+    {
+      "family_name": "Krapcho Dealkoxycarbonylation",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Krapcho Dealkoxycarbonylation",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_dwzbypgk\\temp.db"
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Krapcho Dealkoxycarbonylation",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_jk4nx3b2\\temp.db"
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Krapcho Dealkoxycarbonylation",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_qcpjeqnm\\temp.db"
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Krapcho Dealkoxycarbonylation",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_yrgplyld\\temp.db"
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Krapcho Dealkoxycarbonylation",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_1mdq5vwf\\temp.db"
+        },
+        {
+          "variant": "queryable_only",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Krapcho Dealkoxycarbonylation",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_phjlyt59\\temp.db"
+        },
+        {
+          "variant": "all_original",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Krapcho Dealkoxycarbonylation",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 4,
+            "total_changes_delta": 5
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_tlrao54z\\temp.db"
+        }
+      ]
+    },
+    {
+      "family_name": "Michael Addition Reaction",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Michael Addition Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_vvp32vjw\\temp.db"
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Michael Addition Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_t_xqjypl\\temp.db"
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Michael Addition Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_91gjzru5\\temp.db"
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Michael Addition Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 4,
+            "total_changes_delta": 5
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_eg7p0ydz\\temp.db"
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Michael Addition Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 4,
+            "total_changes_delta": 5
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_qvmkr3ni\\temp.db"
+        },
+        {
+          "variant": "queryable_only",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Michael Addition Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_q12sy1_9\\temp.db"
+        },
+        {
+          "variant": "all_original",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Michael Addition Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 4,
+            "total_changes_delta": 5
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag__z8xq4up\\temp.db"
+        }
+      ]
+    },
+    {
+      "family_name": "Mitsunobu Reaction",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Mitsunobu Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_wal8g8sf\\temp.db"
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Mitsunobu Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_3_dk0hfm\\temp.db"
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Mitsunobu Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_r938rhr_\\temp.db"
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Mitsunobu Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 4,
+            "total_changes_delta": 5
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_bg5lcjvw\\temp.db"
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Mitsunobu Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 4,
+            "total_changes_delta": 5
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_048zuyub\\temp.db"
+        },
+        {
+          "variant": "queryable_only",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Mitsunobu Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_5v3fbegz\\temp.db"
+        },
+        {
+          "variant": "all_original",
+          "status": "rejected",
+          "top1_accuracy": 0.9259,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 2,
+          "first_changed_case": "barton_radical_rxn_353_exact_extract",
+          "first_changed_top1": "Mitsunobu Reaction",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 6,
+            "total_changes_delta": 7
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_jchlm3l0\\temp.db"
+        }
+      ]
+    },
+    {
+      "family_name": "Regitz Diazo Transfer",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Regitz Diazo Transfer",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_dkv72fy3\\temp.db"
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Regitz Diazo Transfer",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_njzaujrj\\temp.db"
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Regitz Diazo Transfer",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_mk5_6dmw\\temp.db"
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Regitz Diazo Transfer",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_l6iww7f2\\temp.db"
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Regitz Diazo Transfer",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 3,
+            "total_changes_delta": 4
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_8nfnkjfi\\temp.db"
+        },
+        {
+          "variant": "queryable_only",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Regitz Diazo Transfer",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 2,
+            "total_changes_delta": 3
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_auqhwnle\\temp.db"
+        },
+        {
+          "variant": "all_original",
+          "status": "rejected",
+          "top1_accuracy": 0.963,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 1,
+          "first_changed_case": "buchner_403_exact_extract",
+          "first_changed_top1": "Regitz Diazo Transfer",
+          "insert_stats": {
+            "inserted_extract_rows": 1,
+            "inserted_molecule_rows": 4,
+            "total_changes_delta": 5
+          },
+          "identical_to_baseline": false,
+          "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\chemlens_diag_jnufjtk4\\temp.db"
+        }
+      ]
+    }
+  ]
+}

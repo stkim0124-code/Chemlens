@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCCC(=O)CC"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane). This is a classic textbook example of the Wolff-Kishner reduction, clearly demonstrating the deoxygenation of a carbonyl group to a methylene group. The use of hydrazine (NN) and potassium hydroxide ([K+].[OH-]) as reagents is standard for this transformation.",
+  "collision_avoidance_note": "The substrate is a simple, acyclic aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation followed by reduction), complex ring systems, or other functional groups. This specific example isolates the core C=O to CH2 transformation, which is the defining feature of the Wolff-Kishner reduction, minimizing potential collisions with other named reactions like the Clemmensen reduction (which uses acidic conditions) or reductions of other functional groups.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[K+].[OH-]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane). This is a classic textbook example of the Wolff-Kishner reduction, clearly demonstrating the deoxygenation of a carbonyl group to a methylene group. The use of hydrazine (NN) and potassium hydroxide ([K+].[OH-]) as reagents is standard for this transformation.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, acyclic aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation followed by reduction), complex ring systems, or other functional groups. This specific example isolates the core C=O to CH2 transformation, which is the defining feature of the Wolff-Kishner reduction, minimizing potential collisions with other named reactions like the Clemmensen reduction (which uses acidic conditions) or reductions of other functional groups.\"\n  }\n}"
+}

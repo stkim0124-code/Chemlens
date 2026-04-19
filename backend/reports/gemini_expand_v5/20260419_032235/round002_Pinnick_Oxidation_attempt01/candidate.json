@@ -1,0 +1,17 @@
+{
+  "family": "Pinnick Oxidation",
+  "substrates": [
+    "CCC=O"
+  ],
+  "products": [
+    "CCC(=O)O"
+  ],
+  "reagents": [
+    "[Na+].[O-][Cl+][O-]",
+    "CC=C(C)C",
+    "O=P([O-])(O)O.[Na+]"
+  ],
+  "rationale": "This reaction shows the oxidation of a simple aliphatic aldehyde, propanal, to its corresponding carboxylic acid, propanoic acid. This is the core transformation of the Pinnick oxidation. The reagents selected are sodium chlorite (the oxidant), 2-methyl-2-butene (a common scavenger for the hypochlorite byproduct), and sodium dihydrogen phosphate (a common buffer), representing a typical textbook setup for this reaction. The substrate is simple, acyclic, and lacks other functional groups to clearly illustrate the specific transformation.",
+  "collision_avoidance_note": "The chosen substrate is a simple aliphatic aldehyde to avoid overlap with other named reactions involving aromatic aldehydes (e.g., Cannizzaro, Benzoin) or alpha,beta-unsaturated aldehydes (which might be used in conjugate addition reactions). The simplicity focuses the query on the specific aldehyde-to-carboxylic acid oxidation with chlorite, which is characteristic of the Pinnick oxidation.",
+  "raw_text": "{\n  \"family\": \"Pinnick Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCC(=O)O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=Cl[O-].[Na+]\",\n      \"CC(C)=CC\",\n      \"O=P([O-])(O)O.[Na+]\"\n    ],\n    \"rationale\": \"This reaction shows the oxidation of a simple aliphatic aldehyde, propanal, to its corresponding carboxylic acid, propanoic acid. This is the core transformation of the Pinnick oxidation. The reagents selected are sodium chlorite (the oxidant), 2-methyl-2-butene (a common scavenger for the hypochlorite byproduct), and sodium dihydrogen phosphate (a common buffer), representing a typical textbook setup for this reaction. The substrate is simple, acyclic, and lacks other functional groups to clearly illustrate the specific transformation.\",\n    \"collision_avoidance_note\": \"The chosen substrate is a simple aliphatic aldehyde to avoid overlap with other named reactions involving aromatic aldehydes (e.g., Cannizzaro, Benzoin) or alpha,beta-unsaturated aldehydes (which might be used in conjugate addition reactions). The simplicity focuses the query on the specific aldehyde-to-carboxylic acid oxidation with chlorite, which is characteristic of the Pinnick oxidation.\"\n  }\n}"
+}

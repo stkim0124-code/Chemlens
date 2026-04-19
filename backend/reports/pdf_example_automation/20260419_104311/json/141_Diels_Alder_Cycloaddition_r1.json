@@ -1,0 +1,29 @@
+{
+  "family_name": "Diels-Alder Cycloaddition",
+  "region_confidence": 0.95,
+  "example_target_name": "Asatone",
+  "example_summary": "The dearomatization of 2,6-dimethoxy-4-allylphenol with PIDA/methanol resulted in the formation of the natural product asatone in a single step. This occurs via a reactive cyclohexa-2,4-dienone intermediate which rapidly dimerizes through an intermolecular Diels-Alder cycloaddition.",
+  "extracts": [
+    {
+      "extract_kind": "application_example",
+      "reaction_family_name": "Diels-Alder Cycloaddition",
+      "transformation_text": "intermolecular Diels-Alder cycloaddition",
+      "reactants_text": "2,6-dimethoxy-4-allylphenol",
+      "products_text": "Asatone",
+      "intermediates_text": "cyclohexa-2,4-dienones",
+      "reagents_text": "PhI(OAc)2",
+      "catalysts_text": null,
+      "solvents_text": "MeOH",
+      "temperature_text": null,
+      "time_text": null,
+      "yield_text": "22%",
+      "workup_text": null,
+      "conditions_text": null,
+      "notes_text": "The reaction proceeds via dearomatization of the starting phenol with a hypervalent iodine reagent (PIDA) to form a reactive dienone, which then rapidly dimerizes.",
+      "reactant_smiles": "COc1c(O)c(OC)cc(CC=C)c1",
+      "product_smiles": "COC1=C(CC=C)C2C3C(CC=C)C(=O)C(OC)=C(OC)C34C(=O)C(OC)(OC)C2C=C14",
+      "smiles_confidence": 0.9,
+      "extraction_confidence": 0.95
+    }
+  ]
+}

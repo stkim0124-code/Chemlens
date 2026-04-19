@@ -1,0 +1,15 @@
+{
+  "family": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+  "substrates": [
+    "CC(=O)Oc1ccccc1"
+  ],
+  "products": [
+    "CC(=O)c1ccccc1O"
+  ],
+  "reagents": [
+    "[Cl][Al]([Cl])[Cl]"
+  ],
+  "rationale": "The Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone is a classic, simple, and unambiguous textbook example. It clearly demonstrates the core transformation: the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). This example is minimal in structure, avoiding complex substituents that could cause ambiguity or parsing issues.",
+  "collision_avoidance_note": "This example uses phenyl acetate, a simple and specific substrate, to avoid overlap with more general electrophilic aromatic substitution reactions. The transformation is a rearrangement, not a simple substitution, which distinguishes it from Friedel-Crafts acylation. It avoids motifs like diazo groups (unlike Wolff rearrangement), complex fused rings, or radical initiators that could trigger other named reaction queries.",
+  "raw_text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"O=C(C)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Al](Cl)Cl\"\n    ],\n    \"rationale\": \"The Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone is a classic, simple, and unambiguous textbook example. It clearly demonstrates the core transformation: the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). This example is minimal in structure, avoiding complex substituents that could cause ambiguity or parsing issues.\",\n    \"collision_avoidance_note\": \"This example uses phenyl acetate, a simple and specific substrate, to avoid overlap with more general electrophilic aromatic substitution reactions. The transformation is a rearrangement, not a simple substitution, which distinguishes it from Friedel-Crafts acylation. It avoids motifs like diazo groups (unlike Wolff rearrangement), complex fused rings, or radical initiators that could trigger other named reaction queries.\"\n  }\n}"
+}

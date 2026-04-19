@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[K+].[OH-]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to the corresponding alkane (n-hexane). This is the quintessential transformation for the Wolff-Kishner reduction, using the standard reagents hydrazine (NH2NH2) and a strong base (KOH). The substrate is symmetric and avoids stereochemical complexity. The transformation is a clear deoxygenation of a ketone to a methylene group.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation followed by reduction), which might be confused with Clemmensen reduction examples. It avoids aldehydes which could undergo aldol-type side reactions. The simple acyclic structure minimizes potential confusion with ring-contraction or other rearrangement reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 447,
+    "candidatesTokenCount": 271,
+    "totalTokenCount": 779,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 447
+      }
+    ],
+    "thoughtsTokenCount": 61
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "qN_jadCJNunP2roP2ODOgAI"
+}

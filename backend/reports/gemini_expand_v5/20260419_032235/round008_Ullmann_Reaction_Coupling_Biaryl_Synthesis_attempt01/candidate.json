@@ -1,0 +1,15 @@
+{
+  "family": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+  "substrates": [
+    "Ic1ccccc1"
+  ],
+  "products": [
+    "c1ccc(-c2ccccc2)cc1"
+  ],
+  "reagents": [
+    "[Cu]"
+  ],
+  "rationale": "This is the classical Ullmann reaction: the homocoupling of two molecules of iodobenzene to form biphenyl, mediated by copper powder. It is the simplest and most direct textbook example of this named reaction, clearly illustrating the formation of a biaryl C-C bond from an aryl halide under copper catalysis.",
+  "collision_avoidance_note": "This example uses the simplest possible aryl halide (iodobenzene) and the classical reagent (copper powder). It avoids complex substituents, ligands, or other functional groups that could trigger unrelated reaction families like Suzuki, Stille, or Heck couplings (which use different metals and coupling partners) or other copper-catalyzed reactions like Buchwald-Hartwig amination (which forms C-N bonds).",
+  "raw_text": "{\n  \"family\": \"Ullmann Reaction / Coupling / Biaryl Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"Ic1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"c1ccc(cc1)-c1ccccc1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Cu]\"\n    ],\n    \"rationale\": \"This is the classical Ullmann reaction: the homocoupling of two molecules of iodobenzene to form biphenyl, mediated by copper powder. It is the simplest and most direct textbook example of this named reaction, clearly illustrating the formation of a biaryl C-C bond from an aryl halide under copper catalysis.\",\n    \"collision_avoidance_note\": \"This example uses the simplest possible aryl halide (iodobenzene) and the classical reagent (copper powder). It avoids complex substituents, ligands, or other functional groups that could trigger unrelated reaction families like Suzuki, Stille, or Heck couplings (which use different metals and coupling partners) or other copper-catalyzed reactions like Buchwald-Hartwig amination (which forms C-N bonds).\"\n  }\n}"
+}

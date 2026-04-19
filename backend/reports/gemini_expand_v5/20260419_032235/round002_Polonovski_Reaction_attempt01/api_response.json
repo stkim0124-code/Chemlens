@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Polonovski Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C[N+](C)(C)[O-]\"\n    ],\n    \"product_smiles\": [\n      \"CN(C)C=C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CC(=O)OC(=O)C\"\n    ],\n    \"rationale\": \"This is the classic, simplest example of the Polonovski reaction, showing the conversion of trimethylamine N-oxide to dimethylvinylamine. The N-oxide is activated by acetic anhydride, forming an O-acetylated intermediate. A base (often acetate formed in situ) then abstracts a proton from one of the methyl groups, leading to an E2-like elimination to form the enamine product and acetic acid. This example clearly demonstrates the core transformation: activation of a tertiary amine N-oxide followed by deprotonation at the alpha-carbon to form an iminium ion equivalent, which in this case eliminates to an enamine.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic aliphatic structures to avoid overlap with other named reactions involving aromatic rings, complex alkaloids, or specific functional groups. The transformation from a tertiary amine N-oxide to an enamine via acylation is highly characteristic of the Polonovski reaction and distinct from other amine oxidations (e.g., Cope elimination, which is thermal and requires a beta-hydrogen) or rearrangements.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 448,
+    "candidatesTokenCount": 327,
+    "totalTokenCount": 830,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 448
+      }
+    ],
+    "thoughtsTokenCount": 55
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "Bc3jaeWqHpSk2roPo8WXgQQ"
+}

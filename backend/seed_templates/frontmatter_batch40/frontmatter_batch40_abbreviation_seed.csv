@@ -1,0 +1,12 @@
+alias,canonical_name,entity_type
+DMAP,4-dimethylaminopyridine,reagent
+CDI,"1,1'-carbonyldiimidazole",reagent
+Cp2TiMe2,titanocene dimethyl,reagent
+HMDS,hexamethyldisilazane,reagent
+TMSOTf,trimethylsilyl trifluoromethanesulfonate,reagent
+DMP,Dess-Martin periodinane,oxidant
+ET 743,trabectedin,target_molecule
+ABFGH,ABFGH subunit of ET 743,target_fragment
+DDQ,"2,3-dichloro-5,6-dicyano-1,4-benzoquinone",oxidant
+TBDPS,tert-butyldiphenylsilyl,protecting_group
+TMSCl,trimethylsilyl chloride,reagent

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Pfitzner-Moffatt Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"C1CCCCC(N=C=NC2CCCCC2)C1\",\n      \"c1cc[nH+]cc1.[O-]C(=O)C(F)(F)F\"\n    ],\n    \"rationale\": \"This reaction shows the oxidation of a simple primary alcohol (1-butanol) to the corresponding aldehyde (butanal). This is a classic textbook example of the Pfitzner-Moffatt oxidation. The reagents selected are dimethyl sulfoxide (DMSO) as the oxidant, dicyclohexylcarbodiimide (DCC) as the activator, and pyridinium trifluoroacetate as the mild acid catalyst, which are the defining components of this named reaction. The substrate is a simple, acyclic, saturated alcohol to ensure the example is specific to this transformation and avoids ambiguity.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic alcohol to avoid overlap with reactions involving aromatic rings, unsaturation, or other functional groups. The core transformation is a straightforward alcohol-to-aldehyde oxidation, which is characteristic of many named oxidations. However, the explicit inclusion of a carbodiimide (DCC) and DMSO as reagents makes this example highly specific to the Pfitzner-Moffatt family, distinguishing it from other activated-DMSO oxidations like the Swern (oxalyl chloride) or Parikh-Doering (SO3-pyridine) oxidations.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 442,
+    "candidatesTokenCount": 382,
+    "totalTokenCount": 911,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 442
+      }
+    ],
+    "thoughtsTokenCount": 87
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "x9XjaYqgEOqgvr0PuueLMA"
+}

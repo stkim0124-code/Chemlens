@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh](P(c1ccccc1)(c1ccccc1)c1ccccc1)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple, long-chain aliphatic aldehyde (octanal) to the corresponding alkane (heptane) using Wilkinson's catalyst. This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, clearly illustrating the deformylation of an aldehyde to an alkane with the loss of carbon monoxide. The simple, acyclic, saturated substrate avoids ambiguity with other named reactions.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde, avoiding aromatic rings (which could trigger Friedel-Crafts or other arene-related reactions), unsaturation near the carbonyl (avoiding conjugate addition/Michael-type reactions), or other functional groups. This focuses the query specifically on the decarbonylation of a simple aldehyde, which is the core transformation of this named reaction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 440,
+    "candidatesTokenCount": 315,
+    "totalTokenCount": 835,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 440
+      }
+    ],
+    "thoughtsTokenCount": 80
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "f9DjaefNEZTF0-kPv7nmsAI"
+}

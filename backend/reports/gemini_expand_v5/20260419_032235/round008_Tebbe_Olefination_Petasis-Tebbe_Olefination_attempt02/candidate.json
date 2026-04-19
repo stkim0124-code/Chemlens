@@ -1,0 +1,15 @@
+{
+  "family": "Tebbe Olefination/Petasis-Tebbe Olefination",
+  "substrates": [
+    "CC(C)=O"
+  ],
+  "products": [
+    "C=C(C)C"
+  ],
+  "reagents": [
+    "[CH2-][Ti+3](<-[cH-]1cccc1)<-[cH-]1cccc1.[CH3][Al]([CH3])[Cl]"
+  ],
+  "rationale": "This reaction shows the methylenation of a simple ketone, acetone, to form 2-methylpropene. This is a classic textbook example of the Tebbe olefination, converting a C=O bond into a C=CH2 bond using the Tebbe reagent. The reactants and products are small, acyclic, and clearly illustrate the core transformation without introducing confounding functional groups.",
+  "collision_avoidance_note": "This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts), esters (e.g., Claisen condensation), or more complex carbonyl compounds. It is distinct from the Wittig reaction by the nature of the reagent (titanocene-based vs. phosphorus ylide) and its broader substrate scope (e.g., esters), although this simple example focuses on the most common ketone transformation.",
+  "raw_text": "{\n  \"family\": \"Tebbe Olefination/Petasis-Tebbe Olefination\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=C(C)C\"\n    ],\n    \"product_smiles\": [\n      \"C=C(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"C[Al](C)Cl.[CH2-][Ti+3]([cH-]1cccc1)[cH-]1cccc1\"\n    ],\n    \"rationale\": \"This reaction shows the methylenation of a simple ketone, acetone, to form 2-methylpropene. This is a classic textbook example of the Tebbe olefination, converting a C=O bond into a C=CH2 bond using the Tebbe reagent. The reactants and products are small, acyclic, and clearly illustrate the core transformation without introducing confounding functional groups.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts), esters (e.g., Claisen condensation), or more complex carbonyl compounds. It is distinct from the Wittig reaction by the nature of the reagent (titanocene-based vs. phosphorus ylide) and its broader substrate scope (e.g., esters), although this simple example focuses on the most common ketone transformation.\"\n  }\n}"
+}

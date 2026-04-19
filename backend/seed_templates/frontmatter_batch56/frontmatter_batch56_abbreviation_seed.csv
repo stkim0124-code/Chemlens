@@ -1,0 +1,17 @@
+alias,canonical_name,entity_type
+KOH,potassium hydroxide,base
+NaOEt,sodium ethoxide,base
+NH2NH2·H2O,hydrazine monohydrate,deprotection_reagent
+DMSO,dimethyl sulfoxide,solvent
+KOt-Bu,potassium tert-butoxide,base
+t-BuOH,tert-butanol,proton_source
+LiAlH4,lithium aluminum hydride,hydride_reductant
+THP,2-tetrahydropyranyl,protecting_group
+Sc(OTf)3,scandium trifluoromethanesulfonate,lewis_acid
+TPE,tetraphenylethylene,solubilizing_additive
+DMAP,4-dimethylaminopyridine,nucleophilic_catalyst
+PPTS,pyridinium p-toluenesulfonate,acid
+PMB,p-methoxybenzyl,protecting_group
+DDQ,"2,3-dichloro-5,6-dicyano-1,4-benzoquinone",oxidant
+i-Pr2NEt,diisopropylethylamine,base
+Cl3C6H2COCl,"2,4,6-trichlorobenzoyl chloride",acylating_agent

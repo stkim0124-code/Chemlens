@@ -1,0 +1,81 @@
+You are generating benchmark-safe canonical examples for the named reaction family "Finkelstein Reaction".
+
+I need exactly 3 candidate examples, not 1.
+
+Diagnosis context:
+- changed_cases: 3
+- first_case hijacked: barton_radical_rxn_353_exact_extract
+- wrong top1 family observed in benchmark: Finkelstein Reaction
+- cluster: barton
+- cluster avoidance: Avoid Barton-like hijack patterns: thiohydroxamate ester, radical bromination, peroxide/hv motifs, decarboxylative halogenation confusion, generic leaving-group activation without family identity.
+
+Goal:
+Create a very clear halide-exchange example that cannot be confused with Barton radical chemistry.
+
+Hard constraints:
+- Must clearly be SN2 halide exchange, ideally R-Br or R-Cl -> R-I
+- Prefer a simple primary alkyl substrate
+- Use NaI / acetone logic if reagent context is included
+- Avoid radical initiators, hv, peroxides, silver salts, decarboxylation motifs
+- Avoid heavily functionalized substrates
+- The product difference should be only the halide identity in a classic Finkelstein manner
+
+Common hard constraints:
+- broad regeneration is forbidden
+- generate textbook, highly discriminative, benchmark-safe examples only
+- keep reagent context minimal; at most 1-2 optional reagents
+- avoid reaction examples whose identity is obvious only from reagent list
+- product topology must make the family identity obvious
+- do not include commentary outside JSON
+
+Existing stage examples for context only (do not copy blindly):
+[{"id": 2066, "extract_id": 512, "role": "reactant", "smiles": "CCCBr", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Finkelstein Reaction", "source_zip": null, "page_no": 170, "queryable": 1, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "reactant", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T14:55:01.738214"}, {"id": 2067, "extract_id": 512, "role": "product", "smiles": "CCCI", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Finkelstein Reaction", "source_zip": null, "page_no": 170, "queryable": 1, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "product", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T14:55:01.738214"}, {"id": 2068, "extract_id": 512, "role": "reagent", "smiles": "CC(C)=O", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Finkelstein Reaction", "source_zip": null, "page_no": 170, "queryable": 0, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "reagent", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T14:55:01.738214"}]
+
+Return JSON only in this exact schema:
+{
+  "family": "Finkelstein Reaction",
+  "candidates": [
+    {
+      "candidate_id": "C1",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    },
+    {
+      "candidate_id": "C2",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    },
+    {
+      "candidate_id": "C3",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    }
+  ]
+}

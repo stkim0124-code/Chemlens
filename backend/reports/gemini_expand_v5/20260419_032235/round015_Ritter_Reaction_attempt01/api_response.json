@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is the classical textbook example of the Ritter reaction, featuring the reaction of tert-butanol with acetonitrile in the presence of a strong acid (sulfuric acid). The tert-butanol serves as a stable precursor to the tert-butyl carbocation, which is then trapped by the nitrile. Subsequent hydrolysis of the resulting nitrilium ion intermediate yields the N-tert-butylacetamide product. All reactants and products are simple, acyclic, and RDKit-parseable, clearly illustrating the core transformation of the Ritter reaction.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic aliphatic substrates (tert-butanol and acetonitrile) to avoid overlap with reactions involving aromatic rings, complex ring systems, or other functional groups. The core transformation is the formation of a C-N bond and subsequent conversion of a nitrile to an amide, which is highly characteristic of the Ritter reaction and distinct from other named reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 435,
+    "candidatesTokenCount": 301,
+    "totalTokenCount": 791,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 435
+      }
+    ],
+    "thoughtsTokenCount": 55
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "aNfjabn_Bvup1e8Pg67AgAM"
+}

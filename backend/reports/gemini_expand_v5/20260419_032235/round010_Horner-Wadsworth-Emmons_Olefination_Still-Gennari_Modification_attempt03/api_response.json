@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC=O\",\n      \"FC(F)(F)CO[P@](=O)(OCC(F)(F)F)CC(=O)OC\"\n    ],\n    \"product_smiles\": [\n      \"C/C=C/C(=O)OC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[K+].[O-]C(C)(C)C\",\n      \"O=C([O-])[O-].[K+].[K+]\",\n      \"C1CCOC1\"\n    ],\n    \"rationale\": \"This reaction is a canonical example of the Still-Gennari modification of the Horner-Wadsworth-Emmons olefination, which selectively produces (Z)-alkenes. It uses a simple aldehyde (acetaldehyde) and the characteristic bis(2,2,2-trifluoroethyl) phosphonate ester reagent to form methyl (Z)-crotonate. The use of KHMDS or, as shown here, potassium tert-butoxide with 18-crown-6 (or K2CO3/18-crown-6) is standard for generating the (Z)-selective phosphonate ylide. The reactants and product are simple, acyclic, and clearly illustrate the key transformation: the conversion of an aldehyde to a (Z)-alpha,beta-unsaturated ester.\",\n    \"collision_avoidance_note\": \"The key feature is the bis(2,2,2-trifluoroethyl) phosphonate ester, which is specific to the Still-Gennari modification for (Z)-selectivity. This distinguishes it from the standard HWE reaction (which typically uses diethyl phosphonates for (E)-selectivity) and the Wittig reaction (which uses phosphonium ylides). The structure is kept simple and acyclic to avoid overlap with intramolecular cyclization reactions or reactions involving complex ring systems.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 384,
+    "candidatesTokenCount": 455,
+    "totalTokenCount": 944,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 384
+      }
+    ],
+    "thoughtsTokenCount": 105
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "5dLjaax0_7bT6Q_ondO4DQ"
+}

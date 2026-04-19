@@ -1,0 +1,16 @@
+{
+  "family": "Ritter Reaction",
+  "substrates": [
+    "CC(C)(C)O",
+    "CC#N"
+  ],
+  "products": [
+    "CC(=O)NC(C)(C)C"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This reaction is a classic textbook example of the Ritter reaction. It uses tert-butanol as a stable carbocation precursor, which is protonated by sulfuric acid to form the tert-butyl carbocation. This carbocation is then trapped by acetonitrile, the simplest common nitrile, to form a nitrilium ion intermediate. Subsequent hydrolysis yields N-tert-butylacetamide. All reactants and products are simple, acyclic, and lack complex functional groups, making this an ideal canonical representation.",
+  "collision_avoidance_note": "The use of a simple tertiary alcohol (tert-butanol) and a simple nitrile (acetonitrile) avoids motifs common in other named reactions. It avoids arenes (Friedel-Crafts), alkenes (hydroamination, Markovnikov addition), or complex ring systems. The transformation is a clear C-N bond formation to create an amide from a nitrile and a carbocation source, which is highly specific to the Ritter reaction.",
+  "raw_text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This reaction is a classic textbook example of the Ritter reaction. It uses tert-butanol as a stable carbocation precursor, which is protonated by sulfuric acid to form the tert-butyl carbocation. This carbocation is then trapped by acetonitrile, the simplest common nitrile, to form a nitrilium ion intermediate. Subsequent hydrolysis yields N-tert-butylacetamide. All reactants and products are simple, acyclic, and lack complex functional groups, making this an ideal canonical representation.\",\n    \"collision_avoidance_note\": \"The use of a simple tertiary alcohol (tert-butanol) and a simple nitrile (acetonitrile) avoids motifs common in other named reactions. It avoids arenes (Friedel-Crafts), alkenes (hydroamination, Markovnikov addition), or complex ring systems. The transformation is a clear C-N bond formation to create an amide from a nitrile and a carbocation source, which is highly specific to the Ritter reaction.\"\n  }\n}"
+}

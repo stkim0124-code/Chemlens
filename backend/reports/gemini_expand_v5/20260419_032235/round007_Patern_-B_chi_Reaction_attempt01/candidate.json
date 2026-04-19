@@ -1,0 +1,14 @@
+{
+  "family": "Paternò-Büchi Reaction",
+  "substrates": [
+    "C=C",
+    "CC(C)=O"
+  ],
+  "products": [
+    "CC1(C)OC2CC21"
+  ],
+  "reagents": [],
+  "rationale": "This reaction between acetone and ethylene is a classic, simple, and symmetrical textbook example of the Paternò-Büchi reaction. It clearly demonstrates the photochemical [2+2] cycloaddition of a ketone and an alkene to form the characteristic oxetane ring system. The use of simple, acyclic, and small molecules makes it an ideal canonical representation.",
+  "collision_avoidance_note": "The reaction is defined by the specific photochemical [2+2] cycloaddition between a C=O and a C=C bond to form an oxetane. It avoids common motifs like arenes, diazo groups, or complex ring systems that could cause collisions with other named reactions. The photochemical nature (implied by the transformation) is a key differentiator.",
+  "raw_text": "{\n  \"family\": \"Paternò-Büchi Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C=C\",\n      \"O=C(C)C\"\n    ],\n    \"product_smiles\": [\n      \"CC1(C)OC2CC12\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This reaction between acetone and ethylene is a classic, simple, and symmetrical textbook example of the Paternò-Büchi reaction. It clearly demonstrates the photochemical [2+2] cycloaddition of a ketone and an alkene to form the characteristic oxetane ring system. The use of simple, acyclic, and small molecules makes it an ideal canonical representation.\",\n    \"collision_avoidance_note\": \"The reaction is defined by the specific photochemical [2+2] cycloaddition between a C=O and a C=C bond to form an oxetane. It avoids common motifs like arenes, diazo groups, or complex ring systems that could cause collisions with other named reactions. The photochemical nature (implied by the transformation) is a key differentiator.\"\n  }\n}"
+}

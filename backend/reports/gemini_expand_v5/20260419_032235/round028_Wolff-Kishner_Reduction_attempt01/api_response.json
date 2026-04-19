@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[O-]C(C)(C)C.[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane). This is a classic textbook example of the Wolff-Kishner reduction, specifically the Huang-Minlon modification which uses a high-boiling solvent (often diethylene glycol, omitted for simplicity) and a strong base like potassium tert-butoxide. The use of a simple, symmetric ketone avoids any potential side reactions or regioselectivity issues, making it a clear and unambiguous representation of the core transformation.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic ketone, avoiding arenes (which could trigger Friedel-Crafts or Clemmensen reduction queries), esters (avoiding Claisen), or other functional groups. The transformation is a direct deoxygenation to an alkane, which is highly characteristic of the Wolff-Kishner reduction and distinct from reductions that produce alcohols (e.g., Meerwein-Ponndorf-Verley) or reductive aminations.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 447,
+    "candidatesTokenCount": 321,
+    "totalTokenCount": 822,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 447
+      }
+    ],
+    "thoughtsTokenCount": 54
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "GuXjaZjWHenP2roPkJfOmAo"
+}

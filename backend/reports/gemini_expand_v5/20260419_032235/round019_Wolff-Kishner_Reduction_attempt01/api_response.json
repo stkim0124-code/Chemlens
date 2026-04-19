@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic ketone (3-hexanone) to its corresponding alkane (n-hexane). This is a classic, textbook example of the Wolff-Kishner reduction, clearly demonstrating the conversion of a carbonyl group to a methylene group under basic conditions using hydrazine and potassium hydroxide. The structure is simple, acyclic, and avoids functional groups that could cause side reactions or overlap with other named reactions.\",\n    \"collision_avoidance_note\": \"The chosen substrate is a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation followed by reduction), alpha-beta unsaturation (e.g., Michael additions), or other functional groups. This specific transformation (ketone to methylene) is highly characteristic of the Wolff-Kishner, Clemmensen, or Mozingo reductions, but the specified basic conditions (hydrazine/KOH) strongly select for Wolff-Kishner.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 447,
+    "candidatesTokenCount": 299,
+    "totalTokenCount": 828,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 447
+      }
+    ],
+    "thoughtsTokenCount": 82
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "19zjabPCDd-X0-kPm9mx2A4"
+}

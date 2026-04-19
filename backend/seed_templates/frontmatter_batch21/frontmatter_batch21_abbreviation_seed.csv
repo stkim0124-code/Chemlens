@@ -1,0 +1,21 @@
+alias,canonical_name,entity_type
+LiHMDS,lithium hexamethyldisilazide,strong_base
+Eschenmoser's salt,dimethylmethyleneammonium iodide,methylene_transfer_reagent
+mCPBA,meta-chloroperoxybenzoic acid,oxidant
+LDA,lithium diisopropylamide,strong_base
+LiTMP,lithium tetramethylpiperidide,strong_base
+DBU,"1,8-diazabicyclo[5.4.0]undec-7-ene",base
+TBAF,tetrabutylammonium fluoride,fluoride_source
+Al2O3,aluminum oxide,solid_support
+DMA-DMA,"N,N-dimethylacetamide dimethyl acetal",orthoamide_reagent
+xylene,xylene,solvent
+TsNHNH2,p-toluenesulfonylhydrazide,hydrazone_reagent
+LiAlH4,lithium aluminum hydride,hydride_reductant
+DMP,Dess-Martin periodinane,oxidant
+Hg(CF3CO2)2,mercury(II) trifluoroacetate,Lewis_acid
+HCHO,formaldehyde,carbonyl_reagent
+HCO2H,formic acid,hydride_source
+NaBH3CN,sodium cyanoborohydride,hydride_reductant
+Bu2BOTf,dibutylboron trifluoromethanesulfonate,boron_enolate_reagent
+DIPEA,"N,N-diisopropylethylamine",base
+Et3N,triethylamine,base

@@ -1,0 +1,16 @@
+alias,canonical_name,entity_type
+DEAD,diethyl azodicarboxylate,azo_reagent
+DIAD,diisopropyl azodicarboxylate,azo_reagent
+PPh3,triphenylphosphine,phosphine
+DPPA,diphenylphosphoryl azide,azide_transfer_reagent
+B2pin2,bis(pinacolato)diboron,diboron_reagent
+KOAc,potassium acetate,base
+TiCl4,titanium tetrachloride,Lewis_acid
+BF3·OEt2,boron trifluoride etherate,Lewis_acid
+Sn(OTf)2,tin(II) trifluoromethanesulfonate,Lewis_acid
+LDA,lithium diisopropylamide,base
+LiCl,lithium chloride,additive
+LAB,lithium amidotrihydroborate,reducing_agent
+Et2AlCN,diethylaluminum cyanide,cyanide_reagent
+HCN,hydrogen cyanide,cyanide_source
+AlEt3,triethylaluminum,Lewis_acid

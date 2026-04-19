@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and an alcohol (ethanol) in the presence of dry hydrogen chloride. This is the quintessential first step of the Pinner reaction, representing the core transformation without proceeding to subsequent hydrolysis or aminolysis steps. The reactants and product are simple, acyclic, and clearly illustrate the key bond formations (C-O) and changes in functional groups (nitrile to imino ether salt).\",\n    \"collision_avoidance_note\": \"The reaction uses simple, acyclic aliphatic substrates (acetonitrile, ethanol) to avoid overlap with aromatic substitution reactions or more complex named reactions involving rings. The product is the characteristic imino ether salt (Pinner salt), which is specific to this reaction, rather than the downstream ester or amidine products which could be formed via many other routes (e.g., Fischer esterification, direct amidation).\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 441,
+    "candidatesTokenCount": 296,
+    "totalTokenCount": 797,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 441
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "XNjjaYjfHt-p1e8PzP_nmQQ"
+}

@@ -1,0 +1,16 @@
+{
+  "family": "Schmidt Reaction",
+  "substrates": [
+    "CC(C)=O"
+  ],
+  "products": [
+    "CNC(C)=O"
+  ],
+  "reagents": [
+    "[N-]=[N+]=N",
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This is a classic textbook example of the Schmidt reaction, showing the conversion of a simple, acyclic ketone (acetone) to an amide (N-methylacetamide) using hydrazoic acid and a strong acid catalyst. The reaction proceeds via protonation of the carbonyl, nucleophilic attack by the azide, dehydration, and a 1,2-alkyl shift with loss of dinitrogen. This example clearly illustrates the core transformation of the Schmidt reaction on a ketone substrate.",
+  "collision_avoidance_note": "This example uses a simple, acyclic ketone (acetone) to avoid motifs that could collide with other named reactions. It avoids carboxylic acids (which could be confused with Curtius or Hofmann rearrangements), complex cyclic ketones (avoiding Beckmann rearrangement confusion), and aromatic rings (avoiding reactions like Sandmeyer or other diazonium chemistry).",
+  "raw_text": "{\n  \"family\": \"Schmidt Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)C\"\n    ],\n    \"product_smiles\": [\n      \"CNC(C)=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"N=[N+]=[N-]\",\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Schmidt reaction, showing the conversion of a simple, acyclic ketone (acetone) to an amide (N-methylacetamide) using hydrazoic acid and a strong acid catalyst. The reaction proceeds via protonation of the carbonyl, nucleophilic attack by the azide, dehydration, and a 1,2-alkyl shift with loss of dinitrogen. This example clearly illustrates the core transformation of the Schmidt reaction on a ketone substrate.\",\n    \"collision_avoidance_note\": \"This example uses a simple, acyclic ketone (acetone) to avoid motifs that could collide with other named reactions. It avoids carboxylic acids (which could be confused with Curtius or Hofmann rearrangements), complex cyclic ketones (avoiding Beckmann rearrangement confusion), and aromatic rings (avoiding reactions like Sandmeyer or other diazonium chemistry).\"\n  }\n}"
+}

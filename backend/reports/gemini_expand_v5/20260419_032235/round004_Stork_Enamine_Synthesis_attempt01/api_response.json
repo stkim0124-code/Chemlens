@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Stork Enamine Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=C1CCCCC1\",\n      \"C=CCl\"\n    ],\n    \"product_smiles\": [\n      \"O=C1CCCC(C=C)C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"C1CCNCC1\"\n    ],\n    \"rationale\": \"This reaction shows the alpha-alkylation of cyclohexanone, a classic textbook example of the Stork Enamine Synthesis. Cyclohexanone reacts with pyrrolidine (a common secondary amine) to form the enamine intermediate in situ. This enamine then acts as a nucleophile, attacking the electrophile vinyl chloride. Subsequent hydrolysis of the resulting iminium salt regenerates the ketone, now alkylated at the alpha-position. This example clearly demonstrates the core transformation: enamine formation, electrophilic attack, and hydrolysis.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic, and saturated components where possible (vinyl chloride electrophile) to avoid overlap with other named reactions. The cyclic ketone is essential to the classic representation of this reaction. The use of a simple alkyl halide electrophile avoids motifs common in other reactions like Michael additions (which would use an alpha,beta-unsaturated carbonyl) or acylation reactions. No aromatic rings, diazo groups, or complex functional groups are included.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 421,
+    "candidatesTokenCount": 318,
+    "totalTokenCount": 797,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 421
+      }
+    ],
+    "thoughtsTokenCount": 58
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "B87jaf39Edeh2roPltW-qAM"
+}

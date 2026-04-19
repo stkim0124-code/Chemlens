@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCNC1.C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Hofmann-Löffler-Freytag reaction. The substrate is N-chloro-N-methylbutan-1-amine. Under acidic conditions (e.g., sulfuric acid) and initiation (light or heat), a nitrogen-centered radical is formed. This radical undergoes a 1,5-hydrogen atom transfer from the delta-carbon, creating a carbon-centered radical. This radical then abstracts a chlorine atom from another N-chloroamine molecule, forming a 4-chloro-N-methylbutan-1-amine intermediate. Subsequent treatment with a base (often implicitly present or added, leading to workup with water) causes intramolecular nucleophilic substitution (SN2) to form the final product, N-methylpyrrolidine. The methyl group on the nitrogen is included to prevent competing reactions and clearly define the cyclization product. The reaction demonstrates the key features: formation of an N-haloamine, radical-mediated 1,5-hydrogen abstraction for remote functionalization, and subsequent cyclization to a pyrrolidine ring.\",\n    \"collision_avoidance_note\": \"This example uses a simple, acyclic N-chloroamine substrate that cyclizes to a pyrrolidine. It avoids aromatic rings, complex functional groups, or other reactive motifs that could be confused with other named reactions like the Hofmann rearrangement (amides to amines), Hofmann elimination (quaternary ammonium salts to alkenes), or other radical cyclizations. The focus is specifically on the 1,5-hydrogen atom transfer from a delta-carbon to a nitrogen radical, which is the defining characteristic of this reaction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 392,
+    "candidatesTokenCount": 451,
+    "totalTokenCount": 916,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 392
+      }
+    ],
+    "thoughtsTokenCount": 73
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "H9jjaZ1YiKq-vQ_hheq4Aw"
+}

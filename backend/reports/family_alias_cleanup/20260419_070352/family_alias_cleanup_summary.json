@@ -1,0 +1,343 @@
+{
+  "backend_root": "C:\\chemlens\\backend",
+  "report_dir": "C:\\chemlens\\backend\\reports\\family_alias_cleanup\\20260419_070352",
+  "db_results": [
+    {
+      "label": "canonical",
+      "db_path": "C:\\chemlens\\backend\\app\\labint.db",
+      "status": "updated",
+      "backup_path": "C:\\chemlens\\backend\\reports\\family_alias_cleanup\\20260419_070352\\canonical_labint.db.backup",
+      "results": [
+        {
+          "long_name": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+          "short_name": "Fries Rearrangement",
+          "before": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 1,
+              "extract_molecules": 2
+            }
+          },
+          "after": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 1,
+              "extract_molecules": 2
+            }
+          },
+          "changes": {
+            "short_found": true,
+            "long_found": true,
+            "short_updated": true,
+            "long_updated": true,
+            "alias_rows_changed": 5
+          }
+        },
+        {
+          "long_name": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+          "short_name": "Hofmann-Loffler-Freytag Reaction",
+          "before": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 1,
+              "extract_molecules": 3
+            }
+          },
+          "after": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 1,
+              "extract_molecules": 3
+            }
+          },
+          "changes": {
+            "short_found": true,
+            "long_found": true,
+            "short_updated": true,
+            "long_updated": true,
+            "alias_rows_changed": 6
+          }
+        },
+        {
+          "long_name": "Houben-Hoesch Reaction/Synthesis",
+          "short_name": "Houben-Hoesch Reaction",
+          "before": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 1,
+              "extract_molecules": 2
+            }
+          },
+          "after": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 1,
+              "extract_molecules": 2
+            }
+          },
+          "changes": {
+            "short_found": true,
+            "long_found": true,
+            "short_updated": true,
+            "long_updated": true,
+            "alias_rows_changed": 5
+          }
+        }
+      ]
+    },
+    {
+      "label": "work",
+      "db_path": "C:\\chemlens\\backend\\app\\labint_round9_bridge_work.db",
+      "status": "updated",
+      "backup_path": "C:\\chemlens\\backend\\reports\\family_alias_cleanup\\20260419_070352\\work_labint_round9_bridge_work.db.backup",
+      "results": [
+        {
+          "long_name": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+          "short_name": "Fries Rearrangement",
+          "before": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            }
+          },
+          "after": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            }
+          },
+          "changes": {
+            "short_found": true,
+            "long_found": true,
+            "short_updated": true,
+            "long_updated": true,
+            "alias_rows_changed": 5
+          }
+        },
+        {
+          "long_name": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+          "short_name": "Hofmann-Loffler-Freytag Reaction",
+          "before": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            }
+          },
+          "after": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            }
+          },
+          "changes": {
+            "short_found": true,
+            "long_found": true,
+            "short_updated": true,
+            "long_updated": true,
+            "alias_rows_changed": 6
+          }
+        },
+        {
+          "long_name": "Houben-Hoesch Reaction/Synthesis",
+          "short_name": "Houben-Hoesch Reaction",
+          "before": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            }
+          },
+          "after": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            }
+          },
+          "changes": {
+            "short_found": true,
+            "long_found": true,
+            "short_updated": true,
+            "long_updated": true,
+            "alias_rows_changed": 5
+          }
+        }
+      ]
+    },
+    {
+      "label": "stage",
+      "db_path": "C:\\chemlens\\backend\\app\\labint_v5_stage.db",
+      "status": "updated",
+      "backup_path": "C:\\chemlens\\backend\\reports\\family_alias_cleanup\\20260419_070352\\stage_labint_v5_stage.db.backup",
+      "results": [
+        {
+          "long_name": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+          "short_name": "Fries Rearrangement",
+          "before": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 1,
+              "extract_molecules": 4
+            }
+          },
+          "after": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 1,
+              "extract_molecules": 4
+            }
+          },
+          "changes": {
+            "short_found": true,
+            "long_found": true,
+            "short_updated": true,
+            "long_updated": true,
+            "alias_rows_changed": 5
+          }
+        },
+        {
+          "long_name": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+          "short_name": "Hofmann-Loffler-Freytag Reaction",
+          "before": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 1,
+              "extract_molecules": 6
+            }
+          },
+          "after": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 1,
+              "extract_molecules": 6
+            }
+          },
+          "changes": {
+            "short_found": true,
+            "long_found": true,
+            "short_updated": true,
+            "long_updated": true,
+            "alias_rows_changed": 6
+          }
+        },
+        {
+          "long_name": "Houben-Hoesch Reaction/Synthesis",
+          "short_name": "Houben-Hoesch Reaction",
+          "before": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 1,
+              "extract_molecules": 7
+            }
+          },
+          "after": {
+            "long": {
+              "reaction_extracts": 0,
+              "extract_molecules": 0
+            },
+            "short": {
+              "reaction_extracts": 1,
+              "extract_molecules": 7
+            }
+          },
+          "changes": {
+            "short_found": true,
+            "long_found": true,
+            "short_updated": true,
+            "long_updated": true,
+            "alias_rows_changed": 5
+          }
+        }
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "long_name": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+      "short_name": "Fries Rearrangement",
+      "extra_synonyms": [
+        "Photo-Fries rearrangement",
+        "Anionic ortho-Fries rearrangement",
+        "Ortho-Fries rearrangement"
+      ],
+      "notes": "Long-form ontology shell mapped to canonical short-form family."
+    },
+    {
+      "long_name": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+      "short_name": "Hofmann-Loffler-Freytag Reaction",
+      "extra_synonyms": [
+        "Hofmann-Loeffler-Freytag Reaction",
+        "Hofmann-Löffler-Freytag Reaction",
+        "HLF Reaction",
+        "Remote Functionalization"
+      ],
+      "notes": "Long-form ontology shell mapped to canonical short-form family."
+    },
+    {
+      "long_name": "Houben-Hoesch Reaction/Synthesis",
+      "short_name": "Houben-Hoesch Reaction",
+      "extra_synonyms": [
+        "Houben-Hoesch Synthesis",
+        "Hoesch Reaction",
+        "Reaction/Synthesis"
+      ],
+      "notes": "Long-form ontology shell mapped to canonical short-form family."
+    }
+  ],
+  "timestamp": "2026-04-19T07:03:52"
+}

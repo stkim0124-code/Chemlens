@@ -1,0 +1,61 @@
+{
+  "family_name": "Krapcho Dealkoxycarbonylation",
+  "variant": "all_original",
+  "summary": {
+    "benchmark_name": "CHEMLENS small benchmark v3",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 26,
+    "top1_accuracy": 0.963,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "changed_cases": [
+    {
+      "case_id": "buchner_403_exact_extract",
+      "expected_family": "Buchner Reaction",
+      "baseline_top1_family": "Buchner Reaction",
+      "current_top1_family": "Krapcho Dealkoxycarbonylation",
+      "baseline_top1_correct": true,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Buchner Reaction | Malonic Ester Synthesis | Cornforth Rearrangement",
+      "current_top3_families": "Krapcho Dealkoxycarbonylation | Buchner Reaction | Malonic Ester Synthesis",
+      "baseline_top3_scores": "1.249 | 1.187 | 1.129",
+      "current_top3_scores": "1.65 | 1.249 | 1.187",
+      "baseline_notes": "Exact extract query from Buchner example currently used as regression case.",
+      "current_notes": "Exact extract query from Buchner example currently used as regression case."
+    },
+    {
+      "case_id": "baker_346_exact_extract",
+      "expected_family": "Baker-Venkataraman Rearrangement",
+      "baseline_top1_family": "Baker-Venkataraman Rearrangement",
+      "current_top1_family": "Baker-Venkataraman Rearrangement",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_top3_families": "Baker-Venkataraman Rearrangement",
+      "current_top3_families": "Baker-Venkataraman Rearrangement | Krapcho Dealkoxycarbonylation",
+      "baseline_top3_scores": "1.052",
+      "current_top3_scores": "1.052 | 0.09",
+      "baseline_notes": "Second Baker-Venkataraman family extract.",
+      "current_notes": "Second Baker-Venkataraman family extract."
+    }
+  ],
+  "reaction_extract_ids": [
+    549
+  ],
+  "extract_molecule_ids": [
+    2247,
+    2248,
+    2249,
+    2250
+  ],
+  "insert_stats": {
+    "inserted_extract_rows": 1,
+    "inserted_molecule_rows": 4,
+    "total_changes_delta": 5
+  },
+  "identical_to_baseline": false
+}

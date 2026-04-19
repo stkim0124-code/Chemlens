@@ -1,0 +1,17 @@
+{
+  "family": "Pinner Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "N#Cc1ccc(OC)cc1"
+    ],
+    "product_smiles": [
+      "COC(=N)c1ccc(OC)cc1"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This reaction demonstrates the classic Pinner reaction, where a substituted aryl nitrile (4-methoxybenzonitrile) reacts with an alcohol (methanol) under anhydrous acidic conditions (dry HCl) to form the corresponding methyl imidate ester. The electron-donating methoxy group on the aromatic ring is a common feature in examples of this reaction. The product is the stable imidate salt intermediate, which is the defining product of the Pinner reaction, distinguishing it from subsequent hydrolysis to an ester or amide.",
+    "collision_avoidance_note": "The substrate is a substituted aryl nitrile, avoiding simple alkyl nitriles. The product is an imidate ester, not an amide or carboxylic acid, which clearly defines it as a Pinner reaction and not a simple nitrile hydrolysis. The conditions (acidic alcohol) differentiate it from the Ritter reaction (acidic water/t-butanol) or the Houben-Hoesch reaction (which involves phenols and forms ketones). The use of methanol is specific and avoids generic representations.",
+    "reagents_text": "methanol, dry HCl",
+    "conditions_text": "anhydrous conditions, low temperature (e.g., 0 C)"
+  }
+}

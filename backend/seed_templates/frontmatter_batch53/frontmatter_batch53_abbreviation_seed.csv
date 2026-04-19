@@ -1,0 +1,16 @@
+alias,canonical_name,entity_type
+s-BuLi,sec-butyllithium,organolithium
+TMEDA,tetramethylethylenediamine,ligand
+CuTC,copper(I) thiophene-2-carboxylate,cu_catalyst
+POCl3,phosphoryl chloride,chlorinating_reagent
+DMF,"N,N-dimethylformamide",solvent
+PDC,pyridinium dichromate,oxidant
+HMPA,hexamethylphosphoramide,additive
+TMSI,trimethylsilyl iodide,reagent
+InCl3,indium(III) chloride,lewis_acid
+PdCl2,palladium(II) chloride,pd_catalyst
+CuCl,copper(I) chloride,cu_catalyst
+TBHP,tert-butyl hydroperoxide,oxidant
+Na2PdCl4,sodium tetrachloropalladate(II),pd_catalyst
+Cu(OAc)2,copper(II) acetate,cu_catalyst
+(n-Bu)4NCl,tetrabutylammonium chloride,phase_transfer_additive

@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCCCC(C)=O"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic aliphatic ketone (2-hexanone) to its corresponding alkane (n-hexane). This is a classic, textbook example of the Wolff-Kishner reduction, clearly demonstrating the conversion of a carbonyl group to a methylene group under basic conditions (hydrazine and KOH). The reactants and products are simple, acyclic, and lack complex functional groups, making it a clear and unambiguous representation of the core transformation.",
+  "collision_avoidance_note": "The use of a simple, acyclic aliphatic ketone avoids motifs that could collide with other named reactions. For example, it avoids aromatic rings (which could trigger Friedel-Crafts or Clemmensen reduction queries), alpha,beta-unsaturated systems (Michael addition), or other functional groups that might undergo elimination or other base-catalyzed reactions. This specific example isolates the core C=O to CH2 transformation characteristic of the Wolff-Kishner reduction.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=C(C)CCCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[K+].[OH-]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic aliphatic ketone (2-hexanone) to its corresponding alkane (n-hexane). This is a classic, textbook example of the Wolff-Kishner reduction, clearly demonstrating the conversion of a carbonyl group to a methylene group under basic conditions (hydrazine and KOH). The reactants and products are simple, acyclic, and lack complex functional groups, making it a clear and unambiguous representation of the core transformation.\",\n    \"collision_avoidance_note\": \"The use of a simple, acyclic aliphatic ketone avoids motifs that could collide with other named reactions. For example, it avoids aromatic rings (which could trigger Friedel-Crafts or Clemmensen reduction queries), alpha,beta-unsaturated systems (Michael addition), or other functional groups that might undergo elimination or other base-catalyzed reactions. This specific example isolates the core C=O to CH2 transformation characteristic of the Wolff-Kishner reduction.\"\n  }\n}"
+}

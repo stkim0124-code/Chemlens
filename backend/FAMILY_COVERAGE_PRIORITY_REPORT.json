@@ -1,0 +1,276 @@
+{
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "manual_family_total_raw": 250,
+  "queryable_family_total_raw": 41,
+  "manual_family_covered_raw_exact": 32,
+  "manual_family_covered_normalized": 34,
+  "manual_family_uncovered_normalized": 216,
+  "top_priority_uncovered_families": [
+    {
+      "family": "Aldol Reaction",
+      "manual_rows": 2,
+      "extract_rows": 8,
+      "tier3_rows": 36,
+      "exact_like_score": 22,
+      "priority_score": 54,
+      "sample_candidates": [
+        {
+          "text": "beta-hydroxy ketone",
+          "role": "product",
+          "count": 4
+        },
+        {
+          "text": "aldehyde",
+          "role": "reactant",
+          "count": 3
+        },
+        {
+          "text": "DCM",
+          "role": "solvent",
+          "count": 2
+        },
+        {
+          "text": "favored TS, unfavored TS",
+          "role": "intermediate",
+          "count": 2
+        },
+        {
+          "text": "ketone",
+          "role": "reactant",
+          "count": 2
+        },
+        {
+          "text": "(+)-chlorodiisopinocampheylborane",
+          "role": "reagent",
+          "count": 1
+        },
+        {
+          "text": "(E)-enolate, R1CHO",
+          "role": "reactant",
+          "count": 1
+        },
+        {
+          "text": "(S)-LLB",
+          "role": "catalyst",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "family": "Barbier Coupling Reaction",
+      "manual_rows": 2,
+      "extract_rows": 2,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 16,
+      "sample_candidates": []
+    },
+    {
+      "family": "Baylis-Hillman Reaction",
+      "manual_rows": 2,
+      "extract_rows": 2,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 16,
+      "sample_candidates": []
+    },
+    {
+      "family": "Birch Reduction",
+      "manual_rows": 2,
+      "extract_rows": 2,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 16,
+      "sample_candidates": []
+    },
+    {
+      "family": "Carroll Rearrangement",
+      "manual_rows": 2,
+      "extract_rows": 2,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 16,
+      "sample_candidates": []
+    },
+    {
+      "family": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Amadori Reaction / Rearrangement",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Baeyer-Villiger Oxidation/Rearrangement",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Baldwin's Rules / Guidelines for Ring-Closing Reactions",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Claisen Condensation / Claisen Reaction",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Combes Quinoline Synthesis",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Cope Elimination / Cope Reaction",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Cope Rearrangement",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Corey-Fuchs Alkyne Synthesis",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Corey-Kim Oxidation",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Corey-Nicolaou Macrolactonization",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Corey-Winter Olefination",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Cornforth Rearrangement",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Criegee Oxidation",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Curtius Rearrangement",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    },
+    {
+      "family": "Dakin Oxidation",
+      "manual_rows": 2,
+      "extract_rows": 0,
+      "tier3_rows": 0,
+      "exact_like_score": 0,
+      "priority_score": 10,
+      "sample_candidates": []
+    }
+  ]
+}

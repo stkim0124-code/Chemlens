@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Houben-Hoesch Reaction/Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"COc1cc(OC)cc(OC)c1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1cc(OC)cc(OC)c1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Zn]Cl\",\n      \"Cl\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Houben-Hoesch reaction, featuring the acylation of a highly activated, electron-rich aromatic ring (1,3,5-trimethoxybenzene) with a simple nitrile (acetonitrile). The reaction is catalyzed by a Lewis acid (ZnCl2) and a protic acid (HCl), leading to the formation of an aryl ketone (2,4,6-trimethoxyacetophenone). The reactants and product are simple, acyclic where possible, and clearly illustrate the core transformation of this named reaction: electrophilic acylation of an activated arene using a nitrile.\",\n    \"collision_avoidance_note\": \"This example is specific to the Houben-Hoesch reaction, which uses a nitrile as the acylating agent for an electron-rich arene. It is distinct from the Friedel-Crafts acylation (which uses acyl halides or anhydrides), the Gattermann reaction (which uses HCN or its derivatives to form an aldehyde), and the Vilsmeier-Haack reaction (which uses a substituted formamide to form an aldehyde). The use of a simple nitrile and a highly activated polyalkoxybenzene avoids ambiguity with other electrophilic aromatic substitution reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 369,
+    "candidatesTokenCount": 380,
+    "totalTokenCount": 809,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 369
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "It3jafyFE6Wn2roPp4KfkQM"
+}

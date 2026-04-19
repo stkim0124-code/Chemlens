@@ -1,0 +1,15 @@
+{
+  "family": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+  "substrates": [
+    "CCCCN(C)Cl"
+  ],
+  "products": [
+    "CN1CCCC1"
+  ],
+  "reagents": [
+    "O"
+  ],
+  "rationale": "This is a classic and simple textbook example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutan-1-amine undergoes intramolecular hydrogen atom transfer from the delta-carbon to the nitrogen-centered radical, followed by cyclization to form N-methylpyrrolidine. The reaction is typically initiated by heat or light and worked up with a base. Water is included as a reagent to represent the aqueous basic workup that neutralizes the HCl byproduct and facilitates the final cyclization step.",
+  "collision_avoidance_note": "This example uses a simple acyclic N-chloroamine substrate that cyclizes to a pyrrolidine ring, which is the core transformation of this reaction. It avoids complex structures, arenes, or other functional groups that could cause collisions with other named reactions. The key features are the N-Cl bond, the alkyl chain of sufficient length (at least 4 carbons), and the intramolecular C-N bond formation at a remote (delta) position.",
+  "raw_text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCCN1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\"\n    ],\n    \"rationale\": \"This is a classic and simple textbook example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutan-1-amine undergoes intramolecular hydrogen atom transfer from the delta-carbon to the nitrogen-centered radical, followed by cyclization to form N-methylpyrrolidine. The reaction is typically initiated by heat or light and worked up with a base. Water is included as a reagent to represent the aqueous basic workup that neutralizes the HCl byproduct and facilitates the final cyclization step.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic N-chloroamine substrate that cyclizes to a pyrrolidine ring, which is the core transformation of this reaction. It avoids complex structures, arenes, or other functional groups that could cause collisions with other named reactions. The key features are the N-Cl bond, the alkyl chain of sufficient length (at least 4 carbons), and the intramolecular C-N bond formation at a remote (delta) position.\"\n  }\n}"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to its corresponding alkane (hexane) using Wilkinson's catalyst. This is a classic, textbook example of the Tsuji-Wilkinson decarbonylation, clearly demonstrating the deformylation of an aldehyde to an alkane with the loss of carbon monoxide. The simple, saturated alkyl chain avoids reactive functional groups that could cause side reactions or overlap with other named reaction families.\",\n    \"collision_avoidance_note\": \"The use of a simple, saturated aliphatic aldehyde avoids motifs common to other reactions. It is not an acyl halide (avoids Rosenmund reduction), does not involve arenes (avoids Friedel-Crafts acylation/deacylation), and is a stoichiometric decarbonylation, distinguishing it from catalytic decarbonylations or other C-C bond cleavage reactions. The substrate is acyclic to avoid confusion with ring-contraction reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 440,
+    "candidatesTokenCount": 336,
+    "totalTokenCount": 836,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 440
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "dtDjaezrOpyw0-kP4IuI2A0"
+}

@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCC(=O)CC"
+  ],
+  "products": [
+    "CCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This is a canonical, textbook example of the Wolff-Kishner reduction. It uses a simple, acyclic, aliphatic ketone (3-pentanone) and reduces it to the corresponding alkane (n-pentane). The reagents, hydrazine (NN) and potassium hydroxide ([OH-].[K+]), are the classic conditions for this transformation. The structure is simple, RDKit-parseable, and clearly demonstrates the core C=O to CH2 conversion without any complicating functional groups.",
+  "collision_avoidance_note": "This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation followed by reduction), which might be confused with the Clemmensen reduction. It also avoids aldehydes, which can sometimes undergo other base-catalyzed side reactions. The simple, acyclic structure minimizes potential collisions with ring-contraction or other complex skeletal rearrangements.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This is a canonical, textbook example of the Wolff-Kishner reduction. It uses a simple, acyclic, aliphatic ketone (3-pentanone) and reduces it to the corresponding alkane (n-pentane). The reagents, hydrazine (NN) and potassium hydroxide ([OH-].[K+]), are the classic conditions for this transformation. The structure is simple, RDKit-parseable, and clearly demonstrates the core C=O to CH2 conversion without any complicating functional groups.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation followed by reduction), which might be confused with the Clemmensen reduction. It also avoids aldehydes, which can sometimes undergo other base-catalyzed side reactions. The simple, acyclic structure minimizes potential collisions with ring-contraction or other complex skeletal rearrangements.\"\n  }\n}"
+}

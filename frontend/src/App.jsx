@@ -211,7 +211,7 @@ export default function App() {
 
       setSmilesText(s || "");
       setMolfile(m || "");
-      await searchSimilar(m ? { kind: "molfile", value: m } : { kind: "smiles", value: s });
+      await searchSimilar({ kind: "smiles", value: s || "" });
     } catch (e) {
       setStatus(`Ketcher 읽기 실패: ${String(e)}`);
     }
@@ -234,27 +234,12 @@ export default function App() {
     return data;
   }
 
-  async function molfileToSmiles(molText) {
-    // backend: POST /upload/mol (multipart form-data, field name: file)
-    const blob = new Blob([molText], { type: "chemical/x-mdl-molfile" });
-    const file = new File([blob], "input.mol", { type: "chemical/x-mdl-molfile" });
-    const fd = new FormData();
-    fd.append("file", file);
-
-    const r = await fetch(`${API_BASE}/upload/mol`, {
-      method: "POST",
-      body: fd,
+  async function normalizeStructureInput(inputKind, inputText) {
+    const data = await callJson(`${API_BASE}/api/structure/normalize`, {
+      input_kind: inputKind,
+      input_text: inputText,
     });
-
-    const text = await r.text();
-    let data;
-    try {
-      data = JSON.parse(text);
-    } catch {
-      data = { raw: text };
-    }
-    if (!r.ok) throw new Error(data?.detail || data?.message || text || `HTTP ${r.status}`);
-    if (!data?.smiles) throw new Error("upload/mol did not return smiles");
+    if (!data?.smiles) throw new Error("normalize endpoint did not return smiles");
     return data.smiles;
   }
 
@@ -285,9 +270,9 @@ export default function App() {
       if (query.kind === "reaction_smiles") {
         reactionSmiles = query.value;
       } else if (query.kind === "smiles") {
-        smiles = query.value;
+        smiles = await normalizeStructureInput("smiles", query.value);
       } else if (query.kind === "molfile") {
-        smiles = await molfileToSmiles(query.value);
+        smiles = await normalizeStructureInput("molfile", query.value);
       } else if (typeof query === "string") {
         if (isReactionQueryText(query)) reactionSmiles = query;
         else smiles = query;
@@ -516,7 +501,7 @@ export default function App() {
                   초기화
                 </Button>
                 <div style={{ fontSize: 12, opacity: 0.75 }}>
-                  요청: top_k={topK}, min_tanimoto={minSim} · 반응 화살표가 있으면 reactant/product 모두 evidence 검색
+                  요청: top_k={topK}, min_tanimoto={minSim} · 검색 경로는 canonical SMILES → /search 로 봉인됨
                 </div>
               </div>
 

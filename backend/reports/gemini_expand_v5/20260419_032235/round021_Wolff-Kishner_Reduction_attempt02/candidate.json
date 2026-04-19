@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCCC(=O)CC"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to the corresponding alkane (n-hexane) using hydrazine (NH2NH2) and potassium hydroxide (KOH), which are the classic reagents for the Wolff-Kishner reduction. The substrate is symmetrical and avoids stereocenters, enolization complications, or other reactive functional groups, making it a clear and unambiguous example of the core transformation.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic ketone, avoiding aromatic rings (which could trigger Friedel-Crafts or Clemmensen reduction queries) and other functional groups. This specific deoxygenation of a ketone to an alkane under basic conditions is characteristic of the Wolff-Kishner reduction and distinct from acidic (Clemmensen) or neutral (Mozingo) reductions.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[K+].[OH-]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to the corresponding alkane (n-hexane) using hydrazine (NH2NH2) and potassium hydroxide (KOH), which are the classic reagents for the Wolff-Kishner reduction. The substrate is symmetrical and avoids stereocenters, enolization complications, or other reactive functional groups, making it a clear and unambiguous example of the core transformation.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic ketone, avoiding aromatic rings (which could trigger Friedel-Crafts or Clemmensen reduction queries) and other functional groups. This specific deoxygenation of a ketone to an alkane under basic conditions is characteristic of the Wolff-Kishner reduction and distinct from acidic (Clemmensen) or neutral (Mozingo) reductions.\"\n  }\n}"
+}

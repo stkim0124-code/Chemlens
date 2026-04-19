@@ -1,0 +1,17 @@
+{
+  "family": "Pinner Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "N#Cc1ccc(OC)c(OC)c1"
+    ],
+    "product_smiles": [
+      "CCOC(=N)c1ccc(OC)c(OC)c1"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This reaction demonstrates the classic Pinner reaction, where a substituted aryl nitrile (3,4-dimethoxybenzonitrile) is treated with an alcohol (ethanol) under anhydrous acidic conditions (dry HCl) to form the corresponding imidate ester (ethyl 3,4-dimethoxybenzimidate). The electron-donating methoxy groups on the aromatic ring are common in this type of transformation. The product is clearly an imidate, not an amide or a ketone, distinguishing it from hydrolysis or Houben-Hoesch reactions.",
+    "collision_avoidance_note": "The substrate is 3,4-dimethoxybenzonitrile, a common but specific substituted aryl nitrile. The product is an ethyl imidate, avoiding simple methyl esters. This specific combination of a dimethoxy-substituted phenyl ring and an ethyl imidate provides a distinct and canonical example, differing from simple benzonitrile or other common substituted patterns like p-tolyl or p-chlorophenyl nitriles.",
+    "reagents_text": "ethanol, dry HCl",
+    "conditions_text": "anhydrous acidic conditions, low temperature"
+  }
+}

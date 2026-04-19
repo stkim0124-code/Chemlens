@@ -1,0 +1,31 @@
+{
+  "mode": "APPLY",
+  "summary": "C:\\chemlens\\backend\\reports\\gemini_rebuild_rejected8\\20260419_020021\\gemini_rebuild_rejected8_summary.json",
+  "exclude_apply_summary": "C:\\chemlens\\backend\\reports\\gemini_rebuild_rejected8\\20260419_020226\\gemini_rebuild_rejected8_summary.json",
+  "accepted": [],
+  "rejected": [],
+  "skipped": [
+    {
+      "family": "Hofmann-Loffler-Freytag Reaction",
+      "reason": "already_present"
+    }
+  ],
+  "state_before": {
+    "queryable": 736,
+    "family_coverage": 152,
+    "reaction_extracts": 391,
+    "extract_molecules_total": 2302
+  },
+  "state_after": {
+    "queryable": 736,
+    "family_coverage": 152,
+    "reaction_extracts": 391,
+    "extract_molecules_total": 2302
+  },
+  "final_benchmark": {
+    "top1_accuracy": 1.0,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "db_used": "C:\\chemlens\\backend\\app\\labint.db"
+  }
+}

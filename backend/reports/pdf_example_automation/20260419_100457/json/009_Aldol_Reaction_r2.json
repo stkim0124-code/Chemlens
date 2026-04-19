@@ -1,0 +1,34 @@
+{
+  "family_name": "Aldol Reaction",
+  "region_confidence": 1.0,
+  "example_target_name": "rhizoxin D",
+  "example_summary": "During the total synthesis of rhizoxin D, an asymmetric aldol reaction was utilized to couple two key fragments. The reaction involves an aldehyde and a chiral enolate derived from a ketone using (+)-chlorodiisopinocampheylborane, affording the product with a high diastereomeric ratio of 17-20:1.",
+  "extracts": [
+    {
+      "extract_kind": "application_example",
+      "reaction_family_name": "Aldol Reaction",
+      "transformation_text": "Asymmetric aldol reaction",
+      "reactants_text": null,
+      "products_text": null,
+      "intermediates_text": "chiral enolate",
+      "reagents_text": [
+        "(+)-chlorodiisopinocampheylborane",
+        "Et3N"
+      ],
+      "catalysts_text": null,
+      "solvents_text": [
+        "Et2O"
+      ],
+      "temperature_text": "0°C",
+      "time_text": null,
+      "yield_text": null,
+      "workup_text": null,
+      "conditions_text": "i. (+)-chlorodiisopinocampheylborane, Et3N, Et2O, 0°C; ii. aldehyde",
+      "notes_text": "diastereomeric ratio: 17-20:1. This is a “matched” aldol reaction where the stereochemical induction of the chiral boron substituent and the stereocenters present in the enolate reinforce each other.",
+      "reactant_smiles": null,
+      "product_smiles": null,
+      "smiles_confidence": 0.0,
+      "extraction_confidence": 0.95
+    }
+  ]
+}

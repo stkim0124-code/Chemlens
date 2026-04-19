@@ -176,6 +176,11 @@ class SearchRequest(BaseModel):
     min_tanimoto: float = Field(0.25, ge=0.0, le=1.0, description="Minimum Tanimoto similarity")
 
 
+class StructureNormalizeRequest(BaseModel):
+    input_text: str = Field(..., description="SMILES or MOL block")
+    input_kind: str = Field(..., pattern="^(smiles|molfile)$", description="Input kind")
+
+
 class GeminiRequest(BaseModel):
     prompt: str = Field(..., description="User prompt for Gemini")
 
@@ -765,6 +770,39 @@ def api_search(req: SearchRequest):
         "structure_evidence_error": evidence_error,
     }
 
+
+
+def _molblock_to_smiles(mol_text: str) -> str:
+    _ensure_rdkit()
+    try:
+        mol = Chem.MolFromMolBlock(mol_text, sanitize=True)
+    except Exception:
+        mol = None
+    if mol is None:
+        raise HTTPException(status_code=400, detail="Invalid MOL file")
+    smi = Chem.MolToSmiles(mol, canonical=True)
+    if not smi:
+        raise HTTPException(status_code=400, detail="Failed to canonicalize MOL file")
+    return smi
+
+
+def _normalize_structure_input(input_text: str, input_kind: str) -> Dict[str, Any]:
+    text = (input_text or '').strip()
+    kind = (input_kind or '').strip().lower()
+    if not text:
+        raise HTTPException(status_code=400, detail="input_text is empty")
+    if kind == 'smiles':
+        _ensure_rdkit()
+        mol = Chem.MolFromSmiles(text)
+        if mol is None:
+            raise HTTPException(status_code=400, detail="Invalid SMILES")
+        smiles = Chem.MolToSmiles(mol, canonical=True)
+        return {"smiles": smiles, "input_kind": "smiles", "normalized_kind": "smiles"}
+    if kind == 'molfile':
+        smiles = _molblock_to_smiles(text)
+        return {"smiles": smiles, "input_kind": "molfile", "normalized_kind": "smiles"}
+    raise HTTPException(status_code=400, detail="Unsupported input_kind")
+
 def _call_gemini(prompt: str, system_instruction: str) -> str:
     if not GEMINI_API_KEY:
         raise HTTPException(status_code=400, detail="GEMINI_API_KEY is not set on the server")
@@ -792,20 +830,24 @@ def api_gemini(req: GeminiRequest):
     return {"text": text}
 
 
+
+
+@app.post("/api/structure/normalize")
+def api_structure_normalize(req: StructureNormalizeRequest):
+    """Canonicalize a search input into SMILES.
+
+    Search path seal:
+    - Search UI may accept MOL text, but final search always goes through canonical SMILES -> /search.
+    - /upload/mol remains available for ingest-style uploads.
+    """
+    return _normalize_structure_input(req.input_text, req.input_kind)
+
+
 @app.post("/upload/mol")
 async def upload_mol(file: UploadFile = File(...)):
     """MOL 업로드 → canonical SMILES 반환"""
-    _ensure_rdkit()
     content = await file.read()
-    try:
-        mol = Chem.MolFromMolBlock(content.decode("utf-8", errors="ignore"), sanitize=True)
-    except Exception:
-        mol = None
-
-    if mol is None:
-        raise HTTPException(status_code=400, detail="Invalid MOL file")
-
-    smi = Chem.MolToSmiles(mol, canonical=True)
+    smi = _molblock_to_smiles(content.decode("utf-8", errors="ignore"))
     return {"smiles": smi}
 
 

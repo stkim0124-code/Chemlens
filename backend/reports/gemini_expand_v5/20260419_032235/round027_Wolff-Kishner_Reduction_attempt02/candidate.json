@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCC(=O)CC"
+  ],
+  "products": [
+    "CCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-pentanone) to its corresponding alkane (n-pentane). This is a classic textbook example of the Wolff-Kishner reduction, clearly demonstrating the conversion of a carbonyl group to a methylene group under basic conditions using hydrazine and potassium hydroxide. The substrate is simple and avoids complex functional groups or aromatic rings that could cause collisions with other named reactions.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic ketone, avoiding aromatic rings (which could trigger Clemmensen reduction or Friedel-Crafts type reactions), esters (avoiding Claisen condensation), or other reducible functional groups. The transformation is a direct C=O to CH2 conversion, which is the defining feature of the Wolff-Kishner reduction, minimizing overlap with other deoxygenation or reduction reactions that have different specificities.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-pentanone) to its corresponding alkane (n-pentane). This is a classic textbook example of the Wolff-Kishner reduction, clearly demonstrating the conversion of a carbonyl group to a methylene group under basic conditions using hydrazine and potassium hydroxide. The substrate is simple and avoids complex functional groups or aromatic rings that could cause collisions with other named reactions.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic ketone, avoiding aromatic rings (which could trigger Clemmensen reduction or Friedel-Crafts type reactions), esters (avoiding Claisen condensation), or other reducible functional groups. The transformation is a direct C=O to CH2 conversion, which is the defining feature of the Wolff-Kishner reduction, minimizing overlap with other deoxygenation or reduction reactions that have different specificities.\"\n  }\n}"
+}

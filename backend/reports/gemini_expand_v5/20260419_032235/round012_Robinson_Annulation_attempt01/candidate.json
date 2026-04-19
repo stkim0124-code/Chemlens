@@ -1,0 +1,16 @@
+{
+  "family": "Robinson Annulation",
+  "substrates": [
+    "CC(=O)CC(C)=O",
+    "C=CC(C)=O"
+  ],
+  "products": [
+    "CC1=CC(=O)C(C)(C)CC1"
+  ],
+  "reagents": [
+    "[OH-]"
+  ],
+  "rationale": "This is a classic and simple textbook example of the Robinson annulation. It uses acetylacetone (2,4-pentanedione) as the Michael donor and methyl vinyl ketone (MVK) as the Michael acceptor. The reaction proceeds via a Michael addition followed by an intramolecular aldol condensation and subsequent dehydration to form the characteristic cyclohexenone ring. The use of simple, acyclic starting materials clearly demonstrates the ring-forming (annulation) nature of the reaction.",
+  "collision_avoidance_note": "This example uses simple, acyclic, non-aromatic reactants to avoid overlap with other named reactions involving complex ring systems or aromatic substrates. It specifically avoids motifs like generic arenes, diazo compounds, or complex functional groups that could trigger false positives for other named reactions. The core transformation is the formation of a cyclohexenone from an enolate and an alpha,beta-unsaturated ketone, which is the defining feature of the Robinson annulation.",
+  "raw_text": "{\n  \"family\": \"Robinson Annulation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)CC(=O)C\",\n      \"C=CC(=O)C\"\n    ],\n    \"product_smiles\": [\n      \"CC1=CC(=O)C(C)(C)CC1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[OH-]\"\n    ],\n    \"rationale\": \"This is a classic and simple textbook example of the Robinson annulation. It uses acetylacetone (2,4-pentanedione) as the Michael donor and methyl vinyl ketone (MVK) as the Michael acceptor. The reaction proceeds via a Michael addition followed by an intramolecular aldol condensation and subsequent dehydration to form the characteristic cyclohexenone ring. The use of simple, acyclic starting materials clearly demonstrates the ring-forming (annulation) nature of the reaction.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic, non-aromatic reactants to avoid overlap with other named reactions involving complex ring systems or aromatic substrates. It specifically avoids motifs like generic arenes, diazo compounds, or complex functional groups that could trigger false positives for other named reactions. The core transformation is the formation of a cyclohexenone from an enolate and an alpha,beta-unsaturated ketone, which is the defining feature of the Robinson annulation.\"\n  }\n}"
+}

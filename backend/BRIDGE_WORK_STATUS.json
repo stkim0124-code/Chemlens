@@ -1,0 +1,6 @@
+{
+  "exists": true,
+  "should_use_as_baseline": false,
+  "reason": "app/labint.db is the canonical baseline. Any bridge/work DB is disposable.",
+  "queryable": 144
+}

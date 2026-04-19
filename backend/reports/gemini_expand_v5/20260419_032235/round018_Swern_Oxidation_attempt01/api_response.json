@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Swern Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"O=C(Cl)C(=O)Cl\",\n      \"CCN(CC)CC\"\n    ],\n    \"rationale\": \"The Swern oxidation of a simple primary alcohol, 1-butanol, to the corresponding aldehyde, butanal, is a classic textbook example. This reaction clearly demonstrates the transformation of a primary alcohol to an aldehyde without over-oxidation to a carboxylic acid, which is a key feature of the Swern protocol. The reactants and products are simple, acyclic, and lack complex functional groups, making it an unambiguous representation of the reaction family. The key reagents (DMSO, oxalyl chloride, and triethylamine) are explicitly included.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic primary alcohol (1-butanol). It avoids using secondary alcohols, which could overlap with general ketone synthesis, and avoids complex structures, aromatic rings, or other reactive functional groups that might trigger other named reaction queries (e.g., benzylic oxidation, allylic oxidation). The choice of a simple primary alcohol to aldehyde conversion is highly specific to mild oxidation methods like the Swern oxidation.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 403,
+    "candidatesTokenCount": 316,
+    "totalTokenCount": 802,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 403
+      }
+    ],
+    "thoughtsTokenCount": 83
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "tNvjadn_OIqlvr0P-Yz8iAk"
+}

@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCCC(=O)CC"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane) using hydrazine (NH2NH2) and potassium hydroxide (KOH), which are the classic reagents for the Wolff-Kishner reduction. The substrate is symmetrical and avoids stereochemical complexity. The transformation is a clear deoxygenation of a carbonyl group to a methylene group, which is the defining characteristic of this reaction.",
+  "collision_avoidance_note": "The use of a simple, acyclic, aliphatic ketone avoids arene groups that could be confused with Clemmensen reduction examples or other aromatic reactions. It also avoids esters or other functional groups that might lead to side reactions or be confused with other named reactions like saponification or decarboxylation. The reaction is a straightforward deoxygenation, distinct from reductions that produce alcohols.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[K+].[OH-]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane) using hydrazine (NH2NH2) and potassium hydroxide (KOH), which are the classic reagents for the Wolff-Kishner reduction. The substrate is symmetrical and avoids stereochemical complexity. The transformation is a clear deoxygenation of a carbonyl group to a methylene group, which is the defining characteristic of this reaction.\",\n    \"collision_avoidance_note\": \"The use of a simple, acyclic, aliphatic ketone avoids arene groups that could be confused with Clemmensen reduction examples or other aromatic reactions. It also avoids esters or other functional groups that might lead to side reactions or be confused with other named reactions like saponification or decarboxylation. The reaction is a straightforward deoxygenation, distinct from reductions that produce alcohols.\"\n  }\n}"
+}

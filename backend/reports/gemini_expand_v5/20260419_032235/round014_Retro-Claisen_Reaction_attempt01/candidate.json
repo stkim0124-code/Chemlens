@@ -1,0 +1,16 @@
+{
+  "family": "Retro-Claisen Reaction",
+  "substrates": [
+    "CCOC(=O)C(C)C(=O)CC"
+  ],
+  "products": [
+    "CCC(C)=O",
+    "CCOC(C)=O"
+  ],
+  "reagents": [
+    "[Na+].[OH-]"
+  ],
+  "rationale": "This example shows the base-catalyzed cleavage of a simple, acyclic beta-keto ester (ethyl 2-methyl-3-oxopentanoate) into a ketone (butan-2-one) and an ester (ethyl acetate). This is a classic textbook illustration of the retro-Claisen reaction, demonstrating the characteristic C-C bond cleavage between the alpha and beta carbonyl carbons.",
+  "collision_avoidance_note": "The structure is a simple acyclic beta-keto ester, avoiding complex ring systems, aromatic groups, or other reactive functional groups that could be misidentified as other named reactions. The transformation is a straightforward cleavage, distinct from condensation (Claisen), acylation, or decarboxylation reactions (e.g., Krapcho).",
+  "raw_text": "{\n  \"family\": \"Retro-Claisen Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)C(C)C(=O)OCC\"\n    ],\n    \"product_smiles\": [\n      \"CCC(=O)C\",\n      \"CC(=O)OCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[OH-].[Na+]\"\n    ],\n    \"rationale\": \"This example shows the base-catalyzed cleavage of a simple, acyclic beta-keto ester (ethyl 2-methyl-3-oxopentanoate) into a ketone (butan-2-one) and an ester (ethyl acetate). This is a classic textbook illustration of the retro-Claisen reaction, demonstrating the characteristic C-C bond cleavage between the alpha and beta carbonyl carbons.\",\n    \"collision_avoidance_note\": \"The structure is a simple acyclic beta-keto ester, avoiding complex ring systems, aromatic groups, or other reactive functional groups that could be misidentified as other named reactions. The transformation is a straightforward cleavage, distinct from condensation (Claisen), acylation, or decarboxylation reactions (e.g., Krapcho).\"\n  }\n}"
+}

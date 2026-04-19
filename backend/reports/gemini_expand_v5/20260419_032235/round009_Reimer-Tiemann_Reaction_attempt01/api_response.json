@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Reimer-Tiemann Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"O=Cc1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"ClC(Cl)Cl\",\n      \"[Na+].[OH-]\"\n    ],\n    \"rationale\": \"This is the quintessential textbook example of the Reimer-Tiemann reaction: the ortho-formylation of phenol to produce salicylaldehyde. It uses the simplest possible substrate (phenol) and clearly demonstrates the core transformation of a C-H bond on a phenol ring to a C-CHO group, mediated by chloroform and a strong base which generate the key dichlorocarbene intermediate.\",\n    \"collision_avoidance_note\": \"The reaction uses phenol, the simplest aromatic alcohol, to avoid overlap with more complex substituted arenes found in other named reactions. The product is a simple hydroxybenzaldehyde, a common motif but specific enough in this context. The explicit inclusion of chloroform and a strong base as reagents helps anchor the query to the Reimer-Tiemann mechanism, distinguishing it from other formylation methods like the Vilsmeier-Haack or Gattermann reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 453,
+    "candidatesTokenCount": 285,
+    "totalTokenCount": 797,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 453
+      }
+    ],
+    "thoughtsTokenCount": 59
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "YNHjabLjDPvV2roPsYW3wAg"
+}

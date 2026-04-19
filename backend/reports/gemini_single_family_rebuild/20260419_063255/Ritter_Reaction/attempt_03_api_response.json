@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"candidate_id\": \"C1\",\n    \"substrate_smiles\": [\n      \"CC(C)(C)C1(O)CCCCC1\"\n    ],\n    \"product_smiles\": [\n      \"CC(C)(C)C1(NC(=O)C)CCCCC1\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This example demonstrates the classic Ritter reaction using a tertiary alcohol as the carbocation precursor. The 1-tert-butylcyclohexan-1-ol substrate readily forms a stable tertiary carbocation under strong acidic conditions. This carbocation is then trapped by the nitrogen lone pair of acetonitrile, a common nitrile used in this reaction. Subsequent hydrolysis of the intermediate nitrilium ion yields the final N-substituted amide product, N-(1-tert-butylcyclohexyl)acetamide. The transformation is unambiguous and highlights the key C-N bond formation step central to the Ritter reaction.\",\n    \"collision_avoidance_note\": \"The substrate is a tertiary alcohol, a classic precursor for the Ritter reaction, and the product is a clear N-alkyl amide. The use of a non-aromatic, sterically hindered alcohol avoids potential confusion with reactions like the Pinner reaction (which involves imidates from nitriles and alcohols) or the Houben-Hoesch reaction (which involves electrophilic aromatic substitution with nitriles). The specific cyclohexyl topology is distinct and avoids simple acyclic examples.\",\n    \"reagents_text\": \"acetonitrile, sulfuric acid\",\n    \"conditions_text\": \"Concentrated acid, often with a solvent like acetic acid or neat nitrile, at temperatures ranging from 0 C to room temperature.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 323,
+    "candidatesTokenCount": 384,
+    "totalTokenCount": 775,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 323
+      }
+    ],
+    "thoughtsTokenCount": 68
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "ofjjaduBK5OjrfcP0urqwQ4"
+}

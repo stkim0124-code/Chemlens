@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wittig-[1,2]- and [2,3]-Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C=CCOC(C)C\"\n    ],\n    \"product_smiles\": [\n      \"C=CC(O)C(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"C(C)(C)C[Li]\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the [2,3]-Wittig rearrangement. The substrate is a simple, acyclic allyl ether. Deprotonation by a strong base (n-butyllithium) at the alpha-carbon next to the oxygen generates an alpha-alkoxy carbanion, which then undergoes a concerted [2,3]-sigmatropic rearrangement to form the corresponding homoallylic alcohol product. This example clearly illustrates the core transformation of the reaction family.\",\n    \"collision_avoidance_note\": \"This example uses a simple, acyclic allyl ether and avoids benzyl groups, which are common in the competing [1,2]-Wittig rearrangement but could cause collisions with other benzyl rearrangement benchmarks. It also avoids complex ring systems, arenes, and other reactive functional groups to ensure it is specific to the Wittig rearrangement and not other named reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 497,
+    "candidatesTokenCount": 300,
+    "totalTokenCount": 874,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 497
+      }
+    ],
+    "thoughtsTokenCount": 77
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "us7jabqRFNWk2roPtuKdyQM"
+}

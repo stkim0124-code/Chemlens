@@ -1,0 +1,16 @@
+{
+  "family": "Pinner Reaction",
+  "substrates": [
+    "CC#N",
+    "CCO"
+  ],
+  "products": [
+    "CCOC(C)=[NH2+].[Cl-]"
+  ],
+  "reagents": [
+    "Cl"
+  ],
+  "rationale": "This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and a simple alcohol (ethanol) in the presence of dry hydrogen chloride. This is the classic first step of the Pinner reaction, representing the core transformation of activating a nitrile with an alcohol under acidic conditions. The reactants and product are small, acyclic, and devoid of complex functional groups, making it a clear and unambiguous example of the Pinner synthesis.",
+  "collision_avoidance_note": "This example uses simple, acyclic aliphatic substrates (acetonitrile and ethanol) to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts, Gattermann) or more complex functional groups. It specifically depicts the formation of the characteristic imino ether salt intermediate, which is central to the Pinner reaction and distinct from direct nitrile hydrolysis or other nitrile addition reactions.",
+  "raw_text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and a simple alcohol (ethanol) in the presence of dry hydrogen chloride. This is the classic first step of the Pinner reaction, representing the core transformation of activating a nitrile with an alcohol under acidic conditions. The reactants and product are small, acyclic, and devoid of complex functional groups, making it a clear and unambiguous example of the Pinner synthesis.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic aliphatic substrates (acetonitrile and ethanol) to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts, Gattermann) or more complex functional groups. It specifically depicts the formation of the characteristic imino ether salt intermediate, which is central to the Pinner reaction and distinct from direct nitrile hydrolysis or other nitrile addition reactions.\"\n  }\n}"
+}

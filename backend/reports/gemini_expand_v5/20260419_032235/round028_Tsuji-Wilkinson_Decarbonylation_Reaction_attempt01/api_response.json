@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to its corresponding alkane (hexane) using Wilkinson's catalyst. This is a classic, textbook example of the Tsuji-Wilkinson decarbonylation, clearly illustrating the conversion of an aldehyde functional group to a C-H bond with the loss of carbon monoxide.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, acyclic aliphatic aldehyde, avoiding aromatic rings, unsaturation (other than the aldehyde), or other functional groups that could trigger unrelated named reaction queries like aldol, Wittig, or various aromatic substitution reactions. The transformation is a straightforward deformylation, distinct from decarboxylation of carboxylic acids or deoxygenation of ketones/alcohols.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 440,
+    "candidatesTokenCount": 303,
+    "totalTokenCount": 822,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 440
+      }
+    ],
+    "thoughtsTokenCount": 79
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "AuXjaYKoB4mu2roPlt3juQ0"
+}

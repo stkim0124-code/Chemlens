@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CN(C)C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutan-1-amine undergoes intramolecular 1,5-hydrogen atom transfer upon photolysis or acid catalysis, forming a delta-carbon radical. This radical then abstracts a chlorine atom to form a delta-chloroamine, which cyclizes under basic conditions (workup) to yield N-methylpyrrolidine. This example clearly demonstrates the key C-H functionalization at a remote (delta) position and subsequent cyclization to form a five-membered ring, which is characteristic of the reaction.\",\n    \"collision_avoidance_note\": \"The reaction involves an N-haloamine substrate and an intramolecular C-H activation/cyclization, which is highly specific to this named reaction. The structure is simple, acyclic, and avoids arenes, diazo groups, or other common reactive motifs that could cause collisions with unrelated named reactions like the Hofmann rearrangement (amides), Hofmann elimination (quaternary ammonium salts), or general radical cyclizations.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 392,
+    "candidatesTokenCount": 338,
+    "totalTokenCount": 795,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 392
+      }
+    ],
+    "thoughtsTokenCount": 65
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "2t_jaaWZCvml0-kPz_XioQg"
+}

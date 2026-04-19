@@ -1,0 +1,15 @@
+{
+  "family": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+  "substrates": [
+    "CCCCN(C)Cl"
+  ],
+  "products": [
+    "CN1CCCC1"
+  ],
+  "reagents": [
+    "O.O=S(=O)(O)O"
+  ],
+  "rationale": "This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. The substrate, N-chloro-N-methylbutan-1-amine, undergoes a 1,5-hydrogen atom transfer upon treatment with acid (e.g., sulfuric acid) and light/heat to form a δ-chloroamine intermediate, which then cyclizes to form the pyrrolidinium salt. Subsequent basic workup (implied) yields the final product, 1-methylpyrrolidine. This example clearly demonstrates the key features: an N-haloamine substrate, intramolecular C-H activation at a remote (δ) position, and subsequent cyclization to form a five-membered ring.",
+  "collision_avoidance_note": "This example uses a simple acyclic N-chloroamine substrate and avoids complex structures, arenes, or other functional groups that could overlap with different named reactions. The core transformation is the specific intramolecular C-H amination via a nitrogen-centered radical, which is characteristic of this reaction and distinct from other cyclization or rearrangement reactions like the Beckmann or Hofmann rearrangements.",
+  "raw_text": "{\n  \"family\": \"Hofmann-L\\u00f6ffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCCN1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O.O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-L\\u00f6ffler-Freytag reaction. The substrate, N-chloro-N-methylbutan-1-amine, undergoes a 1,5-hydrogen atom transfer upon treatment with acid (e.g., sulfuric acid) and light/heat to form a \\u03b4-chloroamine intermediate, which then cyclizes to form the pyrrolidinium salt. Subsequent basic workup (implied) yields the final product, 1-methylpyrrolidine. This example clearly demonstrates the key features: an N-haloamine substrate, intramolecular C-H activation at a remote (\\u03b4) position, and subsequent cyclization to form a five-membered ring.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic N-chloroamine substrate and avoids complex structures, arenes, or other functional groups that could overlap with different named reactions. The core transformation is the specific intramolecular C-H amination via a nitrogen-centered radical, which is characteristic of this reaction and distinct from other cyclization or rearrangement reactions like the Beckmann or Hofmann rearrangements.\"\n  }\n}"
+}

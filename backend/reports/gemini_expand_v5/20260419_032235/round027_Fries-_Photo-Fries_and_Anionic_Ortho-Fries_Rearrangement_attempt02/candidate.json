@@ -1,0 +1,15 @@
+{
+  "family": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+  "substrates": [
+    "CC(=O)Oc1ccccc1"
+  ],
+  "products": [
+    "CC(=O)c1ccccc1O"
+  ],
+  "reagents": [
+    "[Cl][Al]([Cl])[Cl]"
+  ],
+  "rationale": "The Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone is a classic, simple, and unambiguous textbook example. It clearly demonstrates the core transformation: the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). This example is minimal in structure, avoiding complex substituents that could cause ambiguity.",
+  "collision_avoidance_note": "This example uses the simplest possible aromatic system (phenyl) and acyl group (acetyl) to avoid overlap with other named reactions involving more complex arenes or functional groups. It is a specific rearrangement of a phenolic ester, distinct from Claisen rearrangements (allyl ethers), Fischer-Hepp (nitrosamines), or general electrophilic aromatic substitution reactions like Friedel-Crafts acylation, as the acyl group originates from the substrate itself.",
+  "raw_text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Al](Cl)(Cl)Cl\"\n    ],\n    \"rationale\": \"The Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone is a classic, simple, and unambiguous textbook example. It clearly demonstrates the core transformation: the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). This example is minimal in structure, avoiding complex substituents that could cause ambiguity.\",\n    \"collision_avoidance_note\": \"This example uses the simplest possible aromatic system (phenyl) and acyl group (acetyl) to avoid overlap with other named reactions involving more complex arenes or functional groups. It is a specific rearrangement of a phenolic ester, distinct from Claisen rearrangements (allyl ethers), Fischer-Hepp (nitrosamines), or general electrophilic aromatic substitution reactions like Friedel-Crafts acylation, as the acyl group originates from the substrate itself.\"\n  }\n}"
+}

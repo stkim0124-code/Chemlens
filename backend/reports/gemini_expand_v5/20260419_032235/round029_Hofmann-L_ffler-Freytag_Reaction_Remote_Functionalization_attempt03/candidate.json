@@ -1,0 +1,15 @@
+{
+  "family": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+  "substrates": [
+    "CCCCN(C)Cl"
+  ],
+  "products": [
+    "CC1CCCN1"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. The substrate, N-chloro-N-methylbutan-1-amine, undergoes intramolecular 1,5-hydrogen atom transfer from the delta-carbon to the nitrogen radical under acidic conditions (e.g., sulfuric acid), followed by cyclization to form the pyrrolidine ring. This example clearly demonstrates the key C-H activation at a remote (delta) position and subsequent C-N bond formation, which are the defining features of this reaction.",
+  "collision_avoidance_note": "The reaction involves an acyclic amine precursor forming a heterocyclic product via a radical mechanism. It avoids complex functional groups, arenes, or other motifs that could be confused with reactions like the Barton reaction (which typically involves alcohols/nitrites) or the Hofmann rearrangement (which involves amides). The simplicity of the N-chloro-N-alkylamine substrate and the formation of a simple pyrrolidine ring makes it a distinct and canonical example.",
+  "raw_text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCNC1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. The substrate, N-chloro-N-methylbutan-1-amine, undergoes intramolecular 1,5-hydrogen atom transfer from the delta-carbon to the nitrogen radical under acidic conditions (e.g., sulfuric acid), followed by cyclization to form the pyrrolidine ring. This example clearly demonstrates the key C-H activation at a remote (delta) position and subsequent C-N bond formation, which are the defining features of this reaction.\",\n    \"collision_avoidance_note\": \"The reaction involves an acyclic amine precursor forming a heterocyclic product via a radical mechanism. It avoids complex functional groups, arenes, or other motifs that could be confused with reactions like the Barton reaction (which typically involves alcohols/nitrites) or the Hofmann rearrangement (which involves amides). The simplicity of the N-chloro-N-alkylamine substrate and the formation of a simple pyrrolidine ring makes it a distinct and canonical example.\"\n  }\n}"
+}

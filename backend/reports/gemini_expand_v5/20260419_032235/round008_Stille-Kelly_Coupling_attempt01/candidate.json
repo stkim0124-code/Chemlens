@@ -1,0 +1,16 @@
+{
+  "family": "Stille-Kelly Coupling",
+  "substrates": [
+    "Brc1cccc(Br)c1"
+  ],
+  "products": [
+    "c1ccc2ccccc2c1"
+  ],
+  "reagents": [
+    "[CH3][Sn]([CH3])([CH3])[Sn]([CH3])([CH3])[CH3]",
+    "c1ccc([P](c2ccccc2)[Pd]([P](c2ccccc2)c2ccccc2)([P](c2ccccc2)c2ccccc2)[P](c2ccccc2)c2ccccc2)cc1"
+  ],
+  "rationale": "This reaction shows the intramolecular coupling of 1,2-dibromobenzene to form biphenylene, a classic example of the Stille-Kelly coupling. It uses a simple, symmetrical aromatic dihalide substrate and a common distannane reagent (hexamethylditin) with a standard palladium catalyst (Pd(PPh3)4). The formation of the four-membered ring in biphenylene is a hallmark of this specific intramolecular variant of the Stille coupling.",
+  "collision_avoidance_note": "This example is specific to the intramolecular Stille-Kelly coupling, forming a biaryl system from a single dihalide precursor. It avoids using complex heterocyclic systems or functional groups that could overlap with other named reactions. The use of a distannane reagent and the intramolecular nature clearly distinguish it from intermolecular Stille couplings or other biaryl couplings like Suzuki or Ullmann reactions.",
+  "raw_text": "{\n  \"family\": \"Stille-Kelly Coupling\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"Brc1cccc(Br)c1\"\n    ],\n    \"product_smiles\": [\n      \"c1cccc2c1cccc2\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"C[Sn](C)(C)[Sn](C)(C)C\",\n      \"[Pd](P(c1ccccc1)c1ccccc1)(P(c1ccccc1)c1ccccc1)(P(c1ccccc1)c1ccccc1)P(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the intramolecular coupling of 1,2-dibromobenzene to form biphenylene, a classic example of the Stille-Kelly coupling. It uses a simple, symmetrical aromatic dihalide substrate and a common distannane reagent (hexamethylditin) with a standard palladium catalyst (Pd(PPh3)4). The formation of the four-membered ring in biphenylene is a hallmark of this specific intramolecular variant of the Stille coupling.\",\n    \"collision_avoidance_note\": \"This example is specific to the intramolecular Stille-Kelly coupling, forming a biaryl system from a single dihalide precursor. It avoids using complex heterocyclic systems or functional groups that could overlap with other named reactions. The use of a distannane reagent and the intramolecular nature clearly distinguish it from intermolecular Stille couplings or other biaryl couplings like Suzuki or Ullmann reactions.\"\n  }\n}"
+}

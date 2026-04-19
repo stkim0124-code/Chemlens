@@ -1,0 +1,17 @@
+{
+  "family": "Houben-Hoesch Reaction/Synthesis",
+  "substrates": [
+    "CC#N",
+    "COc1cc(OC)cc(OC)c1"
+  ],
+  "products": [
+    "COc1cc(OC)cc(C(C)=O)c1"
+  ],
+  "reagents": [
+    "[Cl][Zn][Cl]",
+    "Cl"
+  ],
+  "rationale": "This is a canonical example of the Houben-Hoesch reaction, featuring the acylation of a highly activated, electron-rich aromatic ring (1,3,5-trimethoxybenzene) with a simple nitrile (acetonitrile). The reaction is catalyzed by a Lewis acid (zinc chloride) and a Brønsted acid (HCl), followed by aqueous workup (not explicitly shown) to hydrolyze the intermediate ketimine. This example clearly demonstrates the formation of an aryl ketone from an arene and a nitrile, which is the defining transformation of this named reaction.",
+  "collision_avoidance_note": "The substrate is a simple, highly activated arene, avoiding generic benzene or phenol which could overlap with Friedel-Crafts acylation or Fries rearrangement. The use of a nitrile as the acylating agent is specific to the Houben-Hoesch reaction, distinguishing it from Friedel-Crafts reactions that typically use acyl halides or anhydrides. The product is a simple aryl ketone, avoiding complex structures or other reactive functional groups.",
+  "raw_text": "{\n  \"family\": \"Houben-Hoesch Reaction/Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"COc1cc(OC)cc(OC)c1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1cc(OC)cc(OC)c1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Zn]Cl\",\n      \"Cl\"\n    ],\n    \"rationale\": \"This is a canonical example of the Houben-Hoesch reaction, featuring the acylation of a highly activated, electron-rich aromatic ring (1,3,5-trimethoxybenzene) with a simple nitrile (acetonitrile). The reaction is catalyzed by a Lewis acid (zinc chloride) and a Brønsted acid (HCl), followed by aqueous workup (not explicitly shown) to hydrolyze the intermediate ketimine. This example clearly demonstrates the formation of an aryl ketone from an arene and a nitrile, which is the defining transformation of this named reaction.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, highly activated arene, avoiding generic benzene or phenol which could overlap with Friedel-Crafts acylation or Fries rearrangement. The use of a nitrile as the acylating agent is specific to the Houben-Hoesch reaction, distinguishing it from Friedel-Crafts reactions that typically use acyl halides or anhydrides. The product is a simple aryl ketone, avoiding complex structures or other reactive functional groups.\"\n  }\n}"
+}

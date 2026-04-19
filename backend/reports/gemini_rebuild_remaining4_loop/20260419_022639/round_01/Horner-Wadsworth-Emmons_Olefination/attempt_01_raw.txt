@@ -1,0 +1,12 @@
+{
+  "substrate_smiles": [
+    "CC(=O)CP(=O)(OC)OC",
+    "O=CC1CCCCC1"
+  ],
+  "product_smiles": [
+    "CC(=O)/C=C/C1CCCCC1"
+  ],
+  "optional_reagent_smiles": [
+    "[NaH]"
+  ]
+}

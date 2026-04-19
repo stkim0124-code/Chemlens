@@ -1,0 +1,31 @@
+alias,canonical_name,entity_type
+K2CO3,potassium carbonate,base
+THF,tetrahydrofuran,solvent
+DCM,dichloromethane,solvent
+H3O+,hydronium,acid
+H2,hydrogen,reductant
+Pd(OH)2,palladium hydroxide,catalyst
+Pr4NIO4,tetrapropylammonium periodate,oxidant
+DMF,dimethylformamide,solvent
+CH3I,methyl iodide,alkylating_agent
+Ag2O,silver oxide,base
+MeOH,methanol,solvent
+n-BuLi,n-butyllithium,base
+LDA,lithium diisopropylamide,base
+PIDA,phenyliodine diacetate,oxidant
+PhI(OAc)2,phenyliodine diacetate,oxidant
+PhIO,iodosylbenzene,oxidant
+I2,iodine,halogenating_agent
+NaN3,sodium azide,nucleophile
+NaOMe,sodium methoxide,base
+Br2,bromine,halogenating_agent
+NaOH,sodium hydroxide,base
+Pb(OAc)4,lead tetraacetate,oxidant
+NaH,sodium hydride,base
+LiHMDS,lithium hexamethyldisilazide,base
+HF·pyridine,hydrogen fluoride pyridine,deprotection_reagent
+TMSOTf,trimethylsilyl trifluoromethanesulfonate,activator
+TBAF,tetrabutylammonium fluoride,fluoride_source
+15-crown-5,15-crown-5,additive
+P(O)(OEt)2,phosphonate,reagent
+Et3N,triethylamine,base

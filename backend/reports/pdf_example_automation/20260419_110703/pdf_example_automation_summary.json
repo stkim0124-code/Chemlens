@@ -1,0 +1,81 @@
+{
+  "report_run": "20260419_110703",
+  "mode": "gemini",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "pdf": "C:\\chemlens\\backend\\app\\data\\pdfs\\named reactions.pdf",
+  "stage_db": "C:\\chemlens\\backend\\app\\labint_pdf_examples_stage.db",
+  "families_processed": 10,
+  "regions_detected_total": 35,
+  "pages": [
+    {
+      "family_name": "Aldol Reaction",
+      "page_knowledge_id": 49,
+      "book_page_no": 9,
+      "pdf_page_no": 61,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Alkene (Olefin) Metathesis",
+      "page_knowledge_id": 41,
+      "book_page_no": 11,
+      "pdf_page_no": 63,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Baeyer-Villiger Oxidation/Rearrangement",
+      "page_knowledge_id": 68,
+      "book_page_no": 29,
+      "pdf_page_no": 81,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Barton-McCombie Radical Deoxygenation Reaction",
+      "page_knowledge_id": 86,
+      "book_page_no": 47,
+      "pdf_page_no": 99,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Diels-Alder Cycloaddition",
+      "page_knowledge_id": 364,
+      "book_page_no": 141,
+      "pdf_page_no": 193,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Pinner Reaction",
+      "page_knowledge_id": 596,
+      "book_page_no": 353,
+      "pdf_page_no": 405,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Ritter Reaction",
+      "page_knowledge_id": 626,
+      "book_page_no": 383,
+      "pdf_page_no": 435,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Schwartz Hydrozirconation",
+      "page_knowledge_id": 644,
+      "book_page_no": 401,
+      "pdf_page_no": 453,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Swern Oxidation",
+      "page_knowledge_id": 700,
+      "book_page_no": 451,
+      "pdf_page_no": 503,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Tsuji-Wilkinson Decarbonylation Reaction",
+      "page_knowledge_id": 710,
+      "book_page_no": 461,
+      "pdf_page_no": 513,
+      "regions_detected": 4
+    }
+  ]
+}

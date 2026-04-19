@@ -1,0 +1,16 @@
+{
+  "family": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+  "substrates": [
+    "CC(=O)Oc1ccccc1"
+  ],
+  "products": [
+    "CC(=O)c1ccccc1O",
+    "CC(=O)c1cccc(O)c1"
+  ],
+  "reagents": [
+    "[Al+3].[Cl-].[Cl-].[Cl-]"
+  ],
+  "rationale": "The Fries rearrangement of phenyl acetate is the quintessential textbook example of this reaction family. It clearly demonstrates the migration of an acyl group from a phenolic oxygen to the ortho and para positions of the aromatic ring under Lewis acid catalysis (AlCl3). The substrate and products are simple, acyclic where possible, and lack complex functional groups, making it a clear and unambiguous representation of the core transformation.",
+  "collision_avoidance_note": "This example uses the simplest possible phenyl ester (phenyl acetate) to avoid overlap with more complex aromatic substitution reactions. It avoids motifs like diazo groups (unlike Sandmeyer), complex polycyclic arenes, or other reactive functional groups that could trigger unrelated named reaction queries. The focus is purely on the acyl group migration characteristic of the Fries rearrangement.",
+  "raw_text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\",\n      \"CC(=O)c1cccc(O)c1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Al+3].[Cl-].[Cl-].[Cl-]\"\n    ],\n    \"rationale\": \"The Fries rearrangement of phenyl acetate is the quintessential textbook example of this reaction family. It clearly demonstrates the migration of an acyl group from a phenolic oxygen to the ortho and para positions of the aromatic ring under Lewis acid catalysis (AlCl3). The substrate and products are simple, acyclic where possible, and lack complex functional groups, making it a clear and unambiguous representation of the core transformation.\",\n    \"collision_avoidance_note\": \"This example uses the simplest possible phenyl ester (phenyl acetate) to avoid overlap with more complex aromatic substitution reactions. It avoids motifs like diazo groups (unlike Sandmeyer), complex polycyclic arenes, or other reactive functional groups that could trigger unrelated named reaction queries. The focus is purely on the acyl group migration characteristic of the Fries rearrangement.\"\n  }\n}"
+}

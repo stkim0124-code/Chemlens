@@ -1,0 +1,16 @@
+{
+  "family": "Pinner Reaction",
+  "substrates": [
+    "CC#N",
+    "CCO"
+  ],
+  "products": [
+    "CCOC(C)=[NH2+].[Cl-]"
+  ],
+  "reagents": [
+    "Cl"
+  ],
+  "rationale": "This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and an alcohol (ethanol) in the presence of dry hydrogen chloride. This is the quintessential first step of the Pinner reaction, representing the core transformation without proceeding to subsequent hydrolysis or aminolysis steps, which are often considered separate reactions (e.g., Pinner ester synthesis, amidine synthesis). The reactants and product are simple, acyclic, and clearly illustrate the key bond formations: C-O bond formation and protonation of the nitrile nitrogen.",
+  "collision_avoidance_note": "The chosen example is the formation of the Pinner salt itself, which is the defining step. By using simple aliphatic substrates (acetonitrile, ethanol), it avoids aromatic rings that could collide with reactions like the Gattermann, Hoesch, or Friedel-Crafts reactions. It also avoids subsequent hydrolysis to an ester, which could be confused with general esterification or nitrile hydrolysis reactions. The product is the specific imino ether salt, which is characteristic of this named reaction.",
+  "raw_text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and an alcohol (ethanol) in the presence of dry hydrogen chloride. This is the quintessential first step of the Pinner reaction, representing the core transformation without proceeding to subsequent hydrolysis or aminolysis steps, which are often considered separate reactions (e.g., Pinner ester synthesis, amidine synthesis). The reactants and product are simple, acyclic, and clearly illustrate the key bond formations: C-O bond formation and protonation of the nitrile nitrogen.\",\n    \"collision_avoidance_note\": \"The chosen example is the formation of the Pinner salt itself, which is the defining step. By using simple aliphatic substrates (acetonitrile, ethanol), it avoids aromatic rings that could collide with reactions like the Gattermann, Hoesch, or Friedel-Crafts reactions. It also avoids subsequent hydrolysis to an ester, which could be confused with general esterification or nitrile hydrolysis reactions. The product is the specific imino ether salt, which is characteristic of this named reaction.\"\n  }\n}"
+}

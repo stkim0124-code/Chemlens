@@ -1,0 +1,15 @@
+{
+  "family": "Baldwin's Rules / Guidelines for Ring-Closing Reactions",
+  "substrates": [
+    "C=CCCCC(=O)O"
+  ],
+  "products": [
+    "CC1CCCOC1=O"
+  ],
+  "reagents": [
+    "O=S(=O)(O)C(F)(F)F"
+  ],
+  "rationale": "This reaction exemplifies a favored 6-endo-trig cyclization, a classic textbook case for Baldwin's rules. The intramolecular nucleophilic attack of the carboxylic acid oxygen onto the protonated alkene proceeds via a 6-membered ring transition state (6-), where the bond being broken (C=C) is part of the newly formed ring (-endo-), and the electrophilic carbon is sp2 hybridized (-trig-). This specific cyclization is predicted to be favorable by Baldwin's rules and is a common example used to illustrate their application.",
+  "collision_avoidance_note": "This example uses a simple, acyclic aliphatic substrate to form a common lactone. It avoids complex ring systems, arenes, radicals, or other highly reactive functional groups that could be confused with other named reactions. The focus is purely on the stereoelectronically controlled intramolecular cyclization, which is the core concept of Baldwin's rules. The use of a simple acid catalyst is generic and does not imply a specific named reaction.",
+  "raw_text": "{\n  \"family\": \"Baldwin's Rules / Guidelines for Ring-Closing Reactions\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=C(O)CCCC=C\"\n    ],\n    \"product_smiles\": [\n      \"O=C1OCCCC1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)C(F)(F)F\"\n    ],\n    \"rationale\": \"This reaction exemplifies a favored 6-endo-trig cyclization, a classic textbook case for Baldwin's rules. The intramolecular nucleophilic attack of the carboxylic acid oxygen onto the protonated alkene proceeds via a 6-membered ring transition state (6-), where the bond being broken (C=C) is part of the newly formed ring (-endo-), and the electrophilic carbon is sp2 hybridized (-trig-). This specific cyclization is predicted to be favorable by Baldwin's rules and is a common example used to illustrate their application.\",\n    \"collision_avoidance_note\": \"This example uses a simple, acyclic aliphatic substrate to form a common lactone. It avoids complex ring systems, arenes, radicals, or other highly reactive functional groups that could be confused with other named reactions. The focus is purely on the stereoelectronically controlled intramolecular cyclization, which is the core concept of Baldwin's rules. The use of a simple acid catalyst is generic and does not imply a specific named reaction.\"\n  }\n}"
+}

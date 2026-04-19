@@ -1,0 +1,2 @@
+Applied batch59 text backmatter patch and STEP1 vision promote to app/labint.db.
+Not applied: STEP2 tier3 PubChem backfill.

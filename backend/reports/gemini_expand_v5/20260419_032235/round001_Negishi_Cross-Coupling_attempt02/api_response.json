@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Negishi Cross-Coupling\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C=C[Zn]Cl\",\n      \"CC(=O)c1ccccc1Br\"\n    ],\n    \"product_smiles\": [\n      \"C=Cc1ccccc1C(=O)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"c1ccccc1P(c2ccccc2)c3ccccc3\",\n      \"[Pd]\"\n    ],\n    \"rationale\": \"This reaction exemplifies the Negishi cross-coupling between a vinylzinc reagent and an aryl bromide. The use of a simple vinyl group and an acetophenone-derived aryl bromide is a classic textbook example. It showcases the formation of a C(sp2)-C(sp2) bond, a hallmark of this reaction, while using simple, acyclic, and readily available starting materials. The ketone functional group demonstrates the high functional group tolerance of the Negishi coupling.\",\n    \"collision_avoidance_note\": \"The chosen substrates are simple and specific. The vinylzinc reagent is characteristic of organozinc chemistry. The aryl bromide is a common electrophile but is paired with the specific organozinc nucleophile. This avoids overlap with Suzuki (boronic acids), Stille (organostannanes), Sonogashira (terminal alkynes), or Heck (alkenes) couplings by using the defining organozinc component. The structure is kept simple to avoid being mistaken for more complex cascade or multi-component reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 433,
+    "candidatesTokenCount": 340,
+    "totalTokenCount": 832,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 433
+      }
+    ],
+    "thoughtsTokenCount": 59
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "cMzjaYG9MNuf0-kPo8C76Qg"
+}

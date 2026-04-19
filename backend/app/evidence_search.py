@@ -268,6 +268,120 @@ def _merge_feature_counts(base: Dict[str, int], add: Dict[str, int]) -> None:
     for k, v in add.items():
         base[k] = int(base.get(k, 0)) + int(v or 0)
 
+def _classify_single_smiles_as_query(smiles: str) -> Dict[str, Any]:
+    """
+    Single SMILES 쿼리용 FG 프로파일러 (Patch-S1 safe).
+
+    반환값:
+      {
+        "inferred_role": "reactant" | "agent" | "ambiguous",
+        "fg_profile": { feature: count, ... },
+        "query_signals": { signal_name: bool, ... },
+        "signal_notes": [str, ...],
+      }
+
+    설계 원칙:
+      - reaction_delta는 계산하지 않는다 (delta 엔진 미사용).
+      - "이 분자가 어떤 반응의 전구체일 수 있는가"만 판단한다.
+      - inferred_role == "agent" 이면 모든 positive family signal을 끈다.
+        (작은 조각이 부당하게 family를 boost하는 것을 막는다.)
+      - query_signals는 _family_coarse_gate_adjustment()의
+        precomputed_signals로 전달된다.
+    """
+    if Chem is None or not smiles:
+        return {
+            "inferred_role": "unknown",
+            "fg_profile": {},
+            "query_signals": {k: False for k in _COARSE_SIGNAL_LABELS_KO.keys()},
+            "signal_notes": ["RDKit 미사용 — 신호 비활성화"],
+        }
+
+    fg = _count_reaction_features(smiles)
+    ha = fg.get("heavy_atoms", 0)
+    notes: List[str] = []
+
+    # ── Step 1: role 추론 ──────────────────────────────────────────
+    if ha <= SMALL_FRAGMENT_HA_THRESHOLD:
+        inferred_role = "agent"
+        notes.append(f"small fragment (HA={ha}) → agent/용매 추정")
+    elif (fg.get("carboxylic_acid", 0) + fg.get("acid_chloride", 0)) >= 1:
+        inferred_role = "reactant"
+        notes.append("carboxylic acid / acid chloride → reactant 추정")
+    elif fg.get("aryl_halide", 0) >= 1:
+        inferred_role = "reactant"
+        notes.append("aryl halide → reactant 추정 (coupling)")
+    elif fg.get("oxime", 0) >= 1:
+        inferred_role = "reactant"
+        notes.append("oxime → reactant 추정 (Beckmann)")
+    elif fg.get("alcohol", 0) >= 1 and fg.get("carbonyl", 0) == 0:
+        inferred_role = "reactant"
+        notes.append("alcohol (no carbonyl) → reactant 추정")
+    elif fg.get("amine", 0) >= 1:
+        inferred_role = "reactant"
+        notes.append("amine → reactant 추정")
+    elif fg.get("aromatic_ring", 0) >= 1 and fg.get("carbonyl", 0) >= 1:
+        inferred_role = "reactant"
+        notes.append("arene + carbonyl → reactant 추정")
+    else:
+        inferred_role = "ambiguous"
+        notes.append("FG 조합 ambiguous → 약한 gate만 적용")
+
+    # ── Step 2: signal 초기화 ──────────────────────────────────────
+    signals: Dict[str, bool] = {k: False for k in _COARSE_SIGNAL_LABELS_KO.keys()}
+
+    # ── Step 3: agent면 모든 positive signal OFF ──────────────────
+    # agent/small fragment는 반응의 주역이 아니므로
+    # 어떤 FG를 갖고 있더라도 family를 자극해선 안 된다.
+    # coarse gate의 missing_need_factor만 작동하게 두는 것이 목적이다.
+    if inferred_role == "agent":
+        notes.append("agent 추정 → 모든 positive family signal 비활성화")
+        notes.append("coarse gate: missing_need_factor만 적용됨")
+        return {
+            "inferred_role": inferred_role,
+            "fg_profile": fg,
+            "query_signals": signals,   # 전부 False
+            "signal_notes": notes,
+        }
+
+    # ── Step 4: reactant / ambiguous 전용 signal 계산 ─────────────
+    # delta(전후 변화)는 계산하지 않는다.
+    # "이 FG가 존재한다" = "이 반응의 전구체일 수 있다"만 판단.
+
+    # decarboxylation: 카복실산/산염화물 전구체
+    if (fg.get("carboxylic_acid", 0) + fg.get("acid_chloride", 0)) >= 1:
+        signals["decarboxylation"] = True
+
+    # deoxygenation: 알코올 전구체 (ether/carbonyl 없을 때 — Barton-McCombie)
+    if fg.get("alcohol", 0) >= 1 and fg.get("ether", 0) == 0 and fg.get("carbonyl", 0) == 0:
+        signals["deoxygenation"] = True
+
+    # coupling: aryl halide + (amine 또는 boron) 조합
+    if fg.get("aryl_halide", 0) >= 1 and (fg.get("amine", 0) + fg.get("boron", 0)) >= 1:
+        signals["coupling"] = True
+
+    # oxime_rearrangement: oxime 전구체
+    if fg.get("oxime", 0) >= 1:
+        signals["oxime_rearrangement"] = True
+
+    # multicomponent_condensation: carbonyl >= 2 + amine >= 1 + aromatic
+    if fg.get("aromatic_ring", 0) >= 1 and fg.get("carbonyl", 0) >= 2 and fg.get("amine", 0) >= 1:
+        signals["multicomponent_condensation"] = True
+
+    # oxidation / reduction: 방향성 불명 → OFF
+    signals["oxidation"] = False
+    signals["reduction"] = False
+
+    active = [k for k, v in signals.items() if v]
+    if active:
+        notes.append(f"활성 신호: {', '.join(active)}")
+
+    return {
+        "inferred_role": inferred_role,
+        "fg_profile": fg,
+        "query_signals": signals,
+        "signal_notes": notes,
+    }
+
 def _reaction_delta_from_components(parsed: Optional[Dict[str, List[str]]]) -> Dict[str, Any]:
     keys = list(_REACTION_FEATURE_SMARTS.keys()) + ["heavy_atoms"]
     react = {k: 0 for k in keys}
@@ -458,16 +572,345 @@ def _family_coarse_profile(family_name: Optional[str]) -> Optional[Dict[str, Any
             "forbidden_factor": 0.35,
             "boost_factor": 1.12,
         }
-    return None
+    if "chugaev" in fam:
+        return {
+            # Chugaev elimination should not win on generic radical / tin-hydride mechanism fragments.
+            # Require a fairly strong dehydration / alkene-forming signal and penalize radical/decarboxylation families.
+            "need_any": ["dehydration"],
+            "boost_any": ["dehydration"],
+            "forbid_any": [
+                "deoxygenation", "decarboxylation", "coupling", "ring_expansion",
+                "multicomponent_condensation", "ester_insertion_oxidation", "carbohydrate_rearrangement"
+            ],
+            "missing_need_factor": 0.18,
+            "forbidden_factor": 0.28,
+            "boost_factor": 1.12,
+        }
 
-def _family_coarse_gate_adjustment(family_name: Optional[str], reaction_delta: Optional[Dict[str, Any]]) -> Tuple[float, List[str], Dict[str, bool]]:
-    if not family_name or not reaction_delta:
+    # Active rejected 8 families — explicit coarse penalties to stop benchmark hijack.
+    _BUCHNER_FORBID = {
+        "claisen condensation / claisen reaction",
+        "horner-wadsworth-emmons olefination",
+        "krapcho dealkoxycarbonylation",
+        "michael addition reaction",
+        "regitz diazo transfer",
+    }
+    if fam in _BUCHNER_FORBID:
+        return {
+            "need_any": [],
+            "boost_any": [],
+            "forbid_any": ["diazo_arene_combo", "ring_expansion"],
+            "missing_need_factor": 1.0,
+            "forbidden_factor": 0.10,
+            "boost_factor": 1.0,
+        }
+
+    _BARTON_FORBID = {
+        "enyne metathesis",
+        "hofmann-loffler-freytag reaction",
+        "mitsunobu reaction",
+    }
+    if fam in _BARTON_FORBID:
+        return {
+            "need_any": [],
+            "boost_any": [],
+            "forbid_any": ["decarboxylation", "deoxygenation"],
+            "missing_need_factor": 1.0,
+            "forbidden_factor": 0.10,
+            "boost_factor": 1.0,
+        }
+
+    # ── 예외 봉인 (DB 유도로 오분류되는 케이스를 먼저 차단) ──────
+    # Claisen Condensation: DB에서 family_class=rearrangement로 잘못 분류돼 있음
+    # → sigmatropic gate를 타면 안 됨 → 범용 condensation profile로 강제
+    if "claisen condensation" in fam or "claisen reaction" in fam:
+        return {
+            "need_any": [],
+            "boost_any": [],
+            "forbid_any": ["deoxygenation", "decarboxylation", "ring_expansion",
+                           "diazo_arene_combo", "oxime_rearrangement"],
+            "missing_need_factor": 1.0,
+            "forbidden_factor": 0.38,
+            "boost_factor": 1.0,
+        }
+
+    # Brook Rearrangement: transformation_type에 silyl이 있지만
+    # DB에서 family_class=named_reaction이라 rearrangement 분기 진입이 불안정
+    # → silyl migration gate로 강제
+    if "brook rearrangement" in fam or "brook" in fam:
+        return {
+            "need_any": [],
+            "boost_any": [],
+            "forbid_any": ["decarboxylation", "deoxygenation", "coupling",
+                           "multicomponent_condensation", "carbohydrate_rearrangement"],
+            "missing_need_factor": 1.0,
+            "forbidden_factor": 0.40,
+            "boost_factor": 1.0,
+        }
+
+    # Chichibabin: family_class=named_reaction이지만 amination/coupling 계열
+    # rearrangement 분기에 빠지지 않도록 봉인
+    if "chichibabin" in fam:
+        return {
+            "need_any": [],
+            "boost_any": [],
+            "forbid_any": ["deoxygenation", "decarboxylation", "ring_expansion",
+                           "ester_insertion_oxidation", "carbohydrate_rearrangement"],
+            "missing_need_factor": 1.0,
+            "forbidden_factor": 0.40,
+            "boost_factor": 1.0,
+        }
+
+    # ── DB 메타데이터 기반 fallback (A-lite) ─────────────────────────
+    # 하드코딩 9개에 매칭되지 않은 family는 DB에서 메타데이터를 읽어
+    # coarse profile을 유도한다.
+    # "전체 ontology 완성"이 아니라 "설명 필드에서 gate 신호를 추론"하는 방식.
+    return _derive_coarse_profile_from_db(family_name)
+
+
+# DB fallback 캐시 — DB 조회를 반복하지 않도록
+_db_coarse_profile_cache: Dict[str, Optional[Dict[str, Any]]] = {}
+_db_coarse_profile_cache_lock = threading.Lock()
+
+
+def _derive_coarse_profile_from_db(family_name: str) -> Optional[Dict[str, Any]]:
+    """
+    DB의 reaction_family_patterns 메타데이터로부터 coarse profile을 유도한다.
+
+    유도 규칙 (A-lite):
+      family_class / transformation_type / key_reagents_clue / description_short를
+      키워드 매칭으로 분석해서 need_any / forbid_any / boost_any를 결정한다.
+
+    반환값이 None이면 coarse gate 미적용 (1.0).
+    """
+    cache_key = family_name.strip().lower()
+    with _db_coarse_profile_cache_lock:
+        if cache_key in _db_coarse_profile_cache:
+            return _db_coarse_profile_cache[cache_key]
+
+    result = _derive_coarse_profile_from_db_uncached(family_name)
+
+    with _db_coarse_profile_cache_lock:
+        _db_coarse_profile_cache[cache_key] = result
+    return result
+
+
+def _derive_coarse_profile_from_db_uncached(family_name: str) -> Optional[Dict[str, Any]]:
+    if not DB_PATH.exists():
+        return None
+    try:
+        conn = sqlite3.connect(str(DB_PATH))
+        conn.row_factory = sqlite3.Row
+        # ORDER BY: 구조화된 class를 우선 선택
+        # coupling/oxidation/reduction 등 명확한 class > rearrangement > named_reaction/named reaction > other/synthesis
+        row = conn.execute(
+            """
+            SELECT family_class, transformation_type, mechanism_type,
+                   reactant_pattern_text, product_pattern_text,
+                   key_reagents_clue, description_short
+            FROM reaction_family_patterns
+            WHERE lower(family_name) = lower(?)
+               OR lower(family_name_norm) = lower(?)
+            ORDER BY
+                CASE
+                    WHEN lower(family_class) IN ('coupling','cross-coupling','cross_coupling',
+                                                 'oxidation','reduction','elimination',
+                                                 'condensation','cycloaddition','annulation',
+                                                 'metathesis','olefination','fragmentation',
+                                                 'sigmatropic rearrangement') THEN 1
+                    WHEN lower(family_class) = 'rearrangement' THEN 2
+                    WHEN lower(family_class) IN ('named_reaction','named reaction') THEN 3
+                    ELSE 4
+                END
+            LIMIT 1
+            """,
+            (family_name, family_name),
+        ).fetchone()
+        conn.close()
+    except Exception:
+        return None
+
+    if not row:
+        return None
+
+    fc   = str(row["family_class"] or "").lower().strip()
+    tt   = str(row["transformation_type"] or "").lower()
+    mt   = str(row["mechanism_type"] or "").lower()
+    rpt  = str(row["reactant_pattern_text"] or "").lower()
+    ppt  = str(row["product_pattern_text"] or "").lower()
+    krc  = str(row["key_reagents_clue"] or "").lower()
+    desc = str(row["description_short"] or "").lower()
+    combined = " ".join([fc, tt, mt, rpt, ppt, krc, desc])
+
+    # family_class 정규화 — DB에 여러 표기 혼재
+    def _norm_fc(s: str) -> str:
+        s = s.replace("-", "_").replace(" ", "_")
+        if s in ("named_reaction", "named_reactions"):
+            return "named_reaction"
+        if "coupling" in s or "cross_coupling" in s:
+            return "coupling"
+        if "sigmatropic" in s or s == "rearrangement":
+            return "rearrangement"
+        if "oxidation" in s:
+            return "oxidation"
+        if "reduction" in s:
+            return "reduction"
+        if "elimination" in s or "olefination" in s:
+            return "elimination"
+        if "condensation" in s:
+            return "condensation"
+        if "cycloaddition" in s or "annulation" in s or "cyclization" in s:
+            return "cycloaddition"
+        return s
+
+    fc_norm = _norm_fc(fc)
+
+    need_any:   List[str] = []
+    boost_any:  List[str] = []
+    forbid_any: List[str] = []
+    missing_need_factor = 0.45
+    forbidden_factor    = 0.40
+    boost_factor        = 1.08
+
+    # ── coupling 계열 ──────────────────────────────────────────────
+    if fc_norm == "coupling" or "coupling" in tt:
+        need_any  = ["coupling"]
+        boost_any = ["coupling"]
+        forbid_any = ["decarboxylation", "deoxygenation", "carbohydrate_rearrangement",
+                      "ring_expansion", "oxime_rearrangement"]
+        missing_need_factor = 0.40
+        forbidden_factor    = 0.35
+        boost_factor        = 1.10
+
+    # ── rearrangement 계열 ────────────────────────────────────────
+    elif fc_norm in ("rearrangement", "named_reaction") or "rearrangement" in tt:
+        if "silyl" in tt or "silicon" in tt or "silyl" in mt:
+            forbid_any = ["decarboxylation", "deoxygenation", "coupling",
+                          "multicomponent_condensation"]
+            missing_need_factor = 0.55
+            forbidden_factor    = 0.40
+        elif "condensation" in desc and "rearrangement" not in desc:
+            need_any   = ["multicomponent_condensation"]
+            boost_any  = ["multicomponent_condensation"]
+            forbid_any = ["deoxygenation", "decarboxylation", "ring_expansion",
+                          "diazo_arene_combo"]
+            missing_need_factor = 0.40
+            forbidden_factor    = 0.38
+        elif "sigmatropic" in mt or "[3,3]" in combined or "allyl" in combined:
+            forbid_any = ["decarboxylation", "deoxygenation", "coupling",
+                          "multicomponent_condensation", "ring_expansion"]
+            missing_need_factor = 0.50
+            forbidden_factor    = 0.38
+        elif "diketone" in combined or "alpha-hydroxy" in combined or "benzilic" in combined:
+            need_any   = ["oxidation"]
+            boost_any  = ["oxidation", "ester_insertion_oxidation"]
+            forbid_any = ["decarboxylation", "deoxygenation", "coupling",
+                          "ring_expansion", "multicomponent_condensation"]
+            missing_need_factor = 0.40
+            forbidden_factor    = 0.35
+        else:
+            forbid_any = ["decarboxylation", "deoxygenation", "coupling",
+                          "multicomponent_condensation"]
+            missing_need_factor = 0.50
+            forbidden_factor    = 0.40
+
+    # ── oxidation 계열 ────────────────────────────────────────────
+    elif fc_norm == "oxidation" or "oxidation" in tt:
+        need_any   = ["oxidation", "ester_insertion_oxidation"]
+        boost_any  = ["oxidation"]
+        forbid_any = ["deoxygenation", "reduction", "decarboxylation",
+                      "ring_expansion", "multicomponent_condensation"]
+        missing_need_factor = 0.40
+        forbidden_factor    = 0.35
+        boost_factor        = 1.08
+
+    # ── reduction 계열 ────────────────────────────────────────────
+    elif fc_norm == "reduction" or "reduction" in tt:
+        need_any   = ["reduction"]
+        boost_any  = ["reduction"]
+        forbid_any = ["oxidation", "ester_insertion_oxidation", "decarboxylation",
+                      "ring_expansion", "coupling"]
+        missing_need_factor = 0.40
+        forbidden_factor    = 0.35
+        boost_factor        = 1.08
+
+    # ── condensation 계열 ─────────────────────────────────────────
+    elif fc_norm == "condensation" or "condensation" in tt:
+        need_any   = ["multicomponent_condensation"]
+        boost_any  = ["multicomponent_condensation"]
+        forbid_any = ["deoxygenation", "decarboxylation", "ring_expansion",
+                      "diazo_arene_combo"]
+        missing_need_factor = 0.40
+        forbidden_factor    = 0.38
+
+    # ── elimination / dehydration 계열 ───────────────────────────
+    elif fc_norm == "elimination" or "dehydration" in tt or "elimination" in tt:
+        need_any   = ["dehydration"]
+        boost_any  = ["dehydration"]
+        forbid_any = ["reduction", "coupling", "ring_expansion",
+                      "multicomponent_condensation"]
+        missing_need_factor = 0.40
+        forbidden_factor    = 0.38
+
+    # ── amination 계열 ───────────────────────────────────────────
+    elif "aminat" in tt or "aminat" in desc or "amination" in krc:
+        need_any   = ["coupling"]
+        boost_any  = ["coupling"]
+        forbid_any = ["deoxygenation", "decarboxylation", "ring_expansion",
+                      "ester_insertion_oxidation"]
+        missing_need_factor = 0.45
+        forbidden_factor    = 0.40
+
+    # ── cycloaddition / annulation 계열 ──────────────────────────
+    elif fc_norm == "cycloaddition" or "cycloaddition" in tt:
+        forbid_any = ["decarboxylation", "deoxygenation", "coupling",
+                      "multicomponent_condensation"]
+        missing_need_factor = 0.55
+        forbidden_factor    = 0.40
+
+    else:
+        return None
+
+    if not need_any:
+        missing_need_factor = 1.0
+
+    return {
+        "need_any": need_any,
+        "boost_any": boost_any,
+        "forbid_any": forbid_any,
+        "missing_need_factor": missing_need_factor,
+        "forbidden_factor": forbidden_factor,
+        "boost_factor": boost_factor,
+        "_source": "db_derived",
+    }
+
+def _family_coarse_gate_adjustment(
+    family_name: Optional[str],
+    reaction_delta: Optional[Dict[str, Any]],
+    precomputed_signals: Optional[Dict[str, bool]] = None,
+) -> Tuple[float, List[str], Dict[str, bool]]:
+    """
+    family와 반응 신호를 비교해 coarse gate 배수를 반환한다.
+
+    signals 공급 방식:
+      1. reaction query  → reaction_delta 로부터 _reaction_coarse_signals() 계산
+      2. single SMILES   → precomputed_signals (FG 존재성 기반, delta 없음)
+      3. 둘 다 없음      → gate 미적용 (1.0)
+    """
+    if not family_name:
         return 1.0, [], {}
+
+    if precomputed_signals is not None:
+        signals = precomputed_signals
+    elif reaction_delta is not None:
+        signals = _reaction_coarse_signals(reaction_delta)
+    else:
+        return 1.0, [], {}
+
     profile = _family_coarse_profile(family_name)
     if not profile:
-        return 1.0, [], _reaction_coarse_signals(reaction_delta)
+        return 1.0, [], signals
 
-    signals = _reaction_coarse_signals(reaction_delta)
     mult = 1.0
     notes: List[str] = []
 
@@ -497,27 +940,46 @@ def _family_coarse_gate_adjustment(family_name: Optional[str], reaction_delta: O
 
 def _should_prune_low_confidence_mismatch(item: Dict[str, Any], query_mode: str) -> bool:
     """
-    Drop microscopic cross-family residue after coarse gating.
-    This is intentionally conservative:
-    - reaction queries only
-    - score already tiny
-    - coarse gate multiplier already in the strong mismatch zone
+    Drop low-confidence cross-family residue after coarse gating.
+
+    Patch-S2: structure / mixture 모드로 확장.
+    - reaction 모드: 기존 기준 유지 (strict — coarse gate notes 필수)
+    - structure 모드: coarse gate가 작동했을 때만 pruning
+      (coarse gate가 없는 경우는 건드리지 않음)
+    - mixture 모드: structure와 동일 기준
     """
-    if query_mode != "reaction":
-        return False
     fam = item.get("reaction_family_name")
     if not fam:
         return False
     score = float(item.get("match_score") or 0.0)
     coarse = float(item.get("coarse_gate_multiplier") or 1.0)
-    if score >= LOW_SCORE_MISMATCH_MAX_SCORE:
-        return False
-    if coarse > LOW_SCORE_MISMATCH_MAX_MULTIPLIER:
-        return False
     notes = item.get("coarse_gate_notes") or []
-    if not notes:
-        return False
-    return True
+
+    if query_mode == "reaction":
+        # 기존 strict 기준
+        if score >= LOW_SCORE_MISMATCH_MAX_SCORE:
+            return False
+        if coarse > LOW_SCORE_MISMATCH_MAX_MULTIPLIER:
+            return False
+        if not notes:
+            return False
+        return True
+
+    if query_mode in ("structure", "mixture"):
+        # coarse gate가 작동하지 않은 경우는 pruning 하지 않음
+        # (pseudo_reaction_components가 없으면 coarse_gate_multiplier == 1.0)
+        if coarse >= 1.0:
+            return False
+        # 점수 기준은 reaction보다 관대하게 (3배)
+        if score >= LOW_SCORE_MISMATCH_MAX_SCORE * 3:
+            return False
+        if coarse > LOW_SCORE_MISMATCH_MAX_MULTIPLIER * 2:
+            return False
+        if not notes:
+            return False
+        return True
+
+    return False
 
 def _family_delta_adjustment(family_name: Optional[str], reaction_delta: Optional[Dict[str, Any]]) -> Tuple[float, List[str]]:
     if not family_name or not reaction_delta:
@@ -590,6 +1052,16 @@ def _family_delta_adjustment(family_name: Optional[str], reaction_delta: Optiona
             penalize(0.30, "탈수 대상 작용기 부족")
         if d.get("alkene", 0) > 0:
             boost(1.10, "alkene 증가")
+    elif "chugaev" in fam:
+        # Chugaev is a thermolytic xanthate elimination; exact radical/tin-hydride fragments should not outrank Barton families.
+        if r.get("alcohol", 0) < 1 and r.get("ether", 0) < 1:
+            penalize(0.22, "제거 대상 알코올/잔테이트 전구체 부족")
+        if d.get("alkene", 0) <= 0:
+            penalize(0.22, "alkene 생성 신호 부족")
+        else:
+            boost(1.10, "alkene 증가")
+        if d.get("alcohol", 0) >= 0 and d.get("ether", 0) >= 0:
+            penalize(0.35, "제거반응 방향 불일치")
 
     mult = max(0.05, min(mult, 2.0))
     return mult, notes
@@ -1136,9 +1608,16 @@ def _finalize_results(hit_map: Dict[int, Dict[str, Any]], req: StructureEvidence
 
     reaction_delta = None
     query_type_signals: Dict[str, bool] = {}
+
     if extra and isinstance(extra.get("reaction_components"), dict):
+        # ── reaction query 경로: delta + coarse gate + delta_adjustment 전부 사용 ──
         reaction_delta = _reaction_delta_from_components(extra.get("reaction_components"))
         query_type_signals = _reaction_coarse_signals(reaction_delta)
+
+    elif extra and isinstance(extra.get("single_smiles_fg_signals"), dict):
+        # ── single SMILES 경로: FG 존재성 신호만 사용, delta는 계산하지 않음 ──
+        # reaction_delta = None 유지 → _family_delta_adjustment()는 건너뜀
+        query_type_signals = extra["single_smiles_fg_signals"]
 
     details = _fetch_extract_details([r["extract_id"] for r in raw_results])
     for item in raw_results:
@@ -1152,7 +1631,14 @@ def _finalize_results(hit_map: Dict[int, Dict[str, Any]], req: StructureEvidence
         if delta_notes:
             item["delta_notes"] = delta_notes
 
-        coarse_multiplier, coarse_notes, _ = _family_coarse_gate_adjustment(item.get("reaction_family_name"), reaction_delta)
+        # single SMILES 경로: precomputed_signals로 coarse gate 적용
+        # reaction 경로: reaction_delta로 coarse gate 적용 (기존 동작 유지)
+        single_fg_signals = (extra or {}).get("single_smiles_fg_signals") if reaction_delta is None else None
+        coarse_multiplier, coarse_notes, _ = _family_coarse_gate_adjustment(
+            item.get("reaction_family_name"),
+            reaction_delta,
+            precomputed_signals=single_fg_signals,
+        )
         item["match_score"] = float(item.get("match_score") or 0.0) * coarse_multiplier
         item["coarse_gate_multiplier"] = round(coarse_multiplier, 3)
         if coarse_notes:
@@ -1203,6 +1689,20 @@ def _finalize_results(hit_map: Dict[int, Dict[str, Any]], req: StructureEvidence
         "pruned_mismatch_count": pruned_mismatch_count,
         "results": final,
     }
+
+    # Patch-S3: no_confident_hit 판정
+    # top result 점수 기준으로 "신뢰할 만한 hit가 없다"를 명시적으로 표시.
+    # 프론트엔드는 이 플래그를 보고 경고 배너를 표시한다.
+    top_score = float(final[0].get("match_score") or 0.0) if final else 0.0
+
+    NO_CONFIDENT_HIT_THRESHOLD = 0.45   # '중간' 이상 기준과 동일
+    no_confident_hit = (not final) or (top_score < NO_CONFIDENT_HIT_THRESHOLD)
+    payload["no_confident_hit"] = no_confident_hit
+    payload["top_score"] = round(top_score, 3)
+
+    # single SMILES 전용: inferred_role, active_signals 표시
+    if query_mode == "structure" and extra and "single_smiles_profile" in extra:
+        payload["single_smiles_profile"] = extra.pop("single_smiles_profile")
     if final:
         conn = _db_connect()
         try:
@@ -1234,6 +1734,12 @@ def _search_by_structure(req: StructureEvidenceRequest) -> Dict[str, Any]:
     q = query_molecules[0]
     qmol = q["mol"]
     qfp = q["fp"]
+
+    # Patch-S1 (safe): single SMILES FG 프로파일링
+    # pseudo_reaction_components를 만들지 않는다 — delta 엔진을 태우지 않음.
+    # _finalize_results()는 single_smiles_fg_signals가 있으면
+    # coarse gate만 적용하고 delta_adjustment는 건너뛴다.
+    single_profile = _classify_single_smiles_as_query(q["smiles"])
 
     hit_map: Dict[int, Dict[str, Any]] = {}
 
@@ -1276,7 +1782,21 @@ def _search_by_structure(req: StructureEvidenceRequest) -> Dict[str, Any]:
         except Exception:
             continue
 
-    return _finalize_results(hit_map, req=req, query_mode="structure", extra={"query_smiles": q["smiles"]})
+    return _finalize_results(
+        hit_map,
+        req=req,
+        query_mode="structure",
+        extra={
+            "query_smiles": q["smiles"],
+            # reaction_components는 넘기지 않는다 → delta 엔진 미사용
+            "single_smiles_fg_signals": single_profile["query_signals"],  # coarse gate 전용
+            "single_smiles_profile": {
+                "inferred_role": single_profile["inferred_role"],
+                "signal_notes": single_profile["signal_notes"],
+                "active_signals": [k for k, v in single_profile["query_signals"].items() if v],
+            },
+        },
+    )
 
 
 

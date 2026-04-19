@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"candidate_id\": \"C1\",\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This is a classic example of the Ritter reaction. The tertiary alcohol, tert-butanol, is protonated by a strong acid, loses water to form the stable tert-butyl carbocation. This electrophilic carbocation is then trapped by the nucleophilic nitrogen of acetonitrile. The resulting nitrilium ion intermediate is subsequently hydrolyzed during workup to yield the final N-tert-butylacetamide product. The transformation clearly demonstrates the formation of a C-N bond via nitrile capture of a carbocation.\",\n    \"collision_avoidance_note\": \"The substrate is a simple tertiary alcohol, a quintessential carbocation precursor for this reaction. The product is a distinct N-alkyl amide, clearly formed by addition of the nitrile to the carbocation, not by other nitrile chemistries like Pinner (which involves HCl addition to a nitrile to form an imidate) or Houben-Hoesch (which is an acylation of an electron-rich aromatic ring). The use of acetonitrile as the nitrile is standard and avoids ambiguity.\",\n    \"reagents_text\": \"acetonitrile, sulfuric acid\",\n    \"conditions_text\": \"Aqueous workup\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 308,
+    "candidatesTokenCount": 335,
+    "totalTokenCount": 717,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 308
+      }
+    ],
+    "thoughtsTokenCount": 74
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "kPjjaZPfDunP2roPkJfOmAo"
+}

@@ -1,0 +1,15 @@
+{
+  "family": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+  "substrates": [
+    "CC(=O)Oc1ccccc1"
+  ],
+  "products": [
+    "CC(=O)c1ccccc1O"
+  ],
+  "reagents": [
+    "[Cl][Al]([Cl])[Cl]"
+  ],
+  "rationale": "This is the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone, a textbook example. It clearly demonstrates the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). The reactants and products are simple, acyclic where possible, and lack complex functional groups, making it a clear and unambiguous representation of the core transformation.",
+  "collision_avoidance_note": "This example uses the simplest possible aromatic system (phenyl) and acyl group (acetyl) to avoid overlap with more complex aromatic substitution reactions. It avoids motifs like diazo groups, polycyclic arenes, or additional reactive functional groups that could trigger other named reaction queries. The transformation is a specific intramolecular rearrangement, distinct from intermolecular Friedel-Crafts acylation.",
+  "raw_text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Al](Cl)Cl\"\n    ],\n    \"rationale\": \"This is the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone, a textbook example. It clearly demonstrates the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). The reactants and products are simple, acyclic where possible, and lack complex functional groups, making it a clear and unambiguous representation of the core transformation.\",\n    \"collision_avoidance_note\": \"This example uses the simplest possible aromatic system (phenyl) and acyl group (acetyl) to avoid overlap with more complex aromatic substitution reactions. It avoids motifs like diazo groups, polycyclic arenes, or additional reactive functional groups that could trigger other named reaction queries. The transformation is a specific intramolecular rearrangement, distinct from intermolecular Friedel-Crafts acylation.\"\n  }\n}"
+}

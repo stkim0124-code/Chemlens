@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wharton Fragmentation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(O)C[C@H](OS(=O)(=O)c1ccc(C)cc1)C1CCCCC1\"\n    ],\n    \"product_smiles\": [\n      \"O=C(C)C1CCCCC1\",\n      \"C=C(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CC(C)(C)[O-].[K+]\"\n    ],\n    \"rationale\": \"This is a classic example of the Wharton fragmentation, demonstrating the base-induced cleavage of a 1,3-diol monotosylate. The substrate is a tertiary alcohol and a secondary tosylate, which upon treatment with a strong, non-nucleophilic base like potassium tert-butoxide, undergoes a concerted anti-fragmentation. The reaction cleaves the C2-C3 bond to form two stable fragments: a ketone (cyclohexyl methyl ketone) and an alkene (isobutylene). The stereochemistry at the tosylate-bearing carbon is defined to illustrate the stereospecific nature of the fragmentation, although the specific product structures here do not depend on it. This example is acyclic in the fragmenting core, simple, and clearly illustrates the key transformation.\",\n    \"collision_avoidance_note\": \"This example avoids complex ring systems often associated with the reaction's synthetic applications, which could be mistaken for ring-opening or expansion reactions. It uses a simple tosylate leaving group and a strong base, which are characteristic of the Wharton fragmentation, distinguishing it from other fragmentations like the Grob fragmentation which often involves different substrates (e.g., amino alcohols). The formation of two distinct, stable organic products (a ketone and an alkene) from a single substrate is a key feature that helps differentiate it from simple elimination reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 430,
+    "candidatesTokenCount": 415,
+    "totalTokenCount": 918,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 430
+      }
+    ],
+    "thoughtsTokenCount": 73
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "is7jaY_JI5TF0-kPv7nmsAI"
+}

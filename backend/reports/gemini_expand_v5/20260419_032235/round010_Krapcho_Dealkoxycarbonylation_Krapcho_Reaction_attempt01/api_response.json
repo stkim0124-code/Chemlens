@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Krapcho Dealkoxycarbonylation (Krapcho Reaction)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCOC(=O)C(C)C(=O)OCC\"\n    ],\n    \"product_smiles\": [\n      \"CCC(=O)OCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Li+].[Cl-]\",\n      \"O\"\n    ],\n    \"rationale\": \"This example shows the selective dealkoxycarbonylation of a malonic ester derivative, specifically diethyl 2-methylmalonate, to form ethyl propanoate. This is a classic textbook example of the Krapcho reaction, demonstrating its utility in removing one of the two ester groups from a malonate, which is a common synthetic step after a malonic ester synthesis. The reactants and products are simple, acyclic, and clearly illustrate the core transformation.\",\n    \"collision_avoidance_note\": \"The reaction is a specific dealkoxycarbonylation, not a general decarboxylation of a carboxylic acid. The use of a malonic ester substrate and salt reagents (LiCl) in a polar aprotic solvent (implied, often DMSO) is characteristic. The structure is kept simple and acyclic to avoid overlap with more complex transformations involving rings or other functional groups that might trigger different named reaction classifications.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 383,
+    "candidatesTokenCount": 303,
+    "totalTokenCount": 782,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 383
+      }
+    ],
+    "thoughtsTokenCount": 96
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "FNPjabOlC-qgvr0PuueLMA"
+}

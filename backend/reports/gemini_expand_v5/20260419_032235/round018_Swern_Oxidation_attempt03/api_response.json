@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Swern Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(C)C\",\n      \"O=C(Cl)C(=O)Cl\",\n      \"N(CC)(CC)CC\"\n    ],\n    \"rationale\": \"This reaction shows the oxidation of a simple, acyclic primary alcohol (1-butanol) to the corresponding aldehyde (butanal). This is a classic textbook example of the Swern oxidation, clearly demonstrating the functional group transformation without introducing any complex or potentially confounding structural features. The reagents listed are the standard combination for the Swern protocol: dimethyl sulfoxide (DMSO), oxalyl chloride, and triethylamine.\",\n    \"collision_avoidance_note\": \"The substrate is a simple primary aliphatic alcohol, avoiding aromatic rings (common in many named reactions), complex stereocenters, or other reactive functional groups. This specificity helps to prevent incorrect association with other oxidation reactions (e.g., PCC, Dess-Martin) or reactions involving different functional groups.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 403,
+    "candidatesTokenCount": 270,
+    "totalTokenCount": 723,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 403
+      }
+    ],
+    "thoughtsTokenCount": 50
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "xdvjaf7LLN-KosUPw9auwQQ"
+}

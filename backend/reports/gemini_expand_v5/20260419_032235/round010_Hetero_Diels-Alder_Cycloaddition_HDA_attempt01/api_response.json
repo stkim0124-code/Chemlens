@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Hetero Diels-Alder Cycloaddition (HDA)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C=CC=C\",\n      \"O=C=O\"\n    ],\n    \"product_smiles\": [\n      \"O=C1OC=CC=C1\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This is a classic and simple example of a Hetero Diels-Alder reaction, specifically a [4+2] cycloaddition. It features 1,3-butadiene as the diene and carbon dioxide as the heterodienophile, where a C=O double bond participates in the reaction. The resulting product is a six-membered heterocyclic ring, which is the hallmark of this reaction type. The reactants and product are simple, acyclic (where possible), and clearly illustrate the core transformation without extraneous functional groups.\",\n    \"collision_avoidance_note\": \"This example uses simple, non-aromatic reactants (butadiene and carbon dioxide) to avoid overlap with reactions involving arenes. The heterodienophile (CO2) is unambiguous and distinct from common dienophiles in standard Diels-Alder reactions. The reaction avoids complex motifs like diazo compounds, decarboxylation, or radical processes, focusing purely on the pericyclic cycloaddition involving a heteroatom.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 385,
+    "candidatesTokenCount": 298,
+    "totalTokenCount": 773,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 385
+      }
+    ],
+    "thoughtsTokenCount": 90
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "s9LjaY28LIDj0-kPiYqA-A0"
+}

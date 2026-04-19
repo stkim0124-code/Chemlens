@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Yamaguchi Macrolactonization\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=C(O)CCCCCCCCCCCO\"\n    ],\n    \"product_smiles\": [\n      \"O=C1OCCCCCCCCCCC1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=C(Cl)c1c(Cl)cc(Cl)cc1Cl\",\n      \"CN(C)c1cc[n+](C)cc1\"\n    ],\n    \"rationale\": \"This reaction shows the macrolactonization of 12-hydroxydodecanoic acid to form the 13-membered lactone, dodecanolide. This is a classic textbook example of the Yamaguchi macrolactonization, demonstrating the formation of a large-ring lactone from a simple, acyclic omega-hydroxy acid. The reagents, 2,4,6-trichlorobenzoyl chloride and DMAP, are the key components of this named reaction.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, acyclic, saturated omega-hydroxy acid, avoiding complex functional groups, aromatic rings, or stereocenters that could trigger other named reaction queries. The transformation is a straightforward intramolecular esterification to form a large ring, which is the core concept of the Yamaguchi macrolactonization, minimizing overlap with other esterification or cyclization methods that do not involve the specific Yamaguchi reagents or high-dilution conditions for macrocycle formation.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 476,
+    "candidatesTokenCount": 340,
+    "totalTokenCount": 890,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 476
+      }
+    ],
+    "thoughtsTokenCount": 74
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "vNPjafjvOquU1e8P4tqu2Q8"
+}

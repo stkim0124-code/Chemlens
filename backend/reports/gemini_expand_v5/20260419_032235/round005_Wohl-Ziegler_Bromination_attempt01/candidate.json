@@ -1,0 +1,15 @@
+{
+  "family": "Wohl-Ziegler Bromination",
+  "substrates": [
+    "C=CC"
+  ],
+  "products": [
+    "C=CCBr"
+  ],
+  "reagents": [
+    "O=C1CCN(Br)C1=O"
+  ],
+  "rationale": "The allylic bromination of propene to form allyl bromide is a fundamental and simple textbook example of the Wohl-Ziegler reaction. It clearly demonstrates the selective bromination at the allylic position of a simple alkene using N-bromosuccinimide (NBS). The substrate is acyclic and minimal, containing only the essential C=C-CH moiety.",
+  "collision_avoidance_note": "This example uses a simple, acyclic alkene (propene) to avoid structural motifs common in other named reactions. It avoids aromatic rings (present in benzylic bromination examples, which could collide with electrophilic aromatic substitution or other benzylic functionalizations) and complex cyclic systems. The focus is purely on the C-H to C-Br transformation at the allylic position, which is the core of the Wohl-Ziegler reaction.",
+  "raw_text": "{\n  \"family\": \"Wohl-Ziegler Bromination\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC=C\"\n    ],\n    \"product_smiles\": [\n      \"BrCC=C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=C1N(Br)CCC1=O\"\n    ],\n    \"rationale\": \"The allylic bromination of propene to form allyl bromide is a fundamental and simple textbook example of the Wohl-Ziegler reaction. It clearly demonstrates the selective bromination at the allylic position of a simple alkene using N-bromosuccinimide (NBS). The substrate is acyclic and minimal, containing only the essential C=C-CH moiety.\",\n    \"collision_avoidance_note\": \"This example uses a simple, acyclic alkene (propene) to avoid structural motifs common in other named reactions. It avoids aromatic rings (present in benzylic bromination examples, which could collide with electrophilic aromatic substitution or other benzylic functionalizations) and complex cyclic systems. The focus is purely on the C-H to C-Br transformation at the allylic position, which is the core of the Wohl-Ziegler reaction.\"\n  }\n}"
+}

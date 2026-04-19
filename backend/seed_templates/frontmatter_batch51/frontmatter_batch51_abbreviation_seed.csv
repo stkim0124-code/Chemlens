@@ -1,0 +1,11 @@
+alias,canonical_name,entity_type
+Sc(OTf)3,scandium trifluoromethanesulfonate,lewis_acid
+Bu3SnCN,tributyltin cyanide,cyanide_source
+ZnI2,zinc iodide,lewis_acid
+NHAlloc,allyloxycarbonyl-protected amine,protecting_group
+catecholborane,catecholborane,hydroboration_reagent
+Cs2CO3,cesium carbonate,base
+(COCl)2,oxalyl chloride,activating_reagent
+CHI3,iodoform,haloform_reagent
+Cp2TiCl2,titanocene dichloride,organotitanium_precursor
+Cp2Ti(Me)2,dimethyltitanocene,organotitanium_reagent

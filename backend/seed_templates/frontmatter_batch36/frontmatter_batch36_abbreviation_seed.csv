@@ -1,0 +1,16 @@
+alias,canonical_name,entity_type
+H2SO4,sulfuric acid,acid
+BF3·OEt2,boron trifluoride etherate,Lewis_acid
+FeCl3,iron(III) chloride,Lewis_acid
+TsCl,p-toluenesulfonyl chloride,sulfonylating_agent
+KOEt,potassium ethoxide,base
+H2NOH,hydroxylamine,amine_nucleophile
+AcOH,acetic acid,acid
+TiCl3,titanium(III) chloride,reducing_agent
+DMDO,dimethyldioxirane,oxidant
+TAP/NMO,tetrapropylammonium perruthenate / N-methylmorpholine N-oxide,oxidation_system
+ZnCl2,zinc chloride,Lewis_acid
+Pd(PPh3)4,tetrakis(triphenylphosphine)palladium(0),Pd_catalyst
+Cp2Zr(H)Cl,Schwartz reagent,hydrozirconation_reagent
+CH3NO2,nitromethane,solvent
+TsOH,p-toluenesulfonic acid,acid

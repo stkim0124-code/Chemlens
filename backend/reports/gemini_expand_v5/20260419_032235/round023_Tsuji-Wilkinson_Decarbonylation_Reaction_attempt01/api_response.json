@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh](P(c1ccccc1)(c1ccccc1)c1ccccc1)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple, saturated aliphatic aldehyde (heptanal) to its corresponding alkane (heptane) using Wilkinson's catalyst. This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, clearly illustrating the conversion of an aldehyde functional group (R-CHO) to a C-H bond (R-H) with the extrusion of carbon monoxide. The substrate is acyclic and lacks other reactive functional groups, making it a clean and unambiguous representation of the core transformation.\",\n    \"collision_avoidance_note\": \"The use of a simple, saturated aliphatic aldehyde avoids overlap with reactions involving aromatic aldehydes (which could be confused with various named reactions on arenes), unsaturated aldehydes (e.g., cinnamaldehyde, which could trigger Michael addition or other alkene-related reaction queries), or acyl halides. This specific example focuses purely on the aldehyde-to-alkane conversion, which is the most fundamental application of this named reaction, minimizing potential collisions with other decarbonylation or deformylation methods that might involve different mechanisms or substrates.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 440,
+    "candidatesTokenCount": 365,
+    "totalTokenCount": 905,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 440
+      }
+    ],
+    "thoughtsTokenCount": 100
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "auDjabWsM6e10-kP5LC6oQQ"
+}

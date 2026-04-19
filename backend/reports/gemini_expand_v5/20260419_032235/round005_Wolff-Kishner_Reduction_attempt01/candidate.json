@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCC(=O)CC"
+  ],
+  "products": [
+    "CCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-pentanone) to its corresponding alkane (n-pentane). This is a classic textbook example of the Wolff-Kishner reduction, clearly demonstrating the conversion of a carbonyl group to a methylene group under basic conditions using hydrazine and a strong base like KOH. The substrate is simple and avoids rings or other functional groups that could cause ambiguity.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic ketone, avoiding aromatic rings (which could collide with Clemmensen reduction examples or other arene-related reactions) and other reactive functional groups. The transformation is a direct C=O to CH2 conversion, which is the defining feature of the Wolff-Kishner reduction, minimizing overlap with other deoxygenation or reduction reactions that have different mechanisms or substrate scopes.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-pentanone) to its corresponding alkane (n-pentane). This is a classic textbook example of the Wolff-Kishner reduction, clearly demonstrating the conversion of a carbonyl group to a methylene group under basic conditions using hydrazine and a strong base like KOH. The substrate is simple and avoids rings or other functional groups that could cause ambiguity.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic ketone, avoiding aromatic rings (which could collide with Clemmensen reduction examples or other arene-related reactions) and other reactive functional groups. The transformation is a direct C=O to CH2 conversion, which is the defining feature of the Wolff-Kishner reduction, minimizing overlap with other deoxygenation or reduction reactions that have different mechanisms or substrate scopes.\"\n  }\n}"
+}

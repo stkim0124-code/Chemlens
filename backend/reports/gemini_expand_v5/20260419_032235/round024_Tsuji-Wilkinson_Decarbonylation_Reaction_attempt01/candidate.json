@@ -1,0 +1,15 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "substrates": [
+    "CCCCCCC=O"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "[Cl][Rh]([PH](c1ccccc1)(c1ccccc1)c1ccccc1)([PH](c1ccccc1)(c1ccccc1)c1ccccc1)[PH](c1ccccc1)(c1ccccc1)c1ccccc1"
+  ],
+  "rationale": "This reaction shows the decarbonylation of a simple aliphatic aldehyde, heptanal, to its corresponding alkane, hexane, using Wilkinson's catalyst. This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, demonstrating the conversion of an aldehyde functional group (R-CHO) to a C-H bond (R-H) with the extrusion of carbon monoxide. The acyclic, saturated nature of the substrate and product makes it a clear and unambiguous representation of the core transformation.",
+  "collision_avoidance_note": "The substrate is a simple, acyclic aliphatic aldehyde, avoiding aromatic rings, unsaturation (other than the aldehyde), or other functional groups that could trigger unrelated named reaction queries (e.g., aldol, Wittig, Rosenmund). The transformation is a straightforward deformylation, distinct from decarboxylation (removal of CO2 from a carboxylic acid) or deoxygenation (e.g., Wolff-Kishner, Clemmensen).",
+  "raw_text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh](P(c1ccccc1)(c1ccccc1)c1ccccc1)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple aliphatic aldehyde, heptanal, to its corresponding alkane, hexane, using Wilkinson's catalyst. This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, demonstrating the conversion of an aldehyde functional group (R-CHO) to a C-H bond (R-H) with the extrusion of carbon monoxide. The acyclic, saturated nature of the substrate and product makes it a clear and unambiguous representation of the core transformation.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, acyclic aliphatic aldehyde, avoiding aromatic rings, unsaturation (other than the aldehyde), or other functional groups that could trigger unrelated named reaction queries (e.g., aldol, Wittig, Rosenmund). The transformation is a straightforward deformylation, distinct from decarboxylation (removal of CO2 from a carboxylic acid) or deoxygenation (e.g., Wolff-Kishner, Clemmensen).\"\n  }\n}"
+}

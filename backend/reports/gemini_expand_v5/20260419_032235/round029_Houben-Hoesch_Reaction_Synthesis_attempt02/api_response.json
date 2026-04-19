@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Houben-Hoesch Reaction/Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"COc1cc(OC)cc(OC)c1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1cc(OC)cc(OC)c1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Zn]Cl\",\n      \"Cl\"\n    ],\n    \"rationale\": \"This is a canonical example of the Houben-Hoesch reaction, featuring the acylation of a highly activated, electron-rich aromatic ring (1,3,5-trimethoxybenzene) with a simple nitrile (acetonitrile). The reaction is catalyzed by a Lewis acid (zinc chloride) and a Brønsted acid (HCl), followed by aqueous workup to hydrolyze the intermediate ketimine, yielding the final aryl ketone product. This example clearly illustrates the key transformation: the formation of a C(aryl)-C(acyl) bond from an arene and a nitrile.\",\n    \"collision_avoidance_note\": \"This example uses a simple, acyclic nitrile (acetonitrile) and a highly activated, non-fused aromatic substrate (1,3,5-trimethoxybenzene) to avoid overlap with more general Friedel-Crafts acylation reactions, which typically use acyl halides or anhydrides. The use of a nitrile as the electrophile precursor is the defining characteristic of the Houben-Hoesch reaction. The substrate is specifically chosen to be electron-rich, as required for this reaction, but avoids complex or generic polycyclic aromatic structures that could trigger other named reaction queries.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 369,
+    "candidatesTokenCount": 375,
+    "totalTokenCount": 804,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 369
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "aeXjabe3LJuJ1e8PqPuZoQQ"
+}

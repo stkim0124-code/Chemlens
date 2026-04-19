@@ -1,0 +1,16 @@
+{
+  "family": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+  "substrates": [
+    "CCCCN(C)Cl"
+  ],
+  "products": [
+    "C1CCNC1.Cl"
+  ],
+  "reagents": [
+    "O",
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutan-1-amine undergoes intramolecular 1,5-hydrogen atom transfer upon photolysis or acid catalysis, forming a delta-carbon radical. This radical then abstracts a chlorine atom to form a delta-chloroamine, which cyclizes upon treatment with base (generated in situ or added) to yield N-methylpyrrolidine. This example clearly demonstrates the key C-H activation at a remote (delta) position and subsequent cyclization to a five-membered ring, which is characteristic of the reaction.",
+  "collision_avoidance_note": "This example uses a simple acyclic N-haloamine substrate and avoids complex structures, arenes, or other functional groups that could trigger unrelated named reaction queries. The core transformation is a remote C-H functionalization followed by cyclization, which is specific to this reaction family and distinct from other cyclization or rearrangement reactions like the Beckmann or Hofmann rearrangements.",
+  "raw_text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCNC1.Cl\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutan-1-amine undergoes intramolecular 1,5-hydrogen atom transfer upon photolysis or acid catalysis, forming a delta-carbon radical. This radical then abstracts a chlorine atom to form a delta-chloroamine, which cyclizes upon treatment with base (generated in situ or added) to yield N-methylpyrrolidine. This example clearly demonstrates the key C-H activation at a remote (delta) position and subsequent cyclization to a five-membered ring, which is characteristic of the reaction.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic N-haloamine substrate and avoids complex structures, arenes, or other functional groups that could trigger unrelated named reaction queries. The core transformation is a remote C-H functionalization followed by cyclization, which is specific to this reaction family and distinct from other cyclization or rearrangement reactions like the Beckmann or Hofmann rearrangements.\"\n  }\n}"
+}

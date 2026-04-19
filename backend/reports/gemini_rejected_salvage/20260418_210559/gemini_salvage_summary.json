@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-04-18T21:06:05",
+  "diag_summary": "C:\\chemlens\\backend\\reports\\v5_rejected_diagnose\\20260418_201257\\rejected_diagnosis_summary.json",
+  "source_db": "C:\\chemlens\\backend\\app\\labint_v5_stage.db",
+  "model": "gemini-2.5-pro",
+  "total_families": 2,
+  "families": [
+    {
+      "family_name": "Enyne Metathesis",
+      "changed_cases": 2,
+      "first_case": "barton_radical_rxn_353_exact_extract",
+      "first_top1": "Enyne Metathesis",
+      "cluster": "barton",
+      "stage_extract_ids": [
+        504
+      ],
+      "stage_examples_used": [
+        {
+          "extract_id": 504,
+          "role": "reactant",
+          "smiles": "C=CCCCCCC"
+        },
+        {
+          "extract_id": 504,
+          "role": "reactant",
+          "smiles": "C#CCCCC"
+        }
+      ],
+      "candidates": [],
+      "prompt_files": [
+        "Enyne_Metathesis_C1_prompt.txt",
+        "Enyne_Metathesis_C1_prompt_relaxed.txt",
+        "Enyne_Metathesis_C2_prompt.txt",
+        "Enyne_Metathesis_C2_prompt_relaxed.txt",
+        "Enyne_Metathesis_C3_prompt.txt",
+        "Enyne_Metathesis_C3_prompt_relaxed.txt"
+      ],
+      "raw_files": [
+        "Enyne_Metathesis_C1_raw.error.txt",
+        "Enyne_Metathesis_C2_raw.error.txt",
+        "Enyne_Metathesis_C3_raw.error.txt"
+      ],
+      "api_response_files": [],
+      "error": "C1: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc || 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc | C2: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc || 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc | C3: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc || 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Hofmann-Loffler-Freytag Reaction",
+      "changed_cases": 2,
+      "first_case": "barton_radical_rxn_353_exact_extract",
+      "first_top1": "Hofmann-Loffler-Freytag Reaction",
+      "cluster": "barton",
+      "stage_extract_ids": [
+        530
+      ],
+      "stage_examples_used": [
+        {
+          "extract_id": 530,
+          "role": "reactant",
+          "smiles": "CCCCN(C)Cl"
+        },
+        {
+          "extract_id": 530,
+          "role": "product",
+          "smiles": "CN1CCCC1"
+        }
+      ],
+      "candidates": [],
+      "prompt_files": [
+        "Hofmann-Loffler-Freytag_Reaction_C1_prompt.txt",
+        "Hofmann-Loffler-Freytag_Reaction_C1_prompt_relaxed.txt",
+        "Hofmann-Loffler-Freytag_Reaction_C2_prompt.txt",
+        "Hofmann-Loffler-Freytag_Reaction_C2_prompt_relaxed.txt",
+        "Hofmann-Loffler-Freytag_Reaction_C3_prompt.txt",
+        "Hofmann-Loffler-Freytag_Reaction_C3_prompt_relaxed.txt"
+      ],
+      "raw_files": [
+        "Hofmann-Loffler-Freytag_Reaction_C1_raw.error.txt",
+        "Hofmann-Loffler-Freytag_Reaction_C2_raw.error.txt",
+        "Hofmann-Loffler-Freytag_Reaction_C3_raw.error.txt"
+      ],
+      "api_response_files": [],
+      "error": "C1: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc || 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc | C2: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc || 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc | C3: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc || 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    }
+  ]
+}

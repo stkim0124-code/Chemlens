@@ -1,0 +1,1761 @@
+{
+  "report_run": "20260419_095833",
+  "mode": "dryrun",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "pdf": "C:\\chemlens\\backend\\app\\data\\pdfs\\named reactions.pdf",
+  "stage_db": "C:\\chemlens\\backend\\app\\labint_pdf_examples_stage.db",
+  "families_processed": 250,
+  "regions_detected_total": 910,
+  "pages": [
+    {
+      "family_name": "Acetoacetic Ester Synthesis",
+      "page_knowledge_id": 43,
+      "book_page_no": 3,
+      "pdf_page_no": 55,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Acyloin Condensation",
+      "page_knowledge_id": 45,
+      "book_page_no": 5,
+      "pdf_page_no": 57,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "page_knowledge_id": 47,
+      "book_page_no": 7,
+      "pdf_page_no": 59,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Aldol Reaction",
+      "page_knowledge_id": 49,
+      "book_page_no": 9,
+      "pdf_page_no": 61,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Alkene (Olefin) Metathesis",
+      "page_knowledge_id": 41,
+      "book_page_no": 11,
+      "pdf_page_no": 63,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Alkyne Metathesis",
+      "page_knowledge_id": 52,
+      "book_page_no": 13,
+      "pdf_page_no": 65,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Amadori Reaction / Rearrangement",
+      "page_knowledge_id": 54,
+      "book_page_no": 15,
+      "pdf_page_no": 67,
+      "regions_detected": 2
+    },
+    {
+      "family_name": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "page_knowledge_id": 56,
+      "book_page_no": 17,
+      "pdf_page_no": 69,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Arndt-Eistert Homologation / Synthesis",
+      "page_knowledge_id": 58,
+      "book_page_no": 19,
+      "pdf_page_no": 71,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "page_knowledge_id": 60,
+      "book_page_no": 21,
+      "pdf_page_no": 73,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Aza-Cope Rearrangement",
+      "page_knowledge_id": 62,
+      "book_page_no": 23,
+      "pdf_page_no": 75,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Aza-Wittig Reaction",
+      "page_knowledge_id": 64,
+      "book_page_no": 25,
+      "pdf_page_no": 77,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Aza-[2,3]-Wittig Rearrangement",
+      "page_knowledge_id": 66,
+      "book_page_no": 27,
+      "pdf_page_no": 79,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Baeyer-Villiger Oxidation/Rearrangement",
+      "page_knowledge_id": 68,
+      "book_page_no": 29,
+      "pdf_page_no": 81,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Baker-Venkataraman Rearrangement",
+      "page_knowledge_id": 70,
+      "book_page_no": 31,
+      "pdf_page_no": 83,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Baldwin's Rules / Guidelines for Ring-Closing Reactions",
+      "page_knowledge_id": 72,
+      "book_page_no": 33,
+      "pdf_page_no": 85,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Balz-Schiemann Reaction",
+      "page_knowledge_id": 74,
+      "book_page_no": 35,
+      "pdf_page_no": 87,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Bamford-Stevens-Shapiro Olefination",
+      "page_knowledge_id": 76,
+      "book_page_no": 37,
+      "pdf_page_no": 89,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Barbier Coupling Reaction",
+      "page_knowledge_id": 78,
+      "book_page_no": 39,
+      "pdf_page_no": 91,
+      "regions_detected": 2
+    },
+    {
+      "family_name": "Bartoli Indole Synthesis",
+      "page_knowledge_id": 80,
+      "book_page_no": 41,
+      "pdf_page_no": 93,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Barton Nitrite Ester Reaction",
+      "page_knowledge_id": 82,
+      "book_page_no": 43,
+      "pdf_page_no": 95,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Barton Radical Decarboxylation Reaction",
+      "page_knowledge_id": 84,
+      "book_page_no": 45,
+      "pdf_page_no": 97,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Barton-McCombie Radical Deoxygenation Reaction",
+      "page_knowledge_id": 86,
+      "book_page_no": 47,
+      "pdf_page_no": 99,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Baylis-Hillman Reaction",
+      "page_knowledge_id": 88,
+      "book_page_no": 49,
+      "pdf_page_no": 101,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Beckmann Rearrangement",
+      "page_knowledge_id": 90,
+      "book_page_no": 51,
+      "pdf_page_no": 103,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Benzilic Acid Rearrangement",
+      "page_knowledge_id": 92,
+      "book_page_no": 53,
+      "pdf_page_no": 105,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Benzoin and Retro-Benzoin Condensation",
+      "page_knowledge_id": 94,
+      "book_page_no": 55,
+      "pdf_page_no": 107,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Bergman Cycloaromatization Reaction",
+      "page_knowledge_id": 96,
+      "book_page_no": 57,
+      "pdf_page_no": 109,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Biginelli Reaction",
+      "page_knowledge_id": 98,
+      "book_page_no": 59,
+      "pdf_page_no": 111,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Birch Reduction",
+      "page_knowledge_id": 100,
+      "book_page_no": 61,
+      "pdf_page_no": 113,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Bischler-Napieralski Isoquinoline Synthesis",
+      "page_knowledge_id": 102,
+      "book_page_no": 63,
+      "pdf_page_no": 115,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Brook Rearrangement",
+      "page_knowledge_id": 104,
+      "book_page_no": 65,
+      "pdf_page_no": 117,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Brown Hydroboration Reaction",
+      "page_knowledge_id": 106,
+      "book_page_no": 67,
+      "pdf_page_no": 119,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Buchner Method of Ring Expansion",
+      "page_knowledge_id": 108,
+      "book_page_no": 69,
+      "pdf_page_no": 121,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Buchwald-Hartwig Cross-Coupling",
+      "page_knowledge_id": 110,
+      "book_page_no": 71,
+      "pdf_page_no": 123,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Burgess Dehydration Reaction",
+      "page_knowledge_id": 112,
+      "book_page_no": 73,
+      "pdf_page_no": 125,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Cannizzaro Reaction",
+      "page_knowledge_id": 114,
+      "book_page_no": 75,
+      "pdf_page_no": 127,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Carroll Rearrangement",
+      "page_knowledge_id": 116,
+      "book_page_no": 77,
+      "pdf_page_no": 129,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Castro-Stephens Coupling",
+      "page_knowledge_id": 118,
+      "book_page_no": 79,
+      "pdf_page_no": 131,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Chichibabin Amination Reaction",
+      "page_knowledge_id": 120,
+      "book_page_no": 81,
+      "pdf_page_no": 133,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Chugaev Elimination Reaction",
+      "page_knowledge_id": 122,
+      "book_page_no": 83,
+      "pdf_page_no": 135,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Ciamician-Dennstedt Rearrangement",
+      "page_knowledge_id": 124,
+      "book_page_no": 85,
+      "pdf_page_no": 137,
+      "regions_detected": 2
+    },
+    {
+      "family_name": "Claisen Condensation / Claisen Reaction",
+      "page_knowledge_id": 126,
+      "book_page_no": 87,
+      "pdf_page_no": 139,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Claisen Rearrangement",
+      "page_knowledge_id": 128,
+      "book_page_no": 89,
+      "pdf_page_no": 141,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Claisen-Ireland Rearrangement",
+      "page_knowledge_id": 130,
+      "book_page_no": 91,
+      "pdf_page_no": 143,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Clemmensen Reduction",
+      "page_knowledge_id": 132,
+      "book_page_no": 93,
+      "pdf_page_no": 145,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Combes Quinoline Synthesis",
+      "page_knowledge_id": 298,
+      "book_page_no": 95,
+      "pdf_page_no": 147,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Cope Elimination / Cope Reaction",
+      "page_knowledge_id": 300,
+      "book_page_no": 97,
+      "pdf_page_no": 149,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Cope Rearrangement",
+      "page_knowledge_id": 302,
+      "book_page_no": 99,
+      "pdf_page_no": 151,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "page_knowledge_id": 304,
+      "book_page_no": 101,
+      "pdf_page_no": 153,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "page_knowledge_id": 306,
+      "book_page_no": 103,
+      "pdf_page_no": 155,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Corey-Fuchs Alkyne Synthesis",
+      "page_knowledge_id": 308,
+      "book_page_no": 105,
+      "pdf_page_no": 157,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Corey-Kim Oxidation",
+      "page_knowledge_id": 310,
+      "book_page_no": 107,
+      "pdf_page_no": 159,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Corey-Nicolaou Macrolactonization",
+      "page_knowledge_id": 312,
+      "book_page_no": 109,
+      "pdf_page_no": 161,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Corey-Winter Olefination",
+      "page_knowledge_id": 314,
+      "book_page_no": 111,
+      "pdf_page_no": 163,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Cornforth Rearrangement",
+      "page_knowledge_id": 316,
+      "book_page_no": 113,
+      "pdf_page_no": 165,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Criegee Oxidation",
+      "page_knowledge_id": 338,
+      "book_page_no": 115,
+      "pdf_page_no": 167,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Curtius Rearrangement",
+      "page_knowledge_id": 340,
+      "book_page_no": 117,
+      "pdf_page_no": 169,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Dakin Oxidation",
+      "page_knowledge_id": 342,
+      "book_page_no": 119,
+      "pdf_page_no": 171,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Dakin-West Reaction",
+      "page_knowledge_id": 344,
+      "book_page_no": 121,
+      "pdf_page_no": 173,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Danheiser Benzannulation",
+      "page_knowledge_id": 346,
+      "book_page_no": 123,
+      "pdf_page_no": 175,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Danheiser Cyclopentene Annulation",
+      "page_knowledge_id": 348,
+      "book_page_no": 125,
+      "pdf_page_no": 177,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Danishefsky's Diene Cycloaddition",
+      "page_knowledge_id": 350,
+      "book_page_no": 127,
+      "pdf_page_no": 179,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Darzens Glycidic Ester Condensation",
+      "page_knowledge_id": 352,
+      "book_page_no": 129,
+      "pdf_page_no": 181,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Davis' Oxaziridine Oxidations",
+      "page_knowledge_id": 354,
+      "book_page_no": 131,
+      "pdf_page_no": 183,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "De Mayo Cycloaddition",
+      "page_knowledge_id": 356,
+      "book_page_no": 133,
+      "pdf_page_no": 185,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Demjanov and Tiffeneau-Demjanov Rearrangement",
+      "page_knowledge_id": 358,
+      "book_page_no": 135,
+      "pdf_page_no": 187,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Dess-Martin Oxidation",
+      "page_knowledge_id": 360,
+      "book_page_no": 137,
+      "pdf_page_no": 189,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Dieckmann Condensation",
+      "page_knowledge_id": 362,
+      "book_page_no": 139,
+      "pdf_page_no": 191,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Diels-Alder Cycloaddition",
+      "page_knowledge_id": 364,
+      "book_page_no": 141,
+      "pdf_page_no": 193,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Dienone-Phenol Rearrangement",
+      "page_knowledge_id": 366,
+      "book_page_no": 143,
+      "pdf_page_no": 195,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Dimroth Rearrangement",
+      "page_knowledge_id": 368,
+      "book_page_no": 145,
+      "pdf_page_no": 197,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Doering-Laflamme Allene Synthesis",
+      "page_knowledge_id": 370,
+      "book_page_no": 147,
+      "pdf_page_no": 199,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Dötz Benzannulation Reaction",
+      "page_knowledge_id": 372,
+      "book_page_no": 149,
+      "pdf_page_no": 201,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Enders SAMP/RAMP Hydrazone Alkylation",
+      "page_knowledge_id": 374,
+      "book_page_no": 151,
+      "pdf_page_no": 203,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Enyne Metathesis",
+      "page_knowledge_id": 376,
+      "book_page_no": 153,
+      "pdf_page_no": 205,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Eschenmoser Methenylation",
+      "page_knowledge_id": 378,
+      "book_page_no": 155,
+      "pdf_page_no": 207,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Eschenmoser-Claisen Rearrangement",
+      "page_knowledge_id": 380,
+      "book_page_no": 157,
+      "pdf_page_no": 209,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Eschenmoser-Tanabe Fragmentation",
+      "page_knowledge_id": 382,
+      "book_page_no": 159,
+      "pdf_page_no": 211,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Eschweiler-Clarke Methylation",
+      "page_knowledge_id": 384,
+      "book_page_no": 161,
+      "pdf_page_no": 213,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Evans Aldol Reaction",
+      "page_knowledge_id": 386,
+      "book_page_no": 163,
+      "pdf_page_no": 215,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Favorskii Rearrangement",
+      "page_knowledge_id": 388,
+      "book_page_no": 165,
+      "pdf_page_no": 217,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Feist-Bénary Furan Synthesis",
+      "page_knowledge_id": 390,
+      "book_page_no": 167,
+      "pdf_page_no": 219,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Ferrier Reaction",
+      "page_knowledge_id": 392,
+      "book_page_no": 169,
+      "pdf_page_no": 221,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Finkelstein Reaction",
+      "page_knowledge_id": 394,
+      "book_page_no": 171,
+      "pdf_page_no": 223,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Fischer Indole Synthesis",
+      "page_knowledge_id": 396,
+      "book_page_no": 173,
+      "pdf_page_no": 225,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Fleming-Tamao Oxidation",
+      "page_knowledge_id": 398,
+      "book_page_no": 175,
+      "pdf_page_no": 227,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Friedel-Crafts Acylation",
+      "page_knowledge_id": 400,
+      "book_page_no": 177,
+      "pdf_page_no": 229,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Friedel-Crafts Alkylation",
+      "page_knowledge_id": 402,
+      "book_page_no": 179,
+      "pdf_page_no": 231,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Fries Rearrangement",
+      "page_knowledge_id": 404,
+      "book_page_no": 181,
+      "pdf_page_no": 233,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Gabriel Synthesis",
+      "page_knowledge_id": 406,
+      "book_page_no": 183,
+      "pdf_page_no": 235,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Gattermann and Gattermann-Koch Formylation",
+      "page_knowledge_id": 408,
+      "book_page_no": 185,
+      "pdf_page_no": 237,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Glaser Coupling",
+      "page_knowledge_id": 410,
+      "book_page_no": 187,
+      "pdf_page_no": 239,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Grignard Reaction",
+      "page_knowledge_id": 412,
+      "book_page_no": 189,
+      "pdf_page_no": 241,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Grob Fragmentation",
+      "page_knowledge_id": 414,
+      "book_page_no": 191,
+      "pdf_page_no": 243,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Hajos-Parrish Reaction",
+      "page_knowledge_id": 416,
+      "book_page_no": 193,
+      "pdf_page_no": 245,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Hantzsch Dihydropyridine Synthesis",
+      "page_knowledge_id": 418,
+      "book_page_no": 195,
+      "pdf_page_no": 247,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Heck Reaction",
+      "page_knowledge_id": 420,
+      "book_page_no": 197,
+      "pdf_page_no": 249,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Heine Reaction",
+      "page_knowledge_id": 422,
+      "book_page_no": 199,
+      "pdf_page_no": 251,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Hell-Volhard-Zelinsky Reaction",
+      "page_knowledge_id": 424,
+      "book_page_no": 201,
+      "pdf_page_no": 253,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Henry Reaction",
+      "page_knowledge_id": 426,
+      "book_page_no": 203,
+      "pdf_page_no": 255,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Hetero Diels-Alder Cycloaddition",
+      "page_knowledge_id": 428,
+      "book_page_no": 205,
+      "pdf_page_no": 257,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Hofmann Elimination",
+      "page_knowledge_id": 430,
+      "book_page_no": 207,
+      "pdf_page_no": 259,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Hofmann-Loffler-Freytag Reaction",
+      "page_knowledge_id": 432,
+      "book_page_no": 209,
+      "pdf_page_no": 261,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Hofmann Rearrangement",
+      "page_knowledge_id": 434,
+      "book_page_no": 211,
+      "pdf_page_no": 263,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Horner-Wadsworth-Emmons Olefination",
+      "page_knowledge_id": 436,
+      "book_page_no": 213,
+      "pdf_page_no": 265,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Still-Gennari Modification",
+      "page_knowledge_id": 458,
+      "book_page_no": 215,
+      "pdf_page_no": 267,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Houben-Hoesch Reaction",
+      "page_knowledge_id": 460,
+      "book_page_no": 217,
+      "pdf_page_no": 269,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Hunsdiecker Reaction",
+      "page_knowledge_id": 462,
+      "book_page_no": 219,
+      "pdf_page_no": 271,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Jacobsen Hydrolytic Kinetic Resolution",
+      "page_knowledge_id": 464,
+      "book_page_no": 221,
+      "pdf_page_no": 273,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Jacobsen-Katsuki Epoxidation",
+      "page_knowledge_id": 466,
+      "book_page_no": 223,
+      "pdf_page_no": 275,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Japp-Klingemann Reaction",
+      "page_knowledge_id": 468,
+      "book_page_no": 225,
+      "pdf_page_no": 277,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Johnson-Claisen Rearrangement",
+      "page_knowledge_id": 470,
+      "book_page_no": 227,
+      "pdf_page_no": 279,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Jones Oxidation",
+      "page_knowledge_id": 472,
+      "book_page_no": 229,
+      "pdf_page_no": 281,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Julia-Lythgoe Olefination",
+      "page_knowledge_id": 474,
+      "book_page_no": 231,
+      "pdf_page_no": 283,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Kagan-Molander Samarium Diiodide-Mediated Coupling",
+      "page_knowledge_id": 476,
+      "book_page_no": 233,
+      "pdf_page_no": 285,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Kahne Glycosidation",
+      "page_knowledge_id": 478,
+      "book_page_no": 235,
+      "pdf_page_no": 287,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Keck Asymmetric Allylation",
+      "page_knowledge_id": 480,
+      "book_page_no": 237,
+      "pdf_page_no": 289,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Keck Macrolactonization",
+      "page_knowledge_id": 482,
+      "book_page_no": 239,
+      "pdf_page_no": 291,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Keck Radical Allylation",
+      "page_knowledge_id": 484,
+      "book_page_no": 241,
+      "pdf_page_no": 293,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Knoevenagel Condensation",
+      "page_knowledge_id": 486,
+      "book_page_no": 243,
+      "pdf_page_no": 295,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Knorr Pyrrole Synthesis",
+      "page_knowledge_id": 488,
+      "book_page_no": 245,
+      "pdf_page_no": 297,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Koenigs-Knorr Glycosidation",
+      "page_knowledge_id": 490,
+      "book_page_no": 247,
+      "pdf_page_no": 299,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Kolbe-Schmitt Reaction",
+      "page_knowledge_id": 492,
+      "book_page_no": 249,
+      "pdf_page_no": 301,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Kornblum Oxidation",
+      "page_knowledge_id": 494,
+      "book_page_no": 251,
+      "pdf_page_no": 303,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Krapcho Dealkoxycarbonylation",
+      "page_knowledge_id": 496,
+      "book_page_no": 253,
+      "pdf_page_no": 305,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Kröhnke Pyridine Synthesis",
+      "page_knowledge_id": 498,
+      "book_page_no": 255,
+      "pdf_page_no": 307,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Kulinovich Reaction",
+      "page_knowledge_id": 500,
+      "book_page_no": 257,
+      "pdf_page_no": 309,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Kumada Cross-Coupling",
+      "page_knowledge_id": 502,
+      "book_page_no": 259,
+      "pdf_page_no": 311,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Larock Indole Synthesis",
+      "page_knowledge_id": 504,
+      "book_page_no": 261,
+      "pdf_page_no": 313,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Ley Oxidation",
+      "page_knowledge_id": 506,
+      "book_page_no": 263,
+      "pdf_page_no": 315,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Lieben Haloform Reaction",
+      "page_knowledge_id": 508,
+      "book_page_no": 265,
+      "pdf_page_no": 317,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Lossen Rearrangement",
+      "page_knowledge_id": 510,
+      "book_page_no": 267,
+      "pdf_page_no": 319,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Luche Reduction",
+      "page_knowledge_id": 512,
+      "book_page_no": 269,
+      "pdf_page_no": 321,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Madelung Indole Synthesis",
+      "page_knowledge_id": 514,
+      "book_page_no": 271,
+      "pdf_page_no": 323,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Malonic Ester Synthesis",
+      "page_knowledge_id": 516,
+      "book_page_no": 273,
+      "pdf_page_no": 325,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Mannich Reaction",
+      "page_knowledge_id": 518,
+      "book_page_no": 275,
+      "pdf_page_no": 327,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "McMurry Coupling",
+      "page_knowledge_id": 520,
+      "book_page_no": 277,
+      "pdf_page_no": 329,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Meerwein Arylation",
+      "page_knowledge_id": 522,
+      "book_page_no": 279,
+      "pdf_page_no": 331,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Meerwein-Ponndorf-Verley Reduction",
+      "page_knowledge_id": 524,
+      "book_page_no": 281,
+      "pdf_page_no": 333,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Meisenheimer Rearrangement",
+      "page_knowledge_id": 526,
+      "book_page_no": 283,
+      "pdf_page_no": 335,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Meyer-Schuster and Rupe Rearrangement",
+      "page_knowledge_id": 528,
+      "book_page_no": 285,
+      "pdf_page_no": 337,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Michael Addition Reaction",
+      "page_knowledge_id": 530,
+      "book_page_no": 287,
+      "pdf_page_no": 339,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Midland Alpine Borane Reduction",
+      "page_knowledge_id": 532,
+      "book_page_no": 289,
+      "pdf_page_no": 341,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Minisci Reaction",
+      "page_knowledge_id": 534,
+      "book_page_no": 291,
+      "pdf_page_no": 343,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Mislow-Evans Rearrangement",
+      "page_knowledge_id": 536,
+      "book_page_no": 293,
+      "pdf_page_no": 345,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Mitsunobu Reaction",
+      "page_knowledge_id": 538,
+      "book_page_no": 295,
+      "pdf_page_no": 347,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Miyaura Boration",
+      "page_knowledge_id": 540,
+      "book_page_no": 297,
+      "pdf_page_no": 349,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Mukaiyama Aldol Reaction",
+      "page_knowledge_id": 542,
+      "book_page_no": 299,
+      "pdf_page_no": 351,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Myers Asymmetric Alkylation",
+      "page_knowledge_id": 544,
+      "book_page_no": 301,
+      "pdf_page_no": 353,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Nagata Hydrocyanation",
+      "page_knowledge_id": 546,
+      "book_page_no": 303,
+      "pdf_page_no": 355,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Nazarov Cyclization",
+      "page_knowledge_id": 548,
+      "book_page_no": 305,
+      "pdf_page_no": 357,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Neber Rearrangement",
+      "page_knowledge_id": 550,
+      "book_page_no": 307,
+      "pdf_page_no": 359,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Nef Reaction",
+      "page_knowledge_id": 552,
+      "book_page_no": 309,
+      "pdf_page_no": 361,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Negishi Cross-Coupling",
+      "page_knowledge_id": 554,
+      "book_page_no": 311,
+      "pdf_page_no": 363,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Nenitzescu Indole Synthesis",
+      "page_knowledge_id": 556,
+      "book_page_no": 313,
+      "pdf_page_no": 365,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Nicholas Reaction",
+      "page_knowledge_id": 558,
+      "book_page_no": 315,
+      "pdf_page_no": 367,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Noyori Asymmetric Hydrogenation",
+      "page_knowledge_id": 560,
+      "book_page_no": 317,
+      "pdf_page_no": 369,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Nozaki-Hiyama-Kishi Reaction",
+      "page_knowledge_id": 562,
+      "book_page_no": 319,
+      "pdf_page_no": 371,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Oppenauer Oxidation",
+      "page_knowledge_id": 564,
+      "book_page_no": 321,
+      "pdf_page_no": 373,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Overman Rearrangement",
+      "page_knowledge_id": 566,
+      "book_page_no": 323,
+      "pdf_page_no": 375,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Oxy-Cope Rearrangement and Anionic Oxy-Cope Rearrangement",
+      "page_knowledge_id": 568,
+      "book_page_no": 325,
+      "pdf_page_no": 377,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Paal-Knorr Furan Synthesis",
+      "page_knowledge_id": 570,
+      "book_page_no": 327,
+      "pdf_page_no": 379,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Paal-Knorr Pyrrole Synthesis",
+      "page_knowledge_id": 572,
+      "book_page_no": 329,
+      "pdf_page_no": 381,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Passerini Multicomponent Reaction",
+      "page_knowledge_id": 574,
+      "book_page_no": 331,
+      "pdf_page_no": 383,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Paternò-Büchi Reaction",
+      "page_knowledge_id": 576,
+      "book_page_no": 333,
+      "pdf_page_no": 385,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Pauson-Khand Reaction",
+      "page_knowledge_id": 578,
+      "book_page_no": 335,
+      "pdf_page_no": 387,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Payne Rearrangement",
+      "page_knowledge_id": 580,
+      "book_page_no": 337,
+      "pdf_page_no": 389,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Perkin Reaction",
+      "page_knowledge_id": 582,
+      "book_page_no": 339,
+      "pdf_page_no": 391,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Petasis Boronic Acid-Mannich Reaction",
+      "page_knowledge_id": 584,
+      "book_page_no": 341,
+      "pdf_page_no": 393,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Petasis-Ferrier Rearrangement",
+      "page_knowledge_id": 586,
+      "book_page_no": 343,
+      "pdf_page_no": 395,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Peterson Olefination",
+      "page_knowledge_id": 588,
+      "book_page_no": 345,
+      "pdf_page_no": 397,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Pfitzner-Moffatt Oxidation",
+      "page_knowledge_id": 590,
+      "book_page_no": 347,
+      "pdf_page_no": 399,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Pictet-Spengler Tetrahydroisoquinoline Synthesis",
+      "page_knowledge_id": 592,
+      "book_page_no": 349,
+      "pdf_page_no": 401,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Pinacol and Semipinacol Rearrangement",
+      "page_knowledge_id": 594,
+      "book_page_no": 351,
+      "pdf_page_no": 403,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Pinner Reaction",
+      "page_knowledge_id": 596,
+      "book_page_no": 353,
+      "pdf_page_no": 405,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Pinnick Oxidation",
+      "page_knowledge_id": 598,
+      "book_page_no": 355,
+      "pdf_page_no": 407,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Polonovski Reaction",
+      "page_knowledge_id": 600,
+      "book_page_no": 357,
+      "pdf_page_no": 409,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Pomeranz-Fritsch Reaction",
+      "page_knowledge_id": 602,
+      "book_page_no": 359,
+      "pdf_page_no": 411,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Prévost Reaction",
+      "page_knowledge_id": 604,
+      "book_page_no": 361,
+      "pdf_page_no": 413,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Prilezhaev Reaction",
+      "page_knowledge_id": 606,
+      "book_page_no": 363,
+      "pdf_page_no": 415,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Prins Reaction",
+      "page_knowledge_id": 608,
+      "book_page_no": 365,
+      "pdf_page_no": 417,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Prins-Pinacol Rearrangement",
+      "page_knowledge_id": 610,
+      "book_page_no": 367,
+      "pdf_page_no": 419,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Pummerer Rearrangement",
+      "page_knowledge_id": 612,
+      "book_page_no": 369,
+      "pdf_page_no": 421,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Quasi-Favorskii Rearrangement",
+      "page_knowledge_id": 614,
+      "book_page_no": 371,
+      "pdf_page_no": 423,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Ramberg-Bäcklund Rearrangement",
+      "page_knowledge_id": 616,
+      "book_page_no": 373,
+      "pdf_page_no": 425,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Reformatsky Reaction",
+      "page_knowledge_id": 618,
+      "book_page_no": 375,
+      "pdf_page_no": 427,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Regitz Diazo Transfer",
+      "page_knowledge_id": 620,
+      "book_page_no": 377,
+      "pdf_page_no": 429,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Reimer-Tiemann Reaction",
+      "page_knowledge_id": 622,
+      "book_page_no": 379,
+      "pdf_page_no": 431,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Riley Selenium Dioxide Oxidation",
+      "page_knowledge_id": 624,
+      "book_page_no": 381,
+      "pdf_page_no": 433,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Ritter Reaction",
+      "page_knowledge_id": 626,
+      "book_page_no": 383,
+      "pdf_page_no": 435,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Robinson Annulation",
+      "page_knowledge_id": 628,
+      "book_page_no": 385,
+      "pdf_page_no": 437,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Roush Asymmetric Allylation",
+      "page_knowledge_id": 630,
+      "book_page_no": 387,
+      "pdf_page_no": 439,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Rubottom Oxidation",
+      "page_knowledge_id": 632,
+      "book_page_no": 389,
+      "pdf_page_no": 441,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Saegusa Oxidation",
+      "page_knowledge_id": 634,
+      "book_page_no": 391,
+      "pdf_page_no": 443,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Sakurai Allylation",
+      "page_knowledge_id": 636,
+      "book_page_no": 393,
+      "pdf_page_no": 445,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Sandmeyer Reaction",
+      "page_knowledge_id": 638,
+      "book_page_no": 395,
+      "pdf_page_no": 447,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Schmidt Reaction",
+      "page_knowledge_id": 640,
+      "book_page_no": 397,
+      "pdf_page_no": 449,
+      "regions_detected": 1
+    },
+    {
+      "family_name": "Schotten-Baumann Reaction",
+      "page_knowledge_id": 642,
+      "book_page_no": 399,
+      "pdf_page_no": 451,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Schwartz Hydrozirconation",
+      "page_knowledge_id": 644,
+      "book_page_no": 401,
+      "pdf_page_no": 453,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Seyferth-Gilbert Homologation",
+      "page_knowledge_id": 646,
+      "book_page_no": 403,
+      "pdf_page_no": 455,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Sharpless Asymmetric Aminohydroxylation",
+      "page_knowledge_id": 648,
+      "book_page_no": 405,
+      "pdf_page_no": 457,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Sharpless Asymmetric Dihydroxylation",
+      "page_knowledge_id": 650,
+      "book_page_no": 407,
+      "pdf_page_no": 459,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Sharpless Asymmetric Epoxidation",
+      "page_knowledge_id": 652,
+      "book_page_no": 409,
+      "pdf_page_no": 461,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Shi Asymmetric Epoxidation",
+      "page_knowledge_id": 654,
+      "book_page_no": 411,
+      "pdf_page_no": 463,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Simmons-Smith Cyclopropanation",
+      "page_knowledge_id": 656,
+      "book_page_no": 413,
+      "pdf_page_no": 465,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Skraup and Doebner-Miller Quinoline Synthesis",
+      "page_knowledge_id": 658,
+      "book_page_no": 415,
+      "pdf_page_no": 467,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Smiles Rearrangement",
+      "page_knowledge_id": 660,
+      "book_page_no": 417,
+      "pdf_page_no": 469,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Smith-Tietze Multicomponent Dithiane Linchpin Coupling",
+      "page_knowledge_id": 662,
+      "book_page_no": 419,
+      "pdf_page_no": 471,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Snieckus Directed Ortho Metalation",
+      "page_knowledge_id": 664,
+      "book_page_no": 421,
+      "pdf_page_no": 473,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Sommelet-Hauser Rearrangement",
+      "page_knowledge_id": 666,
+      "book_page_no": 423,
+      "pdf_page_no": 475,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Sonogashira Cross-Coupling",
+      "page_knowledge_id": 668,
+      "book_page_no": 425,
+      "pdf_page_no": 477,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Staudinger Ketene Cycloaddition",
+      "page_knowledge_id": 670,
+      "book_page_no": 427,
+      "pdf_page_no": 479,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Staudinger Reaction",
+      "page_knowledge_id": 672,
+      "book_page_no": 429,
+      "pdf_page_no": 481,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Stephen Aldehyde Synthesis (Stephen Reduction)",
+      "page_knowledge_id": 674,
+      "book_page_no": 431,
+      "pdf_page_no": 483,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Stetter Reaction",
+      "page_knowledge_id": 676,
+      "book_page_no": 433,
+      "pdf_page_no": 485,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Stevens Rearrangement",
+      "page_knowledge_id": 678,
+      "book_page_no": 435,
+      "pdf_page_no": 487,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Stille Carbonylative Cross-Coupling",
+      "page_knowledge_id": 686,
+      "book_page_no": 437,
+      "pdf_page_no": 489,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)",
+      "page_knowledge_id": 688,
+      "book_page_no": 439,
+      "pdf_page_no": 491,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Stille-Kelly Coupling",
+      "page_knowledge_id": 690,
+      "book_page_no": 441,
+      "pdf_page_no": 493,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Stobbe Condensation",
+      "page_knowledge_id": 692,
+      "book_page_no": 443,
+      "pdf_page_no": 495,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Stork Enamine Synthesis",
+      "page_knowledge_id": 694,
+      "book_page_no": 445,
+      "pdf_page_no": 497,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Strecker Reaction",
+      "page_knowledge_id": 696,
+      "book_page_no": 447,
+      "pdf_page_no": 499,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+      "page_knowledge_id": 698,
+      "book_page_no": 449,
+      "pdf_page_no": 501,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Swern Oxidation",
+      "page_knowledge_id": 700,
+      "book_page_no": 451,
+      "pdf_page_no": 503,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Takai-Utimoto Olefination (Takai Reaction)",
+      "page_knowledge_id": 702,
+      "book_page_no": 453,
+      "pdf_page_no": 505,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Tebbe Olefination/Petasis-Tebbe Olefination",
+      "page_knowledge_id": 704,
+      "book_page_no": 455,
+      "pdf_page_no": 507,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Tishchenko Reaction",
+      "page_knowledge_id": 706,
+      "book_page_no": 457,
+      "pdf_page_no": 509,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Tsuji-Trost Reaction / Allylation",
+      "page_knowledge_id": 708,
+      "book_page_no": 459,
+      "pdf_page_no": 511,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Tsuji-Wilkinson Decarbonylation Reaction",
+      "page_knowledge_id": 710,
+      "book_page_no": 461,
+      "pdf_page_no": 513,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Ugi Multicomponent Reaction",
+      "page_knowledge_id": 712,
+      "book_page_no": 463,
+      "pdf_page_no": 515,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation",
+      "page_knowledge_id": 714,
+      "book_page_no": 465,
+      "pdf_page_no": 517,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+      "page_knowledge_id": 716,
+      "book_page_no": 467,
+      "pdf_page_no": 519,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Vilsmeier-Haack Formylation",
+      "page_knowledge_id": 718,
+      "book_page_no": 469,
+      "pdf_page_no": 521,
+      "regions_detected": 5
+    },
+    {
+      "family_name": "Vinylcyclopropane-Cyclopentene Rearrangement",
+      "page_knowledge_id": 720,
+      "book_page_no": 471,
+      "pdf_page_no": 523,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "von Pechmann Reaction",
+      "page_knowledge_id": 722,
+      "book_page_no": 473,
+      "pdf_page_no": 525,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Wacker Oxidation",
+      "page_knowledge_id": 724,
+      "book_page_no": 475,
+      "pdf_page_no": 527,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Wagner-Meerwein Rearrangement",
+      "page_knowledge_id": 726,
+      "book_page_no": 477,
+      "pdf_page_no": 529,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Weinreb Ketone Synthesis",
+      "page_knowledge_id": 728,
+      "book_page_no": 479,
+      "pdf_page_no": 531,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Wharton Fragmentation",
+      "page_knowledge_id": 730,
+      "book_page_no": 481,
+      "pdf_page_no": 533,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Wharton Olefin Synthesis (Wharton Transposition)",
+      "page_knowledge_id": 732,
+      "book_page_no": 483,
+      "pdf_page_no": 535,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Williamson Ether Synthesis",
+      "page_knowledge_id": 734,
+      "book_page_no": 485,
+      "pdf_page_no": 537,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Wittig Reaction",
+      "page_knowledge_id": 736,
+      "book_page_no": 487,
+      "pdf_page_no": 539,
+      "regions_detected": 3
+    },
+    {
+      "family_name": "Wittig Reaction - Schlosser Modification",
+      "page_knowledge_id": 738,
+      "book_page_no": 489,
+      "pdf_page_no": 541,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Wittig-[1,2]- and [2,3]-Rearrangement",
+      "page_knowledge_id": 740,
+      "book_page_no": 491,
+      "pdf_page_no": 543,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Wohl-Ziegler Bromination",
+      "page_knowledge_id": 742,
+      "book_page_no": 493,
+      "pdf_page_no": 545,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Wolff Rearrangement",
+      "page_knowledge_id": 744,
+      "book_page_no": 495,
+      "pdf_page_no": 547,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Wolff-Kishner Reduction",
+      "page_knowledge_id": 746,
+      "book_page_no": 497,
+      "pdf_page_no": 549,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Wurtz Coupling",
+      "page_knowledge_id": 748,
+      "book_page_no": 499,
+      "pdf_page_no": 551,
+      "regions_detected": 4
+    },
+    {
+      "family_name": "Yamaguchi Macrolactonization",
+      "page_knowledge_id": 750,
+      "book_page_no": 501,
+      "pdf_page_no": 553,
+      "regions_detected": 3
+    }
+  ]
+}

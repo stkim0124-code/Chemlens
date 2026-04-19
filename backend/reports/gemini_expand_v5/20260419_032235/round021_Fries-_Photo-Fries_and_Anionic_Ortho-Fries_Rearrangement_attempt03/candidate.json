@@ -1,0 +1,15 @@
+{
+  "family": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+  "substrates": [
+    "CC(=O)Oc1ccccc1"
+  ],
+  "products": [
+    "CC(=O)c1ccccc1O"
+  ],
+  "reagents": [
+    "[Cl][Al]([Cl])[Cl]"
+  ],
+  "rationale": "This is the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone, a textbook example. It clearly demonstrates the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). The reactants and products are simple, acyclic where possible (the acyl group), and unambiguously represent the core transformation of this reaction family.",
+  "collision_avoidance_note": "The substrate is a simple phenyl ester, avoiding complex polycyclic arenes that might trigger other named reactions involving aromatic systems. The transformation is a specific acyl migration, distinct from Claisen rearrangements (allyl migration), benzidine rearrangements (diarylamine rearrangement), or electrophilic aromatic substitution reactions where the acyl group is introduced from an external source like an acyl chloride.",
+  "raw_text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Al](Cl)Cl\"\n    ],\n    \"rationale\": \"This is the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone, a textbook example. It clearly demonstrates the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). The reactants and products are simple, acyclic where possible (the acyl group), and unambiguously represent the core transformation of this reaction family.\",\n    \"collision_avoidance_note\": \"The substrate is a simple phenyl ester, avoiding complex polycyclic arenes that might trigger other named reactions involving aromatic systems. The transformation is a specific acyl migration, distinct from Claisen rearrangements (allyl migration), benzidine rearrangements (diarylamine rearrangement), or electrophilic aromatic substitution reactions where the acyl group is introduced from an external source like an acyl chloride.\"\n  }\n}"
+}

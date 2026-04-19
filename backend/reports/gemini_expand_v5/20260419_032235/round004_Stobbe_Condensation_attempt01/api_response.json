@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Stobbe Condensation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)C\",\n      \"CCOC(=O)CCC(=O)OCC\"\n    ],\n    \"product_smiles\": [\n      \"CC(=C(CC(=O)O)C(=O)OCC)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Na+].[O-]CC\"\n    ],\n    \"rationale\": \"This is a canonical example of the Stobbe condensation, reacting a simple ketone (acetone) with a dialkyl succinate (diethyl succinate) in the presence of a strong base (sodium ethoxide). The product is the characteristic alkylidene succinic acid half-ester, formed after an acidic workup (implied). This example clearly illustrates the formation of a new carbon-carbon double bond and the hydrolysis of one of the two ester groups, which are the defining features of the Stobbe condensation.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic, aliphatic substrates (acetone and diethyl succinate) to avoid overlap with other named reactions involving aromatic aldehydes/ketones (e.g., Perkin, Claisen-Schmidt) or other dicarbonyl compounds (e.g., Knoevenagel, Dieckmann). The unique product, an alkylidene succinic acid half-ester, is highly characteristic of the Stobbe condensation and distinct from the products of other common condensation reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 421,
+    "candidatesTokenCount": 333,
+    "totalTokenCount": 830,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 421
+      }
+    ],
+    "thoughtsTokenCount": 76
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "_M3jae3KHY2k0-kPgvXwiQg"
+}

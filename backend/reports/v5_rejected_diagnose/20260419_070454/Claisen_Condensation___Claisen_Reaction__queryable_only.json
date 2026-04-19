@@ -1,0 +1,59 @@
+{
+  "family_name": "Claisen Condensation / Claisen Reaction",
+  "variant": "queryable_only",
+  "summary": {
+    "benchmark_name": "CHEMLENS small benchmark v3",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 26,
+    "top1_accuracy": 0.963,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "changed_cases": [
+    {
+      "case_id": "buchner_403_exact_extract",
+      "expected_family": "Buchner Reaction",
+      "baseline_top1_family": "Buchner Reaction",
+      "current_top1_family": "Claisen Condensation / Claisen Reaction",
+      "baseline_top1_correct": true,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Buchner Reaction | Malonic Ester Synthesis | Cornforth Rearrangement",
+      "current_top3_families": "Claisen Condensation / Claisen Reaction | Buchner Reaction | Malonic Ester Synthesis",
+      "baseline_top3_scores": "1.249 | 1.187 | 1.129",
+      "current_top3_scores": "1.49 | 1.249 | 1.187",
+      "baseline_notes": "Exact extract query from Buchner example currently used as regression case.",
+      "current_notes": "Exact extract query from Buchner example currently used as regression case."
+    },
+    {
+      "case_id": "claisen_cond_408_exact_extract",
+      "expected_family": "Claisen Condensation",
+      "baseline_top1_family": "Claisen Condensation",
+      "current_top1_family": "Claisen Condensation",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_top3_families": "Claisen Condensation | Cornforth Rearrangement | Acetoacetic Ester Synthesis",
+      "current_top3_families": "Claisen Condensation | Cornforth Rearrangement | Claisen Condensation / Claisen Reaction",
+      "baseline_top3_scores": "7.207 | 0.937 | 0.868",
+      "current_top3_scores": "7.207 | 0.937 | 0.913",
+      "baseline_notes": "Claisen condensation exact extract query.",
+      "current_notes": "Claisen condensation exact extract query."
+    }
+  ],
+  "reaction_extract_ids": [
+    479
+  ],
+  "extract_molecule_ids": [
+    1914,
+    1915
+  ],
+  "insert_stats": {
+    "inserted_extract_rows": 1,
+    "inserted_molecule_rows": 2,
+    "total_changes_delta": 3
+  },
+  "identical_to_baseline": false
+}

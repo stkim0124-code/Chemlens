@@ -1,0 +1,15 @@
+{
+  "family": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+  "substrates": [
+    "CC(=O)Oc1ccccc1"
+  ],
+  "products": [
+    "CC(=O)c1ccccc1O"
+  ],
+  "reagents": [
+    "[Cl][Al]([Cl])[Cl]"
+  ],
+  "rationale": "This is the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone, catalyzed by aluminum chloride. It is a simple, acyclic-substituted aromatic system that clearly demonstrates the core transformation: the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring. This example is widely cited in organic chemistry textbooks as the archetypal Fries rearrangement.",
+  "collision_avoidance_note": "The substrate is a simple phenyl ester, avoiding complex polycyclic aromatic systems that could overlap with other named reactions involving arenes. The acyl group is a simple acetyl group, preventing confusion with reactions involving more complex or reactive functional groups. The product is a simple hydroxy ketone, a clear and unambiguous outcome of the rearrangement. The use of a Lewis acid catalyst is characteristic of the thermal Fries rearrangement.",
+  "raw_text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Al](Cl)Cl\"\n    ],\n    \"rationale\": \"This is the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone, catalyzed by aluminum chloride. It is a simple, acyclic-substituted aromatic system that clearly demonstrates the core transformation: the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring. This example is widely cited in organic chemistry textbooks as the archetypal Fries rearrangement.\",\n    \"collision_avoidance_note\": \"The substrate is a simple phenyl ester, avoiding complex polycyclic aromatic systems that could overlap with other named reactions involving arenes. The acyl group is a simple acetyl group, preventing confusion with reactions involving more complex or reactive functional groups. The product is a simple hydroxy ketone, a clear and unambiguous outcome of the rearrangement. The use of a Lewis acid catalyst is characteristic of the thermal Fries rearrangement.\"\n  }\n}"
+}

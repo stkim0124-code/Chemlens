@@ -1,0 +1,16 @@
+{
+  "family": "Stork Enamine Synthesis",
+  "substrates": [
+    "O=C1CCCCC1",
+    "C=CCl"
+  ],
+  "products": [
+    "C=CC1CCCC(=O)C1"
+  ],
+  "reagents": [
+    "C1CCNCC1"
+  ],
+  "rationale": "This reaction shows the alpha-alkylation of cyclohexanone, a classic textbook example of the Stork Enamine Synthesis. Cyclohexanone reacts with pyrrolidine (a common secondary amine) to form the enamine intermediate in situ. This enamine then acts as a nucleophile, attacking the electrophile vinyl chloride. Subsequent hydrolysis of the resulting iminium salt regenerates the ketone, now alkylated at the alpha-position. This example clearly demonstrates the core transformation: enamine formation, electrophilic attack, and hydrolysis.",
+  "collision_avoidance_note": "This example uses simple, acyclic, and saturated components where possible (vinyl chloride electrophile) to avoid overlap with other named reactions. The cyclic ketone is essential to the classic representation of this reaction. The use of a simple alkyl halide electrophile avoids motifs common in other reactions like Michael additions (which would use an alpha,beta-unsaturated carbonyl) or acylation reactions. No aromatic rings, diazo groups, or complex functional groups are included.",
+  "raw_text": "{\n  \"family\": \"Stork Enamine Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=C1CCCCC1\",\n      \"C=CCl\"\n    ],\n    \"product_smiles\": [\n      \"O=C1CCCC(C=C)C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"C1CCNCC1\"\n    ],\n    \"rationale\": \"This reaction shows the alpha-alkylation of cyclohexanone, a classic textbook example of the Stork Enamine Synthesis. Cyclohexanone reacts with pyrrolidine (a common secondary amine) to form the enamine intermediate in situ. This enamine then acts as a nucleophile, attacking the electrophile vinyl chloride. Subsequent hydrolysis of the resulting iminium salt regenerates the ketone, now alkylated at the alpha-position. This example clearly demonstrates the core transformation: enamine formation, electrophilic attack, and hydrolysis.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic, and saturated components where possible (vinyl chloride electrophile) to avoid overlap with other named reactions. The cyclic ketone is essential to the classic representation of this reaction. The use of a simple alkyl halide electrophile avoids motifs common in other reactions like Michael additions (which would use an alpha,beta-unsaturated carbonyl) or acylation reactions. No aromatic rings, diazo groups, or complex functional groups are included.\"\n  }\n}"
+}

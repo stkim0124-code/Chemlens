@@ -1,0 +1,21 @@
+alias,canonical_name,entity_type
+DoM,directed ortho metalation,reaction_term
+CIPE,complex-induced proximity effect,mechanistic_term
+n-BuLi,n-butyllithium,base
+TMEDA,tetramethylethylenediamine,additive
+sec-BuLi,sec-butyllithium,base
+LDA,lithium diisopropylamide,base
+AcOH,acetic acid,acid
+NaNH2,sodium amide,base
+HMPA,hexamethylphosphoramide,additive
+DBU,"1,8-diazabicyclo[5.4.0]undec-7-ene",base
+CsF,cesium fluoride,base
+CuI,copper(I) iodide,cocatalyst
+CuBr,copper(I) bromide,cocatalyst
+Pd(PPh3)2Cl2,bis(triphenylphosphine)palladium(II) chloride,catalyst
+Pd(PPh3)4,tetrakis(triphenylphosphine)palladium(0),catalyst
+BF3·OEt2,boron trifluoride etherate,Lewis acid
+EtAlCl2,diethylaluminum chloride,Lewis acid
+PPh3,triphenylphosphine,reagent
+Bu3P,tributylphosphine,reagent
+POCl3,phosphorus oxychloride,reagent

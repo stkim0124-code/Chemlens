@@ -1,0 +1,15 @@
+{
+  "family": "Ring-Closing Metathesis",
+  "substrates": [
+    "C=CCCC=C"
+  ],
+  "products": [
+    "C1=CCCC1"
+  ],
+  "reagents": [
+    "CC(C)[PH](c1ccccc1C(c1ccccc1)c1ccccc1[PH](C(C)C)C(C)C)C(C)C.[Cl][Ru]([Cl])=[CH]c1ccccc1"
+  ],
+  "rationale": "This is a classic textbook example of Ring-Closing Metathesis (RCM). 1,5-hexadiene is cyclized to form cyclopentene, a five-membered ring, with the extrusion of ethene (a common, often unstated, byproduct). This example clearly demonstrates the intramolecular formation of a new C=C bond within a single molecule to form a ring, which is the defining characteristic of RCM. The substrate is simple, acyclic, and contains only the essential terminal diene functionality.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic diene, avoiding arenes, heteroatoms, or other functional groups that could cause collisions with other named reactions. The transformation is a straightforward cyclization without ring expansion, decarboxylation, or radical mechanisms. The product is a simple cycloalkene, avoiding complex fused or bridged systems.",
+  "raw_text": "{\n  \"family\": \"Ring-Closing Metathesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C=CCCC=C\"\n    ],\n    \"product_smiles\": [\n      \"C1=CCCC1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"c1ccc(C(c2ccccc2[PH](C(C)C)C(C)C)c2ccccc2[PH](C(C)C)C(C)C)cc1.Cl[Ru](Cl)=Cc1ccccc1\"\n    ],\n    \"rationale\": \"This is a classic textbook example of Ring-Closing Metathesis (RCM). 1,5-hexadiene is cyclized to form cyclopentene, a five-membered ring, with the extrusion of ethene (a common, often unstated, byproduct). This example clearly demonstrates the intramolecular formation of a new C=C bond within a single molecule to form a ring, which is the defining characteristic of RCM. The substrate is simple, acyclic, and contains only the essential terminal diene functionality.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic diene, avoiding arenes, heteroatoms, or other functional groups that could cause collisions with other named reactions. The transformation is a straightforward cyclization without ring expansion, decarboxylation, or radical mechanisms. The product is a simple cycloalkene, avoiding complex fused or bridged systems.\"\n  }\n}"
+}

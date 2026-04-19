@@ -1,0 +1,16 @@
+{
+  "family": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+  "substrates": [
+    "CCCCN(C)Cl"
+  ],
+  "products": [
+    "CN1CCCC1"
+  ],
+  "reagents": [
+    "O",
+    "[H+]"
+  ],
+  "rationale": "This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutylamine undergoes a 1,5-hydrogen atom transfer via a nitrogen-centered radical, followed by cyclization to form N-methylpyrrolidine. This illustrates the key C-H activation at the delta-position and subsequent intramolecular C-N bond formation to create a five-membered ring, which is characteristic of this reaction.",
+  "collision_avoidance_note": "The reaction involves an N-haloamine substrate and intramolecular C-H activation to form a pyrrolidine ring. This specific transformation avoids common motifs like arenes, diazo groups, or complex ring systems that could cause collisions with other named reactions. The focus is on the remote functionalization of a simple alkyl chain to form a specific heterocycle.",
+  "raw_text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCCN1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"[H+]\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutylamine undergoes a 1,5-hydrogen atom transfer via a nitrogen-centered radical, followed by cyclization to form N-methylpyrrolidine. This illustrates the key C-H activation at the delta-position and subsequent intramolecular C-N bond formation to create a five-membered ring, which is characteristic of this reaction.\",\n    \"collision_avoidance_note\": \"The reaction involves an N-haloamine substrate and intramolecular C-H activation to form a pyrrolidine ring. This specific transformation avoids common motifs like arenes, diazo groups, or complex ring systems that could cause collisions with other named reactions. The focus is on the remote functionalization of a simple alkyl chain to form a specific heterocycle.\"\n  }\n}"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Ferrier Reaction/Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)O[C@H]1C=C[C@H](OC(C)=O)[C@H](OC(C)=O)O1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)O[C@H]1C=C[C@H](OC(C)=O)[C@@H](O)O1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\"\n    ],\n    \"rationale\": \"This is a canonical example of the Ferrier rearrangement (Type I), specifically the conversion of a glycal (tri-O-acetyl-D-glucal) to a 2,3-unsaturated glycoside. The reaction involves the allylic rearrangement of the double bond within the dihydropyran ring and nucleophilic attack at the anomeric carbon. Water acts as the nucleophile, leading to a pseudoglycal product. This example clearly illustrates the core transformation of the Ferrier reaction: cleavage of the C1-O bond and formation of a new C1-Nu bond with a shift of the double bond from C1=C2 to C2=C3.\",\n    \"collision_avoidance_note\": \"The substrate is a protected glycal, a specific carbohydrate derivative essential for this reaction. The transformation is a unique allylic rearrangement within a heterocyclic system, distinct from general glycosylation reactions, Claisen rearrangements, or simple alkene additions. The use of a simple nucleophile (water) and standard protecting groups (acetates) avoids introducing complex motifs that could collide with other named reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 366,
+    "candidatesTokenCount": 380,
+    "totalTokenCount": 817,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 366
+      }
+    ],
+    "thoughtsTokenCount": 71
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "c8_jabTFLKWn2roPp4KfkQM"
+}

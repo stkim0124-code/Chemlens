@@ -1,0 +1,9 @@
+You are generating a benchmark-safe replacement canonical example for the named reaction family 'Claisen Condensation / Claisen Reaction'.
+Attempt index: 2.
+Goal: produce ONE replacement candidate only.
+Hard constraints:
+- Use a mixed Claisen condensation with one simple aliphatic ester electrophile and one simple ester enolate donor. Keep everything acyclic and aliphatic.
+- Avoid these collision signals: diazo_arene_combo, ring_expansion, Buchner-like arene-carbene insertion, allyl-vinyl-ether Claisen rearrangement.
+- Do NOT copy the existing stage topology exactly. Current stage reactants: ['CCOC(C)=O']; products: ['CCOC(=O)CC(C)=O']; reagents: [].
+- Keep the example chemically simple, textbook-like, and RDKit-parseable.
+- Return JSON only in this exact schema: {"substrate_smiles":[...],"product_smiles":[...],"optional_reagent_smiles":[...]}

@@ -1,0 +1,60 @@
+{
+  "family_name": "Michael Addition Reaction",
+  "variant": "core_pair_set",
+  "summary": {
+    "benchmark_name": "CHEMLENS small benchmark v3",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 26,
+    "top1_accuracy": 0.963,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "changed_cases": [
+    {
+      "case_id": "buchner_403_exact_extract",
+      "expected_family": "Buchner Reaction",
+      "baseline_top1_family": "Buchner Reaction",
+      "current_top1_family": "Michael Addition Reaction",
+      "baseline_top1_correct": true,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Buchner Reaction | Malonic Ester Synthesis | Cornforth Rearrangement",
+      "current_top3_families": "Michael Addition Reaction | Buchner Reaction | Malonic Ester Synthesis",
+      "baseline_top3_scores": "1.249 | 1.187 | 1.129",
+      "current_top3_scores": "1.375 | 1.249 | 1.187",
+      "baseline_notes": "Exact extract query from Buchner example currently used as regression case.",
+      "current_notes": "Exact extract query from Buchner example currently used as regression case."
+    },
+    {
+      "case_id": "meaningful_pentanoic_acid",
+      "expected_family": "Barton Radical Decarboxylation Reaction",
+      "baseline_top1_family": "Barton Radical Decarboxylation Reaction",
+      "current_top1_family": "Barton Radical Decarboxylation Reaction",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_top3_families": "Barton Radical Decarboxylation Reaction | Malonic Ester Synthesis | Claisen Condensation / Claisen Reaction",
+      "current_top3_families": "Barton Radical Decarboxylation Reaction | Malonic Ester Synthesis | Michael Addition Reaction",
+      "baseline_top3_scores": "0.891 | 0.431 | 0.313",
+      "current_top3_scores": "0.891 | 0.431 | 0.405",
+      "baseline_notes": "Pentanoic acid — HA=8, carboxylic acid. Barton decarboxylation 계열이 top3 안에 있어야 함.",
+      "current_notes": "Pentanoic acid — HA=8, carboxylic acid. Barton decarboxylation 계열이 top3 안에 있어야 함."
+    }
+  ],
+  "reaction_extract_ids": [
+    559
+  ],
+  "extract_molecule_ids": [
+    2290,
+    2291,
+    2292
+  ],
+  "insert_stats": {
+    "inserted_extract_rows": 1,
+    "inserted_molecule_rows": 3,
+    "total_changes_delta": 4
+  },
+  "identical_to_baseline": false
+}

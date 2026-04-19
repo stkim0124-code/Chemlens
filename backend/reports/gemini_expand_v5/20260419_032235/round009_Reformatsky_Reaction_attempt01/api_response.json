@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Reformatsky Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)C\",\n      \"BrCC(=O)OCC\"\n    ],\n    \"product_smiles\": [\n      \"CC(O)(C)CC(=O)OCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Zn]\"\n    ],\n    \"rationale\": \"This is the classic textbook example of the Reformatsky reaction, featuring the reaction of ethyl bromoacetate with acetone, mediated by zinc. It clearly demonstrates the formation of a \\u03b2-hydroxy ester from an \\u03b1-halo ester and a simple ketone. The reactants and product are small, acyclic, and lack complex functional groups, making it a canonical and unambiguous representation of this reaction family.\",\n    \"collision_avoidance_note\": \"The reaction uses simple, acyclic aliphatic substrates to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts), complex ring systems, or other highly reactive functional groups. The specific combination of an \\u03b1-halo ester and a ketone to form a \\u03b2-hydroxy ester is characteristic of the Reformatsky reaction and distinct from other aldol-type or organometallic additions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 441,
+    "candidatesTokenCount": 297,
+    "totalTokenCount": 806,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 441
+      }
+    ],
+    "thoughtsTokenCount": 68
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "VdHjaf-CEIeerfcPq5SvqA0"
+}

@@ -1,0 +1,16 @@
+{
+  "family": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+  "substrates": [
+    "CCCCN(C)Cl"
+  ],
+  "products": [
+    "CC1CCCN1"
+  ],
+  "reagents": [
+    "O",
+    "[H+]"
+  ],
+  "rationale": "This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutan-1-amine, upon treatment with acid and light (implied), undergoes a 1,5-hydrogen atom transfer from the delta-carbon to the nitrogen radical. The resulting carbon radical then abstracts the chlorine atom, forming a delta-chloroamine. Subsequent intramolecular cyclization under basic conditions (often by adding a base after the radical steps) yields the final product, 1-methylpyrrolidine. This example clearly demonstrates the key C-H activation at a remote (delta) position and subsequent cyclization to form a five-membered ring, which is characteristic of this reaction.",
+  "collision_avoidance_note": "The substrate is a simple acyclic N-haloamine, and the product is a simple pyrrolidine. This avoids complex ring systems, arenes, or other reactive functional groups that could cause collisions with other named reactions. The transformation is a specific intramolecular C-H amination via a radical pathway, distinguishing it from intermolecular aminations or other cyclization reactions like the Beckmann rearrangement or Hofmann rearrangement, which involve different substrates and mechanisms.",
+  "raw_text": "{\n  \"family\": \"Hofmann-L\\u00f6ffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCNC1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"[H+]\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-L\\u00f6ffler-Freytag reaction. N-chloro-N-methylbutan-1-amine, upon treatment with acid and light (implied), undergoes a 1,5-hydrogen atom transfer from the delta-carbon to the nitrogen radical. The resulting carbon radical then abstracts the chlorine atom, forming a delta-chloroamine. Subsequent intramolecular cyclization under basic conditions (often by adding a base after the radical steps) yields the final product, 1-methylpyrrolidine. This example clearly demonstrates the key C-H activation at a remote (delta) position and subsequent cyclization to form a five-membered ring, which is characteristic of this reaction.\",\n    \"collision_avoidance_note\": \"The substrate is a simple acyclic N-haloamine, and the product is a simple pyrrolidine. This avoids complex ring systems, arenes, or other reactive functional groups that could cause collisions with other named reactions. The transformation is a specific intramolecular C-H amination via a radical pathway, distinguishing it from intermolecular aminations or other cyclization reactions like the Beckmann rearrangement or Hofmann rearrangement, which involve different substrates and mechanisms.\"\n  }\n}"
+}

@@ -1,0 +1,15 @@
+{
+  "family": "Wolff Rearrangement",
+  "substrates": [
+    "CC(=O)C=[N+]=[N-]"
+  ],
+  "products": [
+    "CC=C=O"
+  ],
+  "reagents": [
+    "[O]=[Ag][O][Ag]=[O]"
+  ],
+  "rationale": "This is a simple, acyclic example of the Wolff rearrangement, showing the conversion of an alpha-diazoketone (1-diazo-2-propanone) to a ketene (methylketene) via a 1,2-methyl shift. The reaction is typically promoted by heat, light (hν), or a metal catalyst like silver(I) oxide (Ag2O). This example clearly illustrates the core transformation (C(=O)C=[N+]=[N-] -> C=C=O) and the characteristic 1,2-alkyl shift without introducing complex or potentially confounding structural features.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic alpha-diazoketone, avoiding aromatic rings which could trigger Curtius, Schmidt, or Hofmann rearrangement queries if an isocyanate were formed. The product is a simple ketene, which is the direct result of the rearrangement before any subsequent trapping reactions (like with water in the Arndt-Eistert synthesis), thus isolating the core Wolff rearrangement step. The structure is kept minimal to avoid overlap with ring-contraction or homologation-specific benchmarks.",
+  "raw_text": "{\n  \"family\": \"Wolff Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)C=[N+]=[N-]\"\n    ],\n    \"product_smiles\": [\n      \"CC=C=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=[Ag]O[Ag]=O\"\n    ],\n    \"rationale\": \"This is a simple, acyclic example of the Wolff rearrangement, showing the conversion of an alpha-diazoketone (1-diazo-2-propanone) to a ketene (methylketene) via a 1,2-methyl shift. The reaction is typically promoted by heat, light (h\\u03bd), or a metal catalyst like silver(I) oxide (Ag2O). This example clearly illustrates the core transformation (C(=O)C=[N+]=[N-] -> C=C=O) and the characteristic 1,2-alkyl shift without introducing complex or potentially confounding structural features.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic alpha-diazoketone, avoiding aromatic rings which could trigger Curtius, Schmidt, or Hofmann rearrangement queries if an isocyanate were formed. The product is a simple ketene, which is the direct result of the rearrangement before any subsequent trapping reactions (like with water in the Arndt-Eistert synthesis), thus isolating the core Wolff rearrangement step. The structure is kept minimal to avoid overlap with ring-contraction or homologation-specific benchmarks.\"\n  }\n}"
+}

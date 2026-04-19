@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Ramberg-Bäcklund Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(S(=O)(=O)C(C)Cl)C\"\n    ],\n    \"product_smiles\": [\n      \"C/C=C/C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[K+].[O-]C(C)(C)C\"\n    ],\n    \"rationale\": \"This example shows the classic Ramberg-Bäcklund rearrangement of a simple, acyclic α-chlorosulfone to form an alkene. The substrate, 2-chloro-3-(isopropylsulfonyl)butane, is deprotonated by a strong base (potassium tert-butoxide) at the α'-position, followed by intramolecular nucleophilic attack to form a transient episulfone intermediate. This intermediate then spontaneously extrudes sulfur dioxide (SO2) to yield the final alkene product, (E)-but-2-ene. This reaction is a textbook illustration of the transformation, converting a C-S-C bond into a C=C bond.\",\n    \"collision_avoidance_note\": \"The substrate is a simple acyclic α-halosulfone, which is the defining feature of the Ramberg-Bäcklund rearrangement. The reaction avoids complex ring systems, arenes, or other functional groups that could cause collisions with other named reactions like the Favorskii rearrangement (which involves α-haloketones) or various sulfone-based eliminations that do not proceed through the characteristic episulfone intermediate.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 463,
+    "candidatesTokenCount": 351,
+    "totalTokenCount": 876,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 463
+      }
+    ],
+    "thoughtsTokenCount": 62
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "SNHjacufKs-crfcP-qL5wA0"
+}

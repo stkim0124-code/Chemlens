@@ -1,0 +1,16 @@
+{
+  "family": "Pinner Reaction",
+  "substrates": [
+    "CC#N",
+    "CCO"
+  ],
+  "products": [
+    "CCOC(C)=[NH2+].[Cl-]"
+  ],
+  "reagents": [
+    "Cl"
+  ],
+  "rationale": "This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and a simple alcohol (ethanol) in the presence of dry hydrogen chloride. This is the classic first step of the Pinner reaction, representing the core transformation of activating a nitrile with an alcohol under acidic conditions. The reactants and product are small, acyclic, and devoid of complex functional groups, making it a clear and unambiguous example.",
+  "collision_avoidance_note": "The use of simple, saturated aliphatic reactants (acetonitrile, ethanol) avoids overlap with reactions involving aromatic rings (e.g., Friedel-Crafts, Gattermann), complex functional groups, or specific ring systems. The product is the characteristic imino ether salt, which is specific to the Pinner reaction and its variants, distinguishing it from simple nitrile hydrolysis or other nitrile addition reactions.",
+  "raw_text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and a simple alcohol (ethanol) in the presence of dry hydrogen chloride. This is the classic first step of the Pinner reaction, representing the core transformation of activating a nitrile with an alcohol under acidic conditions. The reactants and product are small, acyclic, and devoid of complex functional groups, making it a clear and unambiguous example.\",\n    \"collision_avoidance_note\": \"The use of simple, saturated aliphatic reactants (acetonitrile, ethanol) avoids overlap with reactions involving aromatic rings (e.g., Friedel-Crafts, Gattermann), complex functional groups, or specific ring systems. The product is the characteristic imino ether salt, which is specific to the Pinner reaction and its variants, distinguishing it from simple nitrile hydrolysis or other nitrile addition reactions.\"\n  }\n}"
+}

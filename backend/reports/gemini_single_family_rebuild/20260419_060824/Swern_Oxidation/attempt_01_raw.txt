@@ -1,0 +1,17 @@
+{
+  "family": "Swern Oxidation",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "CC(C)C[C@@H](O)C1=CC=C(C=C1)OC"
+    ],
+    "product_smiles": [
+      "CC(C)CC(=O)C1=CC=C(C=C1)OC"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This is a clear example of a Swern oxidation of a chiral secondary alcohol to the corresponding ketone. The substrate, (S)-1-(4-methoxyphenyl)-3-methylbutan-1-ol, is converted to 1-(4-methoxyphenyl)-3-methylbutan-1-one. The use of a chiral, non-symmetric secondary alcohol provides a specific and unambiguous transformation that is characteristic of the Swern oxidation's mild conditions, which avoid epimerization or over-oxidation. The substrate and product are structurally distinct enough to prevent overly broad matching.",
+    "collision_avoidance_note": "The substrate is a specific, non-symmetrical secondary alcohol with both alkyl and aryl groups, making it a unique fingerprint for this reaction. It avoids simple, small alcohols (like cyclohexanol or benzyl alcohol) that might be overrepresented in general oxidation datasets. The reagents are explicitly listed in text fields as per the instructions, preventing confusion with other DMSO-based oxidations.",
+    "reagents_text": "DMSO, oxalyl chloride, triethylamine",
+    "conditions_text": "low temperature Swern oxidation"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "O=CC1(CCCC1)c1ccccc1"
+    ],
+    "product_smiles": [
+      "c1ccc(C2CCCC2)cc1"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This example demonstrates the decarbonylation of an aldehyde to its corresponding alkane. The substrate, 1-phenylcyclopentane-1-carbaldehyde, possesses a quaternary carbon center adjacent to the formyl group, which is a common structural motif in complex molecule synthesis where this reaction is employed. The removal of the -CHO group to form phenylcyclopentane is a clear and unambiguous transformation characteristic of the Tsuji-Wilkinson reaction, showcasing its utility in C-C bond cleavage under rhodium catalysis.",
+    "collision_avoidance_note": "The substrate is a non-trivial aldehyde with a quaternary center, distinguishing it from simple aliphatic or aromatic aldehydes (like benzaldehyde or heptanal) that might be decarbonylated by other, more generic methods. The spiro-like quaternary center provides a distinct structural feature, avoiding simple linear or benzylic examples that could overlap with other reaction families. This specific substrate-product pair is chosen to be unique and representative of the specific synthetic utility of this named reaction.",
+    "reagents_text": "Tris(triphenylphosphine)rhodium(I) chloride (Wilkinson's catalyst)",
+    "conditions_text": "Heat (e.g., in toluene or benzonitrile)"
+  }
+}

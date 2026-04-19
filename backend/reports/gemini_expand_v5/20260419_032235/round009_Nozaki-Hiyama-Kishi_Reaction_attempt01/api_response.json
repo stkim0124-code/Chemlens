@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Nozaki-Hiyama-Kishi Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C=CI\",\n      \"O=CCCC\"\n    ],\n    \"product_smiles\": [\n      \"C=C[C@H](O)CCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Cr+2].[Cl-].[Cl-]\",\n      \"[Ni+2].[Cl-].[Cl-]\"\n    ],\n    \"rationale\": \"This example shows the classic coupling of a vinyl iodide with a simple aliphatic aldehyde (butanal) to form a secondary allylic alcohol. This is a textbook case of the Nozaki-Hiyama-Kishi reaction, highlighting its key features: the formation of a C-C bond between a vinyl sp2 carbon and a carbonyl carbon, high chemoselectivity for the aldehyde, and the use of the characteristic CrCl2/NiCl2 catalytic system. The reactants and product are simple, acyclic, and clearly illustrate the core transformation.\",\n    \"collision_avoidance_note\": \"The use of a simple vinyl iodide and an aliphatic aldehyde avoids complex structures that might overlap with other named reactions. It specifically avoids aryl halides (which could trigger cross-coupling reaction queries like Suzuki or Stille) and allyl halides (which could be confused with Barbier or Grignard-type allylations). The product is a simple secondary allylic alcohol, a hallmark of this reaction, without other reactive functional groups.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 437,
+    "candidatesTokenCount": 334,
+    "totalTokenCount": 847,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 437
+      }
+    ],
+    "thoughtsTokenCount": 76
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "7NDjaa-OE7fP2roP8ajG2QQ"
+}

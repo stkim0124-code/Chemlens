@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Passerini Multicomponent Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)O\",\n      \"CC=O\",\n      \"C[N+]#[C-]\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)OC(C)C(=O)NC\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This is a classic and simple example of the Passerini reaction, using the most fundamental components: acetic acid (carboxylic acid), acetaldehyde (aldehyde), and methyl isocyanide. The reaction forms the characteristic \\u03b1-acyloxycarboxamide product. All components are small, acyclic, and lack complex functional groups, making it a clear and unambiguous representation of the core transformation.\",\n    \"collision_avoidance_note\": \"The three-component nature (carboxylic acid, aldehyde, isocyanide) and the formation of an \\u03b1-acyloxycarboxamide are highly specific to the Passerini reaction. This example avoids using complex or aromatic structures that might overlap with other named reactions. It is distinct from the related Ugi reaction, which is a four-component reaction involving an amine and produces a different product scaffold (\\u03b1-acylamino amide).\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 471,
+    "candidatesTokenCount": 296,
+    "totalTokenCount": 829,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 471
+      }
+    ],
+    "thoughtsTokenCount": 62
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "ks_jaZS4I9HP2roPo-yOuQs"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Pfitzner-Moffatt Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"C1CCCCC1N=C=NC1CCCCC1\",\n      \"c1cc[nH+]cc1.[Cl-]\"\n    ],\n    \"rationale\": \"This reaction shows the oxidation of a simple primary alcohol (1-butanol) to the corresponding aldehyde (butanal). This is a classic textbook example of the Pfitzner-Moffatt oxidation, utilizing the key reagents: dimethyl sulfoxide (DMSO) as the oxidant, dicyclohexylcarbodiimide (DCC) as the activator, and pyridinium hydrochloride as the mild acid catalyst. The use of a simple, acyclic, aliphatic substrate clearly demonstrates the core transformation without introducing confounding structural features.\",\n    \"collision_avoidance_note\": \"The substrate is a simple primary alcohol, avoiding complex structures, arenes, or other functional groups that could trigger unrelated named reaction queries. The specific combination of DMSO, a carbodiimide (DCC), and a mild acid catalyst is highly characteristic of the Pfitzner-Moffatt oxidation, distinguishing it from other DMSO-based oxidations like the Swern (oxalyl chloride) or Parikh-Doering (SO3-pyridine) oxidations.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 442,
+    "candidatesTokenCount": 335,
+    "totalTokenCount": 865,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 442
+      }
+    ],
+    "thoughtsTokenCount": 88
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "uOPjaeDYLrHa1e8P3M6cyQ8"
+}

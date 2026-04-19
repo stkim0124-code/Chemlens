@@ -1,0 +1,17 @@
+{
+  "family": "Pinner Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "CC(C)(C)C#N"
+    ],
+    "product_smiles": [
+      "COC(=[NH2+])C(C)(C)C.[Cl-]"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This example shows the acid-catalyzed reaction of pivalonitrile with methanol to form the corresponding methyl pivalimidate hydrochloride (a Pinner salt). The use of a sterically hindered nitrile like pivalonitrile clearly illustrates the classic Pinner pathway, forming an imidate salt from a nitrile and an alcohol under anhydrous acidic conditions. This transformation is distinct from Ritter-type reactions, which typically involve carbocation formation from the alcohol and subsequent attack by the nitrile.",
+    "collision_avoidance_note": "The substrate is pivalonitrile, a non-trivial, sterically hindered nitrile. The product is explicitly represented as the protonated imidate salt with a chloride counterion, which is the characteristic intermediate of the Pinner reaction. This avoids ambiguity with other nitrile reactions like hydrolysis or Ritter reactions. The structure is distinct from simple alkyl or aryl nitriles.",
+    "reagents_text": "Methanol, dry HCl gas",
+    "conditions_text": "Anhydrous conditions, typically at low temperature (e.g., 0 °C)"
+  }
+}

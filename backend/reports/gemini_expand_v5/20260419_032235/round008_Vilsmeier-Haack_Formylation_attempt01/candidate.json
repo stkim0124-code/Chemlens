@@ -1,0 +1,16 @@
+{
+  "family": "Vilsmeier-Haack Formylation",
+  "substrates": [
+    "CN(C)c1ccccc1"
+  ],
+  "products": [
+    "CN(C)c1ccc(C=O)cc1"
+  ],
+  "reagents": [
+    "CN(C)C=O",
+    "O=P(Cl)(Cl)Cl"
+  ],
+  "rationale": "This reaction shows the formylation of N,N-dimethylaniline, a classic and simple electron-rich aromatic substrate, using the Vilsmeier reagent generated in situ from DMF and POCl3. The formyl group is installed at the para position, which is the most electronically and sterically favored site for electrophilic aromatic substitution on this substrate. This example clearly illustrates the core transformation of the Vilsmeier-Haack reaction: the installation of an aldehyde onto an activated arene.",
+  "collision_avoidance_note": "This example uses a simple, activated benzene ring (N,N-dimethylaniline) rather than more complex or heteroaromatic systems like indole or pyrrole, which are also common substrates but could overlap with other named reactions involving those specific heterocycles. The reagents (DMF/POCl3) are explicitly provided to define the Vilsmeier-Haack conditions, distinguishing it from other formylation methods like the Gattermann or Reimer-Tiemann reactions, which use different reagents (e.g., HCN/HCl or CHCl3/base).",
+  "raw_text": "{\n  \"family\": \"Vilsmeier-Haack Formylation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CN(C)C1=CC=CC=C1\"\n    ],\n    \"product_smiles\": [\n      \"O=CC1=CC=C(N(C)C)C=C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CN(C)C=O\",\n      \"O=P(Cl)(Cl)Cl\"\n    ],\n    \"rationale\": \"This reaction shows the formylation of N,N-dimethylaniline, a classic and simple electron-rich aromatic substrate, using the Vilsmeier reagent generated in situ from DMF and POCl3. The formyl group is installed at the para position, which is the most electronically and sterically favored site for electrophilic aromatic substitution on this substrate. This example clearly illustrates the core transformation of the Vilsmeier-Haack reaction: the installation of an aldehyde onto an activated arene.\",\n    \"collision_avoidance_note\": \"This example uses a simple, activated benzene ring (N,N-dimethylaniline) rather than more complex or heteroaromatic systems like indole or pyrrole, which are also common substrates but could overlap with other named reactions involving those specific heterocycles. The reagents (DMF/POCl3) are explicitly provided to define the Vilsmeier-Haack conditions, distinguishing it from other formylation methods like the Gattermann or Reimer-Tiemann reactions, which use different reagents (e.g., HCN/HCl or CHCl3/base).\"\n  }\n}"
+}

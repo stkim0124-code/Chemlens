@@ -1,0 +1,16 @@
+{
+  "family": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+  "substrates": [
+    "CCCCN(C)Cl"
+  ],
+  "products": [
+    "CN1CCCC1"
+  ],
+  "reagents": [
+    "O",
+    "[H+]"
+  ],
+  "rationale": "This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutylamine undergoes intramolecular hydrogen atom transfer from the delta-carbon upon initiation (e.g., by light or heat), followed by cyclization to form N-methylpyrrolidine. The substrate is a simple acyclic N-haloamine, and the product is the characteristic five-membered pyrrolidine ring, which is the hallmark of this transformation.",
+  "collision_avoidance_note": "The reaction involves the formation of a pyrrolidine ring via an intramolecular C-H functionalization mediated by a nitrogen radical. This specific transformation (N-haloamine to pyrrolidine) is highly characteristic of the Hofmann-Löffler-Freytag reaction and is unlikely to be confused with other named reactions. The simple, acyclic, non-aromatic substrate avoids overlap with reactions involving arenes, diazo compounds, or complex ring systems.",
+  "raw_text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CN(Cl)CCCC\"\n    ],\n    \"product_smiles\": [\n      \"C1CCN(C)C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"[H+]\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutylamine undergoes intramolecular hydrogen atom transfer from the delta-carbon upon initiation (e.g., by light or heat), followed by cyclization to form N-methylpyrrolidine. The substrate is a simple acyclic N-haloamine, and the product is the characteristic five-membered pyrrolidine ring, which is the hallmark of this transformation.\",\n    \"collision_avoidance_note\": \"The reaction involves the formation of a pyrrolidine ring via an intramolecular C-H functionalization mediated by a nitrogen radical. This specific transformation (N-haloamine to pyrrolidine) is highly characteristic of the Hofmann-Löffler-Freytag reaction and is unlikely to be confused with other named reactions. The simple, acyclic, non-aromatic substrate avoids overlap with reactions involving arenes, diazo compounds, or complex ring systems.\"\n  }\n}"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wharton Olefin Synthesis (Wharton Transposition)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC1(C)O[C@H]1C(=O)C\"\n    ],\n    \"product_smiles\": [\n      \"C=C(C)[C@H](O)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\"\n    ],\n    \"rationale\": \"This reaction shows the conversion of a simple, acyclic α,β-epoxyketone (3,4-epoxy-4-methyl-2-pentanone) to the corresponding allylic alcohol (3-methyl-1-buten-3-ol) using hydrazine. The substrate is a classic example found in textbooks, featuring a tetrasubstituted epoxide adjacent to a methyl ketone. This clearly illustrates the transposition of the double bond and the reduction of the ketone to an alcohol, which are the key transformations of the Wharton reaction. The stereochemistry of the epoxide is defined to yield a specific allylic alcohol product, representing the stereospecific nature of the epoxide opening step.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic α,β-epoxyketone, which is the specific functional group required for the Wharton reaction. It avoids complex ring systems (often seen in steroid synthesis applications), arenes, or other reactive functional groups that could cause collisions with other named reactions like the Shapiro reaction (which starts from tosylhydrazones of ketones without epoxides) or general epoxide opening reactions that do not involve hydrazine and nitrogen extrusion.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 450,
+    "candidatesTokenCount": 358,
+    "totalTokenCount": 869,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 450
+      }
+    ],
+    "thoughtsTokenCount": 61
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "ms7jaemgHdS40-kPk4m0WQ"
+}

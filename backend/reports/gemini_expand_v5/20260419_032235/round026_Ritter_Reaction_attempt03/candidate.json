@@ -1,0 +1,16 @@
+{
+  "family": "Ritter Reaction",
+  "substrates": [
+    "CC(C)(C)O",
+    "CC#N"
+  ],
+  "products": [
+    "CC(=O)NC(C)(C)C"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This is the classic textbook example of the Ritter reaction, featuring the reaction of tert-butanol with acetonitrile under strong acid catalysis (sulfuric acid). The tert-butanol serves as a stable precursor to the tert-butyl carbocation, which is then trapped by the nitrile. Subsequent hydrolysis of the resulting nitrilium ion intermediate yields N-tert-butylacetamide. All components are simple, acyclic, and clearly illustrate the core transformation of the Ritter reaction: carbocation + nitrile -> N-substituted amide.",
+  "collision_avoidance_note": "The use of tert-butanol as the carbocation precursor and acetonitrile as the nitrile avoids complex or reactive functional groups. This specific, simple example is unlikely to be confused with other named reactions. It avoids arenes (Friedel-Crafts), complex ring systems, or other motifs that could cause collisions with unrelated reaction families.",
+  "raw_text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is the classic textbook example of the Ritter reaction, featuring the reaction of tert-butanol with acetonitrile under strong acid catalysis (sulfuric acid). The tert-butanol serves as a stable precursor to the tert-butyl carbocation, which is then trapped by the nitrile. Subsequent hydrolysis of the resulting nitrilium ion intermediate yields N-tert-butylacetamide. All components are simple, acyclic, and clearly illustrate the core transformation of the Ritter reaction: carbocation + nitrile -> N-substituted amide.\",\n    \"collision_avoidance_note\": \"The use of tert-butanol as the carbocation precursor and acetonitrile as the nitrile avoids complex or reactive functional groups. This specific, simple example is unlikely to be confused with other named reactions. It avoids arenes (Friedel-Crafts), complex ring systems, or other motifs that could cause collisions with unrelated reaction families.\"\n  }\n}"
+}

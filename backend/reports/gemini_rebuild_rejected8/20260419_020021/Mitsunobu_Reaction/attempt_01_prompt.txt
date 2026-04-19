@@ -1,0 +1,16 @@
+Generate exactly one benchmark-safe canonical example for the named reaction family 'Mitsunobu Reaction'.
+Cluster risk: barton ; forbid signals: decarboxylation, deoxygenation.
+Current rejected stage seed to avoid copying:
+- role=reactant smiles=CCCCCC[C@H](C)O
+- role=reactant smiles=O=C(O)c1ccccc1
+- role=product smiles=CCCCCC[C@@H](C)OC(=O)c1ccccc1
+Goal: Propose a simple Mitsunobu substitution/inversion example from an alcohol plus acidic nucleophile to substituted product. Avoid any decarboxylation or deoxygenation-like topology.
+Rules:
+- keep it textbook and minimal
+- avoid the forbidden signals above
+- do not repeat the current rejected stage topology
+- provide valid organic SMILES only; no catalyst metals in SMILES unless absolutely necessary
+- keep reagent list short or empty if not essential
+
+Return JSON only with this schema:
+{"substrate_smiles":["..."],"product_smiles":["..."],"optional_reagent_smiles":["..."]}

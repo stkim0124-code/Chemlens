@@ -1,0 +1,16 @@
+{
+  "family": "Pinner Reaction",
+  "substrates": [
+    "CC#N",
+    "CCO"
+  ],
+  "products": [
+    "CCOC(C)=[NH2+].[Cl-]"
+  ],
+  "reagents": [
+    "Cl"
+  ],
+  "rationale": "This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and a simple alcohol (ethanol) in the presence of dry hydrogen chloride. This represents the core transformation of the Pinner reaction, which is the acid-catalyzed addition of an alcohol to a nitrile. The resulting Pinner salt is a key intermediate that can be further converted to esters or amidines.",
+  "collision_avoidance_note": "The use of simple, acyclic, saturated aliphatic substrates (acetonitrile, ethanol) avoids overlap with reactions involving aromatic rings (e.g., Friedel-Crafts, Gattermann), complex functional groups, or rearrangements. The product is the specific imino ether salt, distinguishing it from simple nitrile hydrolysis or other nitrile addition reactions that do not proceed via this intermediate.",
+  "raw_text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and a simple alcohol (ethanol) in the presence of dry hydrogen chloride. This represents the core transformation of the Pinner reaction, which is the acid-catalyzed addition of an alcohol to a nitrile. The resulting Pinner salt is a key intermediate that can be further converted to esters or amidines.\",\n    \"collision_avoidance_note\": \"The use of simple, acyclic, saturated aliphatic substrates (acetonitrile, ethanol) avoids overlap with reactions involving aromatic rings (e.g., Friedel-Crafts, Gattermann), complex functional groups, or rearrangements. The product is the specific imino ether salt, distinguishing it from simple nitrile hydrolysis or other nitrile addition reactions that do not proceed via this intermediate.\"\n  }\n}"
+}

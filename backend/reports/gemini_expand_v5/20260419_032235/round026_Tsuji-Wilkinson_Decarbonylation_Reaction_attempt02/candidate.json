@@ -1,0 +1,15 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "substrates": [
+    "CCCCCCC=O"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "[Cl][Rh]([PH](c1ccccc1)(c1ccccc1)c1ccccc1)([PH](c1ccccc1)(c1ccccc1)c1ccccc1)[PH](c1ccccc1)(c1ccccc1)c1ccccc1"
+  ],
+  "rationale": "This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to its corresponding alkane (hexane) using Wilkinson's catalyst. This is a classic textbook example that clearly illustrates the C-C bond cleavage of the formyl group and its replacement with a C-H bond, which is the core transformation of the Tsuji-Wilkinson decarbonylation. The substrate is simple and avoids other functional groups that could cause ambiguity.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic aldehyde, avoiding aromatic rings which could be confused with various cross-coupling or arene-functionalization reactions. The transformation is a specific deformylation, distinct from decarboxylation (removal of CO2 from a carboxylic acid) or deoxygenation (e.g., Wolff-Kishner, Clemmensen). The use of a simple alkane product avoids motifs common in other named reactions like ring expansions or complex rearrangements.",
+  "raw_text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh](P(c1ccccc1)(c1ccccc1)c1ccccc1)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to its corresponding alkane (hexane) using Wilkinson's catalyst. This is a classic textbook example that clearly illustrates the C-C bond cleavage of the formyl group and its replacement with a C-H bond, which is the core transformation of the Tsuji-Wilkinson decarbonylation. The substrate is simple and avoids other functional groups that could cause ambiguity.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde, avoiding aromatic rings which could be confused with various cross-coupling or arene-functionalization reactions. The transformation is a specific deformylation, distinct from decarboxylation (removal of CO2 from a carboxylic acid) or deoxygenation (e.g., Wolff-Kishner, Clemmensen). The use of a simple alkane product avoids motifs common in other named reactions like ring expansions or complex rearrangements.\"\n  }\n}"
+}

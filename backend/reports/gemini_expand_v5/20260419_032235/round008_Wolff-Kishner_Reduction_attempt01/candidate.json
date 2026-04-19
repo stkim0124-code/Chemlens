@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCCC(=O)CC"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane). This is a classic textbook example of the Wolff-Kishner reduction, clearly demonstrating the conversion of a carbonyl group to a methylene group under basic conditions (hydrazine and KOH). The use of a symmetrical ketone avoids any ambiguity or potential side reactions. The reactants and products are simple, acyclic, and lack functional groups that could trigger other named reactions.",
+  "collision_avoidance_note": "This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/alkylation), alpha-functionalized carbonyls (e.g., Favorskii rearrangement), or other reducible groups. It is distinct from acidic reductions like the Clemmensen reduction due to the specified basic reagents. The transformation is a specific deoxygenation of a carbonyl to a methylene group, not a general deoxygenation or reduction.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[K+].[OH-]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane). This is a classic textbook example of the Wolff-Kishner reduction, clearly demonstrating the conversion of a carbonyl group to a methylene group under basic conditions (hydrazine and KOH). The use of a symmetrical ketone avoids any ambiguity or potential side reactions. The reactants and products are simple, acyclic, and lack functional groups that could trigger other named reactions.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/alkylation), alpha-functionalized carbonyls (e.g., Favorskii rearrangement), or other reducible groups. It is distinct from acidic reductions like the Clemmensen reduction due to the specified basic reagents. The transformation is a specific deoxygenation of a carbonyl to a methylene group, not a general deoxygenation or reduction.\"\n  }\n}"
+}

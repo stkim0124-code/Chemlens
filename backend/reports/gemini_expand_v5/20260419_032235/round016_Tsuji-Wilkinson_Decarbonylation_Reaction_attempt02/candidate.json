@@ -1,0 +1,15 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "substrates": [
+    "CCCCCCC=O"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "[Cl][Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1"
+  ],
+  "rationale": "This reaction shows the decarbonylation of a simple aliphatic aldehyde, heptanal, to its corresponding alkane, hexane, using Wilkinson's catalyst (RhCl(PPh3)3). This is a classic and straightforward textbook example of the Tsuji-Wilkinson decarbonylation, clearly illustrating the conversion of an aldehyde functional group (-CHO) to a hydrogen atom (-H) with the extrusion of carbon monoxide.",
+  "collision_avoidance_note": "The use of a simple, acyclic, saturated aliphatic aldehyde avoids overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/deacylation), complex ring systems, or other reactive functional groups. This specific transformation (aldehyde to alkane) is highly characteristic of the Tsuji-Wilkinson reaction and is unlikely to be confused with other named reactions like Wolff-Kishner or Clemmensen reductions, which typically reduce ketones or aldehydes under different conditions and do not involve a stoichiometric metal carbonyl complex as a byproduct.",
+  "raw_text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple aliphatic aldehyde, heptanal, to its corresponding alkane, hexane, using Wilkinson's catalyst (RhCl(PPh3)3). This is a classic and straightforward textbook example of the Tsuji-Wilkinson decarbonylation, clearly illustrating the conversion of an aldehyde functional group (-CHO) to a hydrogen atom (-H) with the extrusion of carbon monoxide.\",\n    \"collision_avoidance_note\": \"The use of a simple, acyclic, saturated aliphatic aldehyde avoids overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/deacylation), complex ring systems, or other reactive functional groups. This specific transformation (aldehyde to alkane) is highly characteristic of the Tsuji-Wilkinson reaction and is unlikely to be confused with other named reactions like Wolff-Kishner or Clemmensen reductions, which typically reduce ketones or aldehydes under different conditions and do not involve a stoichiometric metal carbonyl complex as a byproduct.\"\n  }\n}"
+}

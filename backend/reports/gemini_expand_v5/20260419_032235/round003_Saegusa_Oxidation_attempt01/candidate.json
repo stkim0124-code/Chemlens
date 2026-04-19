@@ -1,0 +1,16 @@
+{
+  "family": "Saegusa Oxidation",
+  "substrates": [
+    "C=C(C)O[Si](C)(C)C"
+  ],
+  "products": [
+    "C=C(C)C=O"
+  ],
+  "reagents": [
+    "CC(=O)[O][Pd][O]C(C)=O",
+    "O=C1C=CC(=O)C=C1"
+  ],
+  "rationale": "This reaction shows the conversion of a simple acyclic silyl enol ether, 2-(trimethylsilyloxy)prop-1-ene, to its corresponding α,β-unsaturated aldehyde, methacrolein. This is a classic textbook example of the Saegusa oxidation, demonstrating the formation of a conjugated system from a silyl enol ether using a palladium(II) catalyst (palladium acetate) and a stoichiometric reoxidant (p-benzoquinone). The reactants and products are simple, acyclic, and clearly illustrate the core transformation without introducing complex stereochemistry or functional groups.",
+  "collision_avoidance_note": "The substrate is a silyl enol ether, which is specific to this transformation and related enolate chemistry, but distinct from simple enols or ketones. The product is a simple enal, avoiding complex arene structures or other reactive motifs that could overlap with reactions like the Heck or Suzuki couplings. The use of a silyl protecting group is a key feature that distinguishes it from other palladium-catalyzed dehydrogenations like the Wacker process.",
+  "raw_text": "{\n  \"family\": \"Saegusa Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C=C(O[Si](C)(C)C)C\"\n    ],\n    \"product_smiles\": [\n      \"C=C(C)C=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CC(=O)O[Pd]OC(C)=O\",\n      \"O=C1C=CC(=O)C=C1\"\n    ],\n    \"rationale\": \"This reaction shows the conversion of a simple acyclic silyl enol ether, 2-(trimethylsilyloxy)prop-1-ene, to its corresponding \\u03b1,\\u03b2-unsaturated aldehyde, methacrolein. This is a classic textbook example of the Saegusa oxidation, demonstrating the formation of a conjugated system from a silyl enol ether using a palladium(II) catalyst (palladium acetate) and a stoichiometric reoxidant (p-benzoquinone). The reactants and products are simple, acyclic, and clearly illustrate the core transformation without introducing complex stereochemistry or functional groups.\",\n    \"collision_avoidance_note\": \"The substrate is a silyl enol ether, which is specific to this transformation and related enolate chemistry, but distinct from simple enols or ketones. The product is a simple enal, avoiding complex arene structures or other reactive motifs that could overlap with reactions like the Heck or Suzuki couplings. The use of a silyl protecting group is a key feature that distinguishes it from other palladium-catalyzed dehydrogenations like the Wacker process.\"\n  }\n}"
+}

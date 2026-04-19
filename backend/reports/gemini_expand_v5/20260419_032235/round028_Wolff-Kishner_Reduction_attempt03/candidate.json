@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCC(=O)CC"
+  ],
+  "products": [
+    "CCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This is a classic, simple, and acyclic example of the Wolff-Kishner reduction. It uses 3-pentanone, a symmetrical ketone, which is reduced to the corresponding alkane, n-pentane. This clearly demonstrates the core transformation of a carbonyl group (C=O) into a methylene group (CH2) under basic conditions with hydrazine, which is the defining feature of this reaction. The reactants and products are small, stable, and unambiguous.",
+  "collision_avoidance_note": "This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/alkylation), alpha-beta unsaturated systems (e.g., Michael addition), or other functional groups that might trigger different named reactions. It specifically avoids aldehydes which could undergo aldol-type side reactions. The simplicity focuses the query on the C=O to CH2 transformation characteristic of the Wolff-Kishner reduction, distinguishing it from other deoxygenation methods like the Clemmensen reduction (acidic conditions) or Mozingo reduction (thiol-based).",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This is a classic, simple, and acyclic example of the Wolff-Kishner reduction. It uses 3-pentanone, a symmetrical ketone, which is reduced to the corresponding alkane, n-pentane. This clearly demonstrates the core transformation of a carbonyl group (C=O) into a methylene group (CH2) under basic conditions with hydrazine, which is the defining feature of this reaction. The reactants and products are small, stable, and unambiguous.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/alkylation), alpha-beta unsaturated systems (e.g., Michael addition), or other functional groups that might trigger different named reactions. It specifically avoids aldehydes which could undergo aldol-type side reactions. The simplicity focuses the query on the C=O to CH2 transformation characteristic of the Wolff-Kishner reduction, distinguishing it from other deoxygenation methods like the Clemmensen reduction (acidic conditions) or Mozingo reduction (thiol-based).\"\n  }\n}"
+}

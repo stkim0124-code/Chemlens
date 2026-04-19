@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Carroll Rearrangement (Kimel-Cope Rearrangement)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)C(C)OC(=C)C\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)CCC(=C)C\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This is a simple, acyclic, and canonical example of the Carroll Rearrangement. It features the thermal rearrangement of a \\u03b2-keto allyl ester (allyl acetoacetate derivative) to form a \\u03b3,\\u03b4-unsaturated ketone. The reaction proceeds via a [3,3]-sigmatropic rearrangement of the enol tautomer, followed by decarboxylation. This example uses a simple methyl-substituted allyl group and a methyl-substituted acetoacetate core, making it a clear and fundamental representation of the transformation without unnecessary complexity.\",\n    \"collision_avoidance_note\": \"The structure is kept simple and acyclic to avoid overlap with more complex natural product syntheses or other named reactions involving rings. It specifically avoids aromatic rings (Claisen rearrangement), complex functional groups, or highly reactive motifs that could trigger other named reaction classifiers. The core transformation is the [3,3]-sigmatropic rearrangement of a \\u03b2-keto allyl ester followed by decarboxylation, which is the defining feature of the Carroll Rearrangement.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 391,
+    "candidatesTokenCount": 333,
+    "totalTokenCount": 815,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 391
+      }
+    ],
+    "thoughtsTokenCount": 91
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "Ic_jaeCtA-qgvr0PwueLMA"
+}

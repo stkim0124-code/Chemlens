@@ -1,0 +1,20 @@
+{
+  "family": "Sharpless Asymmetric Aminohydroxylation",
+  "substrates": [
+    "C/C=C/C"
+  ],
+  "products": [
+    "C[C@H](O)[C@@H](C)NC(=O)OC(C)(C)C"
+  ],
+  "reagents": [
+    "CC(C)(C)OC(=O)[N]([Na])Cl",
+    "Cc1ccc(S(N)(=O)=O)cc1",
+    "O.O.O=S(=O)([O-])[O-].[K+].[K+]",
+    "COc1ccc2c(c1)C[C@@H]1Oc3ccc(OC)cc3CN1C2.O=S(=O)(O)O.c1cncc(-c2nccnc2-c2cnccn2)c1",
+    "CC(C)(C)O",
+    "O"
+  ],
+  "rationale": "This reaction shows the asymmetric aminohydroxylation of (E)-2-butene, a simple, acyclic, non-terminal alkene, to yield the corresponding syn-amino alcohol with defined stereochemistry. The reactants are simple alkyl groups, avoiding complex functionalities. The product is a Boc-protected vicinal amino alcohol, which is characteristic of this transformation using BocNClNa as the nitrogen source. The (DHQ)2PHAL ligand is typically used to induce this specific enantioselectivity (R,R product from an E-alkene). This represents a core, textbook example of the Sharpless Asymmetric Aminohydroxylation.",
+  "collision_avoidance_note": "The substrate is a simple, acyclic alkene (2-butene) to avoid overlap with reactions involving aromatic rings, styrenes, or complex cyclic systems. The transformation is a direct addition of -OH and -NHBoc across the double bond, which is highly specific to this named reaction and distinct from epoxidations, dihydroxylations (like the Sharpless Asymmetric Dihydroxylation), or other C-N bond formations. The use of a Boc-protected amine is characteristic and helps differentiate it from reactions using other nitrogen sources like azides or sulfonylamides.",
+  "raw_text": "{\n  \"family\": \"Sharpless Asymmetric Aminohydroxylation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C/C=C/C\"\n    ],\n    \"product_smiles\": [\n      \"C[C@H](O)[C@H](NC(=O)OC(C)(C)C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CC(C)(C)OC(=O)N(Cl)[Na]\",\n      \"O=S(=O)(N)C1=CC=C(C)C=C1\",\n      \"O.O.O=S(=O)([O-])[O-].[K+].[K+]\",\n      \"[H][C@@]12OC3=CC=C(OC)C=C3C[N@]1CC4=CC=C(OC)C=C4C2.C1=NC=C(N=C1)C2=NC=CN=C2C3=CC=CN=C3.O=S(O)(O)=O\",\n      \"CC(C)(C)O\",\n      \"O\"\n    ],\n    \"rationale\": \"This reaction shows the asymmetric aminohydroxylation of (E)-2-butene, a simple, acyclic, non-terminal alkene, to yield the corresponding syn-amino alcohol with defined stereochemistry. The reactants are simple alkyl groups, avoiding complex functionalities. The product is a Boc-protected vicinal amino alcohol, which is characteristic of this transformation using BocNClNa as the nitrogen source. The (DHQ)2PHAL ligand is typically used to induce this specific enantioselectivity (R,R product from an E-alkene). This represents a core, textbook example of the Sharpless Asymmetric Aminohydroxylation.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, acyclic alkene (2-butene) to avoid overlap with reactions involving aromatic rings, styrenes, or complex cyclic systems. The transformation is a direct addition of -OH and -NHBoc across the double bond, which is highly specific to this named reaction and distinct from epoxidations, dihydroxylations (like the Sharpless Asymmetric Dihydroxylation), or other C-N bond formations. The use of a Boc-protected amine is characteristic and helps differentiate it from reactions using other nitrogen sources like azides or sulfonylamides.\"\n  }\n}"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Noyori Asymmetric Hydrogenation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)c1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"C[C@H](O)c1ccccc1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"C1=CC=C(C=C1)P(C2=C(C(=CC=C2)C)C(C)=C)C3=C(C(=CC=C3)C)C(C)=C.C1=CC=C(C=C1)P(C2=C(C(=CC=C2)C)C(C)=C)C3=C(C(=CC=C3)C)C(C)=C.[Cl-].[Cl-].[Ru+2]\"\n    ],\n    \"rationale\": \"This reaction shows the asymmetric hydrogenation of a simple prochiral ketone, acetophenone, to a chiral secondary alcohol, (R)-1-phenylethanol. This is a classic textbook example of the Noyori asymmetric hydrogenation, demonstrating the high enantioselectivity achieved with a Ru-BINAP catalyst system. The substrate and product are simple, acyclic at the reaction center, and clearly illustrate the transformation of a carbonyl group to a chiral alcohol.\",\n    \"collision_avoidance_note\": \"The chosen example is the hydrogenation of a simple ketone, a core application of the Noyori reaction. It avoids complex polycyclic structures, functional groups prone to side reactions, or motifs that could overlap with other named reactions like Meerwein-Ponndorf-Verley (which uses an aluminum alkoxide catalyst and an alcohol as the hydrogen source) or Luche reduction (which uses NaBH4/CeCl3). The focus is specifically on the Ru-BINAP catalyzed asymmetric addition of hydrogen to a carbonyl.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 434,
+    "candidatesTokenCount": 424,
+    "totalTokenCount": 918,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 434
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "4NDjaafoOLyc0-kPrMicqA0"
+}

@@ -1,0 +1,15 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "substrates": [
+    "CCCCCCC=O"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "[Cl][Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1"
+  ],
+  "rationale": "This reaction shows the decarbonylation of a simple aliphatic aldehyde, heptanal, to its corresponding alkane, hexane, using Wilkinson's catalyst. This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, demonstrating the conversion of an R-CHO group to an R-H group. The use of a simple, acyclic, saturated substrate avoids ambiguity with other reaction families.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic aldehyde, avoiding aromatic rings (which could trigger other named reactions involving arenes), unsaturation (which could suggest conjugate additions or other olefin reactions), or complex functional groups. This focuses squarely on the C-CHO to C-H transformation characteristic of this reaction, minimizing overlap with other decarbonylation or deformylation methods that might involve different mechanisms or substrates (e.g., radical decarbonylations, Barton decarbonylation).",
+  "raw_text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple aliphatic aldehyde, heptanal, to its corresponding alkane, hexane, using Wilkinson's catalyst. This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, demonstrating the conversion of an R-CHO group to an R-H group. The use of a simple, acyclic, saturated substrate avoids ambiguity with other reaction families.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde, avoiding aromatic rings (which could trigger other named reactions involving arenes), unsaturation (which could suggest conjugate additions or other olefin reactions), or complex functional groups. This focuses squarely on the C-CHO to C-H transformation characteristic of this reaction, minimizing overlap with other decarbonylation or deformylation methods that might involve different mechanisms or substrates (e.g., radical decarbonylations, Barton decarbonylation).\"\n  }\n}"
+}

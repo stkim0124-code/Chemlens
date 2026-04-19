@@ -1,0 +1,15 @@
+{
+  "family": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+  "substrates": [
+    "c1ccncc1"
+  ],
+  "products": [
+    "Nc1ccccn1"
+  ],
+  "reagents": [
+    "[NH2-].[Na+]"
+  ],
+  "rationale": "The reaction of pyridine with sodium amide to form 2-aminopyridine is the quintessential textbook example of the Chichibabin amination reaction. It clearly demonstrates the direct amination of a nitrogen-containing heterocycle at the ortho position, which is the defining characteristic of this named reaction.",
+  "collision_avoidance_note": "This example uses the simplest possible substrate (pyridine) and nucleophile (amide anion) to avoid overlap with other named reactions. It avoids complex substituents, fused rings, or other reactive functional groups that could trigger unrelated reaction family classifications. The direct C-H amination of the pyridine ring is highly specific to the Chichibabin reaction.",
+  "raw_text": "{\n  \"family\": \"Chichibabin Amination Reaction (Chichibabin Reaction)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"c1ccncc1\"\n    ],\n    \"product_smiles\": [\n      \"Nc1ncccc1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Na+].[NH2-]\"\n    ],\n    \"rationale\": \"The reaction of pyridine with sodium amide to form 2-aminopyridine is the quintessential textbook example of the Chichibabin amination reaction. It clearly demonstrates the direct amination of a nitrogen-containing heterocycle at the ortho position, which is the defining characteristic of this named reaction.\",\n    \"collision_avoidance_note\": \"This example uses the simplest possible substrate (pyridine) and nucleophile (amide anion) to avoid overlap with other named reactions. It avoids complex substituents, fused rings, or other reactive functional groups that could trigger unrelated reaction family classifications. The direct C-H amination of the pyridine ring is highly specific to the Chichibabin reaction.\"\n  }\n}"
+}

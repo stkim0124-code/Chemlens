@@ -1,0 +1,46 @@
+{
+  "family_name": "Regitz Diazo Transfer",
+  "variant": "core_plus_reagent",
+  "summary": {
+    "benchmark_name": "CHEMLENS small benchmark v3",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 26,
+    "top1_accuracy": 0.963,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "changed_cases": [
+    {
+      "case_id": "buchner_403_exact_extract",
+      "expected_family": "Buchner Reaction",
+      "baseline_top1_family": "Buchner Reaction",
+      "current_top1_family": "Regitz Diazo Transfer",
+      "baseline_top1_correct": true,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Buchner Reaction | Malonic Ester Synthesis | Cornforth Rearrangement",
+      "current_top3_families": "Regitz Diazo Transfer | Buchner Reaction | Malonic Ester Synthesis",
+      "baseline_top3_scores": "1.249 | 1.187 | 1.129",
+      "current_top3_scores": "1.467 | 1.249 | 1.187",
+      "baseline_notes": "Exact extract query from Buchner example currently used as regression case.",
+      "current_notes": "Exact extract query from Buchner example currently used as regression case."
+    }
+  ],
+  "reaction_extract_ids": [
+    475
+  ],
+  "extract_molecule_ids": [
+    1902,
+    1903,
+    1904
+  ],
+  "insert_stats": {
+    "inserted_extract_rows": 1,
+    "inserted_molecule_rows": 3,
+    "total_changes_delta": 4
+  },
+  "identical_to_baseline": false
+}

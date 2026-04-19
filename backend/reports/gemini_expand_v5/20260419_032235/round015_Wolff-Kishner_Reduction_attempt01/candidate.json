@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCCC(=O)CC"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic ketone (3-hexanone) to its corresponding alkane (n-hexane) using hydrazine (NN) and potassium hydroxide ([OH-].[K+]), which are the classic reagents for the Wolff-Kishner reduction. The substrate is symmetric and avoids stereochemical complexity. The transformation is a clear deoxygenation of a ketone to a methylene group, which is the defining characteristic of this reaction.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic ketone, avoiding aromatic rings (which could trigger Friedel-Crafts or other electrophilic aromatic substitution queries), esters (avoiding Claisen condensation), or other functional groups that might be sensitive to the strongly basic conditions. This focuses the query specifically on the ketone-to-alkane transformation characteristic of the Wolff-Kishner reduction, distinguishing it from other reductions like Clemmensen (acidic) or Mozingo (thiol-based).",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic ketone (3-hexanone) to its corresponding alkane (n-hexane) using hydrazine (NN) and potassium hydroxide ([OH-].[K+]), which are the classic reagents for the Wolff-Kishner reduction. The substrate is symmetric and avoids stereochemical complexity. The transformation is a clear deoxygenation of a ketone to a methylene group, which is the defining characteristic of this reaction.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic ketone, avoiding aromatic rings (which could trigger Friedel-Crafts or other electrophilic aromatic substitution queries), esters (avoiding Claisen condensation), or other functional groups that might be sensitive to the strongly basic conditions. This focuses the query specifically on the ketone-to-alkane transformation characteristic of the Wolff-Kishner reduction, distinguishing it from other reductions like Clemmensen (acidic) or Mozingo (thiol-based).\"\n  }\n}"
+}

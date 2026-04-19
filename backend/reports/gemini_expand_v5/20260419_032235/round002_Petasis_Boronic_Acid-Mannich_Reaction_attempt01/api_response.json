@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Petasis Boronic Acid-Mannich Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CNC\",\n      \"O=CC(=O)O\",\n      \"B(O)(O)C=C\"\n    ],\n    \"product_smiles\": [\n      \"CN(C)CC(=C)C(=O)O\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This is a classic and simple example of the Petasis reaction, a three-component coupling. It uses a secondary amine (dimethylamine), an alpha-keto acid (glyoxylic acid), and a simple organoboron nucleophile (vinylboronic acid). The reaction forms a new tertiary amine by creating a C-C bond between the vinyl group and the alpha-carbon of the original keto acid, and a C-N bond. This example clearly illustrates the key transformation: the formation of an allylic amine from an amine, a carbonyl, and a vinylboronic acid.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic, and non-aromatic components (dimethylamine, glyoxylic acid, vinylboronic acid) to avoid overlap with other named reactions. It specifically avoids phenylboronic acid, which is common but could increase collisions with Suzuki-type couplings. The use of an alpha-keto acid is characteristic of many Petasis examples and distinguishes it from simpler Mannich reactions which typically use non-acidic aldehydes. The product is a simple alpha-amino acid derivative, a common target for this reaction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 456,
+    "candidatesTokenCount": 353,
+    "totalTokenCount": 892,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 456
+      }
+    ],
+    "thoughtsTokenCount": 83
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "mMzjad_4O9uerfcP5uGJkA4"
+}

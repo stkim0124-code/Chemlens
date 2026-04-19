@@ -1,0 +1,17 @@
+{
+  "family": "Pfitzner-Moffatt Oxidation",
+  "substrates": [
+    "CCCCCO"
+  ],
+  "products": [
+    "CCCCC=O"
+  ],
+  "reagents": [
+    "CS(C)=O",
+    "C(=NC1CCCCC1)=NC1CCCCC1",
+    "[Cl-].c1cc[nH+]cc1"
+  ],
+  "rationale": "This reaction shows the oxidation of a simple primary alcohol (1-pentanol) to the corresponding aldehyde (pentanal) using the classic Pfitzner-Moffatt conditions: dimethyl sulfoxide (DMSO) as the oxidant, dicyclohexylcarbodiimide (DCC) as the activator, and pyridinium hydrochloride as the mild acid catalyst. The use of a simple, acyclic, saturated alcohol avoids potential side reactions and focuses on the core transformation, making it a clear and canonical example of this named reaction.",
+  "collision_avoidance_note": "The substrate is a simple primary alcohol, and the reagents are specific to the Pfitzner-Moffatt protocol (DMSO, DCC, mild acid). This avoids overlap with other oxidation reactions that use different activators (e.g., Swern, Parikh-Doering) or metal-based oxidants (e.g., PCC, PDC, Jones). The lack of aromatic rings or other complex functional groups prevents unintended matches with unrelated named reactions.",
+  "raw_text": "{\n  \"family\": \"Pfitzner-Moffatt Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"C1CCC(CC1)N=C=NC1CCCCC1\",\n      \"c1cc[nH+]cc1.[Cl-]\"\n    ],\n    \"rationale\": \"This reaction shows the oxidation of a simple primary alcohol (1-pentanol) to the corresponding aldehyde (pentanal) using the classic Pfitzner-Moffatt conditions: dimethyl sulfoxide (DMSO) as the oxidant, dicyclohexylcarbodiimide (DCC) as the activator, and pyridinium hydrochloride as the mild acid catalyst. The use of a simple, acyclic, saturated alcohol avoids potential side reactions and focuses on the core transformation, making it a clear and canonical example of this named reaction.\",\n    \"collision_avoidance_note\": \"The substrate is a simple primary alcohol, and the reagents are specific to the Pfitzner-Moffatt protocol (DMSO, DCC, mild acid). This avoids overlap with other oxidation reactions that use different activators (e.g., Swern, Parikh-Doering) or metal-based oxidants (e.g., PCC, PDC, Jones). The lack of aromatic rings or other complex functional groups prevents unintended matches with unrelated named reactions.\"\n  }\n}"
+}

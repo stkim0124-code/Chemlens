@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Stetter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=CC1=CC=CC=C1\",\n      \"C=CC(=O)C\"\n    ],\n    \"product_smiles\": [\n      \"O=C(C)CCC(=O)C1=CC=CC=C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Na+].[C-]#N\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the intermolecular Stetter reaction, showcasing the conjugate addition of an aldehyde (benzaldehyde) to a Michael acceptor (methyl vinyl ketone). The reaction is catalyzed by a cyanide salt, a common catalyst for this transformation, leading to the formation of a 1,4-dicarbonyl compound. The reactants and product are simple, acyclic where possible, and clearly illustrate the core C-C bond formation at the beta-position of the Michael acceptor.\",\n    \"collision_avoidance_note\": \"This example uses benzaldehyde, a common Stetter aldehyde, but pairs it with a simple aliphatic Michael acceptor (methyl vinyl ketone) to avoid creating a fully aromatic product like a chalcone, which could collide with Claisen-Schmidt condensation. The use of a cyanide catalyst is specific to Stetter-type umpolung reactions, distinguishing it from base-catalyzed aldol or Michael additions. The core transformation is the formation of a 1,4-dicarbonyl, which is the hallmark of the Stetter reaction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 424,
+    "candidatesTokenCount": 341,
+    "totalTokenCount": 822,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 424
+      }
+    ],
+    "thoughtsTokenCount": 57
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "PNXjadjVG-qgvr0PwueLMA"
+}

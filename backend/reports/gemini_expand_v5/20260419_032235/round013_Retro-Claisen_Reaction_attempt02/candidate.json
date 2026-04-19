@@ -1,0 +1,16 @@
+{
+  "family": "Retro-Claisen Reaction",
+  "substrates": [
+    "CCOC(=O)C(C)C(=O)CC"
+  ],
+  "products": [
+    "CCC(C)=O",
+    "CCOC(C)=O"
+  ],
+  "reagents": [
+    "[Na+].[OH-]"
+  ],
+  "rationale": "This example shows the base-catalyzed cleavage of ethyl 2-methyl-3-oxopentanoate, a simple acyclic beta-keto ester, into two smaller carbonyl compounds: butan-2-one and ethyl acetate. This is a classic textbook illustration of the retro-Claisen reaction, demonstrating the characteristic C-C bond cleavage between the alpha and beta carbons relative to the ester carbonyl.",
+  "collision_avoidance_note": "The reaction is kept simple and acyclic, using small alkyl groups to avoid overlap with more complex named reactions involving aromatic rings, specific heterocyclic systems, or other functional groups. The cleavage of a beta-keto ester is the most defining feature of this reaction, distinguishing it from other carbonyl condensations or cleavages.",
+  "raw_text": "{\n  \"family\": \"Retro-Claisen Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)C(C)C(=O)OCC\"\n    ],\n    \"product_smiles\": [\n      \"CCC(=O)C\",\n      \"CC(=O)OCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[OH-].[Na+]\"\n    ],\n    \"rationale\": \"This example shows the base-catalyzed cleavage of ethyl 2-methyl-3-oxopentanoate, a simple acyclic beta-keto ester, into two smaller carbonyl compounds: butan-2-one and ethyl acetate. This is a classic textbook illustration of the retro-Claisen reaction, demonstrating the characteristic C-C bond cleavage between the alpha and beta carbons relative to the ester carbonyl.\",\n    \"collision_avoidance_note\": \"The reaction is kept simple and acyclic, using small alkyl groups to avoid overlap with more complex named reactions involving aromatic rings, specific heterocyclic systems, or other functional groups. The cleavage of a beta-keto ester is the most defining feature of this reaction, distinguishing it from other carbonyl condensations or cleavages.\"\n  }\n}"
+}

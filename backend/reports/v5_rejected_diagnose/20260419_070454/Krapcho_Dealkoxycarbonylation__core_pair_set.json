@@ -1,0 +1,101 @@
+{
+  "family_name": "Krapcho Dealkoxycarbonylation",
+  "variant": "core_pair_set",
+  "summary": {
+    "benchmark_name": "CHEMLENS small benchmark v3",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 24,
+    "top1_accuracy": 0.8889,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "changed_cases": [
+    {
+      "case_id": "bv_340_exact_extract",
+      "expected_family": "Baeyer-Villiger Oxidation",
+      "baseline_top1_family": "Baeyer-Villiger Oxidation",
+      "current_top1_family": "Baeyer-Villiger Oxidation",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_top3_families": "Baeyer-Villiger Oxidation | Snieckus Directed Ortho Metalation | Lieben Haloform Reaction",
+      "current_top3_families": "Baeyer-Villiger Oxidation | Krapcho Dealkoxycarbonylation | Snieckus Directed Ortho Metalation",
+      "baseline_top3_scores": "7.678 | 0.171 | 0.159",
+      "current_top3_scores": "7.678 | 0.342 | 0.171",
+      "baseline_notes": "Exact extract-derived reaction query from extract_molecules.",
+      "current_notes": "Exact extract-derived reaction query from extract_molecules."
+    },
+    {
+      "case_id": "bv_341_exact_extract",
+      "expected_family": "Baeyer-Villiger Oxidation",
+      "baseline_top1_family": "Baeyer-Villiger Oxidation",
+      "current_top1_family": "Krapcho Dealkoxycarbonylation",
+      "baseline_top1_correct": true,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Baeyer-Villiger Oxidation | Snieckus Directed Ortho Metalation | Lieben Haloform Reaction",
+      "current_top3_families": "Krapcho Dealkoxycarbonylation | Baeyer-Villiger Oxidation | Snieckus Directed Ortho Metalation",
+      "baseline_top3_scores": "0.166 | 0.103 | 0.096",
+      "current_top3_scores": "0.342 | 0.166 | 0.103",
+      "baseline_notes": "Compact cage ketone -> lactone-like exact extract query.",
+      "current_notes": "Compact cage ketone -> lactone-like exact extract query."
+    },
+    {
+      "case_id": "buchner_403_exact_extract",
+      "expected_family": "Buchner Reaction",
+      "baseline_top1_family": "Buchner Reaction",
+      "current_top1_family": "Krapcho Dealkoxycarbonylation",
+      "baseline_top1_correct": true,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Buchner Reaction | Malonic Ester Synthesis | Cornforth Rearrangement",
+      "current_top3_families": "Krapcho Dealkoxycarbonylation | Buchner Reaction | Malonic Ester Synthesis",
+      "baseline_top3_scores": "1.249 | 1.187 | 1.129",
+      "current_top3_scores": "1.65 | 1.249 | 1.187",
+      "baseline_notes": "Exact extract query from Buchner example currently used as regression case.",
+      "current_notes": "Exact extract query from Buchner example currently used as regression case."
+    },
+    {
+      "case_id": "bv_342_exact_extract",
+      "expected_family": "Baeyer-Villiger Oxidation",
+      "baseline_top1_family": "Baeyer-Villiger Oxidation",
+      "current_top1_family": "Krapcho Dealkoxycarbonylation",
+      "baseline_top1_correct": true,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Baeyer-Villiger Oxidation | Eschenmoser-Tanabe Fragmentation | Bamford-Stevens-Shapiro Olefination",
+      "current_top3_families": "Krapcho Dealkoxycarbonylation | Baeyer-Villiger Oxidation | Eschenmoser-Tanabe Fragmentation",
+      "baseline_top3_scores": "0.174 | 0.136 | 0.107",
+      "current_top3_scores": "0.342 | 0.174 | 0.136",
+      "baseline_notes": "Third Baeyer-Villiger exact extract for family stability.",
+      "current_notes": "Third Baeyer-Villiger exact extract for family stability."
+    },
+    {
+      "case_id": "baker_346_exact_extract",
+      "expected_family": "Baker-Venkataraman Rearrangement",
+      "baseline_top1_family": "Baker-Venkataraman Rearrangement",
+      "current_top1_family": "Baker-Venkataraman Rearrangement",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_top3_families": "Baker-Venkataraman Rearrangement",
+      "current_top3_families": "Baker-Venkataraman Rearrangement | Krapcho Dealkoxycarbonylation",
+      "baseline_top3_scores": "1.052",
+      "current_top3_scores": "1.052 | 0.09",
+      "baseline_notes": "Second Baker-Venkataraman family extract.",
+      "current_notes": "Second Baker-Venkataraman family extract."
+    }
+  ],
+  "reaction_extract_ids": [
+    549
+  ],
+  "extract_molecule_ids": [
+    2247,
+    2248
+  ],
+  "insert_stats": {
+    "inserted_extract_rows": 1,
+    "inserted_molecule_rows": 2,
+    "total_changes_delta": 3
+  },
+  "identical_to_baseline": false
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Prins Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)=C\",\n      \"C=O\"\n    ],\n    \"product_smiles\": [\n      \"CC1(C)CCC(O)CO1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"B(F)(F)F.O(CC)CC\"\n    ],\n    \"rationale\": \"This reaction exemplifies the classic Prins reaction, specifically the Prins cyclization, which is a common and characteristic outcome. It involves the acid-catalyzed reaction of a simple alkene (isobutylene) with the simplest aldehyde (formaldehyde) to form a tetrahydropyran-4-ol derivative. This transformation clearly demonstrates the key bond formations: C-C bond formation between the alkene and the aldehyde carbonyl carbon, and C-O bond formation from the capture of the resulting carbocation by the carbonyl oxygen. The reactants are small, acyclic, and lack complex functional groups, making it a clear and unambiguous example.\",\n    \"collision_avoidance_note\": \"This example uses simple, non-aromatic, acyclic starting materials to avoid overlap with other named reactions. The formation of a tetrahydropyran ring is a hallmark of the Prins cyclization, distinguishing it from simple ene reactions (which would yield an allylic alcohol) or other aldehyde addition reactions. The choice of formaldehyde and isobutylene avoids functional groups that could trigger unrelated transformations like aldol condensations or Friedel-Crafts reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 453,
+    "candidatesTokenCount": 341,
+    "totalTokenCount": 835,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 453
+      }
+    ],
+    "thoughtsTokenCount": 41
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "Jc3jaeCyEOS50-kP77G1sAQ"
+}

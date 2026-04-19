@@ -1,0 +1,17 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "O=CC1(CCCC1)C2=CC=CC=C2"
+    ],
+    "product_smiles": [
+      "C1(CCCC1)C2=CC=CC=C2"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This example demonstrates the decarbonylation of a spirocyclic aldehyde, 1-phenylcyclopentanecarbaldehyde, to the corresponding alkane, phenylcyclopentane. The reaction cleanly removes the formyl group (-CHO) and replaces it with a hydrogen atom, which is a hallmark of the Tsuji-Wilkinson reaction. The use of a non-conjugated, sterically defined aldehyde highlights the specific utility of this reaction for complex molecule synthesis and avoids ambiguity with other carbonyl chemistries.",
+    "collision_avoidance_note": "The spirocyclic structure attached to the aldehyde is distinct from simple alkyl or aryl aldehydes, preventing trivial matches with general carbonyl reductions or decarbonylations. It specifically tests the removal of a formyl group from a quaternary carbon center, a common and valuable application of this named reaction.",
+    "reagents_text": "Tris(triphenylphosphine)rhodium(I) chloride (Wilkinson's catalyst)",
+    "conditions_text": "Heat, typically in a high-boiling solvent like benzonitrile or xylenes"
+  }
+}

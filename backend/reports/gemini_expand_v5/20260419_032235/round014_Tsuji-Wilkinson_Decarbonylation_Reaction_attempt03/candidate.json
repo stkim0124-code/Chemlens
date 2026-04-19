@@ -1,0 +1,15 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "substrates": [
+    "CCCCCCC=O"
+  ],
+  "products": [
+    "CCCCCCC"
+  ],
+  "reagents": [
+    "[Cl][Rh]([PH](c1ccccc1)(c1ccccc1)c1ccccc1)([PH](c1ccccc1)(c1ccccc1)c1ccccc1)[PH](c1ccccc1)(c1ccccc1)c1ccccc1"
+  ],
+  "rationale": "This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to the corresponding alkane (heptane) using Wilkinson's catalyst. This is a classic textbook example that clearly illustrates the deformylation of an aldehyde to an alkane, which is the core transformation of the Tsuji-Wilkinson decarbonylation. The use of a simple, saturated alkyl chain avoids ambiguity with other reaction families.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic aldehyde, avoiding aromatic rings which could trigger hydrodeformylation or other arene-related reactions. It also avoids unsaturated systems (alkenes, alkynes) which could undergo hydroformylation or other additions. The transformation is a clear C-C bond cleavage (deformylation), distinct from decarboxylation (loss of CO2) or deoxygenation (e.g., Wolff-Kishner, Clemmensen).",
+  "raw_text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh](P(c1ccccc1)(c1ccccc1)c1ccccc1)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to the corresponding alkane (heptane) using Wilkinson's catalyst. This is a classic textbook example that clearly illustrates the deformylation of an aldehyde to an alkane, which is the core transformation of the Tsuji-Wilkinson decarbonylation. The use of a simple, saturated alkyl chain avoids ambiguity with other reaction families.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde, avoiding aromatic rings which could trigger hydrodeformylation or other arene-related reactions. It also avoids unsaturated systems (alkenes, alkynes) which could undergo hydroformylation or other additions. The transformation is a clear C-C bond cleavage (deformylation), distinct from decarboxylation (loss of CO2) or deoxygenation (e.g., Wolff-Kishner, Clemmensen).\"\n  }\n}"
+}

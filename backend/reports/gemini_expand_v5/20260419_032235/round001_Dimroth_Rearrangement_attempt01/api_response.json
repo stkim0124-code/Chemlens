@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Dimroth Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"Nc1nccc(C)n1\"\n    ],\n    \"product_smiles\": [\n      \"CN1C=CN=C1N\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O.[Na+]\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Dimroth rearrangement, converting 5-amino-1-methyl-1,2,3-triazole to 1-methyl-5-(methylamino)-1,2,3-triazole. The reaction proceeds via a ring-opening to a diazo intermediate, followed by rotation and ring-closing, effectively translocating the exocyclic nitrogen into the ring and the endocyclic nitrogen out of the ring. This example uses a simple methyl group, avoiding complex or reactive substituents.\",\n    \"collision_avoidance_note\": \"The chosen example is a simple, acyclic-substituted triazole rearrangement, which is a hallmark of the Dimroth reaction. It avoids arenes, complex fused rings, or other functional groups that could be misidentified as other named reactions like the Cornforth rearrangement (which involves oxazoles) or general nucleophilic aromatic substitution. The transformation is a specific heteroatom migration within a heterocycle, making it distinct.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 449,
+    "candidatesTokenCount": 307,
+    "totalTokenCount": 814,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 449
+      }
+    ],
+    "thoughtsTokenCount": 58
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "M8zjaZHVF9O50-kPxvbdUA"
+}

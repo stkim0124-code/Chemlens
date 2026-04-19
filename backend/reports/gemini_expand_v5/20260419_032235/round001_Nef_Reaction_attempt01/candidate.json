@@ -1,0 +1,15 @@
+{
+  "family": "Nef Reaction",
+  "substrates": [
+    "CC(C)[N+](=O)[O-]"
+  ],
+  "products": [
+    "CC(C)=O"
+  ],
+  "reagents": [
+    "O.O=S(=O)(O)O"
+  ],
+  "rationale": "This reaction shows the classic conversion of a secondary nitroalkane (2-nitropropane) into a ketone (acetone) under acidic conditions (aqueous sulfuric acid), which is a quintessential textbook example of the Nef reaction. The reactants and products are simple, acyclic, and small, clearly illustrating the core transformation of a nitro group to a carbonyl group at a secondary carbon.",
+  "collision_avoidance_note": "The use of a simple aliphatic nitro compound (2-nitropropane) and a common mineral acid avoids complex functional groups, aromatic rings, or specialized reagents that could overlap with other named reactions. The transformation is a direct conversion of a nitro group to a carbonyl, which is highly specific to the Nef reaction and its variants, minimizing potential for collision with unrelated reaction families.",
+  "raw_text": "{\n  \"family\": \"Nef Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)[N+](=O)[O-]\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O.O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This reaction shows the classic conversion of a secondary nitroalkane (2-nitropropane) into a ketone (acetone) under acidic conditions (aqueous sulfuric acid), which is a quintessential textbook example of the Nef reaction. The reactants and products are simple, acyclic, and small, clearly illustrating the core transformation of a nitro group to a carbonyl group at a secondary carbon.\",\n    \"collision_avoidance_note\": \"The use of a simple aliphatic nitro compound (2-nitropropane) and a common mineral acid avoids complex functional groups, aromatic rings, or specialized reagents that could overlap with other named reactions. The transformation is a direct conversion of a nitro group to a carbonyl, which is highly specific to the Nef reaction and its variants, minimizing potential for collision with unrelated reaction families.\"\n  }\n}"
+}

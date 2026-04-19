@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Swern Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"O=C(Cl)C(=O)Cl\",\n      \"CCN(CC)CC\"\n    ],\n    \"rationale\": \"This reaction shows the oxidation of a simple, acyclic primary alcohol (1-butanol) to the corresponding aldehyde (butanal). This is a classic textbook example of the Swern oxidation, utilizing the standard reagent combination of DMSO, oxalyl chloride, and triethylamine. The choice of a simple aliphatic substrate avoids potential side reactions or ambiguities that could arise from more complex structures.\",\n    \"collision_avoidance_note\": \"The substrate is a simple primary aliphatic alcohol, which is the most common and fundamental substrate for this reaction. This avoids complex functional groups, aromatic rings, or strained systems that might trigger other named reaction queries (e.g., oxidations of benzylic alcohols, which are common in many other named oxidations). The product is a simple aldehyde, clearly indicating an oxidation without C-C bond formation or rearrangement.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 403,
+    "candidatesTokenCount": 284,
+    "totalTokenCount": 787,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 403
+      }
+    ],
+    "thoughtsTokenCount": 100
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "v9rjaYC1FoeerfcPq5SvqA0"
+}

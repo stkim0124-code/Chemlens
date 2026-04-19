@@ -1,0 +1,51 @@
+alias,canonical_name,entity_type
+HNO2,nitrous acid,reagent
+AcOH,acetic acid,solvent
+Na2S2O4,sodium dithionite,reducing_agent
+Pd/C,palladium on carbon,catalyst
+HCl,hydrogen chloride,acid
+NaNO2,sodium nitrite,reagent
+NaOAc,sodium acetate,base
+MeMgBr,methylmagnesium bromide,organometallic_reagent
+Cbz,carbobenzyloxy,protecting_group
+Et2O,diethyl ether,solvent
+MeOH,methanol,solvent
+KOH,potassium hydroxide,base
+Ag2CO3,silver carbonate,promoter
+AgOTf,silver trifluoromethanesulfonate,promoter
+PTC,phase-transfer catalyst,catalyst_system
+EtOH,ethanol,solvent
+PMBO,para-methoxybenzyloxy,protecting_group
+DTBP,"2,6-di-tert-butylpyridine",base
+4A MS,4 Å molecular sieves,additive
+Fmoc,9-fluorenylmethoxycarbonyl,protecting_group
+DCE,"1,2-dichloroethane",solvent
+NaBH3CN,sodium cyanoborohydride,reducing_agent
+DCM,dichloromethane,solvent
+CO2,carbon dioxide,gas
+NaOH,sodium hydroxide,base
+CsOH,cesium hydroxide,base
+K2CO3,potassium carbonate,base
+KHCO3,potassium bicarbonate,base
+DMA,"N,N-dimethylacetamide",solvent
+POCl3,phosphorus oxychloride,reagent
+HC(OEt)3,triethyl orthoformate,reagent
+DMSO,dimethyl sulfoxide,solvent
+AgOTs,silver p-toluenesulfonate,promoter
+Na2CO3,sodium carbonate,base
+AgBF4,silver tetrafluoroborate,promoter
+TMANO,trimethylamine N-oxide,oxidant
+DBU,"1,8-diazabicyclo[5.4.0]undec-7-ene",base
+TMS,trimethylsilyl,protecting_group
+TBS,tert-butyldimethylsilyl,protecting_group
+Et3N,triethylamine,base
+NaCN,sodium cyanide,nucleophilic_salt
+KCN,potassium cyanide,nucleophilic_salt
+LiCl,lithium chloride,salt
+HMPT,hexamethylphosphoramide,solvent
+NaCl,sodium chloride,salt
+MeI,methyl iodide,alkylating_agent
+BuLi,n-butyllithium,base
+Pd(OAc)2,palladium(II) acetate,catalyst
+PhCO2H,benzoic acid,acid
+H2O,water,solvent

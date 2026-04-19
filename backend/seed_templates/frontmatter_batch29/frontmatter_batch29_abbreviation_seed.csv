@@ -1,0 +1,33 @@
+alias,canonical_name,entity_type
+Tf2O,triflic anhydride,reagent
+TMSOTf,trimethylsilyl trifluoromethanesulfonate,reagent
+TfOH,trifluoromethanesulfonic acid,reagent
+DTBMP,"2,6-di-tert-butyl-4-methylpyridine",base
+TTBP,"2,4,6-tri-tert-butylpyridine",base
+mCPBA,meta-chloroperoxybenzoic acid,oxidant
+MMPP,magnesium monoperoxyphthalate,oxidant
+ECN,ethyl cyanide,solvent
+4A MS,4 Å molecular sieves,additive
+BINOL,"1,1'-bi-2-naphthol",ligand
+Ti(O-i-Pr)4,titanium tetraisopropoxide,catalyst
+Ti(Oi-Pr)4,titanium tetraisopropoxide,catalyst
+TiCl2(O-i-Pr)2,dichlorodiisopropoxytitanium,catalyst
+CH2Cl2,dichloromethane,solvent
+DCC,"N,N'-dicyclohexylcarbodiimide",coupling_reagent
+DMAP,4-dimethylaminopyridine,catalyst
+DMAP·HCl,4-dimethylaminopyridine hydrochloride,additive
+EDCI,1-ethyl-3-(3-dimethylaminopropyl)carbodiimide,coupling_reagent
+EDCI·HCl,1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride,coupling_reagent
+AIBN,"2,2'-azobisisobutyronitrile",radical_initiator
+Bu3Sn,tributylstannyl,organotin_fragment
+SePh,phenylselenyl,leaving_group
+Et3N,triethylamine,base
+DMF,"N,N-dimethylformamide",solvent
+OTf,trifluoromethanesulfonate,leaving_group
+OTMS,trimethylsilyloxy,protecting_group
+PMB,para-methoxybenzyl,protecting_group
+OPMB,para-methoxybenzyloxy,protecting_group
+OAc,acetate,protecting_group
+TBS,tert-butyldimethylsilyl,protecting_group
+TIPS,triisopropylsilyl,protecting_group
+Cbz,carbobenzyloxy,protecting_group

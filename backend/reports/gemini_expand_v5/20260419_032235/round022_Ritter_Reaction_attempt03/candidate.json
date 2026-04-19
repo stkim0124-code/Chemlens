@@ -1,0 +1,16 @@
+{
+  "family": "Ritter Reaction",
+  "substrates": [
+    "CC(C)(C)O",
+    "CC#N"
+  ],
+  "products": [
+    "CC(=O)NC(C)(C)C"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This reaction is a quintessential textbook example of the Ritter reaction, demonstrating the formation of a stable tert-butyl carbocation from tert-butanol under strong acid (H2SO4) conditions. This carbocation is then trapped by the simplest liquid nitrile, acetonitrile, to form a nitrilium ion intermediate, which upon aqueous workup hydrolyzes to the corresponding N-tert-butylacetamide. All reactants and the product are simple, acyclic, and commercially available, making this a clear and unambiguous representation of the reaction family.",
+  "collision_avoidance_note": "This example uses simple, acyclic, saturated aliphatic compounds (tert-butanol and acetonitrile) to avoid overlap with other named reactions. It avoids arenes (Friedel-Crafts), alkenes (Prins, Markovnikov addition), carbonyls (aldol, etc.), or other complex functional groups that could trigger incorrect family classifications. The core transformation is clearly the C-N bond formation between a carbocation source and a nitrile, followed by hydrolysis to an amide, which is the defining feature of the Ritter reaction.",
+  "raw_text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This reaction is a quintessential textbook example of the Ritter reaction, demonstrating the formation of a stable tert-butyl carbocation from tert-butanol under strong acid (H2SO4) conditions. This carbocation is then trapped by the simplest liquid nitrile, acetonitrile, to form a nitrilium ion intermediate, which upon aqueous workup hydrolyzes to the corresponding N-tert-butylacetamide. All reactants and the product are simple, acyclic, and commercially available, making this a clear and unambiguous representation of the reaction family.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic, saturated aliphatic compounds (tert-butanol and acetonitrile) to avoid overlap with other named reactions. It avoids arenes (Friedel-Crafts), alkenes (Prins, Markovnikov addition), carbonyls (aldol, etc.), or other complex functional groups that could trigger incorrect family classifications. The core transformation is clearly the C-N bond formation between a carbocation source and a nitrile, followed by hydrolysis to an amide, which is the defining feature of the Ritter reaction.\"\n  }\n}"
+}

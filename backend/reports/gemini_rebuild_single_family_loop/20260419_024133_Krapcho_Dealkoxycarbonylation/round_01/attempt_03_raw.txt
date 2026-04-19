@@ -1,0 +1,12 @@
+{
+  "substrate_smiles": [
+    "CCOC(=O)C(C#N)c1ccccc1"
+  ],
+  "product_smiles": [
+    "NCCc1ccccc1"
+  ],
+  "optional_reagent_smiles": [
+    "[Na+]C#N",
+    "O"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Schwartz Hydrozirconation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCCC=C\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCCCCCC(=O)O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[ZrH](C1C=CC=C1)C2C=CC=C2\",\n      \"CO\"\n    ],\n    \"rationale\": \"This example shows the hydrozirconation of a terminal alkene (1-decene) with Schwartz's reagent (Cp2ZrHCl) to form a terminal alkylzirconium intermediate. This intermediate is then trapped by carbon monoxide (CO) insertion followed by acidic workup (implied) to yield the corresponding carboxylic acid (undecanoic acid). This sequence demonstrates the key steps of the reaction: syn-addition of the Zr-H bond across the double bond (anti-Markovnikov) and the subsequent functionalization of the resulting organometallic species, which is a hallmark of this reaction's utility.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, acyclic terminal alkene to avoid motifs common in other named reactions. The transformation focuses specifically on the hydrozirconation-carbonylation sequence, which is a classic application of the Schwartz reagent. This avoids confusion with simple hydroboration, hydrogenation, or other hydrofunctionalization reactions by explicitly showing the formation and trapping of the organozirconium intermediate.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 441,
+    "candidatesTokenCount": 331,
+    "totalTokenCount": 841,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 441
+      }
+    ],
+    "thoughtsTokenCount": 69
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "YtTjaaT_Cc6Vvr0PoryfuQM"
+}

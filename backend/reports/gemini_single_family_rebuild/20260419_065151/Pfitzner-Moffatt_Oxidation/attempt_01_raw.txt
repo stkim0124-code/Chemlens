@@ -1,0 +1,17 @@
+{
+  "family": "Pfitzner-Moffatt Oxidation",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "C1CCC(CC1)C(C)O"
+    ],
+    "product_smiles": [
+      "C1CCC(CC1)C(=O)C"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This example demonstrates the Pfitzner-Moffatt oxidation of a secondary alcohol (1-cyclohexylethanol) to the corresponding ketone (acetylcyclohexane). The substrate is simple, acyclic on the reactive center but contains a common cycloalkane, making it specific enough to avoid being a generic seed. The reaction is a classic application of this named reaction, using DMSO activated by a carbodiimide (DCC) in the presence of a mild acid catalyst.",
+    "collision_avoidance_note": "The substrate is a non-trivial secondary alcohol, 1-cyclohexylethanol. This specific structure is chosen to be distinct from overly simple examples like propan-2-ol or cyclohexanol, and also distinct from complex natural product fragments, thus reducing the likelihood of collision with generic oxidation seeds or highly specific literature examples.",
+    "reagents_text": "Dimethyl sulfoxide (DMSO), Dicyclohexylcarbodiimide (DCC), Pyridinium trifluoroacetate",
+    "conditions_text": "Room temperature, Dichloromethane (DCM) or Benzene as solvent"
+  }
+}

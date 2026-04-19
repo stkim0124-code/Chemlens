@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction represents the classical Pinner reaction, showing the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and an alcohol (ethanol) under anhydrous acidic conditions (HCl). This is the quintessential first step of the Pinner synthesis and serves as a gateway to esters or amidines upon subsequent hydrolysis or aminolysis.\",\n    \"collision_avoidance_note\": \"The reactants are simple, acyclic, and lack complex functional groups. The product is the characteristic imino ether salt, which is specific to the Pinner reaction. This avoids overlap with other nitrile transformations like the Stephen reduction (which uses SnCl2/HCl to form aldehydes) or Blaise reaction (which involves organometallics and leads to beta-ketoesters).\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 441,
+    "candidatesTokenCount": 261,
+    "totalTokenCount": 762,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 441
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "9NTjab26DIuz1e8PwZCHyQs"
+}

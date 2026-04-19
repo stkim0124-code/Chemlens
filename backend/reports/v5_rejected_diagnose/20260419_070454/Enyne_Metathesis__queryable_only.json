@@ -1,0 +1,60 @@
+{
+  "family_name": "Enyne Metathesis",
+  "variant": "queryable_only",
+  "summary": {
+    "benchmark_name": "CHEMLENS small benchmark v3",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 25,
+    "top1_accuracy": 0.9259,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "changed_cases": [
+    {
+      "case_id": "barton_radical_rxn_353_exact_extract",
+      "expected_family": "Barton Radical Decarboxylation Reaction",
+      "baseline_top1_family": "Barton Radical Decarboxylation Reaction",
+      "current_top1_family": "Enyne Metathesis",
+      "baseline_top1_correct": true,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Barton Radical Decarboxylation Reaction | Jones Oxidation/Oxidation of Alcohols by Chromium Reagents | Bamford-Stevens-Shapiro Olefination",
+      "current_top3_families": "Enyne Metathesis | Barton Radical Decarboxylation Reaction | Jones Oxidation/Oxidation of Alcohols by Chromium Reagents",
+      "baseline_top3_scores": "0.344 | 0.273 | 0.258",
+      "current_top3_scores": "1.7 | 0.344 | 0.273",
+      "baseline_notes": "Named family variant using explicit Reaction suffix.",
+      "current_notes": "Named family variant using explicit Reaction suffix."
+    },
+    {
+      "case_id": "barton_mccombie_359_boundary_extract",
+      "expected_family": "Barton-Mccombie Radical Deoxygenation Reaction",
+      "baseline_top1_family": "Barton Radical Decarboxylation Reaction",
+      "current_top1_family": "Enyne Metathesis",
+      "baseline_top1_correct": true,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Barton Radical Decarboxylation Reaction | Jones Oxidation/Oxidation of Alcohols by Chromium Reagents | Bamford-Stevens-Shapiro Olefination",
+      "current_top3_families": "Enyne Metathesis | Barton Radical Decarboxylation Reaction | Jones Oxidation/Oxidation of Alcohols by Chromium Reagents",
+      "baseline_top3_scores": "0.344 | 0.273 | 0.258",
+      "current_top3_scores": "1.7 | 0.344 | 0.273",
+      "baseline_notes": "Boundary case: deoxygenation-like transformation that currently retrieves Barton family neighbor first.",
+      "current_notes": "Boundary case: deoxygenation-like transformation that currently retrieves Barton family neighbor first."
+    }
+  ],
+  "reaction_extract_ids": [
+    504
+  ],
+  "extract_molecule_ids": [
+    2027,
+    2028,
+    2029
+  ],
+  "insert_stats": {
+    "inserted_extract_rows": 1,
+    "inserted_molecule_rows": 3,
+    "total_changes_delta": 4
+  },
+  "identical_to_baseline": false
+}

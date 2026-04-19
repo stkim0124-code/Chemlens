@@ -1,0 +1,151 @@
+{
+  "family_name": "Hofmann-Loffler-Freytag Reaction",
+  "rejected_reason": "top1 regression: baseline=1.0000 current=0.9259",
+  "benchmark_top1_after_merge": 0.9259,
+  "benchmark_top3_after_merge": 1.0,
+  "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_066_Hofmann-Loffler-Freytag_Reaction.json",
+  "reaction_extract_ids_from_rejected_json": [
+    530
+  ],
+  "extract_molecule_ids_from_rejected_json": [
+    2153,
+    2154,
+    2155,
+    2156,
+    2157,
+    2158
+  ],
+  "diagnose_changed_case_count": 2,
+  "diagnose_first_changed_case": "barton_radical_rxn_353_exact_extract",
+  "diagnose_first_changed_top1": "Hofmann-Loffler-Freytag Reaction",
+  "diagnose_cluster": "barton",
+  "canonical_extract_count": 0,
+  "canonical_molecule_count": 0,
+  "stage_extract_count": 1,
+  "stage_molecule_count": 6,
+  "stage_only_extract_ids": [
+    530
+  ],
+  "stage_seed_extracts": [
+    {
+      "id": 530,
+      "scheme_candidate_id": 1,
+      "extract_kind": "canonical_overview",
+      "reactants_text": null,
+      "products_text": null,
+      "intermediates_text": null,
+      "reagents_text": null,
+      "parse_status": "gemini_auto_seed",
+      "promote_decision": "promote",
+      "rejection_reason": null
+    }
+  ],
+  "stage_seed_molecules": [
+    {
+      "id": 2153,
+      "extract_id": 530,
+      "role": "reactant",
+      "smiles": "CCCCN(C)Cl",
+      "quality_tier": 1,
+      "queryable": 1,
+      "source_field": "reactant",
+      "normalized_text": null,
+      "structure_source": "gemini_auto_seed",
+      "rdkit": {
+        "rdkit_available": true,
+        "parse_ok": true,
+        "sanitize_ok": true,
+        "canonical_smiles": "CCCCN(C)Cl"
+      }
+    },
+    {
+      "id": 2154,
+      "extract_id": 530,
+      "role": "product",
+      "smiles": "CN1CCCC1",
+      "quality_tier": 1,
+      "queryable": 1,
+      "source_field": "product",
+      "normalized_text": null,
+      "structure_source": "gemini_auto_seed",
+      "rdkit": {
+        "rdkit_available": true,
+        "parse_ok": true,
+        "sanitize_ok": true,
+        "canonical_smiles": "CN1CCCC1"
+      }
+    },
+    {
+      "id": 2155,
+      "extract_id": 530,
+      "role": "reagent",
+      "smiles": "O=S(=O)(O)O",
+      "quality_tier": 1,
+      "queryable": 0,
+      "source_field": "reagent",
+      "normalized_text": null,
+      "structure_source": "gemini_auto_seed",
+      "rdkit": {
+        "rdkit_available": true,
+        "parse_ok": true,
+        "sanitize_ok": true,
+        "canonical_smiles": "O=S(=O)(O)O"
+      }
+    },
+    {
+      "id": 2156,
+      "extract_id": 530,
+      "role": "reagent",
+      "smiles": "[OH-]",
+      "quality_tier": 1,
+      "queryable": 0,
+      "source_field": "reagent",
+      "normalized_text": null,
+      "structure_source": "gemini_auto_seed",
+      "rdkit": {
+        "rdkit_available": true,
+        "parse_ok": true,
+        "sanitize_ok": true,
+        "canonical_smiles": "[OH-]"
+      }
+    },
+    {
+      "id": 2157,
+      "extract_id": 530,
+      "role": "intermediate",
+      "smiles": "[CH2]CCCNC",
+      "quality_tier": 1,
+      "queryable": 0,
+      "source_field": "intermediate",
+      "normalized_text": null,
+      "structure_source": "gemini_auto_seed",
+      "rdkit": {
+        "rdkit_available": true,
+        "parse_ok": true,
+        "sanitize_ok": true,
+        "canonical_smiles": "[CH2]CCCNC"
+      }
+    },
+    {
+      "id": 2158,
+      "extract_id": 530,
+      "role": "intermediate",
+      "smiles": "CNCCCCCl",
+      "quality_tier": 1,
+      "queryable": 0,
+      "source_field": "intermediate",
+      "normalized_text": null,
+      "structure_source": "gemini_auto_seed",
+      "rdkit": {
+        "rdkit_available": true,
+        "parse_ok": true,
+        "sanitize_ok": true,
+        "canonical_smiles": "CNCCCCCl"
+      }
+    }
+  ],
+  "suspicion_flags": [
+    "explicit_intermediate_species_present"
+  ],
+  "recommendation": "likely_needs_single_smiles_exposure_review_or_seed_replacement"
+}

@@ -1,0 +1,16 @@
+{
+  "family": "Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)",
+  "substrates": [
+    "CC=[CH][Sn]([CH3])([CH3])[CH3]",
+    "Ic1ccccc1"
+  ],
+  "products": [
+    "CC=Cc1ccccc1"
+  ],
+  "reagents": [
+    "[Pd]"
+  ],
+  "rationale": "This reaction represents a classic Stille cross-coupling between an alkenylstannane (tributyl(vinyl)stannane is also common, but trimethyl is simpler) and an aryl halide (iodobenzene). The coupling of sp2-hybridized carbons (alkenyl and aryl) is a hallmark of this reaction. The reactants are simple, acyclic where possible, and lack complex functional groups, making it a clear and unambiguous example of the core transformation.",
+  "collision_avoidance_note": "The use of a simple alkenylstannane and iodobenzene avoids complex aromatic systems that could be mistaken for other cross-coupling reactions like Suzuki or Heck. The organostannane is the defining feature, distinguishing it from boronic acids (Suzuki), organozincs (Negishi), or alkenes (Heck). The reactants are kept simple to avoid motifs associated with other named reactions.",
+  "raw_text": "{\n  \"family\": \"Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC=C[Sn](C)(C)C\",\n      \"c1ccc(I)cc1\"\n    ],\n    \"product_smiles\": [\n      \"CC=Cc1ccccc1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Pd]\"\n    ],\n    \"rationale\": \"This reaction represents a classic Stille cross-coupling between an alkenylstannane (tributyl(vinyl)stannane is also common, but trimethyl is simpler) and an aryl halide (iodobenzene). The coupling of sp2-hybridized carbons (alkenyl and aryl) is a hallmark of this reaction. The reactants are simple, acyclic where possible, and lack complex functional groups, making it a clear and unambiguous example of the core transformation.\",\n    \"collision_avoidance_note\": \"The use of a simple alkenylstannane and iodobenzene avoids complex aromatic systems that could be mistaken for other cross-coupling reactions like Suzuki or Heck. The organostannane is the defining feature, distinguishing it from boronic acids (Suzuki), organozincs (Negishi), or alkenes (Heck). The reactants are kept simple to avoid motifs associated with other named reactions.\"\n  }\n}"
+}

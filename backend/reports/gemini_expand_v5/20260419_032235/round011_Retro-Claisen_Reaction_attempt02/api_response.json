@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Retro-Claisen Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)C(C)C(=O)OCC\"\n    ],\n    \"product_smiles\": [\n      \"CCC(=O)C\",\n      \"CCOC(=O)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[OH-].[Na+]\",\n      \"O\"\n    ],\n    \"rationale\": \"This example shows the base-catalyzed cleavage of ethyl 2-methyl-3-oxopentanoate, a simple acyclic beta-keto ester. The reaction proceeds via nucleophilic attack of hydroxide at the ketone carbonyl, followed by C-C bond cleavage to yield the enolate of butan-2-one and ethyl acetate. This is a classic textbook illustration of the retro-Claisen reaction, demonstrating the characteristic cleavage of a 1,3-dicarbonyl system into two simpler carbonyl compounds.\",\n    \"collision_avoidance_note\": \"The chosen substrate is a simple, acyclic beta-keto ester with minimal functional groups to avoid overlap with other named reactions. It avoids aromatic rings, complex stereochemistry, or other reactive motifs that could trigger unrelated reaction families. The products are simple, common ketones and esters, clearly illustrating the cleavage nature of the reaction without ambiguity.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 390,
+    "candidatesTokenCount": 298,
+    "totalTokenCount": 813,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 390
+      }
+    ],
+    "thoughtsTokenCount": 125
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "CtTjaea7B8eE1e8P7_2p8Qc"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Krapcho Dealkoxycarbonylation (Krapcho Reaction)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCOC(=O)C(C)C(=O)OCC\"\n    ],\n    \"product_smiles\": [\n      \"CCC(=O)OCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Cl-].[Na+]\"\n    ],\n    \"rationale\": \"This reaction shows the selective dealkoxycarbonylation of a simple, acyclic malonic ester derivative (diethyl 2-methylmalonate) to form the corresponding monoester (ethyl propanoate). The presence of a nucleophilic halide (chloride) in a polar aprotic solvent (implied, often DMSO) is characteristic of the Krapcho reaction. This example is a classic textbook case, demonstrating the core transformation without unnecessary complexity.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic malonic ester, which is a hallmark substrate for the Krapcho reaction. It avoids beta-keto esters which could be confused with general decarboxylation reactions following saponification and acidification. It also avoids complex ring systems or other functional groups that might trigger unrelated named reaction queries. The transformation is clearly a dealkoxycarbonylation, not a simple decarboxylation, saponification, or transesterification.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 383,
+    "candidatesTokenCount": 302,
+    "totalTokenCount": 755,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 383
+      }
+    ],
+    "thoughtsTokenCount": 70
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "HNPjaeHcHrD21e8PtZqAmQw"
+}

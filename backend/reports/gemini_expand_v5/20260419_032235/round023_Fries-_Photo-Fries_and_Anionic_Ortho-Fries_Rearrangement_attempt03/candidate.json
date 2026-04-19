@@ -1,0 +1,15 @@
+{
+  "family": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+  "substrates": [
+    "CC(=O)Oc1ccccc1"
+  ],
+  "products": [
+    "CC(=O)c1ccccc1O"
+  ],
+  "reagents": [
+    "[Cl][Al]([Cl])[Cl]"
+  ],
+  "rationale": "This is the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone, a textbook example. It clearly demonstrates the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). The reactants and products are simple, acyclic where possible, and unambiguously represent the core transformation of this reaction family.",
+  "collision_avoidance_note": "The structure is kept simple to avoid overlap with other named reactions. Phenyl acetate is a fundamental starting material. The product is a simple hydroxy aryl ketone. This specific transformation is unlikely to be a primary example for other named reactions like Friedel-Crafts acylation (which typically involves an arene and an acyl halide/anhydride) or Claisen rearrangement (which involves allyl phenyl ethers).",
+  "raw_text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Al](Cl)Cl\"\n    ],\n    \"rationale\": \"This is the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone, a textbook example. It clearly demonstrates the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). The reactants and products are simple, acyclic where possible, and unambiguously represent the core transformation of this reaction family.\",\n    \"collision_avoidance_note\": \"The structure is kept simple to avoid overlap with other named reactions. Phenyl acetate is a fundamental starting material. The product is a simple hydroxy aryl ketone. This specific transformation is unlikely to be a primary example for other named reactions like Friedel-Crafts acylation (which typically involves an arene and an acyl halide/anhydride) or Claisen rearrangement (which involves allyl phenyl ethers).\"\n  }\n}"
+}

@@ -1,0 +1,21 @@
+{"round": 1, "family": "Claisen Rearrangement", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Cope Rearrangement", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Aldol Reaction", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Wittig Reaction", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Aza-Cope Rearrangement", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Diels-Alder Cycloaddition", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Favorskii Rearrangement", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Japp-Klingemann Reaction", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Knorr Pyrrole Synthesis", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Ley Oxidation", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Mannich Reaction", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Ciamician-Dennstedt Rearrangement", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Corey-Nicolaou Macrolactonization", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Hajos-Parrish Reaction", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Quasi-Favorskii Rearrangement", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Regitz Diazo Transfer", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Acetoacetic Ester Synthesis", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Acyloin Condensation", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Alder (Ene) Reaction (Hydro-Allyl Addition)", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Alder (ene) Reaction", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}
+{"round": 1, "family": "Alkene (Olefin) Metathesis", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}

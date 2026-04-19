@@ -1,0 +1,16 @@
+{
+  "family": "Fleming-Tamao Oxidation",
+  "substrates": [
+    "CC[Si](C)(C)C"
+  ],
+  "products": [
+    "CCO"
+  ],
+  "reagents": [
+    "CC(=O)OOC(C)=O",
+    "CC(=O)O"
+  ],
+  "rationale": "This example shows the oxidation of a simple, acyclic alkylsilane (ethyldimethylsilane) to the corresponding primary alcohol (ethanol). This is the core transformation of the Fleming-Tamao oxidation, converting a C-Si bond to a C-OH bond. The reagents shown, peracetic acid and acetic acid, are classic conditions for this transformation. The use of a simple ethyl group avoids complex stereochemistry while clearly demonstrating the reaction's outcome.",
+  "collision_avoidance_note": "The substrate is a simple alkylsilane, which is highly specific to this reaction family and avoids overlap with reactions involving arenes, carbonyls, or other common functional groups. The transformation is a direct C-Si to C-OH conversion, which is the defining feature of the Fleming-Tamao oxidation, preventing confusion with other oxidation reactions like Baeyer-Villiger or hydroboration-oxidation.",
+  "raw_text": "{\n  \"family\": \"Fleming-Tamao Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC[Si](C)(C)C\"\n    ],\n    \"product_smiles\": [\n      \"CCO\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CC(=O)OOC(C)=O\",\n      \"O=C(O)C\"\n    ],\n    \"rationale\": \"This example shows the oxidation of a simple, acyclic alkylsilane (ethyldimethylsilane) to the corresponding primary alcohol (ethanol). This is the core transformation of the Fleming-Tamao oxidation, converting a C-Si bond to a C-OH bond. The reagents shown, peracetic acid and acetic acid, are classic conditions for this transformation. The use of a simple ethyl group avoids complex stereochemistry while clearly demonstrating the reaction's outcome.\",\n    \"collision_avoidance_note\": \"The substrate is a simple alkylsilane, which is highly specific to this reaction family and avoids overlap with reactions involving arenes, carbonyls, or other common functional groups. The transformation is a direct C-Si to C-OH conversion, which is the defining feature of the Fleming-Tamao oxidation, preventing confusion with other oxidation reactions like Baeyer-Villiger or hydroboration-oxidation.\"\n  }\n}"
+}

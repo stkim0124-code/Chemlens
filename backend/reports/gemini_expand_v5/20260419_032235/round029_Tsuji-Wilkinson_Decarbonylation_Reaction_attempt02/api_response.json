@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple, saturated aliphatic aldehyde (octanal) to its corresponding alkane (heptane) using Wilkinson's catalyst. This is a classic and straightforward example of the Tsuji-Wilkinson decarbonylation, clearly illustrating the conversion of an R-CHO group to an R-H group. The acyclic, saturated substrate avoids ambiguity with other named reactions involving aromatic rings, unsaturation, or complex ring systems.\",\n    \"collision_avoidance_note\": \"The use of a simple, long-chain aliphatic aldehyde avoids overlap with reactions involving aromatic aldehydes (e.g., certain condensations or reductions), alpha,beta-unsaturated aldehydes (e.g., Michael additions), or acyl halides (which can undergo different transformations). The product is a simple alkane, minimizing potential collisions with functional group interconversion reactions. The explicit inclusion of Wilkinson's catalyst as a reagent helps to specifically target this named reaction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 440,
+    "candidatesTokenCount": 339,
+    "totalTokenCount": 859,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 440
+      }
+    ],
+    "thoughtsTokenCount": 80
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "8uXjac_SH5aXvr0P6eSckAQ"
+}

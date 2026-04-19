@@ -1,0 +1,17 @@
+{
+  "family": "Ritter Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "CC(C)(C)C1(O)CCCCC1"
+    ],
+    "product_smiles": [
+      "CC(C)(C)C1(NC(=O)C)CCCCC1"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This example demonstrates the classic Ritter reaction using a tertiary alcohol as the carbocation precursor. The 1-tert-butylcyclohexan-1-ol substrate readily forms a stable tertiary carbocation under strong acidic conditions. This carbocation is then trapped by the nitrogen lone pair of acetonitrile, a common nitrile used in this reaction. Subsequent hydrolysis of the intermediate nitrilium ion yields the final N-substituted amide product, N-(1-tert-butylcyclohexyl)acetamide. The transformation is unambiguous and highlights the key C-N bond formation step central to the Ritter reaction.",
+    "collision_avoidance_note": "The substrate is a tertiary alcohol, a classic precursor for the Ritter reaction, and the product is a clear N-alkyl amide. The use of a non-aromatic, sterically hindered alcohol avoids potential confusion with reactions like the Pinner reaction (which involves imidates from nitriles and alcohols) or the Houben-Hoesch reaction (which involves electrophilic aromatic substitution with nitriles). The specific cyclohexyl topology is distinct and avoids simple acyclic examples.",
+    "reagents_text": "acetonitrile, sulfuric acid",
+    "conditions_text": "Concentrated acid, often with a solvent like acetic acid or neat nitrile, at temperatures ranging from 0 C to room temperature."
+  }
+}

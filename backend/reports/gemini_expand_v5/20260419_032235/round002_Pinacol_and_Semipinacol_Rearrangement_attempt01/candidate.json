@@ -1,0 +1,15 @@
+{
+  "family": "Pinacol and Semipinacol Rearrangement",
+  "substrates": [
+    "CC(C)(O)C(C)(C)O"
+  ],
+  "products": [
+    "CC(=O)C(C)(C)C"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This is the prototypical Pinacol rearrangement, using pinacol (2,3-dimethylbutane-2,3-diol) itself as the substrate. Under acidic conditions (e.g., sulfuric acid), one hydroxyl group is protonated and leaves as water, forming a tertiary carbocation. A methyl group then undergoes a [1,2]-shift to the adjacent carbocation center, and deprotonation of the remaining hydroxyl group yields the product, pinacolone (3,3-dimethyl-2-butanone). This example is the simplest and most direct illustration of the reaction, defining the entire class.",
+  "collision_avoidance_note": "This example uses the simplest possible acyclic, aliphatic substrate (pinacol) to avoid overlap with other named reactions. It avoids rings (preventing confusion with Tiffeneau-Demjanov or other ring expansions), arenes (avoiding Wagner-Meerwein rearrangements in complex systems), and other functional groups. The simplicity of the tetramethyl-substituted diol is highly specific to the Pinacol rearrangement.",
+  "raw_text": "{\n  \"family\": \"Pinacol and Semipinacol Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(O)C(C)(C)O\"\n    ],\n    \"product_smiles\": [\n      \"CC(C)(C)C(=O)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is the prototypical Pinacol rearrangement, using pinacol (2,3-dimethylbutane-2,3-diol) itself as the substrate. Under acidic conditions (e.g., sulfuric acid), one hydroxyl group is protonated and leaves as water, forming a tertiary carbocation. A methyl group then undergoes a [1,2]-shift to the adjacent carbocation center, and deprotonation of the remaining hydroxyl group yields the product, pinacolone (3,3-dimethyl-2-butanone). This example is the simplest and most direct illustration of the reaction, defining the entire class.\",\n    \"collision_avoidance_note\": \"This example uses the simplest possible acyclic, aliphatic substrate (pinacol) to avoid overlap with other named reactions. It avoids rings (preventing confusion with Tiffeneau-Demjanov or other ring expansions), arenes (avoiding Wagner-Meerwein rearrangements in complex systems), and other functional groups. The simplicity of the tetramethyl-substituted diol is highly specific to the Pinacol rearrangement.\"\n  }\n}"
+}

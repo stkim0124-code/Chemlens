@@ -1,0 +1,47 @@
+{
+  "db": "C:\\chemlens\\backend\\app\\labint_gemini_autorun_continuous.db",
+  "manual_page_knowledge": 809,
+  "manual_page_entities": 1862,
+  "distinct_pages": 809,
+  "page_range": [
+    2,
+    810
+  ],
+  "p502_553_records": 52,
+  "p502_title": "VIII. APPENDIX",
+  "reaction_family_patterns": 291,
+  "abbreviation_aliases": 1038,
+  "reaction_extracts": 291,
+  "extract_molecules_total": 1856,
+  "queryable": 483,
+  "tier1": 397,
+  "tier2": 86,
+  "tier3": 1373,
+  "queryable_family_coverage": 52,
+  "structure_source_counts": [
+    [
+      "NULL",
+      1517
+    ],
+    [
+      "vision_raw_json_promote",
+      224
+    ],
+    [
+      "pubchem_name_lookup",
+      43
+    ],
+    [
+      "gemini_auto_seed",
+      40
+    ],
+    [
+      "manual_curated_seed",
+      17
+    ],
+    [
+      "rdkit_direct_parse",
+      15
+    ]
+  ]
+}

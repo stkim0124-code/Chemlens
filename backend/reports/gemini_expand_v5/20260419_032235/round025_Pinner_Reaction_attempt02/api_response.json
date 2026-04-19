@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction shows the formation of an ethyl acetimidate hydrochloride salt (a Pinner salt) from acetonitrile and ethanol in the presence of dry hydrogen chloride. This is the quintessential textbook example of the Pinner reaction, demonstrating the core transformation of a simple aliphatic nitrile and a simple alcohol into the characteristic imino ether salt. The use of small, acyclic, and saturated reactants (acetonitrile, ethanol) makes it a clear and unambiguous representation of the reaction family.\",\n    \"collision_avoidance_note\": \"The reactants are simple aliphatic molecules (acetonitrile, ethanol) to avoid overlap with reactions involving aromatic rings, complex functional groups, or specific ring systems. The product is the characteristic imino ether salt, which is the direct outcome of the Pinner reaction, distinguishing it from subsequent hydrolysis reactions (e.g., to esters) or aminolysis (to amidines) that might be confused with other named reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 441,
+    "candidatesTokenCount": 286,
+    "totalTokenCount": 786,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 441
+      }
+    ],
+    "thoughtsTokenCount": 59
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "-uHjaafxKYiqvr0P4YXquAM"
+}

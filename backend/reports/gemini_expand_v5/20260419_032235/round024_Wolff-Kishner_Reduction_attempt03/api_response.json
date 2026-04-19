@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This is a canonical, textbook example of the Wolff-Kishner reduction. It uses a simple, acyclic, aliphatic ketone (3-pentanone) and reduces it to the corresponding alkane (n-pentane). The reagents, hydrazine (NN) and potassium hydroxide ([OH-].[K+]), are the classic conditions for this transformation. The structure is simple, RDKit-parseable, and clearly demonstrates the conversion of a carbonyl group to a methylene group.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/alkylation) or other functional groups. It specifically avoids aldehydes, which could be involved in aldol or Cannizzaro reactions, and avoids cyclic ketones which might be involved in ring expansions (e.g., Tiffeneau-Demjanov) or other ring-specific chemistry. The simplicity focuses squarely on the C=O to CH2 transformation characteristic of the Wolff-Kishner reduction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 447,
+    "candidatesTokenCount": 317,
+    "totalTokenCount": 846,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 447
+      }
+    ],
+    "thoughtsTokenCount": 82
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "heHjabPdGvTS1e8P1vyBiQM"
+}

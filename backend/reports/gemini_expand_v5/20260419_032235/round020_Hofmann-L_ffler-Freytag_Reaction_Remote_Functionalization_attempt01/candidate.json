@@ -1,0 +1,16 @@
+{
+  "family": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+  "substrates": [
+    "CCCCN(C)Cl"
+  ],
+  "products": [
+    "CN1CCCC1"
+  ],
+  "reagents": [
+    "O",
+    "[H+]"
+  ],
+  "rationale": "This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. The substrate, N-chloro-N-methylbutan-1-amine, undergoes intramolecular 1,5-hydrogen atom transfer upon treatment with acid and light (or heat), leading to a delta-carbon radical. This radical then abstracts the chlorine atom, and subsequent base-promoted cyclization yields the final product, N-methylpyrrolidine. This example clearly demonstrates the key C-H activation at a remote (delta) position and subsequent cyclization to form a five-membered ring, which is characteristic of this reaction.",
+  "collision_avoidance_note": "The reaction is a specific intramolecular C-H amination via a nitrogen-centered radical. The chosen substrate is a simple acyclic N-haloamine, avoiding complex structures, arenes, or other functional groups that could trigger unrelated named reaction queries like the Hofmann rearrangement (amides), Hofmann elimination (quaternary ammonium salts), or general radical cyclizations. The product is a simple saturated heterocycle, N-methylpyrrolidine, which is a hallmark of this transformation.",
+  "raw_text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCCN1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"[H+]\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. The substrate, N-chloro-N-methylbutan-1-amine, undergoes intramolecular 1,5-hydrogen atom transfer upon treatment with acid and light (or heat), leading to a delta-carbon radical. This radical then abstracts the chlorine atom, and subsequent base-promoted cyclization yields the final product, N-methylpyrrolidine. This example clearly demonstrates the key C-H activation at a remote (delta) position and subsequent cyclization to form a five-membered ring, which is characteristic of this reaction.\",\n    \"collision_avoidance_note\": \"The reaction is a specific intramolecular C-H amination via a nitrogen-centered radical. The chosen substrate is a simple acyclic N-haloamine, avoiding complex structures, arenes, or other functional groups that could trigger unrelated named reaction queries like the Hofmann rearrangement (amides), Hofmann elimination (quaternary ammonium salts), or general radical cyclizations. The product is a simple saturated heterocycle, N-methylpyrrolidine, which is a hallmark of this transformation.\"\n  }\n}"
+}

@@ -1,0 +1,10 @@
+{
+  "family": "Pinner Reaction",
+  "family_norm": "pinner reaction",
+  "prompt_version": "pinner_round1_20260419",
+  "source_tag": "gemini_rebuild_pinner_round1",
+  "transformation_text": "Nitrile-to-imidate (Pinner-type) conversion under acidic alcoholysis conditions.",
+  "reagents_text": "alcohol, dry HCl",
+  "conditions_text": "acidic alcoholysis of nitrile",
+  "prompt": "You are generating exactly ONE benchmark-safe canonical example for the named reaction family \"Pinner Reaction\".\n\nGoal:\nCreate a very clear nitrile-to-imidate (or Pinner salt / imidate ester pathway) canonical example that is specific to Pinner chemistry and does not look like a generic nitrile family seed.\n\nHard constraints:\n- Return exactly ONE candidate only.\n- Use parse-safe substrate/product SMILES only.\n- Do NOT encode dry HCl, alcohol solvent, or protonated salts as reagent SMILES.\n- Put all reagent and condition information in text fields only.\n- Prefer a canonical textbook nitrile + alcohol transformation to an imidate-type product.\n- The substrate/product pair must clearly indicate Pinner chemistry, not Ritter or Houben-Hoesch style behavior.\n- Avoid trivial one-atom or over-generic nitrile examples.\n- Avoid stage-seed copying.\n- JSON only.\n\nReturn JSON in this exact schema:\n{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"candidate_id\": \"C1\",\n    \"substrate_smiles\": [\"...\"],\n    \"product_smiles\": [\"...\"],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"...\",\n    \"collision_avoidance_note\": \"...\",\n    \"reagents_text\": \"alcohol, dry HCl\",\n    \"conditions_text\": \"acidic alcoholysis of nitrile\"\n  }\n}\n"
+}

@@ -1,0 +1,15 @@
+{
+  "family": "Prilezhaev Reaction",
+  "substrates": [
+    "C/C=C/C"
+  ],
+  "products": [
+    "C[C@@H]1O[C@@H]1C"
+  ],
+  "reagents": [
+    "O=C(OOc1ccccc1Cl)c1ccccc1Cl"
+  ],
+  "rationale": "This is a classic textbook example of the Prilezhaev reaction: the stereospecific epoxidation of an alkene using a peroxyacid. Trans-2-butene is epoxidized by m-chloroperoxybenzoic acid (mCPBA) to yield trans-2,3-epoxybutane. The reaction is simple, acyclic, and clearly demonstrates the syn-addition mechanism, resulting in a specific stereoisomer. The reactants and products are small and easily parsed.",
+  "collision_avoidance_note": "The chosen example uses a simple, acyclic alkene (trans-2-butene) to avoid overlap with more complex transformations involving rings, such as the Baeyer-Villiger oxidation (which involves ketones) or other named reactions involving arenes. The stereospecific nature is highlighted to distinguish it from non-stereospecific epoxidation methods. The use of a simple alkene avoids motifs common in other named reactions like arenes, diazo compounds, or radical precursors.",
+  "raw_text": "{\n  \"family\": \"Prilezhaev Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C/C=C/C\"\n    ],\n    \"product_smiles\": [\n      \"C[C@H]1O[C@H]1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=C(OOC1=CC=CC=C1Cl)C1=CC=CC=C1Cl\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Prilezhaev reaction: the stereospecific epoxidation of an alkene using a peroxyacid. Trans-2-butene is epoxidized by m-chloroperoxybenzoic acid (mCPBA) to yield trans-2,3-epoxybutane. The reaction is simple, acyclic, and clearly demonstrates the syn-addition mechanism, resulting in a specific stereoisomer. The reactants and products are small and easily parsed.\",\n    \"collision_avoidance_note\": \"The chosen example uses a simple, acyclic alkene (trans-2-butene) to avoid overlap with more complex transformations involving rings, such as the Baeyer-Villiger oxidation (which involves ketones) or other named reactions involving arenes. The stereospecific nature is highlighted to distinguish it from non-stereospecific epoxidation methods. The use of a simple alkene avoids motifs common in other named reactions like arenes, diazo compounds, or radical precursors.\"\n  }\n}"
+}

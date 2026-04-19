@@ -1,0 +1,30 @@
+alias,canonical_name,entity_type
+H2O2,hydrogen peroxide,oxidant
+mCPBA,meta-chloroperoxybenzoic acid,oxidant
+Et3N,triethylamine,base
+HBF4·OEt2,tetrafluoroboric acid etherate,acid
+BF3·AcOH,boron trifluoride-acetic acid complex,Lewis_acid
+TBAF,tetrabutylammonium fluoride,fluoride_source
+NaHCO3,sodium bicarbonate,base
+KF,potassium fluoride,fluoride_source
+DIBAL-H,diisobutylaluminum hydride,hydride_reductant
+AlCl3,aluminum chloride,Lewis_acid
+TiCl4,titanium tetrachloride,Lewis_acid
+TFAA,trifluoroacetic anhydride,acylating_agent
+SnCl4,tin(IV) chloride,Lewis_acid
+TiBr4,titanium tetrabromide,Lewis_acid
+BF3·OEt2,boron trifluoride etherate,Lewis_acid
+AgOTf,silver trifluoromethanesulfonate,Lewis_acid
+Me2SO4,dimethyl sulfate,methylating_agent
+H2SO4,sulfuric acid,acid
+Ac2O,acetic anhydride,acylating_agent
+AlBr3,aluminum bromide,Lewis_acid
+n-BuLi,n-butyllithium,strong_base
+EDCI,N-(3-dimethylaminopropyl)-N′-ethylcarbodiimide,coupling_reagent
+DMAP,4-dimethylaminopyridine,acylation_catalyst
+DEAD,diethyl azodicarboxylate,Mitsunobu_reagent
+PPh3,triphenylphosphine,phosphine_reagent
+NH2NH2·H2O,hydrazine monohydrate,deprotection_reagent
+NMP,N-methyl-2-pyrrolidone,solvent
+DMF,"N,N-dimethylformamide",solvent
+MeNH2,methylamine,amine_reagent

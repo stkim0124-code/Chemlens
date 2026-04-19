@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCCC(=O)CC"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane). The use of hydrazine (NN) and potassium hydroxide ([K+].[OH-]) represents the classic Wolff-Kishner (or Huang-Minlon modification) conditions. The substrate is symmetric and avoids stereocenters or other functional groups, providing a clear and unambiguous example of the core transformation.",
+  "collision_avoidance_note": "The simple aliphatic ketone and alkane product pair is specific to carbonyl deoxygenation reactions. It avoids aromatic rings (which could trigger Friedel-Crafts or Clemmensen reduction queries), esters (avoiding saponification/decarboxylation), and other reactive functional groups, minimizing potential overlap with unrelated named reactions.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[K+].[OH-]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane). The use of hydrazine (NN) and potassium hydroxide ([K+].[OH-]) represents the classic Wolff-Kishner (or Huang-Minlon modification) conditions. The substrate is symmetric and avoids stereocenters or other functional groups, providing a clear and unambiguous example of the core transformation.\",\n    \"collision_avoidance_note\": \"The simple aliphatic ketone and alkane product pair is specific to carbonyl deoxygenation reactions. It avoids aromatic rings (which could trigger Friedel-Crafts or Clemmensen reduction queries), esters (avoiding saponification/decarboxylation), and other reactive functional groups, minimizing potential overlap with unrelated named reactions.\"\n  }\n}"
+}

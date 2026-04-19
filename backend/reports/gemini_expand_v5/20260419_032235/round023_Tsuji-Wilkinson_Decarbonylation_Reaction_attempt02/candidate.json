@@ -1,0 +1,15 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "substrates": [
+    "CCCCCCC=O"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "[Cl][Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1"
+  ],
+  "rationale": "This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to its corresponding alkane (hexane) using Wilkinson's catalyst. This is a classic textbook example that clearly illustrates the core transformation of R-CHO to R-H, which is the hallmark of the Tsuji-Wilkinson decarbonylation.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic aldehyde to avoid overlap with reactions involving aromatic aldehydes (e.g., certain condensations or reductions). The transformation is a direct deformylation (R-CHO -> R-H), which is specific to this reaction and distinct from decarboxylation (R-COOH -> R-H) or deoxygenation (e.g., Wolff-Kishner, Clemmensen). The use of a simple alkane chain minimizes potential side reactions or confusion with functional group interconversions involving more complex scaffolds.",
+  "raw_text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh]([P](C1=CC=CC=C1)(C1=CC=CC=C1)C1=CC=CC=C1)([P](C1=CC=CC=C1)(C1=CC=CC=C1)C1=CC=CC=C1)[P](C1=CC=CC=C1)(C1=CC=CC=C1)C1=CC=CC=C1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to its corresponding alkane (hexane) using Wilkinson's catalyst. This is a classic textbook example that clearly illustrates the core transformation of R-CHO to R-H, which is the hallmark of the Tsuji-Wilkinson decarbonylation.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde to avoid overlap with reactions involving aromatic aldehydes (e.g., certain condensations or reductions). The transformation is a direct deformylation (R-CHO -> R-H), which is specific to this reaction and distinct from decarboxylation (R-COOH -> R-H) or deoxygenation (e.g., Wolff-Kishner, Clemmensen). The use of a simple alkane chain minimizes potential side reactions or confusion with functional group interconversions involving more complex scaffolds.\"\n  }\n}"
+}

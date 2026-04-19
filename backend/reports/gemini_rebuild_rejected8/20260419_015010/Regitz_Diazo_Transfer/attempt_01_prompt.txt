@@ -1,0 +1,15 @@
+Generate exactly one benchmark-safe canonical example for the named reaction family 'Regitz Diazo Transfer'.
+Cluster risk: buchner ; forbid signals: diazo_arene_combo, ring_expansion.
+Current rejected stage seed to avoid copying:
+- role=reactant smiles=CCOC(=O)CC(=O)OCC
+- role=product smiles=CCOC(=O)C(=[N+]=[N-])C(=O)OCC
+Goal: Propose a Regitz diazo transfer example where an active methylene compound becomes a diazo derivative, but do not use any aryl-carbene insertion or Buchner-like ring-expansion topology.
+Rules:
+- keep it textbook and minimal
+- avoid the forbidden signals above
+- do not repeat the current rejected stage topology
+- provide valid organic SMILES only; no catalyst metals in SMILES unless absolutely necessary
+- keep reagent list short or empty if not essential
+
+Return JSON only with this schema:
+{"substrate_smiles":["..."],"product_smiles":["..."],"optional_reagent_smiles":["..."]}

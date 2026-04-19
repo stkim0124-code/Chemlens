@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Houben-Hoesch Reaction/Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"C1=CC(=CC=C1O)O\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)C1=CC(=C(C=C1)O)O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Zn]Cl\",\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction shows the acylation of resorcinol (1,3-dihydroxybenzene), a classic electron-rich aromatic substrate, with acetonitrile, a simple nitrile. This forms 2,4-dihydroxyacetophenone. The reaction is typically catalyzed by a Lewis acid (like ZnCl2) and a protic acid (like HCl). This example is a widely cited, simple, and clear illustration of the Houben-Hoesch synthesis.\",\n    \"collision_avoidance_note\": \"This example uses a simple, electron-rich phenol and a basic nitrile, which are characteristic of the Houben-Hoesch reaction. It avoids complex arenes or functional groups that might overlap with other named reactions like Friedel-Crafts acylation (which typically uses acyl halides or anhydrides) or the Gattermann reaction (which uses HCN or its derivatives for formylation).\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 369,
+    "candidatesTokenCount": 310,
+    "totalTokenCount": 739,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 369
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "Qubjad_MHaqLvr0PrKiegAo"
+}

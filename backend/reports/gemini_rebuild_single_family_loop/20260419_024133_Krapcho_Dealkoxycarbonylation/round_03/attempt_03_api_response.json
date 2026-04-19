@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"substrate_smiles\": [\n    \"CCOC(=O)C(C#N)c1ccccc1\"\n  ],\n  \"product_smiles\": [\n    \"N#Cc1ccccc1\"\n  ],\n  \"optional_reagent_smiles\": [\n    \"[Li+].[Cl-]\",\n    \"O\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 228,
+    "candidatesTokenCount": 84,
+    "totalTokenCount": 383,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 228
+      }
+    ],
+    "thoughtsTokenCount": 71
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "hMLjafi0B6Ka1e8P-_DZoQc"
+}

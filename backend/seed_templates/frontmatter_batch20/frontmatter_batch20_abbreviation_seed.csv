@@ -1,0 +1,20 @@
+alias,canonical_name,entity_type
+mCPBA,meta-chloroperoxybenzoic acid,oxidant
+NaOH,sodium hydroxide,base
+Et3N,triethylamine,base
+CHBr3,bromoform,dihalocarbene_precursor
+KOtBu,potassium tert-butoxide,base
+MeLi,methyllithium,organolithium_reagent
+TEBACI,triethylbenzylammonium chloride,phase_transfer_catalyst
+Cr(CO)6,chromium hexacarbonyl,metal_carbonyl
+TBAF,tetrabutylammonium fluoride,fluoride_source
+CAN,ceric ammonium nitrate,oxidant
+SAMP,(S)-1-amino-2-methoxymethylpyrrolidine,chiral_auxiliary
+RAMP,(R)-1-amino-2-methoxymethylpyrrolidine,chiral_auxiliary
+LDA,lithium diisopropylamide,strong_base
+LiCl,lithium chloride,additive
+Cu(OAc)2,copper(II) acetate,copper_additive
+MMPP,magnesium monoperoxyphthalate,oxidant
+PtCl2,platinum(II) chloride,Lewis_acid_catalyst
+BF3·OEt2,boron trifluoride diethyl etherate,Lewis_acid
+Ru,ruthenium carbene catalyst,metathesis_catalyst

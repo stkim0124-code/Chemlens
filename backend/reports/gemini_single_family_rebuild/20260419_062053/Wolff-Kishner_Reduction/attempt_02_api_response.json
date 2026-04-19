@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"candidate_id\": \"C1\",\n    \"substrate_smiles\": [\n      \"O=C1CCC2=CC=CC=C2C1\"\n    ],\n    \"product_smiles\": [\n      \"C1CCC2=CC=CC=C2C1\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This is a canonical example of the Wolff-Kishner reduction, converting the ketone in alpha-tetralone to a methylene group to form tetralin. The reaction is specific to the carbonyl group and is performed under basic conditions, which distinguishes it from the acidic Clemmensen reduction. The aromatic ring and the rest of the aliphatic ring are inert under these conditions.\",\n    \"collision_avoidance_note\": \"The substrate is alpha-tetralone, a common textbook starting material for this reaction. It is not a simple acyclic ketone, providing a more specific and less generic example than something like acetophenone or cyclohexanone, while still being a clear illustration of the ketone-to-methylene transformation.\",\n    \"reagents_text\": \"hydrazine (H2NNH2), potassium hydroxide (KOH)\",\n    \"conditions_text\": \"diethylene glycol, heat (e.g., 180-200 °C)\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 319,
+    "candidatesTokenCount": 313,
+    "totalTokenCount": 697,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 319
+      }
+    ],
+    "thoughtsTokenCount": 65
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "xfXjaZi6Fcfd2roPiKu_gQ4"
+}

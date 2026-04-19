@@ -1,0 +1,15 @@
+{
+  "family": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+  "substrates": [
+    "CC(=O)Oc1ccccc1"
+  ],
+  "products": [
+    "CC(=O)c1ccccc1O"
+  ],
+  "reagents": [
+    "[Cl][Al]([Cl])[Cl]"
+  ],
+  "rationale": "This is the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone. It is the simplest and most frequently cited textbook example, using the smallest possible R-groups (methyl and phenyl). The reaction clearly demonstrates the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, which is the defining characteristic of the Fries rearrangement. The use of aluminum chloride as a Lewis acid catalyst is also standard for this transformation.",
+  "collision_avoidance_note": "This example uses phenyl acetate, the simplest possible aromatic ester substrate. It avoids complex or polycyclic aromatic systems that could be mistaken for other named reactions involving arenes. The transformation is a specific acyl migration, distinct from Claisen (allyl migration), Hofmann-Martius (alkyl migration), or other rearrangements. It does not involve diazo groups, decarboxylation, or ring expansions, minimizing potential overlap with unrelated reaction families.",
+  "raw_text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Al](Cl)Cl\"\n    ],\n    \"rationale\": \"This is the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone. It is the simplest and most frequently cited textbook example, using the smallest possible R-groups (methyl and phenyl). The reaction clearly demonstrates the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, which is the defining characteristic of the Fries rearrangement. The use of aluminum chloride as a Lewis acid catalyst is also standard for this transformation.\",\n    \"collision_avoidance_note\": \"This example uses phenyl acetate, the simplest possible aromatic ester substrate. It avoids complex or polycyclic aromatic systems that could be mistaken for other named reactions involving arenes. The transformation is a specific acyl migration, distinct from Claisen (allyl migration), Hofmann-Martius (alkyl migration), or other rearrangements. It does not involve diazo groups, decarboxylation, or ring expansions, minimizing potential overlap with unrelated reaction families.\"\n  }\n}"
+}

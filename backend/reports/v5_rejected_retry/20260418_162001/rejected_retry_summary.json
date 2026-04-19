@@ -1,0 +1,39 @@
+{
+  "canonical": "C:\\chemlens\\backend\\app\\labint.db",
+  "source": "C:\\chemlens\\backend\\app\\labint_v5_stage.db",
+  "benchmark": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+  "selective_summary": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\selective_merge_summary.json",
+  "baseline": {
+    "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+    "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+    "top1_accuracy": 1.0,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "json_out": "C:\\chemlens\\backend\\reports\\v5_rejected_retry\\20260418_162001\\benchmark_baseline.json",
+    "csv_out": "C:\\chemlens\\backend\\reports\\v5_rejected_retry\\20260418_162001\\benchmark_baseline.csv",
+    "md_out": "C:\\chemlens\\backend\\reports\\v5_rejected_retry\\20260418_162001\\benchmark_baseline.md"
+  },
+  "accepted": [],
+  "still_rejected": [],
+  "before_state": {
+    "queryable": 712,
+    "tier1": 626,
+    "tier2": 86,
+    "family_coverage": 143,
+    "reaction_extracts": 382,
+    "extract_molecules_total": 2276,
+    "reaction_family_patterns": 305,
+    "gemini_like_rows": 460
+  },
+  "after_state": {
+    "queryable": 712,
+    "tier1": 626,
+    "tier2": 86,
+    "family_coverage": 143,
+    "reaction_extracts": 382,
+    "extract_molecules_total": 2276,
+    "reaction_family_patterns": 305,
+    "gemini_like_rows": 460
+  },
+  "backup": "C:\\chemlens\\backend\\app\\labint.backup_before_v5_rejected_retry_20260418_162001.db"
+}

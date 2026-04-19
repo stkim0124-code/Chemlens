@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Ugi Multicomponent Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)O\",\n      \"CC(C)C=O\",\n      \"CC(C)CN\",\n      \"C[N+]#[C-]\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)N(CC(C)C)C(C(C)C)C(=O)NC\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This is a classic textbook example of the Ugi four-component reaction using simple, acyclic, and readily available starting materials: acetic acid (carboxylic acid), isobutyraldehyde (aldehyde), isobutylamine (amine), and methyl isocyanide (isocyanide). The reaction forms the characteristic \\u03b1-acylamino amide product. All components are small and aliphatic, clearly illustrating the core transformation without introducing complex or potentially confounding structural motifs.\",\n    \"collision_avoidance_note\": \"The use of four distinct, simple aliphatic reactants to form a single complex product is highly characteristic of the Ugi reaction. This specific combination of functional groups (amine, aldehyde, carboxylic acid, isocyanide) is unique to this named reaction, avoiding overlap with simpler condensations (e.g., imine formation, amide coupling) or other multicomponent reactions like Passerini or Strecker, which use different combinations of starting materials.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 435,
+    "candidatesTokenCount": 329,
+    "totalTokenCount": 837,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 435
+      }
+    ],
+    "thoughtsTokenCount": 73
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "kNDjadTEJLfP2roP8ajG2QQ"
+}

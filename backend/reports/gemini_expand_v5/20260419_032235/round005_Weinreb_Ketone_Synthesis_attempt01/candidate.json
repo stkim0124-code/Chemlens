@@ -1,0 +1,15 @@
+{
+  "family": "Weinreb Ketone Synthesis",
+  "substrates": [
+    "CON(C)C(C)=O"
+  ],
+  "products": [
+    "CC(=O)C(C)C"
+  ],
+  "reagents": [
+    "[CH3][Mg][Br]"
+  ],
+  "rationale": "This reaction is a canonical example of the Weinreb Ketone Synthesis. It shows the addition of a simple Grignard reagent (methylmagnesium bromide) to a simple aliphatic Weinreb amide (N-methoxy-N-methylacetamide) to form a ketone (acetone). The key feature is the stable tetrahedral intermediate formed via chelation with the magnesium ion, which prevents over-addition of the organometallic reagent, thus cleanly yielding the ketone upon acidic workup. This example uses small, acyclic, and common functional groups, making it a clear and representative illustration of the transformation.",
+  "collision_avoidance_note": "The substrate is a specific N-methoxy-N-methylamide (Weinreb amide), which is the defining feature of this reaction. The transformation is a controlled single addition of an organometallic reagent to an amide to form a ketone, which is distinct from the double addition seen with other carboxyl derivatives like esters or acid chlorides. The use of simple alkyl groups avoids overlap with reactions involving aromatic rings, complex functional groups, or specific ring systems.",
+  "raw_text": "{\n  \"family\": \"Weinreb Ketone Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)N(C)OC\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)C(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"C[Mg]Br\"\n    ],\n    \"rationale\": \"This reaction is a canonical example of the Weinreb Ketone Synthesis. It shows the addition of a simple Grignard reagent (methylmagnesium bromide) to a simple aliphatic Weinreb amide (N-methoxy-N-methylacetamide) to form a ketone (acetone). The key feature is the stable tetrahedral intermediate formed via chelation with the magnesium ion, which prevents over-addition of the organometallic reagent, thus cleanly yielding the ketone upon acidic workup. This example uses small, acyclic, and common functional groups, making it a clear and representative illustration of the transformation.\",\n    \"collision_avoidance_note\": \"The substrate is a specific N-methoxy-N-methylamide (Weinreb amide), which is the defining feature of this reaction. The transformation is a controlled single addition of an organometallic reagent to an amide to form a ketone, which is distinct from the double addition seen with other carboxyl derivatives like esters or acid chlorides. The use of simple alkyl groups avoids overlap with reactions involving aromatic rings, complex functional groups, or specific ring systems.\"\n  }\n}"
+}

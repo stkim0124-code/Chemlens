@@ -1,0 +1,16 @@
+{
+  "family": "Ritter Reaction",
+  "substrates": [
+    "CC(C)(C)O",
+    "CC#N"
+  ],
+  "products": [
+    "CC(=O)NC(C)(C)C"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This is a classic textbook example of the Ritter reaction, demonstrating the formation of a stable tert-butyl carbocation from tert-butanol under strong acid (H2SO4) conditions. This carbocation is then trapped by a simple nitrile (acetonitrile) to form a nitrilium ion, which upon hydrolysis yields the corresponding N-tert-butylacetamide. All reactants and products are simple, acyclic, and RDKit-parseable, clearly illustrating the core transformation of an alcohol and a nitrile into an N-substituted amide.",
+  "collision_avoidance_note": "The reactants are simple and acyclic, avoiding complex ring systems, arenes, or other functional groups that could cause collisions with other named reactions. The use of tert-butanol as the carbocation precursor and acetonitrile as the nitrile is a standard, unambiguous representation of the Ritter reaction, distinct from reactions like the Beckmann rearrangement (oximes to amides) or the Schmidt reaction (azides with carbonyls/alcohols).",
+  "raw_text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Ritter reaction, demonstrating the formation of a stable tert-butyl carbocation from tert-butanol under strong acid (H2SO4) conditions. This carbocation is then trapped by a simple nitrile (acetonitrile) to form a nitrilium ion, which upon hydrolysis yields the corresponding N-tert-butylacetamide. All reactants and products are simple, acyclic, and RDKit-parseable, clearly illustrating the core transformation of an alcohol and a nitrile into an N-substituted amide.\",\n    \"collision_avoidance_note\": \"The reactants are simple and acyclic, avoiding complex ring systems, arenes, or other functional groups that could cause collisions with other named reactions. The use of tert-butanol as the carbocation precursor and acetonitrile as the nitrile is a standard, unambiguous representation of the Ritter reaction, distinct from reactions like the Beckmann rearrangement (oximes to amides) or the Schmidt reaction (azides with carbonyls/alcohols).\"\n  }\n}"
+}

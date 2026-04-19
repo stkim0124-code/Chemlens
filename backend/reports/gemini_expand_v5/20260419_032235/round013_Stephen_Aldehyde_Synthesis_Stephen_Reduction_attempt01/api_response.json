@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Stephen Aldehyde Synthesis (Stephen Reduction)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC#N\"\n    ],\n    \"product_smiles\": [\n      \"CCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Sn+2].[Cl-].[Cl-]\",\n      \"O\",\n      \"Cl\"\n    ],\n    \"rationale\": \"The reduction of propanenitrile to propanal is a simple, acyclic, and canonical textbook example of the Stephen Aldehyde Synthesis. It clearly demonstrates the conversion of a nitrile functional group to an aldehyde using the classical Stephen reduction conditions (SnCl2/HCl followed by hydrolysis). This example is minimal and avoids complex structures that could cause collisions with other named reactions.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic nitrile (propanenitrile) to avoid overlap with reactions involving aromatic rings (e.g., Gattermann, Vilsmeier-Haack) or other functional groups. The core transformation is a straightforward nitrile-to-aldehyde reduction, which is the defining characteristic of the Stephen synthesis, minimizing potential for misclassification.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 421,
+    "candidatesTokenCount": 267,
+    "totalTokenCount": 746,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 421
+      }
+    ],
+    "thoughtsTokenCount": 58
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "MdXjaZruGqe_1e8P3veb4Qs"
+}

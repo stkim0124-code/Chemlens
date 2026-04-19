@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Staudinger Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCN=[N+]=[N-]\",\n      \"P(c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CCCN=P(c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This is a canonical example of the Staudinger reaction, showing the formation of an iminophosphorane from a simple alkyl azide (1-azidopropane) and triphenylphosphine. This represents the core transformation of the reaction before subsequent hydrolysis (Staudinger reduction) or aza-Wittig reaction. The reactants are simple, acyclic (for the azide), and clearly illustrate the key functional group change without introducing confounding motifs.\",\n    \"collision_avoidance_note\": \"This example focuses on the formation of the key iminophosphorane intermediate, which is the defining step of the Staudinger reaction. By not including the subsequent hydrolysis to an amine (which would require water as a reagent and produce triphenylphosphine oxide), it avoids direct overlap with general azide reduction methods. By not including a carbonyl reactant, it avoids overlap with the Wittig reaction. The use of a simple alkyl azide avoids arene-rich structures that could collide with other named reactions involving aromatic systems.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 442,
+    "candidatesTokenCount": 321,
+    "totalTokenCount": 842,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 442
+      }
+    ],
+    "thoughtsTokenCount": 79
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "JtXjafvgJamf1e8P6ICkmAM"
+}

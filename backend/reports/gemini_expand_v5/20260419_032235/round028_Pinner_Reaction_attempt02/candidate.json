@@ -1,0 +1,16 @@
+{
+  "family": "Pinner Reaction",
+  "substrates": [
+    "CC#N",
+    "CCO"
+  ],
+  "products": [
+    "CCOC(C)=[NH2+].[Cl-]"
+  ],
+  "reagents": [
+    "Cl"
+  ],
+  "rationale": "This example shows the classic Pinner reaction between acetonitrile and ethanol in the presence of dry hydrogen chloride to form ethyl acetimidate hydrochloride (a Pinner salt). This is a textbook example, using simple, acyclic, and small aliphatic substrates (acetonitrile and ethanol) to clearly illustrate the core transformation: the conversion of a nitrile and an alcohol into an imino ether salt. This salt is a key intermediate that can be further hydrolyzed to an ester or reacted with ammonia/amines to form amidines.",
+  "collision_avoidance_note": "The reactants are simple aliphatic nitrile and alcohol, avoiding arenes (avoids Friedel-Crafts, Gattermann), complex functional groups, or strained rings. The product is the characteristic imino ether salt (Pinner salt), which is specific to this reaction and distinct from products of other nitrile transformations like Stephen reduction (aldehydes) or Blaise reaction (beta-ketoesters). The explicit inclusion of HCl as a reagent and the salt form of the product helps anchor the query to the specific conditions of the Pinner reaction.",
+  "raw_text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This example shows the classic Pinner reaction between acetonitrile and ethanol in the presence of dry hydrogen chloride to form ethyl acetimidate hydrochloride (a Pinner salt). This is a textbook example, using simple, acyclic, and small aliphatic substrates (acetonitrile and ethanol) to clearly illustrate the core transformation: the conversion of a nitrile and an alcohol into an imino ether salt. This salt is a key intermediate that can be further hydrolyzed to an ester or reacted with ammonia/amines to form amidines.\",\n    \"collision_avoidance_note\": \"The reactants are simple aliphatic nitrile and alcohol, avoiding arenes (avoids Friedel-Crafts, Gattermann), complex functional groups, or strained rings. The product is the characteristic imino ether salt (Pinner salt), which is specific to this reaction and distinct from products of other nitrile transformations like Stephen reduction (aldehydes) or Blaise reaction (beta-ketoesters). The explicit inclusion of HCl as a reagent and the salt form of the product helps anchor the query to the specific conditions of the Pinner reaction.\"\n  }\n}"
+}

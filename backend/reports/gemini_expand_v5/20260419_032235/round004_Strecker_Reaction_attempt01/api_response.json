@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Strecker Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC=O\",\n      \"N\"\n    ],\n    \"product_smiles\": [\n      \"CC(N)C#N\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[H+].[C-]#N\"\n    ],\n    \"rationale\": \"This is the simplest textbook example of the Strecker reaction, using acetaldehyde, ammonia, and hydrogen cyanide to form 2-aminopropanenitrile. This reaction clearly demonstrates the core transformation: the conversion of an aldehyde into an \\u03b1-amino nitrile by the addition of an amine and a cyanide source. The reactants and product are small, acyclic, and lack complex functional groups, making it a clear and unambiguous representation of the reaction family.\",\n    \"collision_avoidance_note\": \"This example uses simple aliphatic reactants (acetaldehyde, ammonia) to avoid overlap with reactions involving aromatic aldehydes (e.g., benzoin condensation, Perkin reaction) or more complex substrates. The formation of an \\u03b1-amino nitrile is highly specific to the Strecker reaction and its variants, minimizing potential collisions with other named reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 409,
+    "candidatesTokenCount": 276,
+    "totalTokenCount": 745,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 409
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "Ec7jaZaqKs-crfcP-qL5wA0"
+}

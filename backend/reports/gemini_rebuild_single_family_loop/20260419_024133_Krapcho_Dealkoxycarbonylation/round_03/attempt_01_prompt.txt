@@ -1,0 +1,9 @@
+You are generating a benchmark-safe replacement canonical example for the named reaction family 'Krapcho Dealkoxycarbonylation'.
+Attempt index: 1.
+Goal: produce ONE replacement candidate only.
+Hard constraints:
+- Use a textbook Krapcho dealkoxycarbonylation on a simple beta-keto ester or malonate derivative, giving a one-ester-lost product. Keep everything acyclic and aliphatic.
+- Avoid these collision signals: diazo_arene_combo, ring_expansion, Buchner-like arene-carbene insertion, pericyclic rearrangement.
+- Do NOT copy the existing stage topology exactly. Current stage reactants: ['CCOC(=O)C(C)(C(=O)OCC)c1ccccc1']; products: ['CCOC(=O)C(C)c1ccccc1']; reagents: [].
+- Keep the example chemically simple, textbook-like, and RDKit-parseable.
+- Return JSON only in this exact schema: {"substrate_smiles":[...],"product_smiles":[...],"optional_reagent_smiles":[...]}

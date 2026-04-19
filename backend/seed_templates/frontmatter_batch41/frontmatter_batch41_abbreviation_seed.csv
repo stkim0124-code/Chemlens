@@ -1,0 +1,9 @@
+alias,canonical_name,entity_type
+OMs,methanesulfonate,leaving_group
+DIBALH,diisobutylaluminum hydride,reductant
+AI-77B,AI-77B,target_molecule
+NaH2PO4,sodium dihydrogen phosphate,buffer
+2-Me-2-butene,2-methyl-2-butene,scavenger
+TsOH·H2O,p-toluenesulfonic acid monohydrate,acid
+FR-900482,FR-900482,target_molecule
+BzCl,benzoyl chloride,acylating_agent

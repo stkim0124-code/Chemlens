@@ -1,0 +1,17 @@
+{
+  "family": "Retro-Claisen Reaction",
+  "substrates": [
+    "CCOC(=O)C(C)C(=O)CC"
+  ],
+  "products": [
+    "CCC(C)=O",
+    "CCOC(C)=O"
+  ],
+  "reagents": [
+    "[Na+].[OH-]",
+    "O"
+  ],
+  "rationale": "This reaction shows the base-catalyzed cleavage of a simple, acyclic beta-keto ester (ethyl 2-methyl-3-oxopentanoate) into a ketone (butan-2-one) and an ester (ethyl acetate). This is a classic textbook example of the retro-Claisen reaction, demonstrating the characteristic carbon-carbon bond cleavage between the alpha and beta carbonyl carbons.",
+  "collision_avoidance_note": "The chosen substrate is a simple acyclic beta-keto ester, avoiding complex ring systems or additional functional groups that could trigger other named reaction queries. The use of aqueous sodium hydroxide as the reagent is specific to this cleavage reaction and avoids ambiguity with condensation or alkylation reactions that often use non-nucleophilic bases like alkoxides in anhydrous conditions.",
+  "raw_text": "{\n  \"family\": \"Retro-Claisen Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)C(C)C(=O)OCC\"\n    ],\n    \"product_smiles\": [\n      \"CCC(=O)C\",\n      \"CC(=O)OCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[OH-].[Na+]\",\n      \"O\"\n    ],\n    \"rationale\": \"This reaction shows the base-catalyzed cleavage of a simple, acyclic beta-keto ester (ethyl 2-methyl-3-oxopentanoate) into a ketone (butan-2-one) and an ester (ethyl acetate). This is a classic textbook example of the retro-Claisen reaction, demonstrating the characteristic carbon-carbon bond cleavage between the alpha and beta carbonyl carbons.\",\n    \"collision_avoidance_note\": \"The chosen substrate is a simple acyclic beta-keto ester, avoiding complex ring systems or additional functional groups that could trigger other named reaction queries. The use of aqueous sodium hydroxide as the reagent is specific to this cleavage reaction and avoids ambiguity with condensation or alkylation reactions that often use non-nucleophilic bases like alkoxides in anhydrous conditions.\"\n  }\n}"
+}

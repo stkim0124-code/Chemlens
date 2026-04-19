@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Suzuki Cross-Coupling\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCB(O)O\",\n      \"BrC1=CC=CC=C1\"\n    ],\n    \"product_smiles\": [\n      \"CC1=CC=CC=C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Pd]\"\n    ],\n    \"rationale\": \"This is a canonical example of the Suzuki cross-coupling, reacting a simple alkylboronic acid (methylboronic acid) with a simple aryl halide (bromobenzene) to form a new C(sp3)-C(sp2) bond (toluene). The reactants are small, acyclic where possible, and lack complex functional groups, clearly illustrating the core transformation. The use of bromobenzene and methylboronic acid is a fundamental, textbook representation of the coupling partners.\",\n    \"collision_avoidance_note\": \"This example uses a simple alkylboronic acid and a simple aryl halide. It avoids using two aryl groups (e.g., phenylboronic acid + bromobenzene to form biphenyl), which could create a generic biaryl motif that might collide with other cross-coupling reactions like Stille or Negishi. It also avoids complex or reactive functional groups that are not essential to defining the Suzuki reaction, ensuring it remains specific to this family.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 411,
+    "candidatesTokenCount": 306,
+    "totalTokenCount": 795,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 411
+      }
+    ],
+    "thoughtsTokenCount": 78
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "AM_jafD6NcKn1e8PpN3DmAc"
+}

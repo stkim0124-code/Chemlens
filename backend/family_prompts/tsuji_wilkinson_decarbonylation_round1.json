@@ -1,0 +1,10 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "family_norm": "tsuji-wilkinson decarbonylation reaction",
+  "prompt_version": "tsuji_wilkinson_round1_20260419",
+  "source_tag": "gemini_rebuild_tsuji_wilkinson_round1",
+  "transformation_text": "Aldehyde decarbonylation to a deformylated hydrocarbon under Rh-catalyzed Wilkinson-type conditions.",
+  "reagents_text": "Rh catalyst (Wilkinson-type decarbonylation)",
+  "conditions_text": "decarbonylation conditions",
+  "prompt": "You are generating exactly ONE benchmark-safe canonical example for the named reaction family \"Tsuji-Wilkinson Decarbonylation Reaction\".\n\nGoal:\nCreate a very clear aldehyde decarbonylation canonical example that specifically represents Tsuji-Wilkinson chemistry, while avoiding broad aldehyde-family hijack.\n\nHard constraints:\n- Return exactly ONE candidate only.\n- Use parse-safe substrate/product SMILES only.\n- Do NOT encode Rh catalyst complexes as SMILES.\n- Put catalyst and condition information in text fields only.\n- Prefer a substrate/product pair where removal of the formyl unit is very clear.\n- Avoid overly trivial aldehyde examples that may behave like generic carbonyl seeds.\n- Avoid stage-seed copying.\n- JSON only.\n\nReturn JSON in this exact schema:\n{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"candidate_id\": \"C1\",\n    \"substrate_smiles\": [\"...\"],\n    \"product_smiles\": [\"...\"],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"...\",\n    \"collision_avoidance_note\": \"...\",\n    \"reagents_text\": \"Rh catalyst (Wilkinson-type decarbonylation)\",\n    \"conditions_text\": \"decarbonylation conditions\"\n  }\n}\n"
+}

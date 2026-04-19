@@ -1,0 +1,17 @@
+{
+  "family": "Pfitzner-Moffatt Oxidation",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "CC(C)(C)C1CCC(O)CC1"
+    ],
+    "product_smiles": [
+      "CC(C)(C)C1CCC(=O)CC1"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This example demonstrates the oxidation of a secondary alcohol (4-tert-butylcyclohexanol) to the corresponding ketone (4-tert-butylcyclohexanone) using the Pfitzner-Moffatt protocol. The substrate is a simple, non-trivial cyclic alcohol, making it a clear and representative example of this transformation. The bulky tert-butyl group locks the conformation, but the reaction proceeds effectively. This avoids overly simple substrates like propan-2-ol or complex natural products.",
+    "collision_avoidance_note": "The substrate is 4-tert-butylcyclohexanol, a common but specific starting material that is unlikely to be a generic seed for all alcohol oxidations. The product is the corresponding ketone. This specific substrate/product pair is distinct from simple linear alcohols or other common cyclic systems like adamantanol, reducing the risk of being flagged as a generic template.",
+    "reagents_text": "Dimethyl sulfoxide (DMSO), Dicyclohexylcarbodiimide (DCC), Pyridinium trifluoroacetate",
+    "conditions_text": "Room temperature, inert atmosphere"
+  }
+}

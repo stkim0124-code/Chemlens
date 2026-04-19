@@ -1,0 +1,17 @@
+{
+  "family": "Peterson Olefination",
+  "substrates": [
+    "CC(C)=O",
+    "C[Si](C)(C)CCl"
+  ],
+  "products": [
+    "C=C(C)C"
+  ],
+  "reagents": [
+    "[Li]",
+    "O"
+  ],
+  "rationale": "This example shows the reaction of a simple ketone (acetone) with an alpha-silyl carbanion, generated in situ from (chloromethyl)trimethylsilane and a strong base (represented here by elemental lithium, a common method for generating such organometallics). The resulting beta-hydroxysilane intermediate eliminates to form the corresponding alkene (isobutylene). This represents the core transformation of the Peterson olefination: converting a C=O bond into a C=C bond using a silicon-based reagent, and is a simple, acyclic, textbook case.",
+  "collision_avoidance_note": "This example uses simple, acyclic aliphatic substrates (acetone and a TMS-methyllithium precursor) to avoid overlap with other named reactions. It avoids arenes (common in Wittig, Horner-Wadsworth-Emmons), complex ring systems, or other reactive functional groups. The explicit use of a trimethylsilyl group is a key feature that distinguishes it from phosphorus-based olefinations (Wittig, HWE) or sulfur-based ones (Julia-Kocienski).",
+  "raw_text": "{\n  \"family\": \"Peterson Olefination\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)C\",\n      \"C[Si](C)(C)CCl\"\n    ],\n    \"product_smiles\": [\n      \"CC(C)=C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Li]\",\n      \"O\"\n    ],\n    \"rationale\": \"This example shows the reaction of a simple ketone (acetone) with an alpha-silyl carbanion, generated in situ from (chloromethyl)trimethylsilane and a strong base (represented here by elemental lithium, a common method for generating such organometallics). The resulting beta-hydroxysilane intermediate eliminates to form the corresponding alkene (isobutylene). This represents the core transformation of the Peterson olefination: converting a C=O bond into a C=C bond using a silicon-based reagent, and is a simple, acyclic, textbook case.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic aliphatic substrates (acetone and a TMS-methyllithium precursor) to avoid overlap with other named reactions. It avoids arenes (common in Wittig, Horner-Wadsworth-Emmons), complex ring systems, or other reactive functional groups. The explicit use of a trimethylsilyl group is a key feature that distinguishes it from phosphorus-based olefinations (Wittig, HWE) or sulfur-based ones (Julia-Kocienski).\"\n  }\n}"
+}

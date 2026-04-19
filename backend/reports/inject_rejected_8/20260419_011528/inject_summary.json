@@ -1,0 +1,71 @@
+{
+  "mode": "apply",
+  "canonical_db": "C:\\chemlens\\backend\\app\\labint.db",
+  "stage_db": "C:\\chemlens\\backend\\app\\labint_v5_stage.db",
+  "before": {
+    "queryable": 722,
+    "family_coverage": 148,
+    "reaction_extracts": 387,
+    "extract_molecules_total": 2288
+  },
+  "after": {
+    "queryable": 722,
+    "family_coverage": 148,
+    "reaction_extracts": 387,
+    "extract_molecules_total": 2288
+  },
+  "accepted": [],
+  "rejected": [],
+  "skipped": [
+    "Claisen Condensation / Claisen Reaction",
+    "Horner-Wadsworth-Emmons Olefination",
+    "Krapcho Dealkoxycarbonylation",
+    "Michael Addition Reaction",
+    "Regitz Diazo Transfer",
+    "Enyne Metathesis",
+    "Hofmann-Loffler-Freytag Reaction",
+    "Mitsunobu Reaction"
+  ],
+  "results": [
+    {
+      "family": "Claisen Condensation / Claisen Reaction",
+      "status": "insert_error",
+      "error": "NOT NULL constraint failed: extract_molecules.role"
+    },
+    {
+      "family": "Horner-Wadsworth-Emmons Olefination",
+      "status": "insert_error",
+      "error": "NOT NULL constraint failed: extract_molecules.role"
+    },
+    {
+      "family": "Krapcho Dealkoxycarbonylation",
+      "status": "insert_error",
+      "error": "NOT NULL constraint failed: extract_molecules.role"
+    },
+    {
+      "family": "Michael Addition Reaction",
+      "status": "insert_error",
+      "error": "NOT NULL constraint failed: extract_molecules.role"
+    },
+    {
+      "family": "Regitz Diazo Transfer",
+      "status": "insert_error",
+      "error": "NOT NULL constraint failed: extract_molecules.role"
+    },
+    {
+      "family": "Enyne Metathesis",
+      "status": "insert_error",
+      "error": "NOT NULL constraint failed: extract_molecules.role"
+    },
+    {
+      "family": "Hofmann-Loffler-Freytag Reaction",
+      "status": "insert_error",
+      "error": "NOT NULL constraint failed: extract_molecules.role"
+    },
+    {
+      "family": "Mitsunobu Reaction",
+      "status": "insert_error",
+      "error": "NOT NULL constraint failed: extract_molecules.role"
+    }
+  ]
+}

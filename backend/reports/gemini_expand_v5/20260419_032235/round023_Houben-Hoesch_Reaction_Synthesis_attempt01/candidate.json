@@ -1,0 +1,17 @@
+{
+  "family": "Houben-Hoesch Reaction/Synthesis",
+  "substrates": [
+    "CC#N",
+    "COc1cc(OC)cc(OC)c1"
+  ],
+  "products": [
+    "COc1cc(OC)cc(C(C)=O)c1"
+  ],
+  "reagents": [
+    "[Cl][Zn][Cl]",
+    "Cl"
+  ],
+  "rationale": "This reaction represents the classic Houben-Hoesch synthesis, where an electron-rich aromatic compound (1,3,5-trimethoxybenzene) is acylated by a nitrile (acetonitrile) in the presence of a Lewis acid (ZnCl2) and a mineral acid (HCl). The product is an aryl ketone (2,4,6-trimethoxyacetophenone). This example is a simple, acyclic, and textbook-canonical representation of the reaction, clearly demonstrating the formation of a C-C bond between the aromatic ring and the nitrile carbon.",
+  "collision_avoidance_note": "The substrate is a highly activated, non-phenolic arene, which is characteristic of the Houben-Hoesch reaction and distinguishes it from the related Gattermann (HCN/CO) and Friedel-Crafts acylation (acyl halides/anhydrides) reactions. The use of a simple aliphatic nitrile (acetonitrile) avoids introducing complex or reactive functional groups that could cause collisions with other named reaction families.",
+  "raw_text": "{\n  \"family\": \"Houben-Hoesch Reaction/Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"COc1cc(OC)cc(OC)c1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1cc(OC)cc(OC)c1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Zn]Cl\",\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction represents the classic Houben-Hoesch synthesis, where an electron-rich aromatic compound (1,3,5-trimethoxybenzene) is acylated by a nitrile (acetonitrile) in the presence of a Lewis acid (ZnCl2) and a mineral acid (HCl). The product is an aryl ketone (2,4,6-trimethoxyacetophenone). This example is a simple, acyclic, and textbook-canonical representation of the reaction, clearly demonstrating the formation of a C-C bond between the aromatic ring and the nitrile carbon.\",\n    \"collision_avoidance_note\": \"The substrate is a highly activated, non-phenolic arene, which is characteristic of the Houben-Hoesch reaction and distinguishes it from the related Gattermann (HCN/CO) and Friedel-Crafts acylation (acyl halides/anhydrides) reactions. The use of a simple aliphatic nitrile (acetonitrile) avoids introducing complex or reactive functional groups that could cause collisions with other named reaction families.\"\n  }\n}"
+}

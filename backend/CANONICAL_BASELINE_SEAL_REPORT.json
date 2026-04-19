@@ -1,0 +1,206 @@
+{
+  "sealed_at": "2026-04-18",
+  "canonical_db": "app/labint.db",
+  "benchmark_summary": {
+    "benchmark_name": "CHEMLENS small benchmark v3",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 27,
+    "top1_accuracy": 1.0,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "db_summary": {
+    "manual_page_knowledge": 809,
+    "manual_page_entities": 1862,
+    "reaction_family_patterns": 305,
+    "abbreviation_aliases": 1038,
+    "reaction_extracts": 275,
+    "extract_molecules": 1799,
+    "page_images": 132,
+    "scheme_candidates": 240,
+    "reaction_cards": 11371,
+    "reactions": 11313,
+    "distinct_pages": 809,
+    "page_range": [
+      2,
+      810
+    ],
+    "p502_553_records": 52,
+    "page_kind_counts": [
+      [
+        "application_example",
+        250
+      ],
+      [
+        "canonical_overview",
+        250
+      ],
+      [
+        "reference_bibliography",
+        180
+      ],
+      [
+        "alphabetical_index",
+        71
+      ],
+      [
+        "functional_group_index",
+        26
+      ],
+      [
+        "category_index",
+        20
+      ],
+      [
+        "chronological_index",
+        10
+      ],
+      [
+        "meta_explanatory",
+        2
+      ]
+    ],
+    "queryable": 426,
+    "tier_counts": [
+      [
+        1,
+        340
+      ],
+      [
+        2,
+        86
+      ],
+      [
+        3,
+        1373
+      ]
+    ],
+    "structure_source_counts": [
+      [
+        "NULL",
+        1517
+      ],
+      [
+        "vision_raw_json_promote",
+        224
+      ],
+      [
+        "pubchem_name_lookup",
+        43
+      ],
+      [
+        "rdkit_direct_parse",
+        15
+      ]
+    ],
+    "coverage": 36,
+    "smiles_in_reaction_cards_sub": 46,
+    "smiles_in_reaction_cards_prod": 5,
+    "smiles_in_reaction_cards_both": 5,
+    "queryable_top_families": [
+      [
+        "Benzoin and Retro-Benzoin Condensation",
+        80
+      ],
+      [
+        "Acyloin Condensation",
+        50
+      ],
+      [
+        "Acetoacetic Ester Synthesis",
+        39
+      ],
+      [
+        "Ciamician-Dennstedt Rearrangement",
+        29
+      ],
+      [
+        "Baeyer-Villiger Oxidation",
+        17
+      ],
+      [
+        "Arndt-Eistert Homologation / Synthesis",
+        16
+      ],
+      [
+        "Baker-Venkataraman Rearrangement",
+        15
+      ],
+      [
+        "Arbuzov Reaction",
+        12
+      ],
+      [
+        "Barton Radical Decarboxylation Reaction",
+        12
+      ],
+      [
+        "Benzilic Acid Rearrangement",
+        12
+      ],
+      [
+        "Claisen Condensation",
+        12
+      ],
+      [
+        "Bartoli Indole Synthesis",
+        11
+      ],
+      [
+        "Claisen-Ireland Rearrangement",
+        11
+      ],
+      [
+        "Buchwald-Hartwig Cross-Coupling",
+        10
+      ],
+      [
+        "Chichibabin Amination Reaction",
+        9
+      ],
+      [
+        "Balz-Schiemann Reaction",
+        8
+      ],
+      [
+        "Castro-Stephens Coupling",
+        8
+      ],
+      [
+        "Barton Radical Decarboxylation",
+        7
+      ],
+      [
+        "Aza-Cope Rearrangement",
+        6
+      ],
+      [
+        "Barton-Mccombie Radical Deoxygenation Reaction",
+        6
+      ]
+    ]
+  },
+  "hashes": {
+    "app/labint.db": "79065f10a99d866d4dbdd4108f8c39b8de9bd182a11df9f4f763d74b30339f45",
+    "app/evidence_search.py": "2cd81f4d64ab931216fdc94396bf172045d927eb546902589f5b832b9c2838e1",
+    "benchmark/named_reaction_benchmark_small_results.json": "bb9d4afd0e9c5a471fc8b759afabdd270158cefc9ed236864c68267c9fd16efa"
+  },
+  "practicality_assessment": {
+    "strong_points": [
+      "Search benchmark recovered to top1 27/27 and top3 27/27 on the current small benchmark set.",
+      "Queryable structure pool is 426 across 36 families, materially better than the earlier 144/23 state.",
+      "Manual page coverage is continuous from p2 to p810 with 809 distinct pages, including p502-p553 restored."
+    ],
+    "limits": [
+      "Only 36 of 305 family rows currently have queryable structure evidence.",
+      "reaction_cards direct structure fields remain sparse: substrate=46, product=5, both=5.",
+      "The benchmark is still a small benchmark; passing it does not prove that every family or arbitrary real-world query is practically covered.",
+      "labint_round9_bridge_work.db should not be treated as canonical without regeneration."
+    ]
+  },
+  "decision": "Seal current search baseline; continue future work on this baseline only."
+}

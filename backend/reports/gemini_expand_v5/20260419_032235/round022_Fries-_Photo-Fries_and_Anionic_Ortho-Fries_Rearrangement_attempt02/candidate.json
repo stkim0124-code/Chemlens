@@ -1,0 +1,15 @@
+{
+  "family": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+  "substrates": [
+    "CC(=O)Oc1ccccc1"
+  ],
+  "products": [
+    "CC(=O)c1ccccc1O"
+  ],
+  "reagents": [
+    "[Cl][Al]([Cl])[Cl]"
+  ],
+  "rationale": "The Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone is the simplest and most frequently cited textbook example of this reaction family. It clearly demonstrates the core transformation: the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). This example is minimal, acyclic in its core functional groups, and avoids complex substituents, making it an ideal canonical representation.",
+  "collision_avoidance_note": "This example uses the simplest possible aromatic system (phenyl) and acyl group (acetyl) to avoid overlap with more complex aromatic substitution reactions. The specific substrate (phenolic ester) and product (hydroxy aryl ketone) are characteristic of the Fries rearrangement, distinguishing it from other acylations (like Friedel-Crafts) or rearrangements involving different functional groups.",
+  "raw_text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Al](Cl)(Cl)Cl\"\n    ],\n    \"rationale\": \"The Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone is the simplest and most frequently cited textbook example of this reaction family. It clearly demonstrates the core transformation: the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). This example is minimal, acyclic in its core functional groups, and avoids complex substituents, making it an ideal canonical representation.\",\n    \"collision_avoidance_note\": \"This example uses the simplest possible aromatic system (phenyl) and acyl group (acetyl) to avoid overlap with more complex aromatic substitution reactions. The specific substrate (phenolic ester) and product (hydroxy aryl ketone) are characteristic of the Fries rearrangement, distinguishing it from other acylations (like Friedel-Crafts) or rearrangements involving different functional groups.\"\n  }\n}"
+}

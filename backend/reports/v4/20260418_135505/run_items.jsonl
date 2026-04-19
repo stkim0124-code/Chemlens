@@ -1,0 +1,18 @@
+{"round": 1, "family": "Cope Rearrangement", "lane": "gemini", "status": "inserted", "re_id": 465, "mol_ids": [1860, 1861]}
+{"round": 1, "family": "Wittig Reaction", "lane": "gemini", "status": "inserted", "re_id": 466, "mol_ids": [1862, 1863, 1864, 1865, 1866, 1867]}
+{"round": 1, "family": "Diels-Alder Cycloaddition", "lane": "gemini", "status": "inserted", "re_id": 467, "mol_ids": [1868, 1869, 1870]}
+{"round": 2, "family": "Favorskii Rearrangement", "lane": "gemini", "status": "inserted", "re_id": 468, "mol_ids": [1871, 1872, 1873]}
+{"round": 2, "family": "Japp-Klingemann Reaction", "lane": "gemini", "status": "inserted", "re_id": 469, "mol_ids": [1874, 1875, 1876, 1877]}
+{"round": 2, "family": "Ley Oxidation", "lane": "gemini", "status": "inserted", "re_id": 470, "mol_ids": [1878, 1879, 1880, 1881]}
+{"round": 3, "family": "Mannich Reaction", "lane": "gemini", "status": "inserted", "re_id": 471, "mol_ids": [1882, 1883, 1884, 1885, 1886, 1887]}
+{"round": 3, "family": "Corey-Nicolaou Macrolactonization", "lane": "gemini", "status": "inserted", "re_id": 472, "mol_ids": [1888, 1889, 1890, 1891, 1892]}
+{"round": 3, "family": "Hajos-Parrish Reaction", "lane": "gemini", "status": "inserted", "re_id": 473, "mol_ids": [1893, 1894, 1895, 1896]}
+{"round": 4, "family": "Quasi-Favorskii Rearrangement", "lane": "gemini", "status": "inserted", "re_id": 474, "mol_ids": [1897, 1898]}
+{"round": 4, "family": "Regitz Diazo Transfer", "lane": "gemini", "status": "inserted", "re_id": 475, "mol_ids": [1899, 1900, 1901, 1902]}
+{"round": 4, "family": "Alder (Ene) Reaction (Hydro-Allyl Addition)", "lane": "gemini", "status": "inserted", "re_id": 476, "mol_ids": [1903, 1904, 1905]}
+{"round": 5, "family": "Amadori Reaction / Rearrangement", "lane": "gemini", "status": "inserted", "re_id": 477, "mol_ids": [1906, 1907, 1908, 1909]}
+{"round": 5, "family": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)", "lane": "gemini", "status": "inserted", "re_id": 478, "mol_ids": [1910, 1911]}
+{"round": 5, "family": "Claisen Condensation / Claisen Reaction", "lane": "gemini", "status": "inserted", "re_id": 479, "mol_ids": [1912, 1913, 1914, 1915, 1916]}
+{"round": 6, "family": "Cope Elimination / Cope Reaction", "lane": "gemini", "status": "inserted", "re_id": 480, "mol_ids": [1917, 1918]}
+{"round": 6, "family": "Corey-Bakshi-Shibata Reduction (CBS Reduction)", "lane": "gemini", "status": "inserted", "re_id": 481, "mol_ids": [1919, 1920, 1921, 1922]}
+{"round": 6, "family": "Corey-Chaykovsky Epoxidation and Cyclopropanation", "lane": "gemini", "status": "inserted", "re_id": 482, "mol_ids": [1923, 1924, 1925, 1926, 1927]}

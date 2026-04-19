@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[K+].[OH-]\"\n    ],\n    \"rationale\": \"The reduction of 3-hexanone to n-hexane is a simple, acyclic, and unambiguous example of the Wolff-Kishner reduction. It clearly demonstrates the conversion of a ketone carbonyl group to a methylene group using hydrazine and a strong base (KOH). The symmetrical ketone avoids any potential regiochemical ambiguity or side reactions that might occur with more complex substrates.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic ketone, avoiding aromatic rings (common in Clemmensen reduction examples), esters (avoids Bouveault-Blanc), or other functional groups that could trigger unrelated named reaction queries. The transformation is a clear deoxygenation of a ketone to an alkane, which is the defining characteristic of the Wolff-Kishner reduction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 447,
+    "candidatesTokenCount": 257,
+    "totalTokenCount": 759,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 447
+      }
+    ],
+    "thoughtsTokenCount": 55
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "MuTjaYzCM7H62roPiPKXmQM"
+}

@@ -1,0 +1,17 @@
+{
+  "family": "Pinner Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "CC(C)(C)C#N"
+    ],
+    "product_smiles": [
+      "CC(C)(C)C(=[NH2+])OC.[Cl-]"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This example shows the acid-catalyzed addition of methanol to pivalonitrile (trimethylacetonitrile) to form the corresponding methyl imidate hydrochloride salt (a Pinner salt). The use of a sterically hindered nitrile like pivalonitrile is a classic substrate choice, and the formation of the imidate salt is the defining characteristic of the Pinner reaction. The product is explicitly represented as the protonated imidate salt with its chloride counterion, which is the direct, isolable intermediate of this reaction.",
+    "collision_avoidance_note": "This example uses pivalonitrile and methanol, a common textbook combination. The product is explicitly drawn as the Pinner salt (imidate hydrochloride) to distinguish it from subsequent hydrolysis products (ester or amide) or other nitrile reactions like the Ritter reaction (which requires a carbocation source and typically water) or the Houben-Hoesch reaction (which involves electrophilic aromatic substitution).",
+    "reagents_text": "Methanol, dry hydrogen chloride (gas)",
+    "conditions_text": "Anhydrous conditions, typically at low temperature (e.g., 0 °C) followed by warming or standing."
+  }
+}

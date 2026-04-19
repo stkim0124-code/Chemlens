@@ -1,0 +1,16 @@
+{
+  "family": "Retro-Claisen Reaction",
+  "substrates": [
+    "CCOC(=O)C(C)C(=O)CC"
+  ],
+  "products": [
+    "CCC(C)=O",
+    "CCOC(C)=O"
+  ],
+  "reagents": [
+    "[Na+].[OH-]"
+  ],
+  "rationale": "This is a classic textbook example of a retro-Claisen reaction. The substrate, ethyl 2-methyl-3-oxopentanoate, is a simple acyclic beta-keto ester. Upon treatment with a strong base like sodium hydroxide, the C-C bond between the alpha-carbon and the ketone carbonyl is cleaved. This process is the reverse of the Claisen condensation and yields a ketone (butan-2-one) and an ester (ethyl acetate) after workup. The simplicity of the alkyl groups (ethyl, methyl) makes it a clear and unambiguous representation of the core transformation.",
+  "collision_avoidance_note": "The reaction is a simple cleavage of an acyclic beta-keto ester, avoiding complex ring systems, arenes, or other functional groups that could be associated with different named reactions. The reactants and products are small and fundamental, focusing solely on the C-C bond cleavage characteristic of the retro-Claisen reaction, thus minimizing potential overlap with other condensation or cleavage reaction benchmarks.",
+  "raw_text": "{\n  \"family\": \"Retro-Claisen Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)C(C)C(=O)OCC\"\n    ],\n    \"product_smiles\": [\n      \"CCC(=O)C\",\n      \"CC(=O)OCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[OH-].[Na+]\"\n    ],\n    \"rationale\": \"This is a classic textbook example of a retro-Claisen reaction. The substrate, ethyl 2-methyl-3-oxopentanoate, is a simple acyclic beta-keto ester. Upon treatment with a strong base like sodium hydroxide, the C-C bond between the alpha-carbon and the ketone carbonyl is cleaved. This process is the reverse of the Claisen condensation and yields a ketone (butan-2-one) and an ester (ethyl acetate) after workup. The simplicity of the alkyl groups (ethyl, methyl) makes it a clear and unambiguous representation of the core transformation.\",\n    \"collision_avoidance_note\": \"The reaction is a simple cleavage of an acyclic beta-keto ester, avoiding complex ring systems, arenes, or other functional groups that could be associated with different named reactions. The reactants and products are small and fundamental, focusing solely on the C-C bond cleavage characteristic of the retro-Claisen reaction, thus minimizing potential overlap with other condensation or cleavage reaction benchmarks.\"\n  }\n}"
+}

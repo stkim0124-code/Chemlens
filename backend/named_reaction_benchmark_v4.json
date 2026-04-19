@@ -1,0 +1,461 @@
+{
+  "name": "CHEMLENS benchmark v4 (expanded)",
+  "notes": "v3 small benchmark(35 cases) + new 10 family coverage cases + additional noisy/meaningful SMILES. Built after Gemini auto-curated 10 families (Arbuzov, Baeyer-Villiger/Rearr, Barbier, Combes, Knorr Pyrrole, Lieben Haloform, Lossen, Luche, Madelung, Malonic Ester) were merged into canonical DB on 2026-04-18.",
+  "cases": [
+    {
+      "case_id": "bv_340_exact_extract",
+      "expected_family": "Baeyer-Villiger Oxidation",
+      "reaction_smiles": "CC(=O)[C@H]1C[C@H]2C([C@@H]3OC(C)(C)O[C@@H]13)[C@@]1(C)C[C@H](O)C[C@@H]21>CC(=O)OOc1ccccc1C(=O)O>CC(=O)O[C@H]1C[C@H]2C([C@@H]3OC(C)(C)O[C@@H]13)[C@@]1(C)C[C@H](O)C[C@@H]21",
+      "source_extract_id": 340,
+      "notes": "Exact extract-derived reaction query from extract_molecules.",
+      "disallow_top3": ["Amadori Rearrangement"]
+    },
+    {
+      "case_id": "bv_341_exact_extract",
+      "expected_family": "Baeyer-Villiger Oxidation",
+      "reaction_smiles": "CC(=O)[C@H]1CCCC1>CC(=O)OO>CC(=O)O[C@H]1CCCC1",
+      "source_extract_id": 341,
+      "notes": "Methyl ketone to acetate via Baeyer-Villiger.",
+      "disallow_top3": ["Amadori Rearrangement"]
+    },
+    {
+      "case_id": "bh_368_exact_extract",
+      "expected_family": "Buchwald-Hartwig Cross-Coupling",
+      "reaction_smiles": "Brc1ccccc1.Nc1ccccc1>[Pd]>c1ccc(Nc2ccccc2)cc1",
+      "source_extract_id": 368,
+      "notes": "Aryl bromide + aniline via Pd.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "bh_370_exact_extract",
+      "expected_family": "Buchwald-Hartwig Cross-Coupling",
+      "reaction_smiles": "Brc1ccccc1.CN>[Pd]>CNc1ccccc1",
+      "source_extract_id": 370,
+      "notes": "Aryl bromide + methylamine.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "castro_378_exact_extract",
+      "expected_family": "Castro-Stephens Coupling",
+      "reaction_smiles": "Ic1ccccc1.[Cu]C#CC>>c1ccc(C#CC)cc1",
+      "source_extract_id": 378,
+      "notes": "Aryl iodide + copper acetylide.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "chichibabin_384_exact_extract",
+      "expected_family": "Chichibabin Amination Reaction",
+      "reaction_smiles": "c1ccncc1.[NH2-].[Na+]>>Nc1ccncc1",
+      "source_extract_id": 384,
+      "notes": "Pyridine + NaNH2.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "claisen_387_exact_extract",
+      "expected_family": "Claisen Rearrangement",
+      "reaction_smiles": "C=CCOc1ccccc1>>O=C(c1ccccc1)CC=C",
+      "source_extract_id": 387,
+      "notes": "Allyl phenyl ether.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "benzilic_400_exact_extract",
+      "expected_family": "Benzilic Acid Rearrangement",
+      "reaction_smiles": "O=C(C(=O)c1ccccc1)c1ccccc1.[OH-]>>OC(C(=O)O)(c1ccccc1)c1ccccc1",
+      "source_extract_id": 400,
+      "notes": "Benzil to benzilic acid.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "buchner_403_exact_extract",
+      "expected_family": "Buchner Reaction",
+      "reaction_smiles": "c1ccccc1.[N-]=[N+]=CC(=O)OCC>>O=C(OCC)C1c2ccccc2C=CC=C1",
+      "source_extract_id": 403,
+      "notes": "Benzene ring expansion with carbene.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "aza_claisen_337_exact_extract",
+      "expected_family": "Aza-Claisen Rearrangement",
+      "reaction_smiles": "C=CCN(C)C(=O)C=C>>O=C(NC)CCC=CC=C",
+      "source_extract_id": 337,
+      "notes": "Aza-Claisen [3,3].",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "baker_344_exact_extract",
+      "expected_family": "Baker-Venkataraman Rearrangement",
+      "reaction_smiles": "O=C(OC(=O)c1ccccc1)c1ccc(O)cc1>>O=C(CC(=O)c1ccccc1)c1ccc(O)cc1",
+      "source_extract_id": 344,
+      "notes": "Aryl acylate 1,3-rearrangement.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "balz_351_exact_extract",
+      "expected_family": "Balz-Schiemann Reaction",
+      "reaction_smiles": "[N+](#N)c1ccccc1.[B-](F)(F)(F)F>>Fc1ccccc1",
+      "source_extract_id": 351,
+      "notes": "Aryl diazonium tetrafluoroborate → aryl fluoride.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "bartoli_413_exact_extract",
+      "expected_family": "Bartoli Indole Synthesis",
+      "reaction_smiles": "Cc1ccc([N+](=O)[O-])cc1.C=CC[Mg]Br>>Cc1ccc2[nH]cc(C)c2c1",
+      "source_extract_id": 413,
+      "notes": "Nitroarene + vinyl Grignard → indole.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "barton_356_exact_extract",
+      "expected_family": "Barton Radical Decarboxylation",
+      "reaction_smiles": "O=C(OC1ccccn1=S)CCC.c1ccc(S)cc1>>CCC.c1ccc(SC1ccccn1=S)cc1",
+      "source_extract_id": 356,
+      "notes": "Barton ester → radical.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "brook_416_exact_extract",
+      "expected_family": "Brook Rearrangement",
+      "reaction_smiles": "[Si](C)(C)(C)C(O)c1ccccc1>>O[Si](C)(C)(C).c1ccccc1",
+      "source_extract_id": 416,
+      "notes": "1,2-silyl C→O migration.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "chichibabin_386_exact_extract",
+      "expected_family": "Chichibabin Amination Reaction",
+      "reaction_smiles": "c1ncccn1.[NH2-].[Na+]>>Nc1ncccn1",
+      "source_extract_id": 386,
+      "notes": "Pyrimidine + NaNH2.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "claisen_cond_408_exact_extract",
+      "expected_family": "Claisen Condensation",
+      "reaction_smiles": "CCOC(=O)CC.CCOC(=O)CC.CC[O-].[Na+]>>CCC(=O)C(C)C(=O)OCC",
+      "source_extract_id": 408,
+      "notes": "Classical Claisen condensation.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "claisen_389_exact_extract",
+      "expected_family": "Claisen Rearrangement",
+      "reaction_smiles": "C=CCOc1ccc(C)cc1>>Cc1ccc(O)c(CC=C)c1",
+      "source_extract_id": 389,
+      "notes": "Allyl p-cresyl ether.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "aza_claisen_335_exact_extract",
+      "expected_family": "Aza-Claisen Rearrangement",
+      "reaction_smiles": "[Li][O]C1=CC=CC[C@@H](CC)N1C>>C=C[C@@H]1CC[C@H](C)NC1=O",
+      "source_extract_id": 335,
+      "notes": "[3,3] aza-Claisen."
+    },
+    {
+      "case_id": "bv_342_exact_extract",
+      "expected_family": "Baeyer-Villiger Oxidation",
+      "reaction_smiles": "O=C1CCCC1>mCPBA>O=C1CCCCO1",
+      "source_extract_id": 342,
+      "notes": "Cyclopentanone → δ-valerolactone via BV.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "baker_346_exact_extract",
+      "expected_family": "Baker-Venkataraman Rearrangement",
+      "reaction_smiles": "O=C(OC(=O)C)c1ccc(O)cc1>>O=C(CC(=O)C)c1ccc(O)cc1",
+      "source_extract_id": 346,
+      "notes": "Baker-Venkataraman with acetyl.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "barton_357_exact_extract",
+      "expected_family": "Barton Radical Decarboxylation",
+      "reaction_smiles": "O=C(OC1ccccn1=S)CCCC.c1ccc(S)cc1>>CCCC.c1ccc(SC1ccccn1=S)cc1",
+      "source_extract_id": 357,
+      "notes": "Barton ester butyl → butane.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "bh_371_exact_extract",
+      "expected_family": "Buchwald-Hartwig Cross-Coupling",
+      "reaction_smiles": "Brc1ccc(C)cc1.CCNCC>[Pd]>CCN(CC)c1ccc(C)cc1",
+      "source_extract_id": 371,
+      "notes": "Buchwald-Hartwig on aryl bromide + diethylamine.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "benzilic_402_exact_extract",
+      "expected_family": "Benzilic Acid Rearrangement",
+      "reaction_smiles": "CC1=C[C@H]2[C@H]3C(=O)C=C[C@]2(C)[C@H]1OC(=O)[C@@]12C[C@@]3(C)C(=O)O1>>CC1=C[C@H]2[C@H]3C(=O)C[C@@]2(C)[C@H]1OC(=O)[C@@]12C[C@@]3(C)C(=O)O1",
+      "source_extract_id": 402,
+      "notes": "Boundary case with acceptable alternative.",
+      "acceptable_top1": ["Benzilic Acid Rearrangement", "Claisen-Ireland Rearrangement"],
+      "acceptable_top3": ["Benzilic Acid Rearrangement", "Claisen-Ireland Rearrangement"]
+    },
+    {
+      "case_id": "claisen_cond_409_exact_extract",
+      "expected_family": "Claisen Condensation",
+      "reaction_smiles": "CCOC(=O)CC(C)C.CCOC(=O)CC(C)C.CC[O-].[Na+]>>CC(C)CC(=O)C(C(C)C)C(=O)OCC",
+      "source_extract_id": 409,
+      "notes": "Variant Claisen condensation."
+    },
+    {
+      "case_id": "barton_radical_rxn_353_exact_extract",
+      "expected_family": "Barton Radical Decarboxylation Reaction",
+      "reaction_smiles": "O=C(OC1ccccn1=S)CCCCC.c1ccc(S)cc1>>CCCCC.c1ccc(SC1ccccn1=S)cc1",
+      "source_extract_id": 353,
+      "notes": "Barton variant."
+    },
+    {
+      "case_id": "barton_mccombie_359_boundary_extract",
+      "expected_family": "Barton-Mccombie Radical Deoxygenation Reaction",
+      "reaction_smiles": "CC(C)(C)OC(=S)SCC.[H][Sn](CCCC)(CCCC)CCCC>>CCCC(C)(C)C",
+      "source_extract_id": 359,
+      "notes": "Xanthate → deoxygenation.",
+      "acceptable_top1": ["Barton-Mccombie Radical Deoxygenation Reaction", "Barton Radical Decarboxylation Reaction"],
+      "acceptable_top3": ["Barton-Mccombie Radical Deoxygenation Reaction", "Barton Radical Decarboxylation Reaction"]
+    },
+    {
+      "case_id": "noisy_acetic_acid",
+      "expected_family": null,
+      "smiles": "CC(=O)O",
+      "notes": "Plain acetic acid: too generic to pin a single family. Expected no confident hit.",
+      "no_confident_hit_required": true,
+      "max_top1_score": 0.4,
+      "disallow_top3": []
+    },
+    {
+      "case_id": "noisy_ethanol",
+      "expected_family": null,
+      "smiles": "CCO",
+      "notes": "Plain ethanol: expected no confident hit.",
+      "no_confident_hit_required": true,
+      "max_top1_score": 0.4,
+      "disallow_top3": []
+    },
+    {
+      "case_id": "noisy_benzene",
+      "expected_family": null,
+      "smiles": "c1ccccc1",
+      "notes": "Plain benzene: expected no confident hit (common aromatic).",
+      "no_confident_hit_required": true,
+      "max_top1_score": 0.4,
+      "disallow_top3": []
+    },
+    {
+      "case_id": "noisy_acetone",
+      "expected_family": null,
+      "smiles": "CC(=O)C",
+      "notes": "Plain acetone: expected no confident hit.",
+      "no_confident_hit_required": true,
+      "max_top1_score": 0.4,
+      "disallow_top3": []
+    },
+    {
+      "case_id": "noisy_toluene",
+      "expected_family": null,
+      "smiles": "Cc1ccccc1",
+      "notes": "Plain toluene: expected no confident hit.",
+      "no_confident_hit_required": true,
+      "max_top1_score": 0.4,
+      "disallow_top3": []
+    },
+    {
+      "case_id": "meaningful_pentanoic_acid",
+      "expected_family": "Barton Radical Decarboxylation Reaction",
+      "smiles": "CCCCC(=O)O",
+      "notes": "Plain carboxylic acid — acceptable top3 hit if Barton reactant SMILES pool contains it.",
+      "no_confident_hit_required": false,
+      "acceptable_top3": ["Barton Radical Decarboxylation Reaction", "Barton-Mccombie Radical Deoxygenation Reaction"],
+      "disallow_top3": []
+    },
+    {
+      "case_id": "meaningful_cyclohexanone",
+      "expected_family": "Baeyer-Villiger Oxidation",
+      "smiles": "O=C1CCCCC1",
+      "notes": "Cyclohexanone: could be BV substrate but also many other families. Acceptable = no confident hit OR BV in top3.",
+      "no_confident_hit_required": false,
+      "no_confident_hit_acceptable": true,
+      "acceptable_top3": ["Baeyer-Villiger Oxidation", "Baeyer-Villiger Oxidation/Rearrangement"],
+      "disallow_top3": []
+    },
+    {
+      "case_id": "meaningful_aniline_aryl_bromide",
+      "expected_family": "Buchwald-Hartwig Cross-Coupling",
+      "smiles": "Brc1ccccc1.Nc1ccccc1",
+      "notes": "Aryl bromide + aniline as mixture: should suggest Buchwald-Hartwig.",
+      "no_confident_hit_required": false,
+      "acceptable_top3": ["Buchwald-Hartwig Cross-Coupling"],
+      "disallow_top3": []
+    },
+
+    {
+      "case_id": "arbuzov_new_reaction",
+      "expected_family": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "reaction_smiles": "CCOP(OCC)OCC.ClCc1ccccc1>>CCOP(=O)(Cc1ccccc1)OCC.CCCl",
+      "source_extract_id": 462,
+      "notes": "Michaelis-Arbuzov: triethyl phosphite + benzyl chloride → benzylphosphonate + ethyl chloride.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "arbuzov_new_benzyl_product",
+      "expected_family": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "smiles": "CCOP(=O)(Cc1ccccc1)OCC",
+      "notes": "Benzyl phosphonate as a single product query.",
+      "no_confident_hit_required": false,
+      "acceptable_top3": ["Arbuzov Reaction (Michaelis-Arbuzov Reaction)"],
+      "disallow_top3": []
+    },
+    {
+      "case_id": "bv_rearr_new_reaction",
+      "expected_family": "Baeyer-Villiger Oxidation/Rearrangement",
+      "reaction_smiles": "O=C1CCCCC1>COOC(=O)c1cccc(Cl)c1>O=C1CCCCO1",
+      "source_extract_id": 463,
+      "notes": "Cyclohexanone + m-CPBA → ε-caprolactone.",
+      "acceptable_top1": ["Baeyer-Villiger Oxidation", "Baeyer-Villiger Oxidation/Rearrangement"],
+      "acceptable_top3": ["Baeyer-Villiger Oxidation", "Baeyer-Villiger Oxidation/Rearrangement"]
+    },
+    {
+      "case_id": "barbier_new_reaction",
+      "expected_family": "Barbier Coupling Reaction",
+      "reaction_smiles": "CC(C)=O.C=CCBr>[Zn]>C=CCC(C)(C)O",
+      "source_extract_id": 461,
+      "notes": "Acetone + allyl bromide + Zn → tertiary homoallylic alcohol.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "barbier_new_product",
+      "expected_family": "Barbier Coupling Reaction",
+      "smiles": "C=CCC(C)(C)O",
+      "notes": "Homoallylic tertiary alcohol product.",
+      "no_confident_hit_required": false,
+      "acceptable_top3": ["Barbier Coupling Reaction"],
+      "disallow_top3": []
+    },
+    {
+      "case_id": "combes_new_reaction",
+      "expected_family": "Combes Quinoline Synthesis",
+      "reaction_smiles": "Nc1ccccc1.CC(=O)CC(C)=O>O=S(=O)(O)O>Cc1cc(C)c2ccccc2n1",
+      "source_extract_id": 464,
+      "notes": "Aniline + acetylacetone + H2SO4 → 2,4-dimethylquinoline.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "combes_new_product",
+      "expected_family": "Combes Quinoline Synthesis",
+      "smiles": "Cc1cc(C)c2ccccc2n1",
+      "notes": "2,4-Dimethylquinoline product.",
+      "no_confident_hit_required": false,
+      "acceptable_top3": ["Combes Quinoline Synthesis"],
+      "disallow_top3": []
+    },
+    {
+      "case_id": "knorr_pyrrole_new_reaction",
+      "expected_family": "Knorr Pyrrole Synthesis",
+      "reaction_smiles": "CCOC(=O)C(N)C(C)=O.CCOC(=O)CC(C)=O>CC(=O)O>CCOC(=O)c1c(C)[nH]c(C)c1C(=O)OCC",
+      "source_extract_id": 455,
+      "notes": "Knorr pyrrole synthesis: α-aminoketone + β-ketoester.",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "knorr_pyrrole_new_product",
+      "expected_family": "Knorr Pyrrole Synthesis",
+      "smiles": "CCOC(=O)c1c(C)[nH]c(C)c1C(=O)OCC",
+      "notes": "Diethyl 3,5-dimethylpyrrole-2,4-dicarboxylate (Knorr's original product).",
+      "no_confident_hit_required": false,
+      "acceptable_top3": ["Knorr Pyrrole Synthesis"],
+      "disallow_top3": []
+    },
+    {
+      "case_id": "lieben_haloform_new_reaction",
+      "expected_family": "Lieben Haloform Reaction",
+      "reaction_smiles": "CC(=O)c1ccccc1>BrBr.[Na+].[OH-]>O=C([O-])c1ccccc1.[Na+].BrC(Br)Br",
+      "source_extract_id": 456,
+      "notes": "Acetophenone + Br2/NaOH → sodium benzoate + bromoform (Lieben).",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "lossen_new_reaction",
+      "expected_family": "Lossen Rearrangement",
+      "reaction_smiles": "O=C(NOC(=O)c1ccccc1)c1ccccc1>[Na+].[OH-]>Nc1ccccc1",
+      "source_extract_id": 457,
+      "notes": "Hydroxamic acid O-acylate → isocyanate → aniline (Lossen).",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "luche_new_reaction",
+      "expected_family": "Luche Reduction",
+      "reaction_smiles": "O=C1C=CCC1>[BH4-].[Na+].[Ce+3].[Cl-].[Cl-].[Cl-]>OC1C=CCC1",
+      "source_extract_id": 458,
+      "notes": "Enone → allylic alcohol via NaBH4/CeCl3 (Luche 1,2-selective).",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "luche_new_product",
+      "expected_family": "Luche Reduction",
+      "smiles": "OC1C=CCC1",
+      "notes": "Allylic cyclopentenol as product query.",
+      "no_confident_hit_required": false,
+      "acceptable_top3": ["Luche Reduction"],
+      "disallow_top3": []
+    },
+    {
+      "case_id": "madelung_new_reaction",
+      "expected_family": "Madelung Indole Synthesis",
+      "reaction_smiles": "CC(=O)Nc1ccccc1C>CC(C)(C)[O-].[K+]>Cc1c[nH]c2ccccc12",
+      "source_extract_id": 459,
+      "notes": "N-acyl-o-toluidine + KOtBu → 3-methylindole (Madelung).",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "madelung_new_product",
+      "expected_family": "Madelung Indole Synthesis",
+      "smiles": "Cc1c[nH]c2ccccc12",
+      "notes": "3-methylindole product.",
+      "no_confident_hit_required": false,
+      "acceptable_top3": ["Madelung Indole Synthesis"],
+      "disallow_top3": []
+    },
+    {
+      "case_id": "malonic_ester_new_reaction",
+      "expected_family": "Malonic Ester Synthesis",
+      "reaction_smiles": "CCOC(=O)CC(=O)OCC.CCBr>CC[O-].[Na+]>CCCC(=O)O",
+      "source_extract_id": 460,
+      "notes": "Diethyl malonate + ethyl bromide → butanoic acid (after hydrolysis/decarb).",
+      "disallow_top3": []
+    },
+    {
+      "case_id": "malonic_ester_new_product",
+      "expected_family": "Malonic Ester Synthesis",
+      "smiles": "CCCC(=O)O",
+      "notes": "Butanoic acid product (from malonic ester synthesis).",
+      "no_confident_hit_required": false,
+      "no_confident_hit_acceptable": true,
+      "acceptable_top3": ["Malonic Ester Synthesis", "Barton Radical Decarboxylation Reaction", "Barton-Mccombie Radical Deoxygenation Reaction"],
+      "disallow_top3": []
+    },
+    {
+      "case_id": "boundary_pentanoic_over_matching",
+      "expected_family": null,
+      "smiles": "CCCCC(=O)O",
+      "notes": "Boundary: plain carboxylic acid should not produce a confident new-family hit unless the scorer is tuned for it.",
+      "no_confident_hit_required": false,
+      "no_confident_hit_acceptable": true,
+      "acceptable_top3": ["Barton Radical Decarboxylation Reaction", "Barton-Mccombie Radical Deoxygenation Reaction"],
+      "max_top1_score": 0.6
+    },
+    {
+      "case_id": "boundary_chloro_benzyl_chloride",
+      "expected_family": null,
+      "smiles": "ClCc1ccccc1",
+      "notes": "Boundary: benzyl chloride is a generic electrophile used in Arbuzov, Malonic ester alkylation, etc. No single confident hit required.",
+      "no_confident_hit_required": false,
+      "no_confident_hit_acceptable": true,
+      "acceptable_top3": ["Arbuzov Reaction (Michaelis-Arbuzov Reaction)", "Malonic Ester Synthesis"],
+      "max_top1_score": 0.6,
+      "disallow_top3": []
+    }
+  ]
+}

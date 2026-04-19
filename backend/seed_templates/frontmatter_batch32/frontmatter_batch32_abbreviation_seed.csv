@@ -1,0 +1,28 @@
+alias,canonical_name,entity_type
+I2,iodine,halogen_source
+NaOH,sodium hydroxide,base
+NaOBr,sodium hypobromite,halogen_source
+THF,tetrahydrofuran,solvent
+Br2,bromine,halogen_source
+NaOCl,sodium hypochlorite,halogen_source
+MeOH,methanol,solvent
+Ac2O,acetic anhydride,acylating_agent
+DBU,"1,8-diazabicyclo[5.4.0]undec-7-ene",base
+EDC,N-(3-dimethylaminopropyl)-N′-ethylcarbodiimide,coupling_agent
+HCl,hydrochloric acid,acid
+CeCl3·7H2O,cerium(III) chloride heptahydrate,additive
+NaBH4,sodium borohydride,reducing_agent
+NaOEt,sodium ethoxide,base
+NaNH2,sodium amide,base
+n-BuLi,n-butyllithium,base
+KOtBu,potassium tert-butoxide,base
+TFA,trifluoroacetic acid,acid
+Et3SiH,triethylsilane,reducing_agent
+DMSO,dimethyl sulfoxide,solvent
+CH2Cl2,dichloromethane,solvent
+EtOH,ethanol,solvent
+KOH,potassium hydroxide,base
+DMAP,4-dimethylaminopyridine,catalyst
+Pd(OAc)2,palladium(II) acetate,catalyst
+dppe,"1,2-bis(diphenylphosphino)ethane",ligand
+NaH,sodium hydride,base

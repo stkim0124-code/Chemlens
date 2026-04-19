@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Swern Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"O=C(Cl)C(=O)Cl\",\n      \"CCN(CC)CC\"\n    ],\n    \"rationale\": \"The oxidation of 1-butanol to butanal is a classic, simple, and unambiguous textbook example of the Swern oxidation. It demonstrates the conversion of a primary alcohol to an aldehyde, a hallmark of this reaction, using the standard reagent combination of DMSO, oxalyl chloride, and triethylamine. The acyclic, unfunctionalized substrate avoids potential side reactions or ambiguities with other named reactions.\",\n    \"collision_avoidance_note\": \"This example uses a simple primary aliphatic alcohol (1-butanol). It avoids aromatic rings (common in many named reactions), complex functional groups, or substrates prone to rearrangement, ensuring it is specific to the Swern oxidation and less likely to be misidentified as another transformation like a Corey-Kim oxidation, Parikh-Doering oxidation, or other general oxidation methods.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 403,
+    "candidatesTokenCount": 278,
+    "totalTokenCount": 775,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 403
+      }
+    ],
+    "thoughtsTokenCount": 94
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "O9DjafCeM_uj2roPtdbcgA8"
+}

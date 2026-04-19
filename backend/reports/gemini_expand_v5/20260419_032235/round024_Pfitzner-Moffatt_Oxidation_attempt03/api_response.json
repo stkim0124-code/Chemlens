@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Pfitzner-Moffatt Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"C1CCCCC1N=C=NC1CCCCC1\",\n      \"c1cc[nH+]cc1.[O-]C(=O)C(F)(F)F\"\n    ],\n    \"rationale\": \"This example shows the oxidation of a simple primary alcohol (1-pentanol) to the corresponding aldehyde (pentanal) using the classic Pfitzner-Moffatt conditions: dimethyl sulfoxide (DMSO) as the oxidant, dicyclohexylcarbodiimide (DCC) as the activator, and pyridinium trifluoroacetate as the mild acid catalyst. This represents the core transformation of the reaction family on a simple, acyclic, and unambiguous substrate.\",\n    \"collision_avoidance_note\": \"The substrate is a simple primary aliphatic alcohol to avoid overlap with reactions specific to benzylic, allylic, or complex cyclic systems. The reagents (DMSO, DCC, acid catalyst) are explicitly included to define the Pfitzner-Moffatt conditions, distinguishing it from other activated-DMSO oxidations like the Swern or Parikh-Doering oxidations, which use different activators (oxalyl chloride/TFAA or SO3-pyridine complex, respectively).\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 442,
+    "candidatesTokenCount": 339,
+    "totalTokenCount": 869,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 442
+      }
+    ],
+    "thoughtsTokenCount": 88
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "9uDjabjjMZe7vr0P2c7c8Qw"
+}

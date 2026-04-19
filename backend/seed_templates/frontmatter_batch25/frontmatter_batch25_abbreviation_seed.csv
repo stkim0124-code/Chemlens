@@ -1,0 +1,37 @@
+alias,canonical_name,entity_type
+NH3,ammonia,nitrogen_source
+HNO2,nitrous acid,acid
+HNO3,nitric acid,oxidant
+Cu(NO3)2,copper(II) nitrate,oxidant
+MnO2,manganese dioxide,oxidant
+(NH4)2Ce(NO3)6,ceric ammonium nitrate,oxidant
+DDQ,"2,3-dichloro-5,6-dicyano-1,4-benzoquinone",oxidant
+KMnO4,potassium permanganate,oxidant
+KOH,potassium hydroxide,base
+MeOH,methanol,solvent
+EtOH,ethanol,solvent
+Pd(0),palladium(0),catalyst
+PPh3,triphenylphosphine,ligand
+TEA,triethylamine,base
+CH3CN,acetonitrile,solvent
+DMF,"N,N-dimethylformamide",solvent
+LiCl,lithium chloride,salt_additive
+P(o-tolyl)3,tri(o-tolyl)phosphine,ligand
+P(2-furyl)3,tris(2-furyl)phosphine,ligand
+Pd2(dba)3,tris(dibenzylideneacetone)dipalladium(0),catalyst
+NaI,sodium iodide,nucleophile
+KSCN,potassium thiocyanate,nucleophile
+KI,potassium iodide,nucleophile
+Et3N,triethylamine,base
+PBr3,phosphorus tribromide,halogenation_reagent
+PCl3,phosphorus trichloride,halogenation_reagent
+Br2,bromine,halogen_source
+Cl2,chlorine,halogen_source
+quinoline,quinoline,base
+CH3NO2,nitromethane,nitroalkane
+NaHCO3,sodium bicarbonate,base
+TBAF,tetrabutylammonium fluoride,fluoride_source
+DMAP,4-dimethylaminopyridine,nucleophilic_catalyst
+THF,tetrahydrofuran,solvent
+TMG,tetramethylguanidine,base
+TMSCl,trimethylsilyl chloride,silylating_reagent

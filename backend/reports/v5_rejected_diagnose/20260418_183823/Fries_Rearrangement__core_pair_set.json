@@ -1,0 +1,25 @@
+{
+  "family_name": "Fries Rearrangement",
+  "variant": "core_pair_set",
+  "summary": {
+    "benchmark_name": "CHEMLENS small benchmark v3",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 27,
+    "top1_accuracy": 1.0,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "changed_cases": [],
+  "reaction_extract_ids": [
+    516
+  ],
+  "extract_molecule_ids": [
+    2082,
+    2083,
+    2084
+  ]
+}

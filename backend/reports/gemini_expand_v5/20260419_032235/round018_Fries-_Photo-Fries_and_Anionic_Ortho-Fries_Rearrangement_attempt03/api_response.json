@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\",\n      \"CC(=O)c1cccc(O)c1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Al+3].[Cl-].[Cl-].[Cl-]\"\n    ],\n    \"rationale\": \"The Fries rearrangement of phenyl acetate is the simplest and most fundamental textbook example of this reaction family. It clearly demonstrates the migration of an acyl group from a phenolic oxygen to the ortho and para positions of the aromatic ring under Lewis acid catalysis (AlCl3). This example is specific to the Fries rearrangement and avoids complex substituents that could cause collisions with other named reactions.\",\n    \"collision_avoidance_note\": \"This example uses the simplest possible aromatic system (phenyl) and acyl group (acetyl) to avoid overlap with reactions involving more complex polycyclic arenes or functional groups. It avoids motifs common in other rearrangements like diazo groups (Wolff), peroxides (Baeyer-Villiger), or oximes (Beckmann), ensuring it is a specific and non-colliding seed for the Fries rearrangement family.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 387,
+    "candidatesTokenCount": 305,
+    "totalTokenCount": 763,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 387
+      }
+    ],
+    "thoughtsTokenCount": 71
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "HdvjacC_E9__2roPiaiKqAw"
+}

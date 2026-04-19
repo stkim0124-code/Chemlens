@@ -1,0 +1,13 @@
+alias,canonical_name,entity_type
+PPA,polyphosphoric acid,reagent
+DDQ,"2,3-dichloro-5,6-dicyano-1,4-benzoquinone",oxidant
+mCPBA,meta-chloroperoxybenzoic acid,oxidant
+PCC,pyridinium chlorochromate,oxidant
+CuBr,copper(I) bromide,catalyst
+TsOH,p-toluenesulfonic acid,reagent
+BH3·DMS,borane-dimethyl sulfide complex,borane_reagent
+NaH,sodium hydride,base
+DMSO,dimethyl sulfoxide,solvent
+THF,tetrahydrofuran,solvent
+LiOMe,lithium methoxide,base
+CH2Cl2,dichloromethane,solvent

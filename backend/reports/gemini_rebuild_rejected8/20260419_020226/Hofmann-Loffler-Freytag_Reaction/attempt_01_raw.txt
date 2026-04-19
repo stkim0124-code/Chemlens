@@ -1,0 +1,11 @@
+{
+  "substrate_smiles": [
+    "CCCCCN(C)Cl"
+  ],
+  "product_smiles": [
+    "CN1CCCC1C"
+  ],
+  "optional_reagent_smiles": [
+    "O"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Pauson-Khand Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C#C\",\n      \"C=C\"\n    ],\n    \"product_smiles\": [\n      \"O=C1C=CCC1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[C-]#[O+]\",\n      \"O=C1[Co]2(CO)(CO)(CO)C3=[C-]2[Co]1(CO)(CO)CO3\"\n    ],\n    \"rationale\": \"This reaction shows the intermolecular [2+2+1] cycloaddition of the simplest alkyne (acetylene) and alkene (ethylene) with carbon monoxide to form the parent cyclopentenone. This is the most fundamental and textbook representation of the Pauson-Khand reaction, clearly illustrating the core transformation without any extraneous functional groups or structural complexity. The use of dicobalt octacarbonyl as the key reagent is explicitly included.\",\n    \"collision_avoidance_note\": \"The chosen substrates are the simplest possible alkyne and alkene, avoiding any functional groups, rings, or aromatic systems that could cause collisions with other named reactions. The product is the unsubstituted parent cyclopentenone, which is a unique and specific outcome of this cycloaddition, minimizing overlap with other annulation or carbonyl chemistry benchmarks.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 460,
+    "candidatesTokenCount": 308,
+    "totalTokenCount": 836,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 460
+      }
+    ],
+    "thoughtsTokenCount": 68
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "sM_jaf7QIZTF0-kPv7nmsAI"
+}

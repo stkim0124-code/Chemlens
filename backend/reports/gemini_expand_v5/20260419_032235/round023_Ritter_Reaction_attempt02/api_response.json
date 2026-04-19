@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This reaction is a quintessential textbook example of the Ritter reaction. Tert-butanol serves as a stable and simple precursor to the tert-butyl carbocation under strong acid conditions (sulfuric acid). Acetonitrile is the simplest common nitrile nucleophile. The product, N-tert-butylacetamide, is the direct result of the carbocation trapping by the nitrile, followed by hydrolysis of the intermediate nitrilium ion. All reactants and products are simple, acyclic, and lack complex functional groups, making this a clear and unambiguous representation of the core transformation.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic aliphatic compounds (tert-butanol and acetonitrile) to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts), rearrangements (e.g., Pinacol, Beckmann), or other complex functional groups. The choice of a tertiary alcohol as the carbocation precursor is specific and characteristic of the Ritter reaction, distinguishing it from reactions that might involve primary or secondary alcohols which could undergo other pathways. The transformation is a direct C-N bond formation to create an amide, which is the defining feature of the Ritter reaction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 435,
+    "candidatesTokenCount": 351,
+    "totalTokenCount": 840,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 435
+      }
+    ],
+    "thoughtsTokenCount": 54
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "MuDjaea-Go_c2roPgoXF4Q0"
+}

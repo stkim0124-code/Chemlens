@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"B(O)(O)c1ccccc1\",\n      \"Brc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"c1ccc(cc1)c1ccccc1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Pd]\"\n    ],\n    \"rationale\": \"This reaction represents the quintessential Suzuki cross-coupling: the palladium-catalyzed reaction between phenylboronic acid and bromobenzene to form biphenyl. This is a universally recognized, simple, and clear textbook example. It uses the most common coupling partners (an aryl boronic acid and an aryl bromide) and the simplest aromatic system (benzene), making it an ideal canonical representation of the reaction family.\",\n    \"collision_avoidance_note\": \"This example uses simple, unfunctionalized phenyl rings to avoid overlap with other named reactions that might involve specific functional groups (e.g., carbonyls, nitro groups, etc.). The use of a boronic acid and an aryl halide is specific to the Suzuki coupling and related reactions, minimizing collision with other C-C bond forming reactions like Heck, Stille, or Sonogashira, which use different nucleophiles (alkenes, organostannanes, or terminal alkynes, respectively).\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 459,
+    "candidatesTokenCount": 312,
+    "totalTokenCount": 851,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 459
+      }
+    ],
+    "thoughtsTokenCount": 80
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "HM7jaeOCG7me0-kPnY2_2As"
+}

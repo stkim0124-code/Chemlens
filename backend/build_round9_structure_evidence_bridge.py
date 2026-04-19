@@ -4,8 +4,14 @@ import argparse
 import re
 import shutil
 import sqlite3
+import time
 from pathlib import Path
-from typing import List, Tuple
+from typing import List, Optional, Tuple
+
+try:
+    import requests as _requests
+except ImportError:
+    _requests = None  # type: ignore
 
 from app.labint_intel import backfill_labint_intel, ensure_labint_intel_schema
 
@@ -26,9 +32,113 @@ APP_DIR = BACKEND_DIR / "app"
 
 DEFAULT_MAIN_DB = APP_DIR / "labint.db"
 DEFAULT_STAGING_DB = APP_DIR / "labint_round9_v5_final_staging.db"
-DEFAULT_OUT_DB = APP_DIR / "labint_round9_bridge_work.db"
+DEFAULT_OUT_DB = APP_DIR / "labint_bridge_work.db"
 
 TOKEN_RE = re.compile(r"(?<![A-Za-z0-9])([A-Za-z0-9@+\-\[\]\(\)=#$\\/\.%:]{3,})(?![A-Za-z0-9])")
+
+# ── PubChem fallback 설정 ─────────────────────────────────────────────────
+PUBCHEM_URL = (
+    "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/"
+    "{name}/property/IsomericSMILES/JSON"
+)
+PUBCHEM_DELAY = 0.35      # 초 (3 req/s 이하 유지)
+PUBCHEM_TIMEOUT = 10      # 초
+PUBCHEM_ENABLED = True    # False로 설정하면 PubChem 조회 건너뜀
+
+# PubChem 호출 캐시 (프로세스 내 중복 API 호출 방지)
+_pubchem_cache: dict[str, Optional[str]] = {}
+
+# PubChem fallback에서 제외할 플레이스홀더/일반명
+_PUBCHEM_SKIP_EXACT: set[str] = {
+    "reactant","product","reagent","solvent","intermediate","catalyst",
+    "substrate","electrophile","nucleophile","base","acid","heat","water",
+    "alkene","alkyne","ketone","aldehyde","alcohol","amine","ester","alkyl",
+    "aryl","cyclic","linear","bicyclic","imide","imine","enol","enone",
+    "diene","dienophile","acyloin","enediyne","nitrone",
+    "Reactant","Product","Reagent","Solvent","Intermediate","Catalyst",
+    "Alkene","Alkane","Alkyne","Benzene","Nitrile","Ketone","Electrophile",
+    "toluene","benzene","pyridine","methanol","ethanol","acetone",
+    "THF","DMF","DMSO","DCM","xylene","dioxane","diglyme",
+    "quinoline","indole","pyrrole","oxime","diazoketone",
+    "Isonitrile","Lindlar's catalyst","Burgess reagent",
+    "enolate","dianion","zinc carbenoid","carbanion","carbenoid",
+}
+_PUBCHEM_SKIP_RE: list = [
+    re.compile(r"\bR\d*\b|\bAr\b(?!\w)|\bX\b(?!\w)|\bZ\b|\bLG\b|\bNu\b"),
+    re.compile(r";"),
+    re.compile(r"\d+\s*(equiv|mol%|°C|min|hr|h\b|wt%|mmol|mL)"),
+    re.compile(r"^(heat|hv|Δ|RT|reflux|\d|:|°|\[)", re.I),
+    re.compile(r"\b(enolate|dianion|carbene|ylide|radical|skeleton|system)\b", re.I),
+    re.compile(r"\b(intermediate|precursor|derivative|analog|polymer)\b", re.I),
+    re.compile(r"\b(mixture|salt\b|complex\b|product\b|substrate\b)\b", re.I),
+    re.compile(r"\b(then|followed|step|excess|cat\.\b)\b", re.I),
+    re.compile(r"[,]\s*(or|and)\s+[a-z]", re.I),
+]
+
+
+def _is_pubchem_name(text: str) -> bool:
+    """PubChem 이름 조회 가치가 있는 화학명인지 판단."""
+    t = text.strip()
+    if len(t) < 5 or len(t) > 80:
+        return False
+    if t in _PUBCHEM_SKIP_EXACT:
+        return False
+    if not re.search(r"[a-z]{3,}", t):
+        return False
+    if t.count(",") > 1:
+        return False
+    for pat in _PUBCHEM_SKIP_RE:
+        if pat.search(t):
+            return False
+    return True
+
+
+def _pubchem_lookup(name: str) -> Optional[str]:
+    """
+    화학명 → canonical SMILES. 캐시 사용.
+    - 404 / no-hit → None 캐시 (영구 미스로 처리)
+    - 429 / 5xx   → backoff 재시도 최대 2회, 실패 시 None 비캐시 (일시 오류)
+    - exception   → None 비캐시 (일시 오류)
+    rate limit: 호출자가 PUBCHEM_DELAY 슬립 책임.
+    """
+    if _requests is None or not PUBCHEM_ENABLED:
+        return None
+    if name in _pubchem_cache:
+        return _pubchem_cache[name]
+    url = PUBCHEM_URL.format(name=_requests.utils.quote(name.strip()))
+    for attempt in range(3):
+        try:
+            r = _requests.get(url, timeout=PUBCHEM_TIMEOUT)
+            if r.status_code == 200:
+                props = r.json().get("PropertyTable", {}).get("Properties", [])
+                if props:
+                    p = props[0]
+                    raw = (p.get("IsomericSMILES") or
+                           p.get("CanonicalSMILES") or
+                           p.get("SMILES"))
+                    if raw and Chem is not None:
+                        mol = Chem.MolFromSmiles(raw)
+                        if mol:
+                            canon = Chem.MolToSmiles(mol, canonical=True)
+                            _pubchem_cache[name] = canon   # 영구 캐시
+                            return canon
+                _pubchem_cache[name] = None                # no-hit 영구 캐시
+                return None
+            if r.status_code == 404:
+                _pubchem_cache[name] = None                # no-hit 영구 캐시
+                return None
+            if r.status_code in (429, 500, 503):
+                wait = PUBCHEM_DELAY * (3 ** attempt)
+                time.sleep(wait)
+                continue                                    # 재시도 (캐시 안 씀)
+            _pubchem_cache[name] = None                    # 기타 오류 영구 캐시
+            return None
+        except Exception:
+            if attempt < 2:
+                time.sleep(PUBCHEM_DELAY * 2)
+                continue
+            return None                                     # 일시 오류 비캐시
+    return None
 
 
 def _require_rdkit() -> None:
@@ -59,17 +169,49 @@ def candidate_strings(text: str) -> List[str]:
     return out
 
 
-def classify_candidate(candidate: str) -> Tuple[int, str]:
+def classify_candidate(candidate: str) -> Tuple[int, str, str]:
+    """
+    tier 분류:
+      1 = exact SMILES (RDKit direct parse 또는 PubChem name lookup)
+      2 = SMARTS generic pattern
+      3 = 미분류 (이름 기반이지만 구조 미확보)
+
+    반환값: (tier, normalized_smiles_or_smarts, source_kind)
+      source_kind:
+        "text_smiles"         — RDKit direct parse 성공
+        "text_smarts"         — SMARTS generic pattern
+        "pubchem_name_lookup" — PubChem API 조회 성공
+        "text_only"           — 미분류
+
+    PubChem fallback:
+      RDKit/SMARTS 파싱이 모두 실패하고 _is_pubchem_name() 통과 시
+      PubChem API 조회. 성공하면 tier1 반환.
+      rate limit: 캐시 미스 시만 PUBCHEM_DELAY 슬립.
+    """
     if not candidate:
-        return 3, ""
+        return 3, "", "text_only"
     _require_rdkit()
+
+    # 1순위: RDKit direct SMILES parse
     mol = Chem.MolFromSmiles(candidate)
     if mol is not None:
-        return 1, Chem.MolToSmiles(mol, canonical=True)
+        return 1, Chem.MolToSmiles(mol, canonical=True), "text_smiles"
+
+    # 2순위: SMARTS generic pattern
     qmol = Chem.MolFromSmarts(candidate)
     if qmol is not None:
-        return 2, candidate
-    return 3, ""
+        return 2, candidate, "text_smarts"
+
+    # 3순위: PubChem name lookup (화학명 후보인 경우에만)
+    if _is_pubchem_name(candidate):
+        cached = candidate in _pubchem_cache
+        result = _pubchem_lookup(candidate)
+        if not cached:
+            time.sleep(PUBCHEM_DELAY)  # rate limit (캐시 미스 시만)
+        if result:
+            return 1, result, "pubchem_name_lookup"
+
+    return 3, "", "text_only"
 
 
 def copy_table_sql(staging_conn: sqlite3.Connection, work_conn: sqlite3.Connection, table_name: str) -> None:
@@ -149,9 +291,16 @@ def backfill_extract_molecules(conn: sqlite3.Connection) -> dict:
             parsed_any = False
             seen_local = set()
             for cand in candidate_strings(text):
-                tier, normalized = classify_candidate(cand)
+                tier, normalized, source_kind = classify_candidate(cand)
                 if tier in (1, 2) and normalized and (role, normalized) not in seen_local:
                     seen_local.add((role, normalized))
+                    # role_confidence: PubChem 유래는 0.80, direct/smarts는 0.92/0.75
+                    if source_kind == "pubchem_name_lookup":
+                        role_conf = 0.80
+                    elif role in {"reactant", "product"}:
+                        role_conf = 0.92
+                    else:
+                        role_conf = 0.75
                     cur.execute(
                         """
                         INSERT INTO extract_molecules
@@ -173,8 +322,8 @@ def backfill_extract_molecules(conn: sqlite3.Connection) -> dict:
                             text,
                             text,
                             "reactants_text" if role == "reactant" else "products_text",
-                            "text_smiles" if tier == 1 else "text_smarts",
-                            0.92 if role in {"reactant", "product"} else 0.75,
+                            source_kind,   # provenance 보존
+                            role_conf,
                         ),
                     )
                     inserted += 1
@@ -218,10 +367,16 @@ def main() -> None:
     staging_db = Path(args.staging_db)
     out_db = Path(args.out_db)
 
+    print("[INFO] Canonical DB baseline: app/labint.db")
+    print(f"[INFO] Disposable bridge work DB: {out_db}")
+
     if not main_db.exists():
         raise SystemExit(f"Main DB not found: {main_db}")
     if not staging_db.exists():
         raise SystemExit(f"Staging DB not found: {staging_db}")
+    if out_db.resolve() == main_db.resolve():
+        raise SystemExit("Safety: --out-db must not equal --main-db. "
+                         "Use a separate disposable path (e.g. app/labint_bridge_work.db)")
 
     shutil.copy2(main_db, out_db)
     work_conn = sqlite3.connect(str(out_db))

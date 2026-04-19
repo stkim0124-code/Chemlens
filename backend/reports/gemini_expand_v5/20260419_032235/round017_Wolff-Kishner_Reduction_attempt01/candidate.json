@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCC(C)=O"
+  ],
+  "products": [
+    "CCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic ketone (butan-2-one) to the corresponding alkane (n-butane) using hydrazine (NN) and potassium hydroxide ([OH-].[K+]), which are the classic reagents for the Wolff-Kishner reduction. The transformation is a clear deoxygenation of a carbonyl group to a methylene group, which is the defining feature of this reaction. The substrates and products are small, acyclic, and lack complex functional groups, making it a clear and unambiguous example.",
+  "collision_avoidance_note": "This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic systems (like Friedel-Crafts acylation/alkylation) or other functional groups. It is distinct from the Clemmensen reduction, which uses acidic conditions (Zn(Hg)/HCl), and from reductions of other functional groups. The simplicity of the substrate focuses the query specifically on the carbonyl-to-methylene transformation characteristic of the Wolff-Kishner reduction.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=C(C)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic ketone (butan-2-one) to the corresponding alkane (n-butane) using hydrazine (NN) and potassium hydroxide ([OH-].[K+]), which are the classic reagents for the Wolff-Kishner reduction. The transformation is a clear deoxygenation of a carbonyl group to a methylene group, which is the defining feature of this reaction. The substrates and products are small, acyclic, and lack complex functional groups, making it a clear and unambiguous example.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic systems (like Friedel-Crafts acylation/alkylation) or other functional groups. It is distinct from the Clemmensen reduction, which uses acidic conditions (Zn(Hg)/HCl), and from reductions of other functional groups. The simplicity of the substrate focuses the query specifically on the carbonyl-to-methylene transformation characteristic of the Wolff-Kishner reduction.\"\n  }\n}"
+}

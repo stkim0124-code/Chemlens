@@ -1,0 +1,16 @@
+Generate exactly one benchmark-safe canonical example for the named reaction family 'Michael Addition Reaction'.
+Cluster risk: buchner ; forbid signals: diazo_arene_combo, ring_expansion.
+Current rejected stage seed to avoid copying:
+- role=reactant smiles=CCOC(=O)CC(=O)OCC
+- role=reactant smiles=C=CC(C)=O
+- role=product smiles=CCOC(=O)C(CCC(C)=O)C(=O)OCC
+Goal: Propose a simple Michael addition example with a clear conjugate acceptor and nucleophile, producing a 1,4-addition product. Avoid diazo, ring expansion, and arene-carbene features.
+Rules:
+- keep it textbook and minimal
+- avoid the forbidden signals above
+- do not repeat the current rejected stage topology
+- provide valid organic SMILES only; no catalyst metals in SMILES unless absolutely necessary
+- keep reagent list short or empty if not essential
+
+Return JSON only with this schema:
+{"substrate_smiles":["..."],"product_smiles":["..."],"optional_reagent_smiles":["..."]}

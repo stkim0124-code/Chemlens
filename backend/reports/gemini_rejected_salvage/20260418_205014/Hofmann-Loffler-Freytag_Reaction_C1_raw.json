@@ -1,0 +1,17 @@
+{
+  "family": "Hofmann-Loffler-Freytag Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "CCCCN(C)Cl"
+    ],
+    "product_smiles": [
+      "CN1CCCC1"
+    ],
+    "optional_reagent_smiles": [
+      "O=S(=O)(O)O"
+    ],
+    "rationale": "Canonical HLF reaction. N-chloroamine cyclizes to a pyrrolidine via 1,5-HAT.",
+    "collision_avoidance_note": "Avoids Barton-like motifs. Simple N-haloamine substrate, acid-catalyzed cyclization."
+  }
+}

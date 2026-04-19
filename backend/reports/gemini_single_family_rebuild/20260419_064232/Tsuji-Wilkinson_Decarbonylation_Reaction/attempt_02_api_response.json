@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"candidate_id\": \"C1\",\n    \"substrate_smiles\": [\n      \"O=CC1(CCCC1)c1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"c1ccc(C2CCCC2)cc1\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This example demonstrates the decarbonylation of a quaternary aldehyde, 1-phenylcyclopentane-1-carbaldehyde, to form phenylcyclopentane. The removal of the formyl group (-CHO) from a sterically hindered spirocyclic center is a clear and non-trivial application of the Tsuji-Wilkinson reaction, highlighting its utility in complex settings. The substrate is specifically chosen to be an aldehyde that is unlikely to undergo other common aldehyde reactions, thus isolating the decarbonylation pathway.\",\n    \"collision_avoidance_note\": \"The substrate is a quaternary aldehyde attached to a spirocyclic system, which is structurally distinct from simple aliphatic, aromatic, or alpha,beta-unsaturated aldehydes. This specific topology (a quaternary carbon bearing both a phenyl and a formyl group within a cyclopentane ring) avoids overlap with generic aldehyde decarbonylation examples and previously used bicyclic or simple chain structures.\",\n    \"reagents_text\": \"Tris(triphenylphosphine)rhodium(I) chloride (Wilkinson's catalyst)\",\n    \"conditions_text\": \"Heat, typically in a high-boiling solvent like benzonitrile or o-xylene\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 307,
+    "candidatesTokenCount": 353,
+    "totalTokenCount": 744,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 307
+      }
+    ],
+    "thoughtsTokenCount": 84
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "1frjae6tO-LK2roP4eu5yAw"
+}

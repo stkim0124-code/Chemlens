@@ -1,0 +1,1 @@
+{"round": 1, "family": "Claisen Rearrangement", "lane": "gemini_fallback", "status": "insert_failed", "error": "insert_exception: NOT NULL constraint failed: reaction_extracts.scheme_candidate_id"}

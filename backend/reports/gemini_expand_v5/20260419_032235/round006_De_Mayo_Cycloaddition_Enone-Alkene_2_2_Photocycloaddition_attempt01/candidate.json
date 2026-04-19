@@ -1,0 +1,14 @@
+{
+  "family": "De Mayo Cycloaddition (Enone-Alkene [2+2] Photocycloaddition)",
+  "substrates": [
+    "C=CC(C)=O",
+    "C=C"
+  ],
+  "products": [
+    "CC(=O)C1CCC1"
+  ],
+  "reagents": [],
+  "rationale": "This example shows the photochemical [2+2] cycloaddition between the simplest enone, methyl vinyl ketone, and the simplest alkene, ethylene. This reaction forms a cyclobutane ring, which is the core transformation of the De Mayo cycloaddition. The reactants are simple, acyclic, and clearly illustrate the enone and alkene components required for this reaction family.",
+  "collision_avoidance_note": "The use of simple, acyclic reactants (methyl vinyl ketone and ethylene) avoids complex ring systems or functional groups that could overlap with other named reactions. The photochemical nature (implied by the reaction name) and the specific enone-alkene pairing are characteristic of the De Mayo cycloaddition, distinguishing it from thermal [2+2] cycloadditions or cycloadditions involving other pi systems (e.g., Paterno-Büchi).",
+  "raw_text": "{\n  \"family\": \"De Mayo Cycloaddition (Enone-Alkene [2+2] Photocycloaddition)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)C=C\",\n      \"C=C\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)C1CCC1\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This example shows the photochemical [2+2] cycloaddition between the simplest enone, methyl vinyl ketone, and the simplest alkene, ethylene. This reaction forms a cyclobutane ring, which is the core transformation of the De Mayo cycloaddition. The reactants are simple, acyclic, and clearly illustrate the enone and alkene components required for this reaction family.\",\n    \"collision_avoidance_note\": \"The use of simple, acyclic reactants (methyl vinyl ketone and ethylene) avoids complex ring systems or functional groups that could overlap with other named reactions. The photochemical nature (implied by the reaction name) and the specific enone-alkene pairing are characteristic of the De Mayo cycloaddition, distinguishing it from thermal [2+2] cycloadditions or cycloadditions involving other pi systems (e.g., Paterno-Büchi).\"\n  }\n}"
+}

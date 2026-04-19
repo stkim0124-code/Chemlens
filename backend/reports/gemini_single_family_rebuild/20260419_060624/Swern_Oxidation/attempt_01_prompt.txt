@@ -1,0 +1,29 @@
+You are generating exactly ONE benchmark-safe canonical example for the named reaction family "Swern Oxidation".
+
+Goal:
+Create a very clear Swern oxidation alcohol-to-carbonyl canonical example that is useful for reaction-query matching but does not behave like an over-broad generic oxidation seed.
+
+Hard constraints:
+- Return exactly ONE candidate only.
+- Use parse-safe substrate/product SMILES only.
+- Do NOT encode DMSO, oxalyl chloride, triethylamine, or ionic species as reagent SMILES.
+- Put all reagent and condition information in text fields only.
+- Prefer a clear primary or secondary alcohol oxidation example.
+- Make the substrate/product pair specific enough to avoid broad single-smiles hijack.
+- Avoid stage-seed copying.
+- JSON only.
+
+Return JSON in this exact schema:
+{
+  "family": "Swern Oxidation",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": ["..."],
+    "product_smiles": ["..."],
+    "optional_reagent_smiles": [],
+    "rationale": "...",
+    "collision_avoidance_note": "...",
+    "reagents_text": "DMSO, oxalyl chloride, triethylamine",
+    "conditions_text": "low temperature Swern oxidation"
+  }
+}

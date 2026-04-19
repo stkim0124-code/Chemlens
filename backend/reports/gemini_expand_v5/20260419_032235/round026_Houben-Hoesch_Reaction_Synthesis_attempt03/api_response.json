@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Houben-Hoesch Reaction/Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"C1=CC(=CC=C1O)O\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)C1=CC(=C(C=C1)O)O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Zn]Cl\",\n      \"[H]Cl\"\n    ],\n    \"rationale\": \"This is a canonical example of the Houben-Hoesch reaction, showing the acylation of an electron-rich aromatic ring (resorcinol) with a nitrile (acetonitrile) under acidic conditions (HCl and a Lewis acid like ZnCl2) to form an aryl ketone (2,4-dihydroxyacetophenone). The reactants and product are simple, acyclic where possible, and clearly illustrate the core transformation of this named reaction.\",\n    \"collision_avoidance_note\": \"This example uses a simple, electron-rich phenol (resorcinol) and a simple nitrile (acetonitrile). It avoids using more complex or generic arenes that could overlap with Friedel-Crafts acylation. It also avoids motifs common in other named reactions like diazo groups, ring expansions, or radical chemistry, ensuring it is specific to the Houben-Hoesch synthesis.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 369,
+    "candidatesTokenCount": 314,
+    "totalTokenCount": 743,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 369
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "u-LjadLiEsfd2roPiKu_gQ4"
+}

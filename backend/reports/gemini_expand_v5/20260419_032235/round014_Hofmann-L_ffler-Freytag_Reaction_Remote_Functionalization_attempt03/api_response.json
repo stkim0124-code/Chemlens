@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCNC1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. The substrate is N-chloro-N-methylbutan-1-amine. Under acidic conditions (e.g., sulfuric acid) and with initiation (heat or light), a nitrogen-centered radical is formed. This radical undergoes a 1,5-hydrogen atom transfer from the delta-carbon, creating a carbon-centered radical. This radical then abstracts a chlorine atom to form a delta-chloroamine, which subsequently undergoes intramolecular nucleophilic substitution (cyclization) upon treatment with base to yield the final product, 1-methylpyrrolidine. This example clearly demonstrates the key steps: N-halogenation, radical formation, intramolecular 1,5-H abstraction, and cyclization to form a five-membered ring.\",\n    \"collision_avoidance_note\": \"The reaction involves a specific intramolecular 1,5-hydrogen atom transfer from a delta-carbon to a nitrogen radical, followed by cyclization. The substrate is a simple acyclic N-haloamine, avoiding complex ring systems, arenes, or other functional groups that could trigger unrelated named reactions like the Beckmann rearrangement, Hofmann rearrangement, or other radical cyclizations that do not involve this specific N-radical pathway.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 392,
+    "candidatesTokenCount": 375,
+    "totalTokenCount": 855,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 392
+      }
+    ],
+    "thoughtsTokenCount": 88
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "zNbjadnRDtrH1e8PsqiE0QE"
+}

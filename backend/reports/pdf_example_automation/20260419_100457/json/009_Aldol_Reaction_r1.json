@@ -1,0 +1,39 @@
+{
+  "family_name": "Aldol Reaction",
+  "region_confidence": 1.0,
+  "example_target_name": "(–)-denticulatin A",
+  "example_summary": "The first enantioselective total synthesis of (–)-denticulatin A by W. Oppolzer featured a key enantioselective aldol reaction. A (Z)-borylenolate derived from an N-propionylbornane-10,2-sultam chiral auxiliary reacted with a meso dialdehyde, achieving enantiotopic group differentiation to afford the product in high yield and diastereoselectivity (20:1 dr).",
+  "extracts": [
+    {
+      "extract_kind": "application_example",
+      "reaction_family_name": "Aldol Reaction",
+      "transformation_text": "Enantioselective aldol reaction using a bornanesultam chiral auxiliary for enantiotopic group differentiation in a meso dialdehyde.",
+      "reactants_text": [
+        "N-propionylbornane-10,2-sultam",
+        "meso dialdehyde"
+      ],
+      "products_text": [
+        "aldol adduct"
+      ],
+      "intermediates_text": null,
+      "reagents_text": [
+        "Et2BOTf",
+        "i-Pr2NEt"
+      ],
+      "catalysts_text": null,
+      "solvents_text": [
+        "DCM"
+      ],
+      "temperature_text": "-78 °C",
+      "time_text": null,
+      "yield_text": "95 %",
+      "workup_text": null,
+      "conditions_text": "i. Et2BOTf, i-Pr2NEt, DCM, -78 °C; ii. addition of meso dialdehyde",
+      "notes_text": "P = TIPS. diastereomeric ratio: 20:1",
+      "reactant_smiles": "[\"CCC(=O)N1S(=O)(=O)C[C@H]2CC[C@H]1C2(C)C\", \"C[C@@H](C=O)[C@H](O[Si](C(C)C)(C(C)C)C(C)C)[C@@H](C)C=O\"]",
+      "product_smiles": "C[C@@H]1[C@H](O)[C@@H](O[Si](C(C)C)(C(C)C)C(C)C)[C@H](C)[C@H](O1)[C@@H](C)C(=O)N1S(=O)(=O)C[C@H]2CC[C@H]1C2(C)C",
+      "smiles_confidence": 0.9,
+      "extraction_confidence": 1.0
+    }
+  ]
+}

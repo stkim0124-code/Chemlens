@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh](P(c1ccccc1)(c1ccccc1)c1ccccc1)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, showing the conversion of a simple aliphatic aldehyde (heptanal) to its corresponding alkane (hexane) using Wilkinson's catalyst. The reaction is stoichiometric with respect to the rhodium complex, which is consumed to form RhCl(CO)(PPh3)2. The use of a simple, acyclic, saturated aldehyde avoids potential side reactions or ambiguities with other named reactions involving aromatic rings, unsaturation, or complex functional groups.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde, avoiding aromatic rings (common in many named reactions), unsaturation (which could lead to hydroformylation or other additions), and other reactive functional groups. This focuses the query specifically on the decarbonylation of an aldehyde to an alkane, which is the core transformation of this reaction, minimizing overlap with decarboxylation, deoxygenation, or other C-C bond cleavage reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 440,
+    "candidatesTokenCount": 344,
+    "totalTokenCount": 863,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 440
+      }
+    ],
+    "thoughtsTokenCount": 79
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "lNPjacHAArHa1e8P3M6cyQ8"
+}

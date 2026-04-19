@@ -1,0 +1,16 @@
+{
+  "family": "Takai-Utimoto Olefination (Takai Reaction)",
+  "substrates": [
+    "CCC(C)C=O",
+    "CI"
+  ],
+  "products": [
+    "CCC(C)C=CI"
+  ],
+  "reagents": [
+    "[Cl-].[Cl-].[Cr+2]"
+  ],
+  "rationale": "This reaction exemplifies the Takai-Utimoto Olefination, showing the conversion of an aldehyde (2-methylbutanal) to an (E)-alkenyl iodide using iodoform (CHI3) and chromium(II) chloride. The reactants are simple, acyclic, and clearly demonstrate the core transformation: R-CHO -> R-CH=CHX. The (E)-stereochemistry of the product is the typical outcome for this reaction. The use of iodoform is a classic variant.",
+  "collision_avoidance_note": "This example uses simple aliphatic substrates to avoid overlap with reactions involving aromatic aldehydes (e.g., Perkin, Claisen-Schmidt) or complex ring systems. It specifically forms an alkenyl halide, distinguishing it from Wittig-type reactions that form C-C double bonds without a halogen. The key reagents (CrCl2, haloform) are characteristic of this transformation.",
+  "raw_text": "{\n  \"family\": \"Takai-Utimoto Olefination (Takai Reaction)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(C)C=O\",\n      \"CI\"\n    ],\n    \"product_smiles\": [\n      \"CCC(C)C=CI\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Cr+2].[Cl-].[Cl-]\"\n    ],\n    \"rationale\": \"This reaction exemplifies the Takai-Utimoto Olefination, showing the conversion of an aldehyde (2-methylbutanal) to an (E)-alkenyl iodide using iodoform (CHI3) and chromium(II) chloride. The reactants are simple, acyclic, and clearly demonstrate the core transformation: R-CHO -> R-CH=CHX. The (E)-stereochemistry of the product is the typical outcome for this reaction. The use of iodoform is a classic variant.\",\n    \"collision_avoidance_note\": \"This example uses simple aliphatic substrates to avoid overlap with reactions involving aromatic aldehydes (e.g., Perkin, Claisen-Schmidt) or complex ring systems. It specifically forms an alkenyl halide, distinguishing it from Wittig-type reactions that form C-C double bonds without a halogen. The key reagents (CrCl2, haloform) are characteristic of this transformation.\"\n  }\n}"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Al](Cl)Cl\"\n    ],\n    \"rationale\": \"This is the classic textbook example of the Fries rearrangement, featuring the conversion of phenyl acetate to 2-hydroxyacetophenone. It is the simplest possible substrate, using a phenyl group and an acetyl group, which clearly demonstrates the acyl group migration from the phenolic oxygen to an ortho carbon on the aromatic ring. The use of aluminum chloride as a Lewis acid catalyst is also canonical for this reaction.\",\n    \"collision_avoidance_note\": \"The substrate is a simple phenyl ester, avoiding complex polycyclic aromatic systems that could be mistaken for other named reactions involving arenes. The transformation is a specific intramolecular rearrangement of an acyl group, which is distinct from intermolecular acylation reactions (like Friedel-Crafts acylation) or other rearrangements. The product is a simple hydroxy aryl ketone, avoiding motifs that might trigger unrelated named reaction queries.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 387,
+    "candidatesTokenCount": 288,
+    "totalTokenCount": 747,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 387
+      }
+    ],
+    "thoughtsTokenCount": 72
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "9ubjad2gM9Gl1e8P1vaayAY"
+}

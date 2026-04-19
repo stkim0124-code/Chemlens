@@ -1,0 +1,17 @@
+{
+  "family": "Swern Oxidation",
+  "substrates": [
+    "CCCCO"
+  ],
+  "products": [
+    "CCCC=O"
+  ],
+  "reagents": [
+    "CS(C)=O",
+    "O=C(Cl)C(=O)Cl",
+    "CCN(CC)CC"
+  ],
+  "rationale": "The oxidation of 1-butanol to butanal is a classic, simple, and unambiguous example of the Swern oxidation. It demonstrates the conversion of a primary alcohol to an aldehyde without over-oxidation to a carboxylic acid, which is a key feature of this reaction. The reactants and products are acyclic and contain no complex functional groups, making it an ideal canonical representation.",
+  "collision_avoidance_note": "This example uses a simple primary aliphatic alcohol (1-butanol). It avoids aromatic rings, complex stereocenters, or other reactive functional groups that could trigger false positives for other named reactions. The specific combination of DMSO, oxalyl chloride, and triethylamine is highly characteristic of the Swern oxidation, distinguishing it from other alcohol oxidation methods like PCC, PDC, or Dess-Martin oxidations.",
+  "raw_text": "{\n  \"family\": \"Swern Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(C)C\",\n      \"O=C(Cl)C(=O)Cl\",\n      \"CCN(CC)CC\"\n    ],\n    \"rationale\": \"The oxidation of 1-butanol to butanal is a classic, simple, and unambiguous example of the Swern oxidation. It demonstrates the conversion of a primary alcohol to an aldehyde without over-oxidation to a carboxylic acid, which is a key feature of this reaction. The reactants and products are acyclic and contain no complex functional groups, making it an ideal canonical representation.\",\n    \"collision_avoidance_note\": \"This example uses a simple primary aliphatic alcohol (1-butanol). It avoids aromatic rings, complex stereocenters, or other reactive functional groups that could trigger false positives for other named reactions. The specific combination of DMSO, oxalyl chloride, and triethylamine is highly characteristic of the Swern oxidation, distinguishing it from other alcohol oxidation methods like PCC, PDC, or Dess-Martin oxidations.\"\n  }\n}"
+}

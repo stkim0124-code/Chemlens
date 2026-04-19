@@ -1,0 +1,133 @@
+{
+  "mode": "apply",
+  "selective_summary": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\selective_merge_summary.json",
+  "rejected_candidates_loaded": [
+    "Claisen Condensation / Claisen Reaction",
+    "Diels-Alder Cycloaddition",
+    "Enyne Metathesis",
+    "Finkelstein Reaction",
+    "Fries Rearrangement",
+    "Hofmann-Loffler-Freytag Reaction",
+    "Horner-Wadsworth-Emmons Olefination",
+    "Houben-Hoesch Reaction",
+    "Hunsdiecker Reaction",
+    "Krapcho Dealkoxycarbonylation",
+    "Michael Addition Reaction",
+    "Mitsunobu Reaction",
+    "Regitz Diazo Transfer"
+  ],
+  "accepted": [
+    {
+      "family_name": "Diels-Alder Cycloaddition",
+      "accepted_variant": "minimal_pair",
+      "inserted_extract_id": 577,
+      "inserted_molecule_count": 2,
+      "benchmark": {
+        "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+        "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+        "top1_accuracy": 1.0,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "json_out": "C:\\chemlens\\backend\\reports\\v5_rejected_retry\\20260418_175952\\benchmark_retry_008_Diels_Alder_Cycloaddition_minimal_pair.json",
+        "csv_out": "C:\\chemlens\\backend\\reports\\v5_rejected_retry\\20260418_175952\\benchmark_retry_008_Diels_Alder_Cycloaddition_minimal_pair.csv",
+        "md_out": "C:\\chemlens\\backend\\reports\\v5_rejected_retry\\20260418_175952\\benchmark_retry_008_Diels_Alder_Cycloaddition_minimal_pair.md"
+      }
+    },
+    {
+      "family_name": "Fries Rearrangement",
+      "accepted_variant": "minimal_pair",
+      "inserted_extract_id": 592,
+      "inserted_molecule_count": 2,
+      "benchmark": {
+        "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+        "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+        "top1_accuracy": 1.0,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "json_out": "C:\\chemlens\\backend\\reports\\v5_rejected_retry\\20260418_175952\\benchmark_retry_023_Fries_Rearrangement_minimal_pair.json",
+        "csv_out": "C:\\chemlens\\backend\\reports\\v5_rejected_retry\\20260418_175952\\benchmark_retry_023_Fries_Rearrangement_minimal_pair.csv",
+        "md_out": "C:\\chemlens\\backend\\reports\\v5_rejected_retry\\20260418_175952\\benchmark_retry_023_Fries_Rearrangement_minimal_pair.md"
+      }
+    },
+    {
+      "family_name": "Houben-Hoesch Reaction",
+      "accepted_variant": "minimal_pair",
+      "inserted_extract_id": 607,
+      "inserted_molecule_count": 2,
+      "benchmark": {
+        "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+        "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+        "top1_accuracy": 1.0,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "json_out": "C:\\chemlens\\backend\\reports\\v5_rejected_retry\\20260418_175952\\benchmark_retry_038_Houben_Hoesch_Reaction_minimal_pair.json",
+        "csv_out": "C:\\chemlens\\backend\\reports\\v5_rejected_retry\\20260418_175952\\benchmark_retry_038_Houben_Hoesch_Reaction_minimal_pair.csv",
+        "md_out": "C:\\chemlens\\backend\\reports\\v5_rejected_retry\\20260418_175952\\benchmark_retry_038_Houben_Hoesch_Reaction_minimal_pair.md"
+      }
+    }
+  ],
+  "still_rejected": [
+    {
+      "family_name": "Claisen Condensation / Claisen Reaction",
+      "reason": "top1 regression: baseline=1.0000 current=0.9630"
+    },
+    {
+      "family_name": "Enyne Metathesis",
+      "reason": "top1 regression: baseline=1.0000 current=0.9259"
+    },
+    {
+      "family_name": "Finkelstein Reaction",
+      "reason": "top1 regression: baseline=1.0000 current=0.9259"
+    },
+    {
+      "family_name": "Hofmann-Loffler-Freytag Reaction",
+      "reason": "top1 regression: baseline=1.0000 current=0.9259"
+    },
+    {
+      "family_name": "Horner-Wadsworth-Emmons Olefination",
+      "reason": "top1 regression: baseline=1.0000 current=0.9630"
+    },
+    {
+      "family_name": "Hunsdiecker Reaction",
+      "reason": "top1 regression: baseline=1.0000 current=0.9259"
+    },
+    {
+      "family_name": "Krapcho Dealkoxycarbonylation",
+      "reason": "top1 regression: baseline=1.0000 current=0.9630"
+    },
+    {
+      "family_name": "Michael Addition Reaction",
+      "reason": "top1 regression: baseline=1.0000 current=0.9630"
+    },
+    {
+      "family_name": "Mitsunobu Reaction",
+      "reason": "top1 regression: baseline=1.0000 current=0.9259"
+    },
+    {
+      "family_name": "Regitz Diazo Transfer",
+      "reason": "top1 regression: baseline=1.0000 current=0.9630"
+    }
+  ],
+  "missing_in_stage": [],
+  "before": {
+    "queryable": 712,
+    "tier1": 626,
+    "tier2": 86,
+    "family_coverage": 143,
+    "reaction_extracts": 382,
+    "extract_molecules_total": 2276,
+    "reaction_family_patterns": 305,
+    "gemini_like_rows": 460
+  },
+  "after": {
+    "queryable": 718,
+    "tier1": 632,
+    "tier2": 86,
+    "family_coverage": 146,
+    "reaction_extracts": 385,
+    "extract_molecules_total": 2282,
+    "reaction_family_patterns": 305,
+    "gemini_like_rows": 466
+  },
+  "backup": "C:\\chemlens\\backend\\app\\labint.backup_before_v5_rejected_subset_retry_20260418_175955.db"
+}

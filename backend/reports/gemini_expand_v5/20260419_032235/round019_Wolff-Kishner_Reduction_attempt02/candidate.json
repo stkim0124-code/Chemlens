@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCC(C)=O"
+  ],
+  "products": [
+    "CCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic ketone (butan-2-one) to its corresponding alkane (n-butane). This is the quintessential transformation for the Wolff-Kishner reduction, converting a carbonyl group directly to a methylene group under basic conditions (hydrazine and KOH). The reactants and products are small, acyclic, and unambiguous, making it an ideal canonical example.",
+  "collision_avoidance_note": "This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/alkylation) or other functional groups. It is distinct from the Clemmensen reduction, which achieves the same transformation under acidic conditions. The simplicity of the substrate avoids potential side reactions or rearrangements that might occur with more complex structures.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=C(C)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic ketone (butan-2-one) to its corresponding alkane (n-butane). This is the quintessential transformation for the Wolff-Kishner reduction, converting a carbonyl group directly to a methylene group under basic conditions (hydrazine and KOH). The reactants and products are small, acyclic, and unambiguous, making it an ideal canonical example.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/alkylation) or other functional groups. It is distinct from the Clemmensen reduction, which achieves the same transformation under acidic conditions. The simplicity of the substrate avoids potential side reactions or rearrangements that might occur with more complex structures.\"\n  }\n}"
+}

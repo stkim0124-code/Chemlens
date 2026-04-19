@@ -1,0 +1,17 @@
+{
+  "family": "Swern Oxidation",
+  "substrates": [
+    "CCCCO"
+  ],
+  "products": [
+    "CCCC=O"
+  ],
+  "reagents": [
+    "CS(C)=O",
+    "O=C(Cl)C(=O)Cl",
+    "CCN(CC)CC"
+  ],
+  "rationale": "The oxidation of 1-butanol to butanal is a simple, clear, and canonical textbook example of the Swern oxidation. It demonstrates the conversion of a primary alcohol to an aldehyde without over-oxidation to a carboxylic acid, which is a key feature of this reaction. The reactants and products are acyclic and small, making them ideal for computational parsing and avoiding ambiguity.",
+  "collision_avoidance_note": "This example uses a simple primary aliphatic alcohol, avoiding aromatic rings (which could trigger Friedel-Crafts or other electrophilic aromatic substitution queries), complex functional groups, or strained rings. The core transformation is a straightforward alcohol-to-aldehyde oxidation, which is the defining characteristic of the Swern oxidation for primary alcohols, minimizing overlap with other named reactions.",
+  "raw_text": "{\n  \"family\": \"Swern Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"O=C(Cl)C(=O)Cl\",\n      \"CCN(CC)CC\"\n    ],\n    \"rationale\": \"The oxidation of 1-butanol to butanal is a simple, clear, and canonical textbook example of the Swern oxidation. It demonstrates the conversion of a primary alcohol to an aldehyde without over-oxidation to a carboxylic acid, which is a key feature of this reaction. The reactants and products are acyclic and small, making them ideal for computational parsing and avoiding ambiguity.\",\n    \"collision_avoidance_note\": \"This example uses a simple primary aliphatic alcohol, avoiding aromatic rings (which could trigger Friedel-Crafts or other electrophilic aromatic substitution queries), complex functional groups, or strained rings. The core transformation is a straightforward alcohol-to-aldehyde oxidation, which is the defining characteristic of the Swern oxidation for primary alcohols, minimizing overlap with other named reactions.\"\n  }\n}"
+}

@@ -1,0 +1,17 @@
+{
+  "family": "Houben-Hoesch Reaction/Synthesis",
+  "substrates": [
+    "COc1cc(OC)cc(OC)c1",
+    "CC#N"
+  ],
+  "products": [
+    "COc1cc(OC)cc(C(C)=O)c1"
+  ],
+  "reagents": [
+    "[Cl][Zn][Cl]",
+    "Cl"
+  ],
+  "rationale": "This reaction shows the acylation of a highly electron-rich aromatic ring (1,3,5-trimethoxybenzene) with a simple nitrile (acetonitrile) to form an aryl ketone. This is a classic textbook example of the Houben-Hoesch reaction, which uses a nitrile and a Lewis acid (like ZnCl2) with HCl to generate an electrophilic nitrilium ion that attacks the activated arene. The resulting imine is then hydrolyzed to the ketone.",
+  "collision_avoidance_note": "This example uses a simple, highly activated arene and a simple nitrile, which is characteristic of the Houben-Hoesch reaction. It avoids using more complex structures or functional groups that could overlap with other named reactions like the Friedel-Crafts acylation (which typically uses acyl halides or anhydrides) or the Gattermann reaction (which uses HCN or its equivalents to form aldehydes).",
+  "raw_text": "{\n  \"family\": \"Houben-Hoesch Reaction/Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"COc1cc(OC)cc(OC)c1\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1cc(OC)cc(OC)c1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Zn]Cl\",\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction shows the acylation of a highly electron-rich aromatic ring (1,3,5-trimethoxybenzene) with a simple nitrile (acetonitrile) to form an aryl ketone. This is a classic textbook example of the Houben-Hoesch reaction, which uses a nitrile and a Lewis acid (like ZnCl2) with HCl to generate an electrophilic nitrilium ion that attacks the activated arene. The resulting imine is then hydrolyzed to the ketone.\",\n    \"collision_avoidance_note\": \"This example uses a simple, highly activated arene and a simple nitrile, which is characteristic of the Houben-Hoesch reaction. It avoids using more complex structures or functional groups that could overlap with other named reactions like the Friedel-Crafts acylation (which typically uses acyl halides or anhydrides) or the Gattermann reaction (which uses HCN or its equivalents to form aldehydes).\"\n  }\n}"
+}

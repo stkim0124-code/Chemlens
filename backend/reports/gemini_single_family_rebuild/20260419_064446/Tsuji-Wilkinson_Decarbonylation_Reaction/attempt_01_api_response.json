@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"candidate_id\": \"C1\",\n    \"substrate_smiles\": [\n      \"O=CC1(CCCC1)c1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"c1ccc(C2CCCC2)cc1\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This example demonstrates the decarbonylation of an aldehyde to its corresponding alkane. The substrate, 1-phenylcyclopentane-1-carbaldehyde, possesses a quaternary carbon adjacent to the formyl group, which is a classic and robust substrate type for this transformation. The removal of the -CHO group to form phenylcyclopentane is unambiguous and clearly illustrates the carbon-carbon bond cleavage characteristic of the Tsuji-Wilkinson reaction, mediated by a rhodium catalyst. The product retains the core spirocyclic-aromatic structure, highlighting the specific loss of the carbonyl group as carbon monoxide.\",\n    \"collision_avoidance_note\": \"The substrate is a non-trivial aldehyde with a quaternary center, which helps distinguish it from simple aliphatic or aromatic aldehydes (like benzaldehyde) that might be decarbonylated under various other, more generic conditions. This specificity targets the Rh-catalyzed mechanism and avoids overlap with broader aldehyde reduction or decarbonylation methods.\",\n    \"reagents_text\": \"Tris(triphenylphosphine)rhodium(I) chloride (Wilkinson's catalyst)\",\n    \"conditions_text\": \"Heat (e.g., refluxing toluene or xylene)\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 292,
+    "candidatesTokenCount": 356,
+    "totalTokenCount": 706,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 292
+      }
+    ],
+    "thoughtsTokenCount": 58
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "V_vjac2nEI_c2roPgoXF4Q0"
+}

@@ -1,0 +1,17 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "O=C(C)c1ccccc1"
+    ],
+    "product_smiles": [
+      "CCc1ccccc1"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This is a classic, textbook example of the Wolff-Kishner reduction, converting the ketone of acetophenone to a methylene group, yielding ethylbenzene. The reaction is specific to the carbonyl group and does not affect the aromatic ring, making it a clear and unambiguous illustration of the transformation. The substrate and product are simple, stable, and commercially available, making this a canonical and benchmark-safe choice.",
+    "collision_avoidance_note": "The substrate is acetophenone, a specific ketone, not a generic carbonyl compound like acetone. This avoids being a simple seed for general carbonyl reductions. The product is ethylbenzene, which is distinct from products of other named reactions involving acetophenone (e.g., Clemmensen reduction, which uses different reagents). The reagents are described textually to avoid invalid SMILES representations like '[KOH]' or '[N2H4]'.",
+    "reagents_text": "hydrazine (H2NNH2), potassium hydroxide (KOH)",
+    "conditions_text": "diethylene glycol, heat (approx. 200 °C)"
+  }
+}

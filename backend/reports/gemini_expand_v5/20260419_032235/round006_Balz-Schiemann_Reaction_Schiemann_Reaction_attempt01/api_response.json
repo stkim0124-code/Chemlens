@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Balz-Schiemann Reaction (Schiemann Reaction)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"Nc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"Fc1ccccc1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[H+].[F-].[B-](F)(F)F\"\n    ],\n    \"rationale\": \"The Balz-Schiemann reaction is the thermal decomposition of an aryl diazonium tetrafluoroborate to give the corresponding aryl fluoride. This example shows the conversion of aniline to fluorobenzene, which is the most fundamental and widely cited textbook example of this transformation. The reaction proceeds via the diazonium salt intermediate, which is formed in situ from the amine, a nitrite source, and tetrafluoroboric acid. The subsequent heating of the isolated diazonium tetrafluoroborate salt yields the aryl fluoride.\",\n    \"collision_avoidance_note\": \"This example uses the simplest possible aromatic substrate (aniline) to avoid overlap with more complex named reactions involving substituted arenes. It specifically forms an aryl fluoride, which is the defining characteristic of the Balz-Schiemann reaction, distinguishing it from other diazonium salt reactions like the Sandmeyer (aryl halides/cyanides) or Gomberg-Bachmann (biaryls) reactions. The transformation is a substitution of an amino group for a fluorine, not a generic coupling or reduction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 380,
+    "candidatesTokenCount": 325,
+    "totalTokenCount": 773,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 380
+      }
+    ],
+    "thoughtsTokenCount": 68
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "C8_jabfDEtSxvr0PxOfhmQM"
+}

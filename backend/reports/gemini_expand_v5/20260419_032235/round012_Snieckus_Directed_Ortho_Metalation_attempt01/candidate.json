@@ -1,0 +1,16 @@
+{
+  "family": "Snieckus Directed Ortho Metalation",
+  "substrates": [
+    "CON(C)C(=O)c1ccccc1"
+  ],
+  "products": [
+    "CON(C)C(=O)c1ccccc1C(=O)O"
+  ],
+  "reagents": [
+    "[Li][CH2]CCC",
+    "O=C=O"
+  ],
+  "rationale": "This is a classic textbook example of the Snieckus Directed Ortho Metalation. The N,N-dimethylbenzamide substrate uses the Weinreb amide as a powerful directing group. sec-Butyllithium (or n-BuLi) performs a regioselective deprotonation at the ortho position, guided by chelation to the amide. The resulting aryllithium intermediate is then quenched with an electrophile, in this case, carbon dioxide, to yield the corresponding benzoic acid derivative after acidic workup. This example clearly illustrates the core concept of a directing group guiding metalation to the adjacent ortho position.",
+  "collision_avoidance_note": "This example uses a simple N,N-dimethylbenzamide (Weinreb amide) as the directing group, which is a hallmark of the Snieckus reaction. It avoids overly generic arenes or other functional groups that might overlap with reactions like Friedel-Crafts or Grignard additions. The transformation is a specific C-H activation followed by electrophilic quench, not a simple substitution or coupling reaction, thus minimizing collision with other named reaction families.",
+  "raw_text": "{\n  \"family\": \"Snieckus Directed Ortho Metalation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CON(C)C(=O)c1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CON(C)C(=O)c1c(C(=O)O)cccc1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CCCC[Li]\",\n      \"O=C=O\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Snieckus Directed Ortho Metalation. The N,N-dimethylbenzamide substrate uses the Weinreb amide as a powerful directing group. sec-Butyllithium (or n-BuLi) performs a regioselective deprotonation at the ortho position, guided by chelation to the amide. The resulting aryllithium intermediate is then quenched with an electrophile, in this case, carbon dioxide, to yield the corresponding benzoic acid derivative after acidic workup. This example clearly illustrates the core concept of a directing group guiding metalation to the adjacent ortho position.\",\n    \"collision_avoidance_note\": \"This example uses a simple N,N-dimethylbenzamide (Weinreb amide) as the directing group, which is a hallmark of the Snieckus reaction. It avoids overly generic arenes or other functional groups that might overlap with reactions like Friedel-Crafts or Grignard additions. The transformation is a specific C-H activation followed by electrophilic quench, not a simple substitution or coupling reaction, thus minimizing collision with other named reaction families.\"\n  }\n}"
+}

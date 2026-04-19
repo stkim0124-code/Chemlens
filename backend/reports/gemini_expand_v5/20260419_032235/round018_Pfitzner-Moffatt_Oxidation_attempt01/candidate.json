@@ -1,0 +1,17 @@
+{
+  "family": "Pfitzner-Moffatt Oxidation",
+  "substrates": [
+    "CCCCCO"
+  ],
+  "products": [
+    "CCCCC=O"
+  ],
+  "reagents": [
+    "CS(C)=O",
+    "O=C(N1CCCCC1)N1CCCCC1",
+    "[Cl-].c1cc[nH+]cc1"
+  ],
+  "rationale": "This reaction shows the oxidation of a simple primary alcohol (1-pentanol) to the corresponding aldehyde (pentanal). This is a classic textbook example of the Pfitzner-Moffatt oxidation, utilizing dimethyl sulfoxide (DMSO) as the oxidant, dicyclohexylcarbodiimide (DCC) as the activator, and pyridinium hydrochloride as the mild acid catalyst. The use of a simple, acyclic, saturated substrate clearly illustrates the core transformation without introducing confounding structural features.",
+  "collision_avoidance_note": "The substrate is a simple primary alcohol, avoiding complex structures, arenes, or other functional groups that could trigger unrelated named reaction queries. The specific combination of DMSO, a carbodiimide (DCC), and a mild acid catalyst is characteristic of the Pfitzner-Moffatt oxidation, distinguishing it from other DMSO-based oxidations like the Swern (oxalyl chloride) or Parikh-Doering (SO3-pyridine) oxidations.",
+  "raw_text": "{\n  \"family\": \"Pfitzner-Moffatt Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"O=C(N1CCCCC1)N1CCCCC1\",\n      \"c1cc[nH+]cc1.[Cl-]\"\n    ],\n    \"rationale\": \"This reaction shows the oxidation of a simple primary alcohol (1-pentanol) to the corresponding aldehyde (pentanal). This is a classic textbook example of the Pfitzner-Moffatt oxidation, utilizing dimethyl sulfoxide (DMSO) as the oxidant, dicyclohexylcarbodiimide (DCC) as the activator, and pyridinium hydrochloride as the mild acid catalyst. The use of a simple, acyclic, saturated substrate clearly illustrates the core transformation without introducing confounding structural features.\",\n    \"collision_avoidance_note\": \"The substrate is a simple primary alcohol, avoiding complex structures, arenes, or other functional groups that could trigger unrelated named reaction queries. The specific combination of DMSO, a carbodiimide (DCC), and a mild acid catalyst is characteristic of the Pfitzner-Moffatt oxidation, distinguishing it from other DMSO-based oxidations like the Swern (oxalyl chloride) or Parikh-Doering (SO3-pyridine) oxidations.\"\n  }\n}"
+}

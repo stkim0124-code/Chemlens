@@ -1,0 +1,13 @@
+{
+  "substrate_smiles": [
+    "C[C@@H](O)c1ccccc1",
+    "O=C(O)c1ccc(N(=O)=O)cc1"
+  ],
+  "product_smiles": [
+    "C[C@H](OC(=O)c1ccc(N(=O)=O)cc1)c1ccccc1"
+  ],
+  "optional_reagent_smiles": [
+    "P(c1ccccc1)(c1ccccc1)c1ccccc1",
+    "O=NN=O"
+  ]
+}

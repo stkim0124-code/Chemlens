@@ -1,0 +1,15 @@
+{
+  "family": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+  "substrates": [
+    "CC(=O)Oc1ccccc1"
+  ],
+  "products": [
+    "CC(=O)c1ccccc1O"
+  ],
+  "reagents": [
+    "[Cl][Al]([Cl])[Cl]"
+  ],
+  "rationale": "This reaction shows the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone, catalyzed by a Lewis acid (AlCl3). This is a textbook example illustrating the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring. The reactants and products are simple, acyclic where possible, and clearly demonstrate the core transformation of the Fries rearrangement.",
+  "collision_avoidance_note": "This example uses phenyl acetate, the simplest aromatic ester substrate, to avoid complex fused rings or substituted arenes that could overlap with other named reactions involving aromatic systems. The transformation is a specific acyl migration, distinct from general electrophilic aromatic substitution (like Friedel-Crafts acylation, which typically involves an acyl halide and an arene) or other rearrangements like the Claisen rearrangement (which involves allyl ethers).",
+  "raw_text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Al](Cl)Cl\"\n    ],\n    \"rationale\": \"This reaction shows the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone, catalyzed by a Lewis acid (AlCl3). This is a textbook example illustrating the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring. The reactants and products are simple, acyclic where possible, and clearly demonstrate the core transformation of the Fries rearrangement.\",\n    \"collision_avoidance_note\": \"This example uses phenyl acetate, the simplest aromatic ester substrate, to avoid complex fused rings or substituted arenes that could overlap with other named reactions involving aromatic systems. The transformation is a specific acyl migration, distinct from general electrophilic aromatic substitution (like Friedel-Crafts acylation, which typically involves an acyl halide and an arene) or other rearrangements like the Claisen rearrangement (which involves allyl ethers).\"\n  }\n}"
+}

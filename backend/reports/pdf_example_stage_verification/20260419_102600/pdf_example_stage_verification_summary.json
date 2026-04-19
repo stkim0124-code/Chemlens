@@ -1,0 +1,159 @@
+{
+  "stage_db": "C:\\chemlens\\backend\\app\\labint_pdf_examples_stage.db",
+  "latest_page_run": "20260419_102518",
+  "latest_region_run": "20260419_102518",
+  "latest_extract_run": "20260419_100457",
+  "totals": {
+    "page_rows": 756,
+    "region_rows": 2748,
+    "extraction_rows": 18
+  },
+  "latest_stage_harvest": {
+    "report_run": "20260419_102518",
+    "families": 250,
+    "pages": 250,
+    "regions": 910,
+    "avg_regions_per_family": 3.64,
+    "region_count_histogram": {
+      "1": 1,
+      "2": 3,
+      "3": 82,
+      "4": 163,
+      "5": 1
+    },
+    "sparse_examples": [
+      {
+        "family_name": "Schmidt Reaction",
+        "region_count": 1
+      },
+      {
+        "family_name": "Amadori Reaction / Rearrangement",
+        "region_count": 2
+      },
+      {
+        "family_name": "Barbier Coupling Reaction",
+        "region_count": 2
+      },
+      {
+        "family_name": "Ciamician-Dennstedt Rearrangement",
+        "region_count": 2
+      },
+      {
+        "family_name": "Acyloin Condensation",
+        "region_count": 3
+      },
+      {
+        "family_name": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+        "region_count": 3
+      },
+      {
+        "family_name": "Aldol Reaction",
+        "region_count": 3
+      },
+      {
+        "family_name": "Alkene (Olefin) Metathesis",
+        "region_count": 3
+      },
+      {
+        "family_name": "Alkyne Metathesis",
+        "region_count": 3
+      },
+      {
+        "family_name": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+        "region_count": 3
+      },
+      {
+        "family_name": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+        "region_count": 3
+      },
+      {
+        "family_name": "Aza-Cope Rearrangement",
+        "region_count": 3
+      },
+      {
+        "family_name": "Aza-Wittig Reaction",
+        "region_count": 3
+      },
+      {
+        "family_name": "Aza-[2,3]-Wittig Rearrangement",
+        "region_count": 3
+      },
+      {
+        "family_name": "Baker-Venkataraman Rearrangement",
+        "region_count": 3
+      }
+    ],
+    "dense_examples": [
+      {
+        "family_name": "Vilsmeier-Haack Formylation",
+        "region_count": 5
+      },
+      {
+        "family_name": "Acetoacetic Ester Synthesis",
+        "region_count": 4
+      },
+      {
+        "family_name": "Arndt-Eistert Homologation / Synthesis",
+        "region_count": 4
+      },
+      {
+        "family_name": "Baeyer-Villiger Oxidation/Rearrangement",
+        "region_count": 4
+      },
+      {
+        "family_name": "Baldwin's Rules / Guidelines for Ring-Closing Reactions",
+        "region_count": 4
+      },
+      {
+        "family_name": "Balz-Schiemann Reaction",
+        "region_count": 4
+      },
+      {
+        "family_name": "Bamford-Stevens-Shapiro Olefination",
+        "region_count": 4
+      },
+      {
+        "family_name": "Bartoli Indole Synthesis",
+        "region_count": 4
+      },
+      {
+        "family_name": "Barton-McCombie Radical Deoxygenation Reaction",
+        "region_count": 4
+      },
+      {
+        "family_name": "Baylis-Hillman Reaction",
+        "region_count": 4
+      },
+      {
+        "family_name": "Benzoin and Retro-Benzoin Condensation",
+        "region_count": 4
+      },
+      {
+        "family_name": "Bergman Cycloaromatization Reaction",
+        "region_count": 4
+      },
+      {
+        "family_name": "Brown Hydroboration Reaction",
+        "region_count": 4
+      },
+      {
+        "family_name": "Chichibabin Amination Reaction",
+        "region_count": 4
+      },
+      {
+        "family_name": "Chugaev Elimination Reaction",
+        "region_count": 4
+      }
+    ]
+  },
+  "latest_extraction": {
+    "report_run": "20260419_100457",
+    "status_counts": {
+      "ok": 6
+    },
+    "target_name_nonnull": 6,
+    "reactant_smiles_nonnull": 3,
+    "product_smiles_nonnull": 3,
+    "both_smiles_nonnull": 3
+  }
+}

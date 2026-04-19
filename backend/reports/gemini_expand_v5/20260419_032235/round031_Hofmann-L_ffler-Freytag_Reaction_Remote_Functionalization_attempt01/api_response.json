@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCNC1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. The substrate, N-chloro-N-methylbutan-1-amine, undergoes intramolecular 1,5-hydrogen atom transfer upon treatment with acid (e.g., sulfuric acid) and light/heat, leading to a delta-haloamine. Subsequent base-promoted intramolecular nucleophilic substitution forms the five-membered pyrrolidine ring, specifically N-methylpyrrolidine. This example clearly demonstrates the key features: formation of a nitrogen-centered radical, intramolecular hydrogen abstraction from a delta-carbon, and subsequent cyclization to a pyrrolidine derivative.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic N-haloamine substrate that cyclizes to a saturated heterocycle. It avoids arenes, complex functional groups, or other reactive motifs that could be confused with reactions like the Beckmann rearrangement, Curtius rearrangement, or other radical cyclizations involving different atom types. The specific 1,5-hydrogen atom transfer to a nitrogen radical followed by cyclization is characteristic of this reaction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 392,
+    "candidatesTokenCount": 343,
+    "totalTokenCount": 823,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 392
+      }
+    ],
+    "thoughtsTokenCount": 88
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "DufjacqiKJaS1e8P8Zzb0Qc"
+}

@@ -1,0 +1,17 @@
+alias,canonical_name,entity_type
+NaNO2,sodium nitrite,nitrosating_reagent
+TMSCN,trimethylsilyl cyanide,cyanide_source
+LiAlH4,lithium aluminium hydride,hydride_reductant
+DMP,Dess-Martin periodinane,oxidant
+IBX,2-iodoxybenzoic acid,oxidant
+Oxone,potassium peroxymonosulfate,oxidant
+KBrO3,potassium bromate,oxidant
+NaClO2,sodium chlorite,oxidant
+TEMPO,"2,2,6,6-tetramethylpiperidin-1-oxyl",oxidation_catalyst
+LiHMDS,lithium hexamethyldisilazide,base
+KOtBu,potassium tert-butoxide,base
+PIDA,phenyliodine diacetate,hypervalent_iodine_reagent
+PDC,pyridinium dichromate,oxidant
+ZnCl2,zinc chloride,Lewis_acid
+TFAA,trifluoroacetic anhydride,activating_reagent
+TMSOTf,trimethylsilyl trifluoromethanesulfonate,Lewis_acid

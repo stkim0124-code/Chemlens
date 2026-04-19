@@ -1,0 +1,17 @@
+{
+  "family": "Houben-Hoesch Reaction/Synthesis",
+  "substrates": [
+    "CC#N",
+    "COc1cc(OC)cc(OC)c1"
+  ],
+  "products": [
+    "COc1cc(OC)cc(C(C)=O)c1"
+  ],
+  "reagents": [
+    "[Cl][Zn][Cl]",
+    "Cl"
+  ],
+  "rationale": "This is a canonical example of the Houben-Hoesch reaction, featuring the acylation of a highly activated, electron-rich aromatic ring (1,3,5-trimethoxybenzene) with a simple nitrile (acetonitrile). The reaction is catalyzed by a Lewis acid (ZnCl2) and a protic acid (HCl), leading to the formation of an aryl ketone (2,4,6-trimethoxyacetophenone). The reactants and product are simple, acyclic where possible, and clearly illustrate the core transformation of this named reaction.",
+  "collision_avoidance_note": "This example uses a highly activated polyalkoxybenzene, which is characteristic of the Houben-Hoesch reaction and distinguishes it from the more general Friedel-Crafts acylation that typically uses less activated arenes. The use of a nitrile as the acylating agent is the key defining feature, avoiding confusion with reactions using acyl halides or anhydrides. The simple, non-fused aromatic ring avoids overlap with reactions involving complex polycyclic aromatic systems.",
+  "raw_text": "{\n  \"family\": \"Houben-Hoesch Reaction/Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"COc1cc(OC)cc(OC)c1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1cc(OC)cc(OC)c1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Zn]Cl\",\n      \"Cl\"\n    ],\n    \"rationale\": \"This is a canonical example of the Houben-Hoesch reaction, featuring the acylation of a highly activated, electron-rich aromatic ring (1,3,5-trimethoxybenzene) with a simple nitrile (acetonitrile). The reaction is catalyzed by a Lewis acid (ZnCl2) and a protic acid (HCl), leading to the formation of an aryl ketone (2,4,6-trimethoxyacetophenone). The reactants and product are simple, acyclic where possible, and clearly illustrate the core transformation of this named reaction.\",\n    \"collision_avoidance_note\": \"This example uses a highly activated polyalkoxybenzene, which is characteristic of the Houben-Hoesch reaction and distinguishes it from the more general Friedel-Crafts acylation that typically uses less activated arenes. The use of a nitrile as the acylating agent is the key defining feature, avoiding confusion with reactions using acyl halides or anhydrides. The simple, non-fused aromatic ring avoids overlap with reactions involving complex polycyclic aromatic systems.\"\n  }\n}"
+}

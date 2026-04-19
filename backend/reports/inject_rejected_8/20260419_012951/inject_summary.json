@@ -1,0 +1,109 @@
+{
+  "mode": "dry-run",
+  "before_state": {
+    "queryable": 722,
+    "family_coverage": 148,
+    "reaction_extracts": 387,
+    "extract_molecules_total": 2288
+  },
+  "baseline": {
+    "top1_accuracy": 1.0,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "db_used": "C:\\chemlens\\backend\\app\\labint.db"
+  },
+  "results": [
+    {
+      "family": "Claisen Condensation / Claisen Reaction",
+      "status": "ready",
+      "stage_extract_id": 479,
+      "new_extract_id": 643,
+      "inserted_molecule_count": 2,
+      "roles": [
+        "reactant",
+        "product"
+      ]
+    },
+    {
+      "family": "Horner-Wadsworth-Emmons Olefination",
+      "status": "ready",
+      "stage_extract_id": 532,
+      "new_extract_id": 643,
+      "inserted_molecule_count": 3,
+      "roles": [
+        "reactant",
+        "reactant",
+        "product"
+      ]
+    },
+    {
+      "family": "Krapcho Dealkoxycarbonylation",
+      "status": "ready",
+      "stage_extract_id": 549,
+      "new_extract_id": 643,
+      "inserted_molecule_count": 2,
+      "roles": [
+        "reactant",
+        "product"
+      ]
+    },
+    {
+      "family": "Michael Addition Reaction",
+      "status": "ready",
+      "stage_extract_id": 559,
+      "new_extract_id": 643,
+      "inserted_molecule_count": 3,
+      "roles": [
+        "reactant",
+        "reactant",
+        "product"
+      ]
+    },
+    {
+      "family": "Regitz Diazo Transfer",
+      "status": "ready",
+      "stage_extract_id": 475,
+      "new_extract_id": 643,
+      "inserted_molecule_count": 2,
+      "roles": [
+        "reactant",
+        "product"
+      ]
+    },
+    {
+      "family": "Enyne Metathesis",
+      "status": "ready",
+      "stage_extract_id": 504,
+      "new_extract_id": 643,
+      "inserted_molecule_count": 3,
+      "roles": [
+        "reactant",
+        "reactant",
+        "product"
+      ]
+    },
+    {
+      "family": "Hofmann-Loffler-Freytag Reaction",
+      "status": "ready",
+      "stage_extract_id": 530,
+      "new_extract_id": 643,
+      "inserted_molecule_count": 2,
+      "roles": [
+        "reactant",
+        "product"
+      ]
+    },
+    {
+      "family": "Mitsunobu Reaction",
+      "status": "ready",
+      "stage_extract_id": 563,
+      "new_extract_id": 643,
+      "inserted_molecule_count": 3,
+      "roles": [
+        "reactant",
+        "reactant",
+        "product"
+      ]
+    }
+  ]
+}

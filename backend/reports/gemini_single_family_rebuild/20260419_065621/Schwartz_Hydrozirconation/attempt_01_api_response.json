@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Schwartz Hydrozirconation\",\n  \"candidate\": {\n    \"candidate_id\": \"C1\",\n    \"substrate_smiles\": [\n      \"CCCCCCCCCC#C\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCCCCCC=CI\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"II\"\n    ],\n    \"rationale\": \"This example demonstrates the hydrozirconation of a terminal alkyne (1-dodecyne) using Schwartz's reagent, followed by in-situ iodination of the resulting vinylzirconium intermediate. This sequence is a classic and highly useful application of the Schwartz hydrozirconation, converting an alkyne into a stereodefined (E)-vinyl iodide. The reaction proceeds with high regioselectivity (anti-Markovnikov) and stereoselectivity. The substrate and product are simple, acyclic, and parse-safe, clearly illustrating the core transformation without complicating factors.\",\n    \"collision_avoidance_note\": \"This is a hydrozirconation followed by a quench with an electrophile (iodine). The key feature is the formation of the organozirconium intermediate from the alkyne, which is then trapped. The Schwartz reagent itself (Cp2ZrHCl) is explicitly not represented as a SMILES string to avoid parsing issues with organometallic complexes, as per the hard constraints.\",\n    \"reagents_text\": \"Cp2ZrHCl (Schwartz reagent)\",\n    \"conditions_text\": \"1. THF or CH2Cl2, rt; 2. I2\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 309,
+    "candidatesTokenCount": 355,
+    "totalTokenCount": 733,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 309
+      }
+    ],
+    "thoughtsTokenCount": 69
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "Dv7jaY62KdK10-kPgJ73qAM"
+}

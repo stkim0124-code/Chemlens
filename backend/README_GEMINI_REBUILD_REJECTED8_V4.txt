@@ -1,0 +1,1 @@
+v4 fixes Gemini request handling by reusing the payload pattern proven in gemini_salvage_rejected_families.py and prints full HTTP error bodies for 4xx responses. The BAT now stops on dry-run failure instead of auto-continuing.\n

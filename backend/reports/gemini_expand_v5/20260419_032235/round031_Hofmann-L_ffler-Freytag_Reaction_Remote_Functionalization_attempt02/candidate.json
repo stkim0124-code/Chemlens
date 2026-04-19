@@ -1,0 +1,16 @@
+{
+  "family": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+  "substrates": [
+    "CCCCN(C)Cl"
+  ],
+  "products": [
+    "CN1CCCC1"
+  ],
+  "reagents": [
+    "O",
+    "[H+]"
+  ],
+  "rationale": "This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutan-1-amine, upon treatment with acid and light (or heat), undergoes a 1,5-hydrogen atom transfer via a nitrogen-centered radical. The resulting carbon-centered radical then abstracts the chlorine atom from the protonated amine, forming a delta-chloroamine intermediate. Subsequent intramolecular nucleophilic substitution (cyclization) upon neutralization yields the final product, N-methylpyrrolidine. This example clearly demonstrates the key remote C-H functionalization and pyrrolidine ring formation characteristic of the reaction.",
+  "collision_avoidance_note": "The substrate is a simple acyclic N-haloamine, and the product is a simple pyrrolidine. This avoids complex ring systems, arenes, or other functional groups that could cause collisions with unrelated named reactions. The core transformation is the formation of a C-N bond at a delta-position relative to the initial nitrogen, which is highly specific to this reaction family.",
+  "raw_text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCCN1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"[H+]\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutan-1-amine, upon treatment with acid and light (or heat), undergoes a 1,5-hydrogen atom transfer via a nitrogen-centered radical. The resulting carbon-centered radical then abstracts the chlorine atom from the protonated amine, forming a delta-chloroamine intermediate. Subsequent intramolecular nucleophilic substitution (cyclization) upon neutralization yields the final product, N-methylpyrrolidine. This example clearly demonstrates the key remote C-H functionalization and pyrrolidine ring formation characteristic of the reaction.\",\n    \"collision_avoidance_note\": \"The substrate is a simple acyclic N-haloamine, and the product is a simple pyrrolidine. This avoids complex ring systems, arenes, or other functional groups that could cause collisions with unrelated named reactions. The core transformation is the formation of a C-N bond at a delta-position relative to the initial nitrogen, which is highly specific to this reaction family.\"\n  }\n}"
+}

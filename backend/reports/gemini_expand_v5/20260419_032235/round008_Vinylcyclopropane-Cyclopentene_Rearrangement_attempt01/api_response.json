@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Vinylcyclopropane-Cyclopentene Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C=CC1CC1\"\n    ],\n    \"product_smiles\": [\n      \"C1=CCCC1\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This is the simplest and most fundamental example of the vinylcyclopropane-cyclopentene rearrangement. The parent vinylcyclopropane thermally rearranges to cyclopentene. This example clearly illustrates the core [3,3]-sigmatropic-like transformation (C1-C2 bond of the cyclopropane breaks, C3-C4 pi bond shifts, and a new bond forms between C1 and C5) without any substituents that could introduce ambiguity or side reactions. It is a classic textbook case often used to introduce this pericyclic reaction.\",\n    \"collision_avoidance_note\": \"The structure is simple and acyclic (apart from the essential cyclopropane and product cyclopentene rings), avoiding complex fused systems, arenes, heteroatoms, or other functional groups that could cause collisions with other named reactions. The transformation is a specific skeletal rearrangement, distinct from ring expansions, fragmentations, or reactions involving common functional groups like carbonyls or diazo compounds.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 436,
+    "candidatesTokenCount": 283,
+    "totalTokenCount": 799,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 436
+      }
+    ],
+    "thoughtsTokenCount": 80
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "vNDjaaO6KJn82roPvLjTqAU"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Houben-Hoesch Reaction/Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"C1=CC(=CC=C1O)O\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)C1=CC(=C(C=C1)O)O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Zn]Cl\",\n      \"Cl\"\n    ],\n    \"rationale\": \"This is a canonical example of the Houben-Hoesch reaction, featuring the acylation of a highly activated, electron-rich phenol (resorcinol) with a simple nitrile (acetonitrile). The reaction is catalyzed by a Lewis acid (zinc chloride) and a Brønsted acid (HCl), leading to the formation of an aryl ketone (2,4-dihydroxyacetophenone) after hydrolysis of the intermediate ketimine. All reactants and products are simple, acyclic where possible, and RDKit-parseable, representing the core transformation of this named reaction.\",\n    \"collision_avoidance_note\": \"This example uses a simple, highly activated phenol (resorcinol) and a basic nitrile (acetonitrile) to avoid ambiguity with other acylation reactions like Friedel-Crafts acylation, which typically use acyl halides or anhydrides. The use of a nitrile as the acylating agent is the defining characteristic of the Houben-Hoesch reaction. The simple structures avoid overlap with more complex natural product syntheses or reactions involving other functional groups.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 369,
+    "candidatesTokenCount": 351,
+    "totalTokenCount": 780,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 369
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "8NLjaYCwC5n82roPvLjTqAU"
+}

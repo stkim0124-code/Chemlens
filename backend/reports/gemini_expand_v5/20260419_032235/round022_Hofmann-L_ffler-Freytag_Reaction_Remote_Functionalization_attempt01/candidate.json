@@ -1,0 +1,15 @@
+{
+  "family": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+  "substrates": [
+    "CCCCN(C)Cl"
+  ],
+  "products": [
+    "CN1CCCC1"
+  ],
+  "reagents": [
+    "O"
+  ],
+  "rationale": "This is a classic and simple textbook example of the Hofmann-Löffler-Freytag reaction. It involves the intramolecular 1,5-hydrogen atom transfer from a delta-carbon to a nitrogen-centered radical, generated from an N-chloroamine under acidic conditions (often with light or heat). The resulting carbon radical is trapped by the chlorine atom, and subsequent base-promoted cyclization yields the pyrrolidine product. The substrate, N-chloro-N-methylbutan-1-amine, is acyclic and simple, clearly demonstrating the remote C-H functionalization and cyclization characteristic of this reaction to form N-methylpyrrolidine.",
+  "collision_avoidance_note": "This example uses a simple acyclic N-chloroamine substrate, which is specific to the Hofmann-Löffler-Freytag reaction. It avoids arenes, complex ring systems, or other reactive functional groups that could cause collisions with unrelated named reactions like the Beckmann rearrangement, Hofmann rearrangement, or general radical cyclizations. The transformation is a specific intramolecular C-H amination, not a generic cyclization.",
+  "raw_text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"CN1CCCC1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\"\n    ],\n    \"rationale\": \"This is a classic and simple textbook example of the Hofmann-Löffler-Freytag reaction. It involves the intramolecular 1,5-hydrogen atom transfer from a delta-carbon to a nitrogen-centered radical, generated from an N-chloroamine under acidic conditions (often with light or heat). The resulting carbon radical is trapped by the chlorine atom, and subsequent base-promoted cyclization yields the pyrrolidine product. The substrate, N-chloro-N-methylbutan-1-amine, is acyclic and simple, clearly demonstrating the remote C-H functionalization and cyclization characteristic of this reaction to form N-methylpyrrolidine.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic N-chloroamine substrate, which is specific to the Hofmann-Löffler-Freytag reaction. It avoids arenes, complex ring systems, or other reactive functional groups that could cause collisions with unrelated named reactions like the Beckmann rearrangement, Hofmann rearrangement, or general radical cyclizations. The transformation is a specific intramolecular C-H amination, not a generic cyclization.\"\n  }\n}"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCNC1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"[H+]\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. The substrate is N-chloro-N-methylbutan-1-amine. Under acidic conditions (often sulfuric acid), a nitrogen-centered radical is formed, which undergoes a 1,5-hydrogen atom transfer from the delta-carbon. The resulting carbon-centered radical then abstracts the chlorine atom, forming a delta-chloroamine. Subsequent intramolecular nucleophilic substitution upon treatment with base (implied by the workup to the neutral pyrrolidine product) yields the final N-methylpyrrolidine product. This example clearly demonstrates the key steps: N-halogenation, radical formation, intramolecular 1,5-HAT, and cyclization.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic N-chloroamine that cyclizes to a pyrrolidine derivative. It avoids arenes, complex ring systems, and other reactive functional groups that could cause collisions with other named reactions. The core transformation is the C-H functionalization at a remote (delta) position, which is the defining characteristic of this reaction, distinguishing it from Hofmann elimination or rearrangement.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 392,
+    "candidatesTokenCount": 351,
+    "totalTokenCount": 831,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 392
+      }
+    ],
+    "thoughtsTokenCount": 88
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "JNrjafGgKt6dosUP3c2D8QE"
+}

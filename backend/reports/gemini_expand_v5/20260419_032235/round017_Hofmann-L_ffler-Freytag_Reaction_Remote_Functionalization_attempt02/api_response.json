@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCNC1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"[H+]\"\n    ],\n    \"rationale\": \"This is a classic and simple textbook example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutan-1-amine undergoes a 1,5-hydrogen atom transfer via a nitrogen-centered radical under acidic conditions (often initiated by heat or light), followed by cyclization to form N-methylpyrrolidine. This example clearly demonstrates the key features: formation of an N-haloamine, intramolecular hydrogen abstraction from a delta-carbon, and subsequent cyclization to a five-membered ring.\",\n    \"collision_avoidance_note\": \"The reaction involves an N-haloamine substrate and intramolecular C-H functionalization to form a pyrrolidine. This specific transformation is characteristic of the Hofmann-Löffler-Freytag reaction and is unlikely to be confused with other named reactions. The acyclic substrate and simple alkyl groups avoid motifs common in other radical reactions or ring formations, ensuring it is a specific benchmark for this family.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 392,
+    "candidatesTokenCount": 310,
+    "totalTokenCount": 775,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 392
+      }
+    ],
+    "thoughtsTokenCount": 73
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "G9rjaeHaJsGzvr0PlN-xoQM"
+}

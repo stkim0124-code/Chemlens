@@ -1,0 +1,17 @@
+{
+  "family": "Pinner Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "CC(C)(C)C#N"
+    ],
+    "product_smiles": [
+      "COC(=[NH2+])C(C)(C)C.[Cl-]"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This example shows the acid-catalyzed addition of an alcohol (methanol) across a nitrile (pivalonitrile) to form the characteristic imidate ester hydrochloride salt (Pinner salt). The use of a sterically hindered nitrile like pivalonitrile clearly illustrates the Pinner pathway, as it is less prone to side reactions and the resulting imidate is a classic intermediate. The product is explicitly shown as the protonated imidate salt, which is the direct, isolable product of the Pinner reaction before any subsequent hydrolysis.",
+    "collision_avoidance_note": "This example uses pivalonitrile and methanol, a common and clear textbook case. The product is explicitly represented as the Pinner salt (imidate ester hydrochloride), which is the defining feature of this reaction, distinguishing it from subsequent hydrolysis products (esters or amides) or other nitrile reactions like the Ritter or Houben-Hoesch reactions. The structure is distinct from simple alkyl or aryl nitriles.",
+    "reagents_text": "Methanol, dry HCl gas",
+    "conditions_text": "Anhydrous conditions, typically at low temperature (e.g., 0 °C) followed by warming."
+  }
+}

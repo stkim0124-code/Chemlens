@@ -1,0 +1,17 @@
+{
+  "family": "Pfitzner-Moffatt Oxidation",
+  "substrates": [
+    "CCCCO"
+  ],
+  "products": [
+    "CCCC=O"
+  ],
+  "reagents": [
+    "CS(C)=O",
+    "N=C(C1CCCCC1)N1CCCCC1",
+    "Cl.c1cc[nH+]cc1"
+  ],
+  "rationale": "This example shows the oxidation of a simple primary alcohol, 1-butanol, to the corresponding aldehyde, butanal. This is a classic textbook transformation for the Pfitzner-Moffatt oxidation. The reagents shown are dimethyl sulfoxide (DMSO), dicyclohexylcarbodiimide (DCC), and pyridinium hydrochloride as the mild acid catalyst, which are the defining components of this reaction. The use of a simple, acyclic, aliphatic substrate avoids potential side reactions and focuses on the core functional group transformation.",
+  "collision_avoidance_note": "The substrate is a simple primary alcohol, avoiding complex structures, arenes, or other reactive functional groups that could overlap with other named reactions. The core transformation is a straightforward alcohol-to-aldehyde oxidation, which is specific to this class of reactions when these particular reagents (DMSO/carbodiimide/acid) are specified. This avoids collision with other oxidation reactions like Swern (which uses oxalyl chloride) or Corey-Kim (which uses NCS).",
+  "raw_text": "{\n  \"family\": \"Pfitzner-Moffatt Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"C1CCN(CC1)C(=N)C2CCCCC2\",\n      \"Cl.c1cc[nH+]cc1\"\n    ],\n    \"rationale\": \"This example shows the oxidation of a simple primary alcohol, 1-butanol, to the corresponding aldehyde, butanal. This is a classic textbook transformation for the Pfitzner-Moffatt oxidation. The reagents shown are dimethyl sulfoxide (DMSO), dicyclohexylcarbodiimide (DCC), and pyridinium hydrochloride as the mild acid catalyst, which are the defining components of this reaction. The use of a simple, acyclic, aliphatic substrate avoids potential side reactions and focuses on the core functional group transformation.\",\n    \"collision_avoidance_note\": \"The substrate is a simple primary alcohol, avoiding complex structures, arenes, or other reactive functional groups that could overlap with other named reactions. The core transformation is a straightforward alcohol-to-aldehyde oxidation, which is specific to this class of reactions when these particular reagents (DMSO/carbodiimide/acid) are specified. This avoids collision with other oxidation reactions like Swern (which uses oxalyl chloride) or Corey-Kim (which uses NCS).\"\n  }\n}"
+}

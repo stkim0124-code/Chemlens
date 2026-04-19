@@ -1,0 +1,32 @@
+You are generating exactly ONE benchmark-safe canonical example for the named reaction family "Wolff-Kishner Reduction".
+
+Goal:
+Create a very clear carbonyl-to-methylene Wolff-Kishner canonical example, while avoiding generic reduction hijack and avoiding invalid reagent SMILES.
+
+Hard constraints:
+- Return exactly ONE candidate only.
+- Use parse-safe substrate/product SMILES only.
+- Do NOT encode hydrazine, KOH, base, or solvent as reagent SMILES.
+- Especially do NOT output invalid shorthand such as [KOH].
+- Put all reagent and condition information in text fields only.
+- Prefer a ketone-to-methylene textbook example.
+- Make the substrate/product pair specific enough that it is not just a generic carbonyl seed.
+- Avoid stage-seed copying.
+- JSON only.
+
+Return JSON in this exact schema:
+{
+  "family": "Wolff-Kishner Reduction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": ["..."],
+    "product_smiles": ["..."],
+    "optional_reagent_smiles": [],
+    "rationale": "...",
+    "collision_avoidance_note": "...",
+    "reagents_text": "hydrazine, strong base",
+    "conditions_text": "heated Wolff-Kishner reduction conditions"
+  }
+}
+
+Additional constraint: produce a structurally different substrate/product topology than prior attempts.

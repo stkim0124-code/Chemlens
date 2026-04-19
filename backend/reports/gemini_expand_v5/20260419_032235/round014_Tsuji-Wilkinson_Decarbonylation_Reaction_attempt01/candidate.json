@@ -1,0 +1,15 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "substrates": [
+    "CCCCCCC=O"
+  ],
+  "products": [
+    "CCCCCCC"
+  ],
+  "reagents": [
+    "[Cl][Rh]([PH](c1ccccc1)(c1ccccc1)c1ccccc1)([PH](c1ccccc1)(c1ccccc1)c1ccccc1)[PH](c1ccccc1)(c1ccccc1)c1ccccc1"
+  ],
+  "rationale": "This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to its corresponding alkane (heptane) using Wilkinson's catalyst (RhCl(PPh3)3). This is a classic and straightforward textbook example of the Tsuji-Wilkinson decarbonylation, clearly illustrating the conversion of an aldehyde functional group to a C-H bond with the loss of carbon monoxide.",
+  "collision_avoidance_note": "The substrate is a simple, acyclic aliphatic aldehyde to avoid overlap with reactions involving aromatic aldehydes (e.g., certain condensations or electrophilic aromatic substitutions) or more complex functional groups. The transformation is a direct deformylation, which is specific to this reaction and avoids confusion with general decarboxylation (loss of CO2 from a carboxylic acid) or deoxygenation (e.g., Wolff-Kishner, Clemmensen) reactions.",
+  "raw_text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh](P(c1ccccc1)(c1ccccc1)c1ccccc1)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to its corresponding alkane (heptane) using Wilkinson's catalyst (RhCl(PPh3)3). This is a classic and straightforward textbook example of the Tsuji-Wilkinson decarbonylation, clearly illustrating the conversion of an aldehyde functional group to a C-H bond with the loss of carbon monoxide.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, acyclic aliphatic aldehyde to avoid overlap with reactions involving aromatic aldehydes (e.g., certain condensations or electrophilic aromatic substitutions) or more complex functional groups. The transformation is a direct deformylation, which is specific to this reaction and avoids confusion with general decarboxylation (loss of CO2 from a carboxylic acid) or deoxygenation (e.g., Wolff-Kishner, Clemmensen) reactions.\"\n  }\n}"
+}

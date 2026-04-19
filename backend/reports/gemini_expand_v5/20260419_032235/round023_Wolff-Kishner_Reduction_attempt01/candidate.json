@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCC(=O)CC"
+  ],
+  "products": [
+    "CCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-pentanone) to its corresponding alkane (n-pentane). This is the most fundamental transformation defining the Wolff-Kishner reduction. The use of a symmetric ketone avoids any potential regiochemical ambiguity. The reactants and products are small, acyclic, and lack other functional groups, making it a clear and unambiguous example.",
+  "collision_avoidance_note": "This example uses a simple aliphatic ketone, avoiding aromatic rings which could collide with Clemmensen reduction examples or other aromatic chemistry. It also avoids aldehydes, which can be more prone to side reactions like aldol condensation under basic conditions. The lack of other functional groups prevents overlap with reactions involving esters, amides, or other reducible groups.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-pentanone) to its corresponding alkane (n-pentane). This is the most fundamental transformation defining the Wolff-Kishner reduction. The use of a symmetric ketone avoids any potential regiochemical ambiguity. The reactants and products are small, acyclic, and lack other functional groups, making it a clear and unambiguous example.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic ketone, avoiding aromatic rings which could collide with Clemmensen reduction examples or other aromatic chemistry. It also avoids aldehydes, which can be more prone to side reactions like aldol condensation under basic conditions. The lack of other functional groups prevents overlap with reactions involving esters, amides, or other reducible groups.\"\n  }\n}"
+}

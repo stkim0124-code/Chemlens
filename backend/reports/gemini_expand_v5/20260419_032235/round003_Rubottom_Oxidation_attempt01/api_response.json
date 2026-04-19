@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Rubottom Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=C)O[Si](C)(C)C\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)CO\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=C(OOC1=CC(=CC=C1)Cl)C\"\n    ],\n    \"rationale\": \"This example demonstrates the core transformation of the Rubottom oxidation: the conversion of a silyl enol ether to an \\u03b1-hydroxy ketone. The substrate is the trimethylsilyl enol ether of acetone, one of the simplest possible silyl enol ethers. The product is hydroxyacetone (\\u03b1-hydroxypropanone). m-Chloroperoxybenzoic acid (mCPBA) is a classic peracid reagent used for this reaction. The reaction is simple, acyclic, and clearly illustrates the \\u03b1-hydroxylation of a carbonyl compound via its silyl enol ether derivative, which is the defining feature of the Rubottom oxidation.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic ketone-derived silyl enol ether to avoid overlap with more complex natural product syntheses or other named reactions involving cyclic systems (e.g., Baeyer-Villiger oxidation, which also uses peracids but on ketones). The substrate is specific to silyl enol ethers, distinguishing it from general alkene epoxidation reactions. The product is a simple \\u03b1-hydroxy ketone, avoiding motifs that could trigger other named reaction queries.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 429,
+    "candidatesTokenCount": 365,
+    "totalTokenCount": 884,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 429
+      }
+    ],
+    "thoughtsTokenCount": 90
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "MM3jadjeAcyZ0-kP3tD1iA0"
+}

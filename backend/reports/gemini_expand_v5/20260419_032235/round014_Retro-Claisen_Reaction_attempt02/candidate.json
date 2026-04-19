@@ -1,0 +1,16 @@
+{
+  "family": "Retro-Claisen Reaction",
+  "substrates": [
+    "CCOC(=O)C(C)C(C)=O"
+  ],
+  "products": [
+    "CCOC(C)=O",
+    "CC(C)=O"
+  ],
+  "reagents": [
+    "[OH-]"
+  ],
+  "rationale": "This reaction shows the base-catalyzed cleavage of ethyl 2-methyl-3-oxobutanoate, a simple beta-keto ester. The hydroxide attacks the ketone carbonyl, leading to the cleavage of the C-C bond between the alpha and beta carbons, which is the reverse of a Claisen condensation. This results in the formation of ethyl acetate and acetone, representing the two constituent esters/ketones. This is a classic and simple textbook example.",
+  "collision_avoidance_note": "The substrate is a simple, acyclic beta-keto ester. This avoids complex ring systems or functional groups that could be associated with other named reactions. The cleavage into two simple carbonyl compounds (an ester and a ketone) is highly characteristic of the retro-Claisen reaction and distinct from other condensation or cleavage reactions.",
+  "raw_text": "{\n  \"family\": \"Retro-Claisen Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCOC(=O)C(C)C(=O)C\"\n    ],\n    \"product_smiles\": [\n      \"CCOC(=O)C\",\n      \"CC(=O)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[OH-]\"\n    ],\n    \"rationale\": \"This reaction shows the base-catalyzed cleavage of ethyl 2-methyl-3-oxobutanoate, a simple beta-keto ester. The hydroxide attacks the ketone carbonyl, leading to the cleavage of the C-C bond between the alpha and beta carbons, which is the reverse of a Claisen condensation. This results in the formation of ethyl acetate and acetone, representing the two constituent esters/ketones. This is a classic and simple textbook example.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, acyclic beta-keto ester. This avoids complex ring systems or functional groups that could be associated with other named reactions. The cleavage into two simple carbonyl compounds (an ester and a ketone) is highly characteristic of the retro-Claisen reaction and distinct from other condensation or cleavage reactions.\"\n  }\n}"
+}

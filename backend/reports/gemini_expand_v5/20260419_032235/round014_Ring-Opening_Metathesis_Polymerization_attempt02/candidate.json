@@ -1,0 +1,15 @@
+{
+  "family": "Ring-Opening Metathesis Polymerization",
+  "substrates": [
+    "C1=CCCC1"
+  ],
+  "products": [
+    "*C=CCC*"
+  ],
+  "reagents": [
+    "[Ru]"
+  ],
+  "rationale": "This reaction shows the polymerization of cyclopentene, a simple and common strained cyclic olefin, into polypentenamer. This is a classic textbook example of Ring-Opening Metathesis Polymerization (ROMP). The use of a generic [Ru] catalyst represents the typical Grubbs-type catalysts used for this transformation. The product is represented as a repeating polymer unit, which is the defining characteristic of this reaction family.",
+  "collision_avoidance_note": "The substrate is a simple, non-functionalized cycloalkene (cyclopentene), which is highly specific to ROMP and avoids motifs common in other named reactions. It lacks arenes, heteroatoms, or other reactive functional groups that could cause collisions with unrelated reaction families. The transformation is clearly a polymerization, not a simple ring-opening or a standard alkene metathesis between two discrete molecules.",
+  "raw_text": "{\n  \"family\": \"Ring-Opening Metathesis Polymerization\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C1C=CCC1\"\n    ],\n    \"product_smiles\": [\n      \"*C=CCC*\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Ru]\"\n    ],\n    \"rationale\": \"This reaction shows the polymerization of cyclopentene, a simple and common strained cyclic olefin, into polypentenamer. This is a classic textbook example of Ring-Opening Metathesis Polymerization (ROMP). The use of a generic [Ru] catalyst represents the typical Grubbs-type catalysts used for this transformation. The product is represented as a repeating polymer unit, which is the defining characteristic of this reaction family.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, non-functionalized cycloalkene (cyclopentene), which is highly specific to ROMP and avoids motifs common in other named reactions. It lacks arenes, heteroatoms, or other reactive functional groups that could cause collisions with unrelated reaction families. The transformation is clearly a polymerization, not a simple ring-opening or a standard alkene metathesis between two discrete molecules.\"\n  }\n}"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Sommelet-Hauser Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"[C-]1=CC=CC=C1C[N+](C)(C)C\"\n    ],\n    \"product_smiles\": [\n      \"CC1=CC=CC=C1CN(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Na+].[NH2-]\"\n    ],\n    \"rationale\": \"This is the classic textbook example of the Sommelet-Hauser rearrangement, starting with benzyltrimethylammonium iodide (which is deprotonated in situ by a strong base like sodium amide to form the ylide). The benzyl group is deprotonated to form a nitrogen ylide, which then undergoes a [2,3]-sigmatropic rearrangement. The aromatic ring is temporarily dearomatized and then re-aromatizes via a proton transfer, resulting in the formation of an ortho-methyl substituted N,N-dimethylbenzylamine. This example clearly illustrates the key transformation: the migration of one of the methyl groups from the nitrogen to the ortho position of the benzene ring.\",\n    \"collision_avoidance_note\": \"The substrate is a simple benzylic quaternary ammonium salt, avoiding complex fused rings or other functional groups that could trigger unrelated named reactions. The product is a simple ortho-substituted benzylamine. This specific transformation is highly characteristic of the Sommelet-Hauser rearrangement and is distinct from the competing Stevens rearrangement, which would yield N,N-dimethylphenethylamine. The simplicity of the reactants and products minimizes overlap with other reaction families.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 431,
+    "candidatesTokenCount": 360,
+    "totalTokenCount": 863,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 431
+      }
+    ],
+    "thoughtsTokenCount": 72
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "qdTjaZzBGPTS1e8P1vyBiQM"
+}

@@ -1,0 +1,17 @@
+{
+  "family": "Pinner Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "CC(C)(C)C#N"
+    ],
+    "product_smiles": [
+      "CC(C)(C)C(=[NH2+])OC"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This example shows the acid-catalyzed addition of an alcohol (methanol) across a nitrile (pivalonitrile) to form an imidate salt, which is the characteristic transformation of the Pinner reaction. The use of a sterically hindered nitrile like pivalonitrile makes it a clear and unambiguous example, less prone to side reactions or confusion with other nitrile chemistry like simple hydrolysis.",
+    "collision_avoidance_note": "The substrate is pivalonitrile, which is specific enough to avoid trivial examples like acetonitrile. The product is explicitly the protonated imidate salt (Pinner salt), clearly distinguishing it from Ritter (nitrile + carbocation) or Houben-Hoesch (nitrile + arene) reactions. Reagents are described textually to avoid ambiguity with SMILES representations of acid/solvent systems.",
+    "reagents_text": "Methanol, dry HCl gas",
+    "conditions_text": "Anhydrous conditions, typically at low temperature (e.g., 0 °C) followed by warming."
+  }
+}

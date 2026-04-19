@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\"family\":\"Hofmann-Loffler-Freytag Reaction\",\"candidate\":{\"candidate_id\":\"C3\",\"substrate_smiles\":[\"CCCCN(C)Cl\"],\"product_smiles\":[\"CN1CCCC1\"],\"optional_reagent_smiles\":[\"O=S(=O)(O)O\"],\"rationale\":\"Canonical HLF reaction. N-chloroamine cyclizes to a pyrrolidine via intramolecular C-H amination under acidic conditions.\",\"collision_avoidance_note\":\"Avoids Barton-like motifs (e.g., thiohydroxamates, peroxides, hv) and decarboxylative halogenation. Simple N-haloamine substrate.\"}}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 251,
+    "candidatesTokenCount": 139,
+    "totalTokenCount": 449,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 251
+      }
+    ],
+    "thoughtsTokenCount": 59
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "CHDjad3oBpTF0-kPv7nmsAI"
+}

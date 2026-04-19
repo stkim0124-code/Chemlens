@@ -1,0 +1,17 @@
+{
+  "family": "Swern Oxidation",
+  "substrates": [
+    "CCCCO"
+  ],
+  "products": [
+    "CCCC=O"
+  ],
+  "reagents": [
+    "CS(C)=O",
+    "O=C(Cl)C(=O)Cl",
+    "CCN(CC)CC"
+  ],
+  "rationale": "This reaction shows the oxidation of a simple, acyclic primary alcohol (1-butanol) to the corresponding aldehyde (butanal). This is a classic textbook example of the Swern oxidation, which is known for its mild conditions and high yields for converting primary alcohols to aldehydes without over-oxidation to carboxylic acids. The reagents listed (DMSO, oxalyl chloride, and triethylamine) are the quintessential components of the Swern protocol.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic alcohol, avoiding complex structures, rings, or functional groups like arenes that could trigger other named reaction queries (e.g., Friedel-Crafts, Grignard additions to aromatic ketones). The transformation is a straightforward oxidation, which is specific to this class of reactions and avoids motifs common in rearrangements, condensations, or radical chemistry.",
+  "raw_text": "{\n  \"family\": \"Swern Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(C)C\",\n      \"O=C(Cl)C(=O)Cl\",\n      \"N(CC)(CC)CC\"\n    ],\n    \"rationale\": \"This reaction shows the oxidation of a simple, acyclic primary alcohol (1-butanol) to the corresponding aldehyde (butanal). This is a classic textbook example of the Swern oxidation, which is known for its mild conditions and high yields for converting primary alcohols to aldehydes without over-oxidation to carboxylic acids. The reagents listed (DMSO, oxalyl chloride, and triethylamine) are the quintessential components of the Swern protocol.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic alcohol, avoiding complex structures, rings, or functional groups like arenes that could trigger other named reaction queries (e.g., Friedel-Crafts, Grignard additions to aromatic ketones). The transformation is a straightforward oxidation, which is specific to this class of reactions and avoids motifs common in rearrangements, condensations, or radical chemistry.\"\n  }\n}"
+}

@@ -1,0 +1,15 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "substrates": [
+    "CCCCCCC=O"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "[Cl][Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1"
+  ],
+  "rationale": "This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to the corresponding alkane (hexane) using Wilkinson's catalyst. This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, clearly illustrating the conversion of an aldehyde functional group to a C-H bond with the loss of carbon monoxide. The substrate is simple and avoids other reactive functional groups or complex ring systems.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic aldehyde, avoiding aromatic rings which could be confused with other transition-metal catalyzed C-H activation or cross-coupling reactions. The transformation is a specific deformylation, distinct from general decarboxylation of carboxylic acids or deoxygenation reactions like the Wolff-Kishner or Clemmensen reductions.",
+  "raw_text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh]([P](C1=CC=CC=C1)(C1=CC=CC=C1)C1=CC=CC=C1)([P](C1=CC=CC=C1)(C1=CC=CC=C1)C1=CC=CC=C1)[P](C1=CC=CC=C1)(C1=CC=CC=C1)C1=CC=CC=C1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to the corresponding alkane (hexane) using Wilkinson's catalyst. This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, clearly illustrating the conversion of an aldehyde functional group to a C-H bond with the loss of carbon monoxide. The substrate is simple and avoids other reactive functional groups or complex ring systems.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde, avoiding aromatic rings which could be confused with other transition-metal catalyzed C-H activation or cross-coupling reactions. The transformation is a specific deformylation, distinct from general decarboxylation of carboxylic acids or deoxygenation reactions like the Wolff-Kishner or Clemmensen reductions.\"\n  }\n}"
+}

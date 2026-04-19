@@ -1,0 +1,29 @@
+{
+  "family_name": "Alkene (Olefin) Metathesis",
+  "region_confidence": 1.0,
+  "example_target_name": "(-)-Cylindrocyclophane F",
+  "example_summary": "A.B. Smith and co-workers developed a synthesis of (-)-Cylindrocyclophane F using an olefin ring-closing metathesis (RCM) dimerization to construct the [7,7]-paracyclophane skeleton. The reaction was most efficient with Schrock's catalyst.",
+  "extracts": [
+    {
+      "extract_kind": "application_example",
+      "reaction_family_name": "Alkene (Olefin) Metathesis",
+      "transformation_text": "A three-step synthesis of (-)-Cylindrocyclophane F from a diene monomer via RCM dimerization, hydrogenation, and demethylation.",
+      "reactants_text": "2",
+      "products_text": "(-)-Cylindrocyclophane F",
+      "intermediates_text": null,
+      "reagents_text": "1. RCM catalyst\n2. H2 / Pd(C)\n3. BBr3",
+      "catalysts_text": "Schrock's catalyst (A)",
+      "solvents_text": "C6H6",
+      "temperature_text": "20 °C",
+      "time_text": "2h",
+      "yield_text": "72%",
+      "workup_text": null,
+      "conditions_text": "Schrock's catalyst A (30 mol%), C6H6, 2h, 20 °C",
+      "notes_text": "The key step is a cross metathesis dimerization process. Out of three commonly used RCM catalysts, Schrock’s catalyst proved to be the most efficient for this transformation, giving a 72% yield. The subsequent hydrogenation was quantitative and the demethylation proceeded in 84% yield over two steps.",
+      "reactant_smiles": null,
+      "product_smiles": null,
+      "smiles_confidence": 0.0,
+      "extraction_confidence": 0.95
+    }
+  ]
+}

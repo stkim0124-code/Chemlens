@@ -1,0 +1,16 @@
+alias,canonical_name,entity_type
+mCPBA,meta-chloroperbenzoic acid,oxidant
+HCO2H,formic acid,acid
+LDBB,lithium di-tert-butylbiphenylide,reducing_agent
+Me2AlCl,dimethylaluminum chloride,lewis_acid
+MsCl,methanesulfonyl chloride,sulfonylating_reagent
+TsCl,p-toluenesulfonyl chloride,sulfonylating_reagent
+DMP,Dess-Martin periodinane,oxidant
+OMs,mesylate,leaving_group
+OTs,tosylate,leaving_group
+TBDPS,tert-butyldiphenylsilyl,protecting_group
+LHMDS,lithium hexamethyldisilazide,base
+L-Selectride,lithium tri-sec-butylborohydride,reducing_agent
+PTC,phase-transfer catalysis,process_term
+DIBAL-H,diisobutylaluminum hydride,reducing_agent
+K2CO3,potassium carbonate,base

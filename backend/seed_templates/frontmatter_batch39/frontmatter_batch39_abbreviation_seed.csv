@@ -1,0 +1,12 @@
+alias,canonical_name,entity_type
+P-3CR,Passerini three-component reaction,reaction_family
+CF3COOH,trifluoroacetic acid,reagent
+UV,ultraviolet light,condition
+ISC,intersystem crossing,mechanistic_term
+LDBB,lithium di-tert-butylbiphenylide,reagent
+TMANO,trimethylamine N-oxide,oxidant
+NMO,N-methylmorpholine N-oxide,oxidant
+TBAI,tetrabutylammonium iodide,additive
+BnBr,benzyl bromide,reagent
+AIDA,"(S)-aminoindan-1,5-dicarboxylic acid",target_molecule
+NAE-086,ebalzotan,target_molecule

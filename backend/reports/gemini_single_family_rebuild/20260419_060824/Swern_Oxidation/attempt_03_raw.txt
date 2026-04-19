@@ -1,0 +1,17 @@
+{
+  "family": "Swern Oxidation",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "CC(C)(C)C(O)C1CCCCC1"
+    ],
+    "product_smiles": [
+      "CC(C)(C)C(=O)C1CCCCC1"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This example demonstrates the oxidation of a sterically hindered secondary alcohol (1-cyclohexyl-2,2-dimethyl-1-propanol) to the corresponding ketone (1-cyclohexyl-2,2-dimethyl-1-propanone) under Swern conditions. The presence of the bulky tert-butyl and cyclohexyl groups makes this transformation specific and less likely to be a generic oxidation example, while clearly illustrating the core alcohol-to-carbonyl conversion of the Swern oxidation.",
+    "collision_avoidance_note": "The substrate contains both a cyclohexyl and a tert-butyl group attached to the carbinol carbon, creating a distinct and sterically demanding environment. This specific substitution pattern is chosen to avoid overlap with simpler, more common alcohol oxidation examples (like cyclohexanol or simple aliphatic alcohols) and to provide a unique structural fingerprint for this reaction family.",
+    "reagents_text": "DMSO, oxalyl chloride, triethylamine",
+    "conditions_text": "low temperature Swern oxidation"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Staudinger Ketene Cycloaddition\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"ClC(=O)C(C)C\",\n      \"C1=CC=C(C=C1)N=CC2=CC=CC=C2\"\n    ],\n    \"product_smiles\": [\n      \"CC(C)C1C(=O)N(C1C2=CC=CC=C2)C3=CC=CC=C3\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CCN(CC)CC\"\n    ],\n    \"rationale\": \"This is a classic example of the Staudinger ketene cycloaddition, specifically the synthesis of a \\u03b2-lactam. An acid chloride (isobutyryl chloride) reacts with a base (triethylamine) to form an in-situ ketene (dimethylketene). This ketene then undergoes a [2+2] cycloaddition with an imine (N-benzylideneaniline) to form the four-membered \\u03b2-lactam ring. This reaction is a cornerstone of this named reaction family.\",\n    \"collision_avoidance_note\": \"The reaction specifically involves the in-situ generation of a ketene from an acid chloride and its subsequent [2+2] cycloaddition with an imine. This avoids generic cycloaddition motifs by featuring the characteristic ketene precursor and the formation of a \\u03b2-lactam, which is strongly associated with the Staudinger reaction. The reactants are simple and acyclic where possible, minimizing overlap with other complex ring-forming or rearrangement reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 439,
+    "candidatesTokenCount": 378,
+    "totalTokenCount": 895,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 439
+      }
+    ],
+    "thoughtsTokenCount": 78
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "wNTjadO1IYWdvr0P8Je--Q8"
+}

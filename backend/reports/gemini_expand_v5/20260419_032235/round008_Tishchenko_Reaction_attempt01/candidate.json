@@ -1,0 +1,15 @@
+{
+  "family": "Tishchenko Reaction",
+  "substrates": [
+    "CC=O"
+  ],
+  "products": [
+    "CCOC(C)=O"
+  ],
+  "reagents": [
+    "CC[O-].CC[O-].CC[O-].[Al+3]"
+  ],
+  "rationale": "The classic Tishchenko reaction involves the disproportionation of two molecules of an aldehyde to form an ester, catalyzed by a metal alkoxide. This example uses acetaldehyde, the simplest enolizable aldehyde, which dimerizes to form ethyl acetate. Aluminum triethoxide is a common catalyst for this transformation. This example clearly illustrates the core concept: 2 x R-CHO -> R-COOCH2-R.",
+  "collision_avoidance_note": "This example uses simple, acyclic aliphatic structures to avoid overlap with other named reactions. Acetaldehyde is chosen over formaldehyde to prevent potential confusion with the Cannizzaro reaction, which is typically demonstrated with non-enolizable aldehydes like formaldehyde or benzaldehyde. The product is a simple ester, avoiding complex functional groups that could trigger other reaction family classifiers.",
+  "raw_text": "{\n  \"family\": \"Tishchenko Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCOC(=O)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Al+3].[O-]CC.[O-]CC.[O-]CC\"\n    ],\n    \"rationale\": \"The classic Tishchenko reaction involves the disproportionation of two molecules of an aldehyde to form an ester, catalyzed by a metal alkoxide. This example uses acetaldehyde, the simplest enolizable aldehyde, which dimerizes to form ethyl acetate. Aluminum triethoxide is a common catalyst for this transformation. This example clearly illustrates the core concept: 2 x R-CHO -> R-COOCH2-R.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic aliphatic structures to avoid overlap with other named reactions. Acetaldehyde is chosen over formaldehyde to prevent potential confusion with the Cannizzaro reaction, which is typically demonstrated with non-enolizable aldehydes like formaldehyde or benzaldehyde. The product is a simple ester, avoiding complex functional groups that could trigger other reaction family classifiers.\"\n  }\n}"
+}

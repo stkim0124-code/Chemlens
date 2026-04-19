@@ -1,0 +1,16 @@
+{
+  "family": "Eschweiler-Clarke Methylation (Reductive Alkylation)",
+  "substrates": [
+    "CCN"
+  ],
+  "products": [
+    "CCN(C)C"
+  ],
+  "reagents": [
+    "C=O",
+    "O=C(O)O"
+  ],
+  "rationale": "This is a classic textbook example of the Eschweiler-Clarke methylation. It shows the exhaustive methylation of a primary amine (ethylamine) to a tertiary amine (N,N-dimethylethylamine) using formaldehyde as the source of the methyl groups and formic acid as the reducing agent. The reactants and product are simple, acyclic, and clearly illustrate the core transformation of the reaction: the conversion of N-H bonds to N-CH3 bonds.",
+  "collision_avoidance_note": "This example uses simple aliphatic amines and avoids aromatic rings, which could be confused with other reductive amination or alkylation reactions involving aromatic systems. The specific use of formaldehyde and formic acid as the reagent pair is characteristic of the Eschweiler-Clarke conditions, distinguishing it from other reductive alkylations that might use different aldehydes/ketones or reducing agents (e.g., NaBH3CN, H2/Pd).",
+  "raw_text": "{\n  \"family\": \"Eschweiler-Clarke Methylation (Reductive Alkylation)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCN\"\n    ],\n    \"product_smiles\": [\n      \"CCN(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"C=O\",\n      \"O=C(O)O\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Eschweiler-Clarke methylation. It shows the exhaustive methylation of a primary amine (ethylamine) to a tertiary amine (N,N-dimethylethylamine) using formaldehyde as the source of the methyl groups and formic acid as the reducing agent. The reactants and product are simple, acyclic, and clearly illustrate the core transformation of the reaction: the conversion of N-H bonds to N-CH3 bonds.\",\n    \"collision_avoidance_note\": \"This example uses simple aliphatic amines and avoids aromatic rings, which could be confused with other reductive amination or alkylation reactions involving aromatic systems. The specific use of formaldehyde and formic acid as the reagent pair is characteristic of the Eschweiler-Clarke conditions, distinguishing it from other reductive alkylations that might use different aldehydes/ketones or reducing agents (e.g., NaBH3CN, H2/Pd).\"\n  }\n}"
+}

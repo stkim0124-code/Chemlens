@@ -1,0 +1,16 @@
+{
+  "family": "Schotten-Baumann Reaction",
+  "substrates": [
+    "CCN",
+    "CC(=O)Cl"
+  ],
+  "products": [
+    "CCNC(C)=O"
+  ],
+  "reagents": [
+    "O.[Na+].[OH-]"
+  ],
+  "rationale": "This reaction shows the acylation of a simple primary amine (ethylamine) with a simple acid chloride (acetyl chloride) under aqueous basic conditions (NaOH) to form the corresponding amide (N-ethylacetamide). This is a quintessential textbook example of the Schotten-Baumann reaction, demonstrating the formation of an amide bond from an amine and an acyl halide.",
+  "collision_avoidance_note": "The use of simple, acyclic, aliphatic substrates (ethylamine and acetyl chloride) avoids overlap with reactions that are defined by aromatic rings (e.g., Friedel-Crafts acylation) or more complex functional groups. The reaction is a straightforward nucleophilic acyl substitution, which is the core of the Schotten-Baumann protocol, without introducing other potentially confounding transformations.",
+  "raw_text": "{\n  \"family\": \"Schotten-Baumann Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCN\",\n      \"CC(=O)Cl\"\n    ],\n    \"product_smiles\": [\n      \"CCNC(=O)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O.[Na+].[OH-]\"\n    ],\n    \"rationale\": \"This reaction shows the acylation of a simple primary amine (ethylamine) with a simple acid chloride (acetyl chloride) under aqueous basic conditions (NaOH) to form the corresponding amide (N-ethylacetamide). This is a quintessential textbook example of the Schotten-Baumann reaction, demonstrating the formation of an amide bond from an amine and an acyl halide.\",\n    \"collision_avoidance_note\": \"The use of simple, acyclic, aliphatic substrates (ethylamine and acetyl chloride) avoids overlap with reactions that are defined by aromatic rings (e.g., Friedel-Crafts acylation) or more complex functional groups. The reaction is a straightforward nucleophilic acyl substitution, which is the core of the Schotten-Baumann protocol, without introducing other potentially confounding transformations.\"\n  }\n}"
+}

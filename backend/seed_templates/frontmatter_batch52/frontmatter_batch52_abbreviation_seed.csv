@@ -1,0 +1,11 @@
+alias,canonical_name,entity_type
+SmI2,samarium(II) iodide,reductant
+Boc,tert-butoxycarbonyl,protecting_group
+Pd(PPh3)4,tetrakis(triphenylphosphine)palladium(0),pd_catalyst
+RhCl(PPh3)3,chlorotris(triphenylphosphine)rhodium(I),rh_catalyst
+HMPA,hexamethylphosphoramide,additive
+PTSA,p-toluenesulfonic acid,acid
+CuBr·Me2S,copper(I) bromide dimethyl sulfide complex,cu_catalyst
+CuBr,copper(I) bromide,cu_catalyst
+CuI,copper(I) iodide,cu_catalyst
+Cu2O,cuprous oxide,cu_reagent

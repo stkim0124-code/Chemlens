@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, converting a simple aliphatic aldehyde (heptanal) to the corresponding alkane (hexane) using Wilkinson's catalyst. The reaction is stoichiometric with respect to the rhodium complex, which is consumed by forming a stable carbonyl complex. The simple, acyclic, saturated aliphatic chain is ideal for a benchmark seed as it clearly illustrates the core C-C bond cleavage of the formyl group without introducing other reactive functional groups or complex stereochemistry.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde, avoiding aromatic rings which could be confused with various cross-coupling or C-H activation reactions. The product is a simple alkane, avoiding motifs associated with other named reactions. The transformation is a clear deformylation, which is specific to this reaction family and distinct from decarboxylation (loss of CO2) or deoxygenation (e.g., Wolff-Kishner, Clemmensen).\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 440,
+    "candidatesTokenCount": 351,
+    "totalTokenCount": 871,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 440
+      }
+    ],
+    "thoughtsTokenCount": 80
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "qt7jacilK4Ckvr0P6ZDa4Ag"
+}

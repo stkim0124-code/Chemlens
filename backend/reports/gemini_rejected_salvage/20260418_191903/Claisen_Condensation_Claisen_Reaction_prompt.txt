@@ -1,0 +1,82 @@
+You are generating benchmark-safe canonical examples for the named reaction family "Claisen Condensation / Claisen Reaction".
+
+I need exactly 3 candidate examples, not 1.
+
+Diagnosis context:
+- changed_cases: 0
+- first_case hijacked: 
+- wrong top1 family observed in benchmark: 
+- cluster: buchner
+- cluster avoidance: Avoid Buchner-like hijack patterns: diazo donor + arene carbene insertion, cyclopropanation, ring expansion, norcaradiene/cycloheptatriene motifs, overly generic activated-carbonyl examples.
+
+Goal:
+Create a highly distinctive textbook Claisen condensation example that is unlikely to overlap with Buchner-type benchmark cases.
+
+Hard constraints:
+- Must clearly be an ester enolate acyl substitution / Claisen condensation outcome
+- Product should clearly be a beta-keto ester or beta-dicarbonyl type product
+- Prefer a simple intermolecular ester Claisen example
+- Avoid diazo chemistry entirely
+- Avoid carbene insertion, cyclopropanation, ring expansion, Buchner-like aromatic carbene motifs
+- Avoid overly aromatic or benzylic exotic substrates
+- Keep the example simple and unmistakably Claisen
+
+Common hard constraints:
+- broad regeneration is forbidden
+- generate textbook, highly discriminative, benchmark-safe examples only
+- keep reagent context minimal; at most 1-2 optional reagents
+- avoid reaction examples whose identity is obvious only from reagent list
+- product topology must make the family identity obvious
+- do not include commentary outside JSON
+
+Existing stage examples for context only (do not copy blindly):
+[{"id": 1914, "extract_id": 479, "role": "reactant", "smiles": "CCOC(C)=O", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Claisen Condensation / Claisen Reaction", "source_zip": null, "page_no": 86, "queryable": 1, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "reactant", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T14:31:41.323346"}, {"id": 1915, "extract_id": 479, "role": "product", "smiles": "CCOC(=O)CC(C)=O", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Claisen Condensation / Claisen Reaction", "source_zip": null, "page_no": 86, "queryable": 1, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "product", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T14:31:41.323346"}, {"id": 1916, "extract_id": 479, "role": "intermediate", "smiles": "[CH2-]C(=O)OCC", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Claisen Condensation / Claisen Reaction", "source_zip": null, "page_no": 86, "queryable": 0, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "intermediate", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 0.9, "created_at": "2026-04-18T14:31:41.323346"}]
+
+Return JSON only in this exact schema:
+{
+  "family": "Claisen Condensation / Claisen Reaction",
+  "candidates": [
+    {
+      "candidate_id": "C1",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    },
+    {
+      "candidate_id": "C2",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    },
+    {
+      "candidate_id": "C3",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    }
+  ]
+}

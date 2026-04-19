@@ -1,0 +1,2 @@
+barton_radical_rxn_353_exact_extract | Chugaev Elimination Reaction | Chugaev Elimination Reaction | Barton Radical Decarboxylation Reaction | Barton-Mccombie Radical Deoxygenation Reaction | 0.554 | 0.344 | 0.115
+barton_mccombie_359_boundary_extract | Chugaev Elimination Reaction | Chugaev Elimination Reaction | Barton Radical Decarboxylation Reaction | Barton-Mccombie Radical Deoxygenation Reaction | 0.554 | 0.344 | 0.115

@@ -1,0 +1,81 @@
+You are generating benchmark-safe canonical examples for the named reaction family "Hofmann-Loffler-Freytag Reaction".
+
+I need exactly 3 candidate examples, not 1.
+
+Diagnosis context:
+- changed_cases: 2
+- first_case hijacked: barton_radical_rxn_353_exact_extract
+- wrong top1 family observed in benchmark: Hofmann-Loffler-Freytag Reaction
+- cluster: barton
+- cluster avoidance: Avoid Barton-like hijack patterns: thiohydroxamate ester, radical bromination, peroxide/hv motifs, decarboxylative halogenation confusion, generic leaving-group activation without family identity.
+
+Goal:
+Create a highly distinctive HLF example that does not overlap with Barton radical benchmark cases.
+
+Hard constraints:
+- Must clearly involve N-haloamine / N-radical-mediated remote C-H functionalization leading to cyclic amine formation
+- Prefer a classic pyrrolidine-forming or piperidine-forming textbook example
+- Avoid decarboxylative halogenation motifs
+- Avoid thiohydroxamate ester / Barton deoxygenation motifs
+- Avoid simple halide substitution examples
+- Make the remote intramolecular amination identity obvious in product topology
+
+Common hard constraints:
+- broad regeneration is forbidden
+- generate textbook, highly discriminative, benchmark-safe examples only
+- keep reagent context minimal; at most 1-2 optional reagents
+- avoid reaction examples whose identity is obvious only from reagent list
+- product topology must make the family identity obvious
+- do not include commentary outside JSON
+
+Existing stage examples for context only (do not copy blindly):
+[{"id": 2153, "extract_id": 530, "role": "reactant", "smiles": "CCCCN(C)Cl", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Hofmann-Loffler-Freytag Reaction", "source_zip": null, "page_no": 208, "queryable": 1, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "reactant", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T15:05:53.606803"}, {"id": 2154, "extract_id": 530, "role": "product", "smiles": "CN1CCCC1", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Hofmann-Loffler-Freytag Reaction", "source_zip": null, "page_no": 208, "queryable": 1, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "product", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T15:05:53.606803"}, {"id": 2155, "extract_id": 530, "role": "reagent", "smiles": "O=S(=O)(O)O", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Hofmann-Loffler-Freytag Reaction", "source_zip": null, "page_no": 208, "queryable": 0, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "reagent", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T15:05:53.606803"}, {"id": 2156, "extract_id": 530, "role": "reagent", "smiles": "[OH-]", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Hofmann-Loffler-Freytag Reaction", "source_zip": null, "page_no": 208, "queryable": 0, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "reagent", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T15:05:53.606803"}, {"id": 2157, "extract_id": 530, "role": "intermediate", "smiles": "[CH2]CCCNC", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Hofmann-Loffler-Freytag Reaction", "source_zip": null, "page_no": 208, "queryable": 0, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "intermediate", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 0.9, "created_at": "2026-04-18T15:05:53.606803"}, {"id": 2158, "extract_id": 530, "role": "intermediate", "smiles": "CNCCCCCl", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Hofmann-Loffler-Freytag Reaction", "source_zip": null, "page_no": 208, "queryable": 0, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "intermediate", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 0.9, "created_at": "2026-04-18T15:05:53.606803"}]
+
+Return JSON only in this exact schema:
+{
+  "family": "Hofmann-Loffler-Freytag Reaction",
+  "candidates": [
+    {
+      "candidate_id": "C1",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    },
+    {
+      "candidate_id": "C2",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    },
+    {
+      "candidate_id": "C3",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    }
+  ]
+}

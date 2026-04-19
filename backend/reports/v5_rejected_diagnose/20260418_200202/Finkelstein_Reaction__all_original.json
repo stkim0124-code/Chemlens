@@ -1,0 +1,74 @@
+{
+  "family_name": "Finkelstein Reaction",
+  "variant": "all_original",
+  "summary": {
+    "benchmark_name": "CHEMLENS small benchmark v3",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 25,
+    "top1_accuracy": 0.9259,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "changed_cases": [
+    {
+      "case_id": "barton_radical_rxn_353_exact_extract",
+      "expected_family": "Barton Radical Decarboxylation Reaction",
+      "baseline_top1_family": "Barton Radical Decarboxylation Reaction",
+      "current_top1_family": "Finkelstein Reaction",
+      "baseline_top1_correct": true,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Barton Radical Decarboxylation Reaction | Bamford-Stevens-Shapiro Olefination | Malonic Ester Synthesis",
+      "current_top3_families": "Finkelstein Reaction | Barton Radical Decarboxylation Reaction | Bamford-Stevens-Shapiro Olefination",
+      "baseline_top3_scores": "0.344 | 0.258 | 0.256",
+      "current_top3_scores": "1.023 | 0.344 | 0.258",
+      "baseline_notes": "Named family variant using explicit Reaction suffix.",
+      "current_notes": "Named family variant using explicit Reaction suffix."
+    },
+    {
+      "case_id": "barton_mccombie_359_boundary_extract",
+      "expected_family": "Barton-Mccombie Radical Deoxygenation Reaction",
+      "baseline_top1_family": "Barton Radical Decarboxylation Reaction",
+      "current_top1_family": "Finkelstein Reaction",
+      "baseline_top1_correct": true,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Barton Radical Decarboxylation Reaction | Bamford-Stevens-Shapiro Olefination | Malonic Ester Synthesis",
+      "current_top3_families": "Finkelstein Reaction | Barton Radical Decarboxylation Reaction | Bamford-Stevens-Shapiro Olefination",
+      "baseline_top3_scores": "0.344 | 0.258 | 0.256",
+      "current_top3_scores": "1.023 | 0.344 | 0.258",
+      "baseline_notes": "Boundary case: deoxygenation-like transformation that currently retrieves Barton family neighbor first.",
+      "current_notes": "Boundary case: deoxygenation-like transformation that currently retrieves Barton family neighbor first."
+    },
+    {
+      "case_id": "noisy_ethanol",
+      "expected_family": "__no_confident_hit__",
+      "baseline_top1_family": "Malonic Ester Synthesis",
+      "current_top1_family": "Malonic Ester Synthesis",
+      "baseline_top1_correct": false,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Malonic Ester Synthesis | Gabriel Synthesis | Kulinkovich Reaction",
+      "current_top3_families": "Malonic Ester Synthesis | Gabriel Synthesis | Finkelstein Reaction",
+      "baseline_top3_scores": "0.756 | 0.56 | 0.434",
+      "current_top3_scores": "0.756 | 0.56 | 0.458",
+      "baseline_notes": "Ethanol — small fragment (HA=3). 어떤 family도 신뢰도 있게 매칭되면 안 됨.",
+      "current_notes": "Ethanol — small fragment (HA=3). 어떤 family도 신뢰도 있게 매칭되면 안 됨."
+    }
+  ],
+  "reaction_extract_ids": [
+    512
+  ],
+  "extract_molecule_ids": [
+    2066,
+    2067,
+    2068
+  ],
+  "insert_stats": {
+    "inserted_extract_rows": 1,
+    "inserted_molecule_rows": 3,
+    "total_changes_delta": 4
+  },
+  "identical_to_baseline": false
+}

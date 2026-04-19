@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Williamson Ether Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCO[Na]\",\n      \"CBr\"\n    ],\n    \"product_smiles\": [\n      \"CCOC\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This is the classic textbook example of the Williamson ether synthesis: the reaction of sodium ethoxide with methyl bromide to form diethyl ether. It uses the simplest possible primary alkyl halide (methyl bromide) and a simple primary alkoxide (sodium ethoxide), which are ideal substrates for an SN2 reaction. The product, diethyl ether, is a common and well-known ether. This example clearly illustrates the core transformation of forming an ether from an alkoxide and an alkyl halide.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic, saturated alkyl groups to avoid overlap with other named reactions. It avoids phenols (which could trigger phenol-specific reactions), complex alkyl halides, or intramolecular cyclizations. The use of a simple alkoxide and a methyl halide is a clear and unambiguous representation of the Williamson ether synthesis, minimizing potential collisions with other named reaction families.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 424,
+    "candidatesTokenCount": 261,
+    "totalTokenCount": 747,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 424
+      }
+    ],
+    "thoughtsTokenCount": 62
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "pc7jaaHXDNWy0-kPrui3mQE"
+}

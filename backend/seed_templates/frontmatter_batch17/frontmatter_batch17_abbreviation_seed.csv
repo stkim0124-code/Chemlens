@@ -1,0 +1,14 @@
+alias,canonical_name,entity_type
+Pb(OAc)4,lead tetraacetate,oxidant
+PTSA,p-toluenesulfonic acid,acid
+DPPA,diphenylphosphoryl azide,azide_transfer_reagent
+TMSN3,trimethylsilyl azide,azide_source
+NaN3,sodium azide,azide_source
+H2O2,hydrogen peroxide,oxidant
+PhSeO2H,diphenyl seleninic acid,oxidant
+Ac2O,acetic anhydride,anhydride_reagent
+DMAP,4-dimethylaminopyridine,catalyst
+(EtCO)2O,propionic anhydride,anhydride_reagent
+Tf2O,trifluoromethanesulfonic anhydride,activating_reagent
+TBAF,tetrabutylammonium fluoride,deprotection_reagent
+TIPSCl,triisopropylsilyl chloride,silylating_reagent

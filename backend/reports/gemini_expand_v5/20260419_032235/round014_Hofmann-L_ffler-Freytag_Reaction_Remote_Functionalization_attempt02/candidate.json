@@ -1,0 +1,16 @@
+{
+  "family": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+  "substrates": [
+    "CCCCN(C)Cl"
+  ],
+  "products": [
+    "CN1CCCC1"
+  ],
+  "reagents": [
+    "O",
+    "[H+]"
+  ],
+  "rationale": "This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutylamine undergoes a 1,5-hydrogen atom transfer via a nitrogen-centered radical, generated under acidic conditions (often with light or heat). The resulting carbon-centered radical then abstracts the chlorine atom, forming a δ-chloroamine. Subsequent intramolecular nucleophilic substitution, typically induced by a base (often implicitly present or added, like NaOH after the initial steps), leads to the formation of N-methylpyrrolidine. This example clearly demonstrates the key C-H functionalization at a remote (delta) position and subsequent cyclization to form a five-membered ring, which is characteristic of the reaction.",
+  "collision_avoidance_note": "This example uses a simple acyclic N-chloroamine substrate, which is the defining feature of the reaction. It avoids arenes, complex ring systems, and other functional groups that could cause collisions with unrelated named reactions. The transformation is a specific intramolecular C-H amination via a radical pathway, distinguishing it from other cyclization or rearrangement reactions.",
+  "raw_text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCCN1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"[H+]\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutylamine undergoes a 1,5-hydrogen atom transfer via a nitrogen-centered radical, generated under acidic conditions (often with light or heat). The resulting carbon-centered radical then abstracts the chlorine atom, forming a \\u03b4-chloroamine. Subsequent intramolecular nucleophilic substitution, typically induced by a base (often implicitly present or added, like NaOH after the initial steps), leads to the formation of N-methylpyrrolidine. This example clearly demonstrates the key C-H functionalization at a remote (delta) position and subsequent cyclization to form a five-membered ring, which is characteristic of the reaction.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic N-chloroamine substrate, which is the defining feature of the reaction. It avoids arenes, complex ring systems, and other functional groups that could cause collisions with unrelated named reactions. The transformation is a specific intramolecular C-H amination via a radical pathway, distinguishing it from other cyclization or rearrangement reactions.\"\n  }\n}"
+}

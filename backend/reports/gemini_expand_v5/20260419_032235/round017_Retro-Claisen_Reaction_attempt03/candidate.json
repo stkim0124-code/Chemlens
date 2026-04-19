@@ -1,0 +1,16 @@
+{
+  "family": "Retro-Claisen Reaction",
+  "substrates": [
+    "CCOC(=O)C(C)C(=O)CC"
+  ],
+  "products": [
+    "CCC(C)=O",
+    "CCO"
+  ],
+  "reagents": [
+    "[Na+].[OH-]"
+  ],
+  "rationale": "This reaction shows the base-induced cleavage of ethyl 2-methyl-3-oxopentanoate, a classic beta-keto ester substrate. The strong base (sodium hydroxide) attacks the ester carbonyl, leading to the cleavage of the C-C bond between the alpha and beta carbons, ultimately yielding a ketone (butanone) and an alcohol (ethanol) after workup. This is a simple, acyclic, and unambiguous example of the retro-Claisen reaction.",
+  "collision_avoidance_note": "The chosen substrate is a simple, acyclic beta-keto ester, which is the quintessential substrate for this reaction. It avoids aromatic rings, complex functional groups, or other reactive motifs that could cause collisions with other named reactions like the Dieckmann condensation (intramolecular Claisen), aldol reactions, or other base-catalyzed condensations. The products are simple, stable carbonyl compounds, clearly illustrating the cleavage aspect of the reaction.",
+  "raw_text": "{\n  \"family\": \"Retro-Claisen Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)C(C)C(=O)OCC\"\n    ],\n    \"product_smiles\": [\n      \"CCC(=O)C\",\n      \"CCO\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[OH-].[Na+]\"\n    ],\n    \"rationale\": \"This reaction shows the base-induced cleavage of ethyl 2-methyl-3-oxopentanoate, a classic beta-keto ester substrate. The strong base (sodium hydroxide) attacks the ester carbonyl, leading to the cleavage of the C-C bond between the alpha and beta carbons, ultimately yielding a ketone (butanone) and an alcohol (ethanol) after workup. This is a simple, acyclic, and unambiguous example of the retro-Claisen reaction.\",\n    \"collision_avoidance_note\": \"The chosen substrate is a simple, acyclic beta-keto ester, which is the quintessential substrate for this reaction. It avoids aromatic rings, complex functional groups, or other reactive motifs that could cause collisions with other named reactions like the Dieckmann condensation (intramolecular Claisen), aldol reactions, or other base-catalyzed condensations. The products are simple, stable carbonyl compounds, clearly illustrating the cleavage aspect of the reaction.\"\n  }\n}"
+}

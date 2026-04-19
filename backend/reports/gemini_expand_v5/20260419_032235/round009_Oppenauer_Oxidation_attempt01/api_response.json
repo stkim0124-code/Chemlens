@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Oppenauer Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)O\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CC(=O)C\",\n      \"C(C)(C)O[Al](OC(C)C)OC(C)C\"\n    ],\n    \"rationale\": \"This reaction shows the oxidation of a simple, acyclic secondary alcohol (isopropanol) to its corresponding ketone (acetone). This is a classic and fundamental example of the Oppenauer oxidation. Acetone serves as the hydride acceptor, and aluminum isopropoxide is the typical catalyst. While the substrate and product are the same molecule in this specific equilibrium example, it perfectly illustrates the core transformation of the alcohol functional group to the ketone functional group, which is the essence of the Oppenauer oxidation. This choice avoids complex steroidal or cyclic systems often used in historical examples, focusing on the fundamental functional group interconversion.\",\n    \"collision_avoidance_note\": \"The reaction is kept simple and acyclic, using isopropanol and acetone, which are the most fundamental components of this transformation. This avoids complex ring systems (like steroids) or other functional groups that could trigger unrelated named reaction queries. The explicit inclusion of the aluminum alkoxide catalyst helps distinguish it from other oxidation methods.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 435,
+    "candidatesTokenCount": 318,
+    "totalTokenCount": 816,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 435
+      }
+    ],
+    "thoughtsTokenCount": 63
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "-NDjaZ6iDMup2roPsvrt8A0"
+}

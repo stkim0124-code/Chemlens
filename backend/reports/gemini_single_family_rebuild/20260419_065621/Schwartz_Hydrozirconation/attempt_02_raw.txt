@@ -1,0 +1,19 @@
+{
+  "family": "Schwartz Hydrozirconation",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "CC(C)(C)C#C"
+    ],
+    "product_smiles": [
+      "CC(C)(C)C=CI"
+    ],
+    "optional_reagent_smiles": [
+      "II"
+    ],
+    "rationale": "This example demonstrates the hydrozirconation of a terminal alkyne (3,3-dimethyl-1-butyne) followed by in-situ quenching of the resulting alkenylzirconium intermediate with iodine (I2). The reaction proceeds with high regioselectivity (anti-Markovnikov addition of H-Zr) and stereoselectivity (syn-addition), leading to the (E)-vinyl iodide product. This showcases a common and synthetically useful application of the Schwartz reagent, where the organozirconium species is not isolated but is trapped by an electrophile.",
+    "collision_avoidance_note": "This example uses a t-butyl substituted terminal alkyne, which is structurally distinct from simple linear alkynes like 1-hexyne or 1-octyne. The subsequent iodination provides a clear, stable, and easily characterizable product, avoiding the direct representation of the organometallic intermediate.",
+    "reagents_text": "Cp2ZrHCl (Schwartz reagent)",
+    "conditions_text": "1. Benzene or THF solvent; 2. I2"
+  }
+}

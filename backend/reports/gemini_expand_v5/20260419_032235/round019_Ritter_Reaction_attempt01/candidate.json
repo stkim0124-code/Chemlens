@@ -1,0 +1,16 @@
+{
+  "family": "Ritter Reaction",
+  "substrates": [
+    "CC(C)(C)O",
+    "CC#N"
+  ],
+  "products": [
+    "CC(=O)NC(C)(C)C"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This reaction is a classic textbook example of the Ritter reaction. Tert-butanol is protonated by a strong acid (sulfuric acid) and loses water to form the stable tert-butyl carbocation. This carbocation is then trapped by the nucleophilic nitrogen of acetonitrile, forming a nitrilium ion intermediate. Subsequent hydrolysis of the nitrilium ion yields N-tert-butylacetamide. The reactants are simple, acyclic, and clearly demonstrate the core transformation: carbocation generation, nitrile capture, and hydrolysis to an amide.",
+  "collision_avoidance_note": "This example uses simple, acyclic, saturated alkyl groups (tert-butyl and methyl) to avoid overlap with reactions involving aromatic rings, unsaturation, or complex functional groups. The use of tert-butanol as the carbocation precursor is highly characteristic of the Ritter reaction and less likely to be confused with other named reactions. The product is a simple secondary amide, avoiding motifs that could trigger other named reaction queries.",
+  "raw_text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This reaction is a classic textbook example of the Ritter reaction. Tert-butanol is protonated by a strong acid (sulfuric acid) and loses water to form the stable tert-butyl carbocation. This carbocation is then trapped by the nucleophilic nitrogen of acetonitrile, forming a nitrilium ion intermediate. Subsequent hydrolysis of the nitrilium ion yields N-tert-butylacetamide. The reactants are simple, acyclic, and clearly demonstrate the core transformation: carbocation generation, nitrile capture, and hydrolysis to an amide.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic, saturated alkyl groups (tert-butyl and methyl) to avoid overlap with reactions involving aromatic rings, unsaturation, or complex functional groups. The use of tert-butanol as the carbocation precursor is highly characteristic of the Ritter reaction and less likely to be confused with other named reactions. The product is a simple secondary amide, avoiding motifs that could trigger other named reaction queries.\"\n  }\n}"
+}

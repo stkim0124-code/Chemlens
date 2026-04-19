@@ -1,0 +1,16 @@
+{
+  "family": "Ritter Reaction",
+  "substrates": [
+    "CC(C)(C)O",
+    "CC#N"
+  ],
+  "products": [
+    "CC(=O)NC(C)(C)C"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This reaction is a classic textbook example of the Ritter reaction, demonstrating the formation of a stable tertiary carbocation from tert-butanol under strong acid conditions (sulfuric acid), followed by nucleophilic attack by acetonitrile. The resulting nitrilium ion is then hydrolyzed to form the final product, N-tert-butylacetamide. All reactants and products are simple, acyclic, and contain minimal functional groups, clearly illustrating the core transformation of an alcohol and a nitrile into an N-substituted amide.",
+  "collision_avoidance_note": "This example uses simple, acyclic aliphatic substrates (tert-butanol and acetonitrile) to avoid overlap with other named reactions. It specifically avoids arenes (Friedel-Crafts), complex ring systems, or other reactive functional groups that could trigger unrelated reaction classifiers. The core transformation is clearly the formation of a C-N bond from a carbocation source and a nitrile, which is the defining feature of the Ritter reaction.",
+  "raw_text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This reaction is a classic textbook example of the Ritter reaction, demonstrating the formation of a stable tertiary carbocation from tert-butanol under strong acid conditions (sulfuric acid), followed by nucleophilic attack by acetonitrile. The resulting nitrilium ion is then hydrolyzed to form the final product, N-tert-butylacetamide. All reactants and products are simple, acyclic, and contain minimal functional groups, clearly illustrating the core transformation of an alcohol and a nitrile into an N-substituted amide.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic aliphatic substrates (tert-butanol and acetonitrile) to avoid overlap with other named reactions. It specifically avoids arenes (Friedel-Crafts), complex ring systems, or other reactive functional groups that could trigger unrelated reaction classifiers. The core transformation is clearly the formation of a C-N bond from a carbocation source and a nitrile, which is the defining feature of the Ritter reaction.\"\n  }\n}"
+}

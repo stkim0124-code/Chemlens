@@ -1,0 +1,15 @@
+{
+  "family": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+  "substrates": [
+    "CC(=O)Oc1ccccc1"
+  ],
+  "products": [
+    "CC(=O)c1ccccc1O"
+  ],
+  "reagents": [
+    "[Cl][Al]([Cl])[Cl]"
+  ],
+  "rationale": "This is the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone, a textbook example. It clearly demonstrates the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). This example is simple, acyclic (except for the essential phenyl ring), and avoids complex substituents, making it a canonical representation of the reaction family.",
+  "collision_avoidance_note": "The substrate is a simple phenyl ester, avoiding complex polycyclic aromatic systems that could trigger other named reactions (e.g., Friedel-Crafts on complex arenes). The acyl group is a simple acetyl group, avoiding motifs like diazo groups or other reactive functionalities. The transformation is a specific intramolecular rearrangement, distinct from intermolecular acylations (Friedel-Crafts acylation) or Claisen rearrangements (which involve allyl ethers).",
+  "raw_text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Al](Cl)Cl\"\n    ],\n    \"rationale\": \"This is the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone, a textbook example. It clearly demonstrates the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). This example is simple, acyclic (except for the essential phenyl ring), and avoids complex substituents, making it a canonical representation of the reaction family.\",\n    \"collision_avoidance_note\": \"The substrate is a simple phenyl ester, avoiding complex polycyclic aromatic systems that could trigger other named reactions (e.g., Friedel-Crafts on complex arenes). The acyl group is a simple acetyl group, avoiding motifs like diazo groups or other reactive functionalities. The transformation is a specific intramolecular rearrangement, distinct from intermolecular acylations (Friedel-Crafts acylation) or Claisen rearrangements (which involve allyl ethers).\"\n  }\n}"
+}

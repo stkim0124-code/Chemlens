@@ -1,0 +1,16 @@
+Generate exactly one benchmark-safe canonical example for the named reaction family 'Horner-Wadsworth-Emmons Olefination'.
+Cluster risk: buchner ; forbid signals: diazo_arene_combo, ring_expansion.
+Current rejected stage seed to avoid copying:
+- role=reactant smiles=CCOC(=O)CP(=O)(OCC)OCC
+- role=reactant smiles=O=Cc1ccccc1
+- role=product smiles=CCOC(=O)/C=C/c1ccccc1
+Goal: Propose a simple phosphonate-stabilized olefination example that clearly forms an alkene from aldehyde plus phosphonate, with no diazo or ring-expansion motifs.
+Rules:
+- keep it textbook and minimal
+- avoid the forbidden signals above
+- do not repeat the current rejected stage topology
+- provide valid organic SMILES only; no catalyst metals in SMILES unless absolutely necessary
+- keep reagent list short or empty if not essential
+Return a structurally different topology than any prior attempt. Avoid repeating the same substrate skeleton.
+Return JSON only with this schema:
+{"substrate_smiles":["..."],"product_smiles":["..."],"optional_reagent_smiles":["..."]}

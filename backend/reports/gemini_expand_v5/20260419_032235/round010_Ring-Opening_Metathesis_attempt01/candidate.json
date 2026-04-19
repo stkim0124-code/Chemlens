@@ -1,0 +1,15 @@
+{
+  "family": "Ring-Opening Metathesis",
+  "substrates": [
+    "C1=CC2CC2C1"
+  ],
+  "products": [
+    "C=CC1=CC=C1"
+  ],
+  "reagents": [
+    "[Ru]"
+  ],
+  "rationale": "This example shows the ring-opening metathesis of bicyclo[2.2.0]hex-2-ene, a simple, strained cyclic alkene. The reaction proceeds via a metathesis catalyst (represented generically as [Ru]) to open the four-membered ring, yielding 1,3-cyclohexadiene. This is a clear, textbook illustration of the ROM reaction on a strained system without extraneous functional groups.",
+  "collision_avoidance_note": "The substrate is a simple, strained bicyclic alkene, avoiding common functional groups, arenes, or complex ring systems that could overlap with other named reactions. The product is a simple diene. This specific transformation is highly characteristic of ROM and is unlikely to be confused with other reaction families.",
+  "raw_text": "{\n  \"family\": \"Ring-Opening Metathesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C1=CC2C(C1)C2\"\n    ],\n    \"product_smiles\": [\n      \"C=CC1=CC=C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Ru]\"\n    ],\n    \"rationale\": \"This example shows the ring-opening metathesis of bicyclo[2.2.0]hex-2-ene, a simple, strained cyclic alkene. The reaction proceeds via a metathesis catalyst (represented generically as [Ru]) to open the four-membered ring, yielding 1,3-cyclohexadiene. This is a clear, textbook illustration of the ROM reaction on a strained system without extraneous functional groups.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, strained bicyclic alkene, avoiding common functional groups, arenes, or complex ring systems that could overlap with other named reactions. The product is a simple diene. This specific transformation is highly characteristic of ROM and is unlikely to be confused with other reaction families.\"\n  }\n}"
+}

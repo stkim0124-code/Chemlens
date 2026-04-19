@@ -1,0 +1,97 @@
+{
+  "family_name": "Diels-Alder Cycloaddition",
+  "rejected_reason": "top1 regression: baseline=1.0000 current=0.9630",
+  "benchmark_top1_after_merge": 0.963,
+  "benchmark_top3_after_merge": 1.0,
+  "benchmark_json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_003_Diels-Alder_Cycloaddition.json",
+  "reaction_extract_ids_from_rejected_json": [
+    467
+  ],
+  "extract_molecule_ids_from_rejected_json": [
+    1870,
+    1871,
+    1872
+  ],
+  "diagnose_changed_case_count": 0,
+  "diagnose_first_changed_case": "",
+  "diagnose_first_changed_top1": "",
+  "diagnose_cluster": "",
+  "canonical_extract_count": 1,
+  "canonical_molecule_count": 2,
+  "stage_extract_count": 1,
+  "stage_molecule_count": 3,
+  "stage_only_extract_ids": [
+    467
+  ],
+  "stage_seed_extracts": [
+    {
+      "id": 467,
+      "scheme_candidate_id": 1,
+      "extract_kind": "canonical_overview",
+      "reactants_text": null,
+      "products_text": null,
+      "intermediates_text": null,
+      "reagents_text": null,
+      "parse_status": "gemini_auto_seed",
+      "promote_decision": "promote",
+      "rejection_reason": null
+    }
+  ],
+  "stage_seed_molecules": [
+    {
+      "id": 1870,
+      "extract_id": 467,
+      "role": "reactant",
+      "smiles": "C1=CCC=C1",
+      "quality_tier": 1,
+      "queryable": 1,
+      "source_field": "reactant",
+      "normalized_text": null,
+      "structure_source": "gemini_auto_seed",
+      "rdkit": {
+        "rdkit_available": true,
+        "parse_ok": true,
+        "sanitize_ok": true,
+        "canonical_smiles": "C1=CCC=C1"
+      }
+    },
+    {
+      "id": 1871,
+      "extract_id": 467,
+      "role": "reactant",
+      "smiles": "O=C1C=CC(=O)O1",
+      "quality_tier": 1,
+      "queryable": 1,
+      "source_field": "reactant",
+      "normalized_text": null,
+      "structure_source": "gemini_auto_seed",
+      "rdkit": {
+        "rdkit_available": true,
+        "parse_ok": true,
+        "sanitize_ok": true,
+        "canonical_smiles": "O=C1C=CC(=O)O1"
+      }
+    },
+    {
+      "id": 1872,
+      "extract_id": 467,
+      "role": "product",
+      "smiles": "O=C1OC(=O)[C@H]2[C@@H]1[C@@H]1C=C[C@@H]2C1",
+      "quality_tier": 1,
+      "queryable": 1,
+      "source_field": "product",
+      "normalized_text": null,
+      "structure_source": "gemini_auto_seed",
+      "rdkit": {
+        "rdkit_available": true,
+        "parse_ok": true,
+        "sanitize_ok": true,
+        "canonical_smiles": "O=C1OC(=O)[C@H]2[C@@H]1[C@@H]1C=C[C@@H]2C1"
+      }
+    }
+  ],
+  "suspicion_flags": [
+    "multiple_queryable_core_molecules"
+  ],
+  "recommendation": "inspect_stage_seed"
+}

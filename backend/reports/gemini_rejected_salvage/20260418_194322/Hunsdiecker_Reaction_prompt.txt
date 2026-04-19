@@ -1,0 +1,82 @@
+You are generating benchmark-safe canonical examples for the named reaction family "Hunsdiecker Reaction".
+
+I need exactly 3 candidate examples, not 1.
+
+Diagnosis context:
+- changed_cases: 3
+- first_case hijacked: barton_radical_rxn_353_exact_extract
+- wrong top1 family observed in benchmark: Hunsdiecker Reaction
+- cluster: barton
+- cluster avoidance: Avoid Barton-like hijack patterns: thiohydroxamate ester, radical bromination, peroxide/hv motifs, decarboxylative halogenation confusion, generic leaving-group activation without family identity.
+
+Goal:
+Create a very distinctive decarboxylative halogenation example that does not hijack Barton radical benchmark queries more than necessary.
+
+Hard constraints:
+- Must clearly start from a silver carboxylate or carboxylate-derived Hunsdiecker precursor
+- Product must clearly be one-carbon-shorter alkyl halide
+- Decarboxylation identity must be obvious
+- Avoid thiohydroxamate esters and Barton deoxygenation motifs
+- Avoid N-radical cyclization motifs
+- Avoid over-complex substrates
+- Make the one-carbon shortening and halide installation unmistakable
+
+Common hard constraints:
+- broad regeneration is forbidden
+- generate textbook, highly discriminative, benchmark-safe examples only
+- keep reagent context minimal; at most 1-2 optional reagents
+- avoid reaction examples whose identity is obvious only from reagent list
+- product topology must make the family identity obvious
+- do not include commentary outside JSON
+
+Existing stage examples for context only (do not copy blindly):
+[{"id": 2175, "extract_id": 534, "role": "reactant", "smiles": "CCCC(=O)[O-]", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Hunsdiecker Reaction", "source_zip": null, "page_no": 218, "queryable": 1, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "reactant", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T15:07:00.548380"}, {"id": 2176, "extract_id": 534, "role": "product", "smiles": "CCCBr", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Hunsdiecker Reaction", "source_zip": null, "page_no": 218, "queryable": 1, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "product", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T15:07:00.548380"}, {"id": 2177, "extract_id": 534, "role": "reagent", "smiles": "BrBr", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Hunsdiecker Reaction", "source_zip": null, "page_no": 218, "queryable": 0, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "reagent", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 1.0, "created_at": "2026-04-18T15:07:00.548380"}, {"id": 2178, "extract_id": 534, "role": "intermediate", "smiles": "CCCC(=O)OBr", "smiles_kind": "explicit", "quality_tier": 1, "reaction_family_name": "Hunsdiecker Reaction", "source_zip": null, "page_no": 218, "queryable": 0, "note_text": "[gemini_auto_seed]", "morgan_fp": null, "normalized_text": null, "source_field": "intermediate", "structure_source": "gemini_auto_seed", "alias_id": null, "fg_tags": null, "role_confidence": 0.9, "created_at": "2026-04-18T15:07:00.548380"}]
+
+Return JSON only in this exact schema:
+{
+  "family": "Hunsdiecker Reaction",
+  "candidates": [
+    {
+      "candidate_id": "C1",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    },
+    {
+      "candidate_id": "C2",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    },
+    {
+      "candidate_id": "C3",
+      "substrate_smiles": [
+        "..."
+      ],
+      "product_smiles": [
+        "..."
+      ],
+      "optional_reagent_smiles": [
+        "..."
+      ],
+      "rationale": "...",
+      "collision_avoidance_note": "..."
+    }
+  ]
+}

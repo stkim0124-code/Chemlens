@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCCN1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"[H+]\"\n    ],\n    \"rationale\": \"This is a classic and simple textbook example of the Hofmann-Löffler-Freytag reaction. N-chloro-N-methylbutylamine is treated with acid (often sulfuric acid) and then base to induce a 1,5-hydrogen atom transfer via a nitrogen-centered radical. This is followed by radical recombination to form a C-Cl bond at the delta-position. Subsequent intramolecular nucleophilic substitution (promoted by base) forms the N-methylpyrrolidine product. This example clearly demonstrates the key features: an N-haloamine substrate, remote C-H functionalization (at the delta-carbon), and intramolecular cyclization to form a five-membered ring.\",\n    \"collision_avoidance_note\": \"The reaction involves an N-haloamine and an intramolecular C-H functionalization leading to a pyrrolidine ring. This specific transformation is characteristic of the Hofmann-Löffler-Freytag reaction and is distinct from other named reactions involving amines or halides. The acyclic substrate and simple pyrrolidine product avoid motifs common in other families like Hofmann rearrangement (amides to amines), Hofmann elimination (quaternary ammonium salts to alkenes), or general radical cyclizations that don't start from an N-haloamine.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 392,
+    "candidatesTokenCount": 366,
+    "totalTokenCount": 823,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 392
+      }
+    ],
+    "thoughtsTokenCount": 65
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "hOPjaZjuHdedosUP_vOzsQM"
+}

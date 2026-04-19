@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Furukawa Modification\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C/C=C/C\"\n    ],\n    \"product_smiles\": [\n      \"C[C@H]1[C@H](C)C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"C(I)I\",\n      \"C[Zn]C\"\n    ],\n    \"rationale\": \"This reaction shows the stereospecific syn-addition of a methylene group across the double bond of (E)-but-2-ene to form trans-1,2-dimethylcyclopropane. This is a classic, simple, acyclic example of the Furukawa modification of the Simmons-Smith reaction, using diethylzinc and diiodomethane as the key reagents to generate the zinc carbenoid. The reactants and product are small, acyclic, and clearly illustrate the core transformation.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, non-conjugated, acyclic alkene to avoid overlap with reactions involving carbonyls (like Corey-Chaykovsky), aromatic systems, or more complex cyclopropanation variants. The specific reagents (Et2Zn, CH2I2) are included to distinguish it from the classic Simmons-Smith (Zn/Cu couple) and other carbenoid-based reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 396,
+    "candidatesTokenCount": 305,
+    "totalTokenCount": 831,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 396
+      }
+    ],
+    "thoughtsTokenCount": 130
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "6tPjaaG-Dpe7vr0P2c7c8Qw"
+}

@@ -1,0 +1,17 @@
+{
+  "family": "Pfitzner-Moffatt Oxidation",
+  "substrates": [
+    "CCCCCCCCCO"
+  ],
+  "products": [
+    "CCCCCCCCC=O"
+  ],
+  "reagents": [
+    "CS(C)=O",
+    "N=C(C1CCCCN1)N1CCCCC1",
+    "Cl.c1cc[nH+]cc1"
+  ],
+  "rationale": "This example shows the oxidation of a simple, acyclic primary alcohol (1-nonanol) to the corresponding aldehyde (nonanal). This is a classic textbook transformation for the Pfitzner-Moffatt oxidation. The reagents specified are dimethyl sulfoxide (DMSO), dicyclohexylcarbodiimide (DCC), and pyridinium hydrochloride as the mild acid catalyst, which are the defining components of this reaction. The long alkyl chain helps avoid volatility and ensures the core transformation is the focus, while remaining simple and acyclic.",
+  "collision_avoidance_note": "The substrate is a simple primary alcohol, avoiding complex structures, aromatic rings, or other functional groups that could trigger unrelated named reaction queries (e.g., Swern, Corey-Kim, Parikh-Doering, which are also DMSO-based oxidations but use different activators). The specific combination of DMSO, a carbodiimide (DCC), and a mild acid catalyst is characteristic of the Pfitzner-Moffatt protocol.",
+  "raw_text": "{\n  \"family\": \"Pfitzner-Moffatt Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCCCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"C1CCN(CC1)C(=N)C2CCCCN2\",\n      \"Cl.c1cc[nH+]cc1\"\n    ],\n    \"rationale\": \"This example shows the oxidation of a simple, acyclic primary alcohol (1-nonanol) to the corresponding aldehyde (nonanal). This is a classic textbook transformation for the Pfitzner-Moffatt oxidation. The reagents specified are dimethyl sulfoxide (DMSO), dicyclohexylcarbodiimide (DCC), and pyridinium hydrochloride as the mild acid catalyst, which are the defining components of this reaction. The long alkyl chain helps avoid volatility and ensures the core transformation is the focus, while remaining simple and acyclic.\",\n    \"collision_avoidance_note\": \"The substrate is a simple primary alcohol, avoiding complex structures, aromatic rings, or other functional groups that could trigger unrelated named reaction queries (e.g., Swern, Corey-Kim, Parikh-Doering, which are also DMSO-based oxidations but use different activators). The specific combination of DMSO, a carbodiimide (DCC), and a mild acid catalyst is characteristic of the Pfitzner-Moffatt protocol.\"\n  }\n}"
+}

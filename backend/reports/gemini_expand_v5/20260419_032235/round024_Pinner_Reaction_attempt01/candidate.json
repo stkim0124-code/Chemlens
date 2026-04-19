@@ -1,0 +1,16 @@
+{
+  "family": "Pinner Reaction",
+  "substrates": [
+    "CC#N",
+    "CCO"
+  ],
+  "products": [
+    "CCOC(C)=[NH2+].[Cl-]"
+  ],
+  "reagents": [
+    "Cl"
+  ],
+  "rationale": "This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from the simplest common liquid nitrile (acetonitrile) and a simple alcohol (ethanol) in the presence of dry hydrogen chloride. This represents the core transformation of the Pinner reaction, which is the acid-catalyzed addition of an alcohol to a nitrile. The resulting Pinner salt is a key intermediate for subsequent hydrolysis to esters or aminolysis to amidines.",
+  "collision_avoidance_note": "The reactants are simple, acyclic, and lack complex functional groups. Acetonitrile and ethanol are fundamental building blocks. The product is a specific imino ether salt, which is characteristic of the Pinner reaction and distinct from simple esterification or nitrile hydrolysis, thus avoiding collision with reactions like the Fischer esterification or the Stephen aldehyde synthesis.",
+  "raw_text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from the simplest common liquid nitrile (acetonitrile) and a simple alcohol (ethanol) in the presence of dry hydrogen chloride. This represents the core transformation of the Pinner reaction, which is the acid-catalyzed addition of an alcohol to a nitrile. The resulting Pinner salt is a key intermediate for subsequent hydrolysis to esters or aminolysis to amidines.\",\n    \"collision_avoidance_note\": \"The reactants are simple, acyclic, and lack complex functional groups. Acetonitrile and ethanol are fundamental building blocks. The product is a specific imino ether salt, which is characteristic of the Pinner reaction and distinct from simple esterification or nitrile hydrolysis, thus avoiding collision with reactions like the Fischer esterification or the Stephen aldehyde synthesis.\"\n  }\n}"
+}

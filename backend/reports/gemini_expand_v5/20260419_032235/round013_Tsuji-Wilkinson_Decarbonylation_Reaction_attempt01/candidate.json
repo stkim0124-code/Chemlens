@@ -1,0 +1,15 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "substrates": [
+    "CCCCCCC=O"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "[Cl][Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1"
+  ],
+  "rationale": "This reaction shows the decarbonylation of a simple aliphatic aldehyde, heptanal, to its corresponding alkane, hexane, using Wilkinson's catalyst. This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, clearly illustrating the conversion of an aldehyde functional group (-CHO) to a hydrogen atom (-H) with the loss of carbon monoxide. The use of a simple, acyclic, saturated substrate avoids ambiguity and focuses on the core transformation.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic aldehyde, avoiding aromatic rings, unsaturation, or other functional groups that could trigger unrelated named reaction queries (e.g., Rosenmund reduction, Vilsmeier-Haack reaction, or other aldehyde syntheses/reductions). The transformation is a direct deformylation, which is specific to this reaction and distinct from general decarboxylations or deoxygenations.",
+  "raw_text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh]([P](C1=CC=CC=C1)(C1=CC=CC=C1)C1=CC=CC=C1)([P](C1=CC=CC=C1)(C1=CC=CC=C1)C1=CC=CC=C1)[P](C1=CC=CC=C1)(C1=CC=CC=C1)C1=CC=CC=C1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple aliphatic aldehyde, heptanal, to its corresponding alkane, hexane, using Wilkinson's catalyst. This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, clearly illustrating the conversion of an aldehyde functional group (-CHO) to a hydrogen atom (-H) with the loss of carbon monoxide. The use of a simple, acyclic, saturated substrate avoids ambiguity and focuses on the core transformation.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde, avoiding aromatic rings, unsaturation, or other functional groups that could trigger unrelated named reaction queries (e.g., Rosenmund reduction, Vilsmeier-Haack reaction, or other aldehyde syntheses/reductions). The transformation is a direct deformylation, which is specific to this reaction and distinct from general decarboxylations or deoxygenations.\"\n  }\n}"
+}

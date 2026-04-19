@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Swern Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"O=C(Cl)C(=O)Cl\",\n      \"CCN(CC)CC\"\n    ],\n    \"rationale\": \"The Swern oxidation of 1-butanol to butanal is a classic, simple, and unambiguous textbook example of this reaction. It demonstrates the oxidation of a primary alcohol to an aldehyde, a core transformation for this family. The reactants and products are acyclic, small, and lack complex functional groups, making them ideal for a canonical representation.\",\n    \"collision_avoidance_note\": \"This example uses a simple primary aliphatic alcohol (1-butanol) to avoid motifs that could trigger other named reactions. It avoids aromatic rings (common in many named reactions), complex stereocenters, or other reactive functional groups that might lead to ambiguity or side reactions. The focus is purely on the alcohol-to-aldehyde oxidation characteristic of the Swern protocol.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 403,
+    "candidatesTokenCount": 266,
+    "totalTokenCount": 764,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 403
+      }
+    ],
+    "thoughtsTokenCount": 95
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "d9_jaerwM_ml0-kPz_XioQg"
+}

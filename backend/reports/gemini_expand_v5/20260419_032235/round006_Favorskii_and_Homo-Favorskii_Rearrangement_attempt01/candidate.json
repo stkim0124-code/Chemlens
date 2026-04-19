@@ -1,0 +1,15 @@
+{
+  "family": "Favorskii and Homo-Favorskii Rearrangement",
+  "substrates": [
+    "CC(C)C(=O)C(C)Cl"
+  ],
+  "products": [
+    "CC(C)C(C)C(=O)O"
+  ],
+  "reagents": [
+    "[OH-]"
+  ],
+  "rationale": "This is a classic textbook example of the Favorskii rearrangement. It features a simple, acyclic alpha-halo ketone (2-chloro-3-methyl-2-butanone) that rearranges in the presence of a base to form a carboxylic acid (2,3-dimethylbutanoic acid). The mechanism proceeds through a cyclopropanone intermediate, which is characteristic of this reaction. The chosen substrate is simple, avoids rings in the starting material, and clearly demonstrates the skeletal rearrangement from a ketone to a carboxylic acid derivative.",
+  "collision_avoidance_note": "This example uses a simple acyclic alpha-halo ketone and a basic reagent. It avoids aromatic rings, complex functional groups, or ring expansion motifs that could be confused with other named reactions like the Ramberg-Bäcklund rearrangement (which involves a sulfone) or various ring expansion reactions (like Tiffeneau-Demjanov). The product is a simple carboxylic acid, avoiding esters or amides which might broaden the search space unnecessarily.",
+  "raw_text": "{\n  \"family\": \"Favorskii and Homo-Favorskii Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)C(=O)C(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"CC(C)C(C)C(=O)O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[OH-]\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Favorskii rearrangement. It features a simple, acyclic alpha-halo ketone (2-chloro-3-methyl-2-butanone) that rearranges in the presence of a base to form a carboxylic acid (2,3-dimethylbutanoic acid). The mechanism proceeds through a cyclopropanone intermediate, which is characteristic of this reaction. The chosen substrate is simple, avoids rings in the starting material, and clearly demonstrates the skeletal rearrangement from a ketone to a carboxylic acid derivative.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic alpha-halo ketone and a basic reagent. It avoids aromatic rings, complex functional groups, or ring expansion motifs that could be confused with other named reactions like the Ramberg-Bäcklund rearrangement (which involves a sulfone) or various ring expansion reactions (like Tiffeneau-Demjanov). The product is a simple carboxylic acid, avoiding esters or amides which might broaden the search space unnecessarily.\"\n  }\n}"
+}

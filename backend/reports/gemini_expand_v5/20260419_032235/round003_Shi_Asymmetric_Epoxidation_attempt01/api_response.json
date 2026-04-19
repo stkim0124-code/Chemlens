@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Shi Asymmetric Epoxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C/C=C/C\"\n    ],\n    \"product_smiles\": [\n      \"C[C@H]1O[C@H]1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)([O-])[O-].O=S(=O)([O-])[O-].O=S(=O)(O)O.O=S(=O)(O)O.O=S(=O)(O)O.[K+].[K+].[K+]\",\n      \"C1[C@H]2[C@H]([C@@]1(C2(F)F)C(=O)O)C(F)(F)F\"\n    ],\n    \"rationale\": \"This reaction shows the asymmetric epoxidation of (E)-2-butene, a simple, acyclic, unfunctionalized alkene, to yield the corresponding chiral epoxide. This is a classic textbook example of the Shi epoxidation. The substrate is simple and avoids complex functional groups. The product is the direct result of oxygen atom transfer to the double bond. The reagents listed are Oxone (the oxidant) and a representative chiral fructose-derived ketone catalyst (a simplified version of the Shi catalyst), which are the key components of this named reaction.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, acyclic alkene (trans-2-butene) to avoid overlap with reactions involving complex ring systems or functionalized alkenes (e.g., Sharpless epoxidation which requires an allylic alcohol). The reagents, a chiral ketone and Oxone, are specific to this transformation, distinguishing it from other epoxidation methods like those using m-CPBA or Sharpless conditions. The reaction is a straightforward C=C to epoxide conversion without any other bond-breaking or forming events.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 422,
+    "candidatesTokenCount": 429,
+    "totalTokenCount": 922,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 422
+      }
+    ],
+    "thoughtsTokenCount": 71
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "q83jadueJLme0-kPnY2_2As"
+}

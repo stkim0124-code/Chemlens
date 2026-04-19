@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Aldol Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC=O\",\n      \"CC(C)=O\"\n    ],\n    \"product_smiles\": [\n      \"CC(O)CC(=O)C(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"[OH-]\"\n    ],\n    \"rationale\": \"This is a classic textbook example of a crossed aldol reaction between an aldehyde (acetaldehyde) and a ketone (acetone) under basic conditions. Acetaldehyde acts as the electrophile, and the enolate of acetone acts as the nucleophile. This reaction clearly forms the characteristic beta-hydroxy carbonyl product, which is the defining feature of the aldol reaction. The reactants are simple, acyclic, and small, making them ideal for a canonical representation.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic aliphatic carbonyl compounds to avoid overlap with reactions involving aromatic rings (e.g., Claisen-Schmidt), specific metal enolates (e.g., Mukaiyama Aldol), or intramolecular cyclizations. The choice of a crossed aldol reaction between an aldehyde and a ketone is a very common and unambiguous illustration of the core transformation.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 441,
+    "candidatesTokenCount": 290,
+    "totalTokenCount": 808,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 441
+      }
+    ],
+    "thoughtsTokenCount": 77
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "8svjaaafIeC00-kPpI7XeA"
+}

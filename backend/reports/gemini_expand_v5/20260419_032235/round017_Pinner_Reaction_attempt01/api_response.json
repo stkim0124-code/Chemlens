@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This example shows the classical Pinner reaction between acetonitrile and ethanol in the presence of dry hydrogen chloride to form ethyl acetimidate hydrochloride (an imino ether salt). This is a fundamental, textbook illustration of the reaction, using the simplest possible aliphatic nitrile and alcohol. The product, an imino ether salt (often called a Pinner salt), is the characteristic intermediate of this transformation.\",\n    \"collision_avoidance_note\": \"The use of simple, acyclic, saturated reactants (acetonitrile, ethanol) and the specific formation of an imino ether salt avoids overlap with other named reactions. It avoids arenes (common in many reactions), complex functional groups, or rearrangements that could cause collisions with reactions like the Beckmann rearrangement, Stephen reduction, or various condensation reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 441,
+    "candidatesTokenCount": 257,
+    "totalTokenCount": 758,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 441
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "X9rjabm0K6e_1e8PnP_ZwQ8"
+}

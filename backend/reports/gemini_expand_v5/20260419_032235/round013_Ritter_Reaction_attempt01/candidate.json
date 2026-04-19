@@ -1,0 +1,16 @@
+{
+  "family": "Ritter Reaction",
+  "substrates": [
+    "CC(C)(C)O",
+    "CC#N"
+  ],
+  "products": [
+    "CC(=O)NC(C)(C)C"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This reaction is a classic textbook example of the Ritter reaction, demonstrating the formation of a stable tert-butyl carbocation from tert-butanol under strong acid (sulfuric acid) catalysis. This carbocation is then trapped by a simple nitrile, acetonitrile, which after hydrolysis yields the corresponding N-tert-butylacetamide. All reactants and products are simple, acyclic, and contain minimal functional groups to clearly illustrate the core transformation.",
+  "collision_avoidance_note": "The use of simple, acyclic aliphatic substrates (tert-butanol and acetonitrile) avoids motifs common in other named reactions. Specifically, it avoids arenes (Friedel-Crafts, etc.), complex ring systems, and other reactive functional groups that could lead to ambiguity with reactions like the Beckmann rearrangement (which involves oximes) or the Schmidt reaction (which involves azides).",
+  "raw_text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This reaction is a classic textbook example of the Ritter reaction, demonstrating the formation of a stable tert-butyl carbocation from tert-butanol under strong acid (sulfuric acid) catalysis. This carbocation is then trapped by a simple nitrile, acetonitrile, which after hydrolysis yields the corresponding N-tert-butylacetamide. All reactants and products are simple, acyclic, and contain minimal functional groups to clearly illustrate the core transformation.\",\n    \"collision_avoidance_note\": \"The use of simple, acyclic aliphatic substrates (tert-butanol and acetonitrile) avoids motifs common in other named reactions. Specifically, it avoids arenes (Friedel-Crafts, etc.), complex ring systems, and other reactive functional groups that could lead to ambiguity with reactions like the Beckmann rearrangement (which involves oximes) or the Schmidt reaction (which involves azides).\"\n  }\n}"
+}

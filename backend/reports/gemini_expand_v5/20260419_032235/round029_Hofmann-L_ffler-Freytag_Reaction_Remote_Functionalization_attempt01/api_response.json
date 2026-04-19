@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Hofmann-L\\u00f6ffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCCN1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-L\\u00f6ffler-Freytag reaction. N-chloro-N-methylbutan-1-amine, upon treatment with acid (e.g., sulfuric acid) and heat or light, undergoes a 1,5-hydrogen atom transfer from the delta-carbon to the nitrogen radical. The resulting carbon radical then abstracts the chlorine atom, forming a \\u03b4-chloroamine intermediate. Subsequent intramolecular cyclization via nucleophilic attack by the amine onto the carbon bearing the chlorine, typically promoted by a base, yields the final product, N-methylpyrrolidine. This example clearly demonstrates the key intramolecular C-H functionalization at a remote (delta) position and subsequent cyclization to form a five-membered ring, which are the defining features of this reaction.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic N-chloroamine substrate, which is the characteristic starting material for this reaction. It avoids complex structures, arenes, or other functional groups that could cause collisions with other named reactions. The core transformation is the formation of a C-N bond via intramolecular C-H activation, which is specific to this family and distinct from rearrangements like the Hofmann or Beckmann rearrangements, or intermolecular aminations.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 392,
+    "candidatesTokenCount": 388,
+    "totalTokenCount": 842,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 392
+      }
+    ],
+    "thoughtsTokenCount": 62
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "SuXjaZyxGuqgvr0PuueLMA"
+}

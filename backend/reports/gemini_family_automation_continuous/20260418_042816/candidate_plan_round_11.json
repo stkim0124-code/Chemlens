@@ -1,0 +1,1546 @@
+[
+  {
+    "family_name": "Barbier Coupling Reaction",
+    "family_name_norm": "barbier coupling reaction",
+    "page_no": 38,
+    "page_kind": "canonical_overview",
+    "title": "Barbier Coupling Reaction – Importance and Mechanism",
+    "summary": "Overview page for the Barbier coupling reaction describing in situ generation of organometallic reagents in the presence of carbonyl compounds to furnish alcohols after workup. The page notes mechanistic overlap with Grignard chemistry and discusses both concerted and radical stepwise pathways.",
+    "notes": "Page emphasizes operational simplicity, aqueous compatibility for some metals, and immediate trapping of unstable organometallic species by aldehydes or ketones.",
+    "image_filename": "named reactions_90.jpg",
+    "source_label": "named_reactions_frontmatter_batch8",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Grignard reagent",
+        "entity_type": "related_reaction",
+        "notes": "Overview explicitly compares Barbier to Grignard chemistry.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "SET",
+        "entity_type": "mechanistic_term",
+        "notes": "Mechanistic chart presents SET pathway for organometallic generation.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "1°, 2°, or 3° alcohols",
+        "entity_type": "product_class",
+        "notes": "Canonical outcome after carbonyl addition and workup.",
+        "confidence": 0.9
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Barbier Coupling Reaction",
+        "score": 1.0,
+        "family_class": "carbonyl addition / organometallic coupling",
+        "transformation_type": "in situ organometallic generation from alkyl/allyl halides with direct addition to carbonyl compounds",
+        "key_reagents_clue": "Mg|Zn|In|Sm|Sn|allyl halide|carbonyl compound|work-up",
+        "description_short": "The Barbier reaction generates an organometallic reagent in the presence of a carbonyl compound so that addition occurs immediately without prior isolation of the Grignard-like species."
+      },
+      {
+        "family_name": "Retro-Claisen Reaction",
+        "score": 0.723,
+        "family_class": "cleavage",
+        "transformation_type": "beta-keto ester / dicarbonyl cleavage",
+        "key_reagents_clue": "aqueous base",
+        "description_short": "Mentioned in color-explanation front matter on page xiv."
+      },
+      {
+        "family_name": "Reimer-Tiemann Reaction",
+        "score": 0.667,
+        "family_class": "named_reaction",
+        "transformation_type": "ortho formylation of phenols and heteroarenes via dichlorocarbene chemistry",
+        "key_reagents_clue": "Reimer-Tiemann|CHCl3|chloroform|NaOH|dichlorocarbene",
+        "description_short": "Foundational dichlorocarbene-based formylation method for phenols and related heteroarenes that usually delivers ortho-aldehydes but can also produce abnormal rearrangement products."
+      },
+      {
+        "family_name": "Alder (ene) Reaction",
+        "score": 0.651,
+        "family_class": "other",
+        "transformation_type": "other",
+        "key_reagents_clue": "MVK; CH3CN | MVK; CH3CN / H2O | Mg(ClO4)2; chiral bis-oxazoline ligand; DCM",
+        "description_short": "Aza-ene reaction"
+      },
+      {
+        "family_name": "Alder Ene Reaction",
+        "score": 0.651,
+        "family_class": "other",
+        "transformation_type": "other",
+        "key_reagents_clue": "",
+        "description_short": ""
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Barbier Coupling Reaction",
+    "manual_rows": 2,
+    "extract_rows": 2,
+    "exact_like_score": 0,
+    "priority_score": 16
+  },
+  {
+    "family_name": "Birch Reduction",
+    "family_name_norm": "birch reduction",
+    "page_no": 60,
+    "page_kind": "canonical_overview",
+    "title": "Birch Reduction – Importance and Mechanism",
+    "summary": "Overview page for the Birch reduction describing dissolving-metal reduction of aromatic rings or electron-poor heteroarenes with alkali metals in liquid ammonia and an alcohol proton source to give unconjugated cyclohexadienes or partially reduced heterocycles. The mechanism proceeds through sequential electron transfer, radical anion formation, protonation, and regiocontrolled second electron/proton delivery.",
+    "notes": "Highlights substituent-dependent regioselectivity, use of Li or Na in NH3(l), and applicability to pyridines, furans, and related systems under electron-withdrawing substitution.",
+    "image_filename": "named reactions_112.jpg",
+    "source_label": "named_reactions_frontmatter_batch10",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Radical anion",
+        "entity_type": "intermediate",
+        "notes": "First electron-transfer intermediate in Birch reduction.",
+        "confidence": 0.94
+      },
+      {
+        "entity_text": "Cyclohexadiene",
+        "entity_type": "product_class",
+        "notes": "Typical partially reduced arene product class.",
+        "confidence": 0.91
+      },
+      {
+        "entity_text": "Birch reductive alkylation",
+        "entity_type": "variant",
+        "notes": "Variant that traps reduced intermediates with electrophiles.",
+        "confidence": 0.9
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Birch Reduction",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "dissolving-metal dearomatization / reductive alkylation",
+        "key_reagents_clue": "Li or Na, NH3(l), ROH, t-BuOH, EtOH",
+        "description_short": "Dissolving-metal reduction of aromatic rings and heteroarenes to unconjugated dienes or partially reduced heterocycles."
+      },
+      {
+        "family_name": "Luche Reduction",
+        "score": 0.8,
+        "family_class": "named_reaction",
+        "transformation_type": "CeCl3/NaBH4 reduction of alpha,beta-unsaturated ketones to allylic alcohols",
+        "key_reagents_clue": "CeCl3·7H2O|NaBH4",
+        "description_short": "Selective 1,2-reduction of enones to allylic alcohols using sodium borohydride in the presence of cerium(III) chloride."
+      },
+      {
+        "family_name": "Buchner Reaction",
+        "score": 0.71,
+        "family_class": "other",
+        "transformation_type": "other",
+        "key_reagents_clue": "hv or Δ or Rh-catalyst",
+        "description_short": "The Buchner reaction, involving the thermal or photochemical reaction of ethyl diazoacetate with benzene to form a cycloheptatriene derivative via a norcaradiene intermediate."
+      },
+      {
+        "family_name": "Mannich Reaction",
+        "score": 0.71,
+        "family_class": "named_reaction",
+        "transformation_type": "aminomethylation of enolizable carbonyls or other CH-acidic partners with formaldehyde and amines",
+        "key_reagents_clue": "CH2O|NH4Cl|NH4OAc|TFA|KHMDS|TMSCl",
+        "description_short": "Foundational carbon–carbon bond-forming reaction that installs aminomethyl substituents onto enolizable carbonyl systems via iminium intermediates."
+      },
+      {
+        "family_name": "Nicholas Reaction",
+        "score": 0.688,
+        "family_class": "named_reaction",
+        "transformation_type": "Lewis-acid-mediated propargylic substitution/decomplexation of cobalt-alkyne complexes",
+        "key_reagents_clue": "Co2(CO)8|BF3·OEt2|CAN|NMO|TMANO|TBAF",
+        "description_short": "Cobalt-complex-mediated propargylic substitution method that enables controlled generation and trapping of stabilized propargylic cations."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Birch Reduction",
+    "manual_rows": 2,
+    "extract_rows": 2,
+    "exact_like_score": 0,
+    "priority_score": 16
+  },
+  {
+    "family_name": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+    "family_name_norm": "arbuzov reaction michaelis arbuzov reaction",
+    "page_no": 16,
+    "page_kind": "canonical_overview",
+    "title": "Arbuzov Reaction (Michaelis–Arbuzov Reaction) – Importance and Mechanism",
+    "summary": "Overview page for the Arbuzov reaction showing transformation of alkyl halides and trialkyl phosphites into dialkyl phosphonates or related organophosphorus derivatives through phosphonium-salt formation and rearrangement.",
+    "notes": "Page explicitly connects the chemistry to Horner-Wadsworth-Emmons olefination and phosphonate synthesis.",
+    "image_filename": "named reactions_68.jpg",
+    "source_label": "named_reactions_frontmatter_batch6",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Horner-Wadsworth-Emmons olefination",
+        "entity_type": "related_reaction",
+        "notes": "Overview page explicitly connects Arbuzov phosphonates to HWE chemistry.",
+        "confidence": 0.88
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+        "score": 1.0,
+        "family_class": "phosphorus chemistry",
+        "transformation_type": "alkyl halide to phosphonate via phosphite rearrangement",
+        "key_reagents_clue": "P(OMe)3|P(OEt)3|alkyl halide|phosphonium salt|heat",
+        "description_short": "The Arbuzov reaction transforms alkyl halides and phosphites into phosphonates or related organophosphorus products by way of phosphonium intermediates and alkyl migration."
+      },
+      {
+        "family_name": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+        "score": 0.574,
+        "family_class": "functionalization",
+        "transformation_type": "amination",
+        "key_reagents_clue": null,
+        "description_short": "Named reaction family listed in the alphabetical reaction index pages of the source book."
+      },
+      {
+        "family_name": "Balz-Schiemann Reaction (Schiemann Reaction)",
+        "score": 0.565,
+        "family_class": "named reaction",
+        "transformation_type": "other",
+        "key_reagents_clue": null,
+        "description_short": "Named reaction family listed in the alphabetical reaction index pages of the source book."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+    "family_name_norm": "aza claisen rearrangement 3 aza cope rearrangement",
+    "page_no": 20,
+    "page_kind": "canonical_overview",
+    "title": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement) – Importance and Mechanism",
+    "summary": "Overview page for the aza-Claisen rearrangement, the thermal [3,3]-sigmatropic rearrangement of N-allyl enamines, with comparison to neutral, charged, and keteneimine manifolds and a chairlike transition state.",
+    "notes": "Also includes a synthetic application to (-)-isoiridomyrmecin from carbamide enolate rearrangement.",
+    "image_filename": "named reactions_72.jpg",
+    "source_label": "named_reactions_frontmatter_batch6",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Claisen rearrangement",
+        "entity_type": "related_reaction",
+        "notes": "Overview compares aza-Claisen directly to Claisen.",
+        "confidence": 0.9
+      },
+      {
+        "entity_text": "(-)-Isoiridomyrmecin",
+        "entity_type": "target_molecule",
+        "notes": "Synthetic application shown at bottom of p20.",
+        "confidence": 0.88
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+        "score": 1.0,
+        "family_class": "sigmatropic rearrangement",
+        "transformation_type": "thermal [3,3]-sigmatropic rearrangement of N-allyl enamines",
+        "key_reagents_clue": "LiHMDS|NaHMDS|heat|Lewis acid|TMSOTf|TIPSOTf",
+        "description_short": "The aza-Claisen rearrangement is the [3,3]-sigmatropic rearrangement of N-allyl enamines and related aza-hexadiene systems, often used for stereocontrolled alkaloid synthesis."
+      },
+      {
+        "family_name": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+        "score": 0.75,
+        "family_class": "rearrangement",
+        "transformation_type": "rearrangement",
+        "key_reagents_clue": null,
+        "description_short": "Named reaction family listed in the alphabetical reaction index pages of the source book."
+      },
+      {
+        "family_name": "Aza-Claisen Rearrangement",
+        "score": 0.667,
+        "family_class": "rearrangement",
+        "transformation_type": "rearrangement",
+        "key_reagents_clue": "[3,3] | 1. LHMDS, toluene, -78 °C; 2. 120 °C, 6h | CH3CH2COCl; K2CO3, Me3Al; CHCl3, 0 °C",
+        "description_short": "Amide enolate induced aza-Claisen rearrangement in the synthesis of fluvircinine A1"
+      },
+      {
+        "family_name": "Demjanov Rearrangement and Tiffeneau-Demjanov Rearrangement",
+        "score": 0.642,
+        "family_class": "rearrangement",
+        "transformation_type": "rearrangement",
+        "key_reagents_clue": null,
+        "description_short": "Named reaction family listed in the alphabetical reaction index pages of the source book."
+      },
+      {
+        "family_name": "Aza-Cope Rearrangement",
+        "score": 0.611,
+        "family_class": "rearrangement",
+        "transformation_type": "rearrangement",
+        "key_reagents_clue": "OHC-COOH H2O | KH, 18-crown-6, ClCO2Me, DTBMP, KOH | (CH2O)n, Na2SO4",
+        "description_short": "synthesis of N-benzylallylglycine"
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Baeyer-Villiger Oxidation/Rearrangement",
+    "family_name_norm": "baeyer villiger oxidation rearrangement",
+    "page_no": 28,
+    "page_kind": "canonical_overview",
+    "title": "Baeyer-Villiger Oxidation/Rearrangement – Importance and Mechanism",
+    "summary": "Overview page for the Baeyer-Villiger oxidation/rearrangement describing oxidation of ketones to esters and cyclic ketones to lactones or hydroxy acids by peroxyacids. The page summarizes migratory aptitude, stereochemical retention at the migrating carbon, and the Criegee-intermediate mechanism.",
+    "notes": "Mechanism panel features peroxyacid addition to a ketone, Criegee intermediate formation, migration anti to the peroxide leaving group, and ester/lactone formation; page lists common oxidants such as mCPBA and peracetic acid.",
+    "image_filename": "named reactions_80.jpg",
+    "source_label": "named_reactions_frontmatter_batch7",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Criegee intermediate",
+        "entity_type": "mechanistic_term",
+        "notes": "Named mechanistic intermediate on the overview page.",
+        "confidence": 0.94
+      },
+      {
+        "entity_text": "Lactone",
+        "entity_type": "product_class",
+        "notes": "Canonical cyclic-ketone oxidation product.",
+        "confidence": 0.9
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Baeyer-Villiger Oxidation/Rearrangement",
+        "score": 1.0,
+        "family_class": "oxidation / rearrangement",
+        "transformation_type": "ketone to ester or lactone via peroxyacid oxidation",
+        "key_reagents_clue": "mCPBA|peroxyacid|peracetic acid|H2O2|TFAA|Criegee intermediate",
+        "description_short": "Baeyer-Villiger oxidation inserts oxygen next to a carbonyl through Criegee-intermediate formation and alkyl migration, transforming ketones into esters or lactones."
+      },
+      {
+        "family_name": "Baeyer-Villiger Oxidation/rearrangement",
+        "score": 1.0,
+        "family_class": "oxidation",
+        "transformation_type": "oxidation",
+        "key_reagents_clue": "",
+        "description_short": ""
+      },
+      {
+        "family_name": "Baeyer-Villiger Oxidation",
+        "score": 0.781,
+        "family_class": "oxidation",
+        "transformation_type": "oxidation",
+        "key_reagents_clue": "mCPBA | CC(=O)OOC1=CC=CC=C1C(=O)O | oxidant; NaHCO3 | [Na+].OC([O-])=O | reagent | mCPBA | CC(=O)OOC1=CC=CC=C1C(=O)O | oxidant | mCPBA | CC(=O)OOC1=CC=CC=C1C(=O)O | reagent; LiAlH4 | [Li+].[AlH4-] | reagent; MsCl | CS(=O)(=O)Cl | reagent; TMP | reagent",
+        "description_short": "Baeyer-Villiger oxidation"
+      },
+      {
+        "family_name": "Ferrier Reaction/Rearrangement",
+        "score": 0.696,
+        "family_class": "rearrangement",
+        "transformation_type": "rearrangement",
+        "key_reagents_clue": null,
+        "description_short": "Named reaction family listed in the alphabetical reaction index pages of the source book."
+      },
+      {
+        "family_name": "Baker-Venkataraman Rearrangement",
+        "score": 0.676,
+        "family_class": "rearrangement",
+        "transformation_type": "rearrangement",
+        "key_reagents_clue": "s-BuLi | C[CH](CC)Li; THF | C1CCOC1; ZnCl2 | [Cl-].[Cl-].[Zn+2]; CH3COCl | CC(=O)Cl; PdCl2(PPh3)2 | Cl[Pd](Cl)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1; DIBAH | CC(C)C[AlH]C(C)C | NaH | [Na+].[H-]; THF | C1CCOC1; TFA | O=C(O)C(F)(F)F; PhCH3 | Cc1ccccc1 | MeOH | CO; Na (metal) | [Na]; 1N HCl | [H+].[Cl-]",
+        "description_short": "directed ortho metallation"
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Baeyer-Villiger Oxidation/Rearrangement",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Combes Quinoline Synthesis",
+    "family_name_norm": "combes quinoline synthesis",
+    "page_no": 94,
+    "page_kind": "canonical_overview",
+    "title": "Combes Quinoline Synthesis – Importance and Mechanism",
+    "summary": "Overview page for the Combes quinoline synthesis describing acid-catalyzed condensation of primary aryl amines with beta-diketones or beta-ketoesters through Schiff base formation, enamine isomerization, cyclization, and dehydration to substituted quinolines or 4-hydroxyquinolines.",
+    "notes": "Key concepts: aryl amine plus beta-dicarbonyl partner, Schiff base intermediates, acid/heat-driven annulation to quinoline frameworks.",
+    "image_filename": "named reactions_146.jpg",
+    "source_label": "named_reactions_frontmatter_batch15",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Combes Quinoline Synthesis",
+        "entity_type": "reaction_family",
+        "notes": "Named quinoline annulation family overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "Schiff base",
+        "entity_type": "mechanistic_concept",
+        "notes": "Imine intermediate explicitly highlighted in the overview mechanism.",
+        "confidence": 0.87
+      },
+      {
+        "entity_text": "4-hydroxyquinoline",
+        "entity_type": "product_class",
+        "notes": "Characteristic product class from beta-ketoester variants.",
+        "confidence": 0.85
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Combes Quinoline Synthesis",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "arylamine plus beta-dicarbonyl annulation to quinolines / 4-hydroxyquinolines",
+        "key_reagents_clue": "arylamine|beta-diketone|beta-ketoester|acid|heat|PPA",
+        "description_short": "Acid-catalyzed condensation of aryl amines with beta-dicarbonyl compounds to furnish substituted quinolines or 4-hydroxyquinolines through Schiff base intermediates."
+      },
+      {
+        "family_name": "Fischer Indole Synthesis",
+        "score": 0.72,
+        "family_class": "named_reaction",
+        "transformation_type": "acid-catalyzed indolization of arylhydrazones",
+        "key_reagents_clue": "arylhydrazone|indole synthesis|acid catalysis|ene-hydrazine|Fischer indole",
+        "description_short": "Acid-catalyzed conversion of arylhydrazones into substituted indoles through tautomerization, sigmatropic rearrangement, and ring closure."
+      },
+      {
+        "family_name": "Madelung Indole Synthesis",
+        "score": 0.706,
+        "family_class": "named_reaction",
+        "transformation_type": "base-promoted cyclization of N-acyl-o-toluidines or related anilides to indoles",
+        "key_reagents_clue": "NaOEt|NaNH2|n-BuLi|KOtBu",
+        "description_short": "Classical and modified intramolecular anilide cyclization methods for building 2-substituted and 2,3-disubstituted indoles."
+      },
+      {
+        "family_name": "Larock Indole Synthesis",
+        "score": 0.694,
+        "family_class": "named_reaction",
+        "transformation_type": "Pd-catalyzed heteroannulation of o-iodoanilines with internal alkynes to indoles",
+        "key_reagents_clue": "Pd(OAc)2|Pd(0) catalyst|LiCl|base",
+        "description_short": "Palladium-catalyzed annulation of o-iodoanilines with alkynes that provides substituted indoles and fused azaindole-type scaffolds with predictable regioselectivity."
+      },
+      {
+        "family_name": "Nenitzescu Indole Synthesis",
+        "score": 0.679,
+        "family_class": "named_reaction",
+        "transformation_type": "annulative synthesis of 5-hydroxyindoles from benzoquinones and enamine partners",
+        "key_reagents_clue": "CH3NO2|TsOH|BF3·OEt2|benzoquinone",
+        "description_short": "Benzoquinone-based indole annulation that furnishes substituted 5-hydroxyindoles from amino-enone or enamine partners."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Combes Quinoline Synthesis",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Cope Rearrangement",
+    "family_name_norm": "cope rearrangement",
+    "page_no": 98,
+    "page_kind": "canonical_overview",
+    "title": "Cope Rearrangement – Importance and Mechanism",
+    "summary": "Overview page for the Cope rearrangement describing the reversible thermal [3,3]-sigmatropic rearrangement of 1,5-dienes, including divinylcyclopropane and cyclobutene ring-expansion variants, through chairlike or boatlike concerted transition states.",
+    "notes": "Key concepts: 1,5-diene substrate class, thermal [3,3]-shift, stereospecific concerted rearrangement, strained-ring variants.",
+    "image_filename": "named reactions_150.jpg",
+    "source_label": "named_reactions_frontmatter_batch15",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Cope Rearrangement",
+        "entity_type": "reaction_family",
+        "notes": "Named [3,3]-sigmatropic rearrangement family overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "[3,3]-sigmatropic rearrangement",
+        "entity_type": "mechanistic_concept",
+        "notes": "Core mechanistic descriptor on the overview page.",
+        "confidence": 0.87
+      },
+      {
+        "entity_text": "1,5-diene",
+        "entity_type": "reactant_class",
+        "notes": "Canonical substrate class for the rearrangement.",
+        "confidence": 0.86
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Cope Rearrangement",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "1,5-diene [3,3]-sigmatropic rearrangement / ring expansion of strained dienes",
+        "key_reagents_clue": "1,5-diene|heat|divinylcyclopropane|divinylcyclobutane",
+        "description_short": "Thermal reversible [3,3]-sigmatropic rearrangement of 1,5-dienes that reorganizes carbon skeletons, including medium-ring-forming strained-substrate variants."
+      },
+      {
+        "family_name": "Aza-Cope Rearrangement",
+        "score": 0.9,
+        "family_class": "rearrangement",
+        "transformation_type": "rearrangement",
+        "key_reagents_clue": "OHC-COOH H2O | KH, 18-crown-6, ClCO2Me, DTBMP, KOH | (CH2O)n, Na2SO4",
+        "description_short": "synthesis of N-benzylallylglycine"
+      },
+      {
+        "family_name": "Payne Rearrangement",
+        "score": 0.865,
+        "family_class": "named_reaction",
+        "transformation_type": "base-catalyzed migration of a 2,3-epoxy alcohol to an isomeric epoxide; aza/thia variants form aziridino or thiirano alcohols",
+        "key_reagents_clue": "base|NaOH|KOH|NaH|Lewis acid|aza-Payne|thia-Payne",
+        "description_short": "Epoxide migration manifold that relays stereochemistry and functional handles across epoxy alcohols and related heteroatom-substituted systems."
+      },
+      {
+        "family_name": "Lossen Rearrangement",
+        "score": 0.842,
+        "family_class": "named_reaction",
+        "transformation_type": "rearrangement of activated hydroxamic acids to isocyanates and trapped amine/urea/carbamate products",
+        "key_reagents_clue": "Ac2O|DBU|EDC|H2O",
+        "description_short": "Activated-hydroxamate rearrangement that furnishes isocyanates under mild conditions and enables access to amines, carbamates, and ureas after trapping."
+      },
+      {
+        "family_name": "Carroll Rearrangement",
+        "score": 0.821,
+        "family_class": "named_reaction",
+        "transformation_type": "decarboxylative Claisen-type [3,3]-sigmatropic rearrangement",
+        "key_reagents_clue": "allylic beta-keto esters, ester enolates, heat, LDA, decarboxylation",
+        "description_short": "Rearrangement of allylic beta-keto esters to gamma,delta-unsaturated ketones via a [3,3]-sigmatropic shift and loss of carbon dioxide."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Cope Rearrangement",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Corey-Kim Oxidation",
+    "family_name_norm": "corey kim oxidation",
+    "page_no": 106,
+    "page_kind": "canonical_overview",
+    "title": "Corey-Kim Oxidation – Importance and Mechanism",
+    "summary": "Overview page for the Corey-Kim oxidation describing conversion of primary and secondary alcohols to aldehydes or ketones with N-chlorosuccinimide, dimethyl sulfide, and triethylamine via alkoxysulfonium salt intermediates under mild low-temperature conditions.",
+    "notes": "Key concepts: NCS/DMS activation, Corey-Kim reagent formation, alkoxysulfonium intermediates, mild alcohol oxidation.",
+    "image_filename": "named reactions_158.jpg",
+    "source_label": "named_reactions_frontmatter_batch16",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Corey-Kim Oxidation",
+        "entity_type": "reaction_family",
+        "notes": "Named mild alcohol oxidation family overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "alkoxysulfonium salt",
+        "entity_type": "intermediate_class",
+        "notes": "Key reactive intermediate highlighted in the mechanistic scheme.",
+        "confidence": 0.87
+      },
+      {
+        "entity_text": "aldehyde",
+        "entity_type": "product_class",
+        "notes": "Representative oxidation product class from primary alcohol substrates.",
+        "confidence": 0.85
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Corey-Kim Oxidation",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "primary/secondary alcohol oxidation to aldehyde or ketone",
+        "key_reagents_clue": "alcohol|NCS|DMS|Et3N|alkoxysulfonium salt",
+        "description_short": "Mild oxidation of alcohols to aldehydes or ketones using the NCS/DMS/Et3N reagent system via alkoxysulfonium intermediates."
+      },
+      {
+        "family_name": "Ley Oxidation",
+        "score": 0.75,
+        "family_class": "named_reaction",
+        "transformation_type": "TPAP/NMO oxidation of primary and secondary alcohols to aldehydes and ketones",
+        "key_reagents_clue": "TPAP|NMO|4A molecular sieves",
+        "description_short": "Mild ruthenate-catalyzed alcohol oxidation that converts sensitive primary and secondary alcohols into aldehydes and ketones using TPAP and NMO."
+      },
+      {
+        "family_name": "Criegee Oxidation",
+        "score": 0.722,
+        "family_class": "named_reaction",
+        "transformation_type": "vicinal diol oxidative cleavage to carbonyl fragments",
+        "key_reagents_clue": "vicinal diol|Pb(OAc)4|lead tetraacetate|carbonyl cleavage",
+        "description_short": "Oxidative cleavage of vicinal diols to carbonyl compounds using lead tetraacetate, often as a mild alternative for advanced cyclic diol fragmentation."
+      },
+      {
+        "family_name": "Dakin Oxidation",
+        "score": 0.706,
+        "family_class": "named_reaction",
+        "transformation_type": "activated aromatic aldehyde or ketone to substituted phenol",
+        "key_reagents_clue": "o-hydroxy aldehyde|p-hydroxy ketone|H2O2|NaOH|phenol",
+        "description_short": "Oxidation/rearrangement of activated aromatic aldehydes or ketones to substituted phenols through peroxide addition and aryl migration."
+      },
+      {
+        "family_name": "Jones Oxidation",
+        "score": 0.706,
+        "family_class": "named_reaction",
+        "transformation_type": "chromium(VI)-mediated oxidation of alcohols to carbonyl compounds or carboxylic acids",
+        "key_reagents_clue": "Jones reagent|CrO3|chromic acid|H2SO4|acetone|dichromate|PCC|PDC",
+        "description_short": "Chromium-based oxidation platform encompassing Jones reagent and related Cr(VI) reagents for the conversion of alcohols and related substrates into carbonyl compounds."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Corey-Kim Oxidation",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Corey-Nicolaou Macrolactonization",
+    "family_name_norm": "corey nicolaou macrolactonization",
+    "page_no": 108,
+    "page_kind": "canonical_overview",
+    "title": "Corey-Nicolaou Macrolactonization – Importance and Mechanism",
+    "summary": "Overview page for the Corey-Nicolaou macrolactonization describing activation of hydroxy acids as 2-pyridinethiol esters using 2,2'-dipyridyl disulfide and triphenylphosphine, followed by intramolecular lactonization to medium- and large-ring lactones under high-dilution conditions.",
+    "notes": "Key concepts: 2-pyridinethiol ester activation, dipolar intermediate, intramolecular lactonization, medium- and large-ring lactone formation.",
+    "image_filename": "named reactions_160.jpg",
+    "source_label": "named_reactions_frontmatter_batch16",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Corey-Nicolaou Macrolactonization",
+        "entity_type": "reaction_family",
+        "notes": "Named macrolactonization family overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "2-pyridinethiol ester",
+        "entity_type": "intermediate_class",
+        "notes": "Activated acyl intermediate central to the Corey-Nicolaou protocol.",
+        "confidence": 0.87
+      },
+      {
+        "entity_text": "medium- or large-ring lactone",
+        "entity_type": "product_class",
+        "notes": "Canonical product class explicitly shown in the overview scheme.",
+        "confidence": 0.85
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Corey-Nicolaou Macrolactonization",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "hydroxy acid cyclization to medium- or large-ring lactone",
+        "key_reagents_clue": "hydroxy acid|2,2'-dipyridyl disulfide|PPh3|2-pyridinethiol ester|macrolactone",
+        "description_short": "Macrolactonization method that activates hydroxy acids as 2-pyridinethiol esters before intramolecular closure to medium- and large-ring lactones."
+      },
+      {
+        "family_name": "Keck Macrolactonization",
+        "score": 0.714,
+        "family_class": "named_reaction",
+        "transformation_type": "intramolecular macrolactonization of hydroxy acids to medium- and large-ring lactones using carbodiimide activation with DMAP/DMAP.HCl or EDCI",
+        "key_reagents_clue": "DCC|EDCI|DMAP|DMAP.HCl|reflux|slow addition",
+        "description_short": "Macrolactonization protocol for cyclizing hydroxy acids to macrocycles using carbodiimide activation and DMAP/DMAP.HCl mediation under high-dilution conditions."
+      },
+      {
+        "family_name": "Yamaguchi Macrolactonization",
+        "score": 0.689,
+        "family_class": "named_reaction",
+        "transformation_type": "high-dilution macrolactonization of hydroxy acids to medium or large ring lactones",
+        "key_reagents_clue": "Yamaguchi|macrolactonization|DMAP|2,4,6-trichlorobenzoyl chloride|mixed anhydride|high dilution",
+        "description_short": "Macrocyclization method that converts hydroxy acids into medium- and large-ring lactones via mixed anhydrides and DMAP-catalyzed intramolecular acyl transfer."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Corey-Nicolaou Macrolactonization",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Dieckmann Condensation",
+    "family_name_norm": "dieckmann condensation",
+    "page_no": 138,
+    "page_kind": "canonical_overview",
+    "title": "Dieckmann Condensation – Importance and Mechanism",
+    "summary": "Overview page for the Dieckmann condensation describing intramolecular Claisen condensation of diesters to cyclic beta-keto esters and the related Thorpe-Ziegler cyclization of dinitriles to enamino nitriles under strong base.",
+    "notes": "Key concepts: intramolecular Claisen condensation, cyclic beta-keto ester formation, Thorpe-Ziegler cyclization, reversible enolate-driven ring closure, ring-size effects.",
+    "image_filename": "named reactions_190.jpg",
+    "source_label": "named_reactions_frontmatter_batch19",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Dieckmann Condensation",
+        "entity_type": "reaction_family",
+        "notes": "Named intramolecular Claisen condensation family overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "Thorpe-Ziegler cyclization",
+        "entity_type": "related_reaction",
+        "notes": "Related nitrile cyclization showcased alongside the Dieckmann condensation.",
+        "confidence": 0.87
+      },
+      {
+        "entity_text": "cyclic beta-keto ester",
+        "entity_type": "product_class",
+        "notes": "Canonical product class from intramolecular Claisen ring closure.",
+        "confidence": 0.85
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Dieckmann Condensation",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "intramolecular Claisen condensation of diesters to cyclic beta-keto esters",
+        "key_reagents_clue": "Dieckmann condensation|diester|beta-keto ester|NaH|LiHMDS",
+        "description_short": "Intramolecular Claisen condensation of diesters that yields cyclic beta-keto esters, often complemented by related nitrile cyclizations in ring-building synthesis."
+      },
+      {
+        "family_name": "Claisen Condensation",
+        "score": 0.762,
+        "family_class": "rearrangement",
+        "transformation_type": "rearrangement",
+        "key_reagents_clue": "LDA, THF | reagent; NaCN, DMSO | reagent | NaOEt, THF / EtOH | reagent; Me3SiOK, THF, then HCl | reagent; BH3·SMe2, THF, then EtOH/HCl | reagent; NaH, LiBH4, 1,4-dioxane, then 0.5 M HCl | reagent | LDA, THF, HMPA, ZnCl2-ether | reagent; CSA, CH(OMe)3, MeOH, CH2Cl2 | reagent",
+        "description_short": "Mixed Claisen Condensation"
+      },
+      {
+        "family_name": "Acyloin Condensation",
+        "score": 0.714,
+        "family_class": "reductive coupling",
+        "transformation_type": "ester reductive dimerization to α-hydroxy ketones",
+        "key_reagents_clue": "Na|TMSCl|xylene|H+|H2O",
+        "description_short": "Acyloin condensation reductively couples esters to acyloins and is especially valuable for cyclic and intramolecular acyloin formation."
+      },
+      {
+        "family_name": "Stobbe Condensation",
+        "score": 0.683,
+        "family_class": "named_reaction",
+        "transformation_type": "base-mediated condensation of carbonyl compounds with dialkyl succinates",
+        "key_reagents_clue": "Stobbe condensation|dialkyl succinate|NaOEt|KOt-Bu",
+        "description_short": "Condensation of aldehydes or ketones with dialkyl succinates to furnish alkylidene succinic half-esters after acidification."
+      },
+      {
+        "family_name": "Knoevenagel Condensation",
+        "score": 0.652,
+        "family_class": "named_reaction",
+        "transformation_type": "amine- or base-catalyzed condensation of aldehydes or ketones with active methylene compounds to electron-poor alkenes",
+        "key_reagents_clue": "Et3N|piperidine|beta-alanine|Meldrum acid|ethyl cyanoacetate",
+        "description_short": "Condensation of carbonyl compounds with active methylene donors under basic or amine catalysis to form alpha,beta-unsaturated carbonyl derivatives and related activated alkenes."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Dieckmann Condensation",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Diels-Alder Cycloaddition",
+    "family_name_norm": "diels alder cycloaddition",
+    "page_no": 140,
+    "page_kind": "canonical_overview",
+    "title": "Diels-Alder Cycloaddition – Importance and Mechanism",
+    "summary": "Overview page for the Diels-Alder cycloaddition describing the concerted [4+2] cycloaddition of dienes with alkenes or alkynes to form cyclohexene derivatives, including normal and inverse electron-demand modes, regioselectivity, endo preference, and stereospecificity.",
+    "notes": "Key concepts: concerted pericyclic reaction, endo rule, normal versus inverse electron-demand Diels-Alder reactivity, ortho/para regiocontrol, aromatic transition state.",
+    "image_filename": "named reactions_192.jpg",
+    "source_label": "named_reactions_frontmatter_batch19",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Diels-Alder Cycloaddition",
+        "entity_type": "reaction_family",
+        "notes": "Named [4+2] cycloaddition family overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "normal electron-demand Diels-Alder reaction",
+        "entity_type": "mechanistic_concept",
+        "notes": "Electron-rich diene/electron-poor dienophile mode emphasized on the overview page.",
+        "confidence": 0.87
+      },
+      {
+        "entity_text": "endo 1,2-product (ortho)",
+        "entity_type": "product_class",
+        "notes": "Representative regiochemical outcome shown in the overview schemes.",
+        "confidence": 0.85
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Diels-Alder Cycloaddition",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "concerted [4+2] cycloaddition of diene and dienophile to cyclohexene derivatives",
+        "key_reagents_clue": "Diels-Alder|[4+2]|endo|diene|dienophile",
+        "description_short": "Concerted [4+2] cycloaddition that rapidly generates six-membered rings with predictable stereo- and regioselectivity in normal or inverse electron-demand modes."
+      },
+      {
+        "family_name": "Hetero Diels-Alder Cycloaddition",
+        "score": 0.877,
+        "family_class": "named_reaction",
+        "transformation_type": "heteroatom-containing Diels-Alder [4+2] cycloaddition",
+        "key_reagents_clue": "heterodiene|heterodienophile|HDA reaction|imine|nitroso|inverse electron-demand",
+        "description_short": "Pericyclic or stepwise hetero-[4+2] annulation used to assemble densely functionalized oxygen- and nitrogen-heterocycles."
+      },
+      {
+        "family_name": "Hetero Diels-Alder Cycloaddition (HDA)",
+        "score": 0.82,
+        "family_class": "cycloaddition",
+        "transformation_type": "cycloaddition",
+        "key_reagents_clue": null,
+        "description_short": "Named reaction family listed in the alphabetical reaction index pages of the source book."
+      },
+      {
+        "family_name": "De Mayo Cycloaddition",
+        "score": 0.696,
+        "family_class": "named_reaction",
+        "transformation_type": "photochemical enone-alkene [2+2] cycloaddition with optional retro-aldol fragmentation",
+        "key_reagents_clue": "hv|enone|alkene|[2+2] photocycloaddition|retro-aldol",
+        "description_short": "Photochemical [2+2] cycloaddition between enones and alkenes that can furnish cyclobutanes directly or 1,5-diketones after retro-aldol fragmentation."
+      },
+      {
+        "family_name": "Staudinger Ketene Cycloaddition",
+        "score": 0.643,
+        "family_class": "named_reaction",
+        "transformation_type": "[2+2] cycloaddition of ketenes with alkenes, imines, or carbonyls",
+        "key_reagents_clue": "ketene cycloaddition|β-lactam|acid chloride|Et3N|BF3·OEt2",
+        "description_short": "Thermal or Lewis acid assisted [2+2] cycloaddition chemistry of ketenes that furnishes four-membered rings."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Diels-Alder Cycloaddition",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Doering-Laflamme Allene Synthesis",
+    "family_name_norm": "doering laflamme allene synthesis",
+    "page_no": 146,
+    "page_kind": "canonical_overview",
+    "title": "Doering-Laflamme Allene Synthesis – Importance and Mechanism",
+    "summary": "Overview page for the Doering-Laflamme allene synthesis describing two-step one-carbon homologation of alkenes through dihalocarbene addition to form geminal dihalocyclopropanes followed by metal-mediated rearrangement to acyclic or cyclic allenes.",
+    "notes": "Key concepts: in situ dihalocarbene generation from haloform, cyclopropanation of alkenes, metal–halogen exchange, and cyclopropylidene-to-allene rearrangement.",
+    "image_filename": "named reactions_198.jpg",
+    "source_label": "named_reactions_frontmatter_batch20",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Doering-Laflamme Allene Synthesis",
+        "entity_type": "reaction_family",
+        "notes": "Named allene-synthesis family overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "geminal dihalocyclopropane derivative",
+        "entity_type": "intermediate_class",
+        "notes": "Key cyclopropane intermediate generated by dihalocarbene addition.",
+        "confidence": 0.87
+      },
+      {
+        "entity_text": "cyclic allene",
+        "entity_type": "product_class",
+        "notes": "Canonical cyclic allene product class shown in the overview scheme.",
+        "confidence": 0.85
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Doering-Laflamme Allene Synthesis",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "one-carbon homologation of alkenes to allenes via dihalocyclopropane intermediates",
+        "key_reagents_clue": "Doering-Laflamme|haloform|CHBr3|MeLi|allene synthesis",
+        "description_short": "Classical allene synthesis in which dihalocarbene addition to an alkene gives a geminal dihalocyclopropane that is rearranged under metal-mediated conditions to an allene."
+      },
+      {
+        "family_name": "Corey-Fuchs Alkyne Synthesis",
+        "score": 0.623,
+        "family_class": "named_reaction",
+        "transformation_type": "aldehyde one-carbon homologation to terminal alkyne",
+        "key_reagents_clue": "aldehyde|CBr4|Ph3P|dibromoolefin|n-BuLi",
+        "description_short": "One-carbon homologation of aldehydes to terminal alkynes through dibromoolefin intermediates and organolithium-mediated elimination."
+      },
+      {
+        "family_name": "Stork Enamine Synthesis",
+        "score": 0.607,
+        "family_class": "named_reaction",
+        "transformation_type": "enamine-mediated alpha-functionalization of carbonyl compounds",
+        "key_reagents_clue": "Stork enamine synthesis|enamine|pyrrolidine|morpholine",
+        "description_short": "Use of enamines as enolate equivalents for alpha-alkylation, acylation, Michael addition, and related carbonyl functionalization."
+      },
+      {
+        "family_name": "Weinreb Ketone Synthesis",
+        "score": 0.596,
+        "family_class": "named_reaction",
+        "transformation_type": "controlled acyl substitution to ketones or aldehydes",
+        "key_reagents_clue": "Weinreb|N-methoxy-N-methylamide|MeNHOMe|Me2AlCl|organolithium|Grignard",
+        "description_short": "Preparation and use of N-methoxy-N-methylamides to convert carboxylic acid derivatives into ketones or aldehydes with single-addition control."
+      },
+      {
+        "family_name": "Madelung Indole Synthesis",
+        "score": 0.586,
+        "family_class": "named_reaction",
+        "transformation_type": "base-promoted cyclization of N-acyl-o-toluidines or related anilides to indoles",
+        "key_reagents_clue": "NaOEt|NaNH2|n-BuLi|KOtBu",
+        "description_short": "Classical and modified intramolecular anilide cyclization methods for building 2-substituted and 2,3-disubstituted indoles."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Doering-Laflamme Allene Synthesis",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Eschenmoser Methenylation",
+    "family_name_norm": "eschenmoser methenylation",
+    "page_no": 154,
+    "page_kind": "canonical_overview",
+    "title": "Eschenmoser Methenylation – Importance and Mechanism",
+    "summary": "Overview page for Eschenmoser methenylation describing installation of an exocyclic methylene equivalent at the alpha-position of carbonyl compounds by reaction of enolates with Eschenmoser’s salt followed by elimination from the resulting aminomethylated intermediate.",
+    "notes": "Key concepts: enolate trapping with Eschenmoser’s salt, formation of alpha-(dimethylamino)methyl carbonyl intermediates, oxidative or Hofmann/Cope-type elimination, and access to alpha-methylenated ketones or lactones.",
+    "image_filename": "named reactions_206.jpg",
+    "source_label": "named_reactions_frontmatter_batch21",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Eschenmoser Methenylation",
+        "entity_type": "reaction_family",
+        "notes": "Named alpha-methylenation family overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "Eschenmoser's salt",
+        "entity_type": "reagent",
+        "notes": "Characteristic methylene-transfer reagent highlighted on the overview page.",
+        "confidence": 0.88
+      },
+      {
+        "entity_text": "alpha-Methylenated carbonyl compound",
+        "entity_type": "product_class",
+        "notes": "Canonical product class formed after elimination from the aminomethylated intermediate.",
+        "confidence": 0.85
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Eschenmoser Methenylation",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "alpha-methylenation of carbonyl compounds via aminomethylation and elimination",
+        "key_reagents_clue": "Eschenmoser's salt|LiHMDS|LDA|mCPBA|DBU|alpha-methylenation",
+        "description_short": "Method for converting enolizable carbonyl compounds into exocyclic methylene products by enolate capture of Eschenmoser’s salt followed by elimination from the resulting aminomethyl intermediate."
+      },
+      {
+        "family_name": "Eschweiler-Clarke Methylation",
+        "score": 0.704,
+        "family_class": "named_reaction",
+        "transformation_type": "reductive N-methylation of amines",
+        "key_reagents_clue": "Eschweiler-Clarke|formaldehyde|formic acid|reductive alkylation|N-methylation",
+        "description_short": "One-pot reductive methylation of primary or secondary amines using formaldehyde and formic acid, often without overalkylation to quaternary ammonium salts."
+      },
+      {
+        "family_name": "Eschenmoser-Tanabe Fragmentation",
+        "score": 0.702,
+        "family_class": "named_reaction",
+        "transformation_type": "fragmentation of epoxyketone hydrazones to alkynones / alkynals",
+        "key_reagents_clue": "Eschenmoser-Tanabe|epoxyketone hydrazone|TsNHNH2|fragmentation|alkynone",
+        "description_short": "Fragmentation of epoxy ketone hydrazones that furnishes alkynones or alkynals through a nitrogen-expelling Grob-type process."
+      },
+      {
+        "family_name": "Simmons-Smith Reaction",
+        "score": 0.596,
+        "family_class": "cyclopropanation",
+        "transformation_type": "alkene -> cyclopropane",
+        "key_reagents_clue": "CH2I2; Zn-Cu",
+        "description_short": "Color-explanation page family seed from page xiv."
+      },
+      {
+        "family_name": "Buchner Reaction",
+        "score": 0.585,
+        "family_class": "other",
+        "transformation_type": "other",
+        "key_reagents_clue": "hv or Δ or Rh-catalyst",
+        "description_short": "The Buchner reaction, involving the thermal or photochemical reaction of ethyl diazoacetate with benzene to form a cycloheptatriene derivative via a norcaradiene intermediate."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Eschenmoser Methenylation",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Eschenmoser-Tanabe Fragmentation",
+    "family_name_norm": "eschenmoser tanabe fragmentation",
+    "page_no": 158,
+    "page_kind": "canonical_overview",
+    "title": "Eschenmoser-Tanabe Fragmentation – Importance and Mechanism",
+    "summary": "Overview page for the Eschenmoser-Tanabe fragmentation describing conversion of tosylhydrazones of alpha,beta-epoxy ketones into cyclic alkynones, alkynals, or acyclic alkynones by base-, acid-, or heat-induced fragmentation with loss of nitrogen.",
+    "notes": "Key concepts: epoxyketone hydrazone formation, Grob-type fragmentation, release of N2 and sulfinate leaving groups, and formation of medium-sized cyclic or acyclic alkynes / alkynones from epoxy ketone precursors.",
+    "image_filename": "named reactions_210.jpg",
+    "source_label": "named_reactions_frontmatter_batch21",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Eschenmoser-Tanabe Fragmentation",
+        "entity_type": "reaction_family",
+        "notes": "Named epoxyketone fragmentation family overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "cyclic alkynone",
+        "entity_type": "product_class",
+        "notes": "Medium-sized cyclic alkynone product class emphasized in the overview scheme.",
+        "confidence": 0.87
+      },
+      {
+        "entity_text": "acyclic alkynal or alkynone",
+        "entity_type": "product_class",
+        "notes": "Open-chain alkyne-containing product class accessible from epoxy ketone hydrazones.",
+        "confidence": 0.85
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Eschenmoser-Tanabe Fragmentation",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "fragmentation of epoxyketone hydrazones to alkynones / alkynals",
+        "key_reagents_clue": "Eschenmoser-Tanabe|epoxyketone hydrazone|TsNHNH2|fragmentation|alkynone",
+        "description_short": "Fragmentation of epoxy ketone hydrazones that furnishes alkynones or alkynals through a nitrogen-expelling Grob-type process."
+      },
+      {
+        "family_name": "Eschenmoser Methenylation",
+        "score": 0.702,
+        "family_class": "named_reaction",
+        "transformation_type": "alpha-methylenation of carbonyl compounds via aminomethylation and elimination",
+        "key_reagents_clue": "Eschenmoser's salt|LiHMDS|LDA|mCPBA|DBU|alpha-methylenation",
+        "description_short": "Method for converting enolizable carbonyl compounds into exocyclic methylene products by enolate capture of Eschenmoser’s salt followed by elimination from the resulting aminomethyl intermediate."
+      },
+      {
+        "family_name": "Grob Fragmentation",
+        "score": 0.64,
+        "family_class": "named_reaction",
+        "transformation_type": "stereoelectronically controlled fragmentation to unsaturated products",
+        "key_reagents_clue": "alkoxide|mesylate|tosylate|SmI2|Grob fragmentation|fragmentation",
+        "description_short": "Fragmentation family that cleaves rigid, properly aligned precursors into unsaturated fragments under strong-base, alkoxide, or related triggering conditions."
+      },
+      {
+        "family_name": "Eschweiler-Clarke Methylation",
+        "score": 0.623,
+        "family_class": "named_reaction",
+        "transformation_type": "reductive N-methylation of amines",
+        "key_reagents_clue": "Eschweiler-Clarke|formaldehyde|formic acid|reductive alkylation|N-methylation",
+        "description_short": "One-pot reductive methylation of primary or secondary amines using formaldehyde and formic acid, often without overalkylation to quaternary ammonium salts."
+      },
+      {
+        "family_name": "Wharton Fragmentation",
+        "score": 0.604,
+        "family_class": "named_reaction",
+        "transformation_type": "base-induced fragmentation of 1,3-diol derivatives",
+        "key_reagents_clue": "Wharton fragmentation|1,3-diol monosulfonate|MsCl|TsCl|KOt-Bu|DMSO",
+        "description_short": "Base-induced stereospecific fragmentation of 1,3-diol monotosylates or related substrates to generate unsaturated fragments, often medium-ring alkenes."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Eschenmoser-Tanabe Fragmentation",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Eschweiler-Clarke Methylation",
+    "family_name_norm": "eschweiler clarke methylation",
+    "page_no": 160,
+    "page_kind": "canonical_overview",
+    "title": "Eschweiler-Clarke Methylation (Reductive Alkylation) – Importance and Mechanism",
+    "summary": "Overview page for Eschweiler-Clarke methylation describing one-pot reductive methylation of primary or secondary amines with formaldehyde and formic acid, together with related reductive alkylation and cyclization variants using carbonyl compounds and reducing agents.",
+    "notes": "Key concepts: iminium formation from amine and formaldehyde, hydride transfer from formic acid, selective N-methylation without overalkylation to quaternary salts, and relationship to Leuckart-Wallach-type reductive alkylation.",
+    "image_filename": "named reactions_212.jpg",
+    "source_label": "named_reactions_frontmatter_batch21",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Eschweiler-Clarke Methylation",
+        "entity_type": "reaction_family",
+        "notes": "Named reductive methylation family overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "Leuckart-Wallach Reaction",
+        "entity_type": "related_reaction",
+        "notes": "Related reductive alkylation family explicitly compared on the overview page.",
+        "confidence": 0.87
+      },
+      {
+        "entity_text": "N-Methylated amine",
+        "entity_type": "product_class",
+        "notes": "Canonical tertiary-amine product class formed under Eschweiler-Clarke conditions.",
+        "confidence": 0.85
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Eschweiler-Clarke Methylation",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "reductive N-methylation of amines",
+        "key_reagents_clue": "Eschweiler-Clarke|formaldehyde|formic acid|reductive alkylation|N-methylation",
+        "description_short": "One-pot reductive methylation of primary or secondary amines using formaldehyde and formic acid, often without overalkylation to quaternary ammonium salts."
+      },
+      {
+        "family_name": "Eschweiler-Clarke Methylation (Reductive Alkylation)",
+        "score": 0.734,
+        "family_class": "functionalization",
+        "transformation_type": "alkylation",
+        "key_reagents_clue": null,
+        "description_short": "Named reaction family listed in the alphabetical reaction index pages of the source book."
+      },
+      {
+        "family_name": "Eschenmoser Methenylation",
+        "score": 0.704,
+        "family_class": "named_reaction",
+        "transformation_type": "alpha-methylenation of carbonyl compounds via aminomethylation and elimination",
+        "key_reagents_clue": "Eschenmoser's salt|LiHMDS|LDA|mCPBA|DBU|alpha-methylenation",
+        "description_short": "Method for converting enolizable carbonyl compounds into exocyclic methylene products by enolate capture of Eschenmoser’s salt followed by elimination from the resulting aminomethyl intermediate."
+      },
+      {
+        "family_name": "Eschenmoser-Tanabe Fragmentation",
+        "score": 0.623,
+        "family_class": "named_reaction",
+        "transformation_type": "fragmentation of epoxyketone hydrazones to alkynones / alkynals",
+        "key_reagents_clue": "Eschenmoser-Tanabe|epoxyketone hydrazone|TsNHNH2|fragmentation|alkynone",
+        "description_short": "Fragmentation of epoxy ketone hydrazones that furnishes alkynones or alkynals through a nitrogen-expelling Grob-type process."
+      },
+      {
+        "family_name": "Meerwein Arylation",
+        "score": 0.596,
+        "family_class": "named_reaction",
+        "transformation_type": "radical arylation of electron-deficient olefins with aryldiazonium salts",
+        "key_reagents_clue": "NaNO2|HCl|HBr|CuCl|CuCl2|CuBr2|Cu2O",
+        "description_short": "Diazonium-radical coupling strategy for attaching aryl groups across activated double bonds under simple in situ diazotization conditions."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Eschweiler-Clarke Methylation",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Evans Aldol Reaction",
+    "family_name_norm": "evans aldol reaction",
+    "page_no": 162,
+    "page_kind": "canonical_overview",
+    "title": "Evans Aldol Reaction – Importance and Mechanism",
+    "summary": "Overview page for the Evans aldol reaction describing boron-mediated, chiral auxiliary-controlled aldol addition of N-acyl oxazolidinones to aldehydes through Z-boron enolates, delivering syn aldol adducts with high diastereoselectivity via Zimmerman-Traxler transition states.",
+    "notes": "Key concepts: Bu2BOTf-mediated enolization of oxazolidinones, Z-enolate control, Zimmerman-Traxler transition-state model, and syn-selective carbon–carbon bond formation using Evans auxiliaries.",
+    "image_filename": "named reactions_214.jpg",
+    "source_label": "named_reactions_frontmatter_batch21",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Evans Aldol Reaction",
+        "entity_type": "reaction_family",
+        "notes": "Named boron-mediated aldol family overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "Z-enolate",
+        "entity_type": "intermediate_class",
+        "notes": "Boron enolate geometry that controls the syn-selective aldol addition.",
+        "confidence": 0.87
+      },
+      {
+        "entity_text": "Zimmerman-Traxler transition state",
+        "entity_type": "mechanistic_concept",
+        "notes": "Chairlike transition-state model used to rationalize the observed syn diastereoselectivity.",
+        "confidence": 0.85
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Evans Aldol Reaction",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "auxiliary-controlled syn-selective aldol addition",
+        "key_reagents_clue": "Evans aldol|oxazolidinone|Bu2BOTf|DIPEA|Zimmerman-Traxler|syn aldol",
+        "description_short": "Highly diastereoselective syn aldol reaction of chiral N-acyl oxazolidinones with aldehydes through Z-boron enolates and Zimmerman-Traxler transition states."
+      },
+      {
+        "family_name": "Aldol Reaction",
+        "score": 0.824,
+        "family_class": "carbon-carbon bond formation",
+        "transformation_type": "enolate addition to carbonyl / β-hydroxy carbonyl formation",
+        "key_reagents_clue": "enolate|boron enolate|Ti|Si|Zn|acid|base|TiCl4|i-Pr2NEt",
+        "description_short": "The aldol reaction forges C–C bonds between enol/enolate donors and carbonyl electrophiles to produce β-hydroxy carbonyl compounds, often with high stereocontrol."
+      },
+      {
+        "family_name": "Mukaiyama Aldol Reaction",
+        "score": 0.727,
+        "family_class": "named_reaction",
+        "transformation_type": "Lewis-acid-promoted aldol coupling of silyl enol ethers with carbonyl compounds",
+        "key_reagents_clue": "TiCl4|BF3·OEt2|Sn(OTf)2|SnCl4",
+        "description_short": "Powerful aldol variant using preformed enol silanes and Lewis acid activation to deliver beta-hydroxy carbonyl products with high stereocontrol."
+      },
+      {
+        "family_name": "Lieben Haloform Reaction",
+        "score": 0.682,
+        "family_class": "named_reaction",
+        "transformation_type": "base-promoted halogenation and cleavage of methyl ketones or methyl carbinols to haloforms and carboxylates",
+        "key_reagents_clue": "I2|Br2|NaOCl|NaOBr|NaOH",
+        "description_short": "One-carbon degradation method that converts methyl ketones and related methyl carbinols into haloforms and carboxylate products under hypohalite conditions."
+      },
+      {
+        "family_name": "Cannizzaro Reaction",
+        "score": 0.667,
+        "family_class": "named_reaction",
+        "transformation_type": "aldehyde disproportionation / hydride transfer redox",
+        "key_reagents_clue": "concentrated NaOH, KOH, Lewis acid variants, aldehydes lacking alpha-hydrogen",
+        "description_short": "Disproportionation of non-enolizable aldehydes to alcohols and carboxylates through hydride transfer under basic conditions."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Evans Aldol Reaction",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Favorskii Rearrangement",
+    "family_name_norm": "favorskii rearrangement",
+    "page_no": 164,
+    "page_kind": "canonical_overview",
+    "title": "Favorskii and Homo-Favorskii Rearrangement – Importance and Mechanism",
+    "summary": "Overview page for the Favorskii and homo-Favorskii rearrangements describing skeletal rearrangement of alpha-halo ketones and ring-expanded or ring-contracted beta-halo ketones under basic conditions, often via cyclopropanone or cyclobutanone intermediates that are trapped by external nucleophiles.",
+    "notes": "Key concepts: alpha-halo ketone rearrangement, cyclopropanone and cyclobutanone intermediates, regioselective ring opening, nucleophile trapping, and distinction between classical Favorskii, homo-Favorskii, and quasi-Favorskii pathways.",
+    "image_filename": "named reactions_216.jpg",
+    "source_label": "named_reactions_frontmatter_batch22",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Favorskii Rearrangement",
+        "entity_type": "reaction_family",
+        "notes": "Named alpha-halo-ketone rearrangement family overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "Homo-Favorskii Rearrangement",
+        "entity_type": "related_reaction",
+        "notes": "Ring-expanded beta-halo ketone variant highlighted on the overview page.",
+        "confidence": 0.87
+      },
+      {
+        "entity_text": "cyclopropanone intermediate",
+        "entity_type": "intermediate_class",
+        "notes": "Characteristic mechanistic intermediate invoked for classical Favorskii rearrangement.",
+        "confidence": 0.85
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Favorskii Rearrangement",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "skeletal rearrangement of alpha-halo ketones to carboxylic-acid derivatives",
+        "key_reagents_clue": "alpha-halo ketone|base|nucleophile|ring contraction|cyclopropanone",
+        "description_short": "Base-promoted rearrangement of alpha-halo ketones that proceeds through cyclopropanone-like intermediates to give rearranged carboxylic-acid derivatives or contracted rings."
+      },
+      {
+        "family_name": "Quasi-Favorskii Rearrangement",
+        "score": 0.885,
+        "family_class": "named_reaction",
+        "transformation_type": "skeletal rearrangement of α-halo ketones to acids or ring-contracted carbonyl compounds",
+        "key_reagents_clue": "Quasi-Favorskii|α-halo ketone|NaOH|KH|LAH|MVK",
+        "description_short": "Favorskii-like rearrangement manifold for α-halo ketones that cannot enolize, delivering carboxylic acid derivatives or ring-contracted products through a semibenzilic pathway."
+      },
+      {
+        "family_name": "Amadori Rearrangement",
+        "score": 0.818,
+        "family_class": "rearrangement",
+        "transformation_type": "rearrangement",
+        "key_reagents_clue": "p-TsOH | Cc1ccc(S(=O)(=O)O)cc1; toluene | Cc1ccccc1; reflux | dry pyridine | c1ccncc1; AcOH | CC(=O)O; 24h, r.t.",
+        "description_short": "Amadori Reaction"
+      },
+      {
+        "family_name": "Fries Rearrangement",
+        "score": 0.81,
+        "family_class": "named_reaction",
+        "transformation_type": "acyl migration from phenolic esters or carbamates to aromatic carbon",
+        "key_reagents_clue": "phenolic ester|AlCl3|photo-Fries|ortho-Fries|acyl migration",
+        "description_short": "Family of acyl-migration reactions that translocate acyl groups from oxygen to carbon on aromatic systems under ionic, radical, or anionic conditions."
+      },
+      {
+        "family_name": "Brook Rearrangement",
+        "score": 0.762,
+        "family_class": "named_reaction",
+        "transformation_type": "anionic silyl migration / annulation",
+        "key_reagents_clue": "alkoxide or organolithium generation, acyl silanes, THF",
+        "description_short": "Anionic migration of silyl groups from carbon to oxygen that enables rearrangement and annulation logic."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Favorskii Rearrangement",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Feist-Bénary Furan Synthesis",
+    "family_name_norm": "feist be nary furan synthesis",
+    "page_no": 166,
+    "page_kind": "canonical_overview",
+    "title": "Feist-Bénary Furan Synthesis – Importance and Mechanism",
+    "summary": "Overview page for the Feist-Bénary furan synthesis describing base-mediated condensation of beta-keto esters with alpha-halogenated carbonyl compounds to form substituted furans, often through isolable dihydrofuranol or 1,4-dicarbonyl intermediates.",
+    "notes": "Key concepts: beta-keto ester enolate addition, intramolecular substitution, interrupted Feist-Bénary variants, acid-promoted dehydration, and access to highly substituted furan products.",
+    "image_filename": "named reactions_218.jpg",
+    "source_label": "named_reactions_frontmatter_batch22",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Feist-Bénary Furan Synthesis",
+        "entity_type": "reaction_family",
+        "notes": "Named furan-forming condensation family overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "Interrupted Feist-Bénary reaction",
+        "entity_type": "related_reaction",
+        "notes": "Variant that isolates oxygenated dihydrofuranol intermediates before dehydration.",
+        "confidence": 0.87
+      },
+      {
+        "entity_text": "substituted furan",
+        "entity_type": "product_class",
+        "notes": "Canonical heteroaromatic product class delivered by the Feist-Bénary condensation.",
+        "confidence": 0.85
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Feist-Bénary Furan Synthesis",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "assembly of substituted furans from beta-keto esters and alpha-halo carbonyls",
+        "key_reagents_clue": "beta-keto ester|alpha-halo carbonyl|furan synthesis|base|dihydrofuranol",
+        "description_short": "Base-mediated condensation that converts beta-keto esters and alpha-halocarbonyl compounds into substituted furans, often via dihydrofuranol intermediates."
+      },
+      {
+        "family_name": "Paal-Knorr Furan Synthesis",
+        "score": 0.691,
+        "family_class": "named_reaction",
+        "transformation_type": "cyclodehydration of 1,4-dicarbonyl compounds or surrogates to substituted furans",
+        "key_reagents_clue": "H2SO4|PPA|BF3·Et2O|P2O5|p-TsOH",
+        "description_short": "Classical heterocycle-forming reaction that transforms 1,4-dicarbonyl systems into furans by acid- or dehydrating-agent-mediated cyclodehydration."
+      },
+      {
+        "family_name": "Stork Enamine Synthesis",
+        "score": 0.654,
+        "family_class": "named_reaction",
+        "transformation_type": "enamine-mediated alpha-functionalization of carbonyl compounds",
+        "key_reagents_clue": "Stork enamine synthesis|enamine|pyrrolidine|morpholine",
+        "description_short": "Use of enamines as enolate equivalents for alpha-alkylation, acylation, Michael addition, and related carbonyl functionalization."
+      },
+      {
+        "family_name": "Corey-Fuchs Alkyne Synthesis",
+        "score": 0.596,
+        "family_class": "named_reaction",
+        "transformation_type": "aldehyde one-carbon homologation to terminal alkyne",
+        "key_reagents_clue": "aldehyde|CBr4|Ph3P|dibromoolefin|n-BuLi",
+        "description_short": "One-carbon homologation of aldehydes to terminal alkynes through dibromoolefin intermediates and organolithium-mediated elimination."
+      },
+      {
+        "family_name": "Malonic Ester Synthesis",
+        "score": 0.577,
+        "family_class": "named_reaction",
+        "transformation_type": "alkylation of malonic esters followed by hydrolysis and decarboxylation to substituted acetic acids",
+        "key_reagents_clue": "NaOR|NaH|KOtBu",
+        "description_short": "Foundational active-methylene strategy that converts alkylated malonate esters into substituted acetic acids and related cyclic products."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Feist-Bénary Furan Synthesis",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Finkelstein Reaction",
+    "family_name_norm": "finkelstein reaction",
+    "page_no": 170,
+    "page_kind": "canonical_overview",
+    "title": "Finkelstein Reaction – Importance and Mechanism",
+    "summary": "Overview page for the Finkelstein reaction describing halide exchange in alkyl halides driven by differential solubility of sodium halides in polar aprotic solvents, most often exchanging chlorides or bromides for iodides under SN2 conditions.",
+    "notes": "Key concepts: sodium iodide in acetone, precipitation-driven equilibrium, SN2 halogen exchange, behavior of primary versus hindered substrates, and related conversion of sulfonates or pseudohalides.",
+    "image_filename": "named reactions_222.jpg",
+    "source_label": "named_reactions_frontmatter_batch22",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Finkelstein Reaction",
+        "entity_type": "reaction_family",
+        "notes": "Named halogen-exchange family overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "halogen exchange",
+        "entity_type": "transformation_class",
+        "notes": "Core substitution process in which one halide is replaced by another under SN2 conditions.",
+        "confidence": 0.86
+      },
+      {
+        "entity_text": "SN2 substitution",
+        "entity_type": "mechanistic_concept",
+        "notes": "Mechanistic model used to describe the halide displacement.",
+        "confidence": 0.85
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Finkelstein Reaction",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "halogen exchange in alkyl halides",
+        "key_reagents_clue": "NaI|acetone|halide exchange|alkyl halide|Finkelstein",
+        "description_short": "Classical SN2 halogen-exchange reaction in which sodium iodide or related salts convert alkyl halides or sulfonates into the corresponding iodides or bromides."
+      },
+      {
+        "family_name": "Biginelli Reaction",
+        "score": 0.737,
+        "family_class": "named_reaction",
+        "transformation_type": "multicomponent heterocycle synthesis",
+        "key_reagents_clue": "HCl, FeCl3, BF3·OEt2, Yb(OTf)3, urea, thiourea",
+        "description_short": "Three-component condensation used to build dihydropyrimidinones from aldehydes, beta-keto esters, and urea derivatives."
+      },
+      {
+        "family_name": "Minisci Reaction",
+        "score": 0.722,
+        "family_class": "named_reaction",
+        "transformation_type": "radical substitution of protonated electron-deficient heteroarenes",
+        "key_reagents_clue": "AgNO3|persulfate|mCPBA|CF3COOH|TFA",
+        "description_short": "Radical-based alkylation or acylation of electron-poor heteroarenes that provides direct C-H functionalization under oxidative acidic conditions."
+      },
+      {
+        "family_name": "Dakin-West Reaction",
+        "score": 0.718,
+        "family_class": "named_reaction",
+        "transformation_type": "alpha-amino acid to alpha-acylamino ketone",
+        "key_reagents_clue": "alpha-amino acid|anhydride|Ac2O|base|alpha-acylamino ketone",
+        "description_short": "Transformation of alpha-amino acids into alpha-acylamino ketones under anhydride/base conditions through mixed anhydride and oxazolone intermediates."
+      },
+      {
+        "family_name": "Heine Reaction",
+        "score": 0.706,
+        "family_class": "named_reaction",
+        "transformation_type": "iodide-mediated rearrangement or ring expansion of activated aziridines",
+        "key_reagents_clue": "NaI|KSCN|aziridine|oxazoline|Heine reaction|ring expansion",
+        "description_short": "Aziridine rearrangement family that converts N-acylaziridines into oxazolines and related heterocycles under nucleophilic conditions."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Finkelstein Reaction",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  },
+  {
+    "family_name": "Friedel-Crafts Acylation",
+    "family_name_norm": "friedel crafts acylation",
+    "page_no": 176,
+    "page_kind": "canonical_overview",
+    "title": "Friedel-Crafts Acylation – Importance and Mechanism",
+    "summary": "Overview page for the Friedel-Crafts acylation describing Lewis-acid-promoted installation of acyl groups onto aromatic or heteroaromatic substrates using acyl halides, anhydrides, or related acyl donors through acylium-ion-like electrophiles.",
+    "notes": "Key concepts: acylium ion generation, Lewis acid activation, aromatic acylation versus aliphatic acylation, deactivation after first acylation, and utility of intramolecular variants for ring closure.",
+    "image_filename": "named reactions_228.jpg",
+    "source_label": "named_reactions_frontmatter_batch23",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Friedel-Crafts Acylation",
+        "entity_type": "reaction_family",
+        "notes": "Named electrophilic aromatic acylation overview.",
+        "confidence": 0.92
+      },
+      {
+        "entity_text": "acylium ion",
+        "entity_type": "mechanistic_concept",
+        "notes": "Canonical electrophile generated by Lewis-acid activation of the acyl donor.",
+        "confidence": 0.87
+      },
+      {
+        "entity_text": "Intramolecular Friedel-Crafts acylation",
+        "entity_type": "related_reaction",
+        "notes": "Ring-closing acylation variant explicitly emphasized on the overview page.",
+        "confidence": 0.86
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Friedel-Crafts Acylation",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "Lewis-acid-promoted acylation of aromatic or heteroaromatic substrates",
+        "key_reagents_clue": "acyl chloride|anhydride|AlCl3|TiCl4|acylium ion|Friedel-Crafts acylation",
+        "description_short": "Classical electrophilic aromatic acylation using Lewis-acid-activated acyl donors, widely used for intermolecular substitution and intramolecular ring-closing acylation."
+      },
+      {
+        "family_name": "Friedel-Crafts Alkylation",
+        "score": 0.939,
+        "family_class": "named_reaction",
+        "transformation_type": "electrophilic aromatic alkylation",
+        "key_reagents_clue": "alkyl halide|alkene|alcohol|AlCl3|BF3·OEt2|Friedel-Crafts alkylation",
+        "description_short": "Catalytic alkylation of electron-rich arenes or heteroarenes by carbocationic electrophiles generated from halides, alkenes, or alcohol derivatives."
+      },
+      {
+        "family_name": "Diels-Alder Cycloaddition",
+        "score": 0.571,
+        "family_class": "named_reaction",
+        "transformation_type": "concerted [4+2] cycloaddition of diene and dienophile to cyclohexene derivatives",
+        "key_reagents_clue": "Diels-Alder|[4+2]|endo|diene|dienophile",
+        "description_short": "Concerted [4+2] cycloaddition that rapidly generates six-membered rings with predictable stereo- and regioselectivity in normal or inverse electron-demand modes."
+      },
+      {
+        "family_name": "Prilezhaev Reaction",
+        "score": 0.558,
+        "family_class": "named_reaction",
+        "transformation_type": "peroxyacid epoxidation of alkenes",
+        "key_reagents_clue": "Prilezhaev|epoxidation|mCPBA|peroxyacid|epoxide",
+        "description_short": "Foundational alkene epoxidation method in which a peroxyacid delivers oxygen in a stereospecific syn process to give epoxides from isolated double bonds."
+      },
+      {
+        "family_name": "Ferrier Reaction",
+        "score": 0.55,
+        "family_class": "named_reaction",
+        "transformation_type": "Lewis-acid-promoted conversion of glycals or enol ethers to unsaturated glycosides or cyclohexanones",
+        "key_reagents_clue": "glycal|Lewis acid|allyloxycarbenium|2,3-unsaturated glycoside|Ferrier",
+        "description_short": "Lewis-acid-promoted rearrangement chemistry of unsaturated carbohydrates that affords 2,3-unsaturated glycosides or highly substituted cyclohexanones."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Friedel-Crafts Acylation",
+    "manual_rows": 2,
+    "extract_rows": 0,
+    "exact_like_score": 0,
+    "priority_score": 10
+  }
+]

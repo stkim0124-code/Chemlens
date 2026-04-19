@@ -1,0 +1,16 @@
+{
+  "family": "Pinner Reaction",
+  "substrates": [
+    "CC#N",
+    "CCO"
+  ],
+  "products": [
+    "CCOC(C)=[NH2+].[Cl-]"
+  ],
+  "reagents": [
+    "Cl"
+  ],
+  "rationale": "This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and an alcohol (ethanol) in the presence of dry hydrogen chloride. This represents the core transformation of the Pinner reaction, which is the acid-catalyzed addition of an alcohol to a nitrile. The reactants and product are simple, acyclic, and lack complex functional groups, making it a clear and canonical example.",
+  "collision_avoidance_note": "The chosen example uses simple aliphatic substrates (acetonitrile, ethanol) to avoid overlap with reactions involving aromatic rings or more complex functional groups. It specifically depicts the formation of the intermediate Pinner salt, which is the defining step of the reaction, rather than its subsequent hydrolysis to an ester (which could be confused with simple nitrile hydrolysis) or aminolysis to an amidine. This focus on the imino ether salt formation is characteristic of the Pinner reaction itself.",
+  "raw_text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and an alcohol (ethanol) in the presence of dry hydrogen chloride. This represents the core transformation of the Pinner reaction, which is the acid-catalyzed addition of an alcohol to a nitrile. The reactants and product are simple, acyclic, and lack complex functional groups, making it a clear and canonical example.\",\n    \"collision_avoidance_note\": \"The chosen example uses simple aliphatic substrates (acetonitrile, ethanol) to avoid overlap with reactions involving aromatic rings or more complex functional groups. It specifically depicts the formation of the intermediate Pinner salt, which is the defining step of the reaction, rather than its subsequent hydrolysis to an ester (which could be confused with simple nitrile hydrolysis) or aminolysis to an amidine. This focus on the imino ether salt formation is characteristic of the Pinner reaction itself.\"\n  }\n}"
+}

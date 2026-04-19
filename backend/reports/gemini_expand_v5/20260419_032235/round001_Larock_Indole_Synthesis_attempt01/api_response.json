@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Larock Indole Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"Nc1ccccc1I\",\n      \"CCC#CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCC1=C(CC)c2ccccc2N1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Pd+2].[O-]C(=O)C.[O-]C(=O)C\",\n      \"[Li+].[Cl-]\",\n      \"CC(=O)[O-].[K+]\"\n    ],\n    \"rationale\": \"This example shows the palladium-catalyzed heteroannulation of the simplest o-haloaniline, 2-iodoaniline, with a simple, symmetrical internal alkyne, 3-hexyne. This reaction forms a 2,3-disubstituted indole, which is the characteristic product of this transformation. The reactants are small, acyclic (where possible), and lack complex functional groups, making it a clear and canonical representation of the Larock Indole Synthesis.\",\n    \"collision_avoidance_note\": \"This example avoids using terminal alkynes, which could be confused with Sonogashira couplings. It also avoids complex aromatic systems or additional functional groups that might trigger other named reaction classifiers. The use of a simple o-iodoaniline and a symmetrical internal alkyne focuses specifically on the indole ring formation characteristic of the Larock synthesis.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 457,
+    "candidatesTokenCount": 321,
+    "totalTokenCount": 841,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 457
+      }
+    ],
+    "thoughtsTokenCount": 63
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "TczjaYLTC_CA2roPmYOVoQ0"
+}

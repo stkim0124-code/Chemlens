@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Trost Reaction / Allylation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)OC(C)C=C\",\n      \"CC(=O)C(C(=O)OC)C(=O)OC\"\n    ],\n    \"product_smiles\": [\n      \"COC(=O)C(C(=O)OC)C(C)C=C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Pd]\"\n    ],\n    \"rationale\": \"This reaction is a classic textbook example of the Tsuji-Trost allylation. It features a simple acyclic allylic acetate (1-buten-3-yl acetate) as the electrophile and dimethyl malonate as the soft carbon nucleophile. The reaction proceeds via a π-allylpalladium intermediate, and the nucleophile attacks the less substituted terminus of the allyl system, which is characteristic for this reaction with soft nucleophiles. The substrates and product are simple, acyclic, and lack complex functional groups, making it a clear and unambiguous representation of the core transformation.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic substrates (allylic acetate and dimethyl malonate) to avoid overlap with other named reactions. It avoids arenes (preventing confusion with cross-coupling reactions like Suzuki or Heck), complex ring systems, or other reactive functional groups that might trigger unrelated reaction family classifications. The core transformation is clearly the palladium-catalyzed substitution of an allylic leaving group by a stabilized carbanion.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 458,
+    "candidatesTokenCount": 351,
+    "totalTokenCount": 861,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 458
+      }
+    ],
+    "thoughtsTokenCount": 52
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "a9Djaef4Mvzh0-kP6f_q4Q0"
+}

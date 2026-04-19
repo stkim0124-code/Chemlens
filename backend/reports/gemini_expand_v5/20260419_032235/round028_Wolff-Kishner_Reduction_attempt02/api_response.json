@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[K+].[OH-]\"\n    ],\n    \"rationale\": \"This is a canonical textbook example of the Wolff-Kishner reduction, showing the complete deoxygenation of a simple, acyclic, aliphatic ketone (3-hexanone) to the corresponding alkane (n-hexane). The reactants and products are simple, RDKit-parseable, and clearly illustrate the core transformation of C=O to CH2 under basic conditions (hydrazine and KOH).\",\n    \"collision_avoidance_note\": \"This example uses a simple, acyclic, aliphatic ketone to avoid overlap with other named reactions. It avoids aromatic rings (common in Clemmensen reductions), esters (avoids Bouveault-Blanc), and other functional groups that might trigger different named reaction classifications. The transformation is a clear deoxygenation of a ketone to an alkane, specific to the Wolff-Kishner conditions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 447,
+    "candidatesTokenCount": 273,
+    "totalTokenCount": 781,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 447
+      }
+    ],
+    "thoughtsTokenCount": 61
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "IuXjaeG4OqqLvr0PrKiegAo"
+}

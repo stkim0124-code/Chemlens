@@ -1,0 +1,13 @@
+alias,canonical_name,entity_type
+CBr4,carbon tetrabromide,reagent
+Ph3P,triphenylphosphine,reagent
+n-BuLi,n-butyllithium,base
+NCS,N-chlorosuccinimide,oxidant
+DMS,dimethyl sulfide,sulfide_reagent
+Et3N,triethylamine,base
+PPh3,triphenylphosphine,reagent
+AgClO4,silver perchlorate,reagent
+P(OEt)3,triethyl phosphite,phosphite_reagent
+LHMDS,lithium hexamethyldisilazide,base
+NaI,sodium iodide,reagent
+Lawesson's reagent,Lawesson reagent,thionation_reagent

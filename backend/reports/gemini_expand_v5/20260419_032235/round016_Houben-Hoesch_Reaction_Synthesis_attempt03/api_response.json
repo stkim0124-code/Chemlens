@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Houben-Hoesch Reaction/Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"C1=CC(=CC=C1O)O\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)C1=CC(=C(C=C1)O)O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Zn]Cl\",\n      \"Cl\"\n    ],\n    \"rationale\": \"This is a canonical example of the Houben-Hoesch reaction, featuring the acylation of a highly activated, electron-rich phenol (resorcinol) with a simple nitrile (acetonitrile). The reaction is catalyzed by a Lewis acid (zinc chloride) and a Brønsted acid (HCl), leading to the formation of an aryl ketone (2,4-dihydroxyacetophenone) after hydrolysis of the intermediate ketimine salt. The reactants and product are simple, acyclic where possible, and clearly illustrate the core transformation of this named reaction.\",\n    \"collision_avoidance_note\": \"The Houben-Hoesch reaction is a specific type of electrophilic aromatic substitution related to Friedel-Crafts acylation but uses a nitrile and an acid catalyst. This example uses a simple nitrile (acetonitrile) and a highly activated phenol (resorcinol) to distinguish it from general Friedel-Crafts reactions which typically use acyl halides or anhydrides. The use of a simple, non-fused aromatic ring avoids overlap with reactions involving polycyclic aromatic hydrocarbons. The nitrile functionality is key to defining this reaction family.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 369,
+    "candidatesTokenCount": 363,
+    "totalTokenCount": 792,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 369
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "Odjjaf6PH_TS1e8P1vyBiQM"
+}

@@ -1,0 +1,16 @@
+{
+  "family": "Pictet-Spengler Tetrahydroisoquinoline Synthesis",
+  "substrates": [
+    "NCCc1ccccc1",
+    "C=O"
+  ],
+  "products": [
+    "c1ccc2c(c1)CCNC2"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This reaction exemplifies the core Pictet-Spengler transformation: the acid-catalyzed condensation of a β-arylethylamine (phenethylamine) with a simple aldehyde (formaldehyde) to form the characteristic tetrahydroisoquinoline ring system. The reactants are the simplest possible examples for this reaction, making it a canonical and unambiguous representation of the family.",
+  "collision_avoidance_note": "The use of simple, non-functionalized phenethylamine and formaldehyde avoids overlap with other named reactions. The product is a fundamental tetrahydroisoquinoline core, which is specific to this synthesis and avoids motifs common in other cyclizations like Friedel-Crafts alkylations or Bischler-Napieralski reactions (which typically involve amides and lead to dihydroisoquinolines).",
+  "raw_text": "{\n  \"family\": \"Pictet-Spengler Tetrahydroisoquinoline Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"NCCc1ccccc1\",\n      \"C=O\"\n    ],\n    \"product_smiles\": [\n      \"C1CNCc2ccccc21\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This reaction exemplifies the core Pictet-Spengler transformation: the acid-catalyzed condensation of a \\u03b2-arylethylamine (phenethylamine) with a simple aldehyde (formaldehyde) to form the characteristic tetrahydroisoquinoline ring system. The reactants are the simplest possible examples for this reaction, making it a canonical and unambiguous representation of the family.\",\n    \"collision_avoidance_note\": \"The use of simple, non-functionalized phenethylamine and formaldehyde avoids overlap with other named reactions. The product is a fundamental tetrahydroisoquinoline core, which is specific to this synthesis and avoids motifs common in other cyclizations like Friedel-Crafts alkylations or Bischler-Napieralski reactions (which typically involve amides and lead to dihydroisoquinolines).\"\n  }\n}"
+}

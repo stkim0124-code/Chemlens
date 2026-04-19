@@ -1,0 +1,24 @@
+{
+  "family_name": "Regitz Diazo Transfer",
+  "variant": "queryable_only",
+  "summary": {
+    "benchmark_name": "CHEMLENS small benchmark v3",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 27,
+    "top1_accuracy": 1.0,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "changed_cases": [],
+  "reaction_extract_ids": [
+    475
+  ],
+  "extract_molecule_ids": [
+    1902,
+    1903
+  ]
+}

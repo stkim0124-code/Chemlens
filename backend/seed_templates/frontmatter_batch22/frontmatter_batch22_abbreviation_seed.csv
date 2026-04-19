@@ -1,0 +1,19 @@
+alias,canonical_name,entity_type
+KOH,potassium hydroxide,base
+t-BuOK,potassium tert-butoxide,strong_base
+TsNHNH2,p-toluenesulfonylhydrazide,hydrazone_reagent
+NaH,sodium hydride,strong_base
+NaOMe,sodium methoxide,base
+ZnCl2,zinc chloride,Lewis_acid
+TsOH,p-toluenesulfonic acid,acid
+BF3·OEt2,boron trifluoride etherate,Lewis_acid
+Hg(OCOCF3)2,mercury(II) trifluoroacetate,Lewis_acid
+NaI,sodium iodide,halide_source
+LiBr,lithium bromide,halide_source
+MsCl,methanesulfonyl chloride,activating_reagent
+TMSI,trimethylsilyl iodide,iodide_source
+NaNO2,sodium nitrite,nitrosating_agent
+AcOH,acetic acid,solvent
+H2SO4,sulfuric acid,acid
+HCl,hydrochloric acid,acid
+LAH,lithium aluminum hydride,hydride_reductant

@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCC(=O)CC"
+  ],
+  "products": [
+    "CCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic ketone (3-pentanone) to its corresponding alkane (n-pentane). This is the quintessential transformation for the Wolff-Kishner reduction, converting a carbonyl group (C=O) into a methylene group (CH2) under basic conditions using hydrazine. The reactants and product are simple, acyclic, and lack other functional groups, clearly isolating the core transformation.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic ketone, avoiding arenes (which could trigger Friedel-Crafts or other aromatic reactions), esters (Clemmensen reduction often uses amalgams, but avoiding carbonyls that could hydrolyze is good practice), or other reactive functional groups. This specific example is unlikely to be a primary example for other named reactions like Clemmensen (which uses acidic conditions) or Mozingo (which involves a dithioacetal intermediate).",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[K+].[OH-]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic ketone (3-pentanone) to its corresponding alkane (n-pentane). This is the quintessential transformation for the Wolff-Kishner reduction, converting a carbonyl group (C=O) into a methylene group (CH2) under basic conditions using hydrazine. The reactants and product are simple, acyclic, and lack other functional groups, clearly isolating the core transformation.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic ketone, avoiding arenes (which could trigger Friedel-Crafts or other aromatic reactions), esters (Clemmensen reduction often uses amalgams, but avoiding carbonyls that could hydrolyze is good practice), or other reactive functional groups. This specific example is unlikely to be a primary example for other named reactions like Clemmensen (which uses acidic conditions) or Mozingo (which involves a dithioacetal intermediate).\"\n  }\n}"
+}

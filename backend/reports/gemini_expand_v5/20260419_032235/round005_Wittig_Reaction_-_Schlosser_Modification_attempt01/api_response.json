@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wittig Reaction - Schlosser Modification\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC=O\",\n      \"CC[P+](C)(C)C\"\n    ],\n    \"product_smiles\": [\n      \"CC/C=C/C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"C[Li]\",\n      \"C[Li]\",\n      \"C(C)(C)O\"\n    ],\n    \"rationale\": \"This reaction exemplifies the Schlosser modification of the Wittig reaction to achieve E-selectivity with a non-stabilized ylide. Propanal reacts with the ylide derived from ethyltrimethylphosphonium. The key steps involve deprotonation of the initial betaine intermediate with a second equivalent of organolithium (methyllithium) to form a lithiobetaine, which equilibrates to the more stable trans-lithiobetaine. Subsequent protonation (e.g., with t-butanol) and elimination yield the (E)-hex-3-ene product with high stereoselectivity.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic aliphatic substrates (propanal and an ethylphosphonium salt) to generate a simple internal E-alkene. It avoids aromatic groups, which are common in general Wittig examples but could cause collisions with other named reactions involving arenes. The use of a trimethylphosphonium salt instead of the more common triphenylphosphonium salt further reduces aromatic content and focuses on the core transformation. The explicit inclusion of two equivalents of organolithium followed by a proton source highlights the specific conditions of the Schlosser modification, distinguishing it from the standard Wittig reaction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 455,
+    "candidatesTokenCount": 382,
+    "totalTokenCount": 920,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 455
+      }
+    ],
+    "thoughtsTokenCount": 83
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "sM7jadD7Dpmc0-kPzO2qqAM"
+}

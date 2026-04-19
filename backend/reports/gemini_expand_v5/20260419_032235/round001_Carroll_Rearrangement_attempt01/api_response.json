@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Carroll Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)C(C(=O)OCC=C)C\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)CCC=C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Li+][N-](C(C)C)C(C)C\",\n      \"O\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Carroll Rearrangement. It starts with allyl 2-methyl-3-oxobutanoate, a simple acyclic allylic beta-keto ester. Upon treatment with a base like LDA, the enolate is formed. Heating promotes the [3,3]-sigmatropic rearrangement to an intermediate carboxylic acid, which then decarboxylates to yield the final product, hex-5-en-2-one. This example clearly illustrates the core transformation: the conversion of an allylic beta-keto ester to a gamma,delta-unsaturated ketone with the loss of CO2.\",\n    \"collision_avoidance_note\": \"This example uses a simple, acyclic substrate to avoid overlap with more complex named reactions involving rings or aromatic systems. It avoids motifs common in other rearrangements (e.g., diazo compounds, peroxides) and focuses purely on the decarboxylative [3,3]-sigmatropic shift of an allylic beta-keto ester, which is the defining feature of the Carroll Rearrangement. The structure is distinct from the simpler Claisen rearrangement (which uses allyl vinyl ethers or allyl aryl ethers) and the Cope rearrangement (which involves dienes).\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 449,
+    "candidatesTokenCount": 372,
+    "totalTokenCount": 888,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 449
+      }
+    ],
+    "thoughtsTokenCount": 67
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "GczjaYfgO_CA2roPmYOVoQ0"
+}

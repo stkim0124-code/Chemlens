@@ -1,0 +1,16 @@
+{
+  "family": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+  "substrates": [
+    "CCCCN(C)Cl"
+  ],
+  "products": [
+    "CN1CCCC1"
+  ],
+  "reagents": [
+    "O",
+    "[H+]"
+  ],
+  "rationale": "This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. The substrate, N-chloro-N-methylbutan-1-amine, undergoes a 1,5-hydrogen atom transfer upon initiation (e.g., by light or acid), followed by cyclization to form the product, N-methylpyrrolidine. The reaction demonstrates the key features: formation of an N-haloamine, intramolecular hydrogen abstraction from a delta-carbon, and subsequent cyclization to form a five-membered ring.",
+  "collision_avoidance_note": "This example uses a simple acyclic N-haloamine substrate and avoids complex functional groups, arenes, or other reactive motifs that could overlap with different named reactions. The core transformation is the specific intramolecular C-H amination via a radical mechanism, which is characteristic of this reaction and distinct from other cyclization or amination reactions.",
+  "raw_text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CN(Cl)CCCC\"\n    ],\n    \"product_smiles\": [\n      \"C1CCN(C)C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"[H+]\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. The substrate, N-chloro-N-methylbutan-1-amine, undergoes a 1,5-hydrogen atom transfer upon initiation (e.g., by light or acid), followed by cyclization to form the product, N-methylpyrrolidine. The reaction demonstrates the key features: formation of an N-haloamine, intramolecular hydrogen abstraction from a delta-carbon, and subsequent cyclization to form a five-membered ring.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic N-haloamine substrate and avoids complex functional groups, arenes, or other reactive motifs that could overlap with different named reactions. The core transformation is the specific intramolecular C-H amination via a radical mechanism, which is characteristic of this reaction and distinct from other cyclization or amination reactions.\"\n  }\n}"
+}

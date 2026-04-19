@@ -1,0 +1,17 @@
+{
+  "family": "Retro-Claisen Reaction",
+  "substrates": [
+    "CCOC(=O)C(C)C(=O)CC"
+  ],
+  "products": [
+    "CCC(C)=O",
+    "CCOC(C)=O"
+  ],
+  "reagents": [
+    "[Na+].[OH-]",
+    "O"
+  ],
+  "rationale": "This example shows the base-catalyzed cleavage of ethyl 2-methyl-3-oxopentanoate, a simple acyclic beta-keto ester. The reaction breaks the C-C bond between the alpha-carbon and the ketone carbonyl, yielding two simpler carbonyl compounds: butan-2-one and ethyl acetate. This is a classic textbook illustration of the retro-Claisen reaction, which is the reverse of the Claisen condensation.",
+  "collision_avoidance_note": "The reaction is kept simple and acyclic, using a beta-keto ester as the substrate. This avoids complex ring systems (like in the Dieckmann condensation) or symmetrical 1,3-diketones which might be less specific. The use of a simple aqueous base avoids confusion with more complex organometallic reagents or named reactions involving enolates in different contexts.",
+  "raw_text": "{\n  \"family\": \"Retro-Claisen Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)C(C)C(=O)OCC\"\n    ],\n    \"product_smiles\": [\n      \"CCC(=O)C\",\n      \"CCOC(=O)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[OH-].[Na+]\",\n      \"O\"\n    ],\n    \"rationale\": \"This example shows the base-catalyzed cleavage of ethyl 2-methyl-3-oxopentanoate, a simple acyclic beta-keto ester. The reaction breaks the C-C bond between the alpha-carbon and the ketone carbonyl, yielding two simpler carbonyl compounds: butan-2-one and ethyl acetate. This is a classic textbook illustration of the retro-Claisen reaction, which is the reverse of the Claisen condensation.\",\n    \"collision_avoidance_note\": \"The reaction is kept simple and acyclic, using a beta-keto ester as the substrate. This avoids complex ring systems (like in the Dieckmann condensation) or symmetrical 1,3-diketones which might be less specific. The use of a simple aqueous base avoids confusion with more complex organometallic reagents or named reactions involving enolates in different contexts.\"\n  }\n}"
+}

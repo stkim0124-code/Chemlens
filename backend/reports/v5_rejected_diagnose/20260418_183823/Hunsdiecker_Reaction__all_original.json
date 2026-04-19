@@ -1,0 +1,26 @@
+{
+  "family_name": "Hunsdiecker Reaction",
+  "variant": "all_original",
+  "summary": {
+    "benchmark_name": "CHEMLENS small benchmark v3",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 27,
+    "top1_accuracy": 1.0,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "changed_cases": [],
+  "reaction_extract_ids": [
+    534
+  ],
+  "extract_molecule_ids": [
+    2175,
+    2176,
+    2177,
+    2178
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "family": "Alder (ene) Reaction",
+  "substrates": [
+    "C=CC",
+    "C=C"
+  ],
+  "products": [
+    "C=CCC(C)C"
+  ],
+  "reagents": [],
+  "rationale": "This is the simplest possible example of the Alder (ene) reaction, featuring the reaction between propene (the 'ene') and ethene (the 'enophile'). The reaction involves the transfer of an allylic hydrogen from propene to ethene, with the concomitant formation of a new carbon-carbon sigma bond and the shifting of the double bond in the ene component. This example clearly illustrates the key [1,5]-hydride shift and bond formations characteristic of the thermal ene reaction without any extraneous functional groups or stereochemical complexity.",
+  "collision_avoidance_note": "This example uses the most fundamental acyclic alkene reactants (propene and ethene) to avoid structural motifs common in other named reactions. It avoids carbonyls (to prevent confusion with carbonyl-ene reactions which might overlap with Prins or other condensations), heteroatoms (to avoid aza-ene or oxo-ene specific queries), and cyclic systems (to avoid confusion with intramolecular ene or Diels-Alder reactions). The simplicity focuses the query specifically on the core C-C bond-forming and H-transfer mechanism of the parent Alder (ene) reaction.",
+  "raw_text": "{\n  \"family\": \"Alder (ene) Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C=CC\",\n      \"C=C\"\n    ],\n    \"product_smiles\": [\n      \"C=CCC(C)C\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This is the simplest possible example of the Alder (ene) reaction, featuring the reaction between propene (the 'ene') and ethene (the 'enophile'). The reaction involves the transfer of an allylic hydrogen from propene to ethene, with the concomitant formation of a new carbon-carbon sigma bond and the shifting of the double bond in the ene component. This example clearly illustrates the key [1,5]-hydride shift and bond formations characteristic of the thermal ene reaction without any extraneous functional groups or stereochemical complexity.\",\n    \"collision_avoidance_note\": \"This example uses the most fundamental acyclic alkene reactants (propene and ethene) to avoid structural motifs common in other named reactions. It avoids carbonyls (to prevent confusion with carbonyl-ene reactions which might overlap with Prins or other condensations), heteroatoms (to avoid aza-ene or oxo-ene specific queries), and cyclic systems (to avoid confusion with intramolecular ene or Diels-Alder reactions). The simplicity focuses the query specifically on the core C-C bond-forming and H-transfer mechanism of the parent Alder (ene) reaction.\"\n  }\n}"
+}

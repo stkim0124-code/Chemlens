@@ -1,0 +1,9 @@
+{
+  "substrate_smiles": [
+    "C#C[C@H](CC=C)C(=O)OC"
+  ],
+  "product_smiles": [
+    "COC(=O)[C@H]1CC=CC=C1"
+  ],
+  "optional_reagent_smiles": []
+}

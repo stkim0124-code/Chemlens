@@ -1,0 +1,16 @@
+{
+  "family": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+  "substrates": [
+    "CCCCN(C)Cl"
+  ],
+  "products": [
+    "CN1CCCC1"
+  ],
+  "reagents": [
+    "O",
+    "[H+]"
+  ],
+  "rationale": "This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. The substrate, N-chloro-N-methylbutan-1-amine, undergoes a 1,5-hydrogen atom transfer upon initiation (e.g., by light or heat, not explicitly shown as a reagent) to form a carbon-centered radical at the delta-position. This radical then abstracts the chlorine atom from the nitrogen, forming a delta-chloroamine. Subsequent intramolecular nucleophilic substitution, typically promoted by a base (formed in situ or added, here represented by the workup with water/acid leading to the final product), results in the formation of the pyrrolidine ring. This example clearly demonstrates the key C-H functionalization at a remote (delta) position and the formation of a five-membered heterocyclic ring, which are the defining features of this reaction.",
+  "collision_avoidance_note": "The reaction involves an N-haloamine substrate and an intramolecular cyclization to form a pyrrolidine. The structure is kept simple and acyclic to avoid overlap with more complex alkaloid syntheses or other named reactions involving rings. The key transformation is the remote C-H activation and C-N bond formation, which is distinct from intermolecular aminations or reactions involving different functional groups like azides or diazo compounds.",
+  "raw_text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CN(Cl)CCCC\"\n    ],\n    \"product_smiles\": [\n      \"C1CCN(C)C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"[H+]\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. The substrate, N-chloro-N-methylbutan-1-amine, undergoes a 1,5-hydrogen atom transfer upon initiation (e.g., by light or heat, not explicitly shown as a reagent) to form a carbon-centered radical at the delta-position. This radical then abstracts the chlorine atom from the nitrogen, forming a delta-chloroamine. Subsequent intramolecular nucleophilic substitution, typically promoted by a base (formed in situ or added, here represented by the workup with water/acid leading to the final product), results in the formation of the pyrrolidine ring. This example clearly demonstrates the key C-H functionalization at a remote (delta) position and the formation of a five-membered heterocyclic ring, which are the defining features of this reaction.\",\n    \"collision_avoidance_note\": \"The reaction involves an N-haloamine substrate and an intramolecular cyclization to form a pyrrolidine. The structure is kept simple and acyclic to avoid overlap with more complex alkaloid syntheses or other named reactions involving rings. The key transformation is the remote C-H activation and C-N bond formation, which is distinct from intermolecular aminations or reactions involving different functional groups like azides or diazo compounds.\"\n  }\n}"
+}

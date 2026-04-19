@@ -1,0 +1,98 @@
+{
+  "generated_at": "2026-04-18T20:00:08",
+  "mode": "dry-run",
+  "canonical_db": "C:\\chemlens\\backend\\app\\labint.db",
+  "work_db": "C:\\chemlens\\backend\\app\\labint_round9_bridge_work.db",
+  "source_db": "C:\\chemlens\\backend\\app\\labint_v5_stage.db",
+  "benchmark": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+  "salvage_summary": "C:\\chemlens\\backend\\reports\\gemini_rejected_salvage\\20260418_194322\\gemini_salvage_summary.json",
+  "selection_json": "C:\\chemlens\\backend\\gemini_salvage_selected_candidates.json",
+  "baseline": {
+    "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+    "top1_accuracy": 1.0,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "json_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_apply\\20260418_200002\\benchmark_baseline.json",
+    "csv_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_apply\\20260418_200002\\benchmark_baseline.csv",
+    "md_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_apply\\20260418_200002\\benchmark_baseline.md"
+  },
+  "temp_after": {
+    "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\gemini_salvage_apply_jk90vmn3\\labint.db",
+    "top1_accuracy": 1.0,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "json_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_apply\\20260418_200002\\benchmark_temp_after.json",
+    "csv_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_apply\\20260418_200002\\benchmark_temp_after.csv",
+    "md_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_apply\\20260418_200002\\benchmark_temp_after.md"
+  },
+  "guard_pass": true,
+  "guard_reason": "",
+  "temp_apply": [
+    {
+      "family_name": "Finkelstein Reaction",
+      "status": "inserted",
+      "selected_candidate_id": "C2",
+      "inserted_extract_id": 608,
+      "inserted_molecule_ids": [
+        2437,
+        2438,
+        2439
+      ]
+    },
+    {
+      "family_name": "Hunsdiecker Reaction",
+      "status": "inserted",
+      "selected_candidate_id": "C2",
+      "inserted_extract_id": 609,
+      "inserted_molecule_ids": [
+        2440,
+        2441,
+        2442
+      ]
+    }
+  ],
+  "selections": [
+    {
+      "family_name": "Finkelstein Reaction",
+      "selected_candidate_id": "C2",
+      "stage_extract_id": 512,
+      "template_page_no": 170,
+      "candidate": {
+        "candidate_id": "C2",
+        "substrate_smiles": [
+          "ClCCC1CCCCC1"
+        ],
+        "product_smiles": [
+          "ICCC1CCCCC1"
+        ],
+        "optional_reagent_smiles": [
+          "[Na+].[I-]"
+        ],
+        "rationale": "This example demonstrates the Finkelstein reaction on a primary alkyl chloride containing a non-participating cycloalkane ring. The conversion of an alkyl chloride to an alkyl iodide is a classic application of this reaction, highlighting the nucleophilic substitution of a halide by another.",
+        "collision_avoidance_note": "The reaction is a straightforward halide exchange on a primary carbon, characteristic of an SN2 mechanism. The substrate lacks any features that could trigger a Barton radical pathway, such as carboxylic acid derivatives, thioesters, or proximity to radical-stabilizing groups under radical conditions. The simple exchange of Cl for I is diagnostic for the Finkelstein reaction."
+      }
+    },
+    {
+      "family_name": "Hunsdiecker Reaction",
+      "selected_candidate_id": "C2",
+      "stage_extract_id": 534,
+      "template_page_no": 218,
+      "candidate": {
+        "candidate_id": "C2",
+        "substrate_smiles": [
+          "O=C([O-])C1CCCCC1.[Ag+]"
+        ],
+        "product_smiles": [
+          "BrC1CCCCC1"
+        ],
+        "optional_reagent_smiles": [
+          "BrBr"
+        ],
+        "rationale": "This example demonstrates the Hunsdiecker reaction on an alicyclic substrate, converting silver cyclohexanecarboxylate to bromocyclohexane. The loss of the carboxylate group and its replacement with a bromine atom on the saturated ring is a clear and unmistakable topological change, reinforcing the decarboxylative halogenation pattern.",
+        "collision_avoidance_note": "The substrate is a simple silver salt of a cycloalkanecarboxylic acid, which is a canonical Hunsdiecker precursor. It lacks the N-O-C(=S) moiety of a Barton ester, preventing misclassification. The simple saturated ring system avoids any potential for competing reactions that could create ambiguity."
+      }
+    }
+  ],
+  "apply_results": [],
+  "work_apply_results": []
+}

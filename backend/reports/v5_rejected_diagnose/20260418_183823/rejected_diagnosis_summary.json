@@ -1,0 +1,985 @@
+{
+  "baseline": {
+    "top1_accuracy": 1.0,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0
+  },
+  "rejected_count": 13,
+  "families": [
+    {
+      "family_name": "Diels-Alder Cycloaddition",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_only",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "all_original",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        }
+      ]
+    },
+    {
+      "family_name": "Regitz Diazo Transfer",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_only",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "all_original",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        }
+      ]
+    },
+    {
+      "family_name": "Claisen Condensation / Claisen Reaction",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_only",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "all_original",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        }
+      ]
+    },
+    {
+      "family_name": "Enyne Metathesis",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_only",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "all_original",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        }
+      ]
+    },
+    {
+      "family_name": "Finkelstein Reaction",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_only",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "all_original",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        }
+      ]
+    },
+    {
+      "family_name": "Fries Rearrangement",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_only",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "all_original",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        }
+      ]
+    },
+    {
+      "family_name": "Hofmann-Loffler-Freytag Reaction",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_only",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "all_original",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        }
+      ]
+    },
+    {
+      "family_name": "Horner-Wadsworth-Emmons Olefination",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_only",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "all_original",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        }
+      ]
+    },
+    {
+      "family_name": "Houben-Hoesch Reaction",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_only",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "all_original",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        }
+      ]
+    },
+    {
+      "family_name": "Hunsdiecker Reaction",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_only",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "all_original",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        }
+      ]
+    },
+    {
+      "family_name": "Krapcho Dealkoxycarbonylation",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_only",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "all_original",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        }
+      ]
+    },
+    {
+      "family_name": "Michael Addition Reaction",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_only",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "all_original",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        }
+      ]
+    },
+    {
+      "family_name": "Mitsunobu Reaction",
+      "variants": [
+        {
+          "variant": "minimal_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_pair",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_pair_set",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_intermediate",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "core_plus_reagent",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "queryable_only",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        },
+        {
+          "variant": "all_original",
+          "status": "accepted",
+          "top1_accuracy": 1.0,
+          "top3_accuracy": 1.0,
+          "violations": 0,
+          "changed_case_count": 0,
+          "first_changed_case": "",
+          "first_changed_top1": ""
+        }
+      ]
+    }
+  ]
+}

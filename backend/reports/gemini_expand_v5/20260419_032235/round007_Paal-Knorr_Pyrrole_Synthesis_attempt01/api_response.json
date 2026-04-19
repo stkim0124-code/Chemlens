@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Paal-Knorr Pyrrole Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)CCC(=O)C\",\n      \"N\"\n    ],\n    \"product_smiles\": [\n      \"Cc1cccc(C)n1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CC(=O)O\"\n    ],\n    \"rationale\": \"This reaction exemplifies the Paal-Knorr Pyrrole Synthesis by condensing the simplest symmetrical 1,4-dicarbonyl compound, hexane-2,5-dione, with ammonia to form 2,5-dimethylpyrrole. This is the most frequently cited textbook example, clearly demonstrating the core transformation of a 1,4-dicarbonyl into a pyrrole ring. The reactants and product are simple, acyclic (substrate), and lack complex functional groups, making it an ideal canonical representation.\",\n    \"collision_avoidance_note\": \"The use of a simple aliphatic 1,4-diketone (hexane-2,5-dione) and ammonia avoids motifs common to other named reactions. It lacks arenes (preventing collision with syntheses like Fischer Indole), esters (avoiding Hantzsch-type syntheses), and other reactive groups, ensuring the query is specific to the Paal-Knorr transformation.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 469,
+    "candidatesTokenCount": 308,
+    "totalTokenCount": 845,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 469
+      }
+    ],
+    "thoughtsTokenCount": 68
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "iM_jaY31F-C00-kPpI7XeA"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Birch Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC1=CC=CC=C1\"\n    ],\n    \"product_smiles\": [\n      \"CC1=CCCC=C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Li]\",\n      \"N\",\n      \"CCO\"\n    ],\n    \"rationale\": \"This is a canonical textbook example of the Birch reduction of an electron-donating group (methyl) substituted benzene ring. Toluene is reduced to 1-methyl-1,4-cyclohexadiene. The electron-donating methyl group directs the reduction to produce a product where the methyl group is on one of the double bonds, which is the characteristic outcome for such substrates. This example is simple, acyclic (substituent), and clearly illustrates the core transformation of the Birch reduction without introducing complex functionalities.\",\n    \"collision_avoidance_note\": \"This example uses a simple monosubstituted benzene ring (toluene) to avoid overly generic arene motifs that could collide with other aromatic transformations like Friedel-Crafts or Sandmeyer reactions. The product is a specific, non-conjugated diene, which is the hallmark of the Birch reduction, distinguishing it from catalytic hydrogenation which would lead to full saturation. The reagents (Li/NH3/EtOH) are highly characteristic of this reaction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 416,
+    "candidatesTokenCount": 309,
+    "totalTokenCount": 792,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 416
+      }
+    ],
+    "thoughtsTokenCount": 67
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "DMzjaZXLFfuj2roPtdbcgA8"
+}

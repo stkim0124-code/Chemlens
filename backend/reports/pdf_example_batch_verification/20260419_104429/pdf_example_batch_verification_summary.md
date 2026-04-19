@@ -1,0 +1,42 @@
+# PDF Example Gemini Batch Verification
+
+- stage_db: `C:\chemlens\backend\app\labint_pdf_examples_stage.db`
+- extraction_table: `pdf_example_extractions`
+- latest_extract_run: `20260419_104311`
+- rdkit_available: `True`
+
+## Totals
+
+- page_rows: **770**
+- region_rows: **2795**
+- extraction_rows: **65**
+
+## Latest Extraction
+
+- rows: **35**
+- status_counts: `{'error': 34, 'ok': 1}`
+- target_name_nonnull: **0**
+- reactant_smiles_nonnull: **0**
+- product_smiles_nonnull: **0**
+- either_smiles_nonnull: **0**
+- both_smiles_nonnull: **0**
+- reactant_parse_safe: **0**
+- product_parse_safe: **0**
+- both_parse_safe: **0**
+- text_only_count: **0**
+- family_mismatch_pairs: **0**
+- family_mismatch_count: **0**
+- family_mismatch_ratio: **None**
+
+## Family Row Counts (latest extraction run)
+
+- Baeyer-Villiger Oxidation/Rearrangement: **4**
+- Barton-McCombie Radical Deoxygenation Reaction: **4**
+- Diels-Alder Cycloaddition: **4**
+- Ritter Reaction: **4**
+- Tsuji-Wilkinson Decarbonylation Reaction: **4**
+- Aldol Reaction: **3**
+- Alkene (Olefin) Metathesis: **3**
+- Pinner Reaction: **3**
+- Schwartz Hydrozirconation: **3**
+- Swern Oxidation: **3**

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Nenitzescu Indole Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=C1C=CC(=O)C=C1\",\n      \"CC(=C)N\"\n    ],\n    \"product_smiles\": [\n      \"Cc1c[nH]c2ccc(O)cc12\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This reaction shows the condensation of the simplest benzoquinone (1,4-benzoquinone) with the simplest enamine derived from a ketone (2-aminopropene, from acetone and ammonia). This combination directly forms the core 5-hydroxy-2-methylindole structure, which is a classic and fundamental example of the Nenitzescu indole synthesis. The reactants are small, acyclic (where possible), and clearly illustrate the key bond formations: Michael addition of the enamine to the quinone followed by cyclization and aromatization.\",\n    \"collision_avoidance_note\": \"The use of 1,4-benzoquinone and a simple enamine to form a 5-hydroxyindole is highly specific to the Nenitzescu synthesis. This avoids generic arene motifs, complex ring systems, or other reactive functional groups that could overlap with unrelated named reactions like Fischer indole synthesis (which uses hydrazines), Friedel-Crafts reactions, or general quinone chemistry.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 434,
+    "candidatesTokenCount": 313,
+    "totalTokenCount": 807,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 434
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "e8zjac3EKdWk2roPtuKdyQM"
+}

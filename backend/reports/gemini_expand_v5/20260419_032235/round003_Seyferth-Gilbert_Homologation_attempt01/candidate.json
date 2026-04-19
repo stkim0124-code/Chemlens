@@ -1,0 +1,16 @@
+{
+  "family": "Seyferth-Gilbert Homologation",
+  "substrates": [
+    "O=CC1CCCCC1"
+  ],
+  "products": [
+    "C#CC1CCCCC1"
+  ],
+  "reagents": [
+    "CN=[N+]=C(C(C)=O)P(=O)(OC)OC",
+    "O=C([O-])[O-].[K+].[K+]"
+  ],
+  "rationale": "This reaction demonstrates the conversion of an aldehyde (cyclohexanecarbaldehyde) to a terminal alkyne (ethynylcyclohexane) using the Ohira-Bestmann reagent, a common variant of the Seyferth-Gilbert homologation. The substrate is a simple, non-aromatic aldehyde, which is a classic starting material for this transformation. The product is the corresponding one-carbon homologated alkyne. This example clearly illustrates the core C=O to C#C-H transformation.",
+  "collision_avoidance_note": "The use of a simple aliphatic aldehyde and the specific Ohira-Bestmann reagent avoids overlap with Wittig-type reactions (which form alkenes) or Corey-Fuchs reactions (which use a different phosphine-based reagent). The substrate is non-aromatic to prevent collisions with reactions involving aryl groups. The transformation is a specific homologation, not a simple reduction or deoxygenation.",
+  "raw_text": "{\n  \"family\": \"Seyferth-Gilbert Homologation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=CC1CCCCC1\"\n    ],\n    \"product_smiles\": [\n      \"C#CC1CCCCC1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CN=[N+]=C(P(=O)(OC)OC)C(=O)C\",\n      \"O=C([O-])[O-].[K+].[K+]\"\n    ],\n    \"rationale\": \"This reaction demonstrates the conversion of an aldehyde (cyclohexanecarbaldehyde) to a terminal alkyne (ethynylcyclohexane) using the Ohira-Bestmann reagent, a common variant of the Seyferth-Gilbert homologation. The substrate is a simple, non-aromatic aldehyde, which is a classic starting material for this transformation. The product is the corresponding one-carbon homologated alkyne. This example clearly illustrates the core C=O to C#C-H transformation.\",\n    \"collision_avoidance_note\": \"The use of a simple aliphatic aldehyde and the specific Ohira-Bestmann reagent avoids overlap with Wittig-type reactions (which form alkenes) or Corey-Fuchs reactions (which use a different phosphine-based reagent). The substrate is non-aromatic to prevent collisions with reactions involving aryl groups. The transformation is a specific homologation, not a simple reduction or deoxygenation.\"\n  }\n}"
+}

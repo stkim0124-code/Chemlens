@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This reaction is a classic textbook example of the Ritter reaction. Tert-butanol is protonated by sulfuric acid and loses water to form the stable tert-butyl carbocation. This carbocation is then trapped by the nucleophilic nitrogen of acetonitrile, forming a nitrilium ion intermediate. Subsequent hydrolysis yields N-tert-butylacetamide. All reactants and products are simple, acyclic, and lack complex functional groups, making this a clear and unambiguous representation of the core transformation.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic aliphatic substrates (tert-butanol and acetonitrile) to avoid overlap with other named reactions involving aromatic rings, complex ring systems, or other reactive functional groups. The formation of a simple secondary amide from a tertiary alcohol and a nitrile is highly characteristic of the Ritter reaction and unlikely to be confused with other transformations.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 435,
+    "candidatesTokenCount": 286,
+    "totalTokenCount": 775,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 435
+      }
+    ],
+    "thoughtsTokenCount": 54
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "ddHjad2QJNG00-kP7arC0A0"
+}

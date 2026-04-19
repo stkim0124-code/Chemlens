@@ -1,0 +1,10 @@
+alias,canonical_name,entity_type
+Pd(OAc)2,palladium(II) acetate,oxidant
+TMSCl,trimethylsilyl chloride,silylating_agent
+TMSOTf,trimethylsilyl trifluoromethanesulfonate,silylating_agent
+TiCl4,titanium tetrachloride,Lewis_acid
+BF3·OEt2,boron trifluoride diethyl etherate,Lewis_acid
+t-BuONO,tert-butyl nitrite,nitrosating_agent
+MeCN,acetonitrile,solvent
+HN3,hydrazoic acid,azide_reagent
+DMAP,4-dimethylaminopyridine,acylation_catalyst

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh](P(c1ccccc1)(c1ccccc1)c1ccccc1)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to its corresponding alkane (heptane) using Wilkinson's catalyst (RhCl(PPh3)3). This is a classic textbook example that clearly illustrates the deformylation of an aldehyde to an alkane, which is the core transformation of the Tsuji-Wilkinson decarbonylation. The use of a simple, saturated alkyl chain avoids ambiguity and potential side reactions associated with more complex substrates.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde, avoiding aromatic rings which could be confused with various cross-coupling or arene-functionalization reactions. It also avoids unsaturated systems (alkenes, alkynes) that might suggest hydroformylation or other addition reactions. The transformation is a clear C-C bond cleavage (deformylation), distinct from decarboxylation (loss of CO2) or deoxygenation (e.g., Wolff-Kishner, Clemmensen) which reduce carbonyls to methylenes without C-C bond cleavage.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 440,
+    "candidatesTokenCount": 366,
+    "totalTokenCount": 885,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 440
+      }
+    ],
+    "thoughtsTokenCount": 79
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "2drjaZKPB5ifrfcPldS3wQ0"
+}

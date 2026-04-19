@@ -1,0 +1,23 @@
+You are generating exactly one benchmark-safe canonical example for the named reaction family "Enyne Metathesis".
+
+Return exactly one candidate with candidate_id "C1".
+
+Diagnosis context:
+- changed_cases: 2
+- first_case hijacked: barton_radical_rxn_353_exact_extract
+- wrong top1 family observed in benchmark: Enyne Metathesis
+- cluster avoidance: Avoid Barton-like hijack patterns: thiohydroxamate ester, radical bromination, peroxide/hv motifs, decarboxylative halogenation confusion, generic leaving-group activation.
+
+Goal: create a textbook Ru-catalyzed enyne metathesis example. Must clearly show one alkene + one alkyne reorganizing into a metathesis-derived diene or ring-closed product. Avoid halogen-rich or radical-looking substrates.
+
+Hard rules:
+- broad regeneration is forbidden
+- generate exactly one candidate only
+- keep optional reagents to at most 1-2 entries
+- keep rationale under 120 characters
+- keep collision_avoidance_note under 120 characters
+- do not use markdown fences
+- output only JSON
+
+Return JSON only in this exact schema:
+{"family": "Enyne Metathesis", "candidate": {"candidate_id": "C1", "substrate_smiles": ["..."], "product_smiles": ["..."], "optional_reagent_smiles": ["..."], "rationale": "short rationale", "collision_avoidance_note": "short collision note"}}

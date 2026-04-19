@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCCC(=O)CC"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane) using hydrazine (NN) and potassium hydroxide ([K+].[OH-]), which are the classic reagents for the Wolff-Kishner reduction. The substrate is symmetrical and avoids stereochemical complexity. The transformation is a clear deoxygenation of a carbonyl to a methylene group, which is the defining feature of this reaction.",
+  "collision_avoidance_note": "This example uses a simple, acyclic aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/alkylation), strained rings (e.g., Favorskii rearrangement), or other functional groups that might trigger different named reactions. It specifically avoids aldehydes which could undergo aldol-type side reactions, and avoids substrates prone to elimination. The Clemmensen reduction is the acidic counterpart, but this example's basic conditions clearly distinguish it.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[K+].[OH-]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane) using hydrazine (NN) and potassium hydroxide ([K+].[OH-]), which are the classic reagents for the Wolff-Kishner reduction. The substrate is symmetrical and avoids stereochemical complexity. The transformation is a clear deoxygenation of a carbonyl to a methylene group, which is the defining feature of this reaction.\",\n    \"collision_avoidance_note\": \"This example uses a simple, acyclic aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/alkylation), strained rings (e.g., Favorskii rearrangement), or other functional groups that might trigger different named reactions. It specifically avoids aldehydes which could undergo aldol-type side reactions, and avoids substrates prone to elimination. The Clemmensen reduction is the acidic counterpart, but this example's basic conditions clearly distinguish it.\"\n  }\n}"
+}

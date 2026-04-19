@@ -1,0 +1,15 @@
+{
+  "family": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+  "substrates": [
+    "CC(=O)Oc1ccccc1"
+  ],
+  "products": [
+    "CC(=O)c1ccccc1O"
+  ],
+  "reagents": [
+    "[Al+3].[Cl-].[Cl-].[Cl-]"
+  ],
+  "rationale": "The Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone is a classic textbook example. It clearly demonstrates the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, which is the core transformation of this reaction family. The use of phenyl acetate as the substrate is the simplest possible aromatic ester for this reaction. The product is a stable hydroxy aryl ketone. This example is specific to the Fries rearrangement and avoids complex functional groups.",
+  "collision_avoidance_note": "This example uses a simple phenyl acetate substrate, avoiding larger, more complex aromatic systems that could overlap with other named reactions involving arenes. It specifically shows an acyl migration, distinguishing it from rearrangements like the Claisen (allyl migration) or Hofmann-Martius (alkyl migration). The reaction is a rearrangement, not a substitution or coupling, further reducing potential for collision.",
+  "raw_text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Al+3].[Cl-].[Cl-].[Cl-]\"\n    ],\n    \"rationale\": \"The Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone is a classic textbook example. It clearly demonstrates the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, which is the core transformation of this reaction family. The use of phenyl acetate as the substrate is the simplest possible aromatic ester for this reaction. The product is a stable hydroxy aryl ketone. This example is specific to the Fries rearrangement and avoids complex functional groups.\",\n    \"collision_avoidance_note\": \"This example uses a simple phenyl acetate substrate, avoiding larger, more complex aromatic systems that could overlap with other named reactions involving arenes. It specifically shows an acyl migration, distinguishing it from rearrangements like the Claisen (allyl migration) or Hofmann-Martius (alkyl migration). The reaction is a rearrangement, not a substitution or coupling, further reducing potential for collision.\"\n  }\n}"
+}

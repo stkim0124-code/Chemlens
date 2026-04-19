@@ -1,0 +1,77 @@
+{
+  "family_name": "Mitsunobu Reaction",
+  "variant": "all_original",
+  "summary": {
+    "benchmark_name": "CHEMLENS small benchmark v3",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 24,
+    "top1_accuracy": 0.8889,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "changed_cases": [
+    {
+      "case_id": "buchner_403_exact_extract",
+      "expected_family": "Buchner Reaction",
+      "baseline_top1_family": "Buchner Reaction",
+      "current_top1_family": "Mitsunobu Reaction",
+      "baseline_top1_correct": true,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Buchner Reaction | Malonic Ester Synthesis | Cornforth Rearrangement",
+      "current_top3_families": "Mitsunobu Reaction | Buchner Reaction | Malonic Ester Synthesis",
+      "baseline_top3_scores": "1.249 | 1.187 | 1.129",
+      "current_top3_scores": "1.272 | 1.249 | 1.187",
+      "baseline_notes": "Exact extract query from Buchner example currently used as regression case.",
+      "current_notes": "Exact extract query from Buchner example currently used as regression case."
+    },
+    {
+      "case_id": "barton_radical_rxn_353_exact_extract",
+      "expected_family": "Barton Radical Decarboxylation Reaction",
+      "baseline_top1_family": "Barton Radical Decarboxylation Reaction",
+      "current_top1_family": "Mitsunobu Reaction",
+      "baseline_top1_correct": true,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Barton Radical Decarboxylation Reaction | Jones Oxidation/Oxidation of Alcohols by Chromium Reagents | Bamford-Stevens-Shapiro Olefination",
+      "current_top3_families": "Mitsunobu Reaction | Barton Radical Decarboxylation Reaction | Jones Oxidation/Oxidation of Alcohols by Chromium Reagents",
+      "baseline_top3_scores": "0.344 | 0.273 | 0.258",
+      "current_top3_scores": "0.504 | 0.344 | 0.273",
+      "baseline_notes": "Named family variant using explicit Reaction suffix.",
+      "current_notes": "Named family variant using explicit Reaction suffix."
+    },
+    {
+      "case_id": "barton_mccombie_359_boundary_extract",
+      "expected_family": "Barton-Mccombie Radical Deoxygenation Reaction",
+      "baseline_top1_family": "Barton Radical Decarboxylation Reaction",
+      "current_top1_family": "Mitsunobu Reaction",
+      "baseline_top1_correct": true,
+      "current_top1_correct": false,
+      "baseline_top3_families": "Barton Radical Decarboxylation Reaction | Jones Oxidation/Oxidation of Alcohols by Chromium Reagents | Bamford-Stevens-Shapiro Olefination",
+      "current_top3_families": "Mitsunobu Reaction | Barton Radical Decarboxylation Reaction | Jones Oxidation/Oxidation of Alcohols by Chromium Reagents",
+      "baseline_top3_scores": "0.344 | 0.273 | 0.258",
+      "current_top3_scores": "0.504 | 0.344 | 0.273",
+      "baseline_notes": "Boundary case: deoxygenation-like transformation that currently retrieves Barton family neighbor first.",
+      "current_notes": "Boundary case: deoxygenation-like transformation that currently retrieves Barton family neighbor first."
+    }
+  ],
+  "reaction_extract_ids": [
+    563
+  ],
+  "extract_molecule_ids": [
+    2307,
+    2308,
+    2309,
+    2310,
+    2311,
+    2312
+  ],
+  "insert_stats": {
+    "inserted_extract_rows": 1,
+    "inserted_molecule_rows": 6,
+    "total_changes_delta": 7
+  },
+  "identical_to_baseline": false
+}

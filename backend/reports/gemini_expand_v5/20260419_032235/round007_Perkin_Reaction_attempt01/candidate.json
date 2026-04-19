@@ -1,0 +1,16 @@
+{
+  "family": "Perkin Reaction",
+  "substrates": [
+    "O=Cc1ccccc1",
+    "CC(=O)OC(C)=O"
+  ],
+  "products": [
+    "O=C(O)/C=C/c1ccccc1"
+  ],
+  "reagents": [
+    "CC(=O)[O-].[Na+]"
+  ],
+  "rationale": "This is the classic textbook example of the Perkin reaction: the condensation of benzaldehyde with acetic anhydride, catalyzed by sodium acetate, to form cinnamic acid. It perfectly illustrates the core transformation of an aromatic aldehyde and an acid anhydride into an α,β-unsaturated carboxylic acid. The reactants and product are simple, acyclic (except for the essential aromatic ring), and unambiguously represent the Perkin reaction.",
+  "collision_avoidance_note": "The use of a simple aromatic aldehyde (benzaldehyde) and the simplest symmetric anhydride (acetic anhydride) avoids overlap with more complex condensation reactions. The product, cinnamic acid, is the archetypal product of this reaction. This specific example is distinct from aldol, Claisen, or Knoevenagel condensations due to the use of an acid anhydride as the nucleophile precursor and the formation of a carboxylic acid product after hydrolysis.",
+  "raw_text": "{\n  \"family\": \"Perkin Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=Cc1ccccc1\",\n      \"CC(=O)OC(=O)C\"\n    ],\n    \"product_smiles\": [\n      \"O=C(O)/C=C/c1ccccc1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Na+].[O-]C(=O)C\"\n    ],\n    \"rationale\": \"This is the classic textbook example of the Perkin reaction: the condensation of benzaldehyde with acetic anhydride, catalyzed by sodium acetate, to form cinnamic acid. It perfectly illustrates the core transformation of an aromatic aldehyde and an acid anhydride into an \\u03b1,\\u03b2-unsaturated carboxylic acid. The reactants and product are simple, acyclic (except for the essential aromatic ring), and unambiguously represent the Perkin reaction.\",\n    \"collision_avoidance_note\": \"The use of a simple aromatic aldehyde (benzaldehyde) and the simplest symmetric anhydride (acetic anhydride) avoids overlap with more complex condensation reactions. The product, cinnamic acid, is the archetypal product of this reaction. This specific example is distinct from aldol, Claisen, or Knoevenagel condensations due to the use of an acid anhydride as the nucleophile precursor and the formation of a carboxylic acid product after hydrolysis.\"\n  }\n}"
+}

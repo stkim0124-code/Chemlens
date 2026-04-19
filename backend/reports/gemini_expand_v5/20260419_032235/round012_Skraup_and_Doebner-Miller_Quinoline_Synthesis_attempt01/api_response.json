@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Skraup and Doebner-Miller Quinoline Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"Nc1ccccc1\",\n      \"OCC(O)CO\"\n    ],\n    \"product_smiles\": [\n      \"n1ccc2ccccc2c1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is the classic Skraup synthesis, reacting aniline with glycerol under acidic conditions to form the parent quinoline heterocycle. Glycerol dehydrates in situ to acrolein, which then undergoes a Michael addition with aniline, followed by cyclization and oxidation. This example is the simplest and most fundamental representation of the reaction family.\",\n    \"collision_avoidance_note\": \"The reaction uses simple, non-functionalized aniline and glycerol to produce the unsubstituted quinoline core. This avoids complex substituents, arene-rich structures, or other reactive functional groups that could overlap with other named reactions involving anilines or heterocycle synthesis. The use of glycerol as the three-carbon source is characteristic of the Skraup variant.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 442,
+    "candidatesTokenCount": 269,
+    "totalTokenCount": 794,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 442
+      }
+    ],
+    "thoughtsTokenCount": 83
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "etTjab3ZAZe7vr0P2c7c8Qw"
+}

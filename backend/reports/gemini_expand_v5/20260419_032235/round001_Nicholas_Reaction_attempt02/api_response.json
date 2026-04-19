@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Nicholas Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(O)C#CC.[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[Co].[Co]\"\n    ],\n    \"product_smiles\": [\n      \"CC(C#N)C#CC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"B(F)(F)F.O(CC)CC\",\n      \"C[Si](C)(C)C#N\"\n    ],\n    \"rationale\": \"This example demonstrates the core transformation of the Nicholas reaction: the Lewis acid-promoted substitution of a propargylic alcohol with a nucleophile. The substrate is a simple, acyclic propargylic alcohol complexed with dicobalt hexacarbonyl. The reaction with trimethylsilyl cyanide (TMSCN) in the presence of BF3.OEt2 results in the substitution of the hydroxyl group with a cyanide group, forming a propargyl nitrile. This showcases the generation and trapping of the cobalt-stabilized propargylic cation, which is the key mechanistic feature of the reaction. The subsequent decomplexation step to yield the free alkyne is implied but not explicitly shown to focus on the key C-C bond formation step.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic alkyne and a common nucleophile (cyanide) to avoid structural motifs that could overlap with other named reactions. It avoids complex ring systems, arenes, or other functional groups that might trigger false positives for reactions like Friedel-Crafts, Reissert, or Strecker reactions. The explicit inclusion of the cobalt carbonyl complex in the reactant SMILES makes the transformation highly specific to the Nicholas reaction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 429,
+    "candidatesTokenCount": 413,
+    "totalTokenCount": 900,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 429
+      }
+    ],
+    "thoughtsTokenCount": 58
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "jczjadqFOo2k0-kPgvXwiQg"
+}

@@ -1,0 +1,50 @@
+{
+  "labint.db": {
+    "manual_page_knowledge": 757,
+    "manual_page_entities": 1849,
+    "distinct_pages": 757,
+    "duplicate_pages": 0,
+    "page_range": [
+      2,
+      810
+    ],
+    "missing_502_553": 52,
+    "batch57_58_59": [
+      [
+        "named_reactions_frontmatter_batch57",
+        29
+      ],
+      [
+        "named_reactions_frontmatter_batch58",
+        228
+      ]
+    ],
+    "queryable": 368,
+    "tier1": 282,
+    "tier2": 86
+  },
+  "labint_round9_bridge_work.db": {
+    "manual_page_knowledge": 757,
+    "manual_page_entities": 1849,
+    "distinct_pages": 757,
+    "duplicate_pages": 0,
+    "page_range": [
+      2,
+      810
+    ],
+    "missing_502_553": 52,
+    "batch57_58_59": [
+      [
+        "named_reactions_frontmatter_batch57",
+        29
+      ],
+      [
+        "named_reactions_frontmatter_batch58",
+        228
+      ]
+    ],
+    "queryable": null,
+    "tier1": null,
+    "tier2": null
+  }
+}

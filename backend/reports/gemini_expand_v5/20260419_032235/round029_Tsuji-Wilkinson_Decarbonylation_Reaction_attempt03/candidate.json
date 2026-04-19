@@ -1,0 +1,15 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "substrates": [
+    "CCCCCCC=O"
+  ],
+  "products": [
+    "CCCCCCC"
+  ],
+  "reagents": [
+    "[Cl][Rh]([PH](c1ccccc1)(c1ccccc1)c1ccccc1)([PH](c1ccccc1)(c1ccccc1)c1ccccc1)[PH](c1ccccc1)(c1ccccc1)c1ccccc1"
+  ],
+  "rationale": "This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to its corresponding alkane (heptane) using Wilkinson's catalyst. This is a classic, textbook example of the Tsuji-Wilkinson decarbonylation, clearly illustrating the conversion of an R-CHO group to an R-H group. The substrate is simple and avoids complex functional groups or cyclic structures that might cause collisions with other named reactions.",
+  "collision_avoidance_note": "The substrate is a simple aliphatic aldehyde, avoiding aromatic rings (which could trigger Vilsmeier-Haack, Gattermann, etc.), unsaturation near the carbonyl (avoids hydroformylation/oxo process), or other reactive functional groups. The transformation is a direct deformylation (R-CHO -> R-H), which is highly specific to this reaction and distinct from decarboxylation (R-COOH -> R-H) or deoxygenation (e.g., Wolff-Kishner, Clemmensen).",
+  "raw_text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh](P(c1ccccc1)(c1ccccc1)c1ccccc1)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple, acyclic aliphatic aldehyde (heptanal) to its corresponding alkane (heptane) using Wilkinson's catalyst. This is a classic, textbook example of the Tsuji-Wilkinson decarbonylation, clearly illustrating the conversion of an R-CHO group to an R-H group. The substrate is simple and avoids complex functional groups or cyclic structures that might cause collisions with other named reactions.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde, avoiding aromatic rings (which could trigger Vilsmeier-Haack, Gattermann, etc.), unsaturation near the carbonyl (avoids hydroformylation/oxo process), or other reactive functional groups. The transformation is a direct deformylation (R-CHO -> R-H), which is highly specific to this reaction and distinct from decarboxylation (R-COOH -> R-H) or deoxygenation (e.g., Wolff-Kishner, Clemmensen).\"\n  }\n}"
+}

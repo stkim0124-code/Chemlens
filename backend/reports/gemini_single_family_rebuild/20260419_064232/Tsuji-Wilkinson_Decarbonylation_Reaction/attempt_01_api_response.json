@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"candidate_id\": \"C1\",\n    \"substrate_smiles\": [\n      \"O=CC1(CCCC1)C1CCCCC1\"\n    ],\n    \"product_smiles\": [\n      \"C1CCC(C2CCCC2)CC1\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This example demonstrates the decarbonylation of a non-enolizable, sterically hindered aldehyde, 1-cyclohexylspiro[4.4]nonane-1-carbaldehyde, to the corresponding alkane. The removal of the formyl group (C=O) from a quaternary carbon center is a classic application of the Tsuji-Wilkinson reaction, highlighting its utility for complex substrates where other decarbonylation methods might fail or lead to side reactions. The spirocyclic structure provides a clear, unambiguous transformation where the aldehyde is cleanly excised to form a C-H bond, making it an excellent canonical example.\",\n    \"collision_avoidance_note\": \"The substrate is a non-enolizable aldehyde with significant steric bulk around the formyl group. This choice avoids simple aliphatic aldehydes (e.g., octanal) which could be decarbonylated by various radical or thermal methods, thus ensuring the reaction is specific to transition-metal catalysis. It also avoids aromatic aldehydes which can undergo decarbonylation under different catalytic systems. The spirocyclic system prevents potential side reactions like beta-hydride elimination that could occur with simpler cyclic or acyclic aldehydes.\",\n    \"reagents_text\": \"Tris(triphenylphosphine)rhodium(I) chloride (Wilkinson's catalyst)\",\n    \"conditions_text"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "MAX_TOKENS",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 292,
+    "candidatesTokenCount": 380,
+    "totalTokenCount": 756,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 292
+      }
+    ],
+    "thoughtsTokenCount": 84
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "0frjafPnFN__2roPiaiKqAw"
+}

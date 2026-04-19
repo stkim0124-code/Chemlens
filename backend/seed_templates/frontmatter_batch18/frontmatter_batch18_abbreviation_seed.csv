@@ -1,0 +1,14 @@
+alias,canonical_name,entity_type
+TiCl4,titanium tetrachloride,Lewis_acid
+TBAF,tetrabutylammonium fluoride,fluoride_source
+Yb(OTf)3,ytterbium(III) trifluoromethanesulfonate,Lewis_acid
+LDA,lithium diisopropylamide,base
+NaH,sodium hydride,base
+NIS,N-iodosuccinimide,halogenating_reagent
+Oxone,potassium peroxymonosulfate,oxidant
+NaHMDS,sodium hexamethyldisilazide,base
+BF3·Et2O,boron trifluoride diethyl etherate,Lewis_acid
+SmI2,samarium(II) iodide,reductant
+LAH,lithium aluminium hydride,hydride_reductant
+AIBN,azobisisobutyronitrile,radical_initiator
+TMSCl,trimethylsilyl chloride,silylating_reagent

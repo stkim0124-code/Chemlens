@@ -1,0 +1,17 @@
+{
+  "family": "Sonogashira Cross-Coupling",
+  "substrates": [
+    "C#CC",
+    "Brc1ccccc1"
+  ],
+  "products": [
+    "CC#Cc1ccccc1"
+  ],
+  "reagents": [
+    "[Cu][I]",
+    "CCN(CC)CC"
+  ],
+  "rationale": "This reaction represents the canonical Sonogashira cross-coupling between a simple terminal alkyne (propyne) and a simple aryl halide (bromobenzene). The reactants are small, acyclic where possible, and lack complex functional groups, clearly illustrating the core C(sp)-C(sp2) bond formation. The product, 1-phenyl-1-propyne, is the direct result of this coupling. This example is a fundamental textbook case used to introduce the reaction.",
+  "collision_avoidance_note": "This example uses simple, non-functionalized reactants (propyne and bromobenzene) to avoid overlap with other named reactions that might involve more complex substrates (e.g., heterocycles, carbonyls, or other reactive functional groups). It avoids motifs common to other cross-coupling reactions like boronic acids (Suzuki), organotins (Stille), or organozincs (Negishi) by focusing on the defining terminal alkyne component. The simplicity isolates the core transformation of the Sonogashira reaction.",
+  "raw_text": "{\n  \"family\": \"Sonogashira Cross-Coupling\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C#CC\",\n      \"BrC1=CC=CC=C1\"\n    ],\n    \"product_smiles\": [\n      \"CC#CC1=CC=CC=C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"I[Cu]\",\n      \"N(CC)(CC)CC\"\n    ],\n    \"rationale\": \"This reaction represents the canonical Sonogashira cross-coupling between a simple terminal alkyne (propyne) and a simple aryl halide (bromobenzene). The reactants are small, acyclic where possible, and lack complex functional groups, clearly illustrating the core C(sp)-C(sp2) bond formation. The product, 1-phenyl-1-propyne, is the direct result of this coupling. This example is a fundamental textbook case used to introduce the reaction.\",\n    \"collision_avoidance_note\": \"This example uses simple, non-functionalized reactants (propyne and bromobenzene) to avoid overlap with other named reactions that might involve more complex substrates (e.g., heterocycles, carbonyls, or other reactive functional groups). It avoids motifs common to other cross-coupling reactions like boronic acids (Suzuki), organotins (Stille), or organozincs (Negishi) by focusing on the defining terminal alkyne component. The simplicity isolates the core transformation of the Sonogashira reaction.\"\n  }\n}"
+}

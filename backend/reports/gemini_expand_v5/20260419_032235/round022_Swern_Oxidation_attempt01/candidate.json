@@ -1,0 +1,17 @@
+{
+  "family": "Swern Oxidation",
+  "substrates": [
+    "CCCCO"
+  ],
+  "products": [
+    "CCCC=O"
+  ],
+  "reagents": [
+    "CS(C)=O",
+    "O=C(Cl)C(=O)Cl",
+    "CCN(CC)CC"
+  ],
+  "rationale": "The Swern oxidation of a simple primary alcohol, 1-butanol, to the corresponding aldehyde, butanal, is a classic textbook example. This reaction clearly demonstrates the transformation of a primary alcohol to an aldehyde, which is a key feature of this named reaction. The reactants and products are simple, acyclic, and lack complex functional groups, making it an unambiguous and canonical representation of the Swern oxidation.",
+  "collision_avoidance_note": "This example uses a simple, acyclic primary alcohol (1-butanol) to avoid structural motifs that could overlap with other named reactions. It avoids aromatic rings (common in many other reactions), complex stereocenters, or other reactive functional groups. The product is a simple aldehyde, which is the characteristic outcome for a primary alcohol under Swern conditions, distinguishing it from over-oxidation to a carboxylic acid seen with stronger oxidants.",
+  "raw_text": "{\n  \"family\": \"Swern Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(C)C\",\n      \"O=C(Cl)C(=O)Cl\",\n      \"N(CC)(CC)CC\"\n    ],\n    \"rationale\": \"The Swern oxidation of a simple primary alcohol, 1-butanol, to the corresponding aldehyde, butanal, is a classic textbook example. This reaction clearly demonstrates the transformation of a primary alcohol to an aldehyde, which is a key feature of this named reaction. The reactants and products are simple, acyclic, and lack complex functional groups, making it an unambiguous and canonical representation of the Swern oxidation.\",\n    \"collision_avoidance_note\": \"This example uses a simple, acyclic primary alcohol (1-butanol) to avoid structural motifs that could overlap with other named reactions. It avoids aromatic rings (common in many other reactions), complex stereocenters, or other reactive functional groups. The product is a simple aldehyde, which is the characteristic outcome for a primary alcohol under Swern conditions, distinguishing it from over-oxidation to a carboxylic acid seen with stronger oxidants.\"\n  }\n}"
+}

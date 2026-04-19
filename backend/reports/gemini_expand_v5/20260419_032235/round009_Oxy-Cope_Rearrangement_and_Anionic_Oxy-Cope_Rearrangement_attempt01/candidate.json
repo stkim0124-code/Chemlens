@@ -1,0 +1,16 @@
+{
+  "family": "Oxy-Cope Rearrangement and Anionic Oxy-Cope Rearrangement",
+  "substrates": [
+    "C=CC(C)(O)C=C"
+  ],
+  "products": [
+    "C=CCCC(=O)C=C"
+  ],
+  "reagents": [
+    "[H-].[K+]",
+    "C1CCC(CCCC2CCCC(CCCC3CCCOO3)OO2)OC1"
+  ],
+  "rationale": "This example shows the anionic oxy-Cope rearrangement of 3-methyl-1,5-hexadien-3-ol. The substrate is a simple, acyclic 1,5-dien-3-ol, which is the core functional group for this transformation. The reaction, promoted by a base like potassium hydride (KH) and a crown ether, proceeds via a [3,3]-sigmatropic rearrangement of the corresponding potassium alkoxide. The initial product is an enolate, which upon workup (implied) gives the final unsaturated ketone product, hex-5-en-2-one. This is a classic textbook example demonstrating the dramatic rate acceleration and irreversible nature of the anionic variant, which is a key feature of this reaction family.",
+  "collision_avoidance_note": "The structure is a simple acyclic dienol, avoiding complex ring systems, arenes, or other reactive functional groups that could cause collisions with other named reactions. The core transformation is clearly the [3,3]-sigmatropic rearrangement of a 1,5-dien-3-ol to an unsaturated ketone, which is the defining characteristic of the Oxy-Cope rearrangement. The inclusion of KH and 18-crown-6 specifically points to the anionic variant, which is a major subclass of this family.",
+  "raw_text": "{\n  \"family\": \"Oxy-Cope Rearrangement and Anionic Oxy-Cope Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C=CC(O)(C)C=C\"\n    ],\n    \"product_smiles\": [\n      \"C=CC(=O)CCC=C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[K+].[H-]\",\n      \"O1CCCC(O1)CCCC(O1)CCCC(O1)CCCC(O1)CCCC1\"\n    ],\n    \"rationale\": \"This example shows the anionic oxy-Cope rearrangement of 3-methyl-1,5-hexadien-3-ol. The substrate is a simple, acyclic 1,5-dien-3-ol, which is the core functional group for this transformation. The reaction, promoted by a base like potassium hydride (KH) and a crown ether, proceeds via a [3,3]-sigmatropic rearrangement of the corresponding potassium alkoxide. The initial product is an enolate, which upon workup (implied) gives the final unsaturated ketone product, hex-5-en-2-one. This is a classic textbook example demonstrating the dramatic rate acceleration and irreversible nature of the anionic variant, which is a key feature of this reaction family.\",\n    \"collision_avoidance_note\": \"The structure is a simple acyclic dienol, avoiding complex ring systems, arenes, or other reactive functional groups that could cause collisions with other named reactions. The core transformation is clearly the [3,3]-sigmatropic rearrangement of a 1,5-dien-3-ol to an unsaturated ketone, which is the defining characteristic of the Oxy-Cope rearrangement. The inclusion of KH and 18-crown-6 specifically points to the anionic variant, which is a major subclass of this family.\"\n  }\n}"
+}

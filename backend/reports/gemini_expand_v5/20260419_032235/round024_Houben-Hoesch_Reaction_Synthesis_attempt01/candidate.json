@@ -1,0 +1,17 @@
+{
+  "family": "Houben-Hoesch Reaction/Synthesis",
+  "substrates": [
+    "CC#N",
+    "Oc1ccc(O)cc1"
+  ],
+  "products": [
+    "CC(=O)c1ccc(O)c(O)c1"
+  ],
+  "reagents": [
+    "[Cl][Zn][Cl]",
+    "Cl"
+  ],
+  "rationale": "This is a canonical example of the Houben-Hoesch reaction, featuring the acylation of a highly activated, electron-rich phenol (resorcinol) with a simple nitrile (acetonitrile). The reaction is catalyzed by a Lewis acid (zinc chloride) and a Brønsted acid (HCl), leading to an aryl ketone after hydrolysis of the intermediate ketimine. This example clearly illustrates the key transformation: the formation of a C(aryl)-C(acyl) bond from an arene and a nitrile.",
+  "collision_avoidance_note": "This example uses a simple, highly activated phenol (resorcinol) and a simple aliphatic nitrile (acetonitrile) to avoid overlap with more general Friedel-Crafts acylation reactions, which typically use acyl halides or anhydrides. The use of a nitrile as the acylating agent is the defining characteristic of the Houben-Hoesch reaction. The simple, acyclic nature of the nitrile and the specific poly-hydroxylated benzene ring make it a distinct and specific example for this named reaction family.",
+  "raw_text": "{\n  \"family\": \"Houben-Hoesch Reaction/Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"C1=CC(=CC=C1O)O\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)C1=CC(=C(C=C1)O)O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Zn]Cl\",\n      \"Cl\"\n    ],\n    \"rationale\": \"This is a canonical example of the Houben-Hoesch reaction, featuring the acylation of a highly activated, electron-rich phenol (resorcinol) with a simple nitrile (acetonitrile). The reaction is catalyzed by a Lewis acid (zinc chloride) and a Brønsted acid (HCl), leading to an aryl ketone after hydrolysis of the intermediate ketimine. This example clearly illustrates the key transformation: the formation of a C(aryl)-C(acyl) bond from an arene and a nitrile.\",\n    \"collision_avoidance_note\": \"This example uses a simple, highly activated phenol (resorcinol) and a simple aliphatic nitrile (acetonitrile) to avoid overlap with more general Friedel-Crafts acylation reactions, which typically use acyl halides or anhydrides. The use of a nitrile as the acylating agent is the defining characteristic of the Houben-Hoesch reaction. The simple, acyclic nature of the nitrile and the specific poly-hydroxylated benzene ring make it a distinct and specific example for this named reaction family.\"\n  }\n}"
+}

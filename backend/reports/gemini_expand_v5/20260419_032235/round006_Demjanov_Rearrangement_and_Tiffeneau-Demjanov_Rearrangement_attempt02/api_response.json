@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Demjanov Rearrangement and Tiffeneau-Demjanov Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C1CC(C(N)C1)O\"\n    ],\n    \"product_smiles\": [\n      \"O=C1CCCC1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=N[O-].[Na+]\",\n      \"Cl\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Tiffeneau-Demjanov rearrangement, a specific and widely recognized variant of the Demjanov rearrangement. It involves the diazotization of a 1-aminomethylcycloalkanol (here, 1-aminomethylcyclobutanol) with nitrous acid, leading to a one-carbon ring expansion to form a cycloalkanone (cyclopentanone). This example clearly illustrates the key transformation: the conversion of a primary amine adjacent to a hydroxyl group on a ring into a diazonium salt, followed by rearrangement and ring expansion.\",\n    \"collision_avoidance_note\": \"The reaction is a ring expansion, which is characteristic of this family. However, it avoids generic motifs like arenes (preventing collision with Sandmeyer, Schiemann reactions), simple acyclic amines (which could be generic diazotization), or complex polycyclic systems. The specific 1-aminomethylcycloalkanol to cycloalkanone transformation is highly characteristic of the Tiffeneau-Demjanov variant and less likely to be confused with other named reactions involving diazonium salts or rearrangements.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 385,
+    "candidatesTokenCount": 356,
+    "totalTokenCount": 831,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 385
+      }
+    ],
+    "thoughtsTokenCount": 90
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "Uc_jacOnPNuf0-kPo8C76Qg"
+}

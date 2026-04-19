@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"von Pechmann Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"Oc1ccccc1\",\n      \"CC(=O)CC(=O)OC\"\n    ],\n    \"product_smiles\": [\n      \"CC1=CC(=O)OC2=CC=CC=C12\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is the classic textbook example of the von Pechmann reaction, showing the condensation of the simplest phenol with a simple \\u03b2-keto ester (methyl acetoacetate) under acid catalysis (sulfuric acid) to form 4-methylcoumarin. This example clearly illustrates the core transformation: the formation of a coumarin ring system from a phenol and a \\u03b2-keto ester.\",\n    \"collision_avoidance_note\": \"The reaction is specific to coumarin synthesis from a phenol and a \\u03b2-keto ester. It avoids generic esterification or transesterification motifs by involving a specific cyclization. It is distinct from the Perkin reaction (which uses an anhydride and an aldehyde) and the Knoevenagel condensation (which involves active methylene compounds with aldehydes/ketones but typically doesn't start with a phenol to form a coumarin in this manner).\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 424,
+    "candidatesTokenCount": 315,
+    "totalTokenCount": 792,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 424
+      }
+    ],
+    "thoughtsTokenCount": 53
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "x9PjafOjKbHa1e8P3M6cyQ8"
+}

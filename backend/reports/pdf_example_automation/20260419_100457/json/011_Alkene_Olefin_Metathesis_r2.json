@@ -1,0 +1,29 @@
+{
+  "family_name": "Alkene (Olefin) Metathesis",
+  "region_confidence": 0.95,
+  "example_target_name": "(–)-Griseoviridin",
+  "example_summary": "The total synthesis of the streptogramin antibiotic, (–)-griseoviridin, was accomplished by A.I. Meyers. A key step is a novel Ring-Closing Metathesis (RCM) involving a highly diastereoselective triene to diene macrocyclic ring formation to construct the 23-membered unsaturated ring. The reaction was performed using Grubbs' first-generation catalyst.",
+  "extracts": [
+    {
+      "extract_kind": "application_example",
+      "reaction_family_name": "Alkene (Olefin) Metathesis",
+      "transformation_text": "diastereoselective triene to diene macrocyclic ring formation",
+      "reactants_text": null,
+      "products_text": "(–)-Griseoviridin",
+      "intermediates_text": null,
+      "reagents_text": "PPTS, acetone / H2O",
+      "catalysts_text": "Grubbs catalyst (Cl2(PCy3)2Ru=CHPh)",
+      "solvents_text": "PhCH3, acetone / H2O",
+      "temperature_text": "100 °C",
+      "time_text": null,
+      "yield_text": "37-42% (step 1); 68% (step 2)",
+      "workup_text": null,
+      "conditions_text": "1. (30 mol%) Grubbs catalyst, PhCH3, 100 °C, 0.001M; 2. PPTS, acetone / H2O",
+      "notes_text": "The natural product was obtained as a single diastereomer; no other olefin isomers were formed in the ring-closing step.",
+      "reactant_smiles": null,
+      "product_smiles": null,
+      "smiles_confidence": 0.0,
+      "extraction_confidence": 0.95
+    }
+  ]
+}

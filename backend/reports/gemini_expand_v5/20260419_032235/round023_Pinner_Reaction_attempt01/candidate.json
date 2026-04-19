@@ -1,0 +1,16 @@
+{
+  "family": "Pinner Reaction",
+  "substrates": [
+    "CC#N",
+    "CCO"
+  ],
+  "products": [
+    "CCOC(C)=[NH2+].[Cl-]"
+  ],
+  "reagents": [
+    "Cl"
+  ],
+  "rationale": "This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and a simple alcohol (ethanol) in the presence of dry hydrogen chloride. This is the quintessential first step of the Pinner reaction, representing the core transformation without proceeding to subsequent hydrolysis or aminolysis steps, which could be confused with other named reactions. The reactants and product are small, acyclic, and devoid of complex functional groups, making it a clear and unambiguous example.",
+  "collision_avoidance_note": "The chosen example is the formation of the Pinner salt itself, which is the defining step. By not showing the subsequent hydrolysis to an ester or aminolysis to an amidine, it avoids overlap with general esterification or amidine synthesis reactions. The use of simple, non-aromatic substrates (acetonitrile, ethanol) prevents potential collisions with reactions involving aromatic rings or more complex functional groups.",
+  "raw_text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and a simple alcohol (ethanol) in the presence of dry hydrogen chloride. This is the quintessential first step of the Pinner reaction, representing the core transformation without proceeding to subsequent hydrolysis or aminolysis steps, which could be confused with other named reactions. The reactants and product are small, acyclic, and devoid of complex functional groups, making it a clear and unambiguous example.\",\n    \"collision_avoidance_note\": \"The chosen example is the formation of the Pinner salt itself, which is the defining step. By not showing the subsequent hydrolysis to an ester or aminolysis to an amidine, it avoids overlap with general esterification or amidine synthesis reactions. The use of simple, non-aromatic substrates (acetonitrile, ethanol) prevents potential collisions with reactions involving aromatic rings or more complex functional groups.\"\n  }\n}"
+}

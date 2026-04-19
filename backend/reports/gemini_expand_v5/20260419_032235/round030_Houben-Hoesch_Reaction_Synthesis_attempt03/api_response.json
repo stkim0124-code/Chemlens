@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Houben-Hoesch Reaction/Synthesis\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"COc1cc(OC)cc(OC)c1\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1cc(OC)cc(OC)c1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Zn]Cl\",\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction shows the acylation of a highly activated, electron-rich aromatic ring (1,3,5-trimethoxybenzene) with a simple nitrile (acetonitrile) to form an aryl ketone. This is the classic transformation for the Houben-Hoesch reaction, using a Lewis acid (ZnCl2) and a protic acid (HCl) as catalysts. The substrates are simple and acyclic where possible, clearly illustrating the core C-C bond formation and electrophilic aromatic substitution mechanism.\",\n    \"collision_avoidance_note\": \"This example avoids using phenol (which could trigger Fries or Reimer-Tiemann queries) and uses a simple nitrile instead of more complex acylating agents. The use of a highly activated methoxy-substituted benzene ring is characteristic of the Houben-Hoesch reaction, distinguishing it from the more general Friedel-Crafts acylation which typically uses less activated arenes and acyl halides/anhydrides.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 369,
+    "candidatesTokenCount": 323,
+    "totalTokenCount": 759,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 369
+      }
+    ],
+    "thoughtsTokenCount": 67
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "UubjaZiMILfZ1e8PxZqwmQM"
+}

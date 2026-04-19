@@ -1,0 +1,7 @@
+{
+  "summary": {},
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"C:\\chemlens\\backend\\run_named_reaction_benchmark_small.py\", line 301, in <module>\n    main()\n  File \"C:\\chemlens\\backend\\run_named_reaction_benchmark_small.py\", line 192, in main\n    res = module._search_by_reaction(req)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\chemlens\\backend\\app\\evidence_search.py\", line 1831, in _search_by_reaction\n    query_molecules.extend(_build_query_molecules(item, role=role_name))\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\chemlens\\backend\\app\\evidence_search.py\", line 1096, in _build_query_molecules\n    raise HTTPException(status_code=400, detail=f\"Invalid SMILES component(s): {', '.join(errors[:5])}\")\nfastapi.exceptions.HTTPException: 400: Invalid SMILES component(s): O=C(OC1ccccn1=S)CCC\n",
+  "runner_returncode": 1,
+  "benchmark_file": "C:\\chemlens\\backend\\named_reaction_benchmark_v4.json"
+}

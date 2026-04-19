@@ -1,0 +1,9 @@
+alias,canonical_name,entity_type
+SnCl2,stannous chloride,reductant
+TREN,tris(2-aminoethyl)amine,ligand
+Pd(dppf)2,bis(diphenylphosphinoferrocene)palladium(II) complex,catalyst
+Ni-Al,Raney nickel alloy,reductant
+NaCN,sodium cyanide,nucleophilic_catalyst
+PhLi,phenyllithium,organolithium
+MeNHNH2,methylhydrazine,reagent
+NH2NH2,hydrazine,reagent

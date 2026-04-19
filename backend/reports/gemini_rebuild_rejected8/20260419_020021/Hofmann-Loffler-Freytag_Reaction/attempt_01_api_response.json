@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"substrate_smiles\": [\n    \"CCCCCN(C)Cl\"\n  ],\n  \"product_smiles\": [\n    \"CN1CCCC1\"\n  ],\n  \"optional_reagent_smiles\": []\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 218,
+    "candidatesTokenCount": 57,
+    "totalTokenCount": 343,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 218
+      }
+    ],
+    "thoughtsTokenCount": 68
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "_7jjabaPIZa20-kPoN7KoA4"
+}

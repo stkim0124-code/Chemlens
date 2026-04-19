@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Roush Asymmetric Allylation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC=O\",\n      \"C=CCB1OC(C(=O)OC(C)C)C(C(=O)OC(C)C)O1\"\n    ],\n    \"product_smiles\": [\n      \"C=CC[C@H](C)O\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This reaction shows the asymmetric allylation of acetaldehyde, the simplest prochiral aldehyde, using the (R,R)-diisopropyl tartrate-derived allylboronate. This is a classic textbook example demonstrating the core transformation: the enantioselective formation of a homoallylic alcohol from an aldehyde and a chiral allylboronate reagent. The stereochemistry of the product is determined by the well-defined Zimmerman-Traxler-like transition state involving the tartrate-derived chiral auxiliary.\",\n    \"collision_avoidance_note\": \"The substrate is a simple aliphatic aldehyde (acetaldehyde) and the reagent is the specific tartrate-derived allylboronate, which is the hallmark of the Roush reaction. This avoids generic carbonyl additions or other allylmetal reactions (e.g., Brown, Keck) by explicitly including the key chiral reagent. The simple, acyclic structures prevent overlap with more complex natural product synthesis examples or intramolecular variants.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 444,
+    "candidatesTokenCount": 315,
+    "totalTokenCount": 832,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 444
+      }
+    ],
+    "thoughtsTokenCount": 73
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "UdTjad30Mv6V1e8PkumfqQM"
+}

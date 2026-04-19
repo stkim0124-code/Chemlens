@@ -1,0 +1,32 @@
+You are generating exactly ONE benchmark-safe canonical example for the named reaction family "Pinner Reaction".
+
+Goal:
+Create a very clear Pinner reaction example using a substituted aryl nitrile that becomes an imidate ester under acidic alcoholic conditions. The candidate must behave like a reaction-query canonical example and must avoid broad generic single-smiles hijack.
+
+Hard constraints:
+- Return exactly ONE candidate only.
+- Use parse-safe substrate/product SMILES only.
+- Prefer a substituted aryl nitrile, not a simple alkyl nitrile.
+- Prefer an ethyl or methyl imidate ester product with the same aryl group retained.
+- Do NOT encode dry HCl, protonated salts, or solvent as reagent SMILES.
+- Put all reagent and condition information in text fields only.
+- Do NOT output an amide product. It must be an imidate-type / Pinner-type product.
+- Avoid carboxylic acids, thioesters, radical motifs, diazo motifs, decarboxylation motifs, and long alkyl chains.
+- Avoid stage-seed copying.
+- The substrate/product pair must clearly indicate Pinner chemistry and should not resemble Ritter or Houben-Hoesch chemistry.
+- JSON only.
+
+Return JSON in this exact schema:
+{
+  "family": "Pinner Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": ["..."],
+    "product_smiles": ["..."],
+    "optional_reagent_smiles": [],
+    "rationale": "...",
+    "collision_avoidance_note": "...",
+    "reagents_text": "ethanol, dry HCl",
+    "conditions_text": "acidic alcoholysis of aryl nitrile"
+  }
+}

@@ -1,0 +1,9 @@
+You are generating a benchmark-safe replacement canonical example for the named reaction family 'Regitz Diazo Transfer'.
+Attempt index: 1.
+Goal: produce ONE replacement candidate only.
+Hard constraints:
+- Propose a textbook Regitz diazo transfer where an active methylene compound becomes a diazo derivative. Avoid aryl-carbene insertion, ring expansion, cyclopropanation, and any Buchner-like diazo-arene topology.
+- Avoid these collision signals: diazo_arene_combo, ring_expansion.
+- Do NOT copy the existing stage topology exactly. Current stage reactants: ['CCOC(=O)CC(=O)OCC']; products: ['CCOC(=O)C(=[N+]=[N-])C(=O)OCC']; reagents: [].
+- Keep the example chemically simple, textbook-like, and RDKit-parseable.
+- Return JSON only in this exact schema: {"substrate_smiles":[...],"product_smiles":[...],"optional_reagent_smiles":[...]}

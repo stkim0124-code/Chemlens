@@ -1,0 +1,17 @@
+{
+  "family": "Sharpless Asymmetric Epoxidation",
+  "substrates": [
+    "C=CCO"
+  ],
+  "products": [
+    "OC[C@@H]1CO1"
+  ],
+  "reagents": [
+    "CC(C)(C)OO",
+    "CC(C)[O][Ti]([O]C(C)C)([O]C(C)C)[O]C(C)C",
+    "CCOC(=O)[C@@H](O)[C@H](O)OC(=O)CC"
+  ],
+  "rationale": "This reaction shows the enantioselective epoxidation of the simplest primary allylic alcohol, allyl alcohol, to (R)-glycidol. This is a classic textbook example of the Sharpless Asymmetric Epoxidation. The reagents listed are tert-butyl hydroperoxide (TBHP) as the oxidant, titanium(IV) isopropoxide as the catalyst, and (+)-diethyl tartrate ((+)-DET) as the chiral ligand, which directs the stereochemistry to the (R)-epoxide according to the Sharpless mnemonic.",
+  "collision_avoidance_note": "The substrate is a simple, acyclic primary allylic alcohol, which is the specific functional group required for this reaction. This avoids complex structures or other reactive functional groups that might trigger unrelated named reaction queries. The product is a simple chiral epoxide, directly resulting from the epoxidation of the double bond. This specific transformation is highly characteristic of the Sharpless epoxidation and unlikely to be confused with other epoxidation methods that are not specific to allylic alcohols or are not enantioselective.",
+  "raw_text": "{\n  \"family\": \"Sharpless Asymmetric Epoxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C=CCO\"\n    ],\n    \"product_smiles\": [\n      \"C1[C@H](O1)CO\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CC(C)(C)OO\",\n      \"CC(C)O[Ti](OC(C)C)(OC(C)C)OC(C)C\",\n      \"O=C(O[C@H]([C@H](O)C(=O)OCC)O)CC\"\n    ],\n    \"rationale\": \"This reaction shows the enantioselective epoxidation of the simplest primary allylic alcohol, allyl alcohol, to (R)-glycidol. This is a classic textbook example of the Sharpless Asymmetric Epoxidation. The reagents listed are tert-butyl hydroperoxide (TBHP) as the oxidant, titanium(IV) isopropoxide as the catalyst, and (+)-diethyl tartrate ((+)-DET) as the chiral ligand, which directs the stereochemistry to the (R)-epoxide according to the Sharpless mnemonic.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, acyclic primary allylic alcohol, which is the specific functional group required for this reaction. This avoids complex structures or other reactive functional groups that might trigger unrelated named reaction queries. The product is a simple chiral epoxide, directly resulting from the epoxidation of the double bond. This specific transformation is highly characteristic of the Sharpless epoxidation and unlikely to be confused with other epoxidation methods that are not specific to allylic alcohols or are not enantioselective.\"\n  }\n}"
+}

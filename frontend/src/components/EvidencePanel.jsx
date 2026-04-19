@@ -80,6 +80,8 @@ export default function EvidencePanel({ data, loading, error }) {
   const results = data?.results || [];
   const queryComponents = data?.query_components || [];
   const reactionComponents = data?.reaction_components || null;
+  const noConfidentHit = data?.no_confident_hit ?? false;
+  const singleProfile = data?.single_smiles_profile || null;
 
   return (
     <div style={{ marginTop: 16, border: "1px solid #ddd", borderRadius: 12, background: "#fff", overflow: "hidden" }}>
@@ -117,12 +119,59 @@ export default function EvidencePanel({ data, loading, error }) {
                 <strong>Query components:</strong> {queryComponents.map((c) => `${c.role || "unknown"}:${c.smiles}`).join(" ; ")}
               </div>
             ) : null}
+
+            {/* Patch-S1: single SMILES 분석 결과 표시 */}
+            {singleProfile ? (
+              <div style={{ marginTop: 8, fontSize: 12, lineHeight: 1.5, color: "#4b5563" }}>
+                <strong>분자 프로파일:</strong> {singleProfile.inferred_role} 추정
+                {singleProfile.active_signals?.length ? ` · 활성 신호: ${singleProfile.active_signals.join(", ")}` : ""}
+              </div>
+            ) : null}
           </>
         ) : null}
       </div>
 
+      {/* Patch-S3: no_confident_hit 배너 */}
+      {data && noConfidentHit && results.length > 0 ? (
+        <div style={{
+          margin: "10px 12px 0",
+          padding: "10px 14px",
+          borderRadius: 10,
+          background: "#fffbeb",
+          border: "1px solid #f0d060",
+          fontSize: 12,
+          color: "#78540a",
+          display: "flex",
+          alignItems: "flex-start",
+          gap: 8,
+        }}>
+          <span style={{ fontSize: 16, lineHeight: 1 }}>⚠️</span>
+          <div>
+            <strong>참고용 결과입니다.</strong> 검색된 구조와 가장 유사한 evidence도 신뢰도가 낮습니다.
+            반응 화살표(reaction SMILES)로 다시 검색하거나, 유사도 컷오프를 조정해보세요.
+            {data.pruned_mismatch_count > 0 ? ` (낮은 신뢰도 ${data.pruned_mismatch_count}개 제거됨)` : ""}
+          </div>
+        </div>
+      ) : null}
+
+      {/* 결과 없음 */}
+      {data && noConfidentHit && results.length === 0 ? (
+        <div style={{
+          margin: "10px 12px",
+          padding: "10px 14px",
+          borderRadius: 10,
+          background: "#f8f9fc",
+          border: "1px solid #dde3ef",
+          fontSize: 13,
+          color: "#4b5563",
+        }}>
+          🔍 <strong>신뢰할 만한 hit가 없습니다.</strong> 이 구조와 매칭되는 Named Reaction evidence를 찾지 못했습니다.
+          반응식 형태(reactant→product)로 입력하시거나, 더 큰 분자 구조로 시도해보세요.
+        </div>
+      ) : null}
+
       <div style={{ padding: 12 }}>
-        {!results.length ? (
+        {!results.length && !noConfidentHit ? (
           <div style={{ fontSize: 13, opacity: 0.75 }}>
             아직 연결된 evidence가 없습니다. 반응 화살표가 있다면 reactant와 product를 모두 배치해 보시고, 다른 구조 또는 유사도 컷을 시도해보세요.
           </div>
@@ -134,16 +183,18 @@ export default function EvidencePanel({ data, loading, error }) {
             const yieldMeta = item.yield_summary ? `수율 ${item.yield_summary}` : null;
             const pageMeta = item.source_page || (item.page_no ? `p.${item.page_no}` : null);
             const rightMeta = [pageMeta, yieldMeta].filter(Boolean).join(" · ");
+            const isLowConfidence = item.confidence_label === "참고용";
             return (
               <div
                 key={`${item.extract_id}-${idx}`}
                 style={{
-                  border: "1px solid #ececec",
+                  border: `1px solid ${isLowConfidence ? "#e8dff8" : "#ececec"}`,
                   borderRadius: 12,
                   padding: 14,
                   marginBottom: 12,
-                  background: "#fff",
+                  background: isLowConfidence ? "#fdfbff" : "#fff",
                   boxShadow: "0 1px 2px rgba(15,23,42,0.03)",
+                  opacity: isLowConfidence ? 0.88 : 1,
                 }}
               >
                 <div style={{ display: "flex", justifyContent: "space-between", gap: 12, alignItems: "flex-start" }}>
@@ -162,6 +213,15 @@ export default function EvidencePanel({ data, loading, error }) {
                     {rightMeta ? <div style={{ marginTop: 6, fontSize: 11, color: "#6b7280", fontWeight: 700 }}>{rightMeta}</div> : null}
                   </div>
                 </div>
+
+                {/* Patch-S2: coarse_gate_notes / delta_notes 표시 */}
+                {(item.coarse_gate_notes?.length || item.delta_notes?.length) ? (
+                  <div style={{ marginTop: 8, padding: "6px 10px", borderRadius: 8, background: "#fdf6ee", border: "1px solid #f5dec8", fontSize: 11, color: "#7c4a0a" }}>
+                    {[...(item.coarse_gate_notes || []), ...(item.delta_notes || [])].map((note, ni) => (
+                      <div key={ni}>· {note}</div>
+                    ))}
+                  </div>
+                ) : null}
 
                 <div style={{ marginTop: 10, padding: 12, borderRadius: 10, background: "#f8fafc", border: "1px solid #ebeff5" }}>
                   <div style={{ fontSize: 12, fontWeight: 800, color: "#334155", marginBottom: 2 }}>실험 요약</div>

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=CCCCCCCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh]([P](c1ccccc1)(c1ccccc1)c1ccccc1)([P](c1ccccc1)(c1ccccc1)c1ccccc1)[P](c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple, long-chain aliphatic aldehyde (nonanal) to its corresponding alkane (octane) using Wilkinson's catalyst. This is a classic textbook example that clearly illustrates the deformylation of an aldehyde to an alkane, which is the core transformation of the Tsuji-Wilkinson reaction. The acyclic, saturated substrate avoids ambiguity with other reaction families.\",\n    \"collision_avoidance_note\": \"The use of a simple, saturated aliphatic aldehyde avoids overlap with reactions involving aromatic aldehydes (which could be confused with various condensation or coupling reactions) or acyl halides (which could be confused with Rosenmund reduction or other acyl halide-specific transformations). The direct conversion of an aldehyde to an alkane is specific to this decarbonylation and avoids collision with common oxidation/reduction or decarboxylation reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 440,
+    "candidatesTokenCount": 317,
+    "totalTokenCount": 817,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 440
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "UuLjabj1K5fE1e8P-8fg6QI"
+}

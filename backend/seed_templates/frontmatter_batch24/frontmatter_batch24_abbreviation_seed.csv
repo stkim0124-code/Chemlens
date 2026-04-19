@@ -1,0 +1,40 @@
+alias,canonical_name,entity_type
+CO,carbon monoxide,gas_reagent
+HCl,hydrogen chloride,acid
+AlCl3,aluminum chloride,Lewis_acid
+FeCl3,iron(III) chloride,Lewis_acid
+Cu2Cl2,copper(I) chloride,Lewis_acid
+Zn(CN)2,zinc cyanide,cyanide_source
+HCN,hydrogen cyanide,formylation_reagent
+ZnCl2,zinc chloride,Lewis_acid
+NaCN,sodium cyanide,cyanide_source
+K2CO3,potassium carbonate,base
+DMF,"N,N-dimethylformamide",solvent
+CuCl2,copper(II) chloride,copper_salt
+NH3(aq),aqueous ammonia,base
+EtOH,ethanol,solvent
+Cu(OAc)2,copper(II) acetate,copper_salt
+MeOH,methanol,solvent
+pyridine,pyridine,solvent_base
+CuCl,copper(I) chloride,copper_salt
+TMEDA,tetramethylethylenediamine,ligand
+Pd(0),palladium(0),palladium_catalyst
+CuI,copper(I) iodide,copper_salt
+THF,tetrahydrofuran,solvent
+Mg,magnesium,metal_reductant
+BF3·Et2O,boron trifluoride etherate,Lewis_acid
+LDA,lithium diisopropylamide,strong_base
+15-crown-5,15-crown-5,additive
+CeCl3,cerium(III) chloride,Lewis_acid
+EtMgBr,ethylmagnesium bromide,grignard_reagent
+SmI2,samarium(II) iodide,single_electron_reductant
+t-BuOK,potassium tert-butoxide,strong_base
+MsCl,methanesulfonyl chloride,sulfonylating_agent
+(i-Pr)2NEt,diisopropylethylamine,base
+Ag2O,silver oxide,oxidant
+CaCO3,calcium carbonate,base
+(S)-(-)-proline,L-proline,organocatalyst
+DCSA,D-camphorsulfonic acid,acid
+Et3N,triethylamine,base
+CH3CN,acetonitrile,solvent
+(S)-(-)-phenylalanine,L-phenylalanine,organocatalyst

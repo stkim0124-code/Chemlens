@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCCC(=O)CC"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to the corresponding alkane (n-hexane). This is a classic textbook example of the Wolff-Kishner reduction, clearly demonstrating the conversion of a carbonyl group to a methylene group under basic conditions (hydrazine and potassium hydroxide). The use of a symmetrical ketone avoids any ambiguity or potential side reactions.",
+  "collision_avoidance_note": "This example uses a simple, acyclic aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/alkylation), alpha-beta unsaturated systems (e.g., Michael addition), or other functional groups that might trigger different named reactions. It specifically avoids the Clemmensen reduction conditions (acidic) and focuses on the core C=O to CH2 transformation characteristic of the Wolff-Kishner reaction.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to the corresponding alkane (n-hexane). This is a classic textbook example of the Wolff-Kishner reduction, clearly demonstrating the conversion of a carbonyl group to a methylene group under basic conditions (hydrazine and potassium hydroxide). The use of a symmetrical ketone avoids any ambiguity or potential side reactions.\",\n    \"collision_avoidance_note\": \"This example uses a simple, acyclic aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/alkylation), alpha-beta unsaturated systems (e.g., Michael addition), or other functional groups that might trigger different named reactions. It specifically avoids the Clemmensen reduction conditions (acidic) and focuses on the core C=O to CH2 transformation characteristic of the Wolff-Kishner reaction.\"\n  }\n}"
+}

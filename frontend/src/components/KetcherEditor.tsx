@@ -50,6 +50,7 @@ const KetcherEditor = forwardRef<KetcherEditorHandle, Props>(
     type Resolver = { resolve: (v: MoleculeData) => void; reject: (e: any) => void; timeoutId: number };
     const promiseMap = useRef<Map<string, Resolver>>(new Map());
     const pingInterval = useRef<number | null>(null);
+    const targetOriginRef = useRef<string>(window.location.origin);
 
     const generateId = () => Math.random().toString(36).substring(2, 9);
 
@@ -76,11 +77,18 @@ const KetcherEditor = forwardRef<KetcherEditorHandle, Props>(
       setBootError(null);
       stopPing();
 
+      try {
+        const iframeSrc = iframeRef.current?.src || window.location.origin;
+        targetOriginRef.current = new URL(iframeSrc, window.location.href).origin;
+      } catch {
+        targetOriginRef.current = window.location.origin;
+      }
+
       // Parent-driven PING loop: bulletproof against READY miss (StrictMode/HMR/cache).
       pingInterval.current = window.setInterval(() => {
         const win = iframeRef.current?.contentWindow;
         if (!win) return;
-        win.postMessage({ type: "PING" }, "*");
+        win.postMessage({ type: "PING" }, targetOriginRef.current);
       }, 200);
     }, [stopPing]);
 
@@ -104,7 +112,7 @@ const KetcherEditor = forwardRef<KetcherEditorHandle, Props>(
 
         promiseMap.current.set(requestId, { resolve, reject, timeoutId });
 
-        win.postMessage({ type, requestId, payload }, "*");
+        win.postMessage({ type, requestId, payload }, targetOriginRef.current);
       });
     }, []);
 
@@ -134,6 +142,7 @@ const KetcherEditor = forwardRef<KetcherEditorHandle, Props>(
       const handleMessage = (event: MessageEvent) => {
         // Source pinning: only accept messages from the current iframe window
         if (!iframeRef.current || event.source !== iframeRef.current.contentWindow) return;
+        if (event.origin !== targetOriginRef.current) return;
         const data = event.data || {};
         const { type } = data;
 
@@ -153,7 +162,7 @@ const KetcherEditor = forwardRef<KetcherEditorHandle, Props>(
             setMolecule: (smiles: string) => {
               iframeRef.current?.contentWindow?.postMessage(
                 { type: "SET_MOLECULE", payload: { smiles } },
-                "*"
+                targetOriginRef.current
               );
             },
           });
@@ -161,7 +170,7 @@ const KetcherEditor = forwardRef<KetcherEditorHandle, Props>(
           if (initialSmiles) {
             iframeRef.current?.contentWindow?.postMessage(
               { type: "SET_MOLECULE", payload: { smiles: initialSmiles } },
-              "*"
+              targetOriginRef.current
             );
           }
         } else if (type === "KETCHER_DATA") {
@@ -224,7 +233,7 @@ const KetcherEditor = forwardRef<KetcherEditorHandle, Props>(
         if (!isReadyRef.current || !iframeRef.current?.contentWindow) return;
         iframeRef.current.contentWindow.postMessage(
           { type: "SET_MOLECULE", payload: { smiles } },
-          "*"
+          targetOriginRef.current
         );
       },
     }));

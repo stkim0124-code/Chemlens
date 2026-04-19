@@ -1,0 +1,17 @@
+{
+  "family": "Swern Oxidation",
+  "substrates": [
+    "CCCCO"
+  ],
+  "products": [
+    "CCCC=O"
+  ],
+  "reagents": [
+    "CS(C)=O",
+    "O=C(Cl)C(=O)Cl",
+    "CCN(CC)CC"
+  ],
+  "rationale": "The Swern oxidation of 1-butanol to butanal is a classic, simple, and unambiguous textbook example. It demonstrates the oxidation of a primary alcohol to an aldehyde without over-oxidation to a carboxylic acid, which is a key feature of this reaction. The reactants and products are acyclic and contain no complex functional groups, making it an ideal canonical representation.",
+  "collision_avoidance_note": "This example uses a simple primary aliphatic alcohol (1-butanol) to avoid structural motifs that could overlap with other named reactions. It avoids aromatic rings (common in many other reactions), complex stereocenters, or other reactive functional groups. The product is a simple aldehyde, clearly illustrating the specific transformation of the Swern oxidation.",
+  "raw_text": "{\n  \"family\": \"Swern Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(C)C\",\n      \"O=C(Cl)C(=O)Cl\",\n      \"N(CC)(CC)CC\"\n    ],\n    \"rationale\": \"The Swern oxidation of 1-butanol to butanal is a classic, simple, and unambiguous textbook example. It demonstrates the oxidation of a primary alcohol to an aldehyde without over-oxidation to a carboxylic acid, which is a key feature of this reaction. The reactants and products are acyclic and contain no complex functional groups, making it an ideal canonical representation.\",\n    \"collision_avoidance_note\": \"This example uses a simple primary aliphatic alcohol (1-butanol) to avoid structural motifs that could overlap with other named reactions. It avoids aromatic rings (common in many other reactions), complex stereocenters, or other reactive functional groups. The product is a simple aldehyde, clearly illustrating the specific transformation of the Swern oxidation.\"\n  }\n}"
+}

@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"candidate_id\": \"C1\",\n    \"substrate_smiles\": [\n      \"CC(C)(C)C1CCC(O)CC1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC1CCC(C(C)(C)C)CC1\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This example showcases the classic Ritter reaction mechanism. The tertiary alcohol, 4-tert-butylcyclohexanol, is protonated by a strong acid, leading to the loss of water and the formation of a stable tertiary carbocation. This carbocation is then trapped by the nucleophilic nitrogen of acetonitrile. Subsequent hydrolysis of the resulting nitrilium ion intermediate yields the N-acetyl amide product. The use of a cyclohexyl ring with a bulky tert-butyl group provides a clear, non-aromatic scaffold where the transformation is unambiguous.\",\n    \"collision_avoidance_note\": \"The substrate is a non-aromatic tertiary alcohol, and the product is a secondary amide. This avoids confusion with reactions involving aromatic substrates (like Houben-Hoesch) or the formation of imidates/esters from nitriles (like the Pinner reaction). The specific choice of 4-tert-butylcyclohexanol as the carbocation precursor provides a distinct and non-trivial cyclic structure.\",\n    \"reagents_text\": \"acetonitrile, sulfuric acid\",\n    \"conditions_text\": \"Reaction is typically run with the nitrile as the solvent, with catalytic or stoichiometric strong acid at temperatures ranging from 0 C to reflux, followed by aqueous workup.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 323,
+    "candidatesTokenCount": 371,
+    "totalTokenCount": 754,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 323
+      }
+    ],
+    "thoughtsTokenCount": 60
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "mPjjaf_aLPm20-kP_PXx2Aw"
+}

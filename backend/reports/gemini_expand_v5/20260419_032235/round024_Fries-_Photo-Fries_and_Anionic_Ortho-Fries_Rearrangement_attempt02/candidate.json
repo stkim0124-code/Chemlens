@@ -1,0 +1,15 @@
+{
+  "family": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+  "substrates": [
+    "CC(=O)Oc1ccccc1"
+  ],
+  "products": [
+    "CC(=O)c1ccccc1O"
+  ],
+  "reagents": [
+    "[Al+3].[Cl-].[Cl-].[Cl-]"
+  ],
+  "rationale": "The Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone is a classic, simple, and unambiguous textbook example of this reaction family. It clearly demonstrates the core transformation: the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). The reactants and product are small, acyclic where possible, and easily parsed.",
+  "collision_avoidance_note": "This example uses the simplest possible phenyl ester (phenyl acetate) to avoid complex aromatic systems that could be mistaken for other named reactions involving arenes. The transformation is a specific acyl migration, distinct from Friedel-Crafts acylation (which involves separate acyl and arene reactants), Claisen rearrangement (which involves allyl ethers), or other phenolic rearrangements. The choice of a simple acetyl group avoids potentially reactive or confusing functional groups.",
+  "raw_text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Al+3].[Cl-].[Cl-].[Cl-]\"\n    ],\n    \"rationale\": \"The Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone is a classic, simple, and unambiguous textbook example of this reaction family. It clearly demonstrates the core transformation: the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3). The reactants and product are small, acyclic where possible, and easily parsed.\",\n    \"collision_avoidance_note\": \"This example uses the simplest possible phenyl ester (phenyl acetate) to avoid complex aromatic systems that could be mistaken for other named reactions involving arenes. The transformation is a specific acyl migration, distinct from Friedel-Crafts acylation (which involves separate acyl and arene reactants), Claisen rearrangement (which involves allyl ethers), or other phenolic rearrangements. The choice of a simple acetyl group avoids potentially reactive or confusing functional groups.\"\n  }\n}"
+}

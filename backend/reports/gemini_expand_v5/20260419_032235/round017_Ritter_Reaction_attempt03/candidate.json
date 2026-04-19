@@ -1,0 +1,16 @@
+{
+  "family": "Ritter Reaction",
+  "substrates": [
+    "CC(C)(C)O",
+    "CC#N"
+  ],
+  "products": [
+    "CC(=O)NC(C)(C)C"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This is the classic textbook example of the Ritter reaction, demonstrating the formation of a stable tert-butyl carbocation from tert-butanol under strong acid (sulfuric acid), which is then trapped by acetonitrile. Subsequent hydrolysis of the resulting nitrilium ion intermediate yields N-tert-butylacetamide. All reactants and products are simple, acyclic, and lack complex functional groups, making it a clear and unambiguous representation of the core transformation.",
+  "collision_avoidance_note": "This example uses simple, acyclic aliphatic substrates (tert-butanol and acetonitrile) to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts), rearrangements (e.g., Pinacol, Wagner-Meerwein), or other complex carbocation pathways. The choice of a tertiary alcohol as the carbocation precursor is specific and characteristic of the Ritter reaction, distinguishing it from reactions that might involve nitriles but different initiation steps.",
+  "raw_text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is the classic textbook example of the Ritter reaction, demonstrating the formation of a stable tert-butyl carbocation from tert-butanol under strong acid (sulfuric acid), which is then trapped by acetonitrile. Subsequent hydrolysis of the resulting nitrilium ion intermediate yields N-tert-butylacetamide. All reactants and products are simple, acyclic, and lack complex functional groups, making it a clear and unambiguous representation of the core transformation.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic aliphatic substrates (tert-butanol and acetonitrile) to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts), rearrangements (e.g., Pinacol, Wagner-Meerwein), or other complex carbocation pathways. The choice of a tertiary alcohol as the carbocation precursor is specific and characteristic of the Ritter reaction, distinguishing it from reactions that might involve nitriles but different initiation steps.\"\n  }\n}"
+}

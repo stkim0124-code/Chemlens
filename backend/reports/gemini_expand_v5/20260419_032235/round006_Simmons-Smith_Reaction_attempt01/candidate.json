@@ -1,0 +1,17 @@
+{
+  "family": "Simmons-Smith Reaction",
+  "substrates": [
+    "C=C"
+  ],
+  "products": [
+    "C1CC1"
+  ],
+  "reagents": [
+    "ICI",
+    "[Zn]",
+    "[Cu]"
+  ],
+  "rationale": "This example shows the cyclopropanation of ethylene, the simplest possible alkene, to form cyclopropane. This is the most fundamental and canonical representation of the Simmons-Smith reaction, which converts an alkene into a cyclopropane using diiodomethane and a zinc-copper couple. The reagents CH2I2 and Zn-Cu are explicitly included as they are the defining components of this named reaction.",
+  "collision_avoidance_note": "The use of ethylene, the simplest alkene, and the explicit inclusion of the specific Simmons-Smith reagents (diiodomethane and zinc-copper couple) ensures the reaction is highly specific to this family. It avoids more complex cyclic or substituted alkenes that might overlap with other intramolecular cyclopropanation reactions or reactions involving different carbenoid sources (e.g., diazo compounds in other cyclopropanation methods).",
+  "raw_text": "{\n  \"family\": \"Simmons-Smith Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C=C\"\n    ],\n    \"product_smiles\": [\n      \"C1CC1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"C(I)I\",\n      \"[Zn]\",\n      \"[Cu]\"\n    ],\n    \"rationale\": \"This example shows the cyclopropanation of ethylene, the simplest possible alkene, to form cyclopropane. This is the most fundamental and canonical representation of the Simmons-Smith reaction, which converts an alkene into a cyclopropane using diiodomethane and a zinc-copper couple. The reagents CH2I2 and Zn-Cu are explicitly included as they are the defining components of this named reaction.\",\n    \"collision_avoidance_note\": \"The use of ethylene, the simplest alkene, and the explicit inclusion of the specific Simmons-Smith reagents (diiodomethane and zinc-copper couple) ensures the reaction is highly specific to this family. It avoids more complex cyclic or substituted alkenes that might overlap with other intramolecular cyclopropanation reactions or reactions involving different carbenoid sources (e.g., diazo compounds in other cyclopropanation methods).\"\n  }\n}"
+}

@@ -1,0 +1,113 @@
+{
+  "stage_db": "C:\\chemlens\\backend\\app\\labint_pdf_examples_stage.db",
+  "extraction_table": "pdf_example_extractions",
+  "latest_extract_run": "20260419_104311",
+  "top_error_messages": [
+    [
+      "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc",
+      34
+    ]
+  ],
+  "samples": [
+    {
+      "family_name": "Aldol Reaction",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Aldol Reaction",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Aldol Reaction",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Alkene (Olefin) Metathesis",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Alkene (Olefin) Metathesis",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Alkene (Olefin) Metathesis",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Baeyer-Villiger Oxidation/Rearrangement",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Baeyer-Villiger Oxidation/Rearrangement",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Baeyer-Villiger Oxidation/Rearrangement",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Baeyer-Villiger Oxidation/Rearrangement",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Barton-McCombie Radical Deoxygenation Reaction",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Barton-McCombie Radical Deoxygenation Reaction",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Barton-McCombie Radical Deoxygenation Reaction",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Barton-McCombie Radical Deoxygenation Reaction",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Diels-Alder Cycloaddition",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Diels-Alder Cycloaddition",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Diels-Alder Cycloaddition",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Pinner Reaction",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Pinner Reaction",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    },
+    {
+      "family_name": "Pinner Reaction",
+      "status": "error",
+      "error_message": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc"
+    }
+  ]
+}

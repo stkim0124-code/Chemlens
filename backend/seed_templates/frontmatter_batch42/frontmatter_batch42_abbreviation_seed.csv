@@ -1,0 +1,9 @@
+alias,canonical_name,entity_type
+AgOAc,silver acetate,oxidant
+PhCO2Ag,silver benzoate,silver_carboxylate
+AgOBz,silver benzoate,silver_carboxylate
+OTIPS,triisopropylsilyl ether,protecting_group
+Me2AlCl,dimethylaluminum chloride,Lewis_acid
+TMSNEt2,"N,N-diethyltrimethylsilylamine",base
+Raney-Ni,Raney nickel,catalyst
+sym-collidine,"2,4,6-trimethylpyridine",base

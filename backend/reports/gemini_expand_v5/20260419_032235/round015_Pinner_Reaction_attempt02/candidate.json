@@ -1,0 +1,16 @@
+{
+  "family": "Pinner Reaction",
+  "substrates": [
+    "CC#N",
+    "CCO"
+  ],
+  "products": [
+    "CCOC(C)=[NH2+].[Cl-]"
+  ],
+  "reagents": [
+    "Cl"
+  ],
+  "rationale": "This reaction represents the classical Pinner reaction, showing the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and an alcohol (ethanol) under anhydrous acidic conditions (HCl). This is a textbook example illustrating the core transformation of the nitrile functional group into an activated imino ether, which is the key intermediate in this synthesis.",
+  "collision_avoidance_note": "The use of simple, acyclic, saturated aliphatic substrates (acetonitrile and ethanol) avoids overlap with reactions involving aromatic rings, complex functional groups, or specific ring systems. The product is the characteristic imino ether salt, which is specific to the Pinner reaction and distinct from products of other nitrile transformations like simple hydrolysis to amides or acids.",
+  "raw_text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction represents the classical Pinner reaction, showing the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and an alcohol (ethanol) under anhydrous acidic conditions (HCl). This is a textbook example illustrating the core transformation of the nitrile functional group into an activated imino ether, which is the key intermediate in this synthesis.\",\n    \"collision_avoidance_note\": \"The use of simple, acyclic, saturated aliphatic substrates (acetonitrile and ethanol) avoids overlap with reactions involving aromatic rings, complex functional groups, or specific ring systems. The product is the characteristic imino ether salt, which is specific to the Pinner reaction and distinct from products of other nitrile transformations like simple hydrolysis to amides or acids.\"\n  }\n}"
+}

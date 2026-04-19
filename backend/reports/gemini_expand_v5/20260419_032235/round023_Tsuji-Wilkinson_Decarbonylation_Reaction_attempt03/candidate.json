@@ -1,0 +1,15 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "substrates": [
+    "CCCCCCC=O"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "[Cl][Rh]([PH](c1ccccc1)(c1ccccc1)c1ccccc1)([PH](c1ccccc1)(c1ccccc1)c1ccccc1)[PH](c1ccccc1)(c1ccccc1)c1ccccc1"
+  ],
+  "rationale": "This reaction shows the decarbonylation of a simple aliphatic aldehyde, heptanal, to its corresponding alkane, hexane, using Wilkinson's catalyst. This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, clearly demonstrating the conversion of an R-CHO group to an R-H group. The acyclic, saturated nature of the substrate and product makes it a specific and unambiguous representation of this transformation.",
+  "collision_avoidance_note": "The use of a simple, long-chain aliphatic aldehyde avoids overlap with other named reactions involving aromatic aldehydes (e.g., Cannizzaro, benzoin condensation) or alpha,beta-unsaturated aldehydes (which might suggest conjugate addition reactions). It also avoids motifs common in decarboxylation reactions (which start from carboxylic acids) or radical decarbonylations (e.g., Barton decarbonylation from acyl derivatives).",
+  "raw_text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh](P(c1ccccc1)(c1ccccc1)c1ccccc1)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple aliphatic aldehyde, heptanal, to its corresponding alkane, hexane, using Wilkinson's catalyst. This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, clearly demonstrating the conversion of an R-CHO group to an R-H group. The acyclic, saturated nature of the substrate and product makes it a specific and unambiguous representation of this transformation.\",\n    \"collision_avoidance_note\": \"The use of a simple, long-chain aliphatic aldehyde avoids overlap with other named reactions involving aromatic aldehydes (e.g., Cannizzaro, benzoin condensation) or alpha,beta-unsaturated aldehydes (which might suggest conjugate addition reactions). It also avoids motifs common in decarboxylation reactions (which start from carboxylic acids) or radical decarbonylations (e.g., Barton decarbonylation from acyl derivatives).\"\n  }\n}"
+}

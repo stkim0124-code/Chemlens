@@ -1,0 +1,17 @@
+{
+  "family": "Swern Oxidation",
+  "substrates": [
+    "CCCCO"
+  ],
+  "products": [
+    "CCCC=O"
+  ],
+  "reagents": [
+    "CS(C)=O",
+    "O=C(Cl)C(=O)Cl",
+    "CCN(CC)CC"
+  ],
+  "rationale": "The oxidation of 1-butanol to butanal is a classic, simple, and unambiguous example of the Swern oxidation. It demonstrates the conversion of a primary alcohol to an aldehyde, a hallmark of this reaction, using the standard reagent set (DMSO, oxalyl chloride, triethylamine). The acyclic, unfunctionalized substrate avoids potential side reactions or ambiguities with other named reactions.",
+  "collision_avoidance_note": "This example uses a simple primary aliphatic alcohol, avoiding aromatic rings (common in many other named reactions), complex functional groups, or stereocenters. This specificity helps prevent incorrect association with other oxidation reactions (e.g., PCC, Dess-Martin) or reactions involving different functional groups.",
+  "raw_text": "{\n  \"family\": \"Swern Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCO\"\n    ],\n    \"product_smiles\": [\n      \"CCCC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"CS(C)=O\",\n      \"O=C(Cl)C(=O)Cl\",\n      \"CCN(CC)CC\"\n    ],\n    \"rationale\": \"The oxidation of 1-butanol to butanal is a classic, simple, and unambiguous example of the Swern oxidation. It demonstrates the conversion of a primary alcohol to an aldehyde, a hallmark of this reaction, using the standard reagent set (DMSO, oxalyl chloride, triethylamine). The acyclic, unfunctionalized substrate avoids potential side reactions or ambiguities with other named reactions.\",\n    \"collision_avoidance_note\": \"This example uses a simple primary aliphatic alcohol, avoiding aromatic rings (common in many other named reactions), complex functional groups, or stereocenters. This specificity helps prevent incorrect association with other oxidation reactions (e.g., PCC, Dess-Martin) or reactions involving different functional groups.\"\n  }\n}"
+}

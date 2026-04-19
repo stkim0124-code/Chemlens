@@ -1,0 +1,17 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "O=C1CCC2=CC=CC=C2C1"
+    ],
+    "product_smiles": [
+      "C1CCC2=CC=CC=C2C1"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This example demonstrates the selective reduction of a ketone (alpha-tetralone) to a methylene group (tetralin) under Wolff-Kishner conditions. The aromatic ring is stable to these conditions, highlighting the chemoselectivity of the reaction for the carbonyl group. The fused ring system provides a clear, non-trivial substrate that is a classic textbook example of this transformation.",
+    "collision_avoidance_note": "The substrate is alpha-tetralone, a fused bicyclic ketone, which is structurally distinct from simple acyclic or monocyclic ketones like acetophenone or cyclohexanone. This avoids trivial examples and potential overlap with generic carbonyl reduction seeds.",
+    "reagents_text": "hydrazine (H2NNH2), potassium hydroxide (KOH)",
+    "conditions_text": "diethylene glycol, heat (e.g., 180-200 °C)"
+  }
+}

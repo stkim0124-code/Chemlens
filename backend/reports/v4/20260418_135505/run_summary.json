@@ -1,0 +1,71 @@
+{
+  "run_id": "20260418_135505",
+  "canonical_db": "C:\\chemlens\\backend\\app\\labint.db",
+  "stage_db": "C:\\chemlens\\backend\\app\\labint_v4_stage.db",
+  "benchmark_file": "C:\\chemlens\\backend\\named_reaction_benchmark_gate.json",
+  "start_state": {
+    "queryable": 482,
+    "tier1": 396,
+    "family_coverage": 51,
+    "reaction_extracts": 290,
+    "extract_molecules_total": 1855
+  },
+  "final_state": {
+    "queryable": 525,
+    "tier1": 439,
+    "family_coverage": 69,
+    "reaction_extracts": 308,
+    "extract_molecules_total": 1923
+  },
+  "rounds_run": 6,
+  "total_inserted": 18,
+  "quarantined": [],
+  "quarantined_count": 0,
+  "stopped_reason": "max_rounds_reached",
+  "args": {
+    "db": "app\\labint.db",
+    "stage_db": "app\\labint_v4_stage.db",
+    "benchmark_file": "named_reaction_benchmark_gate.json",
+    "diagnostic_benchmark_file": "named_reaction_benchmark_v4.json",
+    "report_dir": "reports/v4",
+    "reset_stage": true,
+    "family_target": 250,
+    "batch_size": 1,
+    "max_rounds": 6,
+    "max_empty_rounds": 1,
+    "candidate_limit": 30,
+    "disk_budget_gb": 10.0,
+    "max_snapshots": 10,
+    "snapshot_every": 25,
+    "deterministic_only": false,
+    "gemini_only": false,
+    "gemini_fallback": "yes",
+    "allowed_top1_drop": 0.0,
+    "allowed_violation_increase": 0,
+    "plan_only": false,
+    "min_confidence": 0.75,
+    "gemini_api_key": null,
+    "gemini_models": "gemini-2.5-pro",
+    "include_covered_families": false,
+    "covered_skip_threshold": 1,
+    "min_baseline_top1": 0.99,
+    "min_baseline_top3": 0.99,
+    "discovery_candidate_limit": 3,
+    "zero_progress_stop_rounds": 1
+  },
+  "baseline_benchmark": {
+    "benchmark_name": "CHEMLENS benchmark v4 gate",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 27,
+    "top1_accuracy": 1.0,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "diagnostic_baseline": {
+    "error": "benchmark runner failed rc=1"
+  }
+}

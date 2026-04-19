@@ -1,0 +1,16 @@
+{
+  "family": "Pinner Reaction",
+  "substrates": [
+    "CC#N",
+    "CCO"
+  ],
+  "products": [
+    "CCOC(C)=[NH2+].[Cl-]"
+  ],
+  "reagents": [
+    "Cl"
+  ],
+  "rationale": "This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and an alcohol (ethanol) in the presence of dry hydrogen chloride. This is the quintessential first step of the Pinner reaction, representing the core transformation without downstream hydrolysis or aminolysis, which could be confused with other named reactions. The reactants and product are simple, acyclic, and clearly illustrate the key bond formations: C-O bond formation from the alcohol to the nitrile carbon and protonation of the nitrogen.",
+  "collision_avoidance_note": "The product is the characteristic imino ether salt (Pinner salt), which is the direct, isolable intermediate of this reaction. This avoids ambiguity with subsequent hydrolysis to an ester (which could be confused with Fischer esterification) or aminolysis to an amidine (which could be confused with other amidine syntheses). Using simple aliphatic substrates (acetonitrile, ethanol) avoids overlap with reactions involving aromatic rings or more complex functional groups.",
+  "raw_text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and an alcohol (ethanol) in the presence of dry hydrogen chloride. This is the quintessential first step of the Pinner reaction, representing the core transformation without downstream hydrolysis or aminolysis, which could be confused with other named reactions. The reactants and product are simple, acyclic, and clearly illustrate the key bond formations: C-O bond formation from the alcohol to the nitrile carbon and protonation of the nitrogen.\",\n    \"collision_avoidance_note\": \"The product is the characteristic imino ether salt (Pinner salt), which is the direct, isolable intermediate of this reaction. This avoids ambiguity with subsequent hydrolysis to an ester (which could be confused with Fischer esterification) or aminolysis to an amidine (which could be confused with other amidine syntheses). Using simple aliphatic substrates (acetonitrile, ethanol) avoids overlap with reactions involving aromatic rings or more complex functional groups.\"\n  }\n}"
+}

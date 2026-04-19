@@ -1,0 +1,16 @@
+{
+  "family": "Pinner Reaction",
+  "substrates": [
+    "CC#N",
+    "CCO"
+  ],
+  "products": [
+    "CCOC(C)=[NH2+].[Cl-]"
+  ],
+  "reagents": [
+    "Cl"
+  ],
+  "rationale": "This reaction represents the classical Pinner synthesis, where a simple aliphatic nitrile (acetonitrile) reacts with a simple alcohol (ethanol) under anhydrous acidic conditions (HCl) to form the corresponding imino ether salt (ethyl acetimidate hydrochloride). This is the quintessential first step of the Pinner reaction sequence and is a textbook example. The reactants and product are simple, acyclic, and contain the core functional group transformation (nitrile to imino ether salt) that defines the reaction.",
+  "collision_avoidance_note": "This example uses simple, acyclic aliphatic substrates (acetonitrile, ethanol) to avoid overlap with reactions involving aromatic rings (e.g., Gattermann, Houben-Hoesch) or more complex functional groups. It specifically forms the imino ether salt, which is the characteristic intermediate of the Pinner reaction, distinguishing it from direct nitrile hydrolysis to amides or acids. The choice of HCl as the acid is historically and mechanistically significant for this named reaction.",
+  "raw_text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction represents the classical Pinner synthesis, where a simple aliphatic nitrile (acetonitrile) reacts with a simple alcohol (ethanol) under anhydrous acidic conditions (HCl) to form the corresponding imino ether salt (ethyl acetimidate hydrochloride). This is the quintessential first step of the Pinner reaction sequence and is a textbook example. The reactants and product are simple, acyclic, and contain the core functional group transformation (nitrile to imino ether salt) that defines the reaction.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic aliphatic substrates (acetonitrile, ethanol) to avoid overlap with reactions involving aromatic rings (e.g., Gattermann, Houben-Hoesch) or more complex functional groups. It specifically forms the imino ether salt, which is the characteristic intermediate of the Pinner reaction, distinguishing it from direct nitrile hydrolysis to amides or acids. The choice of HCl as the acid is historically and mechanistically significant for this named reaction.\"\n  }\n}"
+}

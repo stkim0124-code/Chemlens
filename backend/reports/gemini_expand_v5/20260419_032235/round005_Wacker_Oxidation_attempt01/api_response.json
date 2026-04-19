@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wacker Oxidation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C=C\"\n    ],\n    \"product_smiles\": [\n      \"CC=O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Pd+2].[Cl-].[Cl-]\",\n      \"[Cu+].[Cl-]\",\n      \"O=O\"\n    ],\n    \"rationale\": \"The Wacker oxidation of ethylene to acetaldehyde is the original industrial process and the quintessential textbook example of this reaction. It clearly demonstrates the conversion of a terminal alkene to a carbonyl compound (an aldehyde in this specific case, though methyl ketones are more common from higher alkenes) using a palladium catalyst (PdCl2) and a co-catalyst/reoxidant system (CuCl/O2). This example is simple, acyclic, and perfectly illustrates the core transformation of the Wacker oxidation.\",\n    \"collision_avoidance_note\": \"This example uses ethylene, the simplest possible alkene, to avoid introducing any other functional groups or structural motifs (like alkyl chains, rings, or aromatic groups) that could cause collisions with other named reactions. The product is acetaldehyde, a simple aldehyde. The reagents specified (PdCl2, CuCl, O2) are the classic components of the Wacker-Smidt process, making the query highly specific to this reaction family.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 438,
+    "candidatesTokenCount": 309,
+    "totalTokenCount": 794,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 438
+      }
+    ],
+    "thoughtsTokenCount": 47
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "Wc7jacbgBtuf0-kPo8C76Qg"
+}

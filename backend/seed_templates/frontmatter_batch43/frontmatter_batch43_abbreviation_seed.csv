@@ -1,0 +1,9 @@
+alias,canonical_name,entity_type
+MVK,methyl vinyl ketone,enone
+LAH,lithium aluminium hydride,reducing_agent
+NCS,N-chlorosuccinimide,halogenating_agent
+HMPA,hexamethylphosphoramide,solvent_additive
+SmI2,samarium(II) iodide,reductant
+p-ABSA,p-acetamidobenzenesulfonyl azide,diazo_transfer_reagent
+CHCl3,chloroform,solvent_reagent
+Pd/C,palladium on carbon,catalyst

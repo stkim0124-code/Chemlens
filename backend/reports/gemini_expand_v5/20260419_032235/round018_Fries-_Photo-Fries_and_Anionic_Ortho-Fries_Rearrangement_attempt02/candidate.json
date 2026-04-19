@@ -1,0 +1,15 @@
+{
+  "family": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+  "substrates": [
+    "CC(=O)Oc1ccccc1"
+  ],
+  "products": [
+    "CC(=O)c1ccccc1O"
+  ],
+  "reagents": [
+    "[Cl][Al]([Cl])[Cl]"
+  ],
+  "rationale": "This reaction shows the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone, a textbook example. The substrate is simple, using the smallest possible acyl group (acetyl) and the simplest aryl group (phenyl). The product is the ortho-rearranged hydroxy aryl ketone, which is the major product under typical conditions. This example clearly demonstrates the core transformation: the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3).",
+  "collision_avoidance_note": "This example uses a simple phenyl acetate substrate to avoid complex aromatic systems that might overlap with other named reactions involving arenes. It avoids motifs like diazo groups, ring expansions, or radical initiators. The core transformation is a specific acyl migration, which is distinct from more general electrophilic aromatic substitution reactions or rearrangements like the Claisen rearrangement (which involves an allyl group, not an acyl group).",
+  "raw_text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Al](Cl)Cl\"\n    ],\n    \"rationale\": \"This reaction shows the classic Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone, a textbook example. The substrate is simple, using the smallest possible acyl group (acetyl) and the simplest aryl group (phenyl). The product is the ortho-rearranged hydroxy aryl ketone, which is the major product under typical conditions. This example clearly demonstrates the core transformation: the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring, catalyzed by a Lewis acid (AlCl3).\",\n    \"collision_avoidance_note\": \"This example uses a simple phenyl acetate substrate to avoid complex aromatic systems that might overlap with other named reactions involving arenes. It avoids motifs like diazo groups, ring expansions, or radical initiators. The core transformation is a specific acyl migration, which is distinct from more general electrophilic aromatic substitution reactions or rearrangements like the Claisen rearrangement (which involves an allyl group, not an acyl group).\"\n  }\n}"
+}

@@ -1,0 +1,16 @@
+{
+  "family": "Baylis-Hillman Reaction",
+  "substrates": [
+    "CC=O",
+    "C=CC(=O)OC"
+  ],
+  "products": [
+    "C=C(C(=O)OC)C(C)O"
+  ],
+  "reagents": [
+    "C1NC2CNC1CN2"
+  ],
+  "rationale": "This is a classic and simple example of the Baylis-Hillman reaction, coupling acetaldehyde (an aldehyde) with methyl acrylate (an activated alkene) catalyzed by DABCO (a common tertiary amine catalyst). The product is the expected allylic alcohol, methyl 2-(1-hydroxyethyl)acrylate. All components are small, acyclic, and clearly represent the core transformation without extraneous functional groups.",
+  "collision_avoidance_note": "This example uses simple, acyclic aliphatic substrates (acetaldehyde and methyl acrylate) to avoid overlap with reactions involving aromatic aldehydes (e.g., benzoin condensation, Stetter reaction) or more complex Michael acceptors. The specific catalyst DABCO is strongly associated with this reaction. The product is a simple allylic alcohol, avoiding motifs common in other named reactions like ring formation or decarboxylation.",
+  "raw_text": "{\n  \"family\": \"Baylis-Hillman Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC=O\",\n      \"C=CC(=O)OC\"\n    ],\n    \"product_smiles\": [\n      \"CC(O)C(=C)C(=O)OC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"N1CC2NCC1CN2\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Baylis-Hillman reaction, coupling acetaldehyde (an aldehyde) with methyl acrylate (an activated alkene) catalyzed by DABCO (a common tertiary amine catalyst). The product is the expected allylic alcohol, methyl 2-(1-hydroxyethyl)acrylate. All components are small, acyclic, and clearly represent the core transformation without extraneous functional groups.\",\n    \"collision_avoidance_note\": \"This example uses simple, acyclic aliphatic substrates (acetaldehyde and methyl acrylate) to avoid overlap with reactions involving aromatic aldehydes (e.g., benzoin condensation, Stetter reaction) or more complex Michael acceptors. The specific catalyst DABCO is strongly associated with this reaction. The product is a simple allylic alcohol, avoiding motifs common in other named reactions like ring formation or decarboxylation.\"\n  }\n}"
+}

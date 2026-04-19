@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This reaction is a classic textbook example of the Ritter reaction, demonstrating the formation of a stable tert-butyl carbocation from tert-butanol under strong acid (sulfuric acid) catalysis. This carbocation is then trapped by a simple nitrile, acetonitrile, which after hydrolysis yields the corresponding N-tert-butylacetamide. All reactants and the product are simple, acyclic, and lack complex functional groups, making it a clear and unambiguous representation of the core transformation.\",\n    \"collision_avoidance_note\": \"The use of simple, acyclic aliphatic substrates (tert-butanol and acetonitrile) avoids overlap with other named reactions. Specifically, it avoids arene-containing substrates that could be confused with electrophilic aromatic substitution reactions (e.g., Friedel-Crafts), and avoids complex rearrangements or functional groups that might trigger other named reaction classifiers. The transformation is a clear carbocation-nitrile addition followed by hydrolysis, which is the defining feature of the Ritter reaction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 435,
+    "candidatesTokenCount": 310,
+    "totalTokenCount": 799,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 435
+      }
+    ],
+    "thoughtsTokenCount": 54
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "2ePjacG9CLHa1e8P_M2cyQ8"
+}

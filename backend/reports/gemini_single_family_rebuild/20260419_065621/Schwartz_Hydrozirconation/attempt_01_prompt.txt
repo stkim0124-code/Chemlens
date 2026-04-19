@@ -1,0 +1,30 @@
+You are generating exactly ONE benchmark-safe canonical example for the named reaction family "Schwartz Hydrozirconation".
+
+Goal:
+Create a very clear hydrozirconation canonical example, but DO NOT represent Schwartz reagent or organozirconium complexes as SMILES. The candidate must stay parse-safe.
+
+Hard constraints:
+- Return exactly ONE candidate only.
+- Use parse-safe substrate/product SMILES only.
+- Do NOT encode Cp2ZrHCl, zirconocene, or any organozirconium species as SMILES.
+- Put the Schwartz reagent only in text fields.
+- Prefer a simple alkene or alkyne hydrozirconation case with a clear downstream product representation.
+- Avoid catalyst-complex SMILES entirely.
+- Avoid ionic or aromatic metallacycle notations.
+- Avoid stage-seed copying.
+- JSON only.
+
+Return JSON in this exact schema:
+{
+  "family": "Schwartz Hydrozirconation",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": ["..."],
+    "product_smiles": ["..."],
+    "optional_reagent_smiles": [],
+    "rationale": "...",
+    "collision_avoidance_note": "...",
+    "reagents_text": "Cp2ZrHCl (Schwartz reagent)",
+    "conditions_text": "hydrozirconation conditions"
+  }
+}

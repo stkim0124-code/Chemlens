@@ -1,0 +1,16 @@
+{
+  "family": "Sakurai Allylation",
+  "substrates": [
+    "CC(C)=O",
+    "C=CC[Si](C)(C)C"
+  ],
+  "products": [
+    "C=CCC(C)(C)O"
+  ],
+  "reagents": [
+    "[Cl][Ti]([Cl])([Cl])[Cl]"
+  ],
+  "rationale": "This reaction is a canonical example of the Sakurai Allylation, featuring the Lewis acid (TiCl4) promoted addition of a simple allylsilane (allyltrimethylsilane) to a simple ketone (acetone). The reactants and product are small, acyclic, and clearly illustrate the core transformation: the formation of a C-C bond between the gamma-carbon of the allylsilane and the carbonyl carbon, resulting in a homoallylic alcohol.",
+  "collision_avoidance_note": "The use of a simple ketone (acetone) and allyltrimethylsilane avoids complex structures that could overlap with other named reactions. It specifically avoids aldehydes which might be used in aldol-type reactions, and avoids complex substrates that could trigger rearrangements or other side reactions. The choice of TiCl4 as the Lewis acid is classic for this reaction. This example is distinct from Grignard or Barbier allylations by the explicit use of an organosilane reagent.",
+  "raw_text": "{\n  \"family\": \"Sakurai Allylation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)C\",\n      \"C=CC[Si](C)(C)C\"\n    ],\n    \"product_smiles\": [\n      \"CC(C)(O)CC=C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Ti](Cl)(Cl)Cl\"\n    ],\n    \"rationale\": \"This reaction is a canonical example of the Sakurai Allylation, featuring the Lewis acid (TiCl4) promoted addition of a simple allylsilane (allyltrimethylsilane) to a simple ketone (acetone). The reactants and product are small, acyclic, and clearly illustrate the core transformation: the formation of a C-C bond between the gamma-carbon of the allylsilane and the carbonyl carbon, resulting in a homoallylic alcohol.\",\n    \"collision_avoidance_note\": \"The use of a simple ketone (acetone) and allyltrimethylsilane avoids complex structures that could overlap with other named reactions. It specifically avoids aldehydes which might be used in aldol-type reactions, and avoids complex substrates that could trigger rearrangements or other side reactions. The choice of TiCl4 as the Lewis acid is classic for this reaction. This example is distinct from Grignard or Barbier allylations by the explicit use of an organosilane reagent.\"\n  }\n}"
+}

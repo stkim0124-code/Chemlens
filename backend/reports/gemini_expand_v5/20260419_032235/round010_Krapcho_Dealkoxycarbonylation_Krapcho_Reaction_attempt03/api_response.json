@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Krapcho Dealkoxycarbonylation (Krapcho Reaction)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCOC(=O)C(C)C(=O)OC\"\n    ],\n    \"product_smiles\": [\n      \"CCC(=O)OC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Li+].[Cl-]\",\n      \"O\"\n    ],\n    \"rationale\": \"This example shows the selective dealkoxycarbonylation of a malonic ester derivative, specifically methyl ethyl 2-methylmalonate, to form methyl propanoate. The reaction removes the ethoxycarbonyl group adjacent to the alpha-carbon, which is a classic and simple illustration of the Krapcho reaction's utility in decarboxylating malonic ester systems. The reactants and products are simple, acyclic, and clearly demonstrate the core transformation without extraneous functional groups.\",\n    \"collision_avoidance_note\": \"This example uses a simple malonic ester substrate, which is a hallmark of the Krapcho reaction. It avoids beta-keto esters which could be confused with general decarboxylation or Claisen condensation products. It also avoids complex cyclic systems or other functional groups that might trigger unrelated named reaction queries. The use of LiCl as a reagent is characteristic of this specific named reaction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 383,
+    "candidatesTokenCount": 299,
+    "totalTokenCount": 782,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 383
+      }
+    ],
+    "thoughtsTokenCount": 100
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "JdPjaaieEcDm1e8PkKKWsQQ"
+}

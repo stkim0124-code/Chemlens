@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "benchmark_name": "CHEMLENS benchmark v4 gate",
+    "total_cases": 35,
+    "reaction_cases": 27,
+    "top1_correct": 27,
+    "top1_accuracy": 1.0,
+    "top3_correct": 27,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 16
+  },
+  "stdout": "CHEMLENS benchmark v4 gate\n{\n  \"benchmark_name\": \"CHEMLENS benchmark v4 gate\",\n  \"total_cases\": 35,\n  \"reaction_cases\": 27,\n  \"top1_correct\": 27,\n  \"top1_accuracy\": 1.0,\n  \"top3_correct\": 27,\n  \"top3_accuracy\": 1.0,\n  \"disallow_top3_violations\": 0,\n  \"disallow_violation_rate\": 0.0,\n  \"unique_families\": 16\n}\nCSV:  C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small_results.csv\nJSON: C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small_results.json\nMD:   C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small_report.md\n",
+  "stderr": "",
+  "runner_returncode": 0,
+  "benchmark_file": "C:\\chemlens\\backend\\named_reaction_benchmark_gate.json"
+}

@@ -1,0 +1,16 @@
+{
+  "family": "Pomeranz-Fritsch Reaction",
+  "substrates": [
+    "O=Cc1ccccc1",
+    "NC(CO)CO"
+  ],
+  "products": [
+    "c1ccc2cnccc2c1"
+  ],
+  "reagents": [
+    "O=S(=O)(O)O"
+  ],
+  "rationale": "This reaction represents the classic Pomeranz-Fritsch synthesis of the parent isoquinoline from benzaldehyde and aminoacetaldehyde diethyl acetal (represented here as 2-amino-1,1-diethoxyethane, NC(CO)CO). The reaction proceeds via formation of a Schiff base (or benzalaminoacetal), followed by acid-catalyzed cyclization onto the aromatic ring and subsequent elimination of ethanol to form the isoquinoline core. This example uses the simplest possible aromatic aldehyde (benzaldehyde) and aminoacetal, making it a foundational and canonical representation of the transformation.",
+  "collision_avoidance_note": "This example uses simple, unsubstituted benzaldehyde and an aminoacetal to form the parent isoquinoline. This specific transformation is highly characteristic of the Pomeranz-Fritsch reaction. It avoids complex polycyclic systems, heteroaromatic aldehydes, or additional functional groups that could overlap with other named reactions involving aromatic aldehydes (e.g., Bischler-Napieralski, Pictet-Spengler, which require activated rings and different amine partners) or general condensation reactions.",
+  "raw_text": "{\n  \"family\": \"Pomeranz-Fritsch Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=Cc1ccccc1\",\n      \"NC(CO)CO\"\n    ],\n    \"product_smiles\": [\n      \"n1ccc2ccccc2c1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This reaction represents the classic Pomeranz-Fritsch synthesis of the parent isoquinoline from benzaldehyde and aminoacetaldehyde diethyl acetal (represented here as 2-amino-1,1-diethoxyethane, NC(CO)CO). The reaction proceeds via formation of a Schiff base (or benzalaminoacetal), followed by acid-catalyzed cyclization onto the aromatic ring and subsequent elimination of ethanol to form the isoquinoline core. This example uses the simplest possible aromatic aldehyde (benzaldehyde) and aminoacetal, making it a foundational and canonical representation of the transformation.\",\n    \"collision_avoidance_note\": \"This example uses simple, unsubstituted benzaldehyde and an aminoacetal to form the parent isoquinoline. This specific transformation is highly characteristic of the Pomeranz-Fritsch reaction. It avoids complex polycyclic systems, heteroaromatic aldehydes, or additional functional groups that could overlap with other named reactions involving aromatic aldehydes (e.g., Bischler-Napieralski, Pictet-Spengler, which require activated rings and different amine partners) or general condensation reactions.\"\n  }\n}"
+}

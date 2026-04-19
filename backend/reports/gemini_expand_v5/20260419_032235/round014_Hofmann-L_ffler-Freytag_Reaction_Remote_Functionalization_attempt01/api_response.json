@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Hofmann-Löffler-Freytag Reaction (Remote Functionalization)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCN(C)Cl\"\n    ],\n    \"product_smiles\": [\n      \"C1CCCN1C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O\",\n      \"[H+]\"\n    ],\n    \"rationale\": \"This is a classic and simple example of the Hofmann-Löffler-Freytag reaction. The substrate, N-chloro-N-methylbutylamine, undergoes a 1,5-hydrogen atom transfer via a nitrogen-centered radical under acidic conditions, followed by cyclization to form the product, N-methylpyrrolidine. This example clearly demonstrates the key remote C-H functionalization and pyrrolidine ring formation characteristic of the reaction family.\",\n    \"collision_avoidance_note\": \"This example uses a simple acyclic N-chloroamine substrate, which is specific to the Hofmann-Löffler-Freytag reaction. It avoids complex structures, arenes, or other functional groups that could cause collisions with unrelated named reactions like the Hofmann rearrangement (amides), Hofmann elimination (quaternary ammonium salts), or general radical cyclizations.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 392,
+    "candidatesTokenCount": 284,
+    "totalTokenCount": 740,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 392
+      }
+    ],
+    "thoughtsTokenCount": 64
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "utbjafjvFOqgvr0PwueLMA"
+}

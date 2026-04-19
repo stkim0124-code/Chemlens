@@ -1,0 +1,16 @@
+{
+  "family": "Ugi Multicomponent Reaction",
+  "substrates": [
+    "CC(=O)O",
+    "CC(C)C=O",
+    "CC(C)CN",
+    "[C-]#[N+]C"
+  ],
+  "products": [
+    "CNC(=O)C(C(C)C)N(CC(C)C)C(C)=O"
+  ],
+  "reagents": [],
+  "rationale": "This is a classic textbook example of the Ugi four-component reaction using simple, acyclic, and readily available starting materials: acetic acid (carboxylic acid), isobutyraldehyde (aldehyde), isobutylamine (amine), and methyl isocyanide (isocyanide). The reaction forms the characteristic α-acylamino amide product. All components are small and aliphatic, clearly illustrating the core transformation without introducing complex or potentially confounding structural motifs.",
+  "collision_avoidance_note": "The use of four distinct, simple aliphatic reactants to form a single complex product is highly characteristic of the Ugi reaction. This specific combination of functional groups (amine, aldehyde, carboxylic acid, isocyanide) is unique to this named reaction, avoiding overlap with simpler condensations (e.g., imine formation, amide coupling) or other multicomponent reactions like Passerini or Strecker, which use different combinations of starting materials.",
+  "raw_text": "{\n  \"family\": \"Ugi Multicomponent Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)O\",\n      \"CC(C)C=O\",\n      \"CC(C)CN\",\n      \"C[N+]#[C-]\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)N(CC(C)C)C(C(C)C)C(=O)NC\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This is a classic textbook example of the Ugi four-component reaction using simple, acyclic, and readily available starting materials: acetic acid (carboxylic acid), isobutyraldehyde (aldehyde), isobutylamine (amine), and methyl isocyanide (isocyanide). The reaction forms the characteristic \\u03b1-acylamino amide product. All components are small and aliphatic, clearly illustrating the core transformation without introducing complex or potentially confounding structural motifs.\",\n    \"collision_avoidance_note\": \"The use of four distinct, simple aliphatic reactants to form a single complex product is highly characteristic of the Ugi reaction. This specific combination of functional groups (amine, aldehyde, carboxylic acid, isocyanide) is unique to this named reaction, avoiding overlap with simpler condensations (e.g., imine formation, amide coupling) or other multicomponent reactions like Passerini or Strecker, which use different combinations of starting materials.\"\n  }\n}"
+}

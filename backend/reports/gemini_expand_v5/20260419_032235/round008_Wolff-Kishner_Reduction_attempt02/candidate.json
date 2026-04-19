@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCC(=O)CC"
+  ],
+  "products": [
+    "CCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This is a canonical, textbook example of the Wolff-Kishner reduction. It uses a simple, acyclic, aliphatic ketone (3-pentanone) and reduces it to the corresponding alkane (n-pentane). The reagents, hydrazine (NN) and potassium hydroxide ([K+].[OH-]), are the classic Wolff-Kishner or Huang-Minlon conditions. The transformation is a clear deoxygenation of a ketone to a methylene group, which is the defining characteristic of this reaction.",
+  "collision_avoidance_note": "This example uses a simple, symmetric aliphatic ketone to avoid potential side reactions or ambiguities. It avoids aromatic rings, which could be confused with Clemmensen reduction examples or other aromatic transformations. It also avoids complex functional groups that might be sensitive to the strongly basic conditions, thus keeping the focus squarely on the C=O to CH2 conversion.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[K+].[OH-]\"\n    ],\n    \"rationale\": \"This is a canonical, textbook example of the Wolff-Kishner reduction. It uses a simple, acyclic, aliphatic ketone (3-pentanone) and reduces it to the corresponding alkane (n-pentane). The reagents, hydrazine (NN) and potassium hydroxide ([K+].[OH-]), are the classic Wolff-Kishner or Huang-Minlon conditions. The transformation is a clear deoxygenation of a ketone to a methylene group, which is the defining characteristic of this reaction.\",\n    \"collision_avoidance_note\": \"This example uses a simple, symmetric aliphatic ketone to avoid potential side reactions or ambiguities. It avoids aromatic rings, which could be confused with Clemmensen reduction examples or other aromatic transformations. It also avoids complex functional groups that might be sensitive to the strongly basic conditions, thus keeping the focus squarely on the C=O to CH2 conversion.\"\n  }\n}"
+}

@@ -1,0 +1,37 @@
+alias,canonical_name,entity_type
+NH4OAc,ammonium acetate,reagent
+KOH,potassium hydroxide,base
+AcOH,acetic acid,solvent
+THF,tetrahydrofuran,solvent
+n-BuLi,n-butyllithium,base
+PPh3,triphenylphosphine,ligand
+t-BuOK,potassium tert-butoxide,base
+EtMgBr,ethylmagnesium bromide,grignard_reagent
+Ti(O-i-Pr)4,titanium(IV) isopropoxide,catalyst
+Et2O,diethyl ether,solvent
+PPTS,pyridinium p-toluenesulfonate,acid
+PCC,pyridinium chlorochromate,oxidant
+TBAF,tetra-n-butylammonium fluoride,base
+TBSOTf,tert-butyldimethylsilyl trifluoromethanesulfonate,silylating_agent
+Et3N,triethylamine,base
+TfOH,trifluoromethanesulfonic acid,acid
+NiCl2,nickel(II) chloride,catalyst
+Pd(PPh3)4,tetrakis(triphenylphosphine)palladium(0),catalyst
+MeMgCl,methylmagnesium chloride,grignard_reagent
+Ni(acac)2,nickel(II) acetylacetonate,catalyst
+Tf2O,trifluoromethanesulfonic anhydride,activating_agent
+NaOH,sodium hydroxide,base
+MTBE,methyl tert-butyl ether,solvent
+Pd(OAc)2,palladium(II) acetate,catalyst
+LiCl,lithium chloride,additive
+DMF,"N,N-dimethylformamide",solvent
+K2CO3,potassium carbonate,base
+TES,triethylsilyl,protecting_group
+n-Bu4NCl,tetrabutylammonium chloride,additive
+Na2CO3,sodium carbonate,base
+TPAP,tetrapropylammonium perruthenate,oxidant
+NMO,N-methylmorpholine N-oxide,cooxidant
+4A MS,4A molecular sieves,drying_agent
+CH2Cl2,dichloromethane,solvent
+MeCN,acetonitrile,solvent
+PdCl2(P(o-Tol)3)2,bis(tri-o-tolylphosphine)palladium(II) chloride,catalyst

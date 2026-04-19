@@ -1,0 +1,17 @@
+{
+  "family": "Pinner Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "N#Cc1ccc(OC)c(OC)c1"
+    ],
+    "product_smiles": [
+      "COC(=N)c1ccc(OC)c(OC)c1"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This reaction demonstrates the Pinner reaction by converting a substituted aryl nitrile (3,4-dimethoxybenzonitrile) into its corresponding methyl imidate ester (methyl 3,4-dimethoxybenzimidate) under acidic methanolic conditions. The electron-donating methoxy groups on the aromatic ring are common in this type of transformation and help stabilize the intermediate species. The product is the characteristic imidate ester, not the amide that would result from subsequent hydrolysis, making it a clear example of the Pinner reaction itself.",
+    "collision_avoidance_note": "The substrate is 3,4-dimethoxybenzonitrile, a specific substituted aryl nitrile. This avoids simple benzonitrile or alkyl nitriles. The product is a methyl imidate, which is a classic Pinner product. The reaction conditions clearly distinguish it from Ritter (which uses a carbocation source) or Houben-Hoesch (which involves electrophilic aromatic substitution) reactions. The structure is distinct from simple para-substituted examples.",
+    "reagents_text": "methanol, dry HCl",
+    "conditions_text": "anhydrous acidic alcoholysis, typically at low temperature (e.g., 0 °C)"
+  }
+}

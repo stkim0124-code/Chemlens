@@ -1,0 +1,23 @@
+alias,canonical_name,entity_type
+NH4Cl,ammonium chloride,additive
+NH4OAc,ammonium acetate,additive
+TFA,trifluoroacetic acid,acid
+KHMDS,potassium bis(trimethylsilyl)amide,base
+TMSCl,trimethylsilyl chloride,silylating_agent
+TiCl3,titanium(III) chloride,reagent
+TiCl4,titanium(IV) chloride,reagent
+Zn,zinc,reducing_agent
+DMF,dimethylformamide,solvent
+CuCl,copper(I) chloride,catalyst
+NaNO2,sodium nitrite,diazotizing_agent
+CuCl2·H2O,copper(II) chloride hydrate,catalyst
+KCl,potassium chloride,salt
+BF3·Et2O,boron trifluoride diethyl etherate,Lewis_acid
+Cu2O,copper(I) oxide,catalyst
+Al(i-PrO)3,aluminum isopropoxide,reducing_agent
+mCPBA,meta-chloroperoxybenzoic acid,oxidant
+NFLX,norfloxacin,target_molecule
+MMPP,magnesium monoperoxyphthalate,oxidant
+H2O2,hydrogen peroxide,oxidant
+DBU,"1,8-diazabicyclo[5.4.0]undec-7-ene",base
+THF,tetrahydrofuran,solvent

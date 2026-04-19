@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\"family\":\"Enyne Metathesis\",\"candidate\":{\"candidate_id\":\"C2\",\"substrate_smiles\":[\"C=CCCCCCC\",\"C#CCCCC\"],\"product_smiles\":[\"CCCC/C=C/C=C/CCCCCC\"],\"optional_reagent_smiles\":[\"[Ru]\"],\"rationale\":\"Classic intermolecular cross-enyne metathesis between a terminal alkene and alkyne.\",\"collision_avoidance_note\":\"Avoids radical conditions (Barton-like) and halogenated substrates.\"}}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 243,
+    "candidatesTokenCount": 107,
+    "totalTokenCount": 426,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 243
+      }
+    ],
+    "thoughtsTokenCount": 76
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "-2_jadjfIdWk2roPtuKdyQM"
+}

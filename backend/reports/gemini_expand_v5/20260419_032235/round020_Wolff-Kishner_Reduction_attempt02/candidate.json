@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCC(=O)CC"
+  ],
+  "products": [
+    "CCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic ketone (3-pentanone) to its corresponding alkane (n-pentane) using hydrazine (NN) and potassium hydroxide ([OH-].[K+]), which are the classic reagents for the Wolff-Kishner reduction. The substrate is symmetrical and avoids stereochemical complexity. The transformation is a clear deoxygenation of a carbonyl to a methylene group, which is the defining feature of this reaction.",
+  "collision_avoidance_note": "The substrate is a simple, acyclic aliphatic ketone, avoiding aromatic rings (which could trigger Friedel-Crafts or other arene-related reactions), esters (avoiding Claisen condensation), or other functional groups that might suggest different named reactions. This focuses squarely on the C=O to CH2 conversion characteristic of the Wolff-Kishner reduction.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic ketone (3-pentanone) to its corresponding alkane (n-pentane) using hydrazine (NN) and potassium hydroxide ([OH-].[K+]), which are the classic reagents for the Wolff-Kishner reduction. The substrate is symmetrical and avoids stereochemical complexity. The transformation is a clear deoxygenation of a carbonyl to a methylene group, which is the defining feature of this reaction.\",\n    \"collision_avoidance_note\": \"The substrate is a simple, acyclic aliphatic ketone, avoiding aromatic rings (which could trigger Friedel-Crafts or other arene-related reactions), esters (avoiding Claisen condensation), or other functional groups that might suggest different named reactions. This focuses squarely on the C=O to CH2 conversion characteristic of the Wolff-Kishner reduction.\"\n  }\n}"
+}

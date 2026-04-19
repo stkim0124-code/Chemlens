@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(OC(=S)SC)C\"\n    ],\n    \"product_smiles\": [\n      \"CC=CC\"\n    ],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"This reaction shows the pyrolysis of a simple, acyclic secondary xanthate ester (S-methyl O-butan-2-yl carbonodithioate) to form the corresponding alkene (but-2-ene). The reaction proceeds via a syn-elimination mechanism through a six-membered cyclic transition state, which is characteristic of the Chugaev elimination. The byproducts, carbonyl sulfide (COS) and methanethiol (CS), are typically volatile and are omitted from the product SMILES for clarity, focusing on the organic transformation. This example uses a simple aliphatic substrate to clearly illustrate the core transformation without confounding structural features.\",\n    \"collision_avoidance_note\": \"The structure is a simple, acyclic aliphatic xanthate, avoiding arenes, complex ring systems, or other functional groups that could trigger unrelated named reaction queries. The focus is purely on the thermal elimination of the xanthate group to form an alkene, which is the defining characteristic of the Chugaev elimination.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 381,
+    "candidatesTokenCount": 295,
+    "totalTokenCount": 747,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 381
+      }
+    ],
+    "thoughtsTokenCount": 71
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "Ns_jabC9Frncvr0Pndae0Q8"
+}

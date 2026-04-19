@@ -1,0 +1,163 @@
+{
+  "mode": "apply",
+  "before_state": {
+    "queryable": 722,
+    "family_coverage": 148,
+    "reaction_extracts": 387,
+    "extract_molecules_total": 2288
+  },
+  "after_state": {
+    "queryable": 722,
+    "family_coverage": 148,
+    "reaction_extracts": 387,
+    "extract_molecules_total": 2288
+  },
+  "baseline": {
+    "top1_accuracy": 1.0,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "db_used": "C:\\chemlens\\backend\\app\\labint.db"
+  },
+  "results": [
+    {
+      "family": "Claisen Condensation / Claisen Reaction",
+      "status": "rejected_regression",
+      "benchmark": {
+        "top1_accuracy": 0.963,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "db_used": "C:\\chemlens\\backend\\app\\labint.db"
+      },
+      "stage_extract_id": 479,
+      "new_extract_id": 643,
+      "inserted_molecule_count": 2,
+      "roles": [
+        "reactant",
+        "product"
+      ]
+    },
+    {
+      "family": "Horner-Wadsworth-Emmons Olefination",
+      "status": "rejected_regression",
+      "benchmark": {
+        "top1_accuracy": 0.963,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "db_used": "C:\\chemlens\\backend\\app\\labint.db"
+      },
+      "stage_extract_id": 532,
+      "new_extract_id": 644,
+      "inserted_molecule_count": 3,
+      "roles": [
+        "reactant",
+        "reactant",
+        "product"
+      ]
+    },
+    {
+      "family": "Krapcho Dealkoxycarbonylation",
+      "status": "rejected_regression",
+      "benchmark": {
+        "top1_accuracy": 0.963,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "db_used": "C:\\chemlens\\backend\\app\\labint.db"
+      },
+      "stage_extract_id": 549,
+      "new_extract_id": 645,
+      "inserted_molecule_count": 2,
+      "roles": [
+        "reactant",
+        "product"
+      ]
+    },
+    {
+      "family": "Michael Addition Reaction",
+      "status": "rejected_regression",
+      "benchmark": {
+        "top1_accuracy": 0.963,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "db_used": "C:\\chemlens\\backend\\app\\labint.db"
+      },
+      "stage_extract_id": 559,
+      "new_extract_id": 646,
+      "inserted_molecule_count": 3,
+      "roles": [
+        "reactant",
+        "reactant",
+        "product"
+      ]
+    },
+    {
+      "family": "Regitz Diazo Transfer",
+      "status": "rejected_regression",
+      "benchmark": {
+        "top1_accuracy": 0.963,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "db_used": "C:\\chemlens\\backend\\app\\labint.db"
+      },
+      "stage_extract_id": 475,
+      "new_extract_id": 647,
+      "inserted_molecule_count": 2,
+      "roles": [
+        "reactant",
+        "product"
+      ]
+    },
+    {
+      "family": "Enyne Metathesis",
+      "status": "rejected_regression",
+      "benchmark": {
+        "top1_accuracy": 0.9259,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "db_used": "C:\\chemlens\\backend\\app\\labint.db"
+      },
+      "stage_extract_id": 504,
+      "new_extract_id": 648,
+      "inserted_molecule_count": 3,
+      "roles": [
+        "reactant",
+        "reactant",
+        "product"
+      ]
+    },
+    {
+      "family": "Hofmann-Loffler-Freytag Reaction",
+      "status": "rejected_regression",
+      "benchmark": {
+        "top1_accuracy": 0.9259,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "db_used": "C:\\chemlens\\backend\\app\\labint.db"
+      },
+      "stage_extract_id": 530,
+      "new_extract_id": 649,
+      "inserted_molecule_count": 2,
+      "roles": [
+        "reactant",
+        "product"
+      ]
+    },
+    {
+      "family": "Mitsunobu Reaction",
+      "status": "rejected_regression",
+      "benchmark": {
+        "top1_accuracy": 0.9259,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "db_used": "C:\\chemlens\\backend\\app\\labint.db"
+      },
+      "stage_extract_id": 563,
+      "new_extract_id": 650,
+      "inserted_molecule_count": 3,
+      "roles": [
+        "reactant",
+        "reactant",
+        "product"
+      ]
+    }
+  ]
+}

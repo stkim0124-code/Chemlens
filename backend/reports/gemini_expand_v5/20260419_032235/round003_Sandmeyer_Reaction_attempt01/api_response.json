@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Sandmeyer Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"Nc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"Clc1ccccc1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=N[O-].[Na+]\",\n      \"Cl\",\n      \"[Cu]Cl\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Sandmeyer reaction, converting aniline to chlorobenzene. Aniline is the simplest aromatic amine. The reagents shown (sodium nitrite, acid, and copper(I) chloride) are the standard conditions for this transformation, proceeding through an in-situ generated diazonium salt. The reaction is simple, acyclic (except for the essential benzene ring), and avoids complex functional groups.\",\n    \"collision_avoidance_note\": \"This example uses the simplest possible aromatic amine (aniline) to avoid overlap with more complex named reactions involving substituted arenes. It specifically avoids motifs like diazoalkanes (Wolff rearrangement), complex heterocycles, or other transformations that might occur on substituted rings. The focus is purely on the core arylamine -> diazonium -> aryl halide transformation.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 429,
+    "candidatesTokenCount": 276,
+    "totalTokenCount": 756,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 429
+      }
+    ],
+    "thoughtsTokenCount": 51
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "UM3jaYi3C4eerfcPq5SvqA0"
+}

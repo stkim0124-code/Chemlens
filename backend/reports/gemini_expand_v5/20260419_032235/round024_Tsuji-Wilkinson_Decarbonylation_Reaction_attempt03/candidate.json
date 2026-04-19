@@ -1,0 +1,15 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "substrates": [
+    "CCCCCCC=O"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "[Cl][Rh]([PH](c1ccccc1)(c1ccccc1)c1ccccc1)([PH](c1ccccc1)(c1ccccc1)c1ccccc1)[PH](c1ccccc1)(c1ccccc1)c1ccccc1"
+  ],
+  "rationale": "This reaction shows the decarbonylation of a simple aliphatic aldehyde, heptanal, to its corresponding alkane, hexane, using Wilkinson's catalyst. This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, clearly demonstrating the conversion of an aldehyde functional group (-CHO) to a hydrogen atom (-H) with the loss of carbon monoxide. The substrate is a simple, acyclic, saturated chain, which is ideal for a canonical representation.",
+  "collision_avoidance_note": "The use of a simple, saturated aliphatic aldehyde avoids overlap with reactions involving aromatic aldehydes (which might collide with Gattermann-Koch or Vilsmeier-Haack type reactions if reagents were less specific) or acyl halides (which could be confused with Rosenmund reduction). The transformation is a specific C-C bond cleavage (deformylation), distinct from simple decarboxylation (loss of CO2) or deoxygenation (e.g., Wolff-Kishner, Clemmensen).",
+  "raw_text": "{\n  \"family\": \"Tsuji-Wilkinson Decarbonylation Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCCCCCC=O\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Rh](P(c1ccccc1)(c1ccccc1)c1ccccc1)(P(c1ccccc1)(c1ccccc1)c1ccccc1)P(c1ccccc1)(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the decarbonylation of a simple aliphatic aldehyde, heptanal, to its corresponding alkane, hexane, using Wilkinson's catalyst. This is a classic textbook example of the Tsuji-Wilkinson decarbonylation, clearly demonstrating the conversion of an aldehyde functional group (-CHO) to a hydrogen atom (-H) with the loss of carbon monoxide. The substrate is a simple, acyclic, saturated chain, which is ideal for a canonical representation.\",\n    \"collision_avoidance_note\": \"The use of a simple, saturated aliphatic aldehyde avoids overlap with reactions involving aromatic aldehydes (which might collide with Gattermann-Koch or Vilsmeier-Haack type reactions if reagents were less specific) or acyl halides (which could be confused with Rosenmund reduction). The transformation is a specific C-C bond cleavage (deformylation), distinct from simple decarboxylation (loss of CO2) or deoxygenation (e.g., Wolff-Kishner, Clemmensen).\"\n  }\n}"
+}

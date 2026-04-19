@@ -1,0 +1,5 @@
+{
+  "summary": {},
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"C:\\chemlens\\backend\\run_named_reaction_benchmark_small.py\", line 301, in <module>\n    main()\n  File \"C:\\chemlens\\backend\\run_named_reaction_benchmark_small.py\", line 167, in main\n    bench = json.loads(Path(args.benchmark).read_text(encoding=\"utf-8\"))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\tmdxo\\miniconda3\\envs\\chemlens\\Lib\\pathlib.py\", line 1058, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\tmdxo\\miniconda3\\envs\\chemlens\\Lib\\pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\chemlens\\\\backend\\\\benchmark\\\\named_reaction_benchmark_v4.json'\n"
+}

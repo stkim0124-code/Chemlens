@@ -1,0 +1,30 @@
+You are generating exactly ONE benchmark-safe canonical example for the named reaction family "Ritter Reaction".
+
+Goal:
+Create a very clear carbocation-capture-by-nitrile canonical example leading to an amide product, while avoiding generic nitrile chemistry and avoiding over-broad single-smiles hijack.
+
+Hard constraints:
+- Return exactly ONE candidate only.
+- Use parse-safe substrate/product SMILES only.
+- Do NOT encode strong acid or ionic species as reagent SMILES.
+- Put all reagent and condition information in text only.
+- Prefer a classic tertiary alcohol or equivalent carbocation precursor leading to a clear amide product.
+- Make the nitrile participation obvious in the chemistry logic.
+- Avoid product/core pairs that could be mistaken for Pinner or Houben-Hoesch chemistry.
+- Avoid stage-seed copying.
+- JSON only.
+
+Return JSON in this exact schema:
+{
+  "family": "Ritter Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": ["..."],
+    "product_smiles": ["..."],
+    "optional_reagent_smiles": [],
+    "rationale": "...",
+    "collision_avoidance_note": "...",
+    "reagents_text": "nitrile, strong acid",
+    "conditions_text": "Ritter-type carbocation capture conditions"
+  }
+}

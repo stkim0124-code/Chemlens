@@ -1,0 +1,15 @@
+{
+  "family": "Overman Rearrangement",
+  "substrates": [
+    "CC=CC(C)O"
+  ],
+  "products": [
+    "CC=CC(C)NC(=O)C(Cl)(Cl)Cl"
+  ],
+  "reagents": [
+    "N#CC(Cl)(Cl)Cl"
+  ],
+  "rationale": "This example shows the thermal [3,3]-sigmatropic rearrangement of a simple, secondary allylic trichloroacetimidate, formed in situ from pent-3-en-2-ol and trichloroacetonitrile. The reaction demonstrates the core transformation of the Overman rearrangement: the migration of the trichloroacetimidoyl group from oxygen to carbon with a concomitant shift of the double bond. The starting materials and product are simple, acyclic, and lack complex functional groups, making it a clear and canonical representation of the reaction.",
+  "collision_avoidance_note": "The use of a simple acyclic allylic alcohol and the explicit trichloroacetimidate functional group (formed from trichloroacetonitrile) is specific to the Overman rearrangement. This avoids collision with other [3,3]-sigmatropic rearrangements like the Claisen (which involves vinyl ethers) or Cope (which involves dienes) rearrangements. The lack of aromatic rings or other complex motifs prevents overlap with a wide range of other named reactions.",
+  "raw_text": "{\n  \"family\": \"Overman Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC=CC(O)C\"\n    ],\n    \"product_smiles\": [\n      \"CC(NC(=O)C(Cl)(Cl)Cl)C=CC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"N#CC(Cl)(Cl)Cl\"\n    ],\n    \"rationale\": \"This example shows the thermal [3,3]-sigmatropic rearrangement of a simple, secondary allylic trichloroacetimidate, formed in situ from pent-3-en-2-ol and trichloroacetonitrile. The reaction demonstrates the core transformation of the Overman rearrangement: the migration of the trichloroacetimidoyl group from oxygen to carbon with a concomitant shift of the double bond. The starting materials and product are simple, acyclic, and lack complex functional groups, making it a clear and canonical representation of the reaction.\",\n    \"collision_avoidance_note\": \"The use of a simple acyclic allylic alcohol and the explicit trichloroacetimidate functional group (formed from trichloroacetonitrile) is specific to the Overman rearrangement. This avoids collision with other [3,3]-sigmatropic rearrangements like the Claisen (which involves vinyl ethers) or Cope (which involves dienes) rearrangements. The lack of aromatic rings or other complex motifs prevents overlap with a wide range of other named reactions.\"\n  }\n}"
+}

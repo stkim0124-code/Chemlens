@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=C(C)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic ketone (butan-2-one) to the corresponding alkane (n-butane). This is the quintessential transformation for the Wolff-Kishner reduction, clearly demonstrating the conversion of a carbonyl group (C=O) to a methylene group (CH2) under basic conditions using hydrazine. The reactants and products are small, acyclic, and unambiguous, making it an ideal canonical example.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic ketone to avoid overlap with reactions involving aromatic rings (e.g., Friedel-Crafts acylation/alkylation) or other functional groups. It specifically avoids aldehydes, which could be involved in aldol or Cannizzaro reactions, and avoids cyclic ketones which might be involved in ring expansions (e.g., Tiffeneau-Demjanov) or cleavages. The transformation is a clear deoxygenation of a ketone to an alkane, which is the defining feature of the Wolff-Kishner reduction.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 447,
+    "candidatesTokenCount": 318,
+    "totalTokenCount": 849,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 447
+      }
+    ],
+    "thoughtsTokenCount": 84
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "_trjadmeFMXy2roP0O2skAM"
+}

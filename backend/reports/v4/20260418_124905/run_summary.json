@@ -1,0 +1,72 @@
+{
+  "run_id": "20260418_124905",
+  "canonical_db": "C:\\chemlens\\backend\\app\\labint.db",
+  "stage_db": "C:\\chemlens\\backend\\app\\labint_v4_stage.db",
+  "benchmark_file": "C:\\chemlens\\backend\\named_reaction_benchmark_v4.json",
+  "start_state": {
+    "queryable": 482,
+    "tier1": 396,
+    "family_coverage": 51,
+    "reaction_extracts": 290,
+    "extract_molecules_total": 1855
+  },
+  "final_state": {
+    "queryable": 482,
+    "tier1": 396,
+    "family_coverage": 51,
+    "reaction_extracts": 290,
+    "extract_molecules_total": 1855
+  },
+  "rounds_run": 1,
+  "total_inserted": 0,
+  "quarantined": [
+    "aldolreaction",
+    "claisenrearrangement",
+    "coperearrangement",
+    "wittigreaction"
+  ],
+  "quarantined_count": 4,
+  "stopped_reason": "completed",
+  "args": {
+    "db": "app\\labint.db",
+    "stage_db": "app\\labint_v4_stage.db",
+    "benchmark_file": "named_reaction_benchmark_v4.json",
+    "report_dir": "reports\\v4",
+    "reset_stage": true,
+    "family_target": 250,
+    "batch_size": 5,
+    "max_rounds": 40,
+    "max_empty_rounds": 3,
+    "candidate_limit": 30,
+    "disk_budget_gb": 10.0,
+    "max_snapshots": 20,
+    "snapshot_every": 25,
+    "deterministic_only": false,
+    "gemini_only": false,
+    "gemini_fallback": "yes",
+    "allowed_top1_drop": 0.0,
+    "allowed_violation_increase": 0,
+    "plan_only": false,
+    "min_confidence": 0.75,
+    "gemini_api_key": null,
+    "gemini_models": "gemini-2.5-pro,gemini-2.5-flash,gemini-2.5-flash-lite"
+  },
+  "baseline_benchmark": {
+    "benchmark_name": "CHEMLENS benchmark v4 (expanded)",
+    "total_cases": 50,
+    "reaction_cases": 33,
+    "top1_correct": 12,
+    "top1_accuracy": 0.3636,
+    "top3_correct": 16,
+    "top3_accuracy": 0.4848,
+    "disallow_top3_violations": 0,
+    "disallow_violation_rate": 0.0,
+    "unique_families": 24,
+    "noisy_cases": 5,
+    "noisy_pass": 0,
+    "noisy_pass_rate": 0.0,
+    "meaningful_cases": 12,
+    "meaningful_pass": 11,
+    "meaningful_pass_rate": 0.9167
+  }
+}

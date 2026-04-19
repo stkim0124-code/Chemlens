@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Petasis-Ferrier Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)C(O)C=C(C)OC1CCOC1\"\n    ],\n    \"product_smiles\": [\n      \"CC(C)[C@H]1CC[C@@H](C)C(C)O1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"C[Al](C)Cl\"\n    ],\n    \"rationale\": \"This example shows the classic Lewis acid-promoted rearrangement of a cyclic enol acetal derived from a 1,3-diol precursor (implied). The reaction converts the acyclic hydroxy enol ether into a substituted tetrahydropyran, which is the hallmark of the Petasis-Ferrier rearrangement. The substrates are simple and acyclic (apart from the necessary cyclic acetal portion), and the stereochemistry shown reflects the typical diastereoselective outcome of the reaction, forming a 2,4,6-trisubstituted tetrahydropyran common in polyketide synthesis applications.\",\n    \"collision_avoidance_note\": \"This example is specific to the rearrangement of a cyclic enol acetal containing a pendant alcohol, which is rearranged to a substituted tetrahydropyran. It avoids the original Ferrier rearrangement (glycals), the Petasis olefination (titanocene methylenation), and generic Lewis acid-catalyzed acetal manipulations by featuring the characteristic structural transformation of this named variant. The use of a simple alkylaluminum Lewis acid is also characteristic.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 458,
+    "candidatesTokenCount": 355,
+    "totalTokenCount": 879,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 458
+      }
+    ],
+    "thoughtsTokenCount": 66
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "pMzjabzvHuC00-kPpI7XeA"
+}

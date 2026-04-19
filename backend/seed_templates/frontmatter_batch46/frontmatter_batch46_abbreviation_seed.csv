@@ -1,0 +1,11 @@
+alias,canonical_name,entity_type
+Cp2ZrHCl,zirconocene hydrochloride,reagent
+n-BuNC,n-butyl isocyanide,reagent
+Ni(COD)2,"bis(1,5-cyclooctadiene)nickel(0)",catalyst
+Ti(O-iPr)4,titanium tetraisopropoxide,catalyst
+D-(-)-DET,D-(-)-diethyl tartrate,ligand
+L-(+)-DET,L-(+)-diethyl tartrate,ligand
+AD-mix α,Sharpless AD-mix alpha,reagent_mixture
+AD-mix β,Sharpless AD-mix beta,reagent_mixture
+K2OsO2(OH)4,potassium osmate dihydrate,oxidant
+K3Fe(CN)6,potassium ferricyanide,oxidant

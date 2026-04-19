@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Stevens Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C[N+](C)(CC1=CC=CC=C1)C1=CC=CC=C1.[Br-]\"\n    ],\n    \"product_smiles\": [\n      \"CN(C)C(C1=CC=CC=C1)C1=CC=CC=C1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Na+]C#N\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Stevens rearrangement of a quaternary ammonium salt. A base (sodium cyanide is shown, but others like NaOMe or PhLi are common) deprotonates the benzylic carbon to form an ylide. The ylide then undergoes a [1,2]-migration of a methyl group from the nitrogen to the adjacent carbanionic carbon, forming the rearranged tertiary amine product. The use of a benzyl group facilitates ylide formation due to the acidity of the benzylic protons.\",\n    \"collision_avoidance_note\": \"This example uses simple, common functional groups (benzyl, methyl) attached to the nitrogen atom, avoiding complex ring systems or highly reactive functional groups that could overlap with other named reactions. It specifically avoids the Sommelet-Hauser rearrangement by ensuring the migrating group (methyl) cannot undergo aromatic substitution. The core transformation is a clear [1,2]-shift on an ammonium ylide, which is the defining feature of the Stevens rearrangement.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 422,
+    "candidatesTokenCount": 342,
+    "totalTokenCount": 845,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 422
+      }
+    ],
+    "thoughtsTokenCount": 81
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "t83jaaCoCOSfrfcP2baoGA"
+}

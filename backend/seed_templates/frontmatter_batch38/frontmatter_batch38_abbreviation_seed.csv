@@ -1,0 +1,19 @@
+alias,canonical_name,entity_type
+Al(O-i-Pr)3,aluminum isopropoxide,reagent
+PtO2,platinum dioxide,catalyst
+Cl3CCN,trichloroacetonitrile,reagent
+PdCl2(PhCN)2,bis(benzonitrile)palladium(II) chloride,catalyst
+Mn(OAc)3·2H2O,manganese(III) acetate dihydrate,oxidant
+NH4OAc/AcOH,ammonium acetate in acetic acid,ammonia_precursor
+AcONH4,ammonium acetate,ammonia_precursor
+AlMe3,trimethylaluminum,organometallic_reagent
+Ti(Oi-Pr)4,titanium tetraisopropoxide,catalyst
+PPTS,pyridinium p-toluenesulfonate,acid
+CSA,camphorsulfonic acid,acid
+SEM,2-(trimethylsilyl)ethoxymethyl,protecting_group
+KH,potassium hydride,base
+TsOH,p-toluenesulfonic acid,acid
+BF3·Et2O,boron trifluoride etherate,Lewis_acid
+PPA,polyphosphoric acid,reagent
+P2O5,phosphorus pentoxide,reagent
+TBAF,tetra-n-butylammonium fluoride,reagent

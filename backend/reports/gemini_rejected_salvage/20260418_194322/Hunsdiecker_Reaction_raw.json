@@ -1,0 +1,47 @@
+{
+  "family": "Hunsdiecker Reaction",
+  "candidates": [
+    {
+      "candidate_id": "C1",
+      "substrate_smiles": [
+        "CCCCC(=O)[O-].[Ag+]"
+      ],
+      "product_smiles": [
+        "CCCCCBr"
+      ],
+      "optional_reagent_smiles": [
+        "BrBr"
+      ],
+      "rationale": "This is a classic, textbook example of the Hunsdiecker reaction using a simple linear aliphatic silver carboxylate. The reaction clearly shows the decarboxylative bromination, resulting in an alkyl bromide that is one carbon shorter than the starting material. The transformation is unambiguous and highlights the core features of the reaction family.",
+      "collision_avoidance_note": "This example uses a silver carboxylate, the defining precursor for the Hunsdiecker reaction, which is structurally distinct from the thiohydroxamate (Barton) esters used in the Barton radical reaction. The absence of peroxides, UV light, or complex radical initiators further distinguishes it from generic radical halogenations that might be confused with Barton-type processes."
+    },
+    {
+      "candidate_id": "C2",
+      "substrate_smiles": [
+        "O=C([O-])C1CCCCC1.[Ag+]"
+      ],
+      "product_smiles": [
+        "BrC1CCCCC1"
+      ],
+      "optional_reagent_smiles": [
+        "BrBr"
+      ],
+      "rationale": "This example demonstrates the Hunsdiecker reaction on an alicyclic substrate, converting silver cyclohexanecarboxylate to bromocyclohexane. The loss of the carboxylate group and its replacement with a bromine atom on the saturated ring is a clear and unmistakable topological change, reinforcing the decarboxylative halogenation pattern.",
+      "collision_avoidance_note": "The substrate is a simple silver salt of a cycloalkanecarboxylic acid, which is a canonical Hunsdiecker precursor. It lacks the N-O-C(=S) moiety of a Barton ester, preventing misclassification. The simple saturated ring system avoids any potential for competing reactions that could create ambiguity."
+    },
+    {
+      "candidate_id": "C3",
+      "substrate_smiles": [
+        "CC(C)(C)CC(=O)[O-].[Ag+]"
+      ],
+      "product_smiles": [
+        "CC(C)(C)CI"
+      ],
+      "optional_reagent_smiles": [
+        "II"
+      ],
+      "rationale": "This example uses a sterically hindered substrate (silver 3,3-dimethylbutanoate) and iodine as the halogen source to produce a neopentyl iodide. It showcases the reaction's applicability to branched systems and with different halogens. The one-carbon shortening and installation of the halide are very obvious in the neopentyl framework.",
+      "collision_avoidance_note": "By strictly adhering to the silver carboxylate precursor, this example avoids the Barton ester pattern. The use of a simple halogen (I2) without other radical promoters ensures the reaction identity is tied to the Hunsdiecker mechanism, not a more general radical decarboxylation pathway that could be confused with the Barton reaction."
+    }
+  ]
+}

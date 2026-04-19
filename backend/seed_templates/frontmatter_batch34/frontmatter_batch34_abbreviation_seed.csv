@@ -1,0 +1,18 @@
+alias,canonical_name,entity_type
+AcCl,acetyl chloride,acylating_agent
+Ac2O,acetic anhydride,acylating_agent
+H2SO4,sulfuric acid,acid
+HgSO4,mercury(II) sulfate,Lewis_acid
+Et3N,triethylamine,base
+LDA,lithium diisopropylamide,base
+PhNTf2,N-phenyl bis(trifluoromethanesulfonimide),triflylating_agent
+HF,hydrogen fluoride,acid
+CeCl3·7H2O,cerium(III) chloride heptahydrate,Lewis_acid
+NaBH4,sodium borohydride,reducing_agent
+9-BBN,9-borabicyclo[3.3.1]nonane,hydroborating_agent
+AgNO3,silver nitrate,catalyst
+TFA,trifluoroacetic acid,acid
+NaNO2,sodium nitrite,nitrosating_agent
+mCPBA,meta-chloroperoxybenzoic acid,oxidant
+P(OMe)3,trimethyl phosphite,thiophile
+PhSCl,benzenesulfenyl chloride,sulfenylating_agent

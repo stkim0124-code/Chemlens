@@ -1,0 +1,16 @@
+{
+  "family": "Pinner Reaction",
+  "substrates": [
+    "CC#N",
+    "CCO"
+  ],
+  "products": [
+    "CCOC(C)=[NH2+].[Cl-]"
+  ],
+  "reagents": [
+    "Cl"
+  ],
+  "rationale": "This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and an alcohol (ethanol) in the presence of dry hydrogen chloride. This is the quintessential first step of the Pinner reaction, representing the core transformation without proceeding to subsequent hydrolysis or aminolysis steps, which could be confused with other named reactions. The reactants and product are small, acyclic, and devoid of complex functional groups, making it a clear and unambiguous example.",
+  "collision_avoidance_note": "The product is the characteristic imino ether salt (Pinner salt), which is the key intermediate of this reaction family. By stopping at this stage, we avoid generating esters (which could collide with Fischer esterification) or amidines (which could collide with other amidine syntheses). The use of simple, non-aromatic substrates avoids overlap with reactions involving aromatic rings.",
+  "raw_text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction shows the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and an alcohol (ethanol) in the presence of dry hydrogen chloride. This is the quintessential first step of the Pinner reaction, representing the core transformation without proceeding to subsequent hydrolysis or aminolysis steps, which could be confused with other named reactions. The reactants and product are small, acyclic, and devoid of complex functional groups, making it a clear and unambiguous example.\",\n    \"collision_avoidance_note\": \"The product is the characteristic imino ether salt (Pinner salt), which is the key intermediate of this reaction family. By stopping at this stage, we avoid generating esters (which could collide with Fischer esterification) or amidines (which could collide with other amidine syntheses). The use of simple, non-aromatic substrates avoids overlap with reactions involving aromatic rings.\"\n  }\n}"
+}

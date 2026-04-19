@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Retro-Claisen Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)C(C)C(=O)OCC\"\n    ],\n    \"product_smiles\": [\n      \"CCC(=O)C\",\n      \"CC(=O)OCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[OH-]\",\n      \"O\"\n    ],\n    \"rationale\": \"This reaction shows the base-catalyzed cleavage of ethyl 2-methyl-3-oxopentanoate, a simple acyclic beta-keto ester. The strong base attacks the ketone carbonyl, leading to the cleavage of the C-C bond between the alpha and beta carbons, ultimately forming butan-2-one and ethyl acetate. This is a classic textbook example of the retro-Claisen reaction, demonstrating the cleavage of a 1,3-dicarbonyl system into two simpler carbonyl compounds.\",\n    \"collision_avoidance_note\": \"The chosen substrate is a simple, acyclic beta-keto ester, avoiding complex ring systems or additional functional groups that could trigger other named reaction classifiers. The products are simple, common ketones and esters. This specific example is less likely to be confused with the forward Claisen condensation, Dieckmann condensation (intramolecular), or other carbonyl condensation reactions due to the explicit cleavage transformation.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 390,
+    "candidatesTokenCount": 305,
+    "totalTokenCount": 819,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 390
+      }
+    ],
+    "thoughtsTokenCount": 124
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "f9jjaa6RCZusvr0PmKKG4QI"
+}

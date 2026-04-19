@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Ritter Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(C)O\",\n      \"CC#N\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)NC(C)(C)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=S(=O)(O)O\"\n    ],\n    \"rationale\": \"This is a classic textbook example of the Ritter reaction, demonstrating the formation of a stable tert-butyl carbocation from tert-butanol under strong acid (sulfuric acid) catalysis. This carbocation is then trapped by acetonitrile, which, after hydrolysis of the resulting nitrilium ion intermediate, yields N-tert-butylacetamide. All reactants and the product are simple, acyclic, and small, clearly illustrating the core transformation without introducing confounding structural features.\",\n    \"collision_avoidance_note\": \"The use of a simple tertiary alcohol (tert-butanol) as the carbocation precursor and a simple nitrile (acetonitrile) avoids complex structures that could overlap with other named reactions. It specifically avoids alkenes (which could suggest hydroamination or other additions), arenes (common in many other named reactions), or functional groups that might trigger rearrangements or side reactions, ensuring the query is specific to the Ritter amidation process.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 435,
+    "candidatesTokenCount": 300,
+    "totalTokenCount": 790,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 435
+      }
+    ],
+    "thoughtsTokenCount": 55
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "N9TjaaGMDtS7vr0Pq__gkQQ"
+}

@@ -1,0 +1,16 @@
+{
+  "family": "Pinner Reaction",
+  "substrates": [
+    "CC#N",
+    "CCO"
+  ],
+  "products": [
+    "CCOC(C)=[NH2+].[Cl-]"
+  ],
+  "reagents": [
+    "Cl"
+  ],
+  "rationale": "This reaction represents the classical Pinner reaction, showing the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and a simple alcohol (ethanol) under anhydrous acidic conditions (HCl). This is the quintessential first step of the Pinner synthesis, which is often followed by hydrolysis to an ester or aminolysis to an amidine. The use of simple, acyclic, and small aliphatic substrates makes it a clear and unambiguous example of the core transformation.",
+  "collision_avoidance_note": "The reactants are simple aliphatic molecules (acetonitrile, ethanol) to avoid overlap with reactions involving aromatic systems, complex functional groups, or specific ring structures. The product is the characteristic imino ether salt, which is central to the Pinner reaction and distinct from products of other nitrile transformations like the Stephen reduction (aldehyde) or Blaise reaction (beta-ketoester).",
+  "raw_text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This reaction represents the classical Pinner reaction, showing the formation of an imino ether hydrochloride salt (a Pinner salt) from a simple aliphatic nitrile (acetonitrile) and a simple alcohol (ethanol) under anhydrous acidic conditions (HCl). This is the quintessential first step of the Pinner synthesis, which is often followed by hydrolysis to an ester or aminolysis to an amidine. The use of simple, acyclic, and small aliphatic substrates makes it a clear and unambiguous example of the core transformation.\",\n    \"collision_avoidance_note\": \"The reactants are simple aliphatic molecules (acetonitrile, ethanol) to avoid overlap with reactions involving aromatic systems, complex functional groups, or specific ring structures. The product is the characteristic imino ether salt, which is central to the Pinner reaction and distinct from products of other nitrile transformations like the Stephen reduction (aldehyde) or Blaise reaction (beta-ketoester).\"\n  }\n}"
+}

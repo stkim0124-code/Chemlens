@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Stille-Kelly Coupling\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"Brc1cccc(Br)c1\"\n    ],\n    \"product_smiles\": [\n      \"c1cccc2c1cccc2\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"C[Sn](C)(C)[Sn](C)(C)C\",\n      \"[Pd](P(c1ccccc1)c1ccccc1)(P(c1ccccc1)c1ccccc1)(P(c1ccccc1)c1ccccc1)P(c1ccccc1)c1ccccc1\"\n    ],\n    \"rationale\": \"This reaction shows the intramolecular coupling of 1,2-dibromobenzene to form biphenylene, a classic example of the Stille-Kelly coupling. It uses a simple, symmetrical aromatic dihalide substrate and a common distannane reagent (hexamethylditin) with a standard palladium catalyst (Pd(PPh3)4). The formation of the four-membered ring in biphenylene is a hallmark of this specific intramolecular variant of the Stille coupling.\",\n    \"collision_avoidance_note\": \"This example is specific to the intramolecular Stille-Kelly coupling, forming a biaryl system from a single dihalide precursor. It avoids using complex heterocyclic systems or functional groups that could overlap with other named reactions. The use of a distannane reagent and the intramolecular nature clearly distinguish it from intermolecular Stille couplings or other biaryl couplings like Suzuki or Ullmann reactions.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 426,
+    "candidatesTokenCount": 348,
+    "totalTokenCount": 838,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 426
+      }
+    ],
+    "thoughtsTokenCount": 64
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "JdDjaZa0OpmZ0-kP4I_puAM"
+}

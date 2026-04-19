@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCCC(=O)CC"
+  ],
+  "products": [
+    "CCCCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane) using hydrazine and potassium hydroxide, which are the classic reagents for the Wolff-Kishner reduction. The substrate is symmetrical and lacks other functional groups, making it a clear and unambiguous example of the deoxygenation of a carbonyl group to a methylene group.",
+  "collision_avoidance_note": "The use of a simple, acyclic, aliphatic ketone avoids aromatic rings, which could trigger Clemmensen reduction or other aromatic chemistry. It also avoids esters or other base-sensitive groups that might suggest saponification or other base-catalyzed reactions. The transformation is a straightforward deoxygenation, distinct from reductions that produce alcohols (e.g., NaBH4) or pinacol couplings.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)CCC\"\n    ],\n    \"product_smiles\": [\n      \"CCCCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic, aliphatic ketone (3-hexanone) to its corresponding alkane (n-hexane) using hydrazine and potassium hydroxide, which are the classic reagents for the Wolff-Kishner reduction. The substrate is symmetrical and lacks other functional groups, making it a clear and unambiguous example of the deoxygenation of a carbonyl group to a methylene group.\",\n    \"collision_avoidance_note\": \"The use of a simple, acyclic, aliphatic ketone avoids aromatic rings, which could trigger Clemmensen reduction or other aromatic chemistry. It also avoids esters or other base-sensitive groups that might suggest saponification or other base-catalyzed reactions. The transformation is a straightforward deoxygenation, distinct from reductions that produce alcohols (e.g., NaBH4) or pinacol couplings.\"\n  }\n}"
+}

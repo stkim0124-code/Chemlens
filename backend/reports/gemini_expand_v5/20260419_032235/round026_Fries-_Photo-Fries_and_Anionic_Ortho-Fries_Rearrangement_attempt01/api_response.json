@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"family\": \"Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(=O)Oc1ccccc1\"\n    ],\n    \"product_smiles\": [\n      \"CC(=O)c1ccccc1O\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Al](Cl)Cl\"\n    ],\n    \"rationale\": \"This reaction shows the classic Lewis acid-catalyzed Fries rearrangement of phenyl acetate to 2-hydroxyacetophenone. It is the simplest and most common textbook example, clearly illustrating the migration of an acyl group from a phenolic oxygen to an ortho position on the aromatic ring. The use of phenyl acetate as the substrate and aluminum chloride as the catalyst is canonical.\",\n    \"collision_avoidance_note\": \"This example uses the simplest possible aromatic system (phenyl) and acyl group (acetyl) to avoid overlap with more complex named reactions involving substituted arenes or functional groups. It avoids motifs common in other rearrangements (e.g., Claisen, which involves allyl groups) or electrophilic aromatic substitutions (e.g., Friedel-Crafts acylation, which starts with a free phenol and an acylating agent). The intramolecular nature of the rearrangement is key to its specificity.\"\n  }\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 387,
+    "candidatesTokenCount": 296,
+    "totalTokenCount": 755,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 387
+      }
+    ],
+    "thoughtsTokenCount": 72
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "eeLjaYOLOuqgvr0PuueLMA"
+}

@@ -1,0 +1,16 @@
+{
+  "family": "Prévost Reaction",
+  "substrates": [
+    "C/C=C/C"
+  ],
+  "products": [
+    "C[C@H](O)[C@@H](C)O"
+  ],
+  "reagents": [
+    "O=C([O][Ag])c1ccccc1",
+    "I.I"
+  ],
+  "rationale": "This reaction shows the classic Prévost reaction, which is the anti-dihydroxylation of an alkene using iodine and silver benzoate under anhydrous conditions. The substrate is (E)-but-2-ene, a simple, acyclic alkene. The reaction proceeds via a cyclic iodonium ion intermediate, followed by two successive SN2-like attacks by benzoate, leading to a trans-dibenzoate ester. Subsequent hydrolysis (implied in the workup) yields the anti-diol, (2R,3S)-butane-2,3-diol (a meso compound). This example clearly illustrates the stereochemical outcome and core transformation of the Prévost reaction.",
+  "collision_avoidance_note": "The substrate is a simple acyclic alkene to avoid overlap with reactions specific to cyclic systems or complex natural products. The reagents, iodine and silver benzoate, are the defining reagents for the classical Prévost reaction, distinguishing it from other dihydroxylation methods like those using osmium tetroxide (Sharpless) or permanganate. The product is a simple vicinal diol, avoiding functional groups that might trigger other named reaction classifiers.",
+  "raw_text": "{\n  \"family\": \"Prévost Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"C/C=C/C\"\n    ],\n    \"product_smiles\": [\n      \"C[C@H](O)[C@H](O)C\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"O=C(O[Ag])c1ccccc1\",\n      \"I.I\"\n    ],\n    \"rationale\": \"This reaction shows the classic Prévost reaction, which is the anti-dihydroxylation of an alkene using iodine and silver benzoate under anhydrous conditions. The substrate is (E)-but-2-ene, a simple, acyclic alkene. The reaction proceeds via a cyclic iodonium ion intermediate, followed by two successive SN2-like attacks by benzoate, leading to a trans-dibenzoate ester. Subsequent hydrolysis (implied in the workup) yields the anti-diol, (2R,3S)-butane-2,3-diol (a meso compound). This example clearly illustrates the stereochemical outcome and core transformation of the Prévost reaction.\",\n    \"collision_avoidance_note\": \"The substrate is a simple acyclic alkene to avoid overlap with reactions specific to cyclic systems or complex natural products. The reagents, iodine and silver benzoate, are the defining reagents for the classical Prévost reaction, distinguishing it from other dihydroxylation methods like those using osmium tetroxide (Sharpless) or permanganate. The product is a simple vicinal diol, avoiding functional groups that might trigger other named reaction classifiers.\"\n  }\n}"
+}

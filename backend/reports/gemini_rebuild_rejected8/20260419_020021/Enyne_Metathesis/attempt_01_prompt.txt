@@ -1,0 +1,16 @@
+Generate exactly one benchmark-safe canonical example for the named reaction family 'Enyne Metathesis'.
+Cluster risk: barton ; forbid signals: decarboxylation, deoxygenation.
+Current rejected stage seed to avoid copying:
+- role=reactant smiles=C=CCCCCCC
+- role=reactant smiles=C#CCCCC
+- role=product smiles=CCCC/C=C/C=C/CCCCCC
+Goal: Propose a concise ring-closing enyne metathesis example with one enyne substrate and one cyclized diene product. Avoid any carboxylate, decarboxylation, deoxygenation, thiohydroxamate, Barton or McCombie-like motifs.
+Rules:
+- keep it textbook and minimal
+- avoid the forbidden signals above
+- do not repeat the current rejected stage topology
+- provide valid organic SMILES only; no catalyst metals in SMILES unless absolutely necessary
+- keep reagent list short or empty if not essential
+
+Return JSON only with this schema:
+{"substrate_smiles":["..."],"product_smiles":["..."],"optional_reagent_smiles":["..."]}

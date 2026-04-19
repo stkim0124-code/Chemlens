@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\"family\":\"Hofmann-Loffler-Freytag Reaction\",\"candidate\":{\"candidate_id\":\"C2\",\"substrate_smiles\":[\"CCCCN(C)Cl\"],\"product_smiles\":[\"CN1CCCC1\"],\"optional_reagent_smiles\":[\"O=S(=O)(O)O\"],\"rationale\":\"Canonical HLF reaction. N-chloroamine undergoes acid-catalyzed intramolecular C-H amination via a nitrogen radical to form a pyrrolidine ring.\",\"collision_avoidance_note\":\"Avoids Barton-like motifs. Focuses on the core N-haloamine to cyclic amine transformation under acidic conditions, distinct from radical halogenation.\"}}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 251,
+    "candidatesTokenCount": 138,
+    "totalTokenCount": 452,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 251
+      }
+    ],
+    "thoughtsTokenCount": 63
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "BHDjad_iLIWevr0PzuKGyA8"
+}

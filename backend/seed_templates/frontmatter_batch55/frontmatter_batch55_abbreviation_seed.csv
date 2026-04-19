@@ -1,0 +1,17 @@
+alias,canonical_name,entity_type
+NaHMDS,sodium hexamethyldisilazide,base
+BuLi,butyllithium,base
+n-BuLi,n-butyllithium,base
+PhLi,phenyllithium,base
+HMPA,hexamethylphosphoramide,solvent_additive
+OTBS,tert-butyldimethylsilyloxy,protecting_group
+MOM,methoxymethyl,protecting_group
+LDA,lithium diisopropylamide,base
+LiX,lithium halide,salt_additive
+NBS,N-bromosuccinimide,radical_brominating_agent
+AIBN,azobisisobutyronitrile,radical_initiator
+(PhCOO)2,benzoyl peroxide,radical_initiator
+TsN3,p-toluenesulfonyl azide,diazo_transfer_reagent
+Ag2O,silver oxide,metal_oxidant
+TMSCl,trimethylsilyl chloride,silylating_reagent
+NaHCO3,sodium bicarbonate,base

@@ -1,0 +1,79 @@
+==================================================
+STEP2_AND_BENCHMARK_STRICT started
+Working directory: C:\chemlens\backend
+==================================================
+C:\Users\tmdxo\miniconda3\envs\chemlens\python.exe
+C:\Users\tmdxo\AppData\Local\Programs\Python\Python314\python.exe
+C:\Users\tmdxo\AppData\Local\Microsoft\WindowsApps\python.exe
+C:\Users\tmdxo\miniconda3\envs\chemlens\python.exe
+C:\Users\tmdxo\miniconda3\envs\chemlens\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (6.0.0.post1)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+IMPORT_OK
+{
+  "root": "C:\\chemlens\\backend",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "manual_page_knowledge": 757,
+  "manual_page_entities": 1849,
+  "distinct_pages": 757,
+  "page_range": [
+    2,
+    810
+  ],
+  "p502_553_records": 0,
+  "p502_title": null,
+  "reaction_family_patterns": 291,
+  "abbreviation_aliases": 1038,
+  "reaction_extracts": 275,
+  "extract_molecules_total": 1799,
+  "queryable": 426,
+  "tier1": 340,
+  "tier2": 86,
+  "tier3": 1373,
+  "queryable_family_coverage": 36,
+  "structure_source_counts": [
+    [
+      "NULL",
+      1517
+    ],
+    [
+      "vision_raw_json_promote",
+      224
+    ],
+    [
+      "pubchem_name_lookup",
+      43
+    ],
+    [
+      "rdkit_direct_parse",
+      15
+    ]
+  ]
+}
+C:\Users\tmdxo\miniconda3\envs\chemlens\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (6.0.0.post1)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+INFO  DB: C:\chemlens\backend\app\labint.db
+INFO  dry-run: False  delay: 0.35s
+INFO  === 실행 전 ===
+INFO    queryable=1:     426
+INFO    tier1:           340
+INFO    tier3:           1373
+INFO    구조검색 family: 36
+INFO  
+tier3 전체:          1373
+INFO    SMILES 직접 파싱:  0
+INFO    PubChem 이름 조회: 172  (unique: 141)
+INFO    제외:              1201
+INFO  예상 소요 시간:      0.8분
+INFO  
+PubChem 조회 시작... (141개)
+INFO    OK  'methyl 3-chloro-2-methylpropanoate' → COC(=O)C(C)CCl
+INFO    OK  'diethyl pentanedioate' → CCOC(=O)CCCC(=O)OCC
+INFO    진행 20/141 (14%)  성공:2 no_hit:18 http_fail:0
+INFO    진행 40/141 (28%)  성공:2 no_hit:38 http_fail:0
+INFO    진행 60/141 (43%)  성공:2 no_hit:58 http_fail:0
+INFO    OK  'Deoxybenzoin' → O=C(Cc1ccccc1)c1ccccc1
+INFO    OK  'benzaldehyde' → O=Cc1ccccc1
+INFO    OK  'mandelonitrile' → N#CC(O)c1ccccc1
+INFO    진행 80/141 (57%)  성공:5 no_hit:75 http_fail:0
+INFO    진행 100/141 (71%)  성공:5 no_hit:95 http_fail:0
+^C

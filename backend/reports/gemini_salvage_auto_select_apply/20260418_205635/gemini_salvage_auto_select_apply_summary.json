@@ -1,0 +1,804 @@
+{
+  "generated_at": "2026-04-18T20:57:09",
+  "mode": "dry-run",
+  "canonical_db": "C:\\chemlens\\backend\\app\\labint.db",
+  "work_db": "C:\\chemlens\\backend\\app\\labint_round9_bridge_work.db",
+  "source_db": "C:\\chemlens\\backend\\app\\labint_v5_stage.db",
+  "benchmark": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+  "salvage_summary": "C:\\chemlens\\backend\\reports\\gemini_rejected_salvage\\20260418_205014\\gemini_salvage_summary.json",
+  "baseline": {
+    "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+    "top1_accuracy": 1.0,
+    "top3_accuracy": 1.0,
+    "disallow_top3_violations": 0,
+    "json_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_baseline.json",
+    "csv_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_baseline.csv",
+    "md_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_baseline.md"
+  },
+  "combo_evals": [
+    {
+      "combo_index": 1,
+      "selected_candidate_ids": [
+        "C1",
+        "C1"
+      ],
+      "selections": [
+        {
+          "family_name": "Enyne Metathesis",
+          "selected_candidate_id": "C1",
+          "stage_extract_id": 504,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C1",
+            "substrate_smiles": [
+              "C=CCCCCCC",
+              "C#CCCCC"
+            ],
+            "product_smiles": [
+              "CCCC/C=C/C=C/CCCCCC"
+            ],
+            "optional_reagent_smiles": [
+              "[Ru]"
+            ],
+            "rationale": "Classic intermolecular cross-enyne metathesis between a terminal alkene and alkyne.",
+            "collision_avoidance_note": "Avoids radical motifs (Barton-like) and halogenated substrates. Simple hydrocarbons."
+          }
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "selected_candidate_id": "C1",
+          "stage_extract_id": 530,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C1",
+            "substrate_smiles": [
+              "CCCCN(C)Cl"
+            ],
+            "product_smiles": [
+              "CN1CCCC1"
+            ],
+            "optional_reagent_smiles": [
+              "O=S(=O)(O)O"
+            ],
+            "rationale": "Canonical HLF reaction. N-chloroamine cyclizes to a pyrrolidine via 1,5-HAT.",
+            "collision_avoidance_note": "Avoids Barton-like motifs. Simple N-haloamine substrate, acid-catalyzed cyclization."
+          }
+        }
+      ],
+      "temp_apply": [
+        {
+          "family_name": "Enyne Metathesis",
+          "status": "inserted",
+          "selected_candidate_id": "C1",
+          "inserted_extract_id": 610,
+          "inserted_molecule_ids": [
+            2443,
+            2444,
+            2445,
+            2446
+          ]
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "status": "inserted",
+          "selected_candidate_id": "C1",
+          "inserted_extract_id": 611,
+          "inserted_molecule_ids": [
+            2447,
+            2448,
+            2449
+          ]
+        }
+      ],
+      "benchmark": {
+        "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\gemini_auto_select_romexzov\\combo_1.db",
+        "top1_accuracy": 0.9259,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "json_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_1.json",
+        "csv_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_1.csv",
+        "md_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_1.md"
+      },
+      "guard_pass": false,
+      "guard_reason": "top1 regressed: 1.0000 -> 0.9259",
+      "total_reagent_count": 2
+    },
+    {
+      "combo_index": 2,
+      "selected_candidate_ids": [
+        "C1",
+        "C2"
+      ],
+      "selections": [
+        {
+          "family_name": "Enyne Metathesis",
+          "selected_candidate_id": "C1",
+          "stage_extract_id": 504,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C1",
+            "substrate_smiles": [
+              "C=CCCCCCC",
+              "C#CCCCC"
+            ],
+            "product_smiles": [
+              "CCCC/C=C/C=C/CCCCCC"
+            ],
+            "optional_reagent_smiles": [
+              "[Ru]"
+            ],
+            "rationale": "Classic intermolecular cross-enyne metathesis between a terminal alkene and alkyne.",
+            "collision_avoidance_note": "Avoids radical motifs (Barton-like) and halogenated substrates. Simple hydrocarbons."
+          }
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "selected_candidate_id": "C2",
+          "stage_extract_id": 530,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C2",
+            "substrate_smiles": [
+              "CCCCN(C)Cl"
+            ],
+            "product_smiles": [
+              "CN1CCCC1"
+            ],
+            "optional_reagent_smiles": [
+              "O=S(=O)(O)O"
+            ],
+            "rationale": "Canonical HLF reaction. N-chloroamine undergoes acid-catalyzed intramolecular C-H amination via a nitrogen radical to form a pyrrolidine ring.",
+            "collision_avoidance_note": "Avoids Barton-like motifs. Focuses on the core N-haloamine to cyclic amine transformation under acidic conditions, distinct from radical halogenation."
+          }
+        }
+      ],
+      "temp_apply": [
+        {
+          "family_name": "Enyne Metathesis",
+          "status": "inserted",
+          "selected_candidate_id": "C1",
+          "inserted_extract_id": 610,
+          "inserted_molecule_ids": [
+            2443,
+            2444,
+            2445,
+            2446
+          ]
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "status": "inserted",
+          "selected_candidate_id": "C2",
+          "inserted_extract_id": 611,
+          "inserted_molecule_ids": [
+            2447,
+            2448,
+            2449
+          ]
+        }
+      ],
+      "benchmark": {
+        "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\gemini_auto_select_romexzov\\combo_2.db",
+        "top1_accuracy": 0.9259,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "json_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_2.json",
+        "csv_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_2.csv",
+        "md_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_2.md"
+      },
+      "guard_pass": false,
+      "guard_reason": "top1 regressed: 1.0000 -> 0.9259",
+      "total_reagent_count": 2
+    },
+    {
+      "combo_index": 3,
+      "selected_candidate_ids": [
+        "C1",
+        "C3"
+      ],
+      "selections": [
+        {
+          "family_name": "Enyne Metathesis",
+          "selected_candidate_id": "C1",
+          "stage_extract_id": 504,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C1",
+            "substrate_smiles": [
+              "C=CCCCCCC",
+              "C#CCCCC"
+            ],
+            "product_smiles": [
+              "CCCC/C=C/C=C/CCCCCC"
+            ],
+            "optional_reagent_smiles": [
+              "[Ru]"
+            ],
+            "rationale": "Classic intermolecular cross-enyne metathesis between a terminal alkene and alkyne.",
+            "collision_avoidance_note": "Avoids radical motifs (Barton-like) and halogenated substrates. Simple hydrocarbons."
+          }
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "selected_candidate_id": "C3",
+          "stage_extract_id": 530,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C3",
+            "substrate_smiles": [
+              "CCCCN(C)Cl"
+            ],
+            "product_smiles": [
+              "CN1CCCC1"
+            ],
+            "optional_reagent_smiles": [
+              "O=S(=O)(O)O"
+            ],
+            "rationale": "Canonical HLF reaction. N-chloroamine cyclizes to a pyrrolidine via intramolecular C-H amination under acidic conditions.",
+            "collision_avoidance_note": "Avoids Barton-like motifs (e.g., thiohydroxamates, peroxides, hv) and decarboxylative halogenation. Simple N-haloamine substrate."
+          }
+        }
+      ],
+      "temp_apply": [
+        {
+          "family_name": "Enyne Metathesis",
+          "status": "inserted",
+          "selected_candidate_id": "C1",
+          "inserted_extract_id": 610,
+          "inserted_molecule_ids": [
+            2443,
+            2444,
+            2445,
+            2446
+          ]
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "status": "inserted",
+          "selected_candidate_id": "C3",
+          "inserted_extract_id": 611,
+          "inserted_molecule_ids": [
+            2447,
+            2448,
+            2449
+          ]
+        }
+      ],
+      "benchmark": {
+        "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\gemini_auto_select_romexzov\\combo_3.db",
+        "top1_accuracy": 0.9259,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "json_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_3.json",
+        "csv_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_3.csv",
+        "md_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_3.md"
+      },
+      "guard_pass": false,
+      "guard_reason": "top1 regressed: 1.0000 -> 0.9259",
+      "total_reagent_count": 2
+    },
+    {
+      "combo_index": 4,
+      "selected_candidate_ids": [
+        "C2",
+        "C1"
+      ],
+      "selections": [
+        {
+          "family_name": "Enyne Metathesis",
+          "selected_candidate_id": "C2",
+          "stage_extract_id": 504,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C2",
+            "substrate_smiles": [
+              "C=CCCCCCC",
+              "C#CCCCC"
+            ],
+            "product_smiles": [
+              "CCCC/C=C/C=C/CCCCCC"
+            ],
+            "optional_reagent_smiles": [
+              "[Ru]"
+            ],
+            "rationale": "Classic intermolecular cross-enyne metathesis between a terminal alkene and alkyne.",
+            "collision_avoidance_note": "Avoids radical conditions (Barton-like) and halogenated substrates."
+          }
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "selected_candidate_id": "C1",
+          "stage_extract_id": 530,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C1",
+            "substrate_smiles": [
+              "CCCCN(C)Cl"
+            ],
+            "product_smiles": [
+              "CN1CCCC1"
+            ],
+            "optional_reagent_smiles": [
+              "O=S(=O)(O)O"
+            ],
+            "rationale": "Canonical HLF reaction. N-chloroamine cyclizes to a pyrrolidine via 1,5-HAT.",
+            "collision_avoidance_note": "Avoids Barton-like motifs. Simple N-haloamine substrate, acid-catalyzed cyclization."
+          }
+        }
+      ],
+      "temp_apply": [
+        {
+          "family_name": "Enyne Metathesis",
+          "status": "inserted",
+          "selected_candidate_id": "C2",
+          "inserted_extract_id": 610,
+          "inserted_molecule_ids": [
+            2443,
+            2444,
+            2445,
+            2446
+          ]
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "status": "inserted",
+          "selected_candidate_id": "C1",
+          "inserted_extract_id": 611,
+          "inserted_molecule_ids": [
+            2447,
+            2448,
+            2449
+          ]
+        }
+      ],
+      "benchmark": {
+        "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\gemini_auto_select_romexzov\\combo_4.db",
+        "top1_accuracy": 0.9259,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "json_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_4.json",
+        "csv_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_4.csv",
+        "md_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_4.md"
+      },
+      "guard_pass": false,
+      "guard_reason": "top1 regressed: 1.0000 -> 0.9259",
+      "total_reagent_count": 2
+    },
+    {
+      "combo_index": 5,
+      "selected_candidate_ids": [
+        "C2",
+        "C2"
+      ],
+      "selections": [
+        {
+          "family_name": "Enyne Metathesis",
+          "selected_candidate_id": "C2",
+          "stage_extract_id": 504,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C2",
+            "substrate_smiles": [
+              "C=CCCCCCC",
+              "C#CCCCC"
+            ],
+            "product_smiles": [
+              "CCCC/C=C/C=C/CCCCCC"
+            ],
+            "optional_reagent_smiles": [
+              "[Ru]"
+            ],
+            "rationale": "Classic intermolecular cross-enyne metathesis between a terminal alkene and alkyne.",
+            "collision_avoidance_note": "Avoids radical conditions (Barton-like) and halogenated substrates."
+          }
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "selected_candidate_id": "C2",
+          "stage_extract_id": 530,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C2",
+            "substrate_smiles": [
+              "CCCCN(C)Cl"
+            ],
+            "product_smiles": [
+              "CN1CCCC1"
+            ],
+            "optional_reagent_smiles": [
+              "O=S(=O)(O)O"
+            ],
+            "rationale": "Canonical HLF reaction. N-chloroamine undergoes acid-catalyzed intramolecular C-H amination via a nitrogen radical to form a pyrrolidine ring.",
+            "collision_avoidance_note": "Avoids Barton-like motifs. Focuses on the core N-haloamine to cyclic amine transformation under acidic conditions, distinct from radical halogenation."
+          }
+        }
+      ],
+      "temp_apply": [
+        {
+          "family_name": "Enyne Metathesis",
+          "status": "inserted",
+          "selected_candidate_id": "C2",
+          "inserted_extract_id": 610,
+          "inserted_molecule_ids": [
+            2443,
+            2444,
+            2445,
+            2446
+          ]
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "status": "inserted",
+          "selected_candidate_id": "C2",
+          "inserted_extract_id": 611,
+          "inserted_molecule_ids": [
+            2447,
+            2448,
+            2449
+          ]
+        }
+      ],
+      "benchmark": {
+        "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\gemini_auto_select_romexzov\\combo_5.db",
+        "top1_accuracy": 0.9259,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "json_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_5.json",
+        "csv_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_5.csv",
+        "md_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_5.md"
+      },
+      "guard_pass": false,
+      "guard_reason": "top1 regressed: 1.0000 -> 0.9259",
+      "total_reagent_count": 2
+    },
+    {
+      "combo_index": 6,
+      "selected_candidate_ids": [
+        "C2",
+        "C3"
+      ],
+      "selections": [
+        {
+          "family_name": "Enyne Metathesis",
+          "selected_candidate_id": "C2",
+          "stage_extract_id": 504,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C2",
+            "substrate_smiles": [
+              "C=CCCCCCC",
+              "C#CCCCC"
+            ],
+            "product_smiles": [
+              "CCCC/C=C/C=C/CCCCCC"
+            ],
+            "optional_reagent_smiles": [
+              "[Ru]"
+            ],
+            "rationale": "Classic intermolecular cross-enyne metathesis between a terminal alkene and alkyne.",
+            "collision_avoidance_note": "Avoids radical conditions (Barton-like) and halogenated substrates."
+          }
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "selected_candidate_id": "C3",
+          "stage_extract_id": 530,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C3",
+            "substrate_smiles": [
+              "CCCCN(C)Cl"
+            ],
+            "product_smiles": [
+              "CN1CCCC1"
+            ],
+            "optional_reagent_smiles": [
+              "O=S(=O)(O)O"
+            ],
+            "rationale": "Canonical HLF reaction. N-chloroamine cyclizes to a pyrrolidine via intramolecular C-H amination under acidic conditions.",
+            "collision_avoidance_note": "Avoids Barton-like motifs (e.g., thiohydroxamates, peroxides, hv) and decarboxylative halogenation. Simple N-haloamine substrate."
+          }
+        }
+      ],
+      "temp_apply": [
+        {
+          "family_name": "Enyne Metathesis",
+          "status": "inserted",
+          "selected_candidate_id": "C2",
+          "inserted_extract_id": 610,
+          "inserted_molecule_ids": [
+            2443,
+            2444,
+            2445,
+            2446
+          ]
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "status": "inserted",
+          "selected_candidate_id": "C3",
+          "inserted_extract_id": 611,
+          "inserted_molecule_ids": [
+            2447,
+            2448,
+            2449
+          ]
+        }
+      ],
+      "benchmark": {
+        "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\gemini_auto_select_romexzov\\combo_6.db",
+        "top1_accuracy": 0.9259,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "json_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_6.json",
+        "csv_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_6.csv",
+        "md_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_6.md"
+      },
+      "guard_pass": false,
+      "guard_reason": "top1 regressed: 1.0000 -> 0.9259",
+      "total_reagent_count": 2
+    },
+    {
+      "combo_index": 7,
+      "selected_candidate_ids": [
+        "C3",
+        "C1"
+      ],
+      "selections": [
+        {
+          "family_name": "Enyne Metathesis",
+          "selected_candidate_id": "C3",
+          "stage_extract_id": 504,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C3",
+            "substrate_smiles": [
+              "C=CCCCCCC",
+              "C#CCCCC"
+            ],
+            "product_smiles": [
+              "CCCC/C=C/C=C/CCCCCC"
+            ],
+            "optional_reagent_smiles": [
+              "[Ru]"
+            ],
+            "rationale": "Classic intermolecular cross-enyne metathesis between a terminal alkene and alkyne.",
+            "collision_avoidance_note": "Avoids radical-like substrates (e.g., Barton esters) and halogen-rich molecules."
+          }
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "selected_candidate_id": "C1",
+          "stage_extract_id": 530,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C1",
+            "substrate_smiles": [
+              "CCCCN(C)Cl"
+            ],
+            "product_smiles": [
+              "CN1CCCC1"
+            ],
+            "optional_reagent_smiles": [
+              "O=S(=O)(O)O"
+            ],
+            "rationale": "Canonical HLF reaction. N-chloroamine cyclizes to a pyrrolidine via 1,5-HAT.",
+            "collision_avoidance_note": "Avoids Barton-like motifs. Simple N-haloamine substrate, acid-catalyzed cyclization."
+          }
+        }
+      ],
+      "temp_apply": [
+        {
+          "family_name": "Enyne Metathesis",
+          "status": "inserted",
+          "selected_candidate_id": "C3",
+          "inserted_extract_id": 610,
+          "inserted_molecule_ids": [
+            2443,
+            2444,
+            2445,
+            2446
+          ]
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "status": "inserted",
+          "selected_candidate_id": "C1",
+          "inserted_extract_id": 611,
+          "inserted_molecule_ids": [
+            2447,
+            2448,
+            2449
+          ]
+        }
+      ],
+      "benchmark": {
+        "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\gemini_auto_select_romexzov\\combo_7.db",
+        "top1_accuracy": 0.9259,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "json_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_7.json",
+        "csv_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_7.csv",
+        "md_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_7.md"
+      },
+      "guard_pass": false,
+      "guard_reason": "top1 regressed: 1.0000 -> 0.9259",
+      "total_reagent_count": 2
+    },
+    {
+      "combo_index": 8,
+      "selected_candidate_ids": [
+        "C3",
+        "C2"
+      ],
+      "selections": [
+        {
+          "family_name": "Enyne Metathesis",
+          "selected_candidate_id": "C3",
+          "stage_extract_id": 504,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C3",
+            "substrate_smiles": [
+              "C=CCCCCCC",
+              "C#CCCCC"
+            ],
+            "product_smiles": [
+              "CCCC/C=C/C=C/CCCCCC"
+            ],
+            "optional_reagent_smiles": [
+              "[Ru]"
+            ],
+            "rationale": "Classic intermolecular cross-enyne metathesis between a terminal alkene and alkyne.",
+            "collision_avoidance_note": "Avoids radical-like substrates (e.g., Barton esters) and halogen-rich molecules."
+          }
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "selected_candidate_id": "C2",
+          "stage_extract_id": 530,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C2",
+            "substrate_smiles": [
+              "CCCCN(C)Cl"
+            ],
+            "product_smiles": [
+              "CN1CCCC1"
+            ],
+            "optional_reagent_smiles": [
+              "O=S(=O)(O)O"
+            ],
+            "rationale": "Canonical HLF reaction. N-chloroamine undergoes acid-catalyzed intramolecular C-H amination via a nitrogen radical to form a pyrrolidine ring.",
+            "collision_avoidance_note": "Avoids Barton-like motifs. Focuses on the core N-haloamine to cyclic amine transformation under acidic conditions, distinct from radical halogenation."
+          }
+        }
+      ],
+      "temp_apply": [
+        {
+          "family_name": "Enyne Metathesis",
+          "status": "inserted",
+          "selected_candidate_id": "C3",
+          "inserted_extract_id": 610,
+          "inserted_molecule_ids": [
+            2443,
+            2444,
+            2445,
+            2446
+          ]
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "status": "inserted",
+          "selected_candidate_id": "C2",
+          "inserted_extract_id": 611,
+          "inserted_molecule_ids": [
+            2447,
+            2448,
+            2449
+          ]
+        }
+      ],
+      "benchmark": {
+        "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\gemini_auto_select_romexzov\\combo_8.db",
+        "top1_accuracy": 0.9259,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "json_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_8.json",
+        "csv_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_8.csv",
+        "md_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_8.md"
+      },
+      "guard_pass": false,
+      "guard_reason": "top1 regressed: 1.0000 -> 0.9259",
+      "total_reagent_count": 2
+    },
+    {
+      "combo_index": 9,
+      "selected_candidate_ids": [
+        "C3",
+        "C3"
+      ],
+      "selections": [
+        {
+          "family_name": "Enyne Metathesis",
+          "selected_candidate_id": "C3",
+          "stage_extract_id": 504,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C3",
+            "substrate_smiles": [
+              "C=CCCCCCC",
+              "C#CCCCC"
+            ],
+            "product_smiles": [
+              "CCCC/C=C/C=C/CCCCCC"
+            ],
+            "optional_reagent_smiles": [
+              "[Ru]"
+            ],
+            "rationale": "Classic intermolecular cross-enyne metathesis between a terminal alkene and alkyne.",
+            "collision_avoidance_note": "Avoids radical-like substrates (e.g., Barton esters) and halogen-rich molecules."
+          }
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "selected_candidate_id": "C3",
+          "stage_extract_id": 530,
+          "template_page_no": null,
+          "candidate": {
+            "candidate_id": "C3",
+            "substrate_smiles": [
+              "CCCCN(C)Cl"
+            ],
+            "product_smiles": [
+              "CN1CCCC1"
+            ],
+            "optional_reagent_smiles": [
+              "O=S(=O)(O)O"
+            ],
+            "rationale": "Canonical HLF reaction. N-chloroamine cyclizes to a pyrrolidine via intramolecular C-H amination under acidic conditions.",
+            "collision_avoidance_note": "Avoids Barton-like motifs (e.g., thiohydroxamates, peroxides, hv) and decarboxylative halogenation. Simple N-haloamine substrate."
+          }
+        }
+      ],
+      "temp_apply": [
+        {
+          "family_name": "Enyne Metathesis",
+          "status": "inserted",
+          "selected_candidate_id": "C3",
+          "inserted_extract_id": 610,
+          "inserted_molecule_ids": [
+            2443,
+            2444,
+            2445,
+            2446
+          ]
+        },
+        {
+          "family_name": "Hofmann-Loffler-Freytag Reaction",
+          "status": "inserted",
+          "selected_candidate_id": "C3",
+          "inserted_extract_id": 611,
+          "inserted_molecule_ids": [
+            2447,
+            2448,
+            2449
+          ]
+        }
+      ],
+      "benchmark": {
+        "db_used": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\gemini_auto_select_romexzov\\combo_9.db",
+        "top1_accuracy": 0.9259,
+        "top3_accuracy": 1.0,
+        "disallow_top3_violations": 0,
+        "json_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_9.json",
+        "csv_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_9.csv",
+        "md_out": "C:\\chemlens\\backend\\reports\\gemini_salvage_auto_select_apply\\20260418_205635\\benchmark_combo_9.md"
+      },
+      "guard_pass": false,
+      "guard_reason": "top1 regressed: 1.0000 -> 0.9259",
+      "total_reagent_count": 2
+    }
+  ],
+  "selected": null
+}

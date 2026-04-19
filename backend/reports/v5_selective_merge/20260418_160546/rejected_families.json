@@ -1,0 +1,318 @@
+[
+  {
+    "family": "Diels-Alder Cycloaddition",
+    "status": "rejected_regression",
+    "reason": "top1 regression: baseline=1.0000 current=0.9630",
+    "benchmark": {
+      "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+      "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+      "top1_accuracy": 0.963,
+      "top3_accuracy": 1.0,
+      "disallow_top3_violations": 0,
+      "json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_003_Diels-Alder_Cycloaddition.json",
+      "csv_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_003_Diels-Alder_Cycloaddition.csv",
+      "md_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_003_Diels-Alder_Cycloaddition.md"
+    },
+    "reaction_extract_ids": [
+      467
+    ],
+    "extract_molecule_ids": [
+      1870,
+      1871,
+      1872
+    ]
+  },
+  {
+    "family": "Regitz Diazo Transfer",
+    "status": "rejected_regression",
+    "reason": "top1 regression: baseline=1.0000 current=0.9630",
+    "benchmark": {
+      "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+      "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+      "top1_accuracy": 0.963,
+      "top3_accuracy": 1.0,
+      "disallow_top3_violations": 0,
+      "json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_011_Regitz_Diazo_Transfer.json",
+      "csv_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_011_Regitz_Diazo_Transfer.csv",
+      "md_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_011_Regitz_Diazo_Transfer.md"
+    },
+    "reaction_extract_ids": [
+      475
+    ],
+    "extract_molecule_ids": [
+      1902,
+      1903,
+      1904,
+      1905
+    ]
+  },
+  {
+    "family": "Claisen Condensation / Claisen Reaction",
+    "status": "rejected_regression",
+    "reason": "top1 regression: baseline=1.0000 current=0.9630",
+    "benchmark": {
+      "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+      "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+      "top1_accuracy": 0.963,
+      "top3_accuracy": 1.0,
+      "disallow_top3_violations": 0,
+      "json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_015_Claisen_Condensation_Claisen_Reaction.json",
+      "csv_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_015_Claisen_Condensation_Claisen_Reaction.csv",
+      "md_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_015_Claisen_Condensation_Claisen_Reaction.md"
+    },
+    "reaction_extract_ids": [
+      479
+    ],
+    "extract_molecule_ids": [
+      1914,
+      1915,
+      1916
+    ]
+  },
+  {
+    "family": "Enyne Metathesis",
+    "status": "rejected_regression",
+    "reason": "top1 regression: baseline=1.0000 current=0.9259",
+    "benchmark": {
+      "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+      "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+      "top1_accuracy": 0.9259,
+      "top3_accuracy": 1.0,
+      "disallow_top3_violations": 0,
+      "json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_040_Enyne_Metathesis.json",
+      "csv_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_040_Enyne_Metathesis.csv",
+      "md_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_040_Enyne_Metathesis.md"
+    },
+    "reaction_extract_ids": [
+      504
+    ],
+    "extract_molecule_ids": [
+      2027,
+      2028,
+      2029,
+      2030
+    ]
+  },
+  {
+    "family": "Finkelstein Reaction",
+    "status": "rejected_regression",
+    "reason": "top1 regression: baseline=1.0000 current=0.9259",
+    "benchmark": {
+      "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+      "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+      "top1_accuracy": 0.9259,
+      "top3_accuracy": 1.0,
+      "disallow_top3_violations": 0,
+      "json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_048_Finkelstein_Reaction.json",
+      "csv_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_048_Finkelstein_Reaction.csv",
+      "md_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_048_Finkelstein_Reaction.md"
+    },
+    "reaction_extract_ids": [
+      512
+    ],
+    "extract_molecule_ids": [
+      2066,
+      2067,
+      2068
+    ]
+  },
+  {
+    "family": "Fries Rearrangement",
+    "status": "rejected_regression",
+    "reason": "top1 regression: baseline=1.0000 current=0.9630",
+    "benchmark": {
+      "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+      "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+      "top1_accuracy": 0.963,
+      "top3_accuracy": 1.0,
+      "disallow_top3_violations": 0,
+      "json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_052_Fries_Rearrangement.json",
+      "csv_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_052_Fries_Rearrangement.csv",
+      "md_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_052_Fries_Rearrangement.md"
+    },
+    "reaction_extract_ids": [
+      516
+    ],
+    "extract_molecule_ids": [
+      2082,
+      2083,
+      2084,
+      2085
+    ]
+  },
+  {
+    "family": "Hofmann-Loffler-Freytag Reaction",
+    "status": "rejected_regression",
+    "reason": "top1 regression: baseline=1.0000 current=0.9259",
+    "benchmark": {
+      "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+      "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+      "top1_accuracy": 0.9259,
+      "top3_accuracy": 1.0,
+      "disallow_top3_violations": 0,
+      "json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_066_Hofmann-Loffler-Freytag_Reaction.json",
+      "csv_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_066_Hofmann-Loffler-Freytag_Reaction.csv",
+      "md_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_066_Hofmann-Loffler-Freytag_Reaction.md"
+    },
+    "reaction_extract_ids": [
+      530
+    ],
+    "extract_molecule_ids": [
+      2153,
+      2154,
+      2155,
+      2156,
+      2157,
+      2158
+    ]
+  },
+  {
+    "family": "Horner-Wadsworth-Emmons Olefination",
+    "status": "rejected_regression",
+    "reason": "top1 regression: baseline=1.0000 current=0.9630",
+    "benchmark": {
+      "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+      "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+      "top1_accuracy": 0.963,
+      "top3_accuracy": 1.0,
+      "disallow_top3_violations": 0,
+      "json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_068_Horner-Wadsworth-Emmons_Olefination.json",
+      "csv_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_068_Horner-Wadsworth-Emmons_Olefination.csv",
+      "md_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_068_Horner-Wadsworth-Emmons_Olefination.md"
+    },
+    "reaction_extract_ids": [
+      532
+    ],
+    "extract_molecule_ids": [
+      2164,
+      2165,
+      2166,
+      2167
+    ]
+  },
+  {
+    "family": "Houben-Hoesch Reaction",
+    "status": "rejected_regression",
+    "reason": "top1 regression: baseline=1.0000 current=0.9259",
+    "benchmark": {
+      "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+      "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+      "top1_accuracy": 0.9259,
+      "top3_accuracy": 1.0,
+      "disallow_top3_violations": 0,
+      "json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_069_Houben-Hoesch_Reaction.json",
+      "csv_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_069_Houben-Hoesch_Reaction.csv",
+      "md_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_069_Houben-Hoesch_Reaction.md"
+    },
+    "reaction_extract_ids": [
+      533
+    ],
+    "extract_molecule_ids": [
+      2168,
+      2169,
+      2170,
+      2171,
+      2172,
+      2173,
+      2174
+    ]
+  },
+  {
+    "family": "Hunsdiecker Reaction",
+    "status": "rejected_regression",
+    "reason": "top1 regression: baseline=1.0000 current=0.9259",
+    "benchmark": {
+      "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+      "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+      "top1_accuracy": 0.9259,
+      "top3_accuracy": 1.0,
+      "disallow_top3_violations": 0,
+      "json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_070_Hunsdiecker_Reaction.json",
+      "csv_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_070_Hunsdiecker_Reaction.csv",
+      "md_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_070_Hunsdiecker_Reaction.md"
+    },
+    "reaction_extract_ids": [
+      534
+    ],
+    "extract_molecule_ids": [
+      2175,
+      2176,
+      2177,
+      2178
+    ]
+  },
+  {
+    "family": "Krapcho Dealkoxycarbonylation",
+    "status": "rejected_regression",
+    "reason": "top1 regression: baseline=1.0000 current=0.9630",
+    "benchmark": {
+      "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+      "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+      "top1_accuracy": 0.963,
+      "top3_accuracy": 1.0,
+      "disallow_top3_violations": 0,
+      "json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_085_Krapcho_Dealkoxycarbonylation.json",
+      "csv_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_085_Krapcho_Dealkoxycarbonylation.csv",
+      "md_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_085_Krapcho_Dealkoxycarbonylation.md"
+    },
+    "reaction_extract_ids": [
+      549
+    ],
+    "extract_molecule_ids": [
+      2247,
+      2248,
+      2249,
+      2250
+    ]
+  },
+  {
+    "family": "Michael Addition Reaction",
+    "status": "rejected_regression",
+    "reason": "top1 regression: baseline=1.0000 current=0.9630",
+    "benchmark": {
+      "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+      "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+      "top1_accuracy": 0.963,
+      "top3_accuracy": 1.0,
+      "disallow_top3_violations": 0,
+      "json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_095_Michael_Addition_Reaction.json",
+      "csv_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_095_Michael_Addition_Reaction.csv",
+      "md_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_095_Michael_Addition_Reaction.md"
+    },
+    "reaction_extract_ids": [
+      559
+    ],
+    "extract_molecule_ids": [
+      2290,
+      2291,
+      2292,
+      2293
+    ]
+  },
+  {
+    "family": "Mitsunobu Reaction",
+    "status": "rejected_regression",
+    "reason": "top1 regression: baseline=1.0000 current=0.9259",
+    "benchmark": {
+      "db_used": "C:\\chemlens\\backend\\app\\labint.db",
+      "benchmark_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_small.json",
+      "top1_accuracy": 0.9259,
+      "top3_accuracy": 1.0,
+      "disallow_top3_violations": 0,
+      "json_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_099_Mitsunobu_Reaction.json",
+      "csv_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_099_Mitsunobu_Reaction.csv",
+      "md_out": "C:\\chemlens\\backend\\reports\\v5_selective_merge\\20260418_160546\\benchmark_after_099_Mitsunobu_Reaction.md"
+    },
+    "reaction_extract_ids": [
+      563
+    ],
+    "extract_molecule_ids": [
+      2307,
+      2308,
+      2309,
+      2310,
+      2311,
+      2312
+    ]
+  }
+]

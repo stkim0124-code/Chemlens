@@ -1,0 +1,48 @@
+{
+  "family": "Enyne Metathesis",
+  "candidates": [
+    {
+      "candidate_id": "C1",
+      "substrate_smiles": [
+        "C=CCOCCC#C"
+      ],
+      "product_smiles": [
+        "C=C1COCCC=C1"
+      ],
+      "optional_reagent_smiles": [
+        "Cl[Ru](Cl)(PC(c1ccccc1)(c1ccccc1)c1ccccc1)(PC(c1ccccc1)(c1ccccc1)c1ccccc1)=Cc1ccccc1"
+      ],
+      "rationale": "This is a classic example of an intramolecular ring-closing enyne metathesis (RCEYM). The substrate contains a terminal alkene and a terminal alkyne separated by an oxygen-containing linker. The reaction, catalyzed by a Ruthenium catalyst (Grubbs I shown), forms a stable six-membered heterocyclic diene (a dihydrooxepine derivative). The transformation is unambiguous and a textbook case.",
+      "collision_avoidance_note": "This example avoids Barton-like patterns by using a simple ether substrate with no halogens, radical initiators, or thiohydroxamate esters. The transformation is clearly a skeletal reorganization characteristic of metathesis, not a radical decarboxylation or halogenation."
+    },
+    {
+      "candidate_id": "C2",
+      "substrate_smiles": [
+        "C=C(C)C",
+        "C#CCCCCCCC"
+      ],
+      "product_smiles": [
+        "C=C(C)C(=C)CCCCCCCC"
+      ],
+      "optional_reagent_smiles": [
+        "c1ccc(C=C2[Ru]3(Cl)Cl(PC(C4CCCCC4)(C4CCCCC4)C4CCCCC4)N(c4c(C(C)C)cc(C(C)C)cc4C(C)C)CN2CCN3c2c(C(C)C)cc(C(C)C)cc2C(C)C)cc1"
+      ],
+      "rationale": "This example illustrates an intermolecular cross-enyne metathesis. A terminal alkyne (1-decyne) reacts with a terminal alkene (isobutylene) to form a conjugated 1,3-diene. The product structure clearly shows the combination of the two starting materials' unsaturated fragments. This type of transformation is highly specific to enyne metathesis.",
+      "collision_avoidance_note": "The reactants are simple hydrocarbons, lacking any functional groups that could be misidentified as participating in Barton radical chemistry. The product is a diene formed by C-C bond reorganization, which is topologically distinct from radical substitution or addition reactions."
+    },
+    {
+      "candidate_id": "C3",
+      "substrate_smiles": [
+        "C=CCN(CC#C)S(=O)(=O)c1ccc(C)cc1"
+      ],
+      "product_smiles": [
+        "C=C1CN(S(=O)(=O)c2ccc(C)cc2)CCC=C1"
+      ],
+      "optional_reagent_smiles": [
+        "c1ccc(C=[Ru]2(Cl)(Cl)(PC(C3CCCCC3)(C3CCCCC3)C3CCCCC3)N(c3c(C(C)C)cc(C(C)C)cc3C(C)C)C=N2c2c(C(C)C)cc(C(C)C)cc2C(C)C)cc1"
+      ],
+      "rationale": "This is another example of intramolecular ring-closing enyne metathesis (RCEYM), this time forming a seven-membered nitrogen heterocycle. The substrate is a tosyl-protected diallylic amine analogue, demonstrating the reaction's tolerance for common protecting groups and its utility in synthesizing complex heterocyclic systems. The formation of the cyclic diene is a hallmark of this reaction family.",
+      "collision_avoidance_note": "The substrate contains a sulfonyl group, which is a stable protecting group and not associated with Barton radical chemistry. There are no radical initiators, peroxides, or halogen atoms on the substrate. The skeletal rearrangement to form the seven-membered ring is a clear indicator of metathesis, not radical cyclization."
+    }
+  ]
+}

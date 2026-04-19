@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"substrate_smiles\": [\n    \"CC(=O)CP(=O)(OC)OC\",\n    \"O=CC1CCCCC1\"\n  ],\n  \"product_smiles\": [\n    \"CC(=O)/C=C/C1CCCCC1\"\n  ],\n  \"optional_reagent_smiles\": [\n    \"[NaH]\"\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 227,
+    "candidatesTokenCount": 89,
+    "totalTokenCount": 394,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 227
+      }
+    ],
+    "thoughtsTokenCount": 78
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "7b7jacXMJdWy0-kPrui3mQE"
+}

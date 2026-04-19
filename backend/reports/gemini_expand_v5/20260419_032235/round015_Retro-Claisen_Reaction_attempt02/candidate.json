@@ -1,0 +1,16 @@
+{
+  "family": "Retro-Claisen Reaction",
+  "substrates": [
+    "CCOC(=O)C(C)C(=O)CC"
+  ],
+  "products": [
+    "CCC(C)=O",
+    "CCOC(C)=O"
+  ],
+  "reagents": [
+    "[Na+].[OH-]"
+  ],
+  "rationale": "This example shows the base-catalyzed cleavage of ethyl 2-methyl-3-oxopentanoate, a simple acyclic beta-keto ester. The reaction breaks the C-C bond between the alpha-carbon and the ketone carbonyl, yielding butan-2-one and ethyl acetate. This is a classic textbook illustration of the retro-Claisen reaction, demonstrating the cleavage of a 1,3-dicarbonyl system into two simpler carbonyl compounds.",
+  "collision_avoidance_note": "The structure is a simple, acyclic beta-keto ester, avoiding complex ring systems or functional groups that could overlap with other named reactions. The cleavage is the defining feature, distinguishing it from forward Claisen condensations or other carbonyl reactions like aldol or Michael additions. The use of a simple alkyl-substituted substrate avoids arene-related collisions.",
+  "raw_text": "{\n  \"family\": \"Retro-Claisen Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCC(=O)C(C)C(=O)OCC\"\n    ],\n    \"product_smiles\": [\n      \"CCC(=O)C\",\n      \"CC(=O)OCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[OH-].[Na+]\"\n    ],\n    \"rationale\": \"This example shows the base-catalyzed cleavage of ethyl 2-methyl-3-oxopentanoate, a simple acyclic beta-keto ester. The reaction breaks the C-C bond between the alpha-carbon and the ketone carbonyl, yielding butan-2-one and ethyl acetate. This is a classic textbook illustration of the retro-Claisen reaction, demonstrating the cleavage of a 1,3-dicarbonyl system into two simpler carbonyl compounds.\",\n    \"collision_avoidance_note\": \"The structure is a simple, acyclic beta-keto ester, avoiding complex ring systems or functional groups that could overlap with other named reactions. The cleavage is the defining feature, distinguishing it from forward Claisen condensations or other carbonyl reactions like aldol or Michael additions. The use of a simple alkyl-substituted substrate avoids arene-related collisions.\"\n  }\n}"
+}

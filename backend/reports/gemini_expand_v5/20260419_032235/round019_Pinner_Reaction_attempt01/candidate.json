@@ -1,0 +1,16 @@
+{
+  "family": "Pinner Reaction",
+  "substrates": [
+    "CC#N",
+    "CCO"
+  ],
+  "products": [
+    "CCOC(C)=[NH2+].[Cl-]"
+  ],
+  "reagents": [
+    "Cl"
+  ],
+  "rationale": "This example shows the reaction of acetonitrile with ethanol under anhydrous HCl conditions to form ethyl acetimidate hydrochloride, also known as a Pinner salt. This is the quintessential first step of the Pinner reaction, converting a simple aliphatic nitrile and alcohol into the characteristic imino ether salt. The reactants are small, acyclic, and unambiguous, representing the core transformation without extraneous functional groups.",
+  "collision_avoidance_note": "The reactants are simple aliphatic molecules (acetonitrile, ethanol) to avoid overlap with reactions involving aromatic systems (e.g., Gattermann, Hoesch) or more complex functional groups. The product is the specific imino ether salt (Pinner salt), which is the defining intermediate of this reaction, distinguishing it from simple nitrile hydrolysis to amides or acids.",
+  "raw_text": "{\n  \"family\": \"Pinner Reaction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC#N\",\n      \"CCO\"\n    ],\n    \"product_smiles\": [\n      \"CC(=[NH2+])OCC.[Cl-]\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl\"\n    ],\n    \"rationale\": \"This example shows the reaction of acetonitrile with ethanol under anhydrous HCl conditions to form ethyl acetimidate hydrochloride, also known as a Pinner salt. This is the quintessential first step of the Pinner reaction, converting a simple aliphatic nitrile and alcohol into the characteristic imino ether salt. The reactants are small, acyclic, and unambiguous, representing the core transformation without extraneous functional groups.\",\n    \"collision_avoidance_note\": \"The reactants are simple aliphatic molecules (acetonitrile, ethanol) to avoid overlap with reactions involving aromatic systems (e.g., Gattermann, Hoesch) or more complex functional groups. The product is the specific imino ether salt (Pinner salt), which is the defining intermediate of this reaction, distinguishing it from simple nitrile hydrolysis to amides or acids.\"\n  }\n}"
+}

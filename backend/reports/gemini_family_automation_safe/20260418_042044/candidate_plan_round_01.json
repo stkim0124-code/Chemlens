@@ -1,0 +1,242 @@
+[
+  {
+    "family_name": "Baylis-Hillman Reaction",
+    "family_name_norm": "baylis hillman reaction",
+    "page_no": 48,
+    "page_kind": "canonical_overview",
+    "title": "Baylis-Hillman Reaction – Importance and Mechanism",
+    "summary": "Overview page for the Baylis-Hillman reaction describing tertiary amine or phosphine catalyzed coupling of an activated alkene with an aldehyde or imine to form densely functionalized allylic alcohol products. The mechanism involves catalyst Michael addition, zwitterion formation, carbon-carbon bond formation, proton transfer, and catalyst elimination.",
+    "notes": "The page emphasizes DABCO, quinuclidine, and chiral cinchona-derived catalysts as key promoters for enantioselective and organocatalytic variants.",
+    "image_filename": "named reactions_100.jpg",
+    "source_label": "named_reactions_frontmatter_batch9",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "DABCO",
+        "entity_type": "catalyst",
+        "notes": "Frequently used Baylis-Hillman catalyst.",
+        "confidence": 0.95
+      },
+      {
+        "entity_text": "Zwitterion",
+        "entity_type": "intermediate",
+        "notes": "Characteristic Michael-addition intermediate.",
+        "confidence": 0.93
+      },
+      {
+        "entity_text": "Coupled product",
+        "entity_type": "product_class",
+        "notes": "Generic allylic alcohol product class on the overview page.",
+        "confidence": 0.9
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Baylis-Hillman Reaction",
+        "score": 1.0,
+        "family_class": "other",
+        "transformation_type": "other",
+        "key_reagents_clue": "",
+        "description_short": ""
+      },
+      {
+        "family_name": "Balz-Schiemann Reaction",
+        "score": 0.783,
+        "family_class": "other",
+        "transformation_type": "other",
+        "key_reagents_clue": "HNO2 HBF4 | O=NO.F[B-](F)(F)F | Reagent | O=NO.F[B-](F)(F)F | Reagent | 1. NaNO2, HCl, HBF4 | [Na+].[O-][N]=O.Cl.F[B-](F)(F)F | Reagent",
+        "description_short": "Balz-Schiemann Reaction"
+      },
+      {
+        "family_name": "Pauson-Khand Reaction",
+        "score": 0.682,
+        "family_class": "named_reaction",
+        "transformation_type": "formal [2+2+1] cycloaddition of alkyne, alkene, and carbon monoxide to cyclopentenones",
+        "key_reagents_clue": "Co2(CO)8|CO|NMO|TMANO|enyne|cyclopentenone",
+        "description_short": "Carbonylative cyclization that converts alkyne/alkene combinations into cyclopentenones and serves as a staple annulation in target-oriented synthesis."
+      },
+      {
+        "family_name": "Reimer-Tiemann Reaction",
+        "score": 0.652,
+        "family_class": "named_reaction",
+        "transformation_type": "ortho formylation of phenols and heteroarenes via dichlorocarbene chemistry",
+        "key_reagents_clue": "Reimer-Tiemann|CHCl3|chloroform|NaOH|dichlorocarbene",
+        "description_short": "Foundational dichlorocarbene-based formylation method for phenols and related heteroarenes that usually delivers ortho-aldehydes but can also produce abnormal rearrangement products."
+      },
+      {
+        "family_name": "Evans Aldol Reaction",
+        "score": 0.651,
+        "family_class": "named_reaction",
+        "transformation_type": "auxiliary-controlled syn-selective aldol addition",
+        "key_reagents_clue": "Evans aldol|oxazolidinone|Bu2BOTf|DIPEA|Zimmerman-Traxler|syn aldol",
+        "description_short": "Highly diastereoselective syn aldol reaction of chiral N-acyl oxazolidinones with aldehydes through Z-boron enolates and Zimmerman-Traxler transition states."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Baylis-Hillman Reaction",
+    "manual_rows": 2,
+    "extract_rows": 2,
+    "exact_like_score": 0,
+    "priority_score": 16
+  },
+  {
+    "family_name": "Birch Reduction",
+    "family_name_norm": "birch reduction",
+    "page_no": 60,
+    "page_kind": "canonical_overview",
+    "title": "Birch Reduction – Importance and Mechanism",
+    "summary": "Overview page for the Birch reduction describing dissolving-metal reduction of aromatic rings or electron-poor heteroarenes with alkali metals in liquid ammonia and an alcohol proton source to give unconjugated cyclohexadienes or partially reduced heterocycles. The mechanism proceeds through sequential electron transfer, radical anion formation, protonation, and regiocontrolled second electron/proton delivery.",
+    "notes": "Highlights substituent-dependent regioselectivity, use of Li or Na in NH3(l), and applicability to pyridines, furans, and related systems under electron-withdrawing substitution.",
+    "image_filename": "named reactions_112.jpg",
+    "source_label": "named_reactions_frontmatter_batch10",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "Radical anion",
+        "entity_type": "intermediate",
+        "notes": "First electron-transfer intermediate in Birch reduction.",
+        "confidence": 0.94
+      },
+      {
+        "entity_text": "Cyclohexadiene",
+        "entity_type": "product_class",
+        "notes": "Typical partially reduced arene product class.",
+        "confidence": 0.91
+      },
+      {
+        "entity_text": "Birch reductive alkylation",
+        "entity_type": "variant",
+        "notes": "Variant that traps reduced intermediates with electrophiles.",
+        "confidence": 0.9
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Birch Reduction",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "dissolving-metal dearomatization / reductive alkylation",
+        "key_reagents_clue": "Li or Na, NH3(l), ROH, t-BuOH, EtOH",
+        "description_short": "Dissolving-metal reduction of aromatic rings and heteroarenes to unconjugated dienes or partially reduced heterocycles."
+      },
+      {
+        "family_name": "Luche Reduction",
+        "score": 0.8,
+        "family_class": "named_reaction",
+        "transformation_type": "CeCl3/NaBH4 reduction of alpha,beta-unsaturated ketones to allylic alcohols",
+        "key_reagents_clue": "CeCl3·7H2O|NaBH4",
+        "description_short": "Selective 1,2-reduction of enones to allylic alcohols using sodium borohydride in the presence of cerium(III) chloride."
+      },
+      {
+        "family_name": "Buchner Reaction",
+        "score": 0.71,
+        "family_class": "other",
+        "transformation_type": "other",
+        "key_reagents_clue": "hv or Δ or Rh-catalyst",
+        "description_short": "The Buchner reaction, involving the thermal or photochemical reaction of ethyl diazoacetate with benzene to form a cycloheptatriene derivative via a norcaradiene intermediate."
+      },
+      {
+        "family_name": "Mannich Reaction",
+        "score": 0.71,
+        "family_class": "named_reaction",
+        "transformation_type": "aminomethylation of enolizable carbonyls or other CH-acidic partners with formaldehyde and amines",
+        "key_reagents_clue": "CH2O|NH4Cl|NH4OAc|TFA|KHMDS|TMSCl",
+        "description_short": "Foundational carbon–carbon bond-forming reaction that installs aminomethyl substituents onto enolizable carbonyl systems via iminium intermediates."
+      },
+      {
+        "family_name": "Nicholas Reaction",
+        "score": 0.688,
+        "family_class": "named_reaction",
+        "transformation_type": "Lewis-acid-mediated propargylic substitution/decomplexation of cobalt-alkyne complexes",
+        "key_reagents_clue": "Co2(CO)8|BF3·OEt2|CAN|NMO|TMANO|TBAF",
+        "description_short": "Cobalt-complex-mediated propargylic substitution method that enables controlled generation and trapping of stabilized propargylic cations."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Birch Reduction",
+    "manual_rows": 2,
+    "extract_rows": 2,
+    "exact_like_score": 0,
+    "priority_score": 16
+  },
+  {
+    "family_name": "Carroll Rearrangement",
+    "family_name_norm": "carroll rearrangement",
+    "page_no": 76,
+    "page_kind": "canonical_overview",
+    "title": "Carroll Rearrangement (Kimel-Cope Rearrangement) – Importance and Mechanism",
+    "summary": "Overview page for the Carroll rearrangement describing [3,3]-sigmatropic rearrangement of allylic beta-keto esters to gamma,delta-unsaturated ketones, often followed by decarboxylation, and conceptually related to a decarboxylative Claisen rearrangement.",
+    "notes": "Key concepts: ester enolate, [3,3]-sigmatropic shift, decarboxylation, gamma-delta unsaturated ketone formation.",
+    "image_filename": "named reactions_128.jpg",
+    "source_label": "named_reactions_frontmatter_batch12",
+    "source_doc": null,
+    "entities": [
+      {
+        "entity_text": "β-Keto allylic ester",
+        "entity_type": "reactant_class",
+        "notes": "Canonical substrate class for the Carroll/Kimel-Cope rearrangement.",
+        "confidence": 0.95
+      },
+      {
+        "entity_text": "[3,3]-Sigmatropic rearrangement",
+        "entity_type": "mechanistic_term",
+        "notes": "Concerted rearrangement step explicitly shown on the overview page.",
+        "confidence": 0.95
+      },
+      {
+        "entity_text": "γ,δ-Unsaturated ketone",
+        "entity_type": "product_class",
+        "notes": "Characteristic product class formed after rearrangement and decarboxylation.",
+        "confidence": 0.94
+      }
+    ],
+    "similar_existing": [
+      {
+        "family_name": "Carroll Rearrangement",
+        "score": 1.0,
+        "family_class": "named_reaction",
+        "transformation_type": "decarboxylative Claisen-type [3,3]-sigmatropic rearrangement",
+        "key_reagents_clue": "allylic beta-keto esters, ester enolates, heat, LDA, decarboxylation",
+        "description_short": "Rearrangement of allylic beta-keto esters to gamma,delta-unsaturated ketones via a [3,3]-sigmatropic shift and loss of carbon dioxide."
+      },
+      {
+        "family_name": "Cope Rearrangement",
+        "score": 0.821,
+        "family_class": "named_reaction",
+        "transformation_type": "1,5-diene [3,3]-sigmatropic rearrangement / ring expansion of strained dienes",
+        "key_reagents_clue": "1,5-diene|heat|divinylcyclopropane|divinylcyclobutane",
+        "description_short": "Thermal reversible [3,3]-sigmatropic rearrangement of 1,5-dienes that reorganizes carbon skeletons, including medium-ring-forming strained-substrate variants."
+      },
+      {
+        "family_name": "Brook Rearrangement",
+        "score": 0.8,
+        "family_class": "named_reaction",
+        "transformation_type": "anionic silyl migration / annulation",
+        "key_reagents_clue": "alkoxide or organolithium generation, acyl silanes, THF",
+        "description_short": "Anionic migration of silyl groups from carbon to oxygen that enables rearrangement and annulation logic."
+      },
+      {
+        "family_name": "Wolff Rearrangement",
+        "score": 0.8,
+        "family_class": "named_reaction",
+        "transformation_type": "rearrangement of alpha-diazoketones to ketenes",
+        "key_reagents_clue": "Wolff rearrangement|alpha-diazoketone|ketene|Ag2O|hν|Arndt-Eistert|TsN3",
+        "description_short": "Conversion of alpha-diazoketones into ketenes with accompanying 1,2-shift, widely used for ring contraction and homologation chemistry."
+      },
+      {
+        "family_name": "Cornforth Rearrangement",
+        "score": 0.773,
+        "family_class": "named_reaction",
+        "transformation_type": "4-carbonyl-substituted oxazole isomerization / heterocycle skeletal editing",
+        "key_reagents_clue": "4-carbonyl-substituted oxazole|heat|dicarbonylnitrile ylide|Lawesson's reagent|LHMDS",
+        "description_short": "Thermal rearrangement of 4-carbonyl-substituted oxazoles through dicarbonylnitrile ylide intermediates to isomeric oxazole products and related heterocycle-edited scaffolds."
+      }
+    ],
+    "exact_existing_family": null,
+    "exact_existing_pattern_family": "Carroll Rearrangement",
+    "manual_rows": 2,
+    "extract_rows": 2,
+    "exact_like_score": 0,
+    "priority_score": 16
+  }
+]

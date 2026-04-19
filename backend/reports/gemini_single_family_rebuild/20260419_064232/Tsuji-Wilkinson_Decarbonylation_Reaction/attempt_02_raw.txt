@@ -1,0 +1,17 @@
+{
+  "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+  "candidate": {
+    "candidate_id": "C1",
+    "substrate_smiles": [
+      "O=CC1(CCCC1)c1ccccc1"
+    ],
+    "product_smiles": [
+      "c1ccc(C2CCCC2)cc1"
+    ],
+    "optional_reagent_smiles": [],
+    "rationale": "This example demonstrates the decarbonylation of a quaternary aldehyde, 1-phenylcyclopentane-1-carbaldehyde, to form phenylcyclopentane. The removal of the formyl group (-CHO) from a sterically hindered spirocyclic center is a clear and non-trivial application of the Tsuji-Wilkinson reaction, highlighting its utility in complex settings. The substrate is specifically chosen to be an aldehyde that is unlikely to undergo other common aldehyde reactions, thus isolating the decarbonylation pathway.",
+    "collision_avoidance_note": "The substrate is a quaternary aldehyde attached to a spirocyclic system, which is structurally distinct from simple aliphatic, aromatic, or alpha,beta-unsaturated aldehydes. This specific topology (a quaternary carbon bearing both a phenyl and a formyl group within a cyclopentane ring) avoids overlap with generic aldehyde decarbonylation examples and previously used bicyclic or simple chain structures.",
+    "reagents_text": "Tris(triphenylphosphine)rhodium(I) chloride (Wilkinson's catalyst)",
+    "conditions_text": "Heat, typically in a high-boiling solvent like benzonitrile or o-xylene"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "family": "Prins-Pinacol Rearrangement",
+  "substrates": [
+    "C=CC(C)(C)O",
+    "CC=O"
+  ],
+  "products": [
+    "CC1CCC(C)(C)O1"
+  ],
+  "reagents": [
+    "[Cl][Sn]([Cl])([Cl])[Cl]"
+  ],
+  "rationale": "This reaction is a classic example of the Prins-Pinacol rearrangement. It involves the Lewis acid (SnCl4) catalyzed reaction of a homoallylic alcohol (2-methylbut-3-en-2-ol) with an aldehyde (acetaldehyde). The initial Prins cyclization forms a carbocation intermediate, which then undergoes a [1,2]-methyl shift (pinacol rearrangement) to form a more stable carbocation, leading to the final substituted tetrahydrofuran product. The reactants are simple, acyclic, and clearly illustrate the key bond formations and rearrangement characteristic of this named reaction.",
+  "collision_avoidance_note": "This example uses simple aliphatic substrates (a homoallylic alcohol and an aldehyde) to avoid overlap with other named reactions. It specifically avoids complex ring systems, aromatic groups, or other functional groups that could trigger unrelated named reaction classifiers. The core transformation is the formation of a substituted tetrahydrofuran via a tandem cyclization-rearrangement, which is the defining feature of the Prins-Pinacol rearrangement.",
+  "raw_text": "{\n  \"family\": \"Prins-Pinacol Rearrangement\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CC(C)(O)C=C\",\n      \"CC=O\"\n    ],\n    \"product_smiles\": [\n      \"CC1(C)CCC(C)O1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"Cl[Sn](Cl)(Cl)Cl\"\n    ],\n    \"rationale\": \"This reaction is a classic example of the Prins-Pinacol rearrangement. It involves the Lewis acid (SnCl4) catalyzed reaction of a homoallylic alcohol (2-methylbut-3-en-2-ol) with an aldehyde (acetaldehyde). The initial Prins cyclization forms a carbocation intermediate, which then undergoes a [1,2]-methyl shift (pinacol rearrangement) to form a more stable carbocation, leading to the final substituted tetrahydrofuran product. The reactants are simple, acyclic, and clearly illustrate the key bond formations and rearrangement characteristic of this named reaction.\",\n    \"collision_avoidance_note\": \"This example uses simple aliphatic substrates (a homoallylic alcohol and an aldehyde) to avoid overlap with other named reactions. It specifically avoids complex ring systems, aromatic groups, or other functional groups that could trigger unrelated named reaction classifiers. The core transformation is the formation of a substituted tetrahydrofuran via a tandem cyclization-rearrangement, which is the defining feature of the Prins-Pinacol rearrangement.\"\n  }\n}"
+}

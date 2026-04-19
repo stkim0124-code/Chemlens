@@ -1,0 +1,16 @@
+{
+  "family": "Wolff-Kishner Reduction",
+  "substrates": [
+    "CCC(C)=O"
+  ],
+  "products": [
+    "CCCC"
+  ],
+  "reagents": [
+    "NN",
+    "[K+].[OH-]"
+  ],
+  "rationale": "This reaction shows the reduction of a simple, acyclic ketone (2-butanone) to its corresponding alkane (n-butane) using hydrazine (NH2NH2) and a strong base (KOH), which is the quintessential transformation of the Wolff-Kishner reduction. The substrate is small, acyclic, and lacks other functional groups, making it a clear and unambiguous example.",
+  "collision_avoidance_note": "This example uses a simple aliphatic ketone, avoiding aromatic rings (which could overlap with Clemmensen reduction examples or other arene-related reactions) and other functional groups. The explicit use of hydrazine and a strong base as reagents clearly signals the Wolff-Kishner conditions, distinguishing it from other deoxygenation methods like the Clemmensen (acidic, Zn/Hg) or Mozingo (thiol, Raney Ni) reductions.",
+  "raw_text": "{\n  \"family\": \"Wolff-Kishner Reduction\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"O=C(C)CC\"\n    ],\n    \"product_smiles\": [\n      \"CCCC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"NN\",\n      \"[OH-].[K+]\"\n    ],\n    \"rationale\": \"This reaction shows the reduction of a simple, acyclic ketone (2-butanone) to its corresponding alkane (n-butane) using hydrazine (NH2NH2) and a strong base (KOH), which is the quintessential transformation of the Wolff-Kishner reduction. The substrate is small, acyclic, and lacks other functional groups, making it a clear and unambiguous example.\",\n    \"collision_avoidance_note\": \"This example uses a simple aliphatic ketone, avoiding aromatic rings (which could overlap with Clemmensen reduction examples or other arene-related reactions) and other functional groups. The explicit use of hydrazine and a strong base as reagents clearly signals the Wolff-Kishner conditions, distinguishing it from other deoxygenation methods like the Clemmensen (acidic, Zn/Hg) or Mozingo (thiol, Raney Ni) reductions.\"\n  }\n}"
+}

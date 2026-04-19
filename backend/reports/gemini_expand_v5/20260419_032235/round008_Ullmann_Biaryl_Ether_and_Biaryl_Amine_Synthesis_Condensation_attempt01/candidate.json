@@ -1,0 +1,16 @@
+{
+  "family": "Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation",
+  "substrates": [
+    "Brc1ccccc1",
+    "COc1ccccc1O"
+  ],
+  "products": [
+    "COc1ccccc1Oc1ccccc1"
+  ],
+  "reagents": [
+    "[Cu][I]"
+  ],
+  "rationale": "This reaction shows the copper-catalyzed coupling of a simple aryl halide (bromobenzene) with a simple phenol (guaiacol, 2-methoxyphenol) to form a diaryl ether. This is a classic and fundamental example of the Ullmann biaryl ether synthesis. The reactants and product are simple, acyclic where possible, and clearly illustrate the core C-O bond formation between two aryl rings, which is the defining feature of this reaction.",
+  "collision_avoidance_note": "This example uses simple, monosubstituted benzene rings to avoid complex polycyclic aromatic systems that might be found in other named reactions (e.g., Scholl reaction). It avoids motifs like diazonium salts (Gomberg-Bachmann), boronic acids (Suzuki), or organometallic reagents other than copper (Stille, Negishi) to remain specific to the Ullmann condensation. The choice of a phenol coupling partner clearly distinguishes it from the Ullmann biaryl synthesis (aryl-aryl coupling).",
+  "raw_text": "{\n  \"family\": \"Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"Brc1ccccc1\",\n      \"COc1ccccc1O\"\n    ],\n    \"product_smiles\": [\n      \"COc1ccccc1Oc1ccccc1\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Cu]I\"\n    ],\n    \"rationale\": \"This reaction shows the copper-catalyzed coupling of a simple aryl halide (bromobenzene) with a simple phenol (guaiacol, 2-methoxyphenol) to form a diaryl ether. This is a classic and fundamental example of the Ullmann biaryl ether synthesis. The reactants and product are simple, acyclic where possible, and clearly illustrate the core C-O bond formation between two aryl rings, which is the defining feature of this reaction.\",\n    \"collision_avoidance_note\": \"This example uses simple, monosubstituted benzene rings to avoid complex polycyclic aromatic systems that might be found in other named reactions (e.g., Scholl reaction). It avoids motifs like diazonium salts (Gomberg-Bachmann), boronic acids (Suzuki), or organometallic reagents other than copper (Stille, Negishi) to remain specific to the Ullmann condensation. The choice of a phenol coupling partner clearly distinguishes it from the Ullmann biaryl synthesis (aryl-aryl coupling).\"\n  }\n}"
+}

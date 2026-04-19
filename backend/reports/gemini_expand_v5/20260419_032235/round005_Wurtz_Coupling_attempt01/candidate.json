@@ -1,0 +1,15 @@
+{
+  "family": "Wurtz Coupling",
+  "substrates": [
+    "CCI"
+  ],
+  "products": [
+    "CC"
+  ],
+  "reagents": [
+    "[Na]"
+  ],
+  "rationale": "This reaction represents the simplest and most fundamental example of a Wurtz coupling: the homodimerization of an alkyl halide (iodomethane) mediated by sodium metal to form a new C-C bond (ethane). This is a classic textbook illustration of the reaction's core transformation.",
+  "collision_avoidance_note": "The use of simple, saturated alkyl halides (iodomethane) avoids aromatic rings, which could trigger Wurtz-Fittig or Ullmann coupling queries. It also avoids complex functional groups, dihalides for intramolecular cyclization, or cross-coupling scenarios, ensuring the example is specific to the basic Wurtz homocoupling and less likely to collide with other named reactions.",
+  "raw_text": "{\n  \"family\": \"Wurtz Coupling\",\n  \"candidate\": {\n    \"substrate_smiles\": [\n      \"CCI\"\n    ],\n    \"product_smiles\": [\n      \"CC\"\n    ],\n    \"optional_reagent_smiles\": [\n      \"[Na]\"\n    ],\n    \"rationale\": \"This reaction represents the simplest and most fundamental example of a Wurtz coupling: the homodimerization of an alkyl halide (iodomethane) mediated by sodium metal to form a new C-C bond (ethane). This is a classic textbook illustration of the reaction's core transformation.\",\n    \"collision_avoidance_note\": \"The use of simple, saturated alkyl halides (iodomethane) avoids aromatic rings, which could trigger Wurtz-Fittig or Ullmann coupling queries. It also avoids complex functional groups, dihalides for intramolecular cyclization, or cross-coupling scenarios, ensuring the example is specific to the basic Wurtz homocoupling and less likely to collide with other named reactions.\"\n  }\n}"
+}

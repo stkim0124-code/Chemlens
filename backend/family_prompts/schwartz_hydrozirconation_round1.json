@@ -1,0 +1,10 @@
+{
+  "family": "Schwartz Hydrozirconation",
+  "family_norm": "schwartz hydrozirconation",
+  "prompt_version": "schwartz_hydrozirconation_round1",
+  "source_tag": "gemini_rebuild_schwartz_hydrozirconation_round1",
+  "transformation_text": "alkene or alkyne hydrozirconation under Schwartz reagent conditions",
+  "reagents_text": "Cp2ZrHCl (Schwartz reagent)",
+  "conditions_text": "hydrozirconation conditions",
+  "prompt": "You are generating exactly ONE benchmark-safe canonical example for the named reaction family \"Schwartz Hydrozirconation\".\n\nGoal:\nCreate a very clear hydrozirconation canonical example, but DO NOT represent Schwartz reagent or organozirconium complexes as SMILES. The candidate must stay parse-safe.\n\nHard constraints:\n- Return exactly ONE candidate only.\n- Use parse-safe substrate/product SMILES only.\n- Do NOT encode Cp2ZrHCl, zirconocene, or any organozirconium species as SMILES.\n- Put the Schwartz reagent only in text fields.\n- Prefer a simple alkene or alkyne hydrozirconation case with a clear downstream product representation.\n- Avoid catalyst-complex SMILES entirely.\n- Avoid ionic or aromatic metallacycle notations.\n- Avoid stage-seed copying.\n- JSON only.\n\nReturn JSON in this exact schema:\n{\n  \"family\": \"Schwartz Hydrozirconation\",\n  \"candidate\": {\n    \"candidate_id\": \"C1\",\n    \"substrate_smiles\": [\"...\"],\n    \"product_smiles\": [\"...\"],\n    \"optional_reagent_smiles\": [],\n    \"rationale\": \"...\",\n    \"collision_avoidance_note\": \"...\",\n    \"reagents_text\": \"Cp2ZrHCl (Schwartz reagent)\",\n    \"conditions_text\": \"hydrozirconation conditions\"\n  }\n}"
+}
