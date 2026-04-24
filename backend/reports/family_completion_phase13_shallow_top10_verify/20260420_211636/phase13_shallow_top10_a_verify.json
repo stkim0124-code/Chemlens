@@ -1,0 +1,111 @@
+{
+  "db": "app\\labint.db",
+  "batch": "a",
+  "verify": [
+    {
+      "family": "Glaser Coupling",
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 5,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "curated_extract_ids": [],
+      "curated_extract_summaries": [],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Grignard Reaction",
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 1,
+      "molecule_rows": 6,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "curated_extract_ids": [],
+      "curated_extract_summaries": [],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Heck Reaction",
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 1,
+      "molecule_rows": 6,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "curated_extract_ids": [],
+      "curated_extract_summaries": [],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Hell-Volhard-Zelinsky Reaction",
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "curated_extract_ids": [],
+      "curated_extract_summaries": [],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Henry Reaction",
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 1,
+      "molecule_rows": 5,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "curated_extract_ids": [],
+      "curated_extract_summaries": [],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    }
+  ]
+}

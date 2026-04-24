@@ -1,0 +1,77 @@
+{
+  "_meta": {
+    "before_snap_dir": "C:\\chemlens\\backend\\reports\\phase4\\gateB\\iterate1_20260424",
+    "after_snap_dir": "C:\\chemlens\\backend\\reports\\phase4\\gateB\\iter2_20260424_203319",
+    "out_dir": "C:\\chemlens\\backend\\reports\\phase4\\gateB\\iter2_20260424_203319\\diff"
+  },
+  "_defects": {
+    "enabled": true,
+    "registry_path": "C:\\chemlens\\backend\\benchmark\\defects\\benchmark_defects_registry.json",
+    "defect_count": 3,
+    "case_ids": [
+      "adm_stille_carbonylative_cross-coupling_1303",
+      "adm_stille_cross-coupling_(migita-kosugi-stille_coupling)_1306",
+      "adm_wittig_reaction_466"
+    ]
+  },
+  "_guard_registry": "C:\\chemlens\\backend\\scripts\\gateB_guard_registry.json",
+  "admission": {
+    "edges_gained": 1,
+    "edges_lost": 1,
+    "net_edge_delta": 0,
+    "stayed_pass": 201,
+    "stayed_fail": 53,
+    "total_cases_compared": 256,
+    "defects_excluded": 3,
+    "edges_gained_by_source_kind": {
+      "application_example": 1
+    },
+    "edges_lost_by_source_kind": {
+      "application_example": 1
+    },
+    "gained_case_ids": [
+      "adm_simmons-smith_cyclopropanation_1264"
+    ],
+    "lost_case_ids": [
+      "adm_furukawa_modification_928"
+    ]
+  },
+  "broad": {
+    "edges_gained": 1,
+    "edges_lost": 1,
+    "net_edge_delta": 0,
+    "stayed_pass": 201,
+    "stayed_fail": 56,
+    "total_cases_compared": 259,
+    "defects_excluded": 0,
+    "edges_gained_by_source_kind": {
+      "unknown": 1
+    },
+    "edges_lost_by_source_kind": {
+      "unknown": 1
+    },
+    "gained_case_ids": [
+      "broad_simmons-smith_cyclopropanation_1264"
+    ],
+    "lost_case_ids": [
+      "broad_furukawa_modification_928"
+    ]
+  },
+  "coverage": {
+    "edges_gained": 0,
+    "edges_lost": 0,
+    "net_edge_delta": 0,
+    "stayed_pass": 459,
+    "stayed_fail": 59,
+    "total_cases_compared": 518,
+    "defects_excluded": 0,
+    "edges_gained_by_source_kind": {},
+    "edges_lost_by_source_kind": {},
+    "gained_case_ids": [],
+    "lost_case_ids": []
+  },
+  "_gate_verdict": {
+    "pass": false,
+    "reason": "admission net=+0, coverage net=+0; heuristic rule: admission must gain and coverage must not regress."
+  }
+}

@@ -1,0 +1,451 @@
+{
+  "tag": "phase18_shallow_top10_v1",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "batch": "all",
+  "dry_run": false,
+  "before": {
+    "queryable_family_count": 264,
+    "queryable_count": 1595
+  },
+  "after": {
+    "queryable_family_count": 264,
+    "queryable_count": 1655
+  },
+  "alias_updates": [],
+  "backfill_updates": [
+    {
+      "family": "Kulinkovich Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Kulinovich Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Larock Indole Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Madelung Indole Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Malonic Ester Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "McMurry Coupling",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Meerwein Arylation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Meerwein-Ponndorf-Verley Reduction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Meisenheimer Rearrangement",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Meyer-Schuster and Rupe Rearrangement",
+      "extract_rows_touched": 1
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Kulinkovich Reaction",
+      "status": "inserted",
+      "extract_id": 1030,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Kulinkovich Reaction",
+      "status": "inserted",
+      "extract_id": 1031,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Kulinkovich Reaction",
+      "status": "inserted",
+      "extract_id": 1032,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Kulinovich Reaction",
+      "status": "inserted",
+      "extract_id": 1033,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Kulinovich Reaction",
+      "status": "inserted",
+      "extract_id": 1034,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Kulinovich Reaction",
+      "status": "inserted",
+      "extract_id": 1035,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Larock Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1036,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Larock Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1037,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Larock Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1038,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Madelung Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1039,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Madelung Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1040,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Madelung Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1041,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Malonic Ester Synthesis",
+      "status": "inserted",
+      "extract_id": 1042,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Malonic Ester Synthesis",
+      "status": "inserted",
+      "extract_id": 1043,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Malonic Ester Synthesis",
+      "status": "inserted",
+      "extract_id": 1044,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "McMurry Coupling",
+      "status": "inserted",
+      "extract_id": 1045,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "McMurry Coupling",
+      "status": "inserted",
+      "extract_id": 1046,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "McMurry Coupling",
+      "status": "inserted",
+      "extract_id": 1047,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Meerwein Arylation",
+      "status": "inserted",
+      "extract_id": 1048,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Meerwein Arylation",
+      "status": "inserted",
+      "extract_id": 1049,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Meerwein Arylation",
+      "status": "inserted",
+      "extract_id": 1050,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Meerwein-Ponndorf-Verley Reduction",
+      "status": "inserted",
+      "extract_id": 1051,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Meerwein-Ponndorf-Verley Reduction",
+      "status": "inserted",
+      "extract_id": 1052,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Meerwein-Ponndorf-Verley Reduction",
+      "status": "inserted",
+      "extract_id": 1053,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Meisenheimer Rearrangement",
+      "status": "inserted",
+      "extract_id": 1054,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Meisenheimer Rearrangement",
+      "status": "inserted",
+      "extract_id": 1055,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Meisenheimer Rearrangement",
+      "status": "inserted",
+      "extract_id": 1056,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Meyer-Schuster and Rupe Rearrangement",
+      "status": "inserted",
+      "extract_id": 1057,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Meyer-Schuster and Rupe Rearrangement",
+      "status": "inserted",
+      "extract_id": 1058,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Meyer-Schuster and Rupe Rearrangement",
+      "status": "inserted",
+      "extract_id": 1059,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Kulinkovich Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Kulinovich Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Larock Indole Synthesis",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Madelung Indole Synthesis",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Malonic Ester Synthesis",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "McMurry Coupling",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Meerwein Arylation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Meerwein-Ponndorf-Verley Reduction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Meisenheimer Rearrangement",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Meyer-Schuster and Rupe Rearrangement",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    }
+  ]
+}

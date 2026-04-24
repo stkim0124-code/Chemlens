@@ -1,0 +1,200 @@
+{
+  "db": "app\\labint.db",
+  "verify": [
+    {
+      "family": "Criegee Oxidation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        855,
+        856
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 855,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Criegee oxidation of cyclohexanone with a peracid to caprolactone.",
+          "reactants_text": "cyclohexanone",
+          "products_text": "epsilon-caprolactone"
+        },
+        {
+          "id": 856,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Criegee oxidation of acetophenone to phenyl acetate.",
+          "reactants_text": "acetophenone",
+          "products_text": "phenyl acetate"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Danheiser Benzannulation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        857,
+        858
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 857,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Danheiser benzannulation of a cyclobutenone with 1-trimethylsilylpropyne to a substituted anisole framework.",
+          "reactants_text": "cyclobutenone and 1-trimethylsilylpropyne",
+          "products_text": "substituted anisole framework"
+        },
+        {
+          "id": 858,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Danheiser benzannulation of a substituted cyclobutenone and trimethylsilylacetylene to an alkoxy-substituted benzene derivative.",
+          "reactants_text": "substituted cyclobutenone and trimethylsilylacetylene",
+          "products_text": "alkoxy-substituted benzene derivative"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Danheiser Cyclopentene Annulation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        859,
+        860
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 859,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Danheiser cyclopentene annulation of an alpha,beta-unsaturated ketone with a trimethylsilylallene to a fused cyclopentene product.",
+          "reactants_text": "enone and trimethylsilylallene",
+          "products_text": "fused cyclopentene product"
+        },
+        {
+          "id": 860,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Danheiser cyclopentene annulation of cyclohexenone with a substituted silylallene to a bicyclic cyclopentene ketone.",
+          "reactants_text": "cyclohexenone and substituted silylallene",
+          "products_text": "bicyclic cyclopentene ketone"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Darzens Glycidic Ester Condensation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        861,
+        862
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 861,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Darzens glycidic ester condensation of benzaldehyde with ethyl chloroacetate to an epoxide ester.",
+          "reactants_text": "benzaldehyde and ethyl chloroacetate",
+          "products_text": "ethyl 3-phenyloxirane-2-carboxylate"
+        },
+        {
+          "id": 862,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Darzens glycidic ester condensation of p-anisaldehyde with methyl chloroacetate to an anisyl epoxide ester.",
+          "reactants_text": "p-anisaldehyde and methyl chloroacetate",
+          "products_text": "methyl anisyl glycidate"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Davis' Oxaziridine Oxidations",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        863,
+        864
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 863,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Davis' oxaziridine oxidation of methyl phenyl sulfide to the corresponding sulfoxide.",
+          "reactants_text": "methyl phenyl sulfide",
+          "products_text": "methyl phenyl sulfoxide"
+        },
+        {
+          "id": 864,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Davis' oxaziridine alpha-hydroxylation of cyclohexanone enolate precursor to 2-hydroxycyclohexanone.",
+          "reactants_text": "cyclohexanone enolate precursor",
+          "products_text": "2-hydroxycyclohexanone"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    }
+  ]
+}

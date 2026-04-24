@@ -1,0 +1,95 @@
+{
+  "phase": "phase5_reagent_aware_apply_iter2",
+  "task_id": [120, 138, 139, 140, 141, 142, 143, 144, 145],
+  "timestamp": "2026-04-24T22:50:17",
+  "snapshot": "reports/phase5/apply_iter2_20260424_225017",
+  "baseline": "reports/phase4/optionF/apply_iter2b_20260424_223049",
+  "status": "PASS",
+  "gate_verdict": {
+    "pass": true,
+    "reason": "adm_top1 0.8024 (no change vs Option F), adm_top3 +1 case, cov_r@5 +0.0040 (458 → 460). Zero top1 per-case PASS→FAIL flips. Phase 5 iter2 tightened keyword table (T5-only) after iter1 over-triggered Wolff-Kishner on 3 non-T5 cases.",
+    "hard_rollback_thresholds": {
+      "adm_top1": {"threshold": 0.745, "observed": 0.8024, "margin": 0.0574, "status": "PASS"},
+      "cov_r5":   {"threshold": 0.875, "observed": 0.9091, "margin": 0.0341, "status": "PASS"}
+    }
+  },
+  "changes": {
+    "new_function": "_reagent_family_bonus(family_name, reagents_text) → (multiplier, notes)",
+    "keyword_table_entries": 12,
+    "keywords_focused_on_T5": [
+      "mitsunobu reaction",
+      "swern oxidation",
+      "mcmurry coupling",
+      "nozaki-hiyama-kishi reaction",
+      "stille cross-coupling (migita-kosugi-stille coupling)",
+      "davis' oxaziridine oxidations",
+      "bamford-stevens-shapiro olefination",
+      "biginelli reaction",
+      "chugaev elimination reaction (xanthate ester pyrolysis)",
+      "passerini multicomponent reaction",
+      "amadori reaction / rearrangement",
+      "beckmann rearrangement",
+      "stille carbonylative cross-coupling"
+    ],
+    "boost_factor": 1.20,
+    "iter1_regression_note": "First iter used boost=1.35 + generic WK keywords (hydrazine, KOH) and over-triggered on Tsuji-Wilkinson/Hunsdiecker/Clemmensen. Iter2 removed non-T5 families and lowered boost."
+  },
+  "headline_metrics": {
+    "admission": {
+      "optionF": {"total": 253, "top1": 203, "top1_acc": 0.8024, "top3": 225, "top3_acc": 0.8893, "confused_pairs": 50},
+      "phase5":  {"total": 253, "top1": 203, "top1_acc": 0.8024, "top3": 226, "top3_acc": 0.8933, "confused_pairs": 50},
+      "delta":   {"top1_count": 0, "top1_acc": 0.0, "top3_count": 1, "top3_acc": 0.0040, "confused_pairs": 0}
+    },
+    "coverage": {
+      "optionF": {"total": 506, "r@1": 0.7648, "r@3": 0.8577, "r@5": 0.9051, "h@5": 458},
+      "phase5":  {"total": 506, "r@1": 0.7648, "r@3": 0.8636, "r@5": 0.9091, "h@5": 460},
+      "delta":   {"r@1": 0.0, "r@3": 0.0059, "r@5": 0.0040, "h@5": 2}
+    }
+  },
+  "per_case_flips_vs_optionF": {
+    "admission_top1_P2F": 0,
+    "admission_top1_F2P": 0,
+    "coverage_h5_P2F": 2,
+    "coverage_h5_F2P": 4,
+    "coverage_h5_P2F_cases": ["Pfitzner-Moffatt Oxidation (2 cov cases — collateral: Swern keyword boost surfaced Swern extracts ahead of PM in DMSO-oxidation cluster)"],
+    "coverage_h5_F2P_cases": ["Swern Oxidation (2 cov cases)", "Nozaki-Hiyama-Kishi Reaction (1 cov case)", "Bamford-Stevens-Shapiro Olefination (1 cov case)"]
+  },
+  "pdf_audit_delta": {
+    "gateC":   {"name_pct": 100.0, "T1_top1": 200, "T2_top3": 19, "T3_cov_h1": 6, "T4_cov_h5": 8, "T5": 17, "top5_pct": 93.2},
+    "optionF": {"name_pct": 100.0, "T1_top1": 201, "T2_top3": 21, "T3_cov_h1": 6, "T4_cov_h5": 9, "T5": 13, "top5_pct": 94.8},
+    "phase5":  {"name_pct": 100.0, "T1_top1": 201, "T2_top3": 22, "T3_cov_h1": 6, "T4_cov_h5": 10, "T5": 11, "top5_pct": 95.6}
+  },
+  "residual_T5_11": {
+    "count": 11,
+    "reclassification_after_chemistry_audit": {
+      "A_solvable_algorithm": [
+        "Mitsunobu Reaction (stereo-inversion SMARTS)",
+        "McMurry Coupling (atom-count self-coupling check)",
+        "Nozaki-Hiyama-Kishi (product-stoichiometry tightening)",
+        "Biginelli (DHPM product SMARTS + Retro-Claisen anti-greed)",
+        "Chugaev (anti-VCP guard)",
+        "Passerini (anti-BV when isocyanide present)",
+        "Amadori (glycoside SMARTS)"
+      ],
+      "B_benchmark_data_defect": [
+        "Beckmann Rearrangement (test SMILES is nitroso not oxime)",
+        "Stille Cross-Coupling (Sn replaced by tBu in test reactant)",
+        "Stille Carbonylative Cross-Coupling (Sn + CO both missing from test reactant)"
+      ],
+      "C_needs_query_reagent_text_UX": [
+        "DMSO-class oxidation cluster: Swern / Pfitzner-Moffatt / Parikh-Doering / Moffatt (only reagent word separates them)",
+        "Davis' Oxaziridine Oxidations (oxaziridine reagent invisible in SMILES)",
+        "Bamford-Stevens-Shapiro (tosylhydrazone reagent invisible)"
+      ],
+      "D_truly_unsolvable": []
+    }
+  },
+  "artifacts": [
+    "admission/family_admission_results.{json,csv,md}",
+    "broad/broad_results.{json,csv,md}",
+    "coverage/corpus_coverage_results.{json,csv,md}",
+    "benchmark_backup/*.post.json",
+    "logs/{admission,broad,coverage}.{out,err}.log"
+  ],
+  "deliverable_report": "C:\\Users\\tmdxo\\Downloads\\chemlens_comprehensive_failure_audit.md"
+}

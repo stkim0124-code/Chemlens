@@ -1,0 +1,75 @@
+canonical,admission_loss_count,completion_bucket,rich_pass,extract_count,overview_count,application_count,mechanism_count,queryable_R,queryable_P,unique_pair_count,molecule_rows,collision_prone,raw_names
+Hantzsch Dihydropyridine Synthesis,1,rich,True,3,1,2,0,9,3,3,14,False,Hantzsch Dihydropyridine Synthesis
+Feist-Bénary Furan Synthesis,1,rich,True,3,1,2,0,6,3,3,11,False,Feist-Bénary Furan Synthesis
+Knoevenagel Condensation,1,rich,True,3,1,2,0,6,3,3,11,False,Knoevenagel Condensation
+Charette Asymmetric Cyclopropanation,1,rich,True,3,1,2,0,5,3,3,9,False,Charette Asymmetric Cyclopropanation
+Kumada Cross-Coupling,1,rich,True,3,1,2,0,4,3,3,8,False,Kumada Cross-Coupling
+Criegee Oxidation,1,rich,True,3,1,2,0,3,3,3,8,False,Criegee Oxidation
+Curtius Rearrangement,1,rich,True,3,1,2,0,3,3,3,9,False,Curtius Rearrangement
+Dakin-West Reaction,1,rich,True,3,1,2,0,3,3,3,9,False,Dakin-West Reaction
+Davis' Oxaziridine Oxidations,1,rich,True,3,1,2,0,3,3,3,9,False,Davis' Oxaziridine Oxidations
+Dess-Martin Oxidation,1,rich,True,3,1,2,0,3,3,3,8,False,Dess-Martin Oxidation
+Enyne Metathesis,1,rich,True,3,1,2,0,3,3,3,6,False,Enyne Metathesis
+Hunsdiecker Reaction,1,rich,True,3,1,2,0,3,3,3,7,False,Hunsdiecker Reaction
+Jacobsen-Katsuki Epoxidation,1,rich,True,3,1,2,0,3,3,3,7,False,Jacobsen-Katsuki Epoxidation
+Reformatsky Reaction,1,rich,True,4,1,3,0,5,4,3,10,False,Reformatsky Reaction
+Meerwein-Ponndorf-Verley Reduction,1,rich,True,4,1,3,0,4,4,3,10,False,Meerwein-Ponndorf-Verley Reduction
+Seyferth-Gilbert Homologation,1,rich,True,4,1,3,0,4,4,3,10,False,Seyferth-Gilbert Homologation
+Ullmann Reaction / Coupling / Biaryl Synthesis,1,rich,True,4,1,3,0,4,4,3,9,False,Ullmann Reaction / Coupling / Biaryl Synthesis
+Yamaguchi Macrolactonization,1,rich,True,4,1,3,0,4,4,3,10,False,Yamaguchi Macrolactonization
+Amadori Reaction / Rearrangement,1,rich,True,6,1,4,0,3,3,3,32,False,Amadori Reaction / Rearrangement|Amadori Rearrangement
+Biginelli Reaction,1,rich,True,7,2,3,0,3,3,3,39,False,Biginelli Reaction
+Chugaev Elimination Reaction (Xanthate Ester Pyrolysis),1,rich,True,14,3,10,0,3,4,3,45,False,Chugaev Elimination Reaction|Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)
+De Mayo Cycloaddition,1,rich,True,4,2,2,0,8,4,4,14,False,De Mayo Cycloaddition|De Mayo Cycloaddition (Enone-Alkene [2+2] Photocycloaddition)
+Ugi Multicomponent Reaction,1,rich,True,4,1,3,0,7,4,4,11,False,Ugi Multicomponent Reaction
+Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification,1,rich,True,4,2,2,0,6,4,4,15,False,Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification|Still-Gennari Modification
+Passerini Multicomponent Reaction,1,rich,True,4,1,3,0,6,4,4,10,False,Passerini Multicomponent Reaction
+Petasis Boronic Acid-Mannich Reaction,1,rich,True,4,1,3,0,6,4,4,10,False,Petasis Boronic Acid-Mannich Reaction
+Larock Indole Synthesis,1,rich,True,4,1,3,0,5,4,4,12,False,Larock Indole Synthesis
+Michael Addition Reaction,1,rich,True,4,1,3,0,5,4,4,10,False,Michael Addition Reaction
+Minisci Reaction,1,rich,True,4,1,3,0,5,4,4,13,False,Minisci Reaction
+Mitsunobu Reaction,1,rich,True,4,1,3,0,5,4,4,11,False,Mitsunobu Reaction
+Miyaura Boration,1,rich,True,4,1,3,0,5,4,4,10,False,Miyaura Boration
+Mukaiyama Aldol Reaction,1,rich,True,4,1,3,0,5,4,4,10,False,Mukaiyama Aldol Reaction
+Negishi Cross-Coupling,1,rich,True,4,1,3,0,5,4,4,11,False,Negishi Cross-Coupling
+Nozaki-Hiyama-Kishi Reaction,1,rich,True,4,1,3,0,5,4,4,11,False,Nozaki-Hiyama-Kishi Reaction
+Paal-Knorr Pyrrole Synthesis,1,rich,True,4,1,3,0,5,4,4,10,False,Paal-Knorr Pyrrole Synthesis
+Peterson Olefination,1,rich,True,4,1,3,0,5,4,4,11,False,Peterson Olefination
+Prins Reaction,1,rich,True,4,1,3,0,5,4,4,10,False,Prins Reaction
+Roush Asymmetric Allylation,1,rich,True,4,1,3,0,5,4,4,9,False,Roush Asymmetric Allylation
+Sakurai Allylation,1,rich,True,4,1,3,0,5,4,4,10,False,Sakurai Allylation
+Schotten-Baumann Reaction,1,rich,True,4,1,3,0,5,4,4,10,False,Schotten-Baumann Reaction
+Sonogashira Cross-Coupling,1,rich,True,4,1,3,0,5,4,4,11,False,Sonogashira Cross-Coupling
+Staudinger Reaction,1,rich,True,4,1,3,0,5,4,4,9,False,Staudinger Reaction
+Stille Carbonylative Cross-Coupling,1,rich,True,4,1,3,0,5,4,4,10,False,Stille Carbonylative Cross-Coupling
+Stille Cross-Coupling (Migita-Kosugi-Stille Coupling),1,rich,True,4,1,3,0,5,4,4,10,False,Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)
+Stobbe Condensation,1,rich,True,4,1,3,0,5,4,4,10,False,Stobbe Condensation
+Strecker Reaction,1,rich,True,4,1,3,0,5,4,4,10,False,Strecker Reaction
+Takai-Utimoto Olefination (Takai Reaction),1,rich,True,4,1,3,0,5,4,4,10,False,Takai-Utimoto Olefination (Takai Reaction)
+Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation,1,rich,True,4,1,3,0,5,4,4,10,False,Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation
+Wittig Reaction - Schlosser Modification,1,rich,True,4,1,3,0,5,4,4,12,False,Wittig Reaction - Schlosser Modification
+von Pechmann Reaction,1,rich,True,4,1,3,0,5,4,4,10,False,von Pechmann Reaction
+Baldwin's Rules / Guidelines for Ring-Closing Reactions,1,rich,True,4,1,3,0,4,4,4,9,False,Baldwin's Rules / Guidelines for Ring-Closing Reactions
+Keck Macrolactonization,1,rich,True,4,1,3,0,4,4,4,12,False,Keck Macrolactonization
+McMurry Coupling,1,rich,True,4,1,3,0,4,4,4,11,False,McMurry Coupling
+Nicholas Reaction,1,rich,True,4,1,3,0,4,4,4,10,False,Nicholas Reaction
+Oppenauer Oxidation,1,rich,True,4,1,3,0,4,4,4,10,False,Oppenauer Oxidation
+Pfitzner-Moffatt Oxidation,1,rich,True,4,1,3,0,4,4,4,8,False,Pfitzner-Moffatt Oxidation
+Pinnick Oxidation,1,rich,True,4,1,3,0,4,4,4,11,False,Pinnick Oxidation
+Prilezhaev Reaction,1,rich,True,4,1,3,0,4,4,4,9,False,Prilezhaev Reaction
+Quasi-Favorskii Rearrangement,1,rich,True,4,1,3,0,4,4,4,9,False,Quasi-Favorskii Rearrangement
+Stephen Aldehyde Synthesis (Stephen Reduction),1,rich,True,4,1,3,0,4,4,4,11,False,Stephen Aldehyde Synthesis (Stephen Reduction)
+Swern Oxidation,1,rich,True,4,1,3,0,4,4,4,8,False,Swern Oxidation
+Tishchenko Reaction,1,rich,True,4,1,3,0,4,4,4,9,False,Tishchenko Reaction
+Tsuji-Wilkinson Decarbonylation Reaction,1,rich,True,4,1,3,0,4,4,4,8,False,Tsuji-Wilkinson Decarbonylation Reaction
+Weinreb Ketone Synthesis,1,rich,True,4,1,3,0,4,4,4,9,False,Weinreb Ketone Synthesis
+"Wittig-[1,2]- and [2,3]-Rearrangement",1,rich,True,4,1,3,0,4,4,4,9,False,"Wittig-[1,2]- and [2,3]-Rearrangement"
+Wurtz Coupling,1,rich,True,4,1,3,0,4,4,4,9,False,Wurtz Coupling
+Corey-Kim Oxidation,1,rich,True,6,1,5,0,6,6,4,16,False,Corey-Kim Oxidation
+Barbier Coupling Reaction,1,rich,True,6,1,3,0,5,4,4,10,False,Barbier Coupling Reaction
+Barton-McCombie Radical Deoxygenation Reaction,1,rich,True,8,2,3,0,6,4,4,38,False,Barton-McCombie Radical Deoxygenation Reaction|Barton-Mccombie Radical Deoxygenation Reaction
+Aldol Reaction,1,rich,True,12,3,7,0,5,4,4,47,False,Aldol Reaction
+Bamford-Stevens-Shapiro Olefination,1,rich,True,15,3,9,0,4,4,4,64,False,Bamford-Stevens-Shapiro Olefination
+Beckmann Rearrangement,1,rich,True,10,1,8,0,6,9,6,44,False,Beckmann Rearrangement
+Simmons-Smith Cyclopropanation,1,rich,True,8,2,6,0,8,8,8,21,False,Simmons-Smith Cyclopropanation|Simmons-Smith Reaction
+Barton Radical Decarboxylation Reaction,1,rich,True,18,2,13,0,18,17,14,101,False,Barton Radical Decarboxylation|Barton Radical Decarboxylation Reaction

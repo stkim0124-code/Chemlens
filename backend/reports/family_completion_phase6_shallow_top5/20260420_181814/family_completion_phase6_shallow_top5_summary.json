@@ -1,0 +1,417 @@
+{
+  "tag": "phase6_shallow_top5_completion_v1",
+  "db": "app\\labint.db",
+  "dry_run": false,
+  "families": [
+    "Balz-Schiemann Reaction (Schiemann Reaction)",
+    "Buchner Method of Ring Expansion (Buchner Reaction)",
+    "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+    "Chichibabin Amination Reaction (Chichibabin Reaction)",
+    "Claisen Condensation / Claisen Reaction"
+  ],
+  "before": {
+    "queryable_family_count": 280,
+    "queryable_count": 1116,
+    "reaction_extract_count": 545,
+    "extract_molecule_count": 2842
+  },
+  "after": {
+    "queryable_family_count": 274,
+    "queryable_count": 1139,
+    "reaction_extract_count": 555,
+    "extract_molecule_count": 2865
+  },
+  "alias_updates": [
+    {
+      "table": "reaction_extracts",
+      "from": "Balz-Schiemann Reaction",
+      "to": "Balz-Schiemann Reaction (Schiemann Reaction)",
+      "rows_updated": 5
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Balz-Schiemann Reaction",
+      "to": "Balz-Schiemann Reaction (Schiemann Reaction)",
+      "rows_updated": 42
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Buchner Method of Ring Expansion",
+      "to": "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "rows_updated": 3
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Buchner Method of Ring Expansion",
+      "to": "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "rows_updated": 14
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Buchner Reaction",
+      "to": "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "rows_updated": 1
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Buchner Reaction",
+      "to": "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "rows_updated": 10
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Carroll Rearrangement",
+      "to": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "rows_updated": 3
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Carroll Rearrangement",
+      "to": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "rows_updated": 4
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Kimel-Cope Rearrangement",
+      "to": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Kimel-Cope Rearrangement",
+      "to": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Chichibabin Amination Reaction",
+      "to": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "rows_updated": 7
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Chichibabin Amination Reaction",
+      "to": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "rows_updated": 53
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Chichibabin Reaction",
+      "to": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Chichibabin Reaction",
+      "to": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Claisen Condensation",
+      "to": "Claisen Condensation / Claisen Reaction",
+      "rows_updated": 4
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Claisen Condensation",
+      "to": "Claisen Condensation / Claisen Reaction",
+      "rows_updated": 52
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Claisen Reaction",
+      "to": "Claisen Condensation / Claisen Reaction",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Claisen Reaction",
+      "to": "Claisen Condensation / Claisen Reaction",
+      "rows_updated": 0
+    }
+  ],
+  "backfill": [
+    {
+      "family": "Balz-Schiemann Reaction (Schiemann Reaction)",
+      "extract_rows_touched": 6
+    },
+    {
+      "family": "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "extract_rows_touched": 5
+    },
+    {
+      "family": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "extract_rows_touched": 4
+    },
+    {
+      "family": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "extract_rows_touched": 8
+    },
+    {
+      "family": "Claisen Condensation / Claisen Reaction",
+      "extract_rows_touched": 5
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Balz-Schiemann Reaction (Schiemann Reaction)",
+      "status": "inserted",
+      "extract_id": 814,
+      "page_no": 87,
+      "image_filename": "named reactions_87.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Balz-Schiemann Reaction (Schiemann Reaction)",
+      "status": "inserted",
+      "extract_id": 815,
+      "page_no": 87,
+      "image_filename": "named reactions_87.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "status": "inserted",
+      "extract_id": 816,
+      "page_no": 121,
+      "image_filename": "named reactions_121.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "status": "inserted",
+      "extract_id": 817,
+      "page_no": 121,
+      "image_filename": "named reactions_121.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "status": "inserted",
+      "extract_id": 818,
+      "page_no": 129,
+      "image_filename": "named reactions_129.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "status": "inserted",
+      "extract_id": 819,
+      "page_no": 129,
+      "image_filename": "named reactions_129.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "status": "inserted",
+      "extract_id": 820,
+      "page_no": 133,
+      "image_filename": "named reactions_133.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "status": "inserted",
+      "extract_id": 821,
+      "page_no": 133,
+      "image_filename": "named reactions_133.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Claisen Condensation / Claisen Reaction",
+      "status": "inserted",
+      "extract_id": 822,
+      "page_no": 139,
+      "image_filename": "named reactions_139.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Claisen Condensation / Claisen Reaction",
+      "status": "inserted",
+      "extract_id": 823,
+      "page_no": 139,
+      "image_filename": "named reactions_139.jpg",
+      "inserted_molecules": 3
+    }
+  ],
+  "verify": [
+    {
+      "family": "Balz-Schiemann Reaction (Schiemann Reaction)",
+      "extract_count": 8,
+      "overview_count": 2,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 6,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 6,
+      "molecule_rows": 49,
+      "unique_queryable_pair_count": 4,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        814,
+        815
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 814,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: thermolysis of p-methylbenzenediazonium tetrafluoroborate to give p-fluorotoluene.",
+          "reactants_text": "p-methylbenzenediazonium tetrafluoroborate",
+          "products_text": "p-fluorotoluene"
+        },
+        {
+          "id": 815,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: thermolysis of p-methoxybenzenediazonium tetrafluoroborate to give p-fluoroanisole.",
+          "reactants_text": "p-methoxybenzenediazonium tetrafluoroborate",
+          "products_text": "p-fluoroanisole"
+        }
+      ]
+    },
+    {
+      "family": "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "extract_count": 7,
+      "overview_count": 2,
+      "application_count": 5,
+      "extract_with_reactant": 6,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 10,
+      "queryable_products": 4,
+      "molecule_rows": 34,
+      "unique_queryable_pair_count": 4,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        816,
+        817
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 816,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: ring expansion of benzene with ethyl diazoacetate to give ethyl cycloheptatrienecarboxylate.",
+          "reactants_text": "benzene | ethyl diazoacetate",
+          "products_text": "ethyl cycloheptatrienecarboxylate"
+        },
+        {
+          "id": 817,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: ring expansion of anisole with ethyl diazoacetate to give a methoxy-substituted cycloheptatrienecarboxylate.",
+          "reactants_text": "anisole | ethyl diazoacetate",
+          "products_text": "methoxy-substituted cycloheptatrienecarboxylate"
+        }
+      ]
+    },
+    {
+      "family": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "extract_count": 6,
+      "overview_count": 2,
+      "application_count": 2,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        818,
+        819
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 818,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Carroll rearrangement of allyl acetoacetate to 5-hexen-2-one.",
+          "reactants_text": "allyl acetoacetate",
+          "products_text": "5-hexen-2-one"
+        },
+        {
+          "id": 819,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Carroll rearrangement of crotyl acetoacetate to 6-hepten-2-one.",
+          "reactants_text": "crotyl acetoacetate",
+          "products_text": "6-hepten-2-one"
+        }
+      ]
+    },
+    {
+      "family": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "extract_count": 10,
+      "overview_count": 2,
+      "application_count": 7,
+      "extract_with_reactant": 6,
+      "extract_with_product": 6,
+      "extract_with_both": 5,
+      "queryable_reactants": 6,
+      "queryable_products": 6,
+      "molecule_rows": 60,
+      "unique_queryable_pair_count": 4,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        820,
+        821
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 820,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Chichibabin amination of pyridine to 2-aminopyridine.",
+          "reactants_text": "pyridine",
+          "products_text": "2-aminopyridine"
+        },
+        {
+          "id": 821,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Chichibabin amination of quinoline to 2-aminoquinoline.",
+          "reactants_text": "quinoline",
+          "products_text": "2-aminoquinoline"
+        }
+      ]
+    },
+    {
+      "family": "Claisen Condensation / Claisen Reaction",
+      "extract_count": 7,
+      "overview_count": 1,
+      "application_count": 5,
+      "extract_with_reactant": 6,
+      "extract_with_product": 5,
+      "extract_with_both": 5,
+      "queryable_reactants": 10,
+      "queryable_products": 10,
+      "molecule_rows": 61,
+      "unique_queryable_pair_count": 4,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        822,
+        823
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 822,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Claisen condensation of ethyl acetate to ethyl acetoacetate.",
+          "reactants_text": "ethyl acetate",
+          "products_text": "ethyl acetoacetate"
+        },
+        {
+          "id": 823,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: crossed Claisen condensation of acetophenone enolate with ethyl benzoate to give dibenzoylmethane.",
+          "reactants_text": "acetophenone | ethyl benzoate",
+          "products_text": "dibenzoylmethane"
+        }
+      ]
+    }
+  ],
+  "rich_count": 5,
+  "shallow_count": 0
+}

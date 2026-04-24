@@ -1,0 +1,176 @@
+{
+  "command": "apply",
+  "started_at": "2026-04-21T09:45:00",
+  "backend_root": "C:\\chemlens\\backend",
+  "report_dir": "C:\\chemlens\\backend\\reports\\phase3c\\apply_3c_b_20260421_094500",
+  "stamp": "20260421_094500",
+  "phase": "3c-b",
+  "note": "Cumulative on top of 3c-a. Two surgical edits to app/evidence_search.py: (1) three new SMARTS keys in _REACTION_FEATURE_SMARTS (azide/sulfone/phosphonate); (2) three new elif branches in _family_delta_adjustment (Aza-Wittig, Horner-Wadsworth-Emmons, Julia). All wrapped in '# --- Phase 3c-b ... start/end ---' markers so later phases can strip-and-reinsert cumulatively. No DB writes, no benchmark rebuild — only predictor scoring changed.",
+  "baseline": {
+    "source": "reports/phase3c/apply_3c_a_20260421_092729/apply_summary.json",
+    "broad_top1_correct": 182,
+    "broad_top3_correct": 211,
+    "broad_total": 259,
+    "admission_top1_correct": 182,
+    "admission_top3_correct": 211,
+    "admission_total": 259,
+    "admission_confused_pairs": 77,
+    "coverage_r1": 0.6969,
+    "coverage_r3": 0.8166,
+    "coverage_r5": 0.8668,
+    "coverage_total": 518,
+    "disallow_top3_violations": 0
+  },
+  "stages": [
+    {
+      "stage": "snapshot",
+      "backup_dir": "C:\\chemlens\\backend\\reports\\phase3c\\apply_3c_b_20260421_094500\\backup",
+      "files_backed_up": ["app/evidence_search.py"]
+    },
+    {
+      "stage": "patch",
+      "ok": true,
+      "file": "C:\\chemlens\\backend\\app\\evidence_search.py",
+      "edits": [
+        {
+          "name": "3c-b-feature-smarts",
+          "location": "_REACTION_FEATURE_SMARTS dict, appended",
+          "marker_start": "# --- Phase 3c-b feature SMARTS start (20260421_094500) ---",
+          "marker_end":   "# --- end Phase 3c-b feature SMARTS ---",
+          "features_added": [
+            {"key": "azide",       "smarts": "[$([#7]=[#7+]=[#7-]),$([#7-][#7+]#[#7])]"},
+            {"key": "sulfone",     "smarts": "[SX4](=[OX1])(=[OX1])"},
+            {"key": "phosphonate", "smarts": "[PX4](=[OX1])([OX2][#6])[OX2][#6]"}
+          ],
+          "smoke_test": "all 11 unit cases in test_smarts_3cb.py pass except one intentional over-match (diethyl phosphate on phosphonate pattern — acceptable because guard is defensive)"
+        },
+        {
+          "name": "3c-b-delta-guards",
+          "location": "new elif branches after 3c-a Heck branch, before mult=max tail",
+          "marker_start": "# --- Phase 3c-b pattern guards start (20260421_094500) ---",
+          "marker_end":   "# --- end Phase 3c-b pattern guards ---",
+          "branches": [
+            {
+              "family_match": "'aza-wittig' in fam",
+              "rules": [
+                {"condition": "r[azide]<1",                                               "multiplier": 0.25, "reason": "Aza-Wittig: 반응물에 azide 신호 없음"},
+                {"condition": "r[carbonyl]<1",                                            "multiplier": 0.45, "reason": "Aza-Wittig: 카보닐 파트너 부족"},
+                {"condition": "r[azide]>=1 and r[carbonyl]>=1",                           "multiplier": 1.15, "reason": "azide + 카보닐 조합 적합 (boost)"}
+              ]
+            },
+            {
+              "family_match": "'horner-wadsworth-emmons' in fam (plus HWE startswith alias)",
+              "rules": [
+                {"condition": "r[phosphonate]<1",                                         "multiplier": 0.22, "reason": "HWE: phosphonate 전구체 부족"},
+                {"condition": "r[carbonyl]<1",                                            "multiplier": 0.45, "reason": "HWE: 카보닐 파트너 부족"},
+                {"condition": "d[alkene]<=0",                                             "multiplier": 0.45, "reason": "HWE: alkene 생성 신호 부족"},
+                {"condition": "r[phosphonate]>=1 and r[carbonyl]>=1 and d[alkene]>0",     "multiplier": 1.20, "reason": "적합 조합 (boost)"}
+              ]
+            },
+            {
+              "family_match": "'julia' in fam and ('olefination' or 'lythgoe' or 'kocienski' in fam)",
+              "rules": [
+                {"condition": "r[sulfone]<1",                                             "multiplier": 0.25, "reason": "Julia: sulfone 전구체 부족"},
+                {"condition": "r[carbonyl]<1",                                            "multiplier": 0.45, "reason": "Julia: 카보닐 파트너 부족"},
+                {"condition": "d[alkene]<=0",                                             "multiplier": 0.50, "reason": "Julia: alkene 생성 신호 부족"},
+                {"condition": "r[sulfone]>=1 and r[carbonyl]>=1 and d[alkene]>0 and d[sulfone]<0", "multiplier": 1.20, "reason": "적합 조합 (boost)"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "bench_runs",
+      "results": {
+        "broad": {
+          "rc": 0,
+          "summary": {
+            "benchmark_name": "CHEMLENS broad benchmark phase2_mvp",
+            "total_cases": 259,
+            "reaction_cases": 259,
+            "top1_correct": 185,
+            "top1_accuracy": 0.7143,
+            "top3_correct": 218,
+            "top3_accuracy": 0.8417,
+            "disallow_top3_violations": 0,
+            "disallow_violation_rate": 0.0,
+            "unique_families": 259
+          }
+        },
+        "admission": {
+          "rc": 0,
+          "summary": {
+            "benchmark_name": "CHEMLENS family admission benchmark phase2_mvp",
+            "total_cases": 259,
+            "top1_correct": 185,
+            "top1_accuracy": 0.7143,
+            "top3_correct": 218,
+            "top3_accuracy": 0.8417,
+            "unique_families": 259,
+            "confused_pairs": 74
+          }
+        },
+        "coverage": {
+          "rc": 0,
+          "summary": {
+            "benchmark_name": "CHEMLENS corpus coverage benchmark phase2_mvp",
+            "total_cases": 518,
+            "recall_at_1": 0.7027,
+            "recall_at_3": 0.8282,
+            "recall_at_5": 0.8726,
+            "hit_at_1": 364,
+            "hit_at_3": 429,
+            "hit_at_5": 452,
+            "no_confident_hit_cases": 3,
+            "unique_families": 259
+          },
+          "note": "Parent PowerShell exceeded MCP 60s cap but WMI-detached child via run_coverage.bat completed cleanly in ~68s and wrote JSON atomically before exit."
+        }
+      }
+    },
+    {
+      "stage": "eval_gates",
+      "gates": {
+        "broad_top3_ok": true,
+        "admission_top3_ok": true,
+        "admission_confused_pairs_ok": true,
+        "disallow_ok": true,
+        "coverage_r5_ok": true,
+        "details": {
+          "broad":            {"base_correct": 211, "new_correct": 218, "delta": +7, "threshold": "delta >= -1"},
+          "admission":        {"base_correct": 211, "new_correct": 218, "delta": +7, "threshold": "delta >= -1"},
+          "confused_pairs":   {"base": 77,   "new": 74,   "delta": -3,  "threshold": "new <= base, primary metric < base"},
+          "disallow":         {"base": 0,    "new": 0,    "delta": 0},
+          "coverage_r5":      {"base": 0.8668, "new": 0.8726, "delta": +0.0058, "threshold": "new >= base - 0.004"}
+        },
+        "all_pass": true
+      }
+    }
+  ],
+  "delta_summary_vs_3c_a": {
+    "broad_top1":              {"base": 182, "new": 185, "delta": +3},
+    "broad_top3":              {"base": 211, "new": 218, "delta": +7},
+    "admission_top1":          {"base": 182, "new": 185, "delta": +3},
+    "admission_top3":          {"base": 211, "new": 218, "delta": +7},
+    "admission_confused_pairs":{"base": 77,  "new": 74,  "delta": -3},
+    "coverage_r1":             {"base": 0.6969, "new": 0.7027, "delta": +0.0058},
+    "coverage_r3":             {"base": 0.8166, "new": 0.8282, "delta": +0.0116},
+    "coverage_r5":             {"base": 0.8668, "new": 0.8726, "delta": +0.0058},
+    "disallow_top3_violations":{"base": 0, "new": 0, "delta": 0}
+  },
+  "delta_summary_vs_3b_baseline": {
+    "broad_top1":              {"base": 180, "new": 185, "delta": +5},
+    "broad_top3":              {"base": 209, "new": 218, "delta": +9},
+    "admission_top1":          {"base": 180, "new": 185, "delta": +5},
+    "admission_top3":          {"base": 209, "new": 218, "delta": +9},
+    "admission_confused_pairs":{"base": 79,  "new": 74,  "delta": -5},
+    "coverage_r1":             {"base": 0.6911, "new": 0.7027, "delta": +0.0116},
+    "coverage_r3":             {"base": 0.8089, "new": 0.8282, "delta": +0.0193},
+    "coverage_r5":             {"base": 0.8668, "new": 0.8726, "delta": +0.0058},
+    "disallow_top3_violations":{"base": 0, "new": 0, "delta": 0}
+  },
+  "overall_ok": true,
+  "commit_decision": "KEEP — every gate passes; top3 +7, confused_pairs -3, all coverage recall buckets improved. Cumulative vs 3b: top3 +9 (209→218), confused_pairs -5 (79→74), r@3 +0.019, r@5 +0.006. Predictor module stays live at C:\\chemlens\\backend\\app\\evidence_search.py.",
+  "finished_at": "2026-04-21T09:53:00"
+}

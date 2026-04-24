@@ -1,0 +1,451 @@
+{
+  "tag": "phase33_shallow_top10_v1",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "batch": "all",
+  "dry_run": false,
+  "before": {
+    "queryable_family_count": 264,
+    "queryable_count": 2495
+  },
+  "after": {
+    "queryable_family_count": 264,
+    "queryable_count": 2555
+  },
+  "alias_updates": [],
+  "backfill_updates": [
+    {
+      "family": "Barton Nitrite Ester Reaction",
+      "extract_rows_touched": 6
+    },
+    {
+      "family": "Claisen-Ireland Rearrangement",
+      "extract_rows_touched": 7
+    },
+    {
+      "family": "Arndt-Eistert Homologation / Synthesis",
+      "extract_rows_touched": 7
+    },
+    {
+      "family": "Alkyne Metathesis",
+      "extract_rows_touched": 7
+    },
+    {
+      "family": "Beckmann Rearrangement",
+      "extract_rows_touched": 7
+    },
+    {
+      "family": "Aza-Cope Rearrangement",
+      "extract_rows_touched": 7
+    },
+    {
+      "family": "Brook Rearrangement",
+      "extract_rows_touched": 7
+    },
+    {
+      "family": "Aza-Wittig Reaction",
+      "extract_rows_touched": 8
+    },
+    {
+      "family": "Clemmensen Reduction",
+      "extract_rows_touched": 8
+    },
+    {
+      "family": "Bischler-Napieralski Isoquinoline Synthesis",
+      "extract_rows_touched": 8
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Barton Nitrite Ester Reaction",
+      "status": "inserted",
+      "extract_id": 1480,
+      "page_no": 94,
+      "image_filename": "named reactions_94.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Barton Nitrite Ester Reaction",
+      "status": "inserted",
+      "extract_id": 1481,
+      "page_no": 94,
+      "image_filename": "named reactions_94.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Barton Nitrite Ester Reaction",
+      "status": "inserted",
+      "extract_id": 1482,
+      "page_no": 94,
+      "image_filename": "named reactions_94.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Claisen-Ireland Rearrangement",
+      "status": "inserted",
+      "extract_id": 1483,
+      "page_no": 142,
+      "image_filename": "named reactions_142.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Claisen-Ireland Rearrangement",
+      "status": "inserted",
+      "extract_id": 1484,
+      "page_no": 142,
+      "image_filename": "named reactions_142.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Claisen-Ireland Rearrangement",
+      "status": "inserted",
+      "extract_id": 1485,
+      "page_no": 142,
+      "image_filename": "named reactions_142.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Arndt-Eistert Homologation / Synthesis",
+      "status": "inserted",
+      "extract_id": 1486,
+      "page_no": 71,
+      "image_filename": "named reactions_71.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Arndt-Eistert Homologation / Synthesis",
+      "status": "inserted",
+      "extract_id": 1487,
+      "page_no": 71,
+      "image_filename": "named reactions_71.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Arndt-Eistert Homologation / Synthesis",
+      "status": "inserted",
+      "extract_id": 1488,
+      "page_no": 71,
+      "image_filename": "named reactions_71.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Alkyne Metathesis",
+      "status": "inserted",
+      "extract_id": 1489,
+      "page_no": 65,
+      "image_filename": "named reactions_65.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Alkyne Metathesis",
+      "status": "inserted",
+      "extract_id": 1490,
+      "page_no": 65,
+      "image_filename": "named reactions_65.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Alkyne Metathesis",
+      "status": "inserted",
+      "extract_id": 1491,
+      "page_no": 65,
+      "image_filename": "named reactions_65.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Beckmann Rearrangement",
+      "status": "inserted",
+      "extract_id": 1492,
+      "page_no": 103,
+      "image_filename": "named reactions_103.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Beckmann Rearrangement",
+      "status": "inserted",
+      "extract_id": 1493,
+      "page_no": 103,
+      "image_filename": "named reactions_103.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Beckmann Rearrangement",
+      "status": "inserted",
+      "extract_id": 1494,
+      "page_no": 103,
+      "image_filename": "named reactions_103.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aza-Cope Rearrangement",
+      "status": "inserted",
+      "extract_id": 1495,
+      "page_no": 75,
+      "image_filename": "named reactions_75.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aza-Cope Rearrangement",
+      "status": "inserted",
+      "extract_id": 1496,
+      "page_no": 75,
+      "image_filename": "named reactions_75.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aza-Cope Rearrangement",
+      "status": "inserted",
+      "extract_id": 1497,
+      "page_no": 75,
+      "image_filename": "named reactions_75.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Brook Rearrangement",
+      "status": "inserted",
+      "extract_id": 1498,
+      "page_no": 117,
+      "image_filename": "named reactions_117.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Brook Rearrangement",
+      "status": "inserted",
+      "extract_id": 1499,
+      "page_no": 117,
+      "image_filename": "named reactions_117.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Brook Rearrangement",
+      "status": "inserted",
+      "extract_id": 1500,
+      "page_no": 117,
+      "image_filename": "named reactions_117.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aza-Wittig Reaction",
+      "status": "inserted",
+      "extract_id": 1501,
+      "page_no": 76,
+      "image_filename": "named reactions_76.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aza-Wittig Reaction",
+      "status": "inserted",
+      "extract_id": 1502,
+      "page_no": 76,
+      "image_filename": "named reactions_76.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aza-Wittig Reaction",
+      "status": "inserted",
+      "extract_id": 1503,
+      "page_no": 76,
+      "image_filename": "named reactions_76.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Clemmensen Reduction",
+      "status": "inserted",
+      "extract_id": 1504,
+      "page_no": 144,
+      "image_filename": "named reactions_144.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Clemmensen Reduction",
+      "status": "inserted",
+      "extract_id": 1505,
+      "page_no": 144,
+      "image_filename": "named reactions_144.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Clemmensen Reduction",
+      "status": "inserted",
+      "extract_id": 1506,
+      "page_no": 144,
+      "image_filename": "named reactions_144.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bischler-Napieralski Isoquinoline Synthesis",
+      "status": "inserted",
+      "extract_id": 1507,
+      "page_no": 115,
+      "image_filename": "named reactions_115.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bischler-Napieralski Isoquinoline Synthesis",
+      "status": "inserted",
+      "extract_id": 1508,
+      "page_no": 115,
+      "image_filename": "named reactions_115.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bischler-Napieralski Isoquinoline Synthesis",
+      "status": "inserted",
+      "extract_id": 1509,
+      "page_no": 115,
+      "image_filename": "named reactions_115.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Barton Nitrite Ester Reaction",
+      "extract_count": 9,
+      "overview_count": 2,
+      "application_count": 5,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 30,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Claisen-Ireland Rearrangement",
+      "extract_count": 10,
+      "overview_count": 2,
+      "application_count": 6,
+      "extract_with_reactant": 3,
+      "extract_with_product": 4,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 4,
+      "molecule_rows": 84,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Arndt-Eistert Homologation / Synthesis",
+      "extract_count": 10,
+      "overview_count": 1,
+      "application_count": 8,
+      "extract_with_reactant": 7,
+      "extract_with_product": 7,
+      "extract_with_both": 7,
+      "queryable_reactants": 11,
+      "queryable_products": 11,
+      "molecule_rows": 65,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Alkyne Metathesis",
+      "extract_count": 10,
+      "overview_count": 1,
+      "application_count": 8,
+      "extract_with_reactant": 6,
+      "extract_with_product": 7,
+      "extract_with_both": 6,
+      "queryable_reactants": 6,
+      "queryable_products": 7,
+      "molecule_rows": 46,
+      "unique_queryable_pair_count": 6,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Beckmann Rearrangement",
+      "extract_count": 10,
+      "overview_count": 1,
+      "application_count": 8,
+      "extract_with_reactant": 6,
+      "extract_with_product": 9,
+      "extract_with_both": 6,
+      "queryable_reactants": 6,
+      "queryable_products": 9,
+      "molecule_rows": 44,
+      "unique_queryable_pair_count": 6,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Aza-Cope Rearrangement",
+      "extract_count": 10,
+      "overview_count": 1,
+      "application_count": 8,
+      "extract_with_reactant": 9,
+      "extract_with_product": 9,
+      "extract_with_both": 9,
+      "queryable_reactants": 9,
+      "queryable_products": 9,
+      "molecule_rows": 40,
+      "unique_queryable_pair_count": 7,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Brook Rearrangement",
+      "extract_count": 10,
+      "overview_count": 1,
+      "application_count": 7,
+      "extract_with_reactant": 8,
+      "extract_with_product": 8,
+      "extract_with_both": 8,
+      "queryable_reactants": 9,
+      "queryable_products": 9,
+      "molecule_rows": 29,
+      "unique_queryable_pair_count": 8,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Aza-Wittig Reaction",
+      "extract_count": 11,
+      "overview_count": 2,
+      "application_count": 6,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 32,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Clemmensen Reduction",
+      "extract_count": 11,
+      "overview_count": 2,
+      "application_count": 7,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 65,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Bischler-Napieralski Isoquinoline Synthesis",
+      "extract_count": 11,
+      "overview_count": 1,
+      "application_count": 8,
+      "extract_with_reactant": 10,
+      "extract_with_product": 7,
+      "extract_with_both": 7,
+      "queryable_reactants": 10,
+      "queryable_products": 7,
+      "molecule_rows": 40,
+      "unique_queryable_pair_count": 7,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    }
+  ]
+}

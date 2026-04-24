@@ -1,0 +1,393 @@
+{
+  "tag": "phase8_shallow_top5_completion_v1",
+  "db": "app\\labint.db",
+  "dry_run": false,
+  "families": [
+    "Cope Elimination / Cope Reaction",
+    "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+    "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+    "Corey-Fuchs Alkyne Synthesis",
+    "Corey-Kim Oxidation"
+  ],
+  "before": {
+    "queryable_family_count": 273,
+    "queryable_count": 1165,
+    "reaction_extract_count": 566,
+    "extract_molecule_count": 2891
+  },
+  "after": {
+    "queryable_family_count": 273,
+    "queryable_count": 1185,
+    "reaction_extract_count": 576,
+    "extract_molecule_count": 2911
+  },
+  "alias_updates": [
+    {
+      "table": "reaction_extracts",
+      "from": "Cope Elimination",
+      "to": "Cope Elimination / Cope Reaction",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Cope Elimination",
+      "to": "Cope Elimination / Cope Reaction",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "CBS Reduction",
+      "to": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "CBS Reduction",
+      "to": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Corey-Bakshi-Shibata Reduction",
+      "to": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Corey-Bakshi-Shibata Reduction",
+      "to": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Corey-Chaykovsky Reaction",
+      "to": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Corey-Chaykovsky Reaction",
+      "to": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Corey-Chaykovsky Epoxidation",
+      "to": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Corey-Chaykovsky Epoxidation",
+      "to": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Corey-Fuchs Reaction",
+      "to": "Corey-Fuchs Alkyne Synthesis",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Corey-Fuchs Reaction",
+      "to": "Corey-Fuchs Alkyne Synthesis",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Corey-Kim Reaction",
+      "to": "Corey-Kim Oxidation",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Corey-Kim Reaction",
+      "to": "Corey-Kim Oxidation",
+      "rows_updated": 0
+    }
+  ],
+  "backfill": [
+    {
+      "family": "Cope Elimination / Cope Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Corey-Fuchs Alkyne Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Corey-Kim Oxidation",
+      "extract_rows_touched": 1
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Cope Elimination / Cope Reaction",
+      "status": "inserted",
+      "extract_id": 835,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Cope Elimination / Cope Reaction",
+      "status": "inserted",
+      "extract_id": 836,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "status": "inserted",
+      "extract_id": 837,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "status": "inserted",
+      "extract_id": 838,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "status": "inserted",
+      "extract_id": 839,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "status": "inserted",
+      "extract_id": 840,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Corey-Fuchs Alkyne Synthesis",
+      "status": "inserted",
+      "extract_id": 841,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Corey-Fuchs Alkyne Synthesis",
+      "status": "inserted",
+      "extract_id": 842,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Corey-Kim Oxidation",
+      "status": "inserted",
+      "extract_id": 843,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Corey-Kim Oxidation",
+      "status": "inserted",
+      "extract_id": 844,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Cope Elimination / Cope Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 4,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        835,
+        836
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 835,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: thermal Cope elimination of 2-phenethyl dimethylamine N-oxide to styrene.",
+          "reactants_text": "2-phenethyl dimethylamine N-oxide",
+          "products_text": "styrene"
+        },
+        {
+          "id": 836,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: thermal Cope elimination of cycloheptyl dimethylamine N-oxide to cycloheptene.",
+          "reactants_text": "cycloheptyl dimethylamine N-oxide",
+          "products_text": "cycloheptene"
+        }
+      ]
+    },
+    {
+      "family": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        837,
+        838
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 837,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: CBS reduction of propiophenone to 1-phenyl-1-propanol.",
+          "reactants_text": "propiophenone",
+          "products_text": "1-phenyl-1-propanol"
+        },
+        {
+          "id": 838,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: CBS reduction of 4-methoxyacetophenone to 1-(4-methoxyphenyl)ethanol.",
+          "reactants_text": "4-methoxyacetophenone",
+          "products_text": "1-(4-methoxyphenyl)ethanol"
+        }
+      ]
+    },
+    {
+      "family": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        839,
+        840
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 839,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Chaykovsky epoxidation of benzaldehyde to styrene oxide.",
+          "reactants_text": "benzaldehyde",
+          "products_text": "styrene oxide"
+        },
+        {
+          "id": 840,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Chaykovsky epoxidation of p-anisaldehyde to 4-methoxystyrene oxide.",
+          "reactants_text": "p-anisaldehyde",
+          "products_text": "4-methoxystyrene oxide"
+        }
+      ]
+    },
+    {
+      "family": "Corey-Fuchs Alkyne Synthesis",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        841,
+        842
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 841,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Fuchs homologation of p-anisaldehyde to 4-ethynylanisole.",
+          "reactants_text": "p-anisaldehyde",
+          "products_text": "4-ethynylanisole"
+        },
+        {
+          "id": 842,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Fuchs homologation of cyclohexanecarboxaldehyde to ethynylcyclohexane.",
+          "reactants_text": "cyclohexanecarboxaldehyde",
+          "products_text": "ethynylcyclohexane"
+        }
+      ]
+    },
+    {
+      "family": "Corey-Kim Oxidation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 2,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": false,
+      "curated_extract_ids": [
+        843,
+        844
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 843,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Kim oxidation of benzyl alcohol to benzaldehyde.",
+          "reactants_text": "benzyl alcohol",
+          "products_text": "benzaldehyde"
+        },
+        {
+          "id": 844,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Kim oxidation of 1-phenylethanol to acetophenone.",
+          "reactants_text": "1-phenylethanol",
+          "products_text": "acetophenone"
+        }
+      ]
+    }
+  ],
+  "rich_count": 4,
+  "shallow_count": 1
+}

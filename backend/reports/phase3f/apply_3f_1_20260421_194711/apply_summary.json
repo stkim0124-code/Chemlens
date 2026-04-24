@@ -1,0 +1,98 @@
+{
+  "phase": "3f-1",
+  "applied_at": "2026-04-21T19:47:11+09:00",
+  "summary": "Phase 3f kickoff — DB seed expansion for Passerini (4->7), Ugi (4->7), Stille (4->7). 9 new application_example extracts (18 queryable molecules) inserted into labint.db. Extracts ids 1549-1557. Rebuilt benchmark JSONs (extracts_scanned 1204->1213). Ran adm/brd/cov. Result: ALL 9 METRICS IDENTICAL to 3g-5 baseline — zero regression, zero gain. Top5 for every targeted failing case (Passerini 1126/1127, Ugi 1345/1346, Stille 1306/1307) is byte-identical to 3g-5. Diagnosis: new seeds did not clear the fingerprint-similarity ceiling vs greedy-family candidates (Aldol for 1126, Lieben Haloform for 1127, Heck for 1306, Friedel-Crafts for 1307). The family-generic variant approach is not sharp enough to flip aggregate fingerprint scores against greedy families that already contain high-similarity candidate rows.",
+  "files_touched": [
+    "C:\\chemlens\\backend\\smiles_guard.py (Sn added to BRACKET_ALLOWED_ATOMS)",
+    "C:\\chemlens\\backend\\app\\labint.db (9 reaction_extracts + 18 extract_molecules)",
+    "C:\\chemlens\\backend\\benchmark\\corpus_coverage_benchmark.json (rebuilt)",
+    "C:\\chemlens\\backend\\benchmark\\family_admission_benchmark.json (rebuilt)",
+    "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_broad.json (rebuilt)"
+  ],
+  "change_lines": {
+    "smiles_guard_sn": "Added 'Sn' to BRACKET_ALLOWED_ATOMS set; tin was missing (legacy Stille id=699 was ingested before guard, also fails current guard).",
+    "passerini_new_rows": "id=1549 furfural+cyclohexanecarboxylic acid+ethyl-NC; id=1550 pentanal+propionic acid+cyclohexyl-NC; id=1551 4-methoxybenzaldehyde+benzoic acid+n-butyl-NC",
+    "ugi_new_rows":       "id=1552 nicotinaldehyde+EtNH2+AcOH+cyclohexyl-NC; id=1553 4-F-benzaldehyde+MeNH2+pivalic acid+benzyl-NC; id=1554 acetone+allylamine+AcOH+2,6-xylyl-NC",
+    "stille_new_rows":    "id=1555 (E)-propenyl-SnBu3 + 4-iodotoluene; id=1556 tributyl(phenyl)stannane + 4-bromonitrobenzene; id=1557 2-(SnBu3)-furan + 4-iodoanisole"
+  },
+  "baselines_compared": {
+    "3g_5": {
+      "adm_top1": 0.7606,
+      "adm_top3": 0.861,
+      "confused_pairs": 62,
+      "brd_top1": 0.7606,
+      "brd_top3": 0.861,
+      "brd_disallow_top3": 0,
+      "cov_r1": 0.7317,
+      "cov_r3": 0.8378,
+      "cov_r5": 0.8842
+    },
+    "3f_1": {
+      "adm_top1": 0.7606,
+      "adm_top3": 0.861,
+      "confused_pairs": 62,
+      "brd_top1": 0.7606,
+      "brd_top3": 0.861,
+      "brd_disallow_top3": 0,
+      "cov_r1": 0.7317,
+      "cov_r3": 0.8378,
+      "cov_r5": 0.8842
+    }
+  },
+  "deltas_vs_3g_5": {
+    "adm_top1": "0 (197->197)",
+    "adm_top3": "0 (223->223)",
+    "confused_pairs": "0 (62->62)",
+    "brd_top1": "0",
+    "brd_top3": "0",
+    "brd_disallow_top3": "0",
+    "cov_r1": "0 (379->379)",
+    "cov_r3": "0 (434->434)",
+    "cov_r5": "0 (458->458)"
+  },
+  "strict_non_regression_status": "PASS — all 9 metrics == 3g-5 baseline; 0 improved, 9 unchanged, 0 regressed",
+  "gate_criteria_vs_3c_b": {
+    "confused_under_74": "PASS (62 < 74)",
+    "adm_top3_over_838": "PASS (0.861 >= 0.838)",
+    "brd_disallow_top3_zero": "PASS (0)",
+    "cov_r5_over_868": "PASS (0.8842 >= 0.868)"
+  },
+  "gained_cases": {"all_buckets": []},
+  "lost_cases":   {"all_buckets": []},
+  "diagnostic_journey": [
+    "Dry-run gated by smiles_guard: 3 Stille tin seeds rejected with bracket_atom_unusual_suffix:n. Root cause — Sn missing from BRACKET_ALLOWED_ATOMS. Legacy Stille id=699 (CC=[CH][Sn]([CH3])([CH3])[CH3]) also fails current guard → Sn was never whitelisted; id=699 was ingested pre-guard.",
+    "Patched smiles_guard.py: added 'Sn' to BRACKET_ALLOWED_ATOMS with comment referencing Phase 3f Stille need and legacy id=699. Verified all 4 Sn-containing SMILES pass and sanity cases (bogus '[Qq]', [NH4+]) behave as before.",
+    "Dry-run clean: 9/9 seeds would insert (ids 1549-1557). Live run: +18 queryable molecules, Passerini/Ugi/Stille each 4->7 rows.",
+    "Rebuilt 3 benchmark JSONs with --db app/labint.db. Case counts stable (259/259/518) as expected — coverage --sample-per-family=2 cap prevents new extracts from becoming test cases; they enrich the candidate corpus.",
+    "Ran 3 benchmarks. adm=197/0.7606, brd=197/0.7606, cov=0.7317/0.8378/0.8842 — all IDENTICAL to 3g-5 baseline.",
+    "Diff analysis (diff_3f_vs_3g5.py): top5 for all 6 target failing cases (Passerini 1126/1127, Ugi 1345/1346, Stille 1306/1307) is byte-identical vs 3g-5. Zero hit-flag changes across 518 cases.",
+    "Interpretation: adding family-generic variants does not clear the min_tanimoto=0.25 threshold sharply enough to flip aggregate family scores against greedy families that already contain high-similarity candidate rows (e.g. Aldol's 12 rows already fingerprint-match Passerini_1126's benzaldehyde+AcOH components; adding 3 Passerini variants doesn't overcome this)."
+  ],
+  "roi_analysis": {
+    "3g_curve": "5/6/2/4/0 cases gained per sub-phase",
+    "3f_1":     "0 cases gained — same exhaustion signal as 3g-5",
+    "interpretation": "Both demotion (3g-5) and generic-variant enrichment (3f-1) have hit ROI=0. To move MCR/Stille top1/top5 further would require either (a) query-mirror seeds crafted per failing case (e.g. for 1126: acetic acid + benzaldehyde + alternate NC so seed fingerprint matches query fingerprint directly), or (b) predictor-side family-boost for MCR families instead of demoting competitors — both carry higher regression risk than the zero-risk path of shipping defensive DB density.",
+    "shipping_decision": "KEEP 3f-1 DB rows despite zero gain — they are strictly non-regressive, chemically valid, and expand the Passerini/Ugi/Stille corpus from 4->7 rows each which may help future as-yet-unseen queries. Also retain Sn whitelist fix (one-line defensible chemistry change)."
+  },
+  "cumulative_deltas_vs_3c_b": {
+    "adm_top1": "0.7104->0.7606 (+0.0502)",
+    "adm_top3": "0.8417->0.8610 (+0.0193)",
+    "confused_pairs": "74->62 (-12)",
+    "cov_r1": "0.7124->0.7317 (+0.0193)",
+    "cov_r3": "0.8243->0.8378 (+0.0135)",
+    "cov_r5": "0.8726->0.8842 (+0.0116)"
+  },
+  "smoke_tests": [
+    "smiles_guard Sn whitelist — 4 tin-containing SMILES pass (3 new seeds + legacy id=699); bogus '[Qq]' still rejected",
+    "Preflight gate — 9/9 seeds pass smiles_guard",
+    "Dry-run rollback semantics — before/after counts identical with dry_run=True",
+    "Live insert — Passerini 4->7, Ugi 4->7, Stille 4->7 verified via DB read (verify_3f_ingest.py)"
+  ],
+  "next_steps": [
+    "Option A (safe, zero-ROI): declare optimization loop paused here; 3f-1 + 3g-5 anti-greed guards form the current ceiling.",
+    "Option B (3f-2 query-mirror): author per-case mirror seeds (e.g. for 1126: AcOH + PhCHO + iPr-NC variant) to make fingerprint similarity directly outcompete Aldol. Risk: these may look like near-duplicates of existing failing cases — need to verify they add genuine novelty.",
+    "Option C (predictor boost): add Passerini/Ugi/Stille family-score boost in evidence_search when isocyanide/tin features present. Higher regression risk than demotion-only.",
+    "Recommendation: ask user which direction before spending another iteration."
+  ],
+  "apply_dir": "C:\\chemlens\\backend\\reports\\phase3f\\apply_3f_1_20260421_194711"
+}

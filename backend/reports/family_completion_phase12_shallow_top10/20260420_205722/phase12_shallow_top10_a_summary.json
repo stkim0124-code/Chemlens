@@ -1,0 +1,370 @@
+{
+  "tag": "phase12_shallow_top10_completion_v1",
+  "batch": "a",
+  "db": "app\\labint.db",
+  "dry_run": false,
+  "families": [
+    "Feist-Bénary Furan Synthesis",
+    "Fischer Indole Synthesis",
+    "Fleming-Tamao Oxidation",
+    "Friedel-Crafts Acylation",
+    "Friedel-Crafts Alkylation"
+  ],
+  "before": {
+    "queryable_family_count": 269,
+    "queryable_count": 1301,
+    "reaction_extract_count": 626,
+    "extract_molecule_count": 3027
+  },
+  "after": {
+    "queryable_family_count": 269,
+    "queryable_count": 1329,
+    "reaction_extract_count": 636,
+    "extract_molecule_count": 3055
+  },
+  "alias_updates": [
+    {
+      "table": "reaction_extracts",
+      "from": "Feist-Benary Furan Synthesis",
+      "to": "Feist-Bénary Furan Synthesis",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Feist-Benary Furan Synthesis",
+      "to": "Feist-Bénary Furan Synthesis",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Fischer Indole Reaction",
+      "to": "Fischer Indole Synthesis",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Fischer Indole Reaction",
+      "to": "Fischer Indole Synthesis",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Fleming Tamao Oxidation",
+      "to": "Fleming-Tamao Oxidation",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Fleming Tamao Oxidation",
+      "to": "Fleming-Tamao Oxidation",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Friedel Crafts Acylation",
+      "to": "Friedel-Crafts Acylation",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Friedel Crafts Acylation",
+      "to": "Friedel-Crafts Acylation",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Friedel Crafts Alkylation",
+      "to": "Friedel-Crafts Alkylation",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Friedel Crafts Alkylation",
+      "to": "Friedel-Crafts Alkylation",
+      "rows_updated": 0
+    }
+  ],
+  "backfill": [
+    {
+      "family": "Feist-Bénary Furan Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Fischer Indole Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Fleming-Tamao Oxidation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Friedel-Crafts Acylation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Friedel-Crafts Alkylation",
+      "extract_rows_touched": 1
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Feist-Bénary Furan Synthesis",
+      "status": "inserted",
+      "extract_id": 895,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Feist-Bénary Furan Synthesis",
+      "status": "inserted",
+      "extract_id": 896,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Fischer Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 897,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Fischer Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 898,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Fleming-Tamao Oxidation",
+      "status": "inserted",
+      "extract_id": 899,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Fleming-Tamao Oxidation",
+      "status": "inserted",
+      "extract_id": 900,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Friedel-Crafts Acylation",
+      "status": "inserted",
+      "extract_id": 901,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Friedel-Crafts Acylation",
+      "status": "inserted",
+      "extract_id": 902,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Friedel-Crafts Alkylation",
+      "status": "inserted",
+      "extract_id": 903,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Friedel-Crafts Alkylation",
+      "status": "inserted",
+      "extract_id": 904,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    }
+  ],
+  "verify": [
+    {
+      "family": "Feist-Bénary Furan Synthesis",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        895,
+        896
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 895,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Feist-Bénary furan synthesis of phenacyl bromide with ethyl acetoacetate to a substituted furan ester.",
+          "reactants_text": "phenacyl bromide and ethyl acetoacetate",
+          "products_text": "ethyl 4-methyl-2-phenylfuran-3-carboxylate"
+        },
+        {
+          "id": 896,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Feist-Bénary furan synthesis of bromoacetone with acetylacetone to a methyl-substituted acetylfuran.",
+          "reactants_text": "bromoacetone and acetylacetone",
+          "products_text": "acetyl dimethylfuran product"
+        }
+      ]
+    },
+    {
+      "family": "Fischer Indole Synthesis",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 5,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        897,
+        898
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 897,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Fischer indole synthesis of 2-butanone with phenylhydrazine to 2-ethylindole.",
+          "reactants_text": "2-butanone and phenylhydrazine",
+          "products_text": "2-ethylindole"
+        },
+        {
+          "id": 898,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Fischer indole synthesis of cyclohexanone with phenylhydrazine to tetrahydrocarbazole.",
+          "reactants_text": "cyclohexanone and phenylhydrazine",
+          "products_text": "tetrahydrocarbazole"
+        }
+      ]
+    },
+    {
+      "family": "Fleming-Tamao Oxidation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        899,
+        900
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 899,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Fleming-Tamao oxidation of benzyltrimethylsilane to benzyl alcohol.",
+          "reactants_text": "benzyltrimethylsilane",
+          "products_text": "benzyl alcohol"
+        },
+        {
+          "id": 900,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Fleming-Tamao oxidation of 3-phenylpropyltrimethylsilane to 3-phenyl-1-propanol.",
+          "reactants_text": "3-phenylpropyltrimethylsilane",
+          "products_text": "3-phenyl-1-propanol"
+        }
+      ]
+    },
+    {
+      "family": "Friedel-Crafts Acylation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        901,
+        902
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 901,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Friedel-Crafts acylation of benzene with acetyl chloride to acetophenone.",
+          "reactants_text": "benzene and acetyl chloride",
+          "products_text": "acetophenone"
+        },
+        {
+          "id": 902,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Friedel-Crafts acylation of anisole with propionyl chloride to para-methoxypropiophenone.",
+          "reactants_text": "anisole and propionyl chloride",
+          "products_text": "para-methoxypropiophenone"
+        }
+      ]
+    },
+    {
+      "family": "Friedel-Crafts Alkylation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        903,
+        904
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 903,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Friedel-Crafts alkylation of benzene with tert-butyl chloride to tert-butylbenzene.",
+          "reactants_text": "benzene and tert-butyl chloride",
+          "products_text": "tert-butylbenzene"
+        },
+        {
+          "id": 904,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Friedel-Crafts alkylation of toluene with isopropyl chloride to cymene.",
+          "reactants_text": "toluene and isopropyl chloride",
+          "products_text": "cymene"
+        }
+      ]
+    }
+  ],
+  "rich_count": 5,
+  "shallow_count": 0
+}

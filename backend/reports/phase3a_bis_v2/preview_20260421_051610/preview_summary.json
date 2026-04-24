@@ -1,0 +1,48 @@
+{
+  "command": "preview",
+  "started_at": "2026-04-21T05:16:11",
+  "backend_root": "C:\\chemlens\\backend",
+  "report_dir": "C:\\chemlens\\backend\\reports\\phase3a_bis_v2\\preview_20260421_051610",
+  "stamp": "20260421_051611",
+  "stages": [
+    {
+      "stage": "validate_entries",
+      "ok": false,
+      "details": [
+        {
+          "from": "Oxidation/rearrangement",
+          "to": "Baeyer-Villiger Oxidation/Rearrangement",
+          "from_in_db": false,
+          "to_in_db": true
+        },
+        {
+          "from": "Barton Radical Decarboxylation",
+          "to": "Barton Radical Decarboxylation Reaction",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Simmons-Smith Reaction",
+          "to": "Simmons-Smith Cyclopropanation",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Suzuki Cross-Coupling",
+          "to": "Suzuki Cross-Coupling (Suzuki-Miyaura)",
+          "from_in_db": true,
+          "to_in_db": false
+        },
+        {
+          "from": "Barton-McCombie",
+          "to": "Barton-Mccombie Radical Deoxygenation Reaction",
+          "from_in_db": false,
+          "to_in_db": true
+        }
+      ]
+    }
+  ],
+  "overall_ok": false,
+  "error": "validate_entries failed; use --allow-missing to override",
+  "finished_at": "2026-04-21T05:16:11"
+}

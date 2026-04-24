@@ -1,0 +1,43 @@
+﻿pages=810
+toc_outline_entries=547
+toc_text_hits=595
+heading_candidates=180
+fulltext chars=3,617,737
+
+--- outline (first 30) ---
+  L1 p   7  About the Authors
+  L1 p   8  Acknowledgements
+
+  L1 p   9  Contents
+
+  L2 p  10  I. Forword
+  L2 p  11  II. Introduction
+  L2 p  12  III. Preface 
+  L2 p  14  IV. Explanation of the use of colors in the schemes and text
+  L2 p  17  V. List of Abbreviations
+
+  L2 p  45  VI. List of Named Organic Reactions
+  L3 p  49  5
+  L3 p  50  6
+  L3 p  51  7
+  L3 p  52  8
+  L2 p  53  VII. Named Organic Reactions in Alphabetical Order
+
+  L3 p  54  Acetoacetic Ester Synhesis
+  L3 p  56  Acyloin Condensation
+  L3 p  58  Alder(ene) Reaction (Hydro-Allyl Addition)
+  L3 p  60  Aldol Reaction
+  L3 p  62  Alkene (Olefin) Metathesis
+  L3 p  64  Alkyne Metathesis
+  L3 p  66  Amadori Reaction / Rearragement
+  L3 p  68  ARBUZOV REACTION
+(MICHAELIS-ARBUZOV REACTION)
+  L3 p  70  ARNDT-EISTERT HOMOLOGATION / SYNTHESIS
+  L3 p  72  AZA-CLAISEN REARRANGEMENT
+(3-AZA-COPE REARRANGEMENT)
+  L3 p  74  AZA-COPE REARRANGEMENT
+  L3 p  76  AZA-WITTIG REACTION
+  L3 p  78  AZA-[2,3]-WITTIG REARRANGEMENT
+  L3 p  80  BAEYER-VILLIGER OXIDATION/REARRANGEMENT
+  L3 p  82  BAKER-VENKATARAMAN REARRANGEMENT
+  L3 p  84  BALDWIN��셎 RULES / GUIDELINES FOR RING-CLOSING REACTIONS

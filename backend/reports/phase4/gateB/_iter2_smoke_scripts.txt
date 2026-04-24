@@ -1,0 +1,7 @@
+gateB_eval_harness.py
+query_reagent_texts_gateB.py
+validate_gateB_smarts.py
+verify_gateB_patch.py
+_gate_c_greedy_audit.py
+_inspect_gateB_losers.py
+_smoke_simmons_guard.py

@@ -1,0 +1,29 @@
+{
+  "family_name": "Alkene (Olefin) Metathesis",
+  "region_confidence": 1.0,
+  "example_target_name": "(-)-Cylindrocyclophane F",
+  "example_summary": "Total synthesis of (-)-cylindrocyclophane F, a natural product, involving an olefin ring-closing metathesis (RCM) dimerization process to assemble the [7,7]-paracyclophane skeleton, followed by hydrogenation and deprotection.",
+  "extracts": [
+    {
+      "extract_kind": "application_example",
+      "reaction_family_name": "Alkene (Olefin) Metathesis",
+      "transformation_text": "Synthesis of (-)-Cylindrocyclophane F from a dimethoxy-bis-alkene precursor via RCM dimerization, hydrogenation, and deprotection.",
+      "reactants_text": "Structure 2",
+      "products_text": "(-)-Cylindrocyclophane F",
+      "intermediates_text": null,
+      "reagents_text": "H2, BBr3",
+      "catalysts_text": "RCM catalyst A (Schrock's catalyst), RCM catalyst B (Grubb's catalyst), RCM catalyst C (Grubb's modified perhydroimidazolidine catalyst), Pd(C)",
+      "solvents_text": "benzene, DCM",
+      "temperature_text": "20 °C, 40 °C",
+      "time_text": "2h, 4h, 75h",
+      "yield_text": "Step 1 (RCM): 48-72%; Step 2 (H2/Pd(C)): quantitative; Steps 2 & 3 combined: 84%",
+      "workup_text": null,
+      "conditions_text": "1. RCM catalyst (A: 30 mol%, B: 15 mol%, C: 15 mol%), benzene or DCM, 2-75h, 20-40 °C; 2. H2 / Pd(C); 3. BBr3, DCM",
+      "notes_text": "Schrock's catalyst (A) proved to be the most efficient for this transformation. Cross metathesis dimerization process selectively led to the thermodynamically most stable member of a set of structurally related isomers.",
+      "reactant_smiles": "COC1=CC(C(CCC)CC=C)=CC(OC)=C1C(C)CC=C",
+      "product_smiles": null,
+      "smiles_confidence": 0.8,
+      "extraction_confidence": 1.0
+    }
+  ]
+}

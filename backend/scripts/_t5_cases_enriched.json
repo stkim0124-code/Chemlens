@@ -1,0 +1,401 @@
+[
+  {
+    "family": "Amadori Reaction / Rearrangement",
+    "page": 66,
+    "pdf_name": "Amadori Reaction / Rearrangement",
+    "cases": [
+      {
+        "case_id": "adm_amadori_reaction_/_rearrangement_806",
+        "layer": "adm",
+        "smiles": "COc1ccc(N[C@H]2O[C@H](CO)[C@H](O)[C@@H](O)[C@H]2O)cc1>>COc1ccc(NCC(=O)[C@H](O)[C@H](O)[C@H](O)CO)cc1",
+        "top1_greedy": "Pinner Reaction",
+        "top3_scores": "1.147 | 1.065 | 0.913",
+        "raw_family_name": "Amadori Reaction / Rearrangement"
+      },
+      {
+        "case_id": "cov_amadori_reaction_/_rearrangement_807",
+        "layer": "cov",
+        "smiles": "Cc1ccc(N[C@H]2O[C@H](CO)[C@H](O)[C@@H](O)[C@H]2O)cc1>>Cc1ccc(NCC(=O)[C@H](O)[C@H](O)[C@H](O)CO)cc1",
+        "top1_greedy": "Koenigs-Knorr Glycosidation",
+        "top3_scores": "0.674 | 0.451 | 0.42",
+        "raw_family_name": "Amadori Reaction / Rearrangement"
+      }
+    ]
+  },
+  {
+    "family": "Bamford-Stevens-Shapiro Olefination",
+    "page": 88,
+    "pdf_name": "Bamford-Stevens-Shapiro Olefination",
+    "cases": [
+      {
+        "case_id": "adm_bamford-stevens-shapiro_olefination_1531",
+        "layer": "adm",
+        "smiles": "CCCCC(C)=O>>C=CCCCC",
+        "top1_greedy": "Schwartz Hydrozirconation",
+        "top3_scores": "1.295 | 0.979 | 0.962",
+        "raw_family_name": "Bamford-Stevens-Shapiro Olefination"
+      },
+      {
+        "case_id": "cov_bamford-stevens-shapiro_olefination_1532",
+        "layer": "cov",
+        "smiles": "O=C1CCCCC1>>C1=CCCCC1",
+        "top1_greedy": "Eschenmoser Methenylation",
+        "top3_scores": "2.205 | 2.015 | 1.993",
+        "raw_family_name": "Bamford-Stevens-Shapiro Olefination"
+      }
+    ]
+  },
+  {
+    "family": "Beckmann Rearrangement",
+    "page": 102,
+    "pdf_name": "Beckmann Rearrangement",
+    "cases": [
+      {
+        "case_id": "adm_beckmann_rearrangement_1435",
+        "layer": "adm",
+        "smiles": "O=NC=C1CCCCC1>>O=C1CCCCCN1",
+        "top1_greedy": "Eschenmoser Methenylation",
+        "top3_scores": "1.469 | 1.401 | 1.143",
+        "raw_family_name": "Beckmann Rearrangement"
+      },
+      {
+        "case_id": "cov_beckmann_rearrangement_1436",
+        "layer": "cov",
+        "smiles": "CC(=CN=O)c1ccccc1>>CNC(=O)c1ccccc1",
+        "top1_greedy": "Lieben Haloform Reaction",
+        "top3_scores": "2.319 | 2.17 | 1.931",
+        "raw_family_name": "Beckmann Rearrangement"
+      }
+    ]
+  },
+  {
+    "family": "Biginelli Reaction",
+    "page": 110,
+    "pdf_name": "Biginelli Reaction",
+    "cases": [
+      {
+        "case_id": "adm_biginelli_reaction_1441",
+        "layer": "adm",
+        "smiles": "CCOC(=O)CC(C)=O.NC(N)=O.O=Cc1ccccc1>>CCOC(=O)C1=C(C)NC(=O)NC1c1ccccc1",
+        "top1_greedy": "Darzens Glycidic Ester Condensation",
+        "top3_scores": "1.686 | 1.609 | 1.527",
+        "raw_family_name": "Biginelli Reaction"
+      },
+      {
+        "case_id": "cov_biginelli_reaction_1442",
+        "layer": "cov",
+        "smiles": "CCCC=O.CCOC(=O)CC(C)=O.NC(N)=O>>CCCC1NC(=O)NC(C)=C1C(=O)OCC",
+        "top1_greedy": "Malonic Ester Synthesis",
+        "top3_scores": "1.755 | 1.639 | 1.372",
+        "raw_family_name": "Biginelli Reaction"
+      }
+    ]
+  },
+  {
+    "family": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+    "page": 134,
+    "pdf_name": "Chugaev Elimination Reaction(Xanthate Ester Pyrolysis)",
+    "cases": [
+      {
+        "case_id": "adm_chugaev_elimination_reaction_(xanthate_ester_pyrolysis)_826",
+        "layer": "adm",
+        "smiles": "CCSC(=S)OC1CCCCC1>>C1=CCCCC1",
+        "top1_greedy": "Ring-Closing Metathesis",
+        "top3_scores": "1.323 | 1.26 | 1.223",
+        "raw_family_name": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)"
+      },
+      {
+        "case_id": "cov_chugaev_elimination_reaction_(xanthate_ester_pyrolysis)_827",
+        "layer": "cov",
+        "smiles": "CCSC(=S)OCCc1ccccc1>>C=Cc1ccccc1",
+        "top1_greedy": "Tebbe Olefination/Petasis-Tebbe Olefination",
+        "top3_scores": "2.063 | 1.707 | 1.369",
+        "raw_family_name": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)"
+      }
+    ]
+  },
+  {
+    "family": "Corey-Fuchs Alkyne Synthesis",
+    "page": 156,
+    "pdf_name": "Corey-Fuchs Alkyne Synthesis",
+    "cases": [
+      {
+        "case_id": "adm_corey-fuchs_alkyne_synthesis_841",
+        "layer": "adm",
+        "smiles": "COc1ccc(C=O)cc1>>C#Cc1ccc(OC)cc1",
+        "top1_greedy": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+        "top3_scores": "1.748 | 1.682 | 1.678",
+        "raw_family_name": "Corey-Fuchs Alkyne Synthesis"
+      },
+      {
+        "case_id": "cov_corey-fuchs_alkyne_synthesis_842",
+        "layer": "cov",
+        "smiles": "O=CC1CCCCC1>>C#CC1CCCCC1",
+        "top1_greedy": "Seyferth-Gilbert Homologation",
+        "top3_scores": "4.388 | 1.633 | 1.574",
+        "raw_family_name": "Corey-Fuchs Alkyne Synthesis"
+      }
+    ]
+  },
+  {
+    "family": "Davis' Oxaziridine Oxidations",
+    "page": 182,
+    "pdf_name": "Davis’ Oxaziridine Oxidations",
+    "cases": [
+      {
+        "case_id": "adm_davis'_oxaziridine_oxidations_863",
+        "layer": "adm",
+        "smiles": "CSc1ccccc1>>CS(=O)c1ccccc1",
+        "top1_greedy": "Clemmensen Reduction",
+        "top3_scores": "1.268 | 1.231 | 1.225",
+        "raw_family_name": "Davis' Oxaziridine Oxidations"
+      },
+      {
+        "case_id": "cov_davis'_oxaziridine_oxidations_864",
+        "layer": "cov",
+        "smiles": "O=C1CCCCC1>>O=C1CCCCC1O",
+        "top1_greedy": "Enders SAMP/RAMP Hydrazone Alkylation",
+        "top3_scores": "3.309 | 3.043 | 2.817",
+        "raw_family_name": "Davis' Oxaziridine Oxidations"
+      }
+    ]
+  },
+  {
+    "family": "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification",
+    "page": 266,
+    "pdf_name": "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification",
+    "cases": [
+      {
+        "case_id": "adm_horner-wadsworth-emmons_olefination_–_still-gennari_modification_944",
+        "layer": "adm",
+        "smiles": "O=Cc1ccccc1>>COC(=O)/C=C/c1ccccc1",
+        "top1_greedy": "Pinnick Oxidation",
+        "top3_scores": "2.193 | 2.154 | 2.07",
+        "raw_family_name": "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification"
+      },
+      {
+        "case_id": "cov_horner-wadsworth-emmons_olefination_–_still-gennari_modification_945",
+        "layer": "cov",
+        "smiles": "COc1ccc(C=O)cc1>>COC(=O)/C=C/c1ccc(OC)cc1",
+        "top1_greedy": "Cannizzaro Reaction",
+        "top3_scores": "1.809 | 1.72 | 1.688",
+        "raw_family_name": "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification"
+      }
+    ]
+  },
+  {
+    "family": "McMurry Coupling",
+    "page": 328,
+    "pdf_name": "Mcmurry Coupling",
+    "cases": [
+      {
+        "case_id": "adm_mcmurry_coupling_1045",
+        "layer": "adm",
+        "smiles": "CC(=O)c1ccccc1>>CC(=C(C)c1ccccc1)c1ccccc1",
+        "top1_greedy": "Wolff-Kishner Reduction",
+        "top3_scores": "3.377 | 3.363 | 3.194",
+        "raw_family_name": "McMurry Coupling"
+      },
+      {
+        "case_id": "cov_mcmurry_coupling_1046",
+        "layer": "cov",
+        "smiles": "O=Cc1ccccc1>>C(=Cc1ccccc1)c1ccccc1",
+        "top1_greedy": "Corey-Winter Olefination",
+        "top3_scores": "3.156 | 2.311 | 2.233",
+        "raw_family_name": "McMurry Coupling"
+      }
+    ]
+  },
+  {
+    "family": "Mitsunobu Reaction",
+    "page": 346,
+    "pdf_name": "Mitsunobu Reaction",
+    "cases": [
+      {
+        "case_id": "adm_mitsunobu_reaction_612",
+        "layer": "adm",
+        "smiles": "CCCCCC[C@H](C)O.O=C(O)c1ccccc1>>CCCCCC[C@@H](C)OC(=O)c1ccccc1",
+        "top1_greedy": "Aldol Reaction",
+        "top3_scores": "1.11 | 1.027 | 0.885",
+        "raw_family_name": "Mitsunobu Reaction"
+      },
+      {
+        "case_id": "cov_mitsunobu_reaction_1072",
+        "layer": "cov",
+        "smiles": "CC(O)c1ccccc1.O=C(O)c1ccccc1>>CC(OC(=O)c1ccccc1)c1ccccc1",
+        "top1_greedy": "Aldol Reaction",
+        "top3_scores": "1.631 | 1.335 | 1.262",
+        "raw_family_name": "Mitsunobu Reaction"
+      },
+      {
+        "case_id": "cov_mitsunobu_reaction_1073",
+        "layer": "cov",
+        "smiles": "O=C1CCC(=O)N1.OCCCc1ccccc1>>O=C1CCC(=O)N1CCCc1ccccc1",
+        "top1_greedy": "Barton-McCombie Radical Deoxygenation Reaction",
+        "top3_scores": "1.273 | 0.709 | 0.632",
+        "raw_family_name": "Mitsunobu Reaction"
+      }
+    ]
+  },
+  {
+    "family": "Nozaki-Hiyama-Kishi Reaction",
+    "page": 370,
+    "pdf_name": "Nozaki-Hiyama-Kishi Reaction",
+    "cases": [
+      {
+        "case_id": "adm_nozaki-hiyama-kishi_reaction_1108",
+        "layer": "adm",
+        "smiles": "IC=Cc1ccccc1.O=Cc1ccccc1>>OC(C=Cc1ccccc1)c1ccccc1",
+        "top1_greedy": "Sharpless Asymmetric Dihydroxylation",
+        "top3_scores": "2.854 | 2.576 | 2.504",
+        "raw_family_name": "Nozaki-Hiyama-Kishi Reaction"
+      },
+      {
+        "case_id": "cov_nozaki-hiyama-kishi_reaction_1109",
+        "layer": "cov",
+        "smiles": "C=CCI.O=CC1CCCCC1>>C=CCC(O)C1CCCCC1",
+        "top1_greedy": "Seyferth-Gilbert Homologation",
+        "top3_scores": "1.994 | 1.286 | 1.202",
+        "raw_family_name": "Nozaki-Hiyama-Kishi Reaction"
+      }
+    ]
+  },
+  {
+    "family": "Passerini Multicomponent Reaction",
+    "page": 382,
+    "pdf_name": "Passerini Multicomponent Reaction",
+    "cases": [
+      {
+        "case_id": "adm_passerini_multicomponent_reaction_1126",
+        "layer": "adm",
+        "smiles": "CC(=O)O.O=Cc1ccccc1.[C-]#[N+]C(C)(C)C>>CC(=O)OC(C(=O)NC(C)(C)C)c1ccccc1",
+        "top1_greedy": "Aldol Reaction",
+        "top3_scores": "0.814 | 0.672 | 0.667",
+        "raw_family_name": "Passerini Multicomponent Reaction"
+      },
+      {
+        "case_id": "cov_passerini_multicomponent_reaction_1127",
+        "layer": "cov",
+        "smiles": "CCC(C)=O.O=C(O)c1ccccc1.[C-]#[N+]c1ccccc1>>CCC(C)(OC(=O)c1ccccc1)C(=O)Nc1ccccc1",
+        "top1_greedy": "Lieben Haloform Reaction",
+        "top3_scores": "1.064 | 1.045 | 1.025",
+        "raw_family_name": "Passerini Multicomponent Reaction"
+      }
+    ]
+  },
+  {
+    "family": "Prins Reaction",
+    "page": 416,
+    "pdf_name": "Prins Reaction",
+    "cases": [
+      {
+        "case_id": "adm_prins_reaction_1174",
+        "layer": "adm",
+        "smiles": "C=CCC=C.C=O>>OCCC1CC(CO)C1",
+        "top1_greedy": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+        "top3_scores": "1.917 | 1.843 | 1.132",
+        "raw_family_name": "Prins Reaction"
+      },
+      {
+        "case_id": "cov_prins_reaction_1175",
+        "layer": "cov",
+        "smiles": "C=CC.CC=O>>CC(O)C(C)CO",
+        "top1_greedy": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+        "top3_scores": "1.98 | 1.891 | 1.87",
+        "raw_family_name": "Prins Reaction"
+      }
+    ]
+  },
+  {
+    "family": "Stille Carbonylative Cross-Coupling",
+    "page": 488,
+    "pdf_name": "Stille Carbonylative Cross-Coupling",
+    "cases": [
+      {
+        "case_id": "adm_stille_carbonylative_cross-coupling_1303",
+        "layer": "adm",
+        "smiles": "CC(C)(C)C.Ic1ccccc1>>CC(=O)c1ccccc1",
+        "top1_greedy": "Friedel-Crafts Acylation",
+        "top3_scores": "3.275 | 2.367 | 2.359",
+        "raw_family_name": "Stille Carbonylative Cross-Coupling"
+      },
+      {
+        "case_id": "cov_stille_carbonylative_cross-coupling_1304",
+        "layer": "cov",
+        "smiles": "CC(C)(C)C.COc1ccc(Br)cc1>>COc1ccc(C(C)=O)cc1",
+        "top1_greedy": "Friedel-Crafts Acylation",
+        "top3_scores": "1.988 | 1.943 | 1.432",
+        "raw_family_name": "Stille Carbonylative Cross-Coupling"
+      }
+    ]
+  },
+  {
+    "family": "Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)",
+    "page": 490,
+    "pdf_name": "Stille Cross-Coupling(Migita-Kosugi-Stille Coupling)",
+    "cases": [
+      {
+        "case_id": "adm_stille_cross-coupling_(migita-kosugi-stille_coupling)_1306",
+        "layer": "adm",
+        "smiles": "C=CC(C)(C)C.Ic1ccccc1>>C=Cc1ccccc1",
+        "top1_greedy": "Heck Reaction",
+        "top3_scores": "2.963 | 2.303 | 2.119",
+        "raw_family_name": "Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)"
+      },
+      {
+        "case_id": "cov_stille_cross-coupling_(migita-kosugi-stille_coupling)_1307",
+        "layer": "cov",
+        "smiles": "CC(C)(C)c1ccccc1.COc1ccc(Br)cc1>>COc1ccc(-c2ccccc2)cc1",
+        "top1_greedy": "Friedel-Crafts Acylation",
+        "top3_scores": "2.101 | 1.751 | 1.73",
+        "raw_family_name": "Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)"
+      }
+    ]
+  },
+  {
+    "family": "Swern Oxidation",
+    "page": 502,
+    "pdf_name": "Swern Oxidation",
+    "cases": [
+      {
+        "case_id": "adm_swern_oxidation_1327",
+        "layer": "adm",
+        "smiles": "OCc1ccccc1>>O=Cc1ccccc1",
+        "top1_greedy": "Ley Oxidation",
+        "top3_scores": "4.388 | 4.388 | 3.403",
+        "raw_family_name": "Swern Oxidation"
+      },
+      {
+        "case_id": "cov_swern_oxidation_1328",
+        "layer": "cov",
+        "smiles": "CC(O)c1ccccc1>>CC(=O)c1ccccc1",
+        "top1_greedy": "Mitsunobu Reaction",
+        "top3_scores": "3.431 | 3.407 | 3.407",
+        "raw_family_name": "Swern Oxidation"
+      }
+    ]
+  },
+  {
+    "family": "Wittig Reaction - Schlosser Modification",
+    "page": 540,
+    "pdf_name": "Wittig Reaction - Schlosser Modification",
+    "cases": [
+      {
+        "case_id": "adm_wittig_reaction_-_schlosser_modification_1381",
+        "layer": "adm",
+        "smiles": "O=Cc1ccccc1>>CCCC=Cc1ccccc1",
+        "top1_greedy": "Takai-Utimoto Olefination (Takai Reaction)",
+        "top3_scores": "1.817 | 1.773 | 1.767",
+        "raw_family_name": "Wittig Reaction - Schlosser Modification"
+      },
+      {
+        "case_id": "cov_wittig_reaction_-_schlosser_modification_1382",
+        "layer": "cov",
+        "smiles": "CCC=O>>CCC=CCCC",
+        "top1_greedy": "Takai-Utimoto Olefination (Takai Reaction)",
+        "top3_scores": "1.385 | 1.244 | 1.0",
+        "raw_family_name": "Wittig Reaction - Schlosser Modification"
+      }
+    ]
+  }
+]

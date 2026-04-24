@@ -12,7 +12,7 @@
 - first_top1: ``
 - cluster: `buchner`
 
-- error: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=%EC%97%AC%EA%B8%B0%EC%97%90_%EB%B3%B8%EC%9D%B8_API%ED%82%A4
+- error: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=<REDACTED>
 
 ## Enyne Metathesis
 
@@ -21,4 +21,4 @@
 - first_top1: ``
 - cluster: `barton`
 
-- error: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=%EC%97%AC%EA%B8%B0%EC%97%90_%EB%B3%B8%EC%9D%B8_API%ED%82%A4
+- error: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=<REDACTED>

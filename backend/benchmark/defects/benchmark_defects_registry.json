@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "created_utc": "2026-04-24T09:06:00Z",
+  "created_by": "phase4_gateB_salvage_category_c",
+  "purpose": "Category C salvage — benchmark cases whose `reaction_smiles` is chemically incorrect or mislabeled. These cases should NOT be counted as prediction misses because the ground-truth SMILES does not encode a valid instance of the expected family. Instead of removing them (which would mask true coverage), we register them here with `corrected_smiles_candidates` and an `admission_treatment` rule.",
+  "cohort_tag": "benchmark_defects",
+  "admission_treatment_rule": "Cases listed here are skipped in `adm_top1` / `adm_top3` computation UNTIL their corrected SMILES is ingested. A companion benchmark view `family_admission_benchmark_corrected.json` can rebuild once corrections ship. Until then, the main 259-case benchmark retains these IDs but an eval-side filter (flagged by `benchmark_defects` join) excludes them from denominators — denominator drops from 259 → 256 for the 3 ratified defects below.",
+  "strict_scope": "Only cases where the SMILES itself is objectively incorrect (missing required atoms, wrong mechanism, wrong product class). Cases where SMILES is valid but ambiguous between sibling families belong in Category A (deferred_reagent_channel) or Category B (gate_c_merge_candidates), NOT here.",
+  "defects": [
+    {
+      "case_id": "adm_stille_carbonylative_cross-coupling_1303",
+      "expected_family": "Stille Carbonylative Cross-Coupling",
+      "current_reaction_smiles": "CC(C)(C)C.Ic1ccccc1>>CC(=O)c1ccccc1",
+      "defect_type": "missing_required_atom",
+      "defect_description": "Stille carbonylative coupling requires an organostannane (R-SnR3') + aryl halide + CO → ArC(O)R. The substrate `CC(C)(C)C` (neopentane) contains NO tin atom, so the reaction as drawn cannot be a Stille variant by definition. The product `CC(=O)c1ccccc1` (acetophenone) does not retain neopentyl carbons, so even the connectivity is broken.",
+      "chemical_impossibility_score": 1.0,
+      "corrected_smiles_candidates": [
+        {
+          "smiles": "CC(C)(C)[Sn](C)(C)C.Ic1ccccc1>>CC(=O)c1ccccc1",
+          "notes": "Neopentyltrimethylstannane + iodobenzene under CO → pivaloylbenzene. Still mismatches product (methyl ketone, not t-Bu ketone); would need product change too.",
+          "confidence": "low"
+        },
+        {
+          "smiles": "C[Sn](C)(C)C.Ic1ccccc1>>CC(=O)c1ccccc1",
+          "notes": "Tetramethylstannane + iodobenzene + CO → acetophenone. Plausible Stille carbonylative coupling (methyl-transfer).",
+          "confidence": "high"
+        }
+      ],
+      "recommended_correction": "C[Sn](C)(C)C.Ic1ccccc1>>CC(=O)c1ccccc1",
+      "status": "defect_registered_pending_correction"
+    },
+    {
+      "case_id": "adm_stille_cross-coupling_(migita-kosugi-stille_coupling)_1306",
+      "expected_family": "Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)",
+      "current_reaction_smiles": "C=CC(C)(C)C.Ic1ccccc1>>C=Cc1ccccc1",
+      "defect_type": "missing_required_atom",
+      "defect_description": "Classical Stille requires R-SnR3' + ArX → Ar-R. The substrate `C=CC(C)(C)C` (3,3-dimethylbut-1-ene) lacks tin, and the product `C=Cc1ccccc1` (styrene) does not retain the t-butyl moiety. As written, this would be a Heck/Mizoroki reaction without catalyst — not a Stille variant.",
+      "chemical_impossibility_score": 1.0,
+      "corrected_smiles_candidates": [
+        {
+          "smiles": "C=C[Sn](C)(C)C.Ic1ccccc1>>C=Cc1ccccc1",
+          "notes": "Vinyltrimethylstannane + iodobenzene → styrene. Canonical Stille.",
+          "confidence": "high"
+        }
+      ],
+      "recommended_correction": "C=C[Sn](C)(C)C.Ic1ccccc1>>C=Cc1ccccc1",
+      "status": "defect_registered_pending_correction"
+    },
+    {
+      "case_id": "adm_wittig_reaction_466",
+      "expected_family": "Wittig Reaction",
+      "current_reaction_smiles": "[N-]=[N+]=Nc1ccccc1.O=Cc1ccccc1>>C(=Nc1ccccc1)c1ccccc1.O=P(c1ccccc1)(c1ccccc1)c1ccccc1",
+      "defect_type": "mislabeled_mechanism",
+      "defect_description": "The substrate/product as written is an Aza-Wittig (Staudinger-aza-Wittig), NOT a classical Wittig. Azide (`[N-]=[N+]=Nc1ccccc1`) + aldehyde → imine (`C(=Nc1ccccc1)c1ccccc1`) + Ph3P=O is the textbook Aza-Wittig transformation. Classical Wittig would be ylide + aldehyde → alkene + Ph3P=O, giving a C=C product, not C=N.",
+      "chemical_impossibility_score": 0.9,
+      "corrected_smiles_candidates": [
+        {
+          "smiles": "C=P(c1ccccc1)(c1ccccc1)c1ccccc1.O=Cc1ccccc1>>C=Cc1ccccc1.O=P(c1ccccc1)(c1ccccc1)c1ccccc1",
+          "notes": "Genuine Wittig: methylenetriphenylphosphorane + benzaldehyde → styrene + Ph3P=O.",
+          "confidence": "high"
+        }
+      ],
+      "recommended_correction_action": "relabel_and_keep",
+      "relabel_target_family": "Aza-Wittig Reaction",
+      "note_on_relabel": "The safer action is to RELABEL case 466 as an Aza-Wittig example (already a separate family in the benchmark) rather than replace the SMILES. This adds a valid Aza-Wittig case while removing a mis-tagged Wittig case.",
+      "status": "defect_registered_pending_relabel"
+    }
+  ],
+  "summary_counts": {
+    "total_registered": 3,
+    "by_defect_type": {
+      "missing_required_atom": 2,
+      "mislabeled_mechanism": 1
+    },
+    "denominator_adjustment_on_eval": "259 - 3 = 256"
+  },
+  "eval_integration": {
+    "benchmark_view_name": "family_admission_benchmark_corrected_v1",
+    "how_to_apply": "Add `--defects-registry benchmark/defects/benchmark_defects_registry.json` flag to eval runner. When present, the runner (1) excludes registered case_ids from numerator+denominator, (2) emits a parallel `adm_top1_corrected_denominator=256` metric for transparency.",
+    "gate_b_impact": "Optional for Gate B — we can run Gate B benchmarks WITH and WITHOUT the corrected denominator, and the confusion delta should be identical. The corrected denominator is informational; it is NOT substituted for the primary baseline metric until Phase 5 ships SMILES corrections."
+  },
+  "next_actions": {
+    "immediate": "None — defect cases continue to miss in Gate B baseline; this is transparent documentation.",
+    "phase5_or_later": "Ingest corrected SMILES into labint.db as new extract_molecules rows tagged `extract_kind='benchmark_correction'`; or relabel case 466 to Aza-Wittig via a benchmark patch PR."
+  }
+}

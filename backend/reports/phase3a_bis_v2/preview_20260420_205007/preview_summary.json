@@ -1,0 +1,17 @@
+{
+  "command": "preview",
+  "started_at": "2026-04-20T20:50:07",
+  "backend_root": "/sessions/elegant-modest-bardeen/mnt/chemlens/backend",
+  "report_dir": "/sessions/elegant-modest-bardeen/mnt/chemlens/backend/reports/phase3a_bis_v2/preview_20260420_205007",
+  "stamp": "20260420_205007",
+  "stages": [
+    {
+      "stage": "exception",
+      "error": "unacceptable character #x0000: special characters are not allowed\n  in \"<unicode string>\", position 981",
+      "traceback": "Traceback (most recent call last):\n  File \"/sessions/elegant-modest-bardeen/mnt/유기합성 앱 개발 프로젝트/phase3a_bis_v2/phase3a_bis_v2.py\", line 398, in cmd_preview\n    entries = load_yaml(Path(args.plan))[\"overrides\"]\n  File \"/sessions/elegant-modest-bardeen/mnt/유기합성 앱 개발 프로젝트/phase3a_bis_v2/phase3a_bis_v2.py\", line 88, in load_yaml\n    return yaml.safe_load(p.read_text(encoding=\"utf-8\"))\n  File \"/usr/local/lib/python3.10/dist-packages/yaml/__init__.py\", line 125, in safe_load\n    return load(stream, SafeLoader)\n  File \"/usr/local/lib/python3.10/dist-packages/yaml/__init__.py\", line 79, in load\n    loader = Loader(stream)\n  File \"/usr/local/lib/python3.10/dist-packages/yaml/loader.py\", line 34, in __init__\n    Reader.__init__(self, stream)\n  File \"/usr/local/lib/python3.10/dist-packages/yaml/reader.py\", line 74, in __init__\n    self.check_printable(stream)\n  File \"/usr/local/lib/python3.10/dist-packages/yaml/reader.py\", line 143, in check_printable\n    raise ReaderError(self.name, position, ord(character),\nyaml.reader.ReaderError: unacceptable character #x0000: special characters are not allowed\n  in \"<unicode string>\", position 981\n"
+    }
+  ],
+  "overall_ok": false,
+  "error": "unacceptable character #x0000: special characters are not allowed\n  in \"<unicode string>\", position 981",
+  "finished_at": "2026-04-20T20:50:07"
+}

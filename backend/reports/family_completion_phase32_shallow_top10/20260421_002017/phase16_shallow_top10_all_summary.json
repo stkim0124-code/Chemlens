@@ -1,0 +1,451 @@
+{
+  "tag": "phase32_shallow_top10_v1",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "batch": "all",
+  "dry_run": false,
+  "before": {
+    "queryable_family_count": 264,
+    "queryable_count": 2435
+  },
+  "after": {
+    "queryable_family_count": 264,
+    "queryable_count": 2495
+  },
+  "alias_updates": [],
+  "backfill_updates": [
+    {
+      "family": "Barton Radical Decarboxylation Reaction",
+      "extract_rows_touched": 4
+    },
+    {
+      "family": "Brook Rearrangement",
+      "extract_rows_touched": 4
+    },
+    {
+      "family": "Claisen Rearrangement",
+      "extract_rows_touched": 4
+    },
+    {
+      "family": "Aza-[2,3]-Wittig Rearrangement",
+      "extract_rows_touched": 5
+    },
+    {
+      "family": "Bischler-Napieralski Isoquinoline Synthesis",
+      "extract_rows_touched": 5
+    },
+    {
+      "family": "Cannizzaro Reaction",
+      "extract_rows_touched": 5
+    },
+    {
+      "family": "Baeyer-Villiger Oxidation",
+      "extract_rows_touched": 5
+    },
+    {
+      "family": "Baker-Venkataraman Rearrangement",
+      "extract_rows_touched": 5
+    },
+    {
+      "family": "Barton Radical Decarboxylation",
+      "extract_rows_touched": 5
+    },
+    {
+      "family": "Bartoli Indole Synthesis",
+      "extract_rows_touched": 6
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Barton Radical Decarboxylation Reaction",
+      "status": "inserted",
+      "extract_id": 1450,
+      "page_no": 96,
+      "image_filename": "named reactions_96.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Barton Radical Decarboxylation Reaction",
+      "status": "inserted",
+      "extract_id": 1451,
+      "page_no": 96,
+      "image_filename": "named reactions_96.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Barton Radical Decarboxylation Reaction",
+      "status": "inserted",
+      "extract_id": 1452,
+      "page_no": 96,
+      "image_filename": "named reactions_96.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Brook Rearrangement",
+      "status": "inserted",
+      "extract_id": 1453,
+      "page_no": 117,
+      "image_filename": "named reactions_117.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Brook Rearrangement",
+      "status": "inserted",
+      "extract_id": 1454,
+      "page_no": 117,
+      "image_filename": "named reactions_117.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Brook Rearrangement",
+      "status": "inserted",
+      "extract_id": 1455,
+      "page_no": 117,
+      "image_filename": "named reactions_117.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Claisen Rearrangement",
+      "status": "inserted",
+      "extract_id": 1456,
+      "page_no": 141,
+      "image_filename": "named reactions_141.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Claisen Rearrangement",
+      "status": "inserted",
+      "extract_id": 1457,
+      "page_no": 141,
+      "image_filename": "named reactions_141.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Claisen Rearrangement",
+      "status": "inserted",
+      "extract_id": 1458,
+      "page_no": 141,
+      "image_filename": "named reactions_141.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aza-[2,3]-Wittig Rearrangement",
+      "status": "inserted",
+      "extract_id": 1459,
+      "page_no": 78,
+      "image_filename": "named reactions_78.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aza-[2,3]-Wittig Rearrangement",
+      "status": "inserted",
+      "extract_id": 1460,
+      "page_no": 78,
+      "image_filename": "named reactions_78.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aza-[2,3]-Wittig Rearrangement",
+      "status": "inserted",
+      "extract_id": 1461,
+      "page_no": 78,
+      "image_filename": "named reactions_78.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bischler-Napieralski Isoquinoline Synthesis",
+      "status": "inserted",
+      "extract_id": 1462,
+      "page_no": 115,
+      "image_filename": "named reactions_115.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bischler-Napieralski Isoquinoline Synthesis",
+      "status": "inserted",
+      "extract_id": 1463,
+      "page_no": 115,
+      "image_filename": "named reactions_115.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bischler-Napieralski Isoquinoline Synthesis",
+      "status": "inserted",
+      "extract_id": 1464,
+      "page_no": 115,
+      "image_filename": "named reactions_115.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Cannizzaro Reaction",
+      "status": "inserted",
+      "extract_id": 1465,
+      "page_no": 126,
+      "image_filename": "named reactions_126.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Cannizzaro Reaction",
+      "status": "inserted",
+      "extract_id": 1466,
+      "page_no": 126,
+      "image_filename": "named reactions_126.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Cannizzaro Reaction",
+      "status": "inserted",
+      "extract_id": 1467,
+      "page_no": 126,
+      "image_filename": "named reactions_126.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Baeyer-Villiger Oxidation",
+      "status": "inserted",
+      "extract_id": 1468,
+      "page_no": 81,
+      "image_filename": "named reactions_81.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Baeyer-Villiger Oxidation",
+      "status": "inserted",
+      "extract_id": 1469,
+      "page_no": 81,
+      "image_filename": "named reactions_81.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Baeyer-Villiger Oxidation",
+      "status": "inserted",
+      "extract_id": 1470,
+      "page_no": 81,
+      "image_filename": "named reactions_81.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Baker-Venkataraman Rearrangement",
+      "status": "inserted",
+      "extract_id": 1471,
+      "page_no": 83,
+      "image_filename": "named reactions_83.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Baker-Venkataraman Rearrangement",
+      "status": "inserted",
+      "extract_id": 1472,
+      "page_no": 83,
+      "image_filename": "named reactions_83.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Baker-Venkataraman Rearrangement",
+      "status": "inserted",
+      "extract_id": 1473,
+      "page_no": 83,
+      "image_filename": "named reactions_83.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Barton Radical Decarboxylation",
+      "status": "inserted",
+      "extract_id": 1474,
+      "page_no": 97,
+      "image_filename": "named reactions_97.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Barton Radical Decarboxylation",
+      "status": "inserted",
+      "extract_id": 1475,
+      "page_no": 97,
+      "image_filename": "named reactions_97.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Barton Radical Decarboxylation",
+      "status": "inserted",
+      "extract_id": 1476,
+      "page_no": 97,
+      "image_filename": "named reactions_97.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bartoli Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1477,
+      "page_no": 93,
+      "image_filename": "named reactions_93.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bartoli Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1478,
+      "page_no": 93,
+      "image_filename": "named reactions_93.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bartoli Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1479,
+      "page_no": 93,
+      "image_filename": "named reactions_93.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Barton Radical Decarboxylation Reaction",
+      "extract_count": 7,
+      "overview_count": 1,
+      "application_count": 4,
+      "extract_with_reactant": 5,
+      "extract_with_product": 5,
+      "extract_with_both": 4,
+      "queryable_reactants": 6,
+      "queryable_products": 5,
+      "molecule_rows": 57,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Brook Rearrangement",
+      "extract_count": 7,
+      "overview_count": 0,
+      "application_count": 5,
+      "extract_with_reactant": 5,
+      "extract_with_product": 5,
+      "extract_with_both": 5,
+      "queryable_reactants": 6,
+      "queryable_products": 6,
+      "molecule_rows": 23,
+      "unique_queryable_pair_count": 5,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false
+    },
+    {
+      "family": "Claisen Rearrangement",
+      "extract_count": 7,
+      "overview_count": 3,
+      "application_count": 3,
+      "extract_with_reactant": 5,
+      "extract_with_product": 5,
+      "extract_with_both": 5,
+      "queryable_reactants": 5,
+      "queryable_products": 5,
+      "molecule_rows": 26,
+      "unique_queryable_pair_count": 5,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Aza-[2,3]-Wittig Rearrangement",
+      "extract_count": 8,
+      "overview_count": 1,
+      "application_count": 6,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 37,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Bischler-Napieralski Isoquinoline Synthesis",
+      "extract_count": 8,
+      "overview_count": 0,
+      "application_count": 6,
+      "extract_with_reactant": 7,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 7,
+      "queryable_products": 4,
+      "molecule_rows": 34,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false
+    },
+    {
+      "family": "Cannizzaro Reaction",
+      "extract_count": 8,
+      "overview_count": 2,
+      "application_count": 4,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 5,
+      "molecule_rows": 23,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Baeyer-Villiger Oxidation",
+      "extract_count": 8,
+      "overview_count": 5,
+      "application_count": 3,
+      "extract_with_reactant": 7,
+      "extract_with_product": 7,
+      "extract_with_both": 7,
+      "queryable_reactants": 7,
+      "queryable_products": 7,
+      "molecule_rows": 65,
+      "unique_queryable_pair_count": 6,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Baker-Venkataraman Rearrangement",
+      "extract_count": 8,
+      "overview_count": 0,
+      "application_count": 6,
+      "extract_with_reactant": 7,
+      "extract_with_product": 6,
+      "extract_with_both": 6,
+      "queryable_reactants": 7,
+      "queryable_products": 6,
+      "molecule_rows": 44,
+      "unique_queryable_pair_count": 6,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false
+    },
+    {
+      "family": "Barton Radical Decarboxylation",
+      "extract_count": 8,
+      "overview_count": 0,
+      "application_count": 7,
+      "extract_with_reactant": 8,
+      "extract_with_product": 8,
+      "extract_with_both": 8,
+      "queryable_reactants": 9,
+      "queryable_products": 9,
+      "molecule_rows": 38,
+      "unique_queryable_pair_count": 8,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false
+    },
+    {
+      "family": "Bartoli Indole Synthesis",
+      "extract_count": 9,
+      "overview_count": 0,
+      "application_count": 7,
+      "extract_with_reactant": 8,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 8,
+      "queryable_products": 4,
+      "molecule_rows": 27,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false
+    }
+  ]
+}

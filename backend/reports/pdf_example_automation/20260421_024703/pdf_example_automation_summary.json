@@ -1,0 +1,18 @@
+{
+  "report_run": "20260421_024703",
+  "mode": "gemini",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "pdf": "C:\\chemlens\\backend\\app\\data\\pdfs\\named reactions.pdf",
+  "stage_db": "C:\\chemlens\\backend\\app\\labint_pdf_examples_stage.db",
+  "families_processed": 1,
+  "regions_detected_total": 3,
+  "pages": [
+    {
+      "family_name": "Aldol Reaction",
+      "page_knowledge_id": 49,
+      "book_page_no": 9,
+      "pdf_page_no": 61,
+      "regions_detected": 3
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "command": "apply",
+  "started_at": "2026-04-21T06:35:56",
+  "backend_root": "C:\\chemlens\\backend",
+  "report_dir": "C:\\chemlens\\backend\\reports\\phase3a_bis_v2\\apply_3b_20260421_063555",
+  "stamp": "20260421_063556",
+  "baseline": {
+    "broad_top3_accuracy": 0.8084,
+    "admission_top3_accuracy": 0.8084,
+    "admission_confused_pairs": 81,
+    "coverage_r5": 0.8678
+  },
+  "stages": [
+    {
+      "stage": "validate_entries",
+      "ok": true,
+      "details": [
+        {
+          "from": "Baeyer-Villiger Oxidation/rearrangement",
+          "to": "Baeyer-Villiger Oxidation/Rearrangement",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Barton Radical Decarboxylation",
+          "to": "Barton Radical Decarboxylation Reaction",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Simmons-Smith Reaction",
+          "to": "Simmons-Smith Cyclopropanation",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Suzuki Cross-Coupling",
+          "to": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Baeyer-Villiger Oxidation",
+          "to": "Baeyer-Villiger Oxidation/Rearrangement",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Favorskii and Homo-Favorskii Rearrangement",
+          "to": "Favorskii Rearrangement",
+          "from_in_db": true,
+          "to_in_db": true
+        }
+      ]
+    },
+    {
+      "stage": "snapshot",
+      "backup_dir": "C:\\chemlens\\backend\\reports\\phase3a_bis_v2\\apply_3b_20260421_063555\\backup"
+    },
+    {
+      "stage": "patch",
+      "ok": true,
+      "applied": [
+        {
+          "from": "Baeyer-Villiger Oxidation/rearrangement",
+          "to": "Baeyer-Villiger Oxidation/Rearrangement",
+          "note": "id=13 -> id=291 (case variant on /rearrangement tail) [3a-bis-v2]"
+        },
+        {
+          "from": "Barton Radical Decarboxylation",
+          "to": "Barton Radical Decarboxylation Reaction",
+          "note": "id=44 -> id=43 (missing Reaction suffix) [3a-bis-v2]"
+        },
+        {
+          "from": "Simmons-Smith Reaction",
+          "to": "Simmons-Smith Cyclopropanation",
+          "note": "id=151 -> id=199 (generic -> mechanism-specific) [3a-bis-v2]"
+        },
+        {
+          "from": "Suzuki Cross-Coupling",
+          "to": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+          "note": "id=148 -> id=217 (full DB canonical with trailing Cross-Coupling) [3a-bis-v2]"
+        },
+        {
+          "from": "Baeyer-Villiger Oxidation",
+          "to": "Baeyer-Villiger Oxidation/Rearrangement",
+          "note": "id=42 -> id=291 (bare 'Oxidation' → combined Oxidation/Rearrangement) [3b]"
+        },
+        {
+          "from": "Favorskii and Homo-Favorskii Rearrangement",
+          "to": "Favorskii Rearrangement",
+          "note": "id=359 -> id=811 (umbrella → plain Favorskii; consistent with line 99 mapping 'Favorskii Reaction' → 'Favorskii Rearrangement') [3b]"
+        }
+      ],
+      "skipped": [],
+      "prior_block_stripped": true
+    },
+    {
+      "stage": "rebuild_benchmarks",
+      "rc": 0
+    },
+    {
+      "stage": "bench_runs",
+      "results": {
+        "broad": {
+          "rc": 0,
+          "summary": {
+            "benchmark_name": "CHEMLENS broad benchmark phase2_mvp",
+            "total_cases": 259,
+            "reaction_cases": 259,
+            "top1_correct": 180,
+            "top1_accuracy": 0.695,
+            "top3_correct": 209,
+            "top3_accuracy": 0.8069,
+            "disallow_top3_violations": 0,
+            "disallow_violation_rate": 0.0,
+            "unique_families": 259
+          }
+        },
+        "admission": {
+          "rc": 0,
+          "summary": {
+            "benchmark_name": "CHEMLENS family admission benchmark phase2_mvp",
+            "total_cases": 259,
+            "top1_correct": 180,
+            "top1_accuracy": 0.695,
+            "top3_correct": 209,
+            "top3_accuracy": 0.8069,
+            "unique_families": 259,
+            "confused_pairs": 79
+          }
+        },
+        "coverage": {
+          "rc": 0,
+          "summary": {
+            "benchmark_name": "CHEMLENS corpus coverage benchmark phase2_mvp",
+            "total_cases": 518,
+            "recall_at_1": 0.6911,
+            "recall_at_3": 0.8089,
+            "recall_at_5": 0.8668,
+            "hit_at_1": 358,
+            "hit_at_3": 419,
+            "hit_at_5": 449,
+            "no_confident_hit_cases": 3,
+            "unique_families": 259
+          }
+        }
+      }
+    },
+    {
+      "stage": "eval_gates",
+      "gates": {
+        "broad_top3_ok": false,
+        "admission_top3_ok": false,
+        "admission_confused_pairs_ok": true,
+        "disallow_ok": true,
+        "all_pass": false
+      }
+    },
+    {
+      "stage": "auto_rollback",
+      "restored": [
+        "final_state_verifier.py",
+        "benchmark/named_reaction_benchmark_broad.json",
+        "benchmark/family_admission_benchmark.json",
+        "benchmark/corpus_coverage_benchmark.json"
+      ]
+    }
+  ],
+  "overall_ok": false,
+  "error": "one or more gates failed",
+  "finished_at": "2026-04-21T06:37:49"
+}

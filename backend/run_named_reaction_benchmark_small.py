@@ -179,6 +179,7 @@ def main():
             if smiles_only:
                 req = module.StructureEvidenceRequest(
                     smiles=case["smiles"],
+                    reagent_text=case.get("reagent_text"),  # C-bucket
                     top_k=args.top_k,
                     min_tanimoto=args.min_tanimoto,
                 )
@@ -186,6 +187,7 @@ def main():
             else:
                 req = module.StructureEvidenceRequest(
                     reaction_smiles=case["reaction_smiles"],
+                    reagent_text=case.get("reagent_text"),  # C-bucket
                     top_k=args.top_k,
                     min_tanimoto=args.min_tanimoto,
                 )

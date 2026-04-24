@@ -1,0 +1,58 @@
+﻿expected_canonical,predicted_top1,count
+Aldol Reaction,Stetter Reaction,1
+Amadori Reaction / Rearrangement,Pinner Reaction,1
+Bamford-Stevens-Shapiro Olefination,Schwartz Hydrozirconation,1
+Barton Radical Decarboxylation Reaction,Diels-Alder Cycloaddition,1
+Barton-McCombie Radical Deoxygenation Reaction,Baker-Venkataraman Rearrangement,1
+Beckmann Rearrangement,Eschenmoser Methenylation,1
+Biginelli Reaction,Darzens Glycidic Ester Condensation,1
+Charette Asymmetric Cyclopropanation,Buchner Method of Ring Expansion (Buchner Reaction),1
+Chugaev Elimination Reaction (Xanthate Ester Pyrolysis),Ring-Closing Metathesis,1
+Corey-Fuchs Alkyne Synthesis,Corey-Chaykovsky Epoxidation and Cyclopropanation,1
+Corey-Kim Oxidation,Ley Oxidation,1
+Criegee Oxidation,Baeyer-Villiger Oxidation/Rearrangement,1
+Dakin-West Reaction,Aldol Reaction,1
+Davis' Oxaziridine Oxidations,Clemmensen Reduction,1
+De Mayo Cycloaddition,Robinson Annulation,1
+Dess-Martin Oxidation,Ley Oxidation,1
+Enyne Metathesis,Schwartz Hydrozirconation,1
+Feist-Bénary Furan Synthesis,Retro-Claisen Reaction,1
+Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification,Pinnick Oxidation,1
+Jacobsen-Katsuki Epoxidation,Shi Asymmetric Epoxidation,1
+Keck Macrolactonization,Corey-Nicolaou Macrolactonization,1
+Knoevenagel Condensation,Pinnick Oxidation,1
+McMurry Coupling,Wolff-Kishner Reduction,1
+Meerwein-Ponndorf-Verley Reduction,Noyori Asymmetric Hydrogenation,1
+Michael Addition Reaction,Malonic Ester Synthesis,1
+Minisci Reaction,Barton Radical Decarboxylation Reaction,1
+Mitsunobu Reaction,Aldol Reaction,1
+Negishi Cross-Coupling,Kumada Cross-Coupling,1
+Nicholas Reaction,Barton-McCombie Radical Deoxygenation Reaction,1
+Nozaki-Hiyama-Kishi Reaction,Sharpless Asymmetric Dihydroxylation,1
+Oppenauer Oxidation,Mitsunobu Reaction,1
+Passerini Multicomponent Reaction,Aldol Reaction,1
+Pfitzner-Moffatt Oxidation,Ley Oxidation,1
+Prilezhaev Reaction,Shi Asymmetric Epoxidation,1
+Prins Reaction,Alder (Ene) Reaction (Hydro-Allyl Addition),1
+Quasi-Favorskii Rearrangement,Cannizzaro Reaction,1
+Reformatsky Reaction,Benzoin and Retro-Benzoin Condensation,1
+Retro-Claisen Reaction,Malonic Ester Synthesis,1
+Schotten-Baumann Reaction,Schmidt Reaction,1
+Simmons-Smith Cyclopropanation,Furukawa Modification,1
+Sonogashira Cross-Coupling,Friedel-Crafts Alkylation,1
+Staudinger Reaction,Friedel-Crafts Alkylation,1
+Stephen Aldehyde Synthesis (Stephen Reduction),Kornblum Oxidation,1
+Stille Carbonylative Cross-Coupling,Friedel-Crafts Acylation,1
+Stille Cross-Coupling (Migita-Kosugi-Stille Coupling),Heck Reaction,1
+Stobbe Condensation,Knoevenagel Condensation,1
+Swern Oxidation,Ley Oxidation,1
+Tishchenko Reaction,Stetter Reaction,1
+Ugi Multicomponent Reaction,Aldol Reaction,1
+Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation,Ullmann Reaction / Coupling / Biaryl Synthesis,1
+Ullmann Reaction / Coupling / Biaryl Synthesis,Corey-Winter Olefination,1
+Weinreb Ketone Synthesis,Snieckus Directed Ortho Metalation,1
+Wittig Reaction,Aza-Wittig Reaction,1
+Wittig Reaction - Schlosser Modification,Takai-Utimoto Olefination (Takai Reaction),1
+Wurtz Coupling,Gabriel Synthesis,1
+Yamaguchi Macrolactonization,Corey-Nicolaou Macrolactonization,1
+von Pechmann Reaction,Acetoacetic Ester Synthesis,1

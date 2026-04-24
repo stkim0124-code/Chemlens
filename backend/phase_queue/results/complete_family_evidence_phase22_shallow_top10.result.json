@@ -1,0 +1,26 @@
+{
+  "script": "complete_family_evidence_phase22_shallow_top10.py",
+  "phase_tag": "phase22_shallow_top10",
+  "started_at": "2026-04-20T23:57:57.753290",
+  "stages": [
+    {
+      "cmd": [
+        "C:\\Users\\tmdxo\\miniconda3\\envs\\chemlens\\python.exe",
+        "C:\\chemlens\\backend\\phase_queue\\processing\\complete_family_evidence_phase22_shallow_top10.py",
+        "--db",
+        "C:\\chemlens\\backend\\app\\labint.db",
+        "--report-dir",
+        "C:\\chemlens\\backend\\reports\\family_completion_phase22_shallow_top10"
+      ],
+      "exit_code": 2,
+      "duration_sec": 0.55,
+      "log": "C:\\chemlens\\backend\\phase_queue\\logs\\phase22_shallow_top10_20260420_235757.log",
+      "stage": "apply"
+    }
+  ],
+  "apply_ok": false,
+  "verify_ok": null,
+  "dashboard_ok": null,
+  "finished_at": "2026-04-20T23:57:58.313679",
+  "overall_ok": false
+}

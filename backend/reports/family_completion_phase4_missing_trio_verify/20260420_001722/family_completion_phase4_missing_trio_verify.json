@@ -1,0 +1,113 @@
+{
+  "families": [
+    {
+      "family": "Fries Rearrangement",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 6,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        798,
+        799
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 798,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Fries rearrangement of phenyl benzoate to 2-hydroxybenzophenone.",
+          "reactants_text": "phenyl benzoate",
+          "products_text": "2-hydroxybenzophenone"
+        },
+        {
+          "id": 799,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Fries rearrangement of 1-naphthyl acetate to 2-acetyl-1-naphthol.",
+          "reactants_text": "1-naphthyl acetate",
+          "products_text": "2-acetyl-1-naphthol"
+        }
+      ]
+    },
+    {
+      "family": "Hofmann-Loffler-Freytag Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        800,
+        801
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 800,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: intramolecular Hofmann-Loffler-Freytag cyclization of an N-chloro-N-butyl p-toluenesulfonamide to an N-tosylpyrrolidine.",
+          "reactants_text": "N-chloro-N-butyl p-toluenesulfonamide",
+          "products_text": "N-tosylpyrrolidine"
+        },
+        {
+          "id": 801,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: intramolecular Hofmann-Loffler-Freytag cyclization of an N-chloro-N-pentyl p-toluenesulfonamide to an N-tosylpiperidine.",
+          "reactants_text": "N-chloro-N-pentyl p-toluenesulfonamide",
+          "products_text": "N-tosylpiperidine"
+        }
+      ]
+    },
+    {
+      "family": "Houben-Hoesch Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 5,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        802,
+        803
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 802,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Houben-Hoesch acylation of phloroglucinol with benzonitrile to 2,4,6-trihydroxybenzophenone.",
+          "reactants_text": "phloroglucinol | benzonitrile",
+          "products_text": "2,4,6-trihydroxybenzophenone"
+        },
+        {
+          "id": 803,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Houben-Hoesch acylation of resorcinol with acetonitrile to 2,4-dihydroxyacetophenone.",
+          "reactants_text": "resorcinol | acetonitrile",
+          "products_text": "2,4-dihydroxyacetophenone"
+        }
+      ]
+    }
+  ],
+  "alias_residue": {
+    "reaction_extracts": [],
+    "extract_molecules": []
+  }
+}

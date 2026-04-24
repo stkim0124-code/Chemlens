@@ -1,0 +1,50 @@
+{
+  "script": "probe_shallow_list_v2b.py",
+  "phase_tag": "probe_shallow_list_v2b",
+  "started_at": "2026-04-20T23:40:28.574527",
+  "stages": [
+    {
+      "cmd": [
+        "C:\\Users\\tmdxo\\miniconda3\\envs\\chemlens\\python.exe",
+        "C:\\chemlens\\backend\\phase_queue\\processing\\probe_shallow_list_v2b.py",
+        "--db",
+        "C:\\chemlens\\backend\\app\\labint.db",
+        "--report-dir",
+        "C:\\chemlens\\backend\\reports\\family_completion_probe_shallow_list_v2b"
+      ],
+      "exit_code": 0,
+      "duration_sec": 0.81,
+      "log": "C:\\chemlens\\backend\\phase_queue\\logs\\probe_shallow_list_v2b_20260420_234028.log",
+      "stage": "apply"
+    },
+    {
+      "cmd": [
+        "C:\\Users\\tmdxo\\miniconda3\\envs\\chemlens\\python.exe",
+        "C:\\chemlens\\backend\\final_state_verifier.py",
+        "--db",
+        "C:\\chemlens\\backend\\app\\labint.db"
+      ],
+      "exit_code": 0,
+      "duration_sec": 1.11,
+      "log": "C:\\chemlens\\backend\\phase_queue\\logs\\probe_shallow_list_v2b_20260420_234028_verifier.log",
+      "stage": "verifier"
+    },
+    {
+      "cmd": [
+        "C:\\Users\\tmdxo\\miniconda3\\envs\\chemlens\\python.exe",
+        "C:\\chemlens\\backend\\family_completion_dashboard.py",
+        "--backend-root",
+        "C:\\chemlens\\backend"
+      ],
+      "exit_code": 0,
+      "duration_sec": 0.22,
+      "log": "C:\\chemlens\\backend\\phase_queue\\logs\\probe_shallow_list_v2b_20260420_234028_dashboard.log",
+      "stage": "dashboard"
+    }
+  ],
+  "apply_ok": true,
+  "verify_ok": true,
+  "dashboard_ok": true,
+  "finished_at": "2026-04-20T23:40:30.701704",
+  "overall_ok": true
+}

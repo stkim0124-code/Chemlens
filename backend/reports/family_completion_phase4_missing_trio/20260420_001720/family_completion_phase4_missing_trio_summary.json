@@ -1,0 +1,254 @@
+{
+  "tag": "phase4_family_completion_missing_trio_v1",
+  "db": "app\\labint.db",
+  "dry_run": false,
+  "before": {
+    "queryable_family_count": 284,
+    "queryable_count": 1076
+  },
+  "alias_updates": [
+    {
+      "table": "reaction_extracts",
+      "from": "Alkene (olefin) Metathesis",
+      "to": "Alkene (Olefin) Metathesis",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Alkene (olefin) Metathesis",
+      "to": "Alkene (Olefin) Metathesis",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Barton-Mccombie Radical Deoxygenation Reaction",
+      "to": "Barton-McCombie Radical Deoxygenation Reaction",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Barton-Mccombie Radical Deoxygenation Reaction",
+      "to": "Barton-McCombie Radical Deoxygenation Reaction",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+      "to": "Fries Rearrangement",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+      "to": "Fries Rearrangement",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+      "to": "Hofmann-Loffler-Freytag Reaction",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+      "to": "Hofmann-Loffler-Freytag Reaction",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Houben-Hoesch Reaction/Synthesis",
+      "to": "Houben-Hoesch Reaction",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Houben-Hoesch Reaction/Synthesis",
+      "to": "Houben-Hoesch Reaction",
+      "rows_updated": 0
+    }
+  ],
+  "backfill": [
+    {
+      "family": "Fries Rearrangement",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Hofmann-Loffler-Freytag Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Houben-Hoesch Reaction",
+      "extract_rows_touched": 1
+    }
+  ],
+  "inserted": [
+    {
+      "family": "Fries Rearrangement",
+      "status": "inserted",
+      "extract_id": 798,
+      "page_no": 181,
+      "image_filename": "named reactions_233.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Fries Rearrangement",
+      "status": "inserted",
+      "extract_id": 799,
+      "page_no": 181,
+      "image_filename": "named reactions_233.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Hofmann-Loffler-Freytag Reaction",
+      "status": "inserted",
+      "extract_id": 800,
+      "page_no": 209,
+      "image_filename": "named reactions_261.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Hofmann-Loffler-Freytag Reaction",
+      "status": "inserted",
+      "extract_id": 801,
+      "page_no": 209,
+      "image_filename": "named reactions_261.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Houben-Hoesch Reaction",
+      "status": "inserted",
+      "extract_id": 802,
+      "page_no": 217,
+      "image_filename": "named reactions_269.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Houben-Hoesch Reaction",
+      "status": "inserted",
+      "extract_id": 803,
+      "page_no": 217,
+      "image_filename": "named reactions_269.jpg",
+      "inserted_molecules": 3
+    }
+  ],
+  "after": {
+    "queryable_family_count": 284,
+    "queryable_count": 1090
+  },
+  "verify": [
+    {
+      "family": "Fries Rearrangement",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 6,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        798,
+        799
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 798,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Fries rearrangement of phenyl benzoate to 2-hydroxybenzophenone.",
+          "reactants_text": "phenyl benzoate",
+          "products_text": "2-hydroxybenzophenone"
+        },
+        {
+          "id": 799,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Fries rearrangement of 1-naphthyl acetate to 2-acetyl-1-naphthol.",
+          "reactants_text": "1-naphthyl acetate",
+          "products_text": "2-acetyl-1-naphthol"
+        }
+      ]
+    },
+    {
+      "family": "Hofmann-Loffler-Freytag Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        800,
+        801
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 800,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: intramolecular Hofmann-Loffler-Freytag cyclization of an N-chloro-N-butyl p-toluenesulfonamide to an N-tosylpyrrolidine.",
+          "reactants_text": "N-chloro-N-butyl p-toluenesulfonamide",
+          "products_text": "N-tosylpyrrolidine"
+        },
+        {
+          "id": 801,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: intramolecular Hofmann-Loffler-Freytag cyclization of an N-chloro-N-pentyl p-toluenesulfonamide to an N-tosylpiperidine.",
+          "reactants_text": "N-chloro-N-pentyl p-toluenesulfonamide",
+          "products_text": "N-tosylpiperidine"
+        }
+      ]
+    },
+    {
+      "family": "Houben-Hoesch Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 5,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        802,
+        803
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 802,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Houben-Hoesch acylation of phloroglucinol with benzonitrile to 2,4,6-trihydroxybenzophenone.",
+          "reactants_text": "phloroglucinol | benzonitrile",
+          "products_text": "2,4,6-trihydroxybenzophenone"
+        },
+        {
+          "id": 803,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Houben-Hoesch acylation of resorcinol with acetonitrile to 2,4-dihydroxyacetophenone.",
+          "reactants_text": "resorcinol | acetonitrile",
+          "products_text": "2,4-dihydroxyacetophenone"
+        }
+      ]
+    }
+  ],
+  "registry_alias_rows_left_untouched": [
+    "Alkene (olefin) Metathesis",
+    "Barton-Mccombie Radical Deoxygenation Reaction",
+    "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+    "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+    "Houben-Hoesch Reaction/Synthesis"
+  ],
+  "note": "This patch intentionally does not mutate reaction_family_patterns. The dashboard/view layer should continue to collapse legacy registry aliases for display."
+}

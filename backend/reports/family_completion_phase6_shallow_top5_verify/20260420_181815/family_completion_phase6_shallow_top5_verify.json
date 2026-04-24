@@ -1,0 +1,200 @@
+{
+  "db": "app\\labint.db",
+  "verify": [
+    {
+      "family": "Balz-Schiemann Reaction (Schiemann Reaction)",
+      "extract_count": 8,
+      "overview_count": 2,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 6,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 6,
+      "molecule_rows": 49,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        814,
+        815
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 814,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: thermolysis of p-methylbenzenediazonium tetrafluoroborate to give p-fluorotoluene.",
+          "reactants_text": "p-methylbenzenediazonium tetrafluoroborate",
+          "products_text": "p-fluorotoluene"
+        },
+        {
+          "id": 815,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: thermolysis of p-methoxybenzenediazonium tetrafluoroborate to give p-fluoroanisole.",
+          "reactants_text": "p-methoxybenzenediazonium tetrafluoroborate",
+          "products_text": "p-fluoroanisole"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "extract_count": 7,
+      "overview_count": 2,
+      "application_count": 5,
+      "extract_with_reactant": 6,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 10,
+      "queryable_products": 4,
+      "molecule_rows": 34,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        816,
+        817
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 816,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: ring expansion of benzene with ethyl diazoacetate to give ethyl cycloheptatrienecarboxylate.",
+          "reactants_text": "benzene | ethyl diazoacetate",
+          "products_text": "ethyl cycloheptatrienecarboxylate"
+        },
+        {
+          "id": 817,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: ring expansion of anisole with ethyl diazoacetate to give a methoxy-substituted cycloheptatrienecarboxylate.",
+          "reactants_text": "anisole | ethyl diazoacetate",
+          "products_text": "methoxy-substituted cycloheptatrienecarboxylate"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "extract_count": 6,
+      "overview_count": 2,
+      "application_count": 2,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        818,
+        819
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 818,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Carroll rearrangement of allyl acetoacetate to 5-hexen-2-one.",
+          "reactants_text": "allyl acetoacetate",
+          "products_text": "5-hexen-2-one"
+        },
+        {
+          "id": 819,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Carroll rearrangement of crotyl acetoacetate to 6-hepten-2-one.",
+          "reactants_text": "crotyl acetoacetate",
+          "products_text": "6-hepten-2-one"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "extract_count": 10,
+      "overview_count": 2,
+      "application_count": 7,
+      "extract_with_reactant": 6,
+      "extract_with_product": 6,
+      "extract_with_both": 5,
+      "queryable_reactants": 6,
+      "queryable_products": 6,
+      "molecule_rows": 60,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        820,
+        821
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 820,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Chichibabin amination of pyridine to 2-aminopyridine.",
+          "reactants_text": "pyridine",
+          "products_text": "2-aminopyridine"
+        },
+        {
+          "id": 821,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Chichibabin amination of quinoline to 2-aminoquinoline.",
+          "reactants_text": "quinoline",
+          "products_text": "2-aminoquinoline"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Claisen Condensation / Claisen Reaction",
+      "extract_count": 7,
+      "overview_count": 1,
+      "application_count": 5,
+      "extract_with_reactant": 6,
+      "extract_with_product": 5,
+      "extract_with_both": 5,
+      "queryable_reactants": 10,
+      "queryable_products": 10,
+      "molecule_rows": 61,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        822,
+        823
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 822,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Claisen condensation of ethyl acetate to ethyl acetoacetate.",
+          "reactants_text": "ethyl acetate",
+          "products_text": "ethyl acetoacetate"
+        },
+        {
+          "id": 823,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: crossed Claisen condensation of acetophenone enolate with ethyl benzoate to give dibenzoylmethane.",
+          "reactants_text": "acetophenone | ethyl benzoate",
+          "products_text": "dibenzoylmethane"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    }
+  ]
+}

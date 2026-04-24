@@ -1,0 +1,91 @@
+{
+  "phase": "phase4_gateB_iterate1",
+  "timestamp": "2026-04-24T20:02:05",
+  "baseline": "reports/phase3g/apply_3g_5_20260422_000000",
+  "post_patch_snap": "reports/phase4/gateB/iterate1_20260424",
+  "status": "PASS",
+  "gate_verdict": {
+    "pass": true,
+    "reason": "admission net=+5, coverage net=+1; admission gained AND coverage did not regress",
+    "hard_rollback_thresholds": {
+      "adm_top1": {"threshold": 0.745, "observed": 0.7799, "status": "PASS"},
+      "cov_r5":   {"threshold": 0.875, "observed": 0.8861, "status": "PASS"}
+    }
+  },
+  "headline_metrics": {
+    "admission": {
+      "total_cases": 259,
+      "before": {"top1": 197, "top1_acc": 0.7606, "top3": 223, "top3_acc": 0.8610, "confused_pairs": 62},
+      "after":  {"top1": 202, "top1_acc": 0.7799, "top3": 227, "top3_acc": 0.8764, "confused_pairs": 57},
+      "delta":  {"top1": 5, "top1_acc": 0.0193, "top3": 4, "top3_acc": 0.0154, "confused_pairs": -5}
+    },
+    "broad": {
+      "total_cases": 259,
+      "before": {"top1": 197, "top1_acc": 0.7606, "top3": 223, "top3_acc": 0.8610},
+      "after":  {"top1": 202, "top1_acc": 0.7799, "top3": 227, "top3_acc": 0.8764},
+      "delta":  {"top1": 5, "top1_acc": 0.0193, "top3": 4, "top3_acc": 0.0154}
+    },
+    "coverage": {
+      "total_cases": 518,
+      "before": {"r3": 0.8378, "r5": 0.8842},
+      "after":  {"r3": 0.8436, "r5": 0.8861},
+      "delta":  {"r3": 0.0058, "r5": 0.0019}
+    }
+  },
+  "edge_summary": {
+    "admission": {"gained": 5, "lost": 0, "net": 5},
+    "broad":     {"gained": 5, "lost": 0, "net": 5},
+    "coverage":  {"gained": 2, "lost": 1, "net": 1}
+  },
+  "gained_cases": {
+    "admission_and_broad": [
+      "cope_elimination_480 (Hofmann→Cope)",
+      "hantzsch_dihydropyridine_synthesis_905 (AAE→Hantzsch)",
+      "larock_indole_synthesis_1036 (Ullmann→Larock)",
+      "miyaura_boration_564 (Ullmann→Miyaura)",
+      "peterson_olefination_1147 (Wolff-Kishner→Peterson)"
+    ],
+    "coverage_extra": [
+      "cope_elimination_835 (Kornblum→Cope)",
+      "cope_elimination_836 (Hofmann→Cope)"
+    ]
+  },
+  "lost_cases": {
+    "coverage": ["hofmann_elimination_910 (Hofmann→RCM)"]
+  },
+  "iterate1_patch_rationale": {
+    "background": "Initial Gate B apply (apply_20260424_bench) introduced 2 admission regressions: Sandmeyer 1237 and Schmidt 1240. Inspection revealed both SMILES lack the reagent atoms the new guards hard-required (anilineA→ArCl has no diazonium atom; benzophenone→amide has no azide atom). Hard penalties therefore fired on legitimate cases.",
+    "fix": "Converted both guards from hard-reagent-required to positive-boost-only pattern: keep the product-signature penalty (aryl_halide absent / carboxylic_acid+carbonyl absent) but drop the reagent-missing penalty, and boost when the precursor feature IS present. This matches the Category A 'reagent channel' principle — don't demote for missing reagents, only reward when reagents are present.",
+    "files_touched": [
+      "app/evidence_search.py (Schmidt + Sandmeyer blocks in _family_delta_adjustment)"
+    ],
+    "backup": "app/evidence_search.py.bak_gateB_iterate1_20260424_200205"
+  },
+  "watchlist_top1_shifts_no_flag_change": {
+    "description": "Cases where top1 prediction changed but pass/fail did not flip. None harmful in isolation; flagged for possible future tuning.",
+    "count_admission": 7,
+    "count_broad":     7,
+    "count_coverage": 13,
+    "attributed_guards": {
+      "G04_acetoacetic_ester": "Feist-Bénary, Biginelli, Hantzsch shifts",
+      "G05_finkelstein":       "Wurtz Coupling shift",
+      "G09_sandmeyer":         "Davis/Negishi/Ullmann/Stille-Kelly shifts (still pass)",
+      "G11_von_pechmann":      "Biginelli/von-Pechmann interactions",
+      "G12_ullmann_generic":   "Larock/Ullmann coverage-level shifts"
+    }
+  },
+  "context": {
+    "resolves_task_39": "Task #39 (Cope/Retro-Claisen regressions from 3e-b-1) now partially addressed: Cope Elimination gained 3 cases (1 admission + 2 coverage) thanks to G01_cope_elimination. Retro-Claisen unchanged.",
+    "eval_harness": "scripts/gateB_eval_harness.py (task #121) used end-to-end: selftest PASS, diff produced edges_summary.json + regression_trace_matrix.csv + per-layer case_diff.csv"
+  },
+  "artifacts": [
+    "reports/phase4/gateB/iterate1_20260424/admission/family_admission_results.json",
+    "reports/phase4/gateB/iterate1_20260424/broad/broad_results.json",
+    "reports/phase4/gateB/iterate1_20260424/coverage/corpus_coverage_results.json",
+    "reports/phase4/gateB/iterate1_20260424/diff/edges_summary.json",
+    "reports/phase4/gateB/iterate1_20260424/diff/regression_trace_matrix.csv",
+    "reports/phase4/gateB/iterate1_20260424/diff/admission_case_diff.csv",
+    "reports/phase4/gateB/iterate1_20260424/diff/broad_case_diff.csv",
+    "reports/phase4/gateB/iterate1_20260424/diff/coverage_case_diff.csv"
+  ]
+}

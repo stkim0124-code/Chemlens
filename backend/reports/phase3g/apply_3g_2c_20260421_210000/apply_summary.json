@@ -1,0 +1,75 @@
+{
+  "phase": "3g-2c",
+  "applied_at": "2026-04-21T21:00:00+09:00",
+  "summary": "Added 'ammonia' SMARTS feature [NX3H3] to expose NH3 as a separate signal (amine SMARTS [NX3;H2,H1] excludes H3). Hantzsch guard: nitrogen check now accepts (amine + ammonia) >= 1. Paal-Knorr Pyrrole bonus boost: now fires on amine or ammonia.",
+  "files_touched": [
+    "C:\\chemlens\\backend\\app\\evidence_search.py"
+  ],
+  "change_lines": {
+    "ammonia_smarts_add": "line ~274 (after aromatic_amine in _REACTION_FEATURE_SMARTS)",
+    "hantzsch_guard": "line ~1447-1450 — r.get('amine',0) + r.get('ammonia',0) < 1",
+    "pkp_bonus_boost": "line ~1417 — (r.get('amine',0) + r.get('ammonia',0)) >= 1"
+  },
+  "baselines_compared": {
+    "3g_1b": {
+      "adm_top1": 0.749,
+      "adm_top3": 0.861,
+      "confused_pairs": 65,
+      "brd_top1": 0.749,
+      "brd_top3": 0.861,
+      "brd_disallow_top3": 0,
+      "cov_r1": 0.7201,
+      "cov_r3": 0.8359,
+      "cov_r5": 0.8803
+    },
+    "3g_2c": {
+      "adm_top1": 0.7568,
+      "adm_top3": 0.861,
+      "confused_pairs": 63,
+      "brd_top1": 0.7568,
+      "brd_top3": 0.861,
+      "brd_disallow_top3": 0,
+      "cov_r1": 0.7259,
+      "cov_r3": 0.8378,
+      "cov_r5": 0.8822
+    }
+  },
+  "deltas_vs_3g_1b": {
+    "adm_top1": "+0.0078 (194->196)",
+    "adm_top3": "0 (223->223)",
+    "confused_pairs": "-2 (65->63)",
+    "brd_top1": "+0.0078",
+    "brd_top3": "0",
+    "brd_disallow_top3": "0",
+    "cov_r1": "+0.0058 (373->376)",
+    "cov_r3": "+0.0019 (433->434)",
+    "cov_r5": "+0.0019 (456->457)"
+  },
+  "strict_non_regression_status": "PASS — all 9 metrics >= 3g-1b baseline; 7 improved, 2 unchanged, 0 regressed",
+  "gate_criteria_vs_3c_b": {
+    "confused_under_74": "PASS (63 < 74)",
+    "adm_top3_over_838": "PASS (0.861 >= 0.838)",
+    "brd_disallow_top3_zero": "PASS (0)",
+    "cov_r5_over_868": "PASS (0.8822 >= 0.868)"
+  },
+  "gained_cases": {
+    "adm_top1": ["adm_paal-knorr_pyrrole_synthesis_1123", "adm_strecker_reaction_1318"],
+    "cov_r1": ["cov_paal-knorr_pyrrole_synthesis_1123", "cov_pinnick_oxidation_1163", "cov_strecker_reaction_1318"],
+    "cov_r3": ["cov_nenitzescu_indole_synthesis_1100"],
+    "cov_r5": ["cov_japp-klingemann_reaction_942"]
+  },
+  "lost_cases": {
+    "all_buckets": []
+  },
+  "diagnostic_journey": [
+    "3g-2 regression (5 cov_r5 losses): 2x Hantzsch, 2x Larock, 1x PKP",
+    "3g-2a partial fix (dihydropyridine SMARTS + softening): metrics unchanged from 3g-2 — fixes didn't address actual blockers",
+    "3g-2b fix (drop hard alkyne/amine reqs on Larock/PKP): recovered 3 cases but Hantzsch_905/906 still lost top3/r3/r5",
+    "3g-2c diagnosis: ammonia 'N' has H3 but amine SMARTS [NX3;H2,H1] requires H1/H2 — NH3 invisible to amine feature",
+    "3g-2c fix: ammonia SMARTS [NX3H3] + Hantzsch/PKP accept amine|ammonia → Hantzsch_905/906 recovered"
+  ],
+  "smoke_tests": [
+    "smoke_3g_2c.py — 5 sections, 14 checks ALL PASS including end-to-end Hantzsch_905 reaction SMILES (mult=1.000, no penalty)"
+  ],
+  "apply_dir": "C:\\chemlens\\backend\\reports\\phase3g\\apply_3g_2c_20260421_210000"
+}

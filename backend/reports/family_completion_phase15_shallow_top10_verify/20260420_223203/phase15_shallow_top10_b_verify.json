@@ -1,0 +1,209 @@
+{
+  "db": "app\\labint.db",
+  "batch": "b",
+  "verify": [
+    {
+      "family": "Ley Oxidation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        958,
+        959,
+        969
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 958,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Ley oxidation of benzyl alcohol to benzaldehyde.",
+          "reactants_text": "benzyl alcohol",
+          "products_text": "benzaldehyde"
+        },
+        {
+          "id": 959,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Ley oxidation of cyclohexanol to cyclohexanone.",
+          "reactants_text": "cyclohexanol",
+          "products_text": "cyclohexanone"
+        },
+        {
+          "id": 969,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Ley oxidation of 4-methoxybenzyl alcohol to 4-anisaldehyde.",
+          "reactants_text": "4-methoxybenzyl alcohol",
+          "products_text": "4-anisaldehyde"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Lieben Haloform Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        960,
+        961
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 960,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Lieben haloform reaction of acetophenone to benzoic acid.",
+          "reactants_text": "acetophenone",
+          "products_text": "benzoic acid"
+        },
+        {
+          "id": 961,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Lieben haloform reaction of 2-butanone to propionic acid.",
+          "reactants_text": "2-butanone",
+          "products_text": "propionic acid"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Lossen Rearrangement",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        962,
+        963
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 962,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Lossen rearrangement of benzohydroxamic acid to phenyl isocyanate.",
+          "reactants_text": "benzohydroxamic acid",
+          "products_text": "phenyl isocyanate"
+        },
+        {
+          "id": 963,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Lossen rearrangement of p-toluohydroxamic acid to p-tolyl isocyanate.",
+          "reactants_text": "p-toluohydroxamic acid",
+          "products_text": "p-tolyl isocyanate"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Luche Reduction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        964,
+        965
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 964,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Luche reduction of cyclohex-2-en-1-one to cyclohex-2-en-1-ol.",
+          "reactants_text": "cyclohex-2-en-1-one",
+          "products_text": "cyclohex-2-en-1-ol"
+        },
+        {
+          "id": 965,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Luche reduction of benzalacetone to 4-phenylbut-3-en-2-ol.",
+          "reactants_text": "benzalacetone",
+          "products_text": "4-phenylbut-3-en-2-ol"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Mannich Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 5,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        966,
+        967
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 966,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Mannich reaction of acetophenone with formaldehyde and dimethylamine to beta-dimethylaminopropiophenone.",
+          "reactants_text": "acetophenone, formaldehyde, dimethylamine",
+          "products_text": "beta-dimethylaminopropiophenone"
+        },
+        {
+          "id": 967,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Mannich reaction of cyclohexanone with formaldehyde and dimethylamine to 2-(dimethylaminomethyl)cyclohexanone.",
+          "reactants_text": "cyclohexanone, formaldehyde, dimethylamine",
+          "products_text": "2-(dimethylaminomethyl)cyclohexanone"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    }
+  ]
+}

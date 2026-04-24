@@ -1,0 +1,357 @@
+{
+  "tag": "phase9_shallow_top5_completion_v1",
+  "db": "app\\labint.db",
+  "dry_run": false,
+  "families": [
+    "Cope Rearrangement",
+    "Corey-Nicolaou Macrolactonization",
+    "Corey-Winter Olefination",
+    "Cornforth Rearrangement",
+    "Dakin-West Reaction"
+  ],
+  "before": {
+    "queryable_family_count": 273,
+    "queryable_count": 1185,
+    "reaction_extract_count": 576,
+    "extract_molecule_count": 2911
+  },
+  "after": {
+    "queryable_family_count": 273,
+    "queryable_count": 1205,
+    "reaction_extract_count": 586,
+    "extract_molecule_count": 2931
+  },
+  "alias_updates": [
+    {
+      "table": "reaction_extracts",
+      "from": "Cope Reaction",
+      "to": "Cope Rearrangement",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Cope Reaction",
+      "to": "Cope Rearrangement",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Corey-Nicolaou Reaction",
+      "to": "Corey-Nicolaou Macrolactonization",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Corey-Nicolaou Reaction",
+      "to": "Corey-Nicolaou Macrolactonization",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Corey-Winter Reaction",
+      "to": "Corey-Winter Olefination",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Corey-Winter Reaction",
+      "to": "Corey-Winter Olefination",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Dakin-West",
+      "to": "Dakin-West Reaction",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Dakin-West",
+      "to": "Dakin-West Reaction",
+      "rows_updated": 0
+    }
+  ],
+  "backfill": [
+    {
+      "family": "Cope Rearrangement",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Corey-Nicolaou Macrolactonization",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Corey-Winter Olefination",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Cornforth Rearrangement",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Dakin-West Reaction",
+      "extract_rows_touched": 1
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Cope Rearrangement",
+      "status": "inserted",
+      "extract_id": 845,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Cope Rearrangement",
+      "status": "inserted",
+      "extract_id": 846,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Corey-Nicolaou Macrolactonization",
+      "status": "inserted",
+      "extract_id": 847,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Corey-Nicolaou Macrolactonization",
+      "status": "inserted",
+      "extract_id": 848,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Corey-Winter Olefination",
+      "status": "inserted",
+      "extract_id": 849,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Corey-Winter Olefination",
+      "status": "inserted",
+      "extract_id": 850,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Cornforth Rearrangement",
+      "status": "inserted",
+      "extract_id": 851,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Cornforth Rearrangement",
+      "status": "inserted",
+      "extract_id": 852,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Dakin-West Reaction",
+      "status": "inserted",
+      "extract_id": 853,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Dakin-West Reaction",
+      "status": "inserted",
+      "extract_id": 854,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Cope Rearrangement",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        845,
+        846
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 845,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: thermal Cope rearrangement of 3-methyl-1,5-hexadiene to a transposed 1,5-diene isomer.",
+          "reactants_text": "3-methyl-1,5-hexadiene",
+          "products_text": "transposed Cope rearrangement diene isomer"
+        },
+        {
+          "id": 846,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: thermal Cope rearrangement of a branched 1,5-diene to an isomeric conjugated diene product.",
+          "reactants_text": "branched 1,5-diene substrate",
+          "products_text": "isomeric conjugated diene product"
+        }
+      ]
+    },
+    {
+      "family": "Corey-Nicolaou Macrolactonization",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        847,
+        848
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 847,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Nicolaou macrolactonization of 11-hydroxyundecanoic acid to a 12-membered macrolactone.",
+          "reactants_text": "11-hydroxyundecanoic acid",
+          "products_text": "12-membered macrolactone"
+        },
+        {
+          "id": 848,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Nicolaou macrolactonization of 12-hydroxydodecanoic acid to a 13-membered macrolactone.",
+          "reactants_text": "12-hydroxydodecanoic acid",
+          "products_text": "13-membered macrolactone"
+        }
+      ]
+    },
+    {
+      "family": "Corey-Winter Olefination",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        849,
+        850
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 849,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Winter olefination of hydrobenzoin to stilbene.",
+          "reactants_text": "hydrobenzoin",
+          "products_text": "stilbene"
+        },
+        {
+          "id": 850,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Winter olefination of cyclohexane-1,2-diol to cyclohexene.",
+          "reactants_text": "cyclohexane-1,2-diol",
+          "products_text": "cyclohexene"
+        }
+      ]
+    },
+    {
+      "family": "Cornforth Rearrangement",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        851,
+        852
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 851,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Cornforth rearrangement of a methyl/ethoxycarbonyl-substituted oxazole to its positional isomer.",
+          "reactants_text": "methyl ethoxycarbonyl oxazole isomer A",
+          "products_text": "methyl ethoxycarbonyl oxazole isomer B"
+        },
+        {
+          "id": 852,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Cornforth rearrangement of a methyl/propoxycarbonyl-substituted oxazole to the complementary positional isomer.",
+          "reactants_text": "methyl propoxycarbonyl oxazole isomer A",
+          "products_text": "methyl propoxycarbonyl oxazole isomer B"
+        }
+      ]
+    },
+    {
+      "family": "Dakin-West Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        853,
+        854
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 853,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Dakin-West reaction of phenylalanine to an N-acetyl alpha-amino ketone.",
+          "reactants_text": "phenylalanine",
+          "products_text": "N-acetyl alpha-amino ketone derived from phenylalanine"
+        },
+        {
+          "id": 854,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Dakin-West reaction of leucine to an N-acetyl alpha-amino ketone.",
+          "reactants_text": "leucine",
+          "products_text": "N-acetyl alpha-amino ketone derived from leucine"
+        }
+      ]
+    }
+  ],
+  "rich_count": 5,
+  "shallow_count": 0
+}

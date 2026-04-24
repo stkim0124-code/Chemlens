@@ -6,27 +6,27 @@
 
 ## Top error messages
 
-- 34x 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
+- 34x 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
 
 ## Samples
 
-- Aldol Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Aldol Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Aldol Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Alkene (Olefin) Metathesis: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Alkene (Olefin) Metathesis: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Alkene (Olefin) Metathesis: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Baeyer-Villiger Oxidation/Rearrangement: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Baeyer-Villiger Oxidation/Rearrangement: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Baeyer-Villiger Oxidation/Rearrangement: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Baeyer-Villiger Oxidation/Rearrangement: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Barton-McCombie Radical Deoxygenation Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Barton-McCombie Radical Deoxygenation Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Barton-McCombie Radical Deoxygenation Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Barton-McCombie Radical Deoxygenation Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Diels-Alder Cycloaddition: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Diels-Alder Cycloaddition: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Diels-Alder Cycloaddition: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Pinner Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Pinner Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
-- Pinner Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=AIzaSyAVXJGOZPympLvIO9fmUhxsuBL9dl6NDxc
+- Aldol Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Aldol Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Aldol Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Alkene (Olefin) Metathesis: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Alkene (Olefin) Metathesis: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Alkene (Olefin) Metathesis: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Baeyer-Villiger Oxidation/Rearrangement: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Baeyer-Villiger Oxidation/Rearrangement: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Baeyer-Villiger Oxidation/Rearrangement: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Baeyer-Villiger Oxidation/Rearrangement: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Barton-McCombie Radical Deoxygenation Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Barton-McCombie Radical Deoxygenation Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Barton-McCombie Radical Deoxygenation Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Barton-McCombie Radical Deoxygenation Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Diels-Alder Cycloaddition: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Diels-Alder Cycloaddition: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Diels-Alder Cycloaddition: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Pinner Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Pinner Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>
+- Pinner Reaction: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=<REDACTED>

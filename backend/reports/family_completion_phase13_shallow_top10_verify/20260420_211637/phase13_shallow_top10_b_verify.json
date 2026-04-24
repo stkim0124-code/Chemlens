@@ -1,0 +1,201 @@
+{
+  "db": "app\\labint.db",
+  "batch": "b",
+  "verify": [
+    {
+      "family": "Hantzsch Dihydropyridine Synthesis",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 9,
+      "queryable_products": 3,
+      "molecule_rows": 14,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        905,
+        906
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 905,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Hantzsch synthesis from ethyl acetoacetate, formaldehyde, and ammonia to a dihydropyridine diester.",
+          "reactants_text": "ethyl acetoacetate, formaldehyde, and ammonia",
+          "products_text": "diethyl 2,6-dimethyl-1,4-dihydropyridine-3,5-dicarboxylate"
+        },
+        {
+          "id": 906,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Hantzsch synthesis from methyl acetoacetate, formaldehyde, and ammonia to the dimethyl Hantzsch ester.",
+          "reactants_text": "methyl acetoacetate, formaldehyde, and ammonia",
+          "products_text": "dimethyl 2,6-dimethyl-1,4-dihydropyridine-3,5-dicarboxylate"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Hetero Diels-Alder Cycloaddition (HDA)",
+      "extract_count": 4,
+      "overview_count": 2,
+      "application_count": 2,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 8,
+      "queryable_products": 4,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        907,
+        908
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 907,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Hetero Diels-Alder cycloaddition of butadiene with formaldehyde to dihydropyran.",
+          "reactants_text": "1,3-butadiene and formaldehyde",
+          "products_text": "3,4-dihydro-2H-pyran"
+        },
+        {
+          "id": 908,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Hetero Diels-Alder cycloaddition of isoprene with formaldehyde to methyl-substituted dihydropyran.",
+          "reactants_text": "isoprene and formaldehyde",
+          "products_text": "2-methyl-3,4-dihydro-2H-pyran"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Hofmann Elimination",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        909,
+        910
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 909,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Hofmann elimination of butyltrimethylammonium hydroxide to 1-butene.",
+          "reactants_text": "butyltrimethylammonium substrate",
+          "products_text": "1-butene"
+        },
+        {
+          "id": 910,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Hofmann elimination of cyclohexyltrimethylammonium substrate to cyclohexene.",
+          "reactants_text": "cyclohexyltrimethylammonium substrate",
+          "products_text": "cyclohexene"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Hofmann Rearrangement",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": false,
+      "curated_extract_ids": [
+        911,
+        912
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 911,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Hofmann rearrangement of benzamide to aniline.",
+          "reactants_text": "benzamide",
+          "products_text": "aniline"
+        },
+        {
+          "id": 912,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Hofmann rearrangement of cyclohexanecarboxamide to cyclohexylamine.",
+          "reactants_text": "cyclohexanecarboxamide",
+          "products_text": "cyclohexylamine"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Horner-Wadsworth-Emmons Olefination",
+      "extract_count": 4,
+      "overview_count": 2,
+      "application_count": 2,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 8,
+      "queryable_products": 4,
+      "molecule_rows": 15,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        913,
+        914
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 913,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Horner-Wadsworth-Emmons olefination of benzaldehyde with triethyl phosphonoacetate to ethyl cinnamate.",
+          "reactants_text": "benzaldehyde and triethyl phosphonoacetate",
+          "products_text": "ethyl cinnamate"
+        },
+        {
+          "id": 914,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Horner-Wadsworth-Emmons olefination of anisaldehyde with triethyl phosphonoacetate to ethyl 4-methoxycinnamate.",
+          "reactants_text": "4-anisaldehyde and triethyl phosphonoacetate",
+          "products_text": "ethyl 4-methoxycinnamate"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "created_utc": "2026-04-24T09:05:00Z",
+  "created_by": "phase4_gateB_salvage",
+  "purpose": "Category A salvage — cases that are structurally unfixable under the SMILES-only admission channel because the ground-truth family is distinguished ONLY by reagent identity (not by atom/bond transformation). These cases are not thrown away; they are parked for Phase 5 (Reagent-Aware Admission Track).",
+  "cohort_tag": "deferred_reagent_channel",
+  "remediation_plan": {
+    "phase": 5,
+    "proposed_schema_change": "Add `reagent_canonical_smiles TEXT` column to extract_molecules (or a sibling extract_reagents table) and populate from DB reagent_text fields",
+    "proposed_predictor_change": "Extend evidence_search feature extraction to consume reagent SMILES; add reagent-anchored guards (DMSO/oxalyl chloride → Swern; IBX/periodinane → Dess-Martin; salen-Mn → Jacobsen; fructose-ketone → Shi; etc.)",
+    "proposed_benchmark_change": "Introduce a second admission benchmark layer `family_admission_benchmark_with_reagents.json` keyed on the same case_ids",
+    "success_criterion": "≥6/9 of these cases admitted at top-1 once reagent channel is live; zero regression on the 259-case SMILES-only admission baseline"
+  },
+  "safety_note": "These cases remain in the main admission benchmark with `disallow_top3=true` for their current greedy confusers. They will continue to miss under SMILES-only — this is expected and not a regression.",
+  "db_provenance_audit_2026_04_24": {
+    "audited_db": "backend/app/labint.db (51036160 B)",
+    "queried_tables": [
+      "reactions",
+      "reaction_cards",
+      "reaction_conditions",
+      "reaction_extracts"
+    ],
+    "finding": "All 8 case record_ids map to `reactions` rows whose source_summary is a Korean organic-chemistry textbook page header (e.g., \"맥머리유기화학_19장#p10\"). record_type is `text_fragment`/`reaction_text` with is_structure_indexable=0 and reaction_smiles=NULL. Joined reaction_cards and reaction_conditions return EMPTY STRINGS for reagents/solvent/conditions; notes carries only section-heading prose. reaction_extracts.scheme_candidate_id with matching IDs is not semantically aligned (843→Aza-Wittig, 871→Table-of-Contents).",
+    "implication_for_phase5": "DB has no reagent text to backfill. Phase 5 (#120) reagent channel cannot source from reaction_cards/reaction_conditions for these rows. Options: (a) harvest reagent text from the textbook page image corresponding to source_summary via Gemini vision OCR; (b) synthesize reagent SMILES directly from `canonical_reagent_fingerprint` (already documented per-case below) using a hand-curated reagent ontology; (c) treat this 8-case cohort as a synthesis target and accept that the feature source is the ontology, not the ingest pipeline.",
+    "recommended_path_for_phase5": "Option (b) — curate canonical reagent SMILES directly from the fingerprint strings already present in this file. This is cheaper than page OCR and deterministic. Use the ontology as the source of truth; DB ingest pipeline stays untouched."
+  },
+  "cases": [
+    {
+      "case_id": "adm_swern_oxidation_1327",
+      "expected_family": "Swern Oxidation",
+      "reaction_smiles": "OCc1ccccc1>>O=Cc1ccccc1",
+      "substrate_class": "primary benzylic alcohol",
+      "product_class": "aldehyde",
+      "why_structurally_unfixable": "Swern/Corey-Kim/Pfitzner-Moffatt/Dess-Martin/Ley all convert ROH → RCHO with no distinguishing atom count / bond change. SMILES-only input carries zero discriminating signal.",
+      "canonical_reagent_fingerprint": "DMSO + (COCl)2 / Et3N at -78 °C",
+      "current_top1_miss_to": "Ley Oxidation",
+      "status": "deferred_to_phase5",
+      "reagent_text_from_db": null,
+      "reagent_smiles_resolved": null,
+      "db_lookup_status": "empty_in_db_use_ontology_curation"
+    },
+    {
+      "case_id": "adm_corey-kim_oxidation_843",
+      "expected_family": "Corey-Kim Oxidation",
+      "reaction_smiles": "OCc1ccccc1>>O=Cc1ccccc1",
+      "substrate_class": "primary benzylic alcohol",
+      "product_class": "aldehyde",
+      "why_structurally_unfixable": "Alcohol → aldehyde with no structural tell.",
+      "canonical_reagent_fingerprint": "NCS + Me2S / Et3N",
+      "current_top1_miss_to": "Ley Oxidation",
+      "status": "deferred_to_phase5",
+      "reagent_text_from_db": null,
+      "reagent_smiles_resolved": null,
+      "db_lookup_status": "empty_in_db_use_ontology_curation"
+    },
+    {
+      "case_id": "adm_pfitzner-moffatt_oxidation_1150",
+      "expected_family": "Pfitzner-Moffatt Oxidation",
+      "reaction_smiles": "OCc1ccccc1>>O=Cc1ccccc1",
+      "substrate_class": "primary benzylic alcohol",
+      "product_class": "aldehyde",
+      "why_structurally_unfixable": "Alcohol → aldehyde with no structural tell.",
+      "canonical_reagent_fingerprint": "DCC + DMSO / H+",
+      "current_top1_miss_to": "Ley Oxidation",
+      "status": "deferred_to_phase5",
+      "reagent_text_from_db": null,
+      "reagent_smiles_resolved": null,
+      "db_lookup_status": "empty_in_db_use_ontology_curation"
+    },
+    {
+      "case_id": "adm_dess-martin_oxidation_871",
+      "expected_family": "Dess-Martin Oxidation",
+      "reaction_smiles": "OCc1ccccc1>>O=Cc1ccccc1",
+      "substrate_class": "primary benzylic alcohol",
+      "product_class": "aldehyde",
+      "why_structurally_unfixable": "Alcohol → aldehyde with no structural tell.",
+      "canonical_reagent_fingerprint": "Dess-Martin periodinane (IBX acetate)",
+      "current_top1_miss_to": "Ley Oxidation",
+      "status": "deferred_to_phase5",
+      "reagent_text_from_db": null,
+      "reagent_smiles_resolved": null,
+      "db_lookup_status": "empty_in_db_use_ontology_curation"
+    },
+    {
+      "case_id": "adm_jacobsen-katsuki_epoxidation_934",
+      "expected_family": "Jacobsen-Katsuki Epoxidation",
+      "reaction_smiles": "C=Cc1ccccc1>>c1ccc(C2CO2)cc1",
+      "substrate_class": "aryl alkene (styrene)",
+      "product_class": "styrene oxide",
+      "why_structurally_unfixable": "Jacobsen/Shi/Prilezhaev all give styrene → styrene oxide. No stereochemistry in the benchmark SMILES to distinguish chiral variants.",
+      "canonical_reagent_fingerprint": "Mn(salen) + NaOCl / PhIO",
+      "current_top1_miss_to": "Shi Asymmetric Epoxidation",
+      "status": "deferred_to_phase5",
+      "reagent_text_from_db": null,
+      "reagent_smiles_resolved": null,
+      "db_lookup_status": "empty_in_db_use_ontology_curation"
+    },
+    {
+      "case_id": "adm_prilezhaev_reaction_1171",
+      "expected_family": "Prilezhaev Reaction",
+      "reaction_smiles": "C=Cc1ccccc1>>c1ccc(C2CO2)cc1",
+      "substrate_class": "aryl alkene (styrene)",
+      "product_class": "styrene oxide",
+      "why_structurally_unfixable": "Same substrate/product as Jacobsen/Shi — reagent (mCPBA / peracid) is the only tell.",
+      "canonical_reagent_fingerprint": "mCPBA (meta-chloroperoxybenzoic acid)",
+      "current_top1_miss_to": "Shi Asymmetric Epoxidation",
+      "status": "deferred_to_phase5",
+      "reagent_text_from_db": null,
+      "reagent_smiles_resolved": null,
+      "db_lookup_status": "empty_in_db_use_ontology_curation"
+    },
+    {
+      "case_id": "adm_wittig_reaction_-_schlosser_modification_1381",
+      "expected_family": "Wittig Reaction - Schlosser Modification",
+      "reaction_smiles": "O=Cc1ccccc1>>CCCC=Cc1ccccc1",
+      "substrate_class": "aromatic aldehyde",
+      "product_class": "alkene",
+      "why_structurally_unfixable": "Schlosser vs classical Wittig differs by base (PhLi at low T → E-selective). Benchmark SMILES contains no stereo; indistinguishable from classical Wittig without reagent.",
+      "canonical_reagent_fingerprint": "Ph3P=CHR + PhLi (betaine ylide)",
+      "current_top1_miss_to": "Takai-Utimoto Olefination (Takai Reaction)",
+      "status": "deferred_to_phase5",
+      "reagent_text_from_db": null,
+      "reagent_smiles_resolved": null,
+      "db_lookup_status": "empty_in_db_use_ontology_curation"
+    },
+    {
+      "case_id": "adm_bamford-stevens-shapiro_olefination_1531",
+      "expected_family": "Bamford-Stevens-Shapiro Olefination",
+      "reaction_smiles": "CCCCC(C)=O>>C=CCCCC",
+      "substrate_class": "methyl ketone",
+      "product_class": "terminal alkene",
+      "why_structurally_unfixable": "Ketone → alkene with one fewer degree of unsaturation; same transformation achievable via Wolff-Kishner (giving saturated), Schwartz (distinct), etc. Differentiation requires the TsNHNH2 / RLi reagent signature.",
+      "canonical_reagent_fingerprint": "TsNHNH2 + RLi (via tosylhydrazone)",
+      "current_top1_miss_to": "Schwartz Hydrozirconation",
+      "status": "deferred_to_phase5",
+      "reagent_text_from_db": null,
+      "reagent_smiles_resolved": null,
+      "co_flag_see_also": "Originally considered for Category C (defect) — ruled OUT because Shapiro mechanism legitimately yields the less-substituted alkene (1-hexene from 2-hexanone), which is chemically sound.",
+      "db_lookup_status": "empty_in_db_use_ontology_curation"
+    }
+  ],
+  "summary_counts": {
+    "total_deferred": 8,
+    "by_cluster": {
+      "oh_to_cho_oxidation": 4,
+      "styrene_to_styrene_oxide_epoxidation": 2,
+      "olefination_variant": 1,
+      "ketone_to_alkene_tosylhydrazone": 1
+    }
+  },
+  "related_task_ids": {
+    "phase5_scoping": "to_be_created_as_task_120",
+    "gate_c_merge_audit": 118
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "phase": "3e-b-1",
+  "timestamp": "2026-04-21T02:28:09.504107Z",
+  "apply_dir": "C:\\chemlens\\backend\\reports\\phase3e\\apply_3e_b1_20260421_110300",
+  "baseline_dir": "C:\\chemlens\\backend\\reports\\phase3c\\apply_3c_b_20260421_094500",
+  "changes": {
+    "evidence_search.py": {
+      "smarts_added": [
+        "phosphorus",
+        "silicon",
+        "hydroxamate"
+      ],
+      "elif_branches_added": [
+        "wolff-kishner",
+        "hofmann rearrangement",
+        "cope elimination",
+        "henry reaction",
+        "arndt-eistert",
+        "lossen",
+        "claisen condensation",
+        "acetoacetic ester synthesis",
+        "sakurai",
+        "paterno/patern\u00f2-b\u00fcchi",
+        "noyori asymmetric hydrogenation",
+        "ley oxidation / ley-griffith / tpap",
+        "tsuji-wilkinson",
+        "pinacol rearrangement / semipinacol"
+      ]
+    }
+  },
+  "metrics": {
+    "admission": {
+      "baseline": {
+        "top1_correct": 185,
+        "top1_accuracy": 0.7143,
+        "top3_correct": 218,
+        "top3_accuracy": 0.8417,
+        "confused_pairs": 74
+      },
+      "new": {
+        "top1_correct": 188,
+        "top1_accuracy": 0.7259,
+        "top3_correct": 220,
+        "top3_accuracy": 0.8494,
+        "confused_pairs": 71
+      },
+      "delta": {
+        "top1_correct": 3,
+        "top3_correct": 2,
+        "confused_pairs": -3
+      }
+    },
+    "broad": {
+      "baseline": {
+        "top1_correct": 185,
+        "top3_correct": 218,
+        "disallow_top3_violations": 0
+      },
+      "new": {
+        "top1_correct": 188,
+        "top3_correct": 220,
+        "disallow_top3_violations": 0
+      }
+    },
+    "coverage": {
+      "baseline": {
+        "recall_at_1": 0.7027,
+        "recall_at_3": 0.8282,
+        "recall_at_5": 0.8726
+      },
+      "new": {
+        "recall_at_1": 0.7085,
+        "recall_at_3": 0.8359,
+        "recall_at_5": 0.8764
+      },
+      "delta": {
+        "recall_at_5": 0.0038
+      }
+    }
+  },
+  "gate": {
+    "admission_confused_pairs_lt_74": true,
+    "admission_top3_ge_217": true,
+    "broad_disallow_top3_eq_0": true,
+    "coverage_r5_ge_0.868": true
+  },
+  "gate_passed": true,
+  "individual_flips": {
+    "top1_positive": 5,
+    "top1_negative": 2,
+    "top1_net": 3,
+    "top3_positive": 4,
+    "top3_negative": 2,
+    "top3_net": 2,
+    "positive_cases": [
+      "adm_baldwin's_rules",
+      "adm_barbier_coupling",
+      "adm_curtius_rearrangement",
+      "adm_hunsdiecker",
+      "adm_wittig-rearrangement"
+    ],
+    "negative_cases": [
+      "adm_cope_elimination (Cope->Hofmann bleed)",
+      "adm_retro-claisen (Retro-Claisen->Malonic Ester bleed)"
+    ]
+  },
+  "notes": "Net +3 top1, +2 top3, -3 confused_pairs, +0.0038 coverage r@5. Two regressions noted for future investigation (cope-hofmann bleed; retro-claisen-malonic-ester bleed). Gate: all criteria PASS."
+}

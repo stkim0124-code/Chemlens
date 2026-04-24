@@ -1,0 +1,451 @@
+{
+  "tag": "phase29_shallow_top10_v1",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "batch": "all",
+  "dry_run": false,
+  "before": {
+    "queryable_family_count": 264,
+    "queryable_count": 2255
+  },
+  "after": {
+    "queryable_family_count": 264,
+    "queryable_count": 2315
+  },
+  "alias_updates": [],
+  "backfill_updates": [
+    {
+      "family": "Wacker Oxidation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Wagner-Meerwein Rearrangement",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Weinreb Ketone Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Wharton Fragmentation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Wharton Olefin Synthesis (Wharton Transposition)",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Williamson Ether Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Wittig Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Wittig Reaction - Schlosser Modification",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Wittig-[1,2]- and [2,3]-Rearrangement",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Wohl-Ziegler Bromination",
+      "extract_rows_touched": 1
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Wacker Oxidation",
+      "status": "inserted",
+      "extract_id": 1360,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wacker Oxidation",
+      "status": "inserted",
+      "extract_id": 1361,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wacker Oxidation",
+      "status": "inserted",
+      "extract_id": 1362,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wagner-Meerwein Rearrangement",
+      "status": "inserted",
+      "extract_id": 1363,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wagner-Meerwein Rearrangement",
+      "status": "inserted",
+      "extract_id": 1364,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wagner-Meerwein Rearrangement",
+      "status": "inserted",
+      "extract_id": 1365,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Weinreb Ketone Synthesis",
+      "status": "inserted",
+      "extract_id": 1366,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Weinreb Ketone Synthesis",
+      "status": "inserted",
+      "extract_id": 1367,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Weinreb Ketone Synthesis",
+      "status": "inserted",
+      "extract_id": 1368,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wharton Fragmentation",
+      "status": "inserted",
+      "extract_id": 1369,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wharton Fragmentation",
+      "status": "inserted",
+      "extract_id": 1370,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wharton Fragmentation",
+      "status": "inserted",
+      "extract_id": 1371,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wharton Olefin Synthesis (Wharton Transposition)",
+      "status": "inserted",
+      "extract_id": 1372,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wharton Olefin Synthesis (Wharton Transposition)",
+      "status": "inserted",
+      "extract_id": 1373,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wharton Olefin Synthesis (Wharton Transposition)",
+      "status": "inserted",
+      "extract_id": 1374,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Williamson Ether Synthesis",
+      "status": "inserted",
+      "extract_id": 1375,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Williamson Ether Synthesis",
+      "status": "inserted",
+      "extract_id": 1376,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Williamson Ether Synthesis",
+      "status": "inserted",
+      "extract_id": 1377,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wittig Reaction",
+      "status": "inserted",
+      "extract_id": 1378,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wittig Reaction",
+      "status": "inserted",
+      "extract_id": 1379,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wittig Reaction",
+      "status": "inserted",
+      "extract_id": 1380,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wittig Reaction - Schlosser Modification",
+      "status": "inserted",
+      "extract_id": 1381,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wittig Reaction - Schlosser Modification",
+      "status": "inserted",
+      "extract_id": 1382,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wittig Reaction - Schlosser Modification",
+      "status": "inserted",
+      "extract_id": 1383,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wittig-[1,2]- and [2,3]-Rearrangement",
+      "status": "inserted",
+      "extract_id": 1384,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wittig-[1,2]- and [2,3]-Rearrangement",
+      "status": "inserted",
+      "extract_id": 1385,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wittig-[1,2]- and [2,3]-Rearrangement",
+      "status": "inserted",
+      "extract_id": 1386,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wohl-Ziegler Bromination",
+      "status": "inserted",
+      "extract_id": 1387,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wohl-Ziegler Bromination",
+      "status": "inserted",
+      "extract_id": 1388,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Wohl-Ziegler Bromination",
+      "status": "inserted",
+      "extract_id": 1389,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Wacker Oxidation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Wagner-Meerwein Rearrangement",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Weinreb Ketone Synthesis",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Wharton Fragmentation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 5,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Wharton Olefin Synthesis (Wharton Transposition)",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Williamson Ether Synthesis",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Wittig Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 5,
+      "molecule_rows": 13,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Wittig Reaction - Schlosser Modification",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Wittig-[1,2]- and [2,3]-Rearrangement",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Wohl-Ziegler Bromination",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    }
+  ]
+}

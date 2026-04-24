@@ -1,0 +1,61 @@
+﻿=== ADMISSION ===
+  total_cases: iter2=259 -> redo=256
+  top1_correct: iter2=202 -> redo=203
+  top1_accuracy: iter2=0.7799 -> redo=0.793
+  top3_correct: iter2=227 -> redo=224
+  top3_accuracy: iter2=0.8764 -> redo=0.875
+  confused_pairs: iter2=57 -> redo=53
+
+  dropped (merged away): 4
+    adm_keck_macrolactonization_1015 [top1_pass_iter2=False top3_pass_iter2=True]
+    adm_ullmann_biaryl_ether_and_biaryl_amine_synthesis_/_condensation_1348 [top1_pass_iter2=False top3_pass_iter2=True]
+    adm_ullmann_reaction_/_coupling_/_biaryl_synthesis_1351 [top1_pass_iter2=False top3_pass_iter2=True]
+    adm_yamaguchi_macrolactonization_1399 [top1_pass_iter2=False top3_pass_iter2=True]
+
+  added (new merged canonical): 1
+    adm_ullmann_reaction_/_coupling_/_biaryl_synthesis_1348 [top1_pass=True top3_pass=True]
+
+  top1 PASS->FAIL: 0
+  top1 FAIL->PASS: 0
+
+  top3 PASS->FAIL: 0
+  top3 FAIL->PASS: 0
+
+  Category A verify:
+    adm_sandmeyer_reaction_1237 top1='Sandmeyer Reaction' pass=True
+    adm_schmidt_reaction_1240 top1='Schmidt Reaction' pass=True
+
+
+=== COVERAGE ===
+  total_cases: iter2=518 -> redo=512
+  recall_at_1: iter2=0.7432 -> redo=0.7539
+  recall_at_3: iter2=0.8436 -> redo=0.8438
+  recall_at_5: iter2=0.8861 -> redo=0.8867
+  hit_at_1: iter2=385 -> redo=386
+  hit_at_3: iter2=437 -> redo=432
+  hit_at_5: iter2=459 -> redo=454
+  no_confident_hit_cases: iter2=4 -> redo=4
+
+  dropped: 8  added: 2
+    DROP cov_keck_macrolactonization_1015 [h1=False h5=True]
+    DROP cov_keck_macrolactonization_1016 [h1=False h5=True]
+    DROP cov_ullmann_biaryl_ether_and_biaryl_amine_synthesis_/_condensation_1348 [h1=False h5=True]
+    DROP cov_ullmann_biaryl_ether_and_biaryl_amine_synthesis_/_condensation_1349 [h1=True h5=True]
+    DROP cov_ullmann_reaction_/_coupling_/_biaryl_synthesis_1351 [h1=False h5=True]
+    DROP cov_ullmann_reaction_/_coupling_/_biaryl_synthesis_1352 [h1=False h5=False]
+    DROP cov_yamaguchi_macrolactonization_1399 [h1=False h5=True]
+    DROP cov_yamaguchi_macrolactonization_1400 [h1=False h5=True]
+    ADD  cov_ullmann_reaction_/_coupling_/_biaryl_synthesis_1348 [h1=True h5=True]
+    ADD  cov_ullmann_reaction_/_coupling_/_biaryl_synthesis_1349 [h1=True h5=True]
+
+  h1: PASS->FAIL: 0 / FAIL->PASS: 0
+
+  h3: PASS->FAIL: 0 / FAIL->PASS: 0
+
+  h5: PASS->FAIL: 0 / FAIL->PASS: 0
+
+
+=== HARD GATE ===
+  adm_top1 0.7930 >= 0.745: True
+  cov_r5   0.8867 >= 0.875: True
+  Gate pass: True

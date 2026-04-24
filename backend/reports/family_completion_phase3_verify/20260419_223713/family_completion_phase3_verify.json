@@ -1,0 +1,88 @@
+{
+  "families": [
+    {
+      "family": "Alkene (Olefin) Metathesis",
+      "extract_count": 11,
+      "overview_count": 5,
+      "application_count": 5,
+      "extract_with_reactant": 4,
+      "extract_with_product": 5,
+      "extract_with_both": 3,
+      "queryable_reactants": 5,
+      "queryable_products": 5,
+      "molecule_rows": 36,
+      "curated_extract_ids": [
+        792,
+        793,
+        794
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 792,
+          "extract_kind": "canonical_overview",
+          "transformation_text": "Curated representative seed: ring-closing metathesis of 1,7-octadiene to cyclohexene.",
+          "reactants_text": "1,7-octadiene",
+          "products_text": "cyclohexene"
+        },
+        {
+          "id": 793,
+          "extract_kind": "application_example",
+          "transformation_text": "Curated representative seed: cross-metathesis of styrene with methyl acrylate to methyl cinnamate.",
+          "reactants_text": "styrene | methyl acrylate",
+          "products_text": "methyl cinnamate"
+        },
+        {
+          "id": 794,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: ring-closing metathesis toward the (+)-Prelaureatin precursor.",
+          "reactants_text": "C=C[C@H](O[Si](C)(C)C(C)(C)C)[C@H](O[Si](C)(C)C(C)(C)C)[C@@H](C=C)OCc1ccccc1",
+          "products_text": "c1ccccc1CO[C@@H]2[C@H](O[Si](C)(C)C(C)(C)C)[C@H](O[Si](C)(C)C(C)(C)C)/C=C\\C2"
+        }
+      ]
+    },
+    {
+      "family": "Barton-McCombie Radical Deoxygenation Reaction",
+      "extract_count": 8,
+      "overview_count": 2,
+      "application_count": 3,
+      "extract_with_reactant": 5,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 6,
+      "queryable_products": 4,
+      "molecule_rows": 38,
+      "curated_extract_ids": [
+        795,
+        796,
+        797
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 795,
+          "extract_kind": "canonical_overview",
+          "transformation_text": "Curated representative seed: 1-phenylethanol is deoxygenated to ethylbenzene via a xanthate intermediate under Barton-McCombie conditions.",
+          "reactants_text": "1-phenylethanol",
+          "products_text": "ethylbenzene"
+        },
+        {
+          "id": 796,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Barton-McCombie deoxygenation in the synthesis of (±)-Δ9(12)-Capnellene.",
+          "reactants_text": "CSC(=S)O[C@H]1C[C@H]2C3C[C@H](C(C)(C)O3)[C@@H]12",
+          "products_text": "CC1(C)O[C@H]2CC3[C@H]4C[C@@H]3C421"
+        },
+        {
+          "id": 797,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Barton-McCombie deoxygenation in the synthesis of the octenoic acid side chain of zaragozic acid.",
+          "reactants_text": "CON(C)C(=O)[C@@H](C(C)C)[C@H](C)[C@H](C)OC(=S)SC",
+          "products_text": "CON(C)C(=O)[C@@H](C(C)C)[C@H](C)C"
+        }
+      ]
+    }
+  ],
+  "alias_residue": {
+    "reaction_extracts": [],
+    "extract_molecules": []
+  }
+}

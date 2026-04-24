@@ -1,0 +1,201 @@
+{
+  "db": "app\\labint.db",
+  "batch": "a",
+  "verify": [
+    {
+      "family": "Knoevenagel Condensation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        948,
+        949
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 948,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Knoevenagel condensation of benzaldehyde with malononitrile to benzylidenemalononitrile.",
+          "reactants_text": "benzaldehyde and malononitrile",
+          "products_text": "benzylidenemalononitrile"
+        },
+        {
+          "id": 949,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Knoevenagel condensation of 4-anisaldehyde with malononitrile to 4-methoxybenzylidenemalononitrile.",
+          "reactants_text": "4-anisaldehyde and malononitrile",
+          "products_text": "4-methoxybenzylidenemalononitrile"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Knorr Pyrrole Synthesis",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 4,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        950,
+        951
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 950,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Knorr pyrrole synthesis of 2,5-dimethylpyrrole from a 1,4-dicarbonyl equivalent and ammonia.",
+          "reactants_text": "hexane-2,5-dione and ammonia equivalent",
+          "products_text": "2,5-dimethylpyrrole"
+        },
+        {
+          "id": 951,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: N-methyl Knorr pyrrole synthesis of 1,2,5-trimethylpyrrole from a 1,4-dicarbonyl equivalent and methylamine.",
+          "reactants_text": "hexane-2,5-dione and methylamine equivalent",
+          "products_text": "1,2,5-trimethylpyrrole"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Kornblum Oxidation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": false,
+      "curated_extract_ids": [
+        952,
+        953
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 952,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Kornblum oxidation of benzyl bromide to benzaldehyde.",
+          "reactants_text": "benzyl bromide",
+          "products_text": "benzaldehyde"
+        },
+        {
+          "id": 953,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Kornblum oxidation of 4-methoxybenzyl bromide to 4-anisaldehyde.",
+          "reactants_text": "4-methoxybenzyl bromide",
+          "products_text": "4-anisaldehyde"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+      "extract_count": 4,
+      "overview_count": 2,
+      "application_count": 2,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        954,
+        955
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 954,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Krapcho dealkoxycarbonylation of diethyl 2-benzylmalonate to ethyl 3-phenylpropionate.",
+          "reactants_text": "diethyl 2-benzylmalonate",
+          "products_text": "ethyl 3-phenylpropionate"
+        },
+        {
+          "id": 955,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Krapcho dealkoxycarbonylation of diethyl 2-methylmalonate to ethyl propionate.",
+          "reactants_text": "diethyl 2-methylmalonate",
+          "products_text": "ethyl propionate"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Kumada Cross-Coupling",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 4,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        956,
+        957
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 956,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Kumada cross-coupling of bromobenzene with ethylmagnesium bromide to ethylbenzene.",
+          "reactants_text": "bromobenzene and ethylmagnesium bromide equivalent",
+          "products_text": "ethylbenzene"
+        },
+        {
+          "id": 957,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Kumada cross-coupling of 4-bromoanisole with phenylmagnesium bromide to 4-methoxybiphenyl.",
+          "reactants_text": "4-bromoanisole and phenylmagnesium bromide equivalent",
+          "products_text": "4-methoxybiphenyl"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    }
+  ]
+}

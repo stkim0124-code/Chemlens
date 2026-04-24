@@ -1,0 +1,451 @@
+{
+  "tag": "phase22_shallow_top10_v1",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "batch": "all",
+  "dry_run": false,
+  "before": {
+    "queryable_family_count": 264,
+    "queryable_count": 1835
+  },
+  "after": {
+    "queryable_family_count": 264,
+    "queryable_count": 1895
+  },
+  "alias_updates": [],
+  "backfill_updates": [
+    {
+      "family": "Pfitzner-Moffatt Oxidation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Pictet-Spengler Tetrahydroisoquinoline Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Pinacol and Semipinacol Rearrangement",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Pinner Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Pinnick Oxidation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Polonovski Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Pomeranz-Fritsch Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Prilezhaev Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Prins Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Prins-Pinacol Rearrangement",
+      "extract_rows_touched": 1
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Pfitzner-Moffatt Oxidation",
+      "status": "inserted",
+      "extract_id": 1150,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pfitzner-Moffatt Oxidation",
+      "status": "inserted",
+      "extract_id": 1151,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pfitzner-Moffatt Oxidation",
+      "status": "inserted",
+      "extract_id": 1152,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pictet-Spengler Tetrahydroisoquinoline Synthesis",
+      "status": "inserted",
+      "extract_id": 1153,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pictet-Spengler Tetrahydroisoquinoline Synthesis",
+      "status": "inserted",
+      "extract_id": 1154,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pictet-Spengler Tetrahydroisoquinoline Synthesis",
+      "status": "inserted",
+      "extract_id": 1155,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pinacol and Semipinacol Rearrangement",
+      "status": "inserted",
+      "extract_id": 1156,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pinacol and Semipinacol Rearrangement",
+      "status": "inserted",
+      "extract_id": 1157,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pinacol and Semipinacol Rearrangement",
+      "status": "inserted",
+      "extract_id": 1158,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pinner Reaction",
+      "status": "inserted",
+      "extract_id": 1159,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pinner Reaction",
+      "status": "inserted",
+      "extract_id": 1160,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pinner Reaction",
+      "status": "inserted",
+      "extract_id": 1161,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pinnick Oxidation",
+      "status": "inserted",
+      "extract_id": 1162,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pinnick Oxidation",
+      "status": "inserted",
+      "extract_id": 1163,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pinnick Oxidation",
+      "status": "inserted",
+      "extract_id": 1164,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Polonovski Reaction",
+      "status": "inserted",
+      "extract_id": 1165,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Polonovski Reaction",
+      "status": "inserted",
+      "extract_id": 1166,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Polonovski Reaction",
+      "status": "inserted",
+      "extract_id": 1167,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pomeranz-Fritsch Reaction",
+      "status": "inserted",
+      "extract_id": 1168,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pomeranz-Fritsch Reaction",
+      "status": "inserted",
+      "extract_id": 1169,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Pomeranz-Fritsch Reaction",
+      "status": "inserted",
+      "extract_id": 1170,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Prilezhaev Reaction",
+      "status": "inserted",
+      "extract_id": 1171,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Prilezhaev Reaction",
+      "status": "inserted",
+      "extract_id": 1172,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Prilezhaev Reaction",
+      "status": "inserted",
+      "extract_id": 1173,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Prins Reaction",
+      "status": "inserted",
+      "extract_id": 1174,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Prins Reaction",
+      "status": "inserted",
+      "extract_id": 1175,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Prins Reaction",
+      "status": "inserted",
+      "extract_id": 1176,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Prins-Pinacol Rearrangement",
+      "status": "inserted",
+      "extract_id": 1177,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Prins-Pinacol Rearrangement",
+      "status": "inserted",
+      "extract_id": 1178,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Prins-Pinacol Rearrangement",
+      "status": "inserted",
+      "extract_id": 1179,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Pfitzner-Moffatt Oxidation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Pictet-Spengler Tetrahydroisoquinoline Synthesis",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Pinacol and Semipinacol Rearrangement",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Pinner Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Pinnick Oxidation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Polonovski Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Pomeranz-Fritsch Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Prilezhaev Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Prins Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Prins-Pinacol Rearrangement",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    }
+  ]
+}

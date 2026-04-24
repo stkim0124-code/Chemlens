@@ -1,0 +1,86 @@
+{
+  "phase": "3g-3",
+  "applied_at": "2026-04-21T23:00:00+09:00",
+  "summary": "Added 'isocyanide' SMARTS feature [C-]#[N+] (distinguishes Ugi/Passerini MCRs from Aldol/Mannich). Added 4 subfamily guards: Aldol anti-greed (penalize isocyanide or boron+amine → Ugi/Passerini/Petasis); Ugi Multicomponent 4-component (amine|ammonia support); Passerini 3-component; Petasis Boronic Acid-Mannich (narrowed via 'boronic' OR 'mannich' to exclude Petasis-Ferrier/Petasis-Tebbe).",
+  "files_touched": [
+    "C:\\chemlens\\backend\\app\\evidence_search.py"
+  ],
+  "change_lines": {
+    "isocyanide_smarts_add": "line ~280-285 (after ammonia in _REACTION_FEATURE_SMARTS)",
+    "aldol_anti_greed": "line ~1482-1490 — elif fam == 'aldol reaction' or startswith('aldol reaction') — penalize isocyanide 0.50, boron+amine 0.60",
+    "ugi_mcr_guard": "line ~1491-1504 — 4 penalties (missing iso/carb/amine|ammonia/cooh) + 1.25 boost for 4-component combo",
+    "passerini_mcr_guard": "line ~1505-1515 — 3 penalties + 1.22 boost for 3-component combo",
+    "petasis_mannich_guard": "line ~1516-1527 — narrow match 'petasis' AND ('mannich' OR 'boronic'); 3 penalties (boron/amine|ammonia/carbonyl) + 1.20 boost"
+  },
+  "baselines_compared": {
+    "3g_2c": {
+      "adm_top1": 0.7568,
+      "adm_top3": 0.861,
+      "confused_pairs": 63,
+      "brd_top1": 0.7568,
+      "brd_top3": 0.861,
+      "brd_disallow_top3": 0,
+      "cov_r1": 0.7259,
+      "cov_r3": 0.8378,
+      "cov_r5": 0.8822
+    },
+    "3g_3": {
+      "adm_top1": 0.7568,
+      "adm_top3": 0.861,
+      "confused_pairs": 63,
+      "brd_top1": 0.7568,
+      "brd_top3": 0.861,
+      "brd_disallow_top3": 0,
+      "cov_r1": 0.7278,
+      "cov_r3": 0.8378,
+      "cov_r5": 0.8842
+    }
+  },
+  "deltas_vs_3g_2c": {
+    "adm_top1": "0 (196->196)",
+    "adm_top3": "0 (223->223)",
+    "confused_pairs": "0 (63->63)",
+    "brd_top1": "0",
+    "brd_top3": "0",
+    "brd_disallow_top3": "0",
+    "cov_r1": "+0.0019 (376->377)",
+    "cov_r3": "0 (434->434)",
+    "cov_r5": "+0.0019 (457->458)"
+  },
+  "strict_non_regression_status": "PASS — all 9 metrics >= 3g-2c baseline; 2 improved, 7 unchanged, 0 regressed",
+  "gate_criteria_vs_3c_b": {
+    "confused_under_74": "PASS (63 < 74)",
+    "adm_top3_over_838": "PASS (0.861 >= 0.838)",
+    "brd_disallow_top3_zero": "PASS (0)",
+    "cov_r5_over_868": "PASS (0.8842 >= 0.868)"
+  },
+  "gained_cases": {
+    "adm_top1": [],
+    "adm_top3": [],
+    "cov_r1": ["cov_petasis_boronic_acid-mannich_reaction_1142"],
+    "cov_r3": [],
+    "cov_r5": ["cov_ugi_multicomponent_reaction_1345"]
+  },
+  "lost_cases": {
+    "all_buckets": []
+  },
+  "diagnostic_journey": [
+    "Probed target DB rows: Aldol Reaction (12), Ugi Multicomponent (4), Passerini (4), Petasis Boronic Acid-Mannich (4) — plus co-named Petasis-Ferrier (4), Petasis-Tebbe Olefination (4) which share 'petasis' substring.",
+    "Initial naive 'petasis' in fam guard catastrophically penalized Petasis-Ferrier (mult=0.05) and Petasis-Tebbe (mult=0.09).",
+    "Narrowed petasis guard: 'petasis' AND ('mannich' OR 'boronic'). Confirmed Petasis-Ferrier/Petasis-Tebbe DB rows now mult=1.0.",
+    "Ugi_1347 uses 'N' (NH3) for amine source; amine SMARTS [NX3;H2,H1] excludes H3. Added amine|ammonia fallback matching 3g-2c pattern. id=1347 now boosts correctly.",
+    "Smoke test (15 checks) all PASS including Petasis-Ferrier/Petasis-Tebbe no-op, Ugi NH3 boost, Aldol anti-greed firing on Passerini/Petasis SMILES.",
+    "Per-case diff: 2 coverage gains (Petasis_1142 r@1, Ugi_1345 r@5), admission unchanged because Aldol→Benzoin/Stetter greed shift preserved top3 but not top1."
+  ],
+  "roi_analysis": {
+    "3g_1b": "gained 5 cases",
+    "3g_2c": "gained 6 cases",
+    "3g_3": "gained 2 cases — ROI declining",
+    "next_step": "Potentially continue with 3g-4 Benzoin/Stetter anti-greed (direct followup: Benzoin/Retro-Benzoin took top1 on Petasis_1141 and Ugi_1345/1346; Stetter took top1 on Passerini_1126/1127). Otherwise transition to Phase 3f hand-curated DB seeds."
+  },
+  "smoke_tests": [
+    "smoke_3g_3.py — 15 PASS / 0 FAIL covering Aldol anti-greed, Ugi/Passerini/Petasis boosts, Petasis-Ferrier/Petasis-Tebbe no-op guard, isocyanide feature extraction",
+    "probe_3g_3_rows.py — all DB rows of Aldol/Evans-Aldol/Mukaiyama-Aldol/Ugi/Passerini/Petasis-Mannich/Petasis-Ferrier/Petasis-Tebbe verified clean (own-family mult=1.0 or boost)"
+  ],
+  "apply_dir": "C:\\chemlens\\backend\\reports\\phase3g\\apply_3g_3_20260421_230000"
+}

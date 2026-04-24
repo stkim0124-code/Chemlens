@@ -1,0 +1,101 @@
+{
+  "command": "apply",
+  "started_at": "2026-04-21T09:55:00",
+  "backend_root": "C:\\chemlens\\backend",
+  "report_dir": "C:\\chemlens\\backend\\reports\\phase3c\\apply_3c_c_20260421_095500",
+  "stamp": "20260421_095500",
+  "phase": "3c-c",
+  "note": "ROLLED BACK. Wittig guard attempted as a 3rd pattern-tuning sprint to address post-3c-b top offender (Wittig=10 bleeds). Guard displaced 7 Wittig bleeds but surfaced 7 new bleeds as Wolff-Kishner / Perkin / Henry picked up the slack. Net confused_pairs unchanged (74=74), top3 regressed −1 (218→217). Rolled back to keep 3c-b final state.",
+  "baseline": {
+    "source": "reports/phase3c/apply_3c_b_20260421_094500/apply_summary.json",
+    "admission_top3_correct": 218,
+    "admission_confused_pairs": 74
+  },
+  "stages": [
+    {
+      "stage": "snapshot",
+      "backup_dir": "C:\\chemlens\\backend\\reports\\phase3c\\apply_3c_c_20260421_095500\\backup",
+      "files_backed_up": ["app/evidence_search.py"]
+    },
+    {
+      "stage": "patch",
+      "ok": true,
+      "edit": {
+        "name": "3c-c-wittig-guard",
+        "marker_start": "# --- Phase 3c-c pattern guards start (20260421_095500) ---",
+        "marker_end":   "# --- end Phase 3c-c pattern guards ---",
+        "branch": {
+          "family_match": "'wittig' in fam and 'horner' not in fam",
+          "rules": [
+            {"condition": "r[carbonyl]<1",                                      "multiplier": 0.45},
+            {"condition": "d[alkene]<=0",                                       "multiplier": 0.40},
+            {"condition": "r[phosphonate]>=1",                                  "multiplier": 0.60},
+            {"condition": "r[sulfone]>=1",                                      "multiplier": 0.55},
+            {"condition": "r[carboxylic_acid]>=1 and d[carboxylic_acid]>0",     "multiplier": 0.55}
+          ]
+        }
+      }
+    },
+    {
+      "stage": "bench_runs_admission_only",
+      "note": "Short-circuited: admission gate failed, so broad/coverage were not run.",
+      "result": {
+        "rc": 0,
+        "summary": {
+          "total_cases": 259,
+          "top1_correct": 185,
+          "top3_correct": 217,
+          "confused_pairs": 74
+        }
+      }
+    },
+    {
+      "stage": "eval_gates",
+      "gates": {
+        "admission_top3_ok": false,
+        "admission_confused_pairs_ok": false,
+        "details": {
+          "admission_top3": {"base": 218, "new": 217, "delta": -1, "threshold": "delta >= -1 (on the edge — technically ok, but paired with no confused_pairs improvement)"},
+          "confused_pairs": {"base": 74, "new": 74, "delta": 0, "threshold": "new < base (strict less-than for primary metric)"}
+        },
+        "all_pass": false,
+        "decision_rationale": "Primary success metric is a strict decrease in admission_confused_pairs. Since new==base and top3 regressed -1, the sprint produced no net benefit — revert."
+      }
+    },
+    {
+      "stage": "confusion_diff",
+      "note": "Compared against 3c-b confusion.csv",
+      "pairs_fixed_by_3c_c": [
+        "Kumada Cross-Coupling -> Wittig Reaction",
+        "Negishi Cross-Coupling -> Wittig Reaction",
+        "Nozaki-Hiyama-Kishi Reaction -> Wittig Reaction",
+        "Pinnick Oxidation -> Wittig Reaction",
+        "Strecker Reaction -> Wittig Reaction",
+        "Tsuji-Wilkinson Decarbonylation Reaction -> Wittig Reaction",
+        "Ullmann Reaction / Coupling / Biaryl Synthesis -> Wittig Reaction"
+      ],
+      "new_pairs_introduced_by_3c_c": [
+        "Aza-[2,3]-Wittig Rearrangement -> Aza-Cope Rearrangement",
+        "Kumada Cross-Coupling -> Wolff-Kishner Reduction",
+        "Negishi Cross-Coupling -> Wolff-Kishner Reduction",
+        "Nozaki-Hiyama-Kishi Reaction -> Perkin Reaction",
+        "Strecker Reaction -> Henry Reaction",
+        "Ullmann Reaction / Coupling / Biaryl Synthesis -> Miyaura Boration",
+        "Wittig Reaction -> Aza-Wittig Reaction"
+      ],
+      "insight": "Wittig greediness was downstream of a broader bleed cluster (Wolff-Kishner / Perkin / Henry / Miyaura Boration / Aza-Cope). Surgically penalizing Wittig redistributes the same bleeds elsewhere without reducing confused_pairs. A coordinated 3c-d sprint would need simultaneous guards on all replacement families, or a corpus-diversity (3d) fix for the victim families so their own scores rise above the greedy cluster."
+    },
+    {
+      "stage": "rollback",
+      "action": "Replaced the Phase 3c-c marker block with a retrospective NOTE comment in evidence_search.py so future readers know why there's no 3c-c live branch.",
+      "post_rollback_verification": {
+        "admission_top3_correct": 218,
+        "admission_confused_pairs": 74,
+        "matches_3c_b_baseline": true
+      }
+    }
+  ],
+  "overall_ok": false,
+  "commit_decision": "ROLLBACK — reverted to 3c-b final state. Lessons recorded in memory and in the code-comment NOTE.",
+  "finished_at": "2026-04-21T09:58:00"
+}

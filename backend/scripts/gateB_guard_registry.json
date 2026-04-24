@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "phase": "4_gateB",
+  "patched_file": "app/evidence_search.py",
+  "patched_at": "20260424_090035",
+  "purpose": "Heuristic guard-attribution registry for the Gate B regression trace matrix. For each case that moves between the 3g-5 baseline and the Gate B post-patch benchmark, the eval harness greps expected_family + predicted_top1 against every guard's family_keywords. A match suggests the guard is likely responsible; multiple matches → ambiguous.",
+  "guards": [
+    {
+      "id": "G01_cope_elimination",
+      "kind": "update",
+      "family_name": "Cope Elimination",
+      "family_keywords": ["cope elimination"],
+      "new_check": "amine_oxide required (vs Hofmann)",
+      "expected_move_direction": "gain_cope_from_hofmann"
+    },
+    {
+      "id": "G02_hofmann_elimination",
+      "kind": "new",
+      "family_name": "Hofmann Elimination",
+      "family_keywords": ["hofmann elimination"],
+      "new_check": "amine + alkene (N-oxide anti-signal)",
+      "expected_move_direction": "gain_hofmann_from_cope"
+    },
+    {
+      "id": "G03_wolff_kishner",
+      "kind": "update",
+      "family_name": "Wolff-Kishner Reduction",
+      "family_keywords": ["wolff-kishner", "wolff kishner"],
+      "new_check": "anti-Peterson (silicon+alkene) + anti-McMurry (2xC=O -> 1xC=C)",
+      "expected_move_direction": "shed_wolff_kishner_greed"
+    },
+    {
+      "id": "G04_acetoacetic_ester",
+      "kind": "update",
+      "family_name": "Acetoacetic Ester Synthesis",
+      "family_keywords": ["acetoacetic ester", "aae"],
+      "new_check": "heterocycle product + 3-component MCR demoters",
+      "expected_move_direction": "shed_aae_greed"
+    },
+    {
+      "id": "G05_finkelstein",
+      "kind": "update",
+      "family_name": "Finkelstein Reaction",
+      "family_keywords": ["finkelstein"],
+      "new_check": "product must retain halide",
+      "expected_move_direction": "shed_finkelstein_greed"
+    },
+    {
+      "id": "G06_schmidt",
+      "kind": "update",
+      "family_name": "Schmidt Reaction",
+      "family_keywords": ["schmidt reaction"],
+      "new_check": "azide/HN3 hard requirement",
+      "expected_move_direction": "gain_schmidt_where_azide_present"
+    },
+    {
+      "id": "G07_biginelli",
+      "kind": "update",
+      "family_name": "Biginelli Reaction",
+      "family_keywords": ["biginelli"],
+      "new_check": "3-component aldehyde+ketoester+urea + dihydropyrimidinone product boost",
+      "expected_move_direction": "gain_biginelli_where_mcr_pattern"
+    },
+    {
+      "id": "G08_chugaev",
+      "kind": "update",
+      "family_name": "Chugaev Elimination Reaction",
+      "family_keywords": ["chugaev"],
+      "new_check": "xanthate SMARTS hard requirement",
+      "expected_move_direction": "shed_chugaev_where_no_xanthate"
+    },
+    {
+      "id": "G09_sandmeyer",
+      "kind": "new",
+      "family_name": "Sandmeyer Reaction",
+      "family_keywords": ["sandmeyer"],
+      "new_check": "diazonium + aryl halide product",
+      "expected_move_direction": "gain_sandmeyer_where_diazonium"
+    },
+    {
+      "id": "G10_peterson",
+      "kind": "new",
+      "family_name": "Peterson Olefination",
+      "family_keywords": ["peterson olefination", "peterson"],
+      "new_check": "silicon + carbonyl -> alkene",
+      "expected_move_direction": "gain_peterson_where_silicon"
+    },
+    {
+      "id": "G11_von_pechmann",
+      "kind": "new",
+      "family_name": "von Pechmann Reaction",
+      "family_keywords": ["von pechmann", "pechmann"],
+      "new_check": "phenol + b-ketoester -> coumarin",
+      "expected_move_direction": "gain_pechmann_where_coumarin_product"
+    },
+    {
+      "id": "G12_ullmann_generic",
+      "kind": "new",
+      "family_name": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+      "family_keywords": ["ullmann"],
+      "new_check": "aryl halide + anti-Sandmeyer/Larock/Miyaura/Negishi demoters",
+      "expected_move_direction": "shed_ullmann_where_demoter_fires"
+    }
+  ],
+  "new_feature_smarts": [
+    {"name": "amine_oxide", "affects_guards": ["G01_cope_elimination", "G02_hofmann_elimination"]},
+    {"name": "diazonium",   "affects_guards": ["G09_sandmeyer", "G12_ullmann_generic"]},
+    {"name": "coumarin",    "affects_guards": ["G11_von_pechmann", "G04_acetoacetic_ester"]},
+    {"name": "xanthate",    "affects_guards": ["G08_chugaev"]},
+    {"name": "indole",      "affects_guards": ["G12_ullmann_generic"]}
+  ]
+}

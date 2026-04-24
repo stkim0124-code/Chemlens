@@ -1,0 +1,281 @@
+{
+  "tag": "phase13_shallow_top10_completion_v1",
+  "db": "app\\labint.db",
+  "batch": "b",
+  "dry_run": false,
+  "before": {
+    "queryable_family_count": 269,
+    "queryable_count": 1329
+  },
+  "after": {
+    "queryable_family_count": 267,
+    "queryable_count": 1357
+  },
+  "alias_updates": [
+    {
+      "table": "reaction_extracts",
+      "from": "Hantzsch Synthesis",
+      "to": "Hantzsch Dihydropyridine Synthesis",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Hantzsch Synthesis",
+      "to": "Hantzsch Dihydropyridine Synthesis",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Hetero Diels-Alder Cycloaddition",
+      "to": "Hetero Diels-Alder Cycloaddition (HDA)",
+      "rows_updated": 1
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Hetero Diels-Alder Cycloaddition",
+      "to": "Hetero Diels-Alder Cycloaddition (HDA)",
+      "rows_updated": 3
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Hetero Diels Alder Cycloaddition",
+      "to": "Hetero Diels-Alder Cycloaddition (HDA)",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Hetero Diels Alder Cycloaddition",
+      "to": "Hetero Diels-Alder Cycloaddition (HDA)",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Hofmann Elimination Reaction",
+      "to": "Hofmann Elimination",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Hofmann Elimination Reaction",
+      "to": "Hofmann Elimination",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Hofmann Rearrangement Reaction",
+      "to": "Hofmann Rearrangement",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Hofmann Rearrangement Reaction",
+      "to": "Hofmann Rearrangement",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Horner-Wadsworth-Emmons",
+      "to": "Horner-Wadsworth-Emmons Olefination",
+      "rows_updated": 1
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Horner-Wadsworth-Emmons",
+      "to": "Horner-Wadsworth-Emmons Olefination",
+      "rows_updated": 5
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Horner-Wadsworth-Emmons Reaction",
+      "to": "Horner-Wadsworth-Emmons Olefination",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Horner-Wadsworth-Emmons Reaction",
+      "to": "Horner-Wadsworth-Emmons Olefination",
+      "rows_updated": 0
+    }
+  ],
+  "backfill_updates": [
+    {
+      "family": "Hantzsch Dihydropyridine Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Hetero Diels-Alder Cycloaddition (HDA)",
+      "extract_rows_touched": 2
+    },
+    {
+      "family": "Hofmann Elimination",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Hofmann Rearrangement",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Horner-Wadsworth-Emmons Olefination",
+      "extract_rows_touched": 2
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Hantzsch Dihydropyridine Synthesis",
+      "status": "inserted",
+      "extract_id": 905,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 4
+    },
+    {
+      "family": "Hantzsch Dihydropyridine Synthesis",
+      "status": "inserted",
+      "extract_id": 906,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 4
+    },
+    {
+      "family": "Hetero Diels-Alder Cycloaddition (HDA)",
+      "status": "inserted",
+      "extract_id": 907,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Hetero Diels-Alder Cycloaddition (HDA)",
+      "status": "inserted",
+      "extract_id": 908,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Hofmann Elimination",
+      "status": "inserted",
+      "extract_id": 909,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Hofmann Elimination",
+      "status": "inserted",
+      "extract_id": 910,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Hofmann Rearrangement",
+      "status": "inserted",
+      "extract_id": 911,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Hofmann Rearrangement",
+      "status": "inserted",
+      "extract_id": 912,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Horner-Wadsworth-Emmons Olefination",
+      "status": "inserted",
+      "extract_id": 913,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Horner-Wadsworth-Emmons Olefination",
+      "status": "inserted",
+      "extract_id": 914,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    }
+  ],
+  "verify": [
+    {
+      "family": "Hantzsch Dihydropyridine Synthesis",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 9,
+      "queryable_products": 3,
+      "molecule_rows": 14,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Hetero Diels-Alder Cycloaddition (HDA)",
+      "extract_count": 4,
+      "overview_count": 2,
+      "application_count": 2,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 8,
+      "queryable_products": 4,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Hofmann Elimination",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Hofmann Rearrangement",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": false
+    },
+    {
+      "family": "Horner-Wadsworth-Emmons Olefination",
+      "extract_count": 4,
+      "overview_count": 2,
+      "application_count": 2,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 8,
+      "queryable_products": 4,
+      "molecule_rows": 15,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    }
+  ]
+}

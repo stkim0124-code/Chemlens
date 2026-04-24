@@ -1,0 +1,451 @@
+{
+  "tag": "phase26_shallow_top10_v1",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "batch": "all",
+  "dry_run": false,
+  "before": {
+    "queryable_family_count": 264,
+    "queryable_count": 2075
+  },
+  "after": {
+    "queryable_family_count": 264,
+    "queryable_count": 2135
+  },
+  "alias_updates": [],
+  "backfill_updates": [
+    {
+      "family": "Skraup and Doebner-Miller Quinoline Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Smiles Rearrangement",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Smith-Tietze Multicomponent Dithiane Linchpin Coupling",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Snieckus Directed Ortho Metalation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Sommelet-Hauser Rearrangement",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Sonogashira Cross-Coupling",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Staudinger Ketene Cycloaddition",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Staudinger Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Stephen Aldehyde Synthesis (Stephen Reduction)",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Stetter Reaction",
+      "extract_rows_touched": 1
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Skraup and Doebner-Miller Quinoline Synthesis",
+      "status": "inserted",
+      "extract_id": 1270,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Skraup and Doebner-Miller Quinoline Synthesis",
+      "status": "inserted",
+      "extract_id": 1271,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Skraup and Doebner-Miller Quinoline Synthesis",
+      "status": "inserted",
+      "extract_id": 1272,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Smiles Rearrangement",
+      "status": "inserted",
+      "extract_id": 1273,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Smiles Rearrangement",
+      "status": "inserted",
+      "extract_id": 1274,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Smiles Rearrangement",
+      "status": "inserted",
+      "extract_id": 1275,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Smith-Tietze Multicomponent Dithiane Linchpin Coupling",
+      "status": "inserted",
+      "extract_id": 1276,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Smith-Tietze Multicomponent Dithiane Linchpin Coupling",
+      "status": "inserted",
+      "extract_id": 1277,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Smith-Tietze Multicomponent Dithiane Linchpin Coupling",
+      "status": "inserted",
+      "extract_id": 1278,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Snieckus Directed Ortho Metalation",
+      "status": "inserted",
+      "extract_id": 1279,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Snieckus Directed Ortho Metalation",
+      "status": "inserted",
+      "extract_id": 1280,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Snieckus Directed Ortho Metalation",
+      "status": "inserted",
+      "extract_id": 1281,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Sommelet-Hauser Rearrangement",
+      "status": "inserted",
+      "extract_id": 1282,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Sommelet-Hauser Rearrangement",
+      "status": "inserted",
+      "extract_id": 1283,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Sommelet-Hauser Rearrangement",
+      "status": "inserted",
+      "extract_id": 1284,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Sonogashira Cross-Coupling",
+      "status": "inserted",
+      "extract_id": 1285,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Sonogashira Cross-Coupling",
+      "status": "inserted",
+      "extract_id": 1286,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Sonogashira Cross-Coupling",
+      "status": "inserted",
+      "extract_id": 1287,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Staudinger Ketene Cycloaddition",
+      "status": "inserted",
+      "extract_id": 1288,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Staudinger Ketene Cycloaddition",
+      "status": "inserted",
+      "extract_id": 1289,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Staudinger Ketene Cycloaddition",
+      "status": "inserted",
+      "extract_id": 1290,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Staudinger Reaction",
+      "status": "inserted",
+      "extract_id": 1291,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Staudinger Reaction",
+      "status": "inserted",
+      "extract_id": 1292,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Staudinger Reaction",
+      "status": "inserted",
+      "extract_id": 1293,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Stephen Aldehyde Synthesis (Stephen Reduction)",
+      "status": "inserted",
+      "extract_id": 1294,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Stephen Aldehyde Synthesis (Stephen Reduction)",
+      "status": "inserted",
+      "extract_id": 1295,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Stephen Aldehyde Synthesis (Stephen Reduction)",
+      "status": "inserted",
+      "extract_id": 1296,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Stetter Reaction",
+      "status": "inserted",
+      "extract_id": 1297,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Stetter Reaction",
+      "status": "inserted",
+      "extract_id": 1298,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Stetter Reaction",
+      "status": "inserted",
+      "extract_id": 1299,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Skraup and Doebner-Miller Quinoline Synthesis",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Smiles Rearrangement",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Smith-Tietze Multicomponent Dithiane Linchpin Coupling",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Snieckus Directed Ortho Metalation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Sommelet-Hauser Rearrangement",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Sonogashira Cross-Coupling",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Staudinger Ketene Cycloaddition",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Staudinger Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Stephen Aldehyde Synthesis (Stephen Reduction)",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Stetter Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    }
+  ]
+}

@@ -1,0 +1,451 @@
+{
+  "tag": "phase20_shallow_top10_v1",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "batch": "all",
+  "dry_run": false,
+  "before": {
+    "queryable_family_count": 264,
+    "queryable_count": 1715
+  },
+  "after": {
+    "queryable_family_count": 264,
+    "queryable_count": 1775
+  },
+  "alias_updates": [],
+  "backfill_updates": [
+    {
+      "family": "Neber Rearrangement",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Nef Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Negishi Cross-Coupling",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Nenitzescu Indole Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Nicholas Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Noyori Asymmetric Hydrogenation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Nozaki-Hiyama-Kishi Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Oppenauer Oxidation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Overman Rearrangement",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Oxy-Cope Rearrangement and Anionic Oxy-Cope Rearrangement",
+      "extract_rows_touched": 1
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Neber Rearrangement",
+      "status": "inserted",
+      "extract_id": 1090,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Neber Rearrangement",
+      "status": "inserted",
+      "extract_id": 1091,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Neber Rearrangement",
+      "status": "inserted",
+      "extract_id": 1092,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Nef Reaction",
+      "status": "inserted",
+      "extract_id": 1093,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Nef Reaction",
+      "status": "inserted",
+      "extract_id": 1094,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Nef Reaction",
+      "status": "inserted",
+      "extract_id": 1095,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Negishi Cross-Coupling",
+      "status": "inserted",
+      "extract_id": 1096,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Negishi Cross-Coupling",
+      "status": "inserted",
+      "extract_id": 1097,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Negishi Cross-Coupling",
+      "status": "inserted",
+      "extract_id": 1098,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Nenitzescu Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1099,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Nenitzescu Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1100,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Nenitzescu Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1101,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Nicholas Reaction",
+      "status": "inserted",
+      "extract_id": 1102,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Nicholas Reaction",
+      "status": "inserted",
+      "extract_id": 1103,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Nicholas Reaction",
+      "status": "inserted",
+      "extract_id": 1104,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Noyori Asymmetric Hydrogenation",
+      "status": "inserted",
+      "extract_id": 1105,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Noyori Asymmetric Hydrogenation",
+      "status": "inserted",
+      "extract_id": 1106,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Noyori Asymmetric Hydrogenation",
+      "status": "inserted",
+      "extract_id": 1107,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Nozaki-Hiyama-Kishi Reaction",
+      "status": "inserted",
+      "extract_id": 1108,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Nozaki-Hiyama-Kishi Reaction",
+      "status": "inserted",
+      "extract_id": 1109,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Nozaki-Hiyama-Kishi Reaction",
+      "status": "inserted",
+      "extract_id": 1110,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Oppenauer Oxidation",
+      "status": "inserted",
+      "extract_id": 1111,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Oppenauer Oxidation",
+      "status": "inserted",
+      "extract_id": 1112,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Oppenauer Oxidation",
+      "status": "inserted",
+      "extract_id": 1113,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Overman Rearrangement",
+      "status": "inserted",
+      "extract_id": 1114,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Overman Rearrangement",
+      "status": "inserted",
+      "extract_id": 1115,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Overman Rearrangement",
+      "status": "inserted",
+      "extract_id": 1116,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Oxy-Cope Rearrangement and Anionic Oxy-Cope Rearrangement",
+      "status": "inserted",
+      "extract_id": 1117,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Oxy-Cope Rearrangement and Anionic Oxy-Cope Rearrangement",
+      "status": "inserted",
+      "extract_id": 1118,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Oxy-Cope Rearrangement and Anionic Oxy-Cope Rearrangement",
+      "status": "inserted",
+      "extract_id": 1119,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Neber Rearrangement",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Nef Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Negishi Cross-Coupling",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Nenitzescu Indole Synthesis",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Nicholas Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Noyori Asymmetric Hydrogenation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Nozaki-Hiyama-Kishi Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Oppenauer Oxidation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Overman Rearrangement",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Oxy-Cope Rearrangement and Anionic Oxy-Cope Rearrangement",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    }
+  ]
+}

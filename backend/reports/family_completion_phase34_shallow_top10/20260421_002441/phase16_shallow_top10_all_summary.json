@@ -1,0 +1,365 @@
+{
+  "tag": "phase34_shallow_top10_v1",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "batch": "all",
+  "dry_run": false,
+  "before": {
+    "queryable_family_count": 264,
+    "queryable_count": 2555
+  },
+  "after": {
+    "queryable_family_count": 264,
+    "queryable_count": 2603
+  },
+  "alias_updates": [],
+  "backfill_updates": [
+    {
+      "family": "Baker-Venkataraman Rearrangement",
+      "extract_rows_touched": 8
+    },
+    {
+      "family": "Barton Radical Decarboxylation",
+      "extract_rows_touched": 8
+    },
+    {
+      "family": "Burgess Dehydration Reaction",
+      "extract_rows_touched": 9
+    },
+    {
+      "family": "Aldol Reaction",
+      "extract_rows_touched": 9
+    },
+    {
+      "family": "Castro-Stephens Coupling",
+      "extract_rows_touched": 9
+    },
+    {
+      "family": "Bartoli Indole Synthesis",
+      "extract_rows_touched": 9
+    },
+    {
+      "family": "Benzoin and Retro-Benzoin Condensation",
+      "extract_rows_touched": 11
+    },
+    {
+      "family": "Bamford-Stevens-Shapiro Olefination",
+      "extract_rows_touched": 12
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Baker-Venkataraman Rearrangement",
+      "status": "inserted",
+      "extract_id": 1510,
+      "page_no": 83,
+      "image_filename": "named reactions_83.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Baker-Venkataraman Rearrangement",
+      "status": "inserted",
+      "extract_id": 1511,
+      "page_no": 83,
+      "image_filename": "named reactions_83.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Baker-Venkataraman Rearrangement",
+      "status": "inserted",
+      "extract_id": 1512,
+      "page_no": 83,
+      "image_filename": "named reactions_83.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Barton Radical Decarboxylation",
+      "status": "inserted",
+      "extract_id": 1513,
+      "page_no": 97,
+      "image_filename": "named reactions_97.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Barton Radical Decarboxylation",
+      "status": "inserted",
+      "extract_id": 1514,
+      "page_no": 97,
+      "image_filename": "named reactions_97.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Barton Radical Decarboxylation",
+      "status": "inserted",
+      "extract_id": 1515,
+      "page_no": 97,
+      "image_filename": "named reactions_97.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Burgess Dehydration Reaction",
+      "status": "inserted",
+      "extract_id": 1516,
+      "page_no": 124,
+      "image_filename": "named reactions_124.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Burgess Dehydration Reaction",
+      "status": "inserted",
+      "extract_id": 1517,
+      "page_no": 124,
+      "image_filename": "named reactions_124.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Burgess Dehydration Reaction",
+      "status": "inserted",
+      "extract_id": 1518,
+      "page_no": 124,
+      "image_filename": "named reactions_124.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aldol Reaction",
+      "status": "inserted",
+      "extract_id": 1519,
+      "page_no": 60,
+      "image_filename": "named reactions_60.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aldol Reaction",
+      "status": "inserted",
+      "extract_id": 1520,
+      "page_no": 60,
+      "image_filename": "named reactions_60.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aldol Reaction",
+      "status": "inserted",
+      "extract_id": 1521,
+      "page_no": 60,
+      "image_filename": "named reactions_60.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Castro-Stephens Coupling",
+      "status": "inserted",
+      "extract_id": 1522,
+      "page_no": 130,
+      "image_filename": "named reactions_130.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Castro-Stephens Coupling",
+      "status": "inserted",
+      "extract_id": 1523,
+      "page_no": 130,
+      "image_filename": "named reactions_130.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Castro-Stephens Coupling",
+      "status": "inserted",
+      "extract_id": 1524,
+      "page_no": 130,
+      "image_filename": "named reactions_130.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bartoli Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1525,
+      "page_no": 93,
+      "image_filename": "named reactions_93.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bartoli Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1526,
+      "page_no": 93,
+      "image_filename": "named reactions_93.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bartoli Indole Synthesis",
+      "status": "inserted",
+      "extract_id": 1527,
+      "page_no": 93,
+      "image_filename": "named reactions_93.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Benzoin and Retro-Benzoin Condensation",
+      "status": "inserted",
+      "extract_id": 1528,
+      "page_no": 107,
+      "image_filename": "named reactions_107.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Benzoin and Retro-Benzoin Condensation",
+      "status": "inserted",
+      "extract_id": 1529,
+      "page_no": 107,
+      "image_filename": "named reactions_107.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Benzoin and Retro-Benzoin Condensation",
+      "status": "inserted",
+      "extract_id": 1530,
+      "page_no": 107,
+      "image_filename": "named reactions_107.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bamford-Stevens-Shapiro Olefination",
+      "status": "inserted",
+      "extract_id": 1531,
+      "page_no": 88,
+      "image_filename": "named reactions_88.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bamford-Stevens-Shapiro Olefination",
+      "status": "inserted",
+      "extract_id": 1532,
+      "page_no": 88,
+      "image_filename": "named reactions_88.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bamford-Stevens-Shapiro Olefination",
+      "status": "inserted",
+      "extract_id": 1533,
+      "page_no": 88,
+      "image_filename": "named reactions_88.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Baker-Venkataraman Rearrangement",
+      "extract_count": 11,
+      "overview_count": 1,
+      "application_count": 8,
+      "extract_with_reactant": 10,
+      "extract_with_product": 9,
+      "extract_with_both": 9,
+      "queryable_reactants": 10,
+      "queryable_products": 9,
+      "molecule_rows": 50,
+      "unique_queryable_pair_count": 9,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Barton Radical Decarboxylation",
+      "extract_count": 11,
+      "overview_count": 1,
+      "application_count": 9,
+      "extract_with_reactant": 11,
+      "extract_with_product": 11,
+      "extract_with_both": 11,
+      "queryable_reactants": 12,
+      "queryable_products": 12,
+      "molecule_rows": 44,
+      "unique_queryable_pair_count": 11,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Burgess Dehydration Reaction",
+      "extract_count": 12,
+      "overview_count": 5,
+      "application_count": 6,
+      "extract_with_reactant": 4,
+      "extract_with_product": 6,
+      "extract_with_both": 3,
+      "queryable_reactants": 4,
+      "queryable_products": 6,
+      "molecule_rows": 84,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Aldol Reaction",
+      "extract_count": 12,
+      "overview_count": 3,
+      "application_count": 7,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 47,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Castro-Stephens Coupling",
+      "extract_count": 12,
+      "overview_count": 2,
+      "application_count": 9,
+      "extract_with_reactant": 6,
+      "extract_with_product": 7,
+      "extract_with_both": 5,
+      "queryable_reactants": 7,
+      "queryable_products": 7,
+      "molecule_rows": 55,
+      "unique_queryable_pair_count": 5,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Bartoli Indole Synthesis",
+      "extract_count": 12,
+      "overview_count": 1,
+      "application_count": 9,
+      "extract_with_reactant": 11,
+      "extract_with_product": 7,
+      "extract_with_both": 7,
+      "queryable_reactants": 11,
+      "queryable_products": 7,
+      "molecule_rows": 33,
+      "unique_queryable_pair_count": 7,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Benzoin and Retro-Benzoin Condensation",
+      "extract_count": 14,
+      "overview_count": 1,
+      "application_count": 12,
+      "extract_with_reactant": 8,
+      "extract_with_product": 8,
+      "extract_with_both": 8,
+      "queryable_reactants": 43,
+      "queryable_products": 43,
+      "molecule_rows": 127,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Bamford-Stevens-Shapiro Olefination",
+      "extract_count": 15,
+      "overview_count": 3,
+      "application_count": 9,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 64,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "script": "phase_bench1_mvp.py",
+  "phase_tag": "phase_bench1_mvp",
+  "started_at": "2026-04-21T00:46:39.890274",
+  "stages": [
+    {
+      "cmd": [
+        "C:\\Users\\tmdxo\\miniconda3\\envs\\chemlens\\python.exe",
+        "C:\\chemlens\\backend\\phase_queue\\processing\\phase_bench1_mvp.py",
+        "--db",
+        "C:\\chemlens\\backend\\app\\labint.db",
+        "--report-dir",
+        "C:\\chemlens\\backend\\reports\\family_completion_phase_bench1_mvp"
+      ],
+      "exit_code": 0,
+      "duration_sec": 122.52,
+      "log": "C:\\chemlens\\backend\\phase_queue\\logs\\phase_bench1_mvp_20260421_004639.log",
+      "stage": "apply"
+    },
+    {
+      "cmd": [
+        "C:\\Users\\tmdxo\\miniconda3\\envs\\chemlens\\python.exe",
+        "C:\\chemlens\\backend\\final_state_verifier.py",
+        "--db",
+        "C:\\chemlens\\backend\\app\\labint.db"
+      ],
+      "exit_code": 0,
+      "duration_sec": 1.17,
+      "log": "C:\\chemlens\\backend\\phase_queue\\logs\\phase_bench1_mvp_20260421_004639_verifier.log",
+      "stage": "verifier"
+    },
+    {
+      "cmd": [
+        "C:\\Users\\tmdxo\\miniconda3\\envs\\chemlens\\python.exe",
+        "C:\\chemlens\\backend\\family_completion_dashboard.py",
+        "--backend-root",
+        "C:\\chemlens\\backend"
+      ],
+      "exit_code": 0,
+      "duration_sec": 0.22,
+      "log": "C:\\chemlens\\backend\\phase_queue\\logs\\phase_bench1_mvp_20260421_004639_dashboard.log",
+      "stage": "dashboard"
+    }
+  ],
+  "apply_ok": true,
+  "verify_ok": true,
+  "dashboard_ok": true,
+  "finished_at": "2026-04-21T00:48:43.793650",
+  "overall_ok": true
+}

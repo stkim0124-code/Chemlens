@@ -1,0 +1,29 @@
+[
+  {
+    "family": "Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)",
+    "role": "reactant",
+    "name": "(E)-1-propenyl-tributylstannane + 4-iodotoluene",
+    "smiles": "CC=C[Sn](CCCC)(CCCC)CCCC.Ic1ccc(C)cc1",
+    "reasons": [
+      "bracket_atom_unusual_suffix:n"
+    ]
+  },
+  {
+    "family": "Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)",
+    "role": "reactant",
+    "name": "tributyl(phenyl)stannane + 4-bromonitrobenzene",
+    "smiles": "CCCC[Sn](CCCC)(CCCC)c1ccccc1.Brc1ccc(cc1)[N+](=O)[O-]",
+    "reasons": [
+      "bracket_atom_unusual_suffix:n"
+    ]
+  },
+  {
+    "family": "Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)",
+    "role": "reactant",
+    "name": "2-(tributylstannyl)furan + 4-iodoanisole",
+    "smiles": "CCCC[Sn](CCCC)(CCCC)c1ccco1.Ic1ccc(OC)cc1",
+    "reasons": [
+      "bracket_atom_unusual_suffix:n"
+    ]
+  }
+]

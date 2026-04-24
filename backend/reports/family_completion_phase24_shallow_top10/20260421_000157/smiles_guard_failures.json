@@ -1,0 +1,11 @@
+[
+  {
+    "family": "Robinson Annulation",
+    "role": "product",
+    "name": "methylated hydrindanone",
+    "smiles": "O=C2CCC3=CC(C)CC(C)C12C3",
+    "reasons": [
+      "ring_closure_digit_odd:1(count=1)"
+    ]
+  }
+]

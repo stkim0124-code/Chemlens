@@ -1,0 +1,358 @@
+{
+  "tag": "phase12_shallow_top10_completion_v1",
+  "batch": "b",
+  "db": "app\\labint.db",
+  "dry_run": true,
+  "families": [
+    "Finkelstein Reaction",
+    "Gabriel Synthesis",
+    "Favorskii Rearrangement",
+    "Ferrier Reaction",
+    "Evans Aldol Reaction"
+  ],
+  "before": {
+    "queryable_family_count": 270,
+    "queryable_count": 1277,
+    "reaction_extract_count": 616,
+    "extract_molecule_count": 3003
+  },
+  "after": {
+    "queryable_family_count": 269,
+    "queryable_count": 1301,
+    "reaction_extract_count": 626,
+    "extract_molecule_count": 3027
+  },
+  "alias_updates": [
+    {
+      "table": "reaction_extracts",
+      "from": "Gabriel Reaction",
+      "to": "Gabriel Synthesis",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Gabriel Reaction",
+      "to": "Gabriel Synthesis",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Favorskii Reaction",
+      "to": "Favorskii Rearrangement",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Favorskii Reaction",
+      "to": "Favorskii Rearrangement",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Ferrier Reaction/Rearrangement",
+      "to": "Ferrier Reaction",
+      "rows_updated": 1
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Ferrier Reaction/Rearrangement",
+      "to": "Ferrier Reaction",
+      "rows_updated": 3
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Evans Aldol",
+      "to": "Evans Aldol Reaction",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Evans Aldol",
+      "to": "Evans Aldol Reaction",
+      "rows_updated": 0
+    }
+  ],
+  "backfill": [
+    {
+      "family": "Finkelstein Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Gabriel Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Favorskii Rearrangement",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Ferrier Reaction",
+      "extract_rows_touched": 2
+    },
+    {
+      "family": "Evans Aldol Reaction",
+      "extract_rows_touched": 1
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Finkelstein Reaction",
+      "status": "inserted",
+      "extract_id": 885,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Finkelstein Reaction",
+      "status": "inserted",
+      "extract_id": 886,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Gabriel Synthesis",
+      "status": "inserted",
+      "extract_id": 887,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Gabriel Synthesis",
+      "status": "inserted",
+      "extract_id": 888,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Favorskii Rearrangement",
+      "status": "inserted",
+      "extract_id": 889,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Favorskii Rearrangement",
+      "status": "inserted",
+      "extract_id": 890,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Ferrier Reaction",
+      "status": "inserted",
+      "extract_id": 891,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Ferrier Reaction",
+      "status": "inserted",
+      "extract_id": 892,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Evans Aldol Reaction",
+      "status": "inserted",
+      "extract_id": 893,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Evans Aldol Reaction",
+      "status": "inserted",
+      "extract_id": 894,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    }
+  ],
+  "verify": [
+    {
+      "family": "Finkelstein Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        885,
+        886
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 885,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Finkelstein reaction converting 1-bromobutane to 1-iodobutane.",
+          "reactants_text": "1-bromobutane",
+          "products_text": "1-iodobutane"
+        },
+        {
+          "id": 886,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Finkelstein reaction converting benzyl chloride to benzyl iodide.",
+          "reactants_text": "benzyl chloride",
+          "products_text": "benzyl iodide"
+        }
+      ]
+    },
+    {
+      "family": "Gabriel Synthesis",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 4,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        887,
+        888
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 887,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Gabriel synthesis of ethylamine from bromoethane via phthalimide alkylation and deprotection.",
+          "reactants_text": "bromoethane",
+          "products_text": "ethylamine"
+        },
+        {
+          "id": 888,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Gabriel synthesis of benzylamine from benzyl bromide via phthalimide alkylation and deprotection.",
+          "reactants_text": "benzyl bromide",
+          "products_text": "benzylamine"
+        }
+      ]
+    },
+    {
+      "family": "Favorskii Rearrangement",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        889,
+        890
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 889,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Favorskii rearrangement of alpha-bromocyclohexanone to cyclopentanecarboxylic acid.",
+          "reactants_text": "alpha-bromocyclohexanone",
+          "products_text": "cyclopentanecarboxylic acid"
+        },
+        {
+          "id": 890,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Favorskii rearrangement of alpha-bromocyclopentanone to cyclobutanecarboxylic acid.",
+          "reactants_text": "alpha-bromocyclopentanone",
+          "products_text": "cyclobutanecarboxylic acid"
+        }
+      ]
+    },
+    {
+      "family": "Ferrier Reaction",
+      "extract_count": 4,
+      "overview_count": 2,
+      "application_count": 2,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 6,
+      "queryable_products": 4,
+      "molecule_rows": 13,
+      "unique_queryable_pair_count": 4,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        891,
+        892
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 891,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Ferrier reaction of a glycal with methanol to a 2,3-unsaturated methyl glycoside.",
+          "reactants_text": "glycal model substrate and methanol",
+          "products_text": "methyl 2,3-unsaturated glycoside"
+        },
+        {
+          "id": 892,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Ferrier reaction of a glycal with allyl alcohol to an allyl 2,3-unsaturated glycoside.",
+          "reactants_text": "glycal model substrate and allyl alcohol",
+          "products_text": "allyl 2,3-unsaturated glycoside"
+        }
+      ]
+    },
+    {
+      "family": "Evans Aldol Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        893,
+        894
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 893,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Evans aldol reaction of an N-propionyl oxazolidinone enolate with benzaldehyde to a beta-hydroxy imide.",
+          "reactants_text": "N-propionyl oxazolidinone and benzaldehyde",
+          "products_text": "beta-hydroxy imide adduct"
+        },
+        {
+          "id": 894,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Evans aldol reaction of an N-propionyl oxazolidinone enolate with butyraldehyde to a beta-hydroxy imide.",
+          "reactants_text": "N-propionyl oxazolidinone and butyraldehyde",
+          "products_text": "alkyl beta-hydroxy imide adduct"
+        }
+      ]
+    }
+  ],
+  "rich_count": 5,
+  "shallow_count": 0
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "phase": "4_gateB",
+  "apply_ts": "20260424_090035",
+  "apply_kind": "code_patch_only",
+  "status": "edits_applied_verified_pending_benchmark",
+  "target_file": "backend/app/evidence_search.py",
+  "target_file_size_before_bytes": 82653,
+  "target_file_size_after_bytes": 116229,
+  "target_file_lines_after": 2535,
+  "baseline": {
+    "phase": "3g_5",
+    "apply_ts": "20260422_000000",
+    "adm_top1": 0.7606,
+    "adm_top3": 0.8610,
+    "cov_r5": 0.8842,
+    "confused_pairs": 62
+  },
+  "changes": {
+    "new_feature_smarts": [
+      {"name": "amine_oxide", "smarts": "[NX4+]([#6])([#6])([#6])[O-]", "purpose": "Cope Elimination vs Hofmann Elimination discriminator"},
+      {"name": "diazonium",   "smarts": "[NX2+]#[NX1]",                   "purpose": "Sandmeyer hard requirement; Ullmann generic anti-signal"},
+      {"name": "coumarin",    "smarts": "O=c1ccc2ccccc2o1",               "purpose": "von Pechmann product hard requirement; AAE anti-signal"},
+      {"name": "xanthate",    "smarts": "[#16X1]=[#6X3]([OX2][#6])[SX2][#6]", "purpose": "Chugaev Elimination hard requirement"},
+      {"name": "indole",      "smarts": "c1ccc2[nH]ccc2c1",               "purpose": "Larock Indole boost; Ullmann generic anti-signal"}
+    ],
+    "total_features_before": 32,
+    "total_features_after": 37,
+    "guard_edits": [
+      {"family": "Cope Elimination",            "kind": "update", "new_check": "amine_oxide required (vs Hofmann)"},
+      {"family": "Wolff-Kishner Reduction",     "kind": "update", "new_check": "anti-Peterson (silicon+alkene) + anti-McMurry (2×C=O→1×C=C)"},
+      {"family": "Acetoacetic Ester Synthesis", "kind": "update", "new_check": "heterocycle product + 3-component MCR demoters"},
+      {"family": "Finkelstein Reaction",        "kind": "update", "new_check": "product must retain halide"},
+      {"family": "Schmidt Reaction",            "kind": "update", "new_check": "azide/HN3 hard requirement"},
+      {"family": "Biginelli Reaction",          "kind": "update", "new_check": "3-component aldehyde+ketoester+urea + dihydropyrimidinone product boost"},
+      {"family": "Chugaev Elimination",         "kind": "update", "new_check": "xanthate SMARTS hard requirement"},
+      {"family": "Hofmann Elimination",         "kind": "new",    "new_check": "amine + alkene (N-oxide anti-signal)"},
+      {"family": "Sandmeyer Reaction",          "kind": "new",    "new_check": "diazonium + aryl halide product"},
+      {"family": "Peterson Olefination",        "kind": "new",    "new_check": "silicon + carbonyl → alkene"},
+      {"family": "von Pechmann Reaction",       "kind": "new",    "new_check": "phenol + β-ketoester → coumarin"},
+      {"family": "Ullmann Reaction / Coupling / Biaryl Synthesis (generic)", "kind": "new", "new_check": "aryl halide + anti-Sandmeyer/Larock/Miyaura/Negishi demoters"}
+    ],
+    "guard_edits_count": 12
+  },
+  "verification": {
+    "ast_parse_ok": true,
+    "runtime_import_ok": true,
+    "all_new_smarts_compile": true,
+    "smoke_test": {
+      "boost_fires_on_positive_cases": ["Cope", "Hofmann", "Sandmeyer", "Peterson", "vonPechmann", "Biginelli", "Schmidt"],
+      "penalty_fires_on_negative_cases": ["WK_with_Si", "AAE_with_heterocycle"],
+      "neutral_on_ambiguous": ["Ullmann_generic_no_demoters", "Finkelstein_clean"]
+    }
+  },
+  "safety": {
+    "backup_files": [
+      "backend/app/evidence_search.py.bak_phase4_gateB_pre_20260424_090035",
+      "backend/app/evidence_search.py.bak_phase4_gateB_safety_20260424_090035",
+      "backend/merge_backups/labint_phase4gateB_pre_20260424_090035.db"
+    ],
+    "rollback_guide": "backend/reports/phase4/gateB/ROLLBACK_GUIDE.md",
+    "deprecated_file_handled": "backend/evidence_search.py → backend/evidence_search.py.deprecated_20260424"
+  },
+  "salvage_artifacts": {
+    "category_a_reagent_channel": "backend/reports/phase4/gateB/deferred_reagent_channel.json (8 cases)",
+    "category_b_merge_candidates": "backend/reports/phase4/gateB/gate_c_merge_candidates.md (3 cases)",
+    "category_c_defects_registry": "backend/benchmark/defects/benchmark_defects_registry.json (3 cases)",
+    "abc_verification": "backend/reports/phase4/gateB/phase2_abc_verification.md"
+  },
+  "missed_items_distribution": {
+    "plan_document": "backend/reports/phase4/gateB/missed_benchmark_items_distribution.md",
+    "verification": "backend/reports/phase4/gateB/phase3_missed_items_verification.md",
+    "gate_b_blockers_bundled_into_task_121": [1, 3, 5, 6, 9]
+  },
+  "next_steps": [
+    "Task #121: Implement eval harness upgrades (unique-edge metric, broad/coverage case-level diff, source_kind split, regression trace matrix, UTF-8-sig BOM handling)",
+    "Task #116: Run 3-layer benchmark via orchestrator (NON-cumulative re-apply; this is Gate B's own baseline)",
+    "Task #117: If any metric regresses vs 3g-5 baseline: bisect the 12 guards via regression trace matrix (item 6), roll back offenders (fix-don't-bypass per feedback memory)",
+    "Update memory: project_chemlens_phase4_gateB_guards.md + MEMORY.md index"
+  ],
+  "expected_impact_notes": {
+    "best_case": "confused_pairs: 62 → ~50 (-12), adm_top1: 0.7606 → ~0.79, cov_r5 neutral or +0.005",
+    "worst_case_acceptable": "confused_pairs: 62 → ~55 (-7), adm_top1 flat, cov_r5 flat (net gain via fewer confusions)",
+    "hard_regression_threshold": "Any of: adm_top1 < 0.745, cov_r5 < 0.875, or >=2 fresh families appearing as top-1 greedy → roll back offending guard via regression trace matrix"
+  }
+}

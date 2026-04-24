@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>Family Completion Dashboard</title>
+<style>
+  :root { --bg:#0f172a; --panel:#111827; --panel2:#0b1220; --border:#243041; --text:#e5e7eb; --muted:#94a3b8; --accent:#60a5fa; --good:#34d399; --warn:#fbbf24; }
+  body { margin:0; font-family: Arial, Helvetica, sans-serif; background:linear-gradient(180deg,#0b1220,#0f172a); color:var(--text); }
+  .wrap { max-width: 1320px; margin: 0 auto; padding: 28px; }
+  h1,h2,h3 { margin:0 0 12px 0; }
+  .meta { color:var(--muted); margin-bottom:18px; }
+  .grid { display:grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap:14px; margin:18px 0 28px; }
+  .card, .panel { background:rgba(17,24,39,.88); border:1px solid var(--border); border-radius:18px; box-shadow:0 10px 30px rgba(0,0,0,.18); }
+  .card { padding:16px; }
+  .panel { padding:18px; margin:0 0 18px 0; }
+  .label { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.08em; }
+  .value { font-size:28px; font-weight:700; margin-top:8px; }
+  .sub { color:var(--muted); font-size:12px; margin-top:8px; }
+  .two { display:grid; grid-template-columns: 1.1fr .9fr; gap:18px; }
+  .three { display:grid; grid-template-columns: 1fr 1fr 1fr; gap:18px; }
+  ul { margin:8px 0 0 18px; padding:0; }
+  li { margin:6px 0; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th, td { text-align:left; padding:10px 8px; border-bottom:1px solid #203046; vertical-align:top; }
+  th { color:#bfdbfe; font-weight:600; }
+  .minor { color:var(--muted); font-size:14px; }
+  .badge { display:inline-block; padding:4px 8px; border-radius:999px; border:1px solid var(--border); margin-right:8px; font-size:12px; color:var(--muted); }
+  @media (max-width: 1100px) { .grid { grid-template-columns: repeat(3, minmax(0,1fr)); } .two,.three { grid-template-columns: 1fr; } }
+  @media (max-width: 700px) { .grid { grid-template-columns: repeat(2, minmax(0,1fr)); } .wrap { padding:18px; } }
+</style>
+</head>
+<body>
+<div class='wrap'>
+  <h1>Family Completion Dashboard</h1>
+  <div class='meta'>Generated at 2026-04-20 00:17:30 · Source verifier: C:\chemlens\backend\reports\final_state_verifier\20260420_001728\final_state_verifier.json</div>
+  <div class='grid'><div class='card'><div class='label'>Queryable families</div><div class='value'>280</div><div class='sub'>DB truth from final_state_verifier</div></div><div class='card'><div class='label'>Reaction extracts</div><div class='value'>535</div><div class='sub'>Current canonical evidence rows</div></div><div class='card'><div class='label'>Queryable molecules</div><div class='value'>988</div><div class='sub'>Reactant/product searchable rows</div></div><div class='card'><div class='label'>Both-smiles extracts</div><div class='value'>261</div><div class='sub'>Strong reaction evidence rows</div></div><div class='card'><div class='label'>Rich families</div><div class='value'>10</div><div class='sub'>Raw verifier count</div></div><div class='card'><div class='label'>Recent completed</div><div class='value'>2</div><div class='sub'>Canonicalized display count</div></div></div>
+
+  <section class='panel'>
+    <h2>Completion bucket display counts</h2>
+    <div class='minor'>Raw verifier counts are preserved; display lists below are canonicalized for alias/case drift.</div>
+    <ul>
+      <li><span class='badge'>missing_count_raw</span> 5</li>
+      <li><span class='badge'>shallow_count_raw</span> 276</li>
+      <li><span class='badge'>rich_count_raw</span> 10</li>
+      <li><span class='badge'>collision_count_raw</span> 30</li>
+      <li><span class='badge'>missing_sample_canonicalized_count</span> 3</li>
+      <li><span class='badge'>collision_candidate_canonicalized_count</span> 30</li>
+    </ul>
+  </section>
+
+  <h2>Recent completed focus families</h2>
+  <section class='panel'><h3>Alkene (Olefin) Metathesis</h3><ul><li><b>extract_count</b>: 11</li><li><b>overview_count</b>: 5</li><li><b>application_count</b>: 5</li><li><b>extract_with_both</b>: 3</li><li><b>queryable_reactants</b>: 5</li><li><b>queryable_products</b>: 5</li><li><b>unique_queryable_pair_count</b>: 3</li><li><b>completion_minimum_pass</b>: True</li><li><b>rich_completion_pass</b>: True</li><li><b>completion_bucket</b>: rich</li><li><b>collision_prone_candidate</b>: False</li></ul><div class='minor'><b>Recent curated extract summaries</b><ul><li>[792] <b>canonical_overview</b> — Curated representative seed: ring-closing metathesis of 1,7-octadiene to cyclohexene.</li><li>[793] <b>application_example</b> — Curated representative seed: cross-metathesis of styrene with methyl acrylate to methyl cinnamate.</li><li>[794] <b>application_example</b> — Application example: ring-closing metathesis toward the (+)-Prelaureatin precursor.</li></ul></div></section><section class='panel'><h3>Barton-McCombie Radical Deoxygenation Reaction</h3><ul><li><b>extract_count</b>: 8</li><li><b>overview_count</b>: 2</li><li><b>application_count</b>: 3</li><li><b>extract_with_both</b>: 4</li><li><b>queryable_reactants</b>: 6</li><li><b>queryable_products</b>: 4</li><li><b>unique_queryable_pair_count</b>: 4</li><li><b>completion_minimum_pass</b>: True</li><li><b>rich_completion_pass</b>: True</li><li><b>completion_bucket</b>: rich</li><li><b>collision_prone_candidate</b>: False</li></ul><div class='minor'><b>Recent curated extract summaries</b><ul><li>[795] <b>canonical_overview</b> — Curated representative seed: 1-phenylethanol is deoxygenated to ethylbenzene via a xanthate intermediate under Barton-McCombie conditions.</li><li>[796] <b>application_example</b> — Application example: Barton-McCombie deoxygenation in the synthesis of (±)-Δ9(12)-Capnellene.</li><li>[797] <b>application_example</b> — Application example: Barton-McCombie deoxygenation in the synthesis of the octenoic acid side chain of zaragozic acid.</li></ul></div></section>
+
+  <div class='three'>
+    <section class='panel'><h3>Recent completed families (canonicalized)</h3><ul><li>Alkene (Olefin) Metathesis</li><li>Barton-McCombie Radical Deoxygenation Reaction</li></ul></section>
+    <section class='panel'><h3>Missing family sample (canonicalized)</h3><ul><li>Fries Rearrangement</li><li>Hofmann-Loffler-Freytag Reaction</li><li>Houben-Hoesch Reaction</li></ul></section>
+    <section class='panel'><h3>Collision-prone candidates (canonicalized)</h3><ul><li>Alder (ene) Reaction</li><li>Aldol Reaction</li><li>Alkyne Metathesis</li><li>Amadori Rearrangement</li><li>Arbuzov Reaction</li><li>Arndt-Eistert Homologation / Synthesis</li><li>Aza-Cope Rearrangement</li><li>Aza-Wittig Reaction</li><li>Aza-[2,3]-Wittig Rearrangement</li><li>Balz-Schiemann Reaction</li><li>Bamford-Stevens-Shapiro Olefination</li><li>Barbier Coupling Reaction</li><li>Bartoli Indole Synthesis</li><li>Barton Nitrite Ester Reaction</li><li>Barton Radical Decarboxylation Reaction</li><li>Baylis-Hillman Reaction</li><li>Beckmann Rearrangement</li><li>Benzoin and Retro-Benzoin Condensation</li><li>Bergman Cycloaromatization Reaction</li><li>Biginelli Reaction</li><li>Birch Reduction</li><li>Bischler-Napieralski Isoquinoline Synthesis</li><li>Brown Hydroboration Reaction</li><li>Buchner Method of Ring Expansion</li><li>Burgess Dehydration Reaction</li><li>Cannizzaro Reaction</li><li>Carroll Rearrangement</li><li>Chugaev Elimination Reaction</li><li>Claisen-Ireland Rearrangement</li><li>Clemmensen Reduction</li></ul></section>
+  </div>
+
+  <div class='two'>
+    <section class='panel'>
+      <h2>Top shallow families (canonicalized)</h2>
+      <table>
+        <thead><tr><th>Family</th><th>Extracts</th><th>Overview</th><th>Application</th><th>Pairs</th><th>Min pass</th><th>Collapsed aliases</th></tr></thead>
+        <tbody><tr><td>Alder Ene Reaction</td><td>1</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr><tr><td>Alder (Ene) Reaction (Hydro-Allyl Addition)</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Amadori Reaction / Rearrangement</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Arbuzov Reaction (Michaelis-Arbuzov Reaction)</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Baeyer-Villiger Oxidation/Rearrangement</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td>Baeyer-Villiger Oxidation/rearrangement</td></tr><tr><td>Baldwin&#x27;s Rules / Guidelines for Ring-Closing Reactions</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Balz-Schiemann Reaction (Schiemann Reaction)</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Buchner Method of Ring Expansion (Buchner Reaction)</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Buchner Reaction</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Carroll Rearrangement (Kimel-Cope Rearrangement)</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Charette Asymmetric Cyclopropanation</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Chichibabin Amination Reaction (Chichibabin Reaction)</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Claisen Condensation / Claisen Reaction</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Combes Quinoline Synthesis</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Cope Elimination / Cope Reaction</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Cope Rearrangement</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Corey-Bakshi-Shibata Reduction (CBS Reduction)</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Corey-Chaykovsky Epoxidation and Cyclopropanation</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Corey-Fuchs Alkyne Synthesis</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Corey-Kim Oxidation</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Corey-Nicolaou Macrolactonization</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr><tr><td>Corey-Winter Olefination</td><td>1</td><td>1</td><td>0</td><td>1</td><td>False</td><td></td></tr></tbody>
+      </table>
+    </section>
+
+    <section class='panel'>
+      <h2>Alias cleanup candidates</h2>
+      <table>
+        <thead><tr><th>Raw name</th><th>Canonical name</th></tr></thead>
+        <tbody><tr><td>Alkene (olefin) Metathesis</td><td>Alkene (Olefin) Metathesis</td></tr><tr><td>Barton-Mccombie Radical Deoxygenation Reaction</td><td>Barton-McCombie Radical Deoxygenation Reaction</td></tr><tr><td>Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement</td><td>Fries Rearrangement</td></tr><tr><td>Hofmann-Löffler-Freytag Reaction (Remote Functionalization)</td><td>Hofmann-Loffler-Freytag Reaction</td></tr><tr><td>Houben-Hoesch Reaction/Synthesis</td><td>Houben-Hoesch Reaction</td></tr></tbody>
+      </table>
+    </section>
+  </div>
+
+  <section class='panel'>
+    <h2>Duplicate family names in reaction_family_patterns</h2>
+    <table>
+      <thead><tr><th>Family</th><th>Row count</th></tr></thead>
+      <tbody><tr><td>Arndt-Eistert Homologation / Synthesis</td><td>2</td></tr><tr><td>Aza-Cope Rearrangement</td><td>2</td></tr><tr><td>Aza-Wittig Reaction</td><td>2</td></tr><tr><td>Aza-[2,3]-Wittig Rearrangement</td><td>2</td></tr><tr><td>Baker-Venkataraman Rearrangement</td><td>2</td></tr><tr><td>Balz-Schiemann Reaction</td><td>2</td></tr><tr><td>Bamford-Stevens-Shapiro Olefination</td><td>2</td></tr><tr><td>Baylis-Hillman Reaction</td><td>2</td></tr><tr><td>Benzoin and Retro-Benzoin Condensation</td><td>2</td></tr><tr><td>Bischler-Napieralski Isoquinoline Synthesis</td><td>2</td></tr><tr><td>Buchwald-Hartwig Cross-Coupling</td><td>2</td></tr><tr><td>Castro-Stephens Coupling</td><td>2</td></tr><tr><td>Ciamician-Dennstedt Rearrangement</td><td>2</td></tr><tr><td>Claisen-Ireland Rearrangement</td><td>2</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class='panel'>
+    <h2>Display notes</h2>
+    <ul><li>This dashboard is derived from final_state_verifier JSON and is intended as a display/triage layer, not a replacement for canonical DB truth.</li><li>Missing/collision/recent-completed lists are canonicalized before rendering; missing-sample display also suppresses families already confirmed in focus/recent-completed sections.</li><li>Raw verifier totals are preserved unchanged in the summary cards; only display lists are canonicalized.</li></ul>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+{
+  "phase_tag": "phase3a_alias_normalize",
+  "started_at": "2026-04-21T04:35:30.093665",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "out_dir": "C:\\chemlens\\backend\\reports\\phase3a\\dryrun",
+  "args": {
+    "db": "C:\\chemlens\\backend\\app\\labint.db",
+    "report_dir": "C:\\chemlens\\backend\\reports\\phase3a\\dryrun",
+    "alias_map": "alias_map.yaml",
+    "dry_run": true,
+    "include_review": false,
+    "canonical_table": "named_reactions",
+    "alias_table": "named_reaction_aliases",
+    "canonical_name_col": "canonical_name",
+    "alias_name_col": "alias_name",
+    "fk_col": "named_reaction_id",
+    "skip_bench": true,
+    "backend_root": "C:\\chemlens\\backend",
+    "coverage_max_cases": 0
+  },
+  "stages": [
+    {
+      "stage": "snapshot",
+      "ok": true,
+      "skipped": true,
+      "reason": "dry-run"
+    },
+    {
+      "stage": "schema_probe",
+      "ok": false,
+      "findings": {
+        "all_tables": [
+          "abbreviation_aliases",
+          "card_migration_map",
+          "extract_entities",
+          "extract_molecules",
+          "family_references",
+          "ingest_jobs",
+          "labint_schema_meta",
+          "manual_page_entities",
+          "manual_page_knowledge",
+          "page_images",
+          "reaction_cards",
+          "reaction_conditions",
+          "reaction_extracts",
+          "reaction_family_patterns",
+          "reaction_occurrences",
+          "reaction_participants",
+          "reactions",
+          "scheme_candidates",
+          "sqlite_sequence",
+          "substance_names",
+          "substances"
+        ]
+      },
+      "error": "canonical table 'named_reactions' not found"
+    }
+  ],
+  "overall_ok": false,
+  "finished_at": "2026-04-21T04:35:30.093665"
+}

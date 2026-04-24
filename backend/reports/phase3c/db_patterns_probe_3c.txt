@@ -1,0 +1,254 @@
+# Phase 3c DB pattern probe
+# DB: C:\chemlens\backend\app\labint.db
+# Targets: 22
+
+=== Aza-Wittig Reaction ===
+  id: 11
+  family_name: Aza-Wittig Reaction
+  family_name_norm: aza-wittig reaction
+  family_class: other
+  transformation_type: other
+  mechanism_type: named_transformation
+  reactant_pattern_text: R-N3 | R-N=N+=N-
+  product_pattern_text: R-N=C(R2)R3 | R-N=PPh3
+  key_reagents_clue: PPh3, R2(C=O)R3 | PPh3
+  description_short: Conversion of an azide and a carbonyl compound to a Schiff base.
+  (+1 additional exact rows)
+
+=== Horner-Wadsworth-Emmons Olefination ===
+  id: 383
+  family_name: Horner-Wadsworth-Emmons Olefination
+  family_name_norm: horner wadsworth emmons olefination
+  family_class: named_reaction
+  transformation_type: phosphonate-based olefination of aldehydes and ketones
+  mechanism_type: phosphonate carbanion addition followed by oxaphosphetane collapse to alkenes
+  key_reagents_clue: phosphonate ester|HWE olefination|NaH|aldehyde|E-alkene|Horner-Wittig
+  description_short: Widely used phosphonate olefination that usually furnishes E-alkenes under milder and more chemoselective conditions than classical Wittig reactions.
+
+=== Heck Reaction ===
+  id: 375
+  family_name: Heck Reaction
+  family_name_norm: heck reaction
+  family_class: named_reaction
+  transformation_type: palladium-catalyzed arylation or alkenylation of olefins
+  mechanism_type: Pd(0)/Pd(II) catalytic cycle involving oxidative addition, migratory insertion, and beta-hydride elimination
+  key_reagents_clue: Pd(0)|aryl halide|olefin|base|Heck reaction|Mizoroki-Heck
+  description_short: Foundational palladium-catalyzed coupling of unsaturated halides or pseudohalides with olefins to form substituted alkenes.
+
+=== Ley Oxidation ===
+  id: 408
+  family_name: Ley Oxidation
+  family_name_norm: ley oxidation
+  family_class: named_reaction
+  transformation_type: TPAP/NMO oxidation of primary and secondary alcohols to aldehydes and ketones
+  mechanism_type: catalytic ruthenate oxidation of alcohols with NMO or related co-oxidants under mild nonaqueous conditions
+  reactant_pattern_text: primary or secondary alcohol + TPAP/NMO
+  product_pattern_text: aldehyde|ketone
+  key_reagents_clue: TPAP|NMO|4A molecular sieves
+  description_short: Mild ruthenate-catalyzed alcohol oxidation that converts sensitive primary and secondary alcohols into aldehydes and ketones using TPAP and NMO.
+
+=== Julia-Lythgoe Olefination ===
+  id: 392
+  family_name: Julia-Lythgoe Olefination
+  family_name_norm: julia lythgoe olefination
+  family_class: named_reaction
+  transformation_type: sulfone-based olefination to predominantly E-alkenes
+  mechanism_type: addition of metallated sulfones to carbonyls followed by acylation and reductive fragmentation or Smiles-type elimination
+  key_reagents_clue: phenyl sulfone|PT-sulfone|Julia-Lythgoe|Na(Hg)|SmI2|Kocienski
+  description_short: Classical and modified sulfone olefination strategies that transform carbonyl compounds into stereodefined alkenes, often favoring E geometry.
+
+=== Baeyer-Villiger Oxidation/Rearrangement ===
+  id: 13
+  family_name: Baeyer-Villiger Oxidation/rearrangement
+  family_name_norm: baeyer-villiger oxidation/rearrangement
+  family_class: oxidation
+  transformation_type: oxidation
+  mechanism_type: redox
+  reactant_pattern_text: 
+  product_pattern_text: 
+  key_reagents_clue: 
+  description_short: 
+  (+1 additional exact rows)
+
+=== Glaser Coupling ===
+  id: 370
+  family_name: Glaser Coupling
+  family_name_norm: glaser coupling
+  family_class: named_reaction
+  transformation_type: oxidative coupling of terminal alkynes to diynes
+  mechanism_type: copper-mediated oxidative dimerization or heterocoupling through copper acetylides and aerobic oxidation
+  key_reagents_clue: CuCl2|Cu(OAc)2|CuCl|TMEDA|O2|Glaser coupling|Hay coupling
+  description_short: Oxidative alkyne-coupling family widely used for diyne synthesis, macrocyclization, and heterocoupling variants in complex-molecule synthesis.
+
+=== Kumada Cross-Coupling ===
+  id: 406
+  family_name: Kumada Cross-Coupling
+  family_name_norm: kumada cross coupling
+  family_class: named_reaction
+  transformation_type: Ni- or Pd-catalyzed cross-coupling of aryl or alkenyl halides with Grignard or organolithium reagents
+  mechanism_type: oxidative addition, transmetalation, and reductive elimination at Ni or Pd catalysts
+  reactant_pattern_text: aryl or alkenyl halide + Grignard reagent or organolithium reagent
+  product_pattern_text: coupled carbon-carbon bond product
+  key_reagents_clue: NiCl2|Pd(PPh3)4|Grignard reagent|RLi
+  description_short: Transition-metal-catalyzed cross-coupling that joins aryl or alkenyl halides with organomagnesium or related organometallic reagents to form C-C bonds.
+
+=== Negishi Cross-Coupling ===
+  id: 265
+  family_name: Negishi Cross-Coupling
+  family_name_norm: negishi cross coupling
+  family_class: named_reaction
+  transformation_type: Pd- or Ni-catalyzed cross-coupling of organozinc reagents with organic electrophiles
+  mechanism_type: oxidative addition / organozinc transmetalation / reductive elimination
+  reactant_pattern_text: organozinc reagent + aryl/vinyl/allyl/alkynyl halide
+  product_pattern_text: coupled carbon-carbon bond product
+  key_reagents_clue: ZnCl2|Pd(PPh3)4|NiL_n|Cp2Zr(H)Cl
+  description_short: Organozinc-based cross-coupling method valued for high chemoselectivity and compatibility with sensitive functional groups.
+
+=== Sonogashira Cross-Coupling ===
+  id: 205
+  family_name: Sonogashira Cross-Coupling
+  family_name_norm: sonogashira cross coupling
+  family_class: named_reaction
+  transformation_type: Pd/Cu-catalyzed coupling of terminal alkynes with aryl or vinyl halides
+  mechanism_type: oxidative addition-transmetalation-reductive elimination involving copper acetylides
+  reactant_pattern_text: aryl/vinyl halide + terminal alkyne
+  product_pattern_text: internal alkyne coupling product
+  key_reagents_clue: Sonogashira|Pd(PPh3)2Cl2|Pd(PPh3)4|CuI|Et3N
+  description_short: Cross-coupling reaction joining terminal alkynes with aryl or vinyl electrophiles under palladium and copper catalysis.
+
+=== Stille Cross-Coupling (Migita-Kosugi-Stille Coupling) ===
+  id: 212
+  family_name: Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)
+  family_name_norm: stille cross coupling migita kosugi stille coupling
+  family_class: named_reaction
+  transformation_type: Pd-catalyzed cross-coupling of organostannanes with electrophiles
+  mechanism_type: oxidative addition / transmetalation / reductive elimination
+  reactant_pattern_text: organostannane + aryl/vinyl/allyl/acyl halide or triflate
+  product_pattern_text: coupled C-C product
+  key_reagents_clue: Stille cross-coupling|organostannane|Pd(0)
+  description_short: Classical palladium-catalyzed C-C bond formation between organostannanes and organic electrophiles under mild, highly functional-group tolerant conditions.
+
+=== Swern Oxidation ===
+  id: 149
+  family_name: Swern Oxidation
+  family_name_norm: swern oxidation
+  family_class: named_reaction
+  transformation_type: alcohol oxidation to aldehydes or ketones
+  mechanism_type: activated DMSO / alkoxysulfonium / elimination
+  reactant_pattern_text: primary or secondary alcohol + activated DMSO reagent
+  product_pattern_text: aldehyde or ketone
+  key_reagents_clue: Swern|DMSO|(COCl)2|TFAA|Et3N
+  description_short: Low-temperature oxidation of alcohols with DMSO activated by oxalyl chloride or related reagents to give aldehydes or ketones.
+
+=== Dess-Martin Oxidation ===
+  id: 345
+  family_name: Dess-Martin Oxidation
+  family_name_norm: dess martin oxidation
+  family_class: named_reaction
+  transformation_type: oxidation of alcohols or oximes to carbonyl compounds with hypervalent iodine(V) reagent
+  mechanism_type: alkoxyperiodinane formation followed by elimination to aldehydes/ketones
+  key_reagents_clue: DMP|Dess-Martin periodinane|IBX|hypervalent iodine|oxidation
+  description_short: Mild and chemoselective oxidation using Dess-Martin periodinane, a soluble hypervalent iodine(V) reagent derived from IBX, to convert alcohols and related substrates into carbonyl compounds.
+
+=== Corey-Kim Oxidation ===
+  id: 330
+  family_name: Corey-Kim Oxidation
+  family_name_norm: corey kim oxidation
+  family_class: named_reaction
+  transformation_type: primary/secondary alcohol oxidation to aldehyde or ketone
+  mechanism_type: NCS/DMS activation to chlorodimethylsulfonium species followed by alkoxysulfonium elimination
+  key_reagents_clue: alcohol|NCS|DMS|Et3N|alkoxysulfonium salt
+  description_short: Mild oxidation of alcohols to aldehydes or ketones using the NCS/DMS/Et3N reagent system via alkoxysulfonium intermediates.
+
+=== Pfitzner-Moffatt Oxidation ===
+  id: 166
+  family_name: Pfitzner-Moffatt Oxidation
+  family_name_norm: pfitzner moffatt oxidation
+  family_class: named_reaction
+  transformation_type: activated-DMSO oxidation of primary or secondary alcohols to carbonyl compounds
+  mechanism_type: acid-activated carbodiimide/DMSO pathway via alkoxysulfonium ylide formation and decomposition
+  reactant_pattern_text: 1° or 2° alcohol + DMSO + carbodiimide + catalytic acid
+  product_pattern_text: aldehyde or ketone
+  key_reagents_clue: DMSO|DCC|Moffatt|Pfitzner|TFAA|pyr-HCl
+  description_short: Classical activated-DMSO oxidation that converts alcohols to aldehydes or ketones under mild conditions using carbodiimides and catalytic acid.
+
+=== Mukaiyama Aldol Reaction ===
+  id: 259
+  family_name: Mukaiyama Aldol Reaction
+  family_name_norm: mukaiyama aldol reaction
+  family_class: named_reaction
+  transformation_type: Lewis-acid-promoted aldol coupling of silyl enol ethers with carbonyl compounds
+  mechanism_type: carbon-carbon bond formation between activated carbonyls and preformed enol silanes
+  reactant_pattern_text: silyl enol ether + aldehyde/ketone
+  product_pattern_text: beta-hydroxy carbonyl compound
+  key_reagents_clue: TiCl4|BF3·OEt2|Sn(OTf)2|SnCl4
+  description_short: Powerful aldol variant using preformed enol silanes and Lewis acid activation to deliver beta-hydroxy carbonyl products with high stereocontrol.
+
+=== Yamaguchi Macrolactonization ===
+  id: 243
+  family_name: Yamaguchi Macrolactonization
+  family_name_norm: yamaguchi macrolactonization
+  family_class: named_reaction
+  transformation_type: high-dilution macrolactonization of hydroxy acids to medium or large ring lactones
+  mechanism_type: mixed anhydride formation with 2,4,6-trichlorobenzoyl chloride followed by DMAP-promoted intramolecular acyl transfer
+  reactant_pattern_text: hydroxy acid + 2,4,6-trichlorobenzoyl chloride + tertiary amine then DMAP under high dilution
+  product_pattern_text: medium- or large-ring lactone
+  key_reagents_clue: Yamaguchi|macrolactonization|DMAP|2,4,6-trichlorobenzoyl chloride|mixed anhydride|high dilution
+  description_short: Macrocyclization method that converts hydroxy acids into medium- and large-ring lactones via mixed anhydrides and DMAP-catalyzed intramolecular acyl transfer.
+
+=== Keck Macrolactonization ===
+  id: 396
+  family_name: Keck Macrolactonization
+  family_name_norm: keck macrolactonization
+  family_class: named_reaction
+  transformation_type: intramolecular macrolactonization of hydroxy acids to medium- and large-ring lactones using carbodiimide activation with DMAP/DMAP.HCl or EDCI
+  mechanism_type: carbodiimide-mediated activation of hydroxy acids to acyl intermediates followed by DMAP-assisted cyclization under high dilution
+  reactant_pattern_text: hydroxy acid or seco-acid precursor under DCC/DMAP/DMAP.HCl or EDCI activation
+  product_pattern_text: medium- or large-ring macrolactone
+  key_reagents_clue: DCC|EDCI|DMAP|DMAP.HCl|reflux|slow addition
+  description_short: Macrolactonization protocol for cyclizing hydroxy acids to macrocycles using carbodiimide activation and DMAP/DMAP.HCl mediation under high-dilution conditions.
+
+=== Corey-Nicolaou Macrolactonization ===
+  id: 331
+  family_name: Corey-Nicolaou Macrolactonization
+  family_name_norm: corey nicolaou macrolactonization
+  family_class: named_reaction
+  transformation_type: hydroxy acid cyclization to medium- or large-ring lactone
+  mechanism_type: 2-pyridinethiol ester activation followed by intramolecular lactonization under high dilution
+  key_reagents_clue: hydroxy acid|2,2'-dipyridyl disulfide|PPh3|2-pyridinethiol ester|macrolactone
+  description_short: Macrolactonization method that activates hydroxy acids as 2-pyridinethiol esters before intramolecular closure to medium- and large-ring lactones.
+
+=== Criegee Oxidation ===
+  id: 334
+  family_name: Criegee Oxidation
+  family_name_norm: criegee oxidation
+  family_class: named_reaction
+  transformation_type: vicinal diol oxidative cleavage to carbonyl fragments
+  mechanism_type: lead tetraacetate-mediated glycol cleavage via cyclic lead intermediates
+  key_reagents_clue: vicinal diol|Pb(OAc)4|lead tetraacetate|carbonyl cleavage
+  description_short: Oxidative cleavage of vicinal diols to carbonyl compounds using lead tetraacetate, often as a mild alternative for advanced cyclic diol fragmentation.
+
+=== Reformatsky Reaction ===
+  id: 180
+  family_name: Reformatsky Reaction
+  family_name_norm: reformatsky reaction
+  family_class: named_reaction
+  transformation_type: metal-mediated coupling of α-halo esters with carbonyl compounds
+  mechanism_type: organozinc or related metal enolate formation followed by aldol-type addition through a chairlike transition state
+  reactant_pattern_text: α-halo ester or α-halo carbonyl compound + aldehyde or ketone under Zn or metal-salt activation
+  product_pattern_text: β-hydroxy ester or, in the Blaise variant after work-up, β-keto ester
+  key_reagents_clue: Reformatsky|Zn|SmI2|CrCl2|Co(PPh3)4|Blaise
+  description_short: Classic zinc-based carbon–carbon bond-forming reaction between α-halo esters and carbonyl compounds that delivers β-hydroxy esters with broad modern metal-mediated variants.
+
+=== Knoevenagel Condensation ===
+  id: 398
+  family_name: Knoevenagel Condensation
+  family_name_norm: knoevenagel condensation
+  family_class: named_reaction
+  transformation_type: amine- or base-catalyzed condensation of aldehydes or ketones with active methylene compounds to electron-poor alkenes
+  mechanism_type: iminium/enamine or aldol-type activation of carbonyl compounds and methylene donors followed by dehydration to alpha,beta-unsaturated products
+  reactant_pattern_text: aldehyde or ketone + active methylene compound such as malonate, cyanoacetate, nitrile, or 1,3-dicarbonyl derivative
+  product_pattern_text: alpha,beta-unsaturated carbonyl or related activated alkene
+  key_reagents_clue: Et3N|piperidine|beta-alanine|Meldrum acid|ethyl cyanoacetate
+  description_short: Condensation of carbonyl compounds with active methylene donors under basic or amine catalysis to form alpha,beta-unsaturated carbonyl derivatives and related activated alkenes.
+

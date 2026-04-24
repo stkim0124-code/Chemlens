@@ -1,0 +1,233 @@
+{
+  "tag": "phase15_shallow_top10_completion_v1",
+  "db": "app\\labint.db",
+  "batch": "a",
+  "dry_run": true,
+  "before": {
+    "queryable_family_count": 265,
+    "queryable_count": 1429
+  },
+  "after": {
+    "queryable_family_count": 264,
+    "queryable_count": 1451
+  },
+  "alias_updates": [
+    {
+      "table": "reaction_extracts",
+      "from": "Krapcho Dealkoxycarbonylation",
+      "to": "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+      "rows_updated": 1
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Krapcho Dealkoxycarbonylation",
+      "to": "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+      "rows_updated": 4
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Kumada Coupling",
+      "to": "Kumada Cross-Coupling",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Kumada Coupling",
+      "to": "Kumada Cross-Coupling",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Kumada Cross Coupling",
+      "to": "Kumada Cross-Coupling",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Kumada Cross Coupling",
+      "to": "Kumada Cross-Coupling",
+      "rows_updated": 0
+    }
+  ],
+  "backfill_updates": [
+    {
+      "family": "Knoevenagel Condensation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Knorr Pyrrole Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Kornblum Oxidation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+      "extract_rows_touched": 2
+    },
+    {
+      "family": "Kumada Cross-Coupling",
+      "extract_rows_touched": 1
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Knoevenagel Condensation",
+      "status": "inserted",
+      "extract_id": 948,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Knoevenagel Condensation",
+      "status": "inserted",
+      "extract_id": 949,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Knorr Pyrrole Synthesis",
+      "status": "inserted",
+      "extract_id": 950,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Knorr Pyrrole Synthesis",
+      "status": "inserted",
+      "extract_id": 951,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Kornblum Oxidation",
+      "status": "inserted",
+      "extract_id": 952,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Kornblum Oxidation",
+      "status": "inserted",
+      "extract_id": 953,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+      "status": "inserted",
+      "extract_id": 954,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+      "status": "inserted",
+      "extract_id": 955,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Kumada Cross-Coupling",
+      "status": "inserted",
+      "extract_id": 956,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Kumada Cross-Coupling",
+      "status": "inserted",
+      "extract_id": 957,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Knoevenagel Condensation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Knorr Pyrrole Synthesis",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 4,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Kornblum Oxidation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": false
+    },
+    {
+      "family": "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+      "extract_count": 4,
+      "overview_count": 2,
+      "application_count": 2,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Kumada Cross-Coupling",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 4,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    }
+  ]
+}

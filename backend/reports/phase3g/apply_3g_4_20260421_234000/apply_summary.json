@@ -1,0 +1,96 @@
+{
+  "phase": "3g-4",
+  "applied_at": "2026-04-21T23:40:00+09:00",
+  "summary": "Benzoin/Stetter anti-greed guards to resolve post-3g-3 greed migration (Aldol demoted → Benzoin/Stetter captured top1 on Petasis_1141 / Ugi_1346 / Passerini_1126-1127). Penalize isocyanide (→ Ugi/Passerini) and boron+amine|ammonia (→ Petasis) for own-family 'Benzoin and Retro-Benzoin Condensation' and 'Stetter Reaction'. DB-probed all 10 own-family rows clean (iso=0, bor=0, amn=0) so guards only penalize incorrect top1 misses, never real rows.",
+  "files_touched": [
+    "C:\\chemlens\\backend\\app\\evidence_search.py"
+  ],
+  "change_lines": {
+    "benzoin_anti_greed": "elif 'benzoin' in fam and 'condensation' in fam — penalize isocyanide 0.45, boron+(amine|ammonia) 0.55",
+    "stetter_anti_greed": "elif fam == 'stetter reaction' or fam.startswith('stetter reaction') — penalize isocyanide 0.45, boron+(amine|ammonia) 0.55"
+  },
+  "baselines_compared": {
+    "3g_3": {
+      "adm_top1": 0.7568,
+      "adm_top3": 0.861,
+      "confused_pairs": 63,
+      "brd_top1": 0.7568,
+      "brd_top3": 0.861,
+      "brd_disallow_top3": 0,
+      "cov_r1": 0.7278,
+      "cov_r3": 0.8378,
+      "cov_r5": 0.8842
+    },
+    "3g_4": {
+      "adm_top1": 0.7606,
+      "adm_top3": 0.861,
+      "confused_pairs": 62,
+      "brd_top1": 0.7606,
+      "brd_top3": 0.861,
+      "brd_disallow_top3": 0,
+      "cov_r1": 0.7317,
+      "cov_r3": 0.8378,
+      "cov_r5": 0.8842
+    }
+  },
+  "deltas_vs_3g_3": {
+    "adm_top1": "+0.0038 (196->197)",
+    "adm_top3": "0 (223->223)",
+    "confused_pairs": "-1 (63->62)",
+    "brd_top1": "+0.0038 (196->197)",
+    "brd_top3": "0",
+    "brd_disallow_top3": "0",
+    "cov_r1": "+0.0039 (377->379)",
+    "cov_r3": "0 (434->434)",
+    "cov_r5": "0 (458->458)"
+  },
+  "strict_non_regression_status": "PASS — all 9 metrics >= 3g-3 baseline; 4 improved (adm_top1, confused, brd_top1, cov_r1), 5 unchanged, 0 regressed",
+  "gate_criteria_vs_3c_b": {
+    "confused_under_74": "PASS (62 < 74)",
+    "adm_top3_over_838": "PASS (0.861 >= 0.838)",
+    "brd_disallow_top3_zero": "PASS (0)",
+    "cov_r5_over_868": "PASS (0.8842 >= 0.868)"
+  },
+  "gained_cases": {
+    "adm_top1": ["adm_petasis_boronic_acid-mannich_reaction_1141"],
+    "adm_top3": [],
+    "brd_top1": ["broad_petasis_boronic_acid-mannich_reaction_1141"],
+    "brd_top3": [],
+    "cov_r1": [
+      "cov_petasis_boronic_acid-mannich_reaction_1141",
+      "cov_ugi_multicomponent_reaction_1346"
+    ],
+    "cov_r3": [],
+    "cov_r5": []
+  },
+  "lost_cases": {
+    "all_buckets": []
+  },
+  "diagnostic_journey": [
+    "Post-3g-3 per-family audit: 'greed migration' — Aldol anti-greed demoted Aldol but Benzoin/Retro-Benzoin took top1 on Petasis_1141/1146/Ugi_1345/1346 and Stetter took top1 on Passerini_1126/1127.",
+    "DB probe (probe_3g_4_rows.py) confirmed all 6 Benzoin + 4 Stetter rows have iso=0, bor=0, amn=0 — penalties never fire on real rows, only on mis-matched MCR queries.",
+    "Wrote 3g-4 penalty block: Benzoin+Condensation guard + Stetter (exact match or startswith) guard, each penalizing isocyanide 0.45 or boron+(amine|ammonia) 0.55.",
+    "Smoke test (7 checks) all PASS: real Benzoin/Stetter no-op (mult=1.0); Ugi/Passerini/Petasis SMILES misclassified as Benzoin or Stetter now fire penalty ≤0.55.",
+    "Per-case diff count_hits_4.py: Petasis_1141 → Benzoin demoted, Petasis captured top1 across all 3 buckets (adm/brd/cov r@1). Ugi_1346 → cov r@1 gained."
+  ],
+  "roi_analysis": {
+    "3g_1b": "gained 5 cases",
+    "3g_2c": "gained 6 cases",
+    "3g_3": "gained 2 cases (cov r@1, cov r@5)",
+    "3g_4": "gained 4 cases (adm r@1, brd r@1, cov r@1 x2) + confused_pairs -1 — ROI rebounded vs 3g-3",
+    "next_step": "Audit residual confused_pairs via rerun of check_targets.py to see what family NOW captures Petasis_1146/Ugi_1345/Passerini_1126-1127; candidate 3g-5 is likely Mannich/Claisen anti-greed or more specific sub-family guards."
+  },
+  "smoke_tests": [
+    "smoke_3g_4.py — 7 PASS / 0 FAIL covering Benzoin clean no-op, Ugi/Petasis→Benzoin penalty, Stetter clean no-op, Passerini/Petasis→Stetter penalty, Mannich not caught (narrow match)",
+    "probe_3g_4_rows.py — all 10 own-family DB rows verified clean (iso=0, bor=0, amn=0 for Benzoin, Stetter, and adjacent Mannich)"
+  ],
+  "cumulative_deltas_vs_3c_b": {
+    "adm_top1": "0.7104->0.7606 (+0.0502)",
+    "adm_top3": "0.8417->0.8610 (+0.0193)",
+    "confused_pairs": "74->62 (-12)",
+    "cov_r1": "0.7124->0.7317 (+0.0193)",
+    "cov_r3": "0.8243->0.8378 (+0.0135)",
+    "cov_r5": "0.8726->0.8842 (+0.0116)"
+  },
+  "apply_dir": "C:\\chemlens\\backend\\reports\\phase3g\\apply_3g_4_20260421_234000"
+}

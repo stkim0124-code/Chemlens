@@ -1,0 +1,49 @@
+{
+  "phase": "3g-1b",
+  "timestamp": "20260421_170000",
+  "parent_phase": "3e-b-3",
+  "description": "Phase 3g feature SMARTS (tin/zinc/alkyl_halide) + 4 subfamily-guarded elif branches (Stille, Keck Asymmetric Allylation, Reformatsky, Finkelstein). 3g-1a narrowed Keck/Stille guards to exact subfamilies. 3g-1b softened Keck tin penalty (0.22 -> 0.45 when homoallyl-alcohol product signature present) + added homoallyl-alcohol boost to recover 2 coverage cases whose tin only appears in reagents_text.",
+  "baseline_3e_b3": {
+    "admission": {"top1": 0.7375, "top3": 0.8571, "confused_pairs": 68},
+    "broad": {"top3": 0.8571, "disallow_top3_violations": 0},
+    "coverage": {"r@1": 0.7162, "r@3": 0.834, "r@5": 0.8784}
+  },
+  "result_3g_1b": {
+    "admission": {"top1": 0.749, "top3": 0.861, "confused_pairs": 65},
+    "broad": {"top3": 0.861, "disallow_top3_violations": 0},
+    "coverage": {"r@1": 0.7201, "r@3": 0.8359, "r@5": 0.8803}
+  },
+  "deltas_vs_3e_b3": {
+    "admission_top1": "+0.0115",
+    "admission_top3": "+0.0039",
+    "confused_pairs": "-3",
+    "broad_top3": "+0.0039",
+    "disallow_top3": "0 (unchanged)",
+    "coverage_r1": "+0.0039",
+    "coverage_r3": "+0.0019",
+    "coverage_r5": "+0.0019",
+    "strict_non_regression": true
+  },
+  "gate_check_vs_3c_b": {
+    "confused_pairs<74": "65 PASS",
+    "top3>=0.838": "0.861 PASS",
+    "broad_disallow_top3==0": "0 PASS",
+    "cov_r5>=0.868": "0.8803 PASS"
+  },
+  "patched_file": "C:\\chemlens\\backend\\app\\evidence_search.py",
+  "iterations": [
+    {"name": "3g-1", "notes": "initial guards too broad; Keck guard matched 'Keck Radical Allylation', Stille guard matched 'Stille-Kelly Coupling' -> coverage r@5 -0.0077 regression"},
+    {"name": "3g-1a", "notes": "narrowed Keck to 'keck asymmetric allylation' exact; narrowed Stille to explicit subfamily list (Cross-Coupling + Carbonylative; excluded Kelly). Admission +0.0115 top1, but cov r@5 still -0.002 vs 3e-b-3 (2 curated Keck DB extracts with allylstannane only in reagents_text)"},
+    {"name": "3g-1b", "notes": "softened Keck tin penalty 0.22->0.45 when product shows homoallyl-alcohol signature, plus homoallyl+carbonyl boost (1.08). Recovered both lost Keck coverage cases while preserving Roush/Mukaiyama/Sakurai admission gains."}
+  ],
+  "smoke_tests_3g_1a": {
+    "keck-asym-no-tin": "0.22 penalty (fires correctly)",
+    "keck-asym-w-tin":  "1.12 boost (fires correctly)",
+    "keck-radical":     "1.0 (no-op, guard narrowed to exclude)",
+    "keck-macro":       "1.0 (no-op)",
+    "stille-no-tin":    "0.22 penalty (fires correctly)",
+    "stille-w-tin":     "1.0 (no penalty when tin present)",
+    "stille-kelly":     "1.0 (no-op, guard narrowed to exclude)",
+    "stille-carb":      "0.22 penalty (fires correctly for Stille Carbonylative)"
+  }
+}

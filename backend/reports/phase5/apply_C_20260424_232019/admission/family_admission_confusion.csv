@@ -1,0 +1,43 @@
+﻿expected_canonical,predicted_top1,count
+Aldol Reaction,Stetter Reaction,1
+Barton Radical Decarboxylation Reaction,Diels-Alder Cycloaddition,1
+Barton-McCombie Radical Deoxygenation Reaction,Baker-Venkataraman Rearrangement,1
+Biginelli Reaction,Retro-Claisen Reaction,1
+Charette Asymmetric Cyclopropanation,Buchner Method of Ring Expansion (Buchner Reaction),1
+Corey-Kim Oxidation,Ley Oxidation,1
+Criegee Oxidation,Baeyer-Villiger Oxidation/Rearrangement,1
+Dakin-West Reaction,Aldol Reaction,1
+De Mayo Cycloaddition,Robinson Annulation,1
+Dess-Martin Oxidation,Ley Oxidation,1
+Enyne Metathesis,Schwartz Hydrozirconation,1
+Feist-Bénary Furan Synthesis,Retro-Claisen Reaction,1
+Furukawa Modification,Simmons-Smith Cyclopropanation,1
+Jacobsen-Katsuki Epoxidation,Shi Asymmetric Epoxidation,1
+Knoevenagel Condensation,Pinnick Oxidation,1
+Meerwein-Ponndorf-Verley Reduction,Noyori Asymmetric Hydrogenation,1
+Michael Addition Reaction,Malonic Ester Synthesis,1
+Minisci Reaction,Barton Radical Decarboxylation Reaction,1
+Mitsunobu Reaction,Regitz Diazo Transfer,1
+Negishi Cross-Coupling,Kumada Cross-Coupling,1
+Nicholas Reaction,Barton-McCombie Radical Deoxygenation Reaction,1
+Oppenauer Oxidation,Corey-Kim Oxidation,1
+Passerini Multicomponent Reaction,Corey-Bakshi-Shibata Reduction (CBS Reduction),1
+Pfitzner-Moffatt Oxidation,Ley Oxidation,1
+Prilezhaev Reaction,Shi Asymmetric Epoxidation,1
+Prins Reaction,Hetero Diels-Alder Cycloaddition (HDA),1
+Quasi-Favorskii Rearrangement,Cannizzaro Reaction,1
+Reformatsky Reaction,Benzoin and Retro-Benzoin Condensation,1
+Retro-Claisen Reaction,Malonic Ester Synthesis,1
+Schotten-Baumann Reaction,Schmidt Reaction,1
+Seyferth-Gilbert Homologation,Corey-Fuchs Alkyne Synthesis,1
+Sonogashira Cross-Coupling,Friedel-Crafts Alkylation,1
+Staudinger Reaction,Friedel-Crafts Alkylation,1
+Stephen Aldehyde Synthesis (Stephen Reduction),Kornblum Oxidation,1
+Stille Cross-Coupling (Migita-Kosugi-Stille Coupling),Friedel-Crafts Acylation,1
+Stobbe Condensation,Knoevenagel Condensation,1
+Tishchenko Reaction,Stetter Reaction,1
+Ugi Multicomponent Reaction,Aldol Reaction,1
+Weinreb Ketone Synthesis,Snieckus Directed Ortho Metalation,1
+Wittig Reaction,Aza-Wittig Reaction,1
+Wurtz Coupling,Gabriel Synthesis,1
+von Pechmann Reaction,Acetoacetic Ester Synthesis,1

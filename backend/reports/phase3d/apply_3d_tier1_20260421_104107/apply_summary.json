@@ -1,0 +1,90 @@
+{
+  "phase": "3d",
+  "tier": "tier-1",
+  "tag": "phase3d_tier1_v1",
+  "apply_dir": "C:\\chemlens\\backend\\reports\\phase3d\\apply_3d_tier1_20260421_104107",
+  "applied_at_local": "2026-04-21 10:41:07",
+  "bench_started_at_local": "2026-04-21 11:00:03",
+  "bench_finished_at_local": "2026-04-21 11:01:12",
+  "seed_file": "C:\\Users\\tmdxo\\OneDrive\\문서\\Claude\\Projects\\유기합성 앱 개발 프로젝트\\phase3d_depth_sprint\\complete_family_evidence_phase3d_tier1.py",
+  "seed_report": "C:\\chemlens\\backend\\reports\\family_completion_phase3d_tier1\\20260421_103749\\phase3d_tier1_report.json",
+  "seed_count": 15,
+  "seed_families": [
+    "Knoevenagel Condensation",
+    "Hantzsch Dihydropyridine Synthesis",
+    "Feist-Bénary Furan Synthesis",
+    "Kumada Cross-Coupling",
+    "Dess-Martin Oxidation"
+  ],
+  "db_delta": {
+    "queryable_rows_before": 2603,
+    "queryable_rows_after": 2642,
+    "delta": 39
+  },
+  "pair_count_after": {
+    "Knoevenagel Condensation": 6,
+    "Hantzsch Dihydropyridine Synthesis": 6,
+    "Feist-Bénary Furan Synthesis": 6,
+    "Kumada Cross-Coupling": 6,
+    "Dess-Martin Oxidation": 5
+  },
+  "baseline_ref": "C:\\chemlens\\backend\\reports\\phase3c\\apply_3c_b_20260421_094500",
+  "metrics": {
+    "before": {
+      "admission_top1": 185,
+      "admission_top3": 218,
+      "admission_confused_pairs": 74,
+      "broad_top1": 185,
+      "broad_top3": 218,
+      "broad_disallow_top3": 0,
+      "coverage_r1": 0.7027,
+      "coverage_r3": 0.8282,
+      "coverage_r5": 0.8726,
+      "coverage_hit5": 452
+    },
+    "after": {
+      "admission_top1": 185,
+      "admission_top3": 218,
+      "admission_confused_pairs": 74,
+      "broad_top1": 185,
+      "broad_top3": 218,
+      "broad_disallow_top3": 0,
+      "coverage_r1": 0.7027,
+      "coverage_r3": 0.8282,
+      "coverage_r5": 0.8745,
+      "coverage_hit5": 453
+    },
+    "delta": {
+      "admission_top1": 0,
+      "admission_top3": 0,
+      "admission_confused_pairs": 0,
+      "broad_disallow_top3": 0,
+      "coverage_r5": 0.0019,
+      "coverage_hit5": 1
+    }
+  },
+  "gates": {
+    "admission_confused_pairs_lt_74": { "target": "< 74", "actual": 74, "pass": false },
+    "admission_top3_ge_217": { "target": ">= 217", "actual": 218, "pass": true },
+    "broad_disallow_top3_eq_0": { "target": "== 0", "actual": 0, "pass": true },
+    "coverage_r5_ge_0868": { "target": ">= 0.868", "actual": 0.8745, "pass": true }
+  },
+  "gate_verdict": "partial_pass_primary_flat",
+  "interpretation": "Tier-1 ingest landed cleanly (DB +39 queryable rows, all 5 families ≥ pair_count 5) and did not regress anything. Coverage nudged up (+1 hit@5, r@5 +0.0019). But the primary gate — admission_confused_pairs — did not move (74 → 74). The chosen tier-1 families (Knoevenagel, Hantzsch, Feist-Bénary, Kumada, Dess-Martin) appear to not be the families driving confused_pairs. Corpus-side depth is confirmed neutral-to-positive for these families; compression lever requires different family selection or a different mechanism.",
+  "benchmark_runner_environment_fix": "All three runners required `conda run --no-capture-output -n chemlens python ...` (NOT direct python.exe). Direct python.exe exits with Windows fatal exception 0xC06D007F (STATUS_PROCEDURE_NOT_FOUND) at numpy import because conda env's DLL directories are not on PATH. Worker .bat files in this directory have the fix applied.",
+  "files": {
+    "admission_results_json": "admission/family_admission_results.json",
+    "admission_report_md": "admission/family_admission_report.md",
+    "admission_confusion_csv": "admission/family_admission_confusion.csv",
+    "broad_results_json": "broad/broad_results.json",
+    "broad_report_md": "broad/broad_report.md",
+    "coverage_results_json": "coverage/corpus_coverage_results.json",
+    "coverage_report_md": "coverage/corpus_coverage_report.md",
+    "db_backup": "backup/labint.db"
+  },
+  "next_step_options": [
+    "(A) Proceed to tier-2 (families 6-13: Criegee, Curtius, Dakin-West, Davis, Enyne Metathesis, Hunsdiecker, Jacobsen-Katsuki, Charette) with same depth method — may or may not move confused_pairs depending on whether those families drive confusion.",
+    "(B) Pivot: extract the actual families driving the 74 confused_pairs from admission/family_admission_confusion.csv and author seed files targeting THOSE families directly.",
+    "(C) Accept 74 as the current floor and move on to the workbench lane once example realdata zips (v1-v10+) finish data-ification."
+  ]
+}

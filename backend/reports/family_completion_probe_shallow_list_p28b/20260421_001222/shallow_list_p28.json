@@ -1,0 +1,644 @@
+{
+  "generated_at": "2026-04-21T00:12:22.922638",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "shallow_count": 49,
+  "rich_count": 215,
+  "missing_count": 0,
+  "top_shallow": [
+    {
+      "family": "Wacker Oxidation",
+      "raw_family_names_collapsed": [
+        "Wacker Oxidation"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 5,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Wagner-Meerwein Rearrangement",
+      "raw_family_names_collapsed": [
+        "Wagner-Meerwein Rearrangement"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Weinreb Ketone Synthesis",
+      "raw_family_names_collapsed": [
+        "Weinreb Ketone Synthesis"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Wharton Fragmentation",
+      "raw_family_names_collapsed": [
+        "Wharton Fragmentation"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 2,
+      "molecule_rows": 4,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Wharton Olefin Synthesis (Wharton Transposition)",
+      "raw_family_names_collapsed": [
+        "Wharton Olefin Synthesis (Wharton Transposition)"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Williamson Ether Synthesis",
+      "raw_family_names_collapsed": [
+        "Williamson Ether Synthesis"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 1,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Wittig Reaction",
+      "raw_family_names_collapsed": [
+        "Wittig Reaction"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 2,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Wittig Reaction - Schlosser Modification",
+      "raw_family_names_collapsed": [
+        "Wittig Reaction - Schlosser Modification"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 1,
+      "molecule_rows": 6,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Wittig-[1,2]- and [2,3]-Rearrangement",
+      "raw_family_names_collapsed": [
+        "Wittig-[1,2]- and [2,3]-Rearrangement"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Wohl-Ziegler Bromination",
+      "raw_family_names_collapsed": [
+        "Wohl-Ziegler Bromination"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Wolff Rearrangement",
+      "raw_family_names_collapsed": [
+        "Wolff Rearrangement"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Wolff-Kishner Reduction",
+      "raw_family_names_collapsed": [
+        "Wolff-Kishner Reduction"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 2,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Wurtz Coupling",
+      "raw_family_names_collapsed": [
+        "Wurtz Coupling"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Yamaguchi Macrolactonization",
+      "raw_family_names_collapsed": [
+        "Yamaguchi Macrolactonization"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 4,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "von Pechmann Reaction",
+      "raw_family_names_collapsed": [
+        "von Pechmann Reaction"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 1,
+      "molecule_rows": 4,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Barton Radical Decarboxylation",
+      "raw_family_names_collapsed": [
+        "Barton Radical Decarboxylation"
+      ],
+      "extract_count": 2,
+      "overview_count": 0,
+      "application_count": 2,
+      "mechanism_count": 0,
+      "extract_with_reactant": 2,
+      "extract_with_product": 2,
+      "extract_with_both": 2,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 26,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Barbier Coupling Reaction",
+      "raw_family_names_collapsed": [
+        "Barbier Coupling Reaction"
+      ],
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 1,
+      "molecule_rows": 4,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": true,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Baylis-Hillman Reaction",
+      "raw_family_names_collapsed": [
+        "Baylis-Hillman Reaction"
+      ],
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 1,
+      "molecule_rows": 4,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": true,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Birch Reduction",
+      "raw_family_names_collapsed": [
+        "Birch Reduction"
+      ],
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 5,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": true,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Combes Quinoline Synthesis",
+      "raw_family_names_collapsed": [
+        "Combes Quinoline Synthesis"
+      ],
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "mechanism_count": 0,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": [
+        {
+          "id": 828,
+          "raw_family_name": "Combes Quinoline Synthesis",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: condensation of aniline with acetylacetone to give 2,4-dimethylquinoline.",
+          "reactants_text": "aniline | acetylacetone",
+          "products_text": "2,4-dimethylquinoline"
+        },
+        {
+          "id": 829,
+          "raw_family_name": "Combes Quinoline Synthesis",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: condensation of p-anisidine with acetylacetone to give a methoxy-substituted dimethylquinoline.",
+          "reactants_text": "p-anisidine | acetylacetone",
+          "products_text": "6-methoxy-2,4-dimethylquinoline"
+        }
+      ]
+    },
+    {
+      "family": "Corey-Kim Oxidation",
+      "raw_family_names_collapsed": [
+        "Corey-Kim Oxidation"
+      ],
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "mechanism_count": 0,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": [
+        {
+          "id": 843,
+          "raw_family_name": "Corey-Kim Oxidation",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Kim oxidation of benzyl alcohol to benzaldehyde.",
+          "reactants_text": "benzyl alcohol",
+          "products_text": "benzaldehyde"
+        },
+        {
+          "id": 844,
+          "raw_family_name": "Corey-Kim Oxidation",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Kim oxidation of 1-phenylethanol to acetophenone.",
+          "reactants_text": "1-phenylethanol",
+          "products_text": "acetophenone"
+        }
+      ]
+    },
+    {
+      "family": "Darzens Glycidic Ester Condensation",
+      "raw_family_names_collapsed": [
+        "Darzens Glycidic Ester Condensation"
+      ],
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "mechanism_count": 0,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": [
+        {
+          "id": 861,
+          "raw_family_name": "Darzens Glycidic Ester Condensation",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Darzens glycidic ester condensation of benzaldehyde with ethyl chloroacetate to an epoxide ester.",
+          "reactants_text": "benzaldehyde and ethyl chloroacetate",
+          "products_text": "ethyl 3-phenyloxirane-2-carboxylate"
+        },
+        {
+          "id": 862,
+          "raw_family_name": "Darzens Glycidic Ester Condensation",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Darzens glycidic ester condensation of p-anisaldehyde with methyl chloroacetate to an anisyl epoxide ester.",
+          "reactants_text": "p-anisaldehyde and methyl chloroacetate",
+          "products_text": "methyl anisyl glycidate"
+        }
+      ]
+    },
+    {
+      "family": "Friedel-Crafts Acylation",
+      "raw_family_names_collapsed": [
+        "Friedel-Crafts Acylation"
+      ],
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "mechanism_count": 0,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": [
+        {
+          "id": 901,
+          "raw_family_name": "Friedel-Crafts Acylation",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Friedel-Crafts acylation of benzene with acetyl chloride to acetophenone.",
+          "reactants_text": "benzene and acetyl chloride",
+          "products_text": "acetophenone"
+        },
+        {
+          "id": 902,
+          "raw_family_name": "Friedel-Crafts Acylation",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Friedel-Crafts acylation of anisole with propionyl chloride to para-methoxypropiophenone.",
+          "reactants_text": "anisole and propionyl chloride",
+          "products_text": "para-methoxypropiophenone"
+        }
+      ]
+    },
+    {
+      "family": "Friedel-Crafts Alkylation",
+      "raw_family_names_collapsed": [
+        "Friedel-Crafts Alkylation"
+      ],
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "mechanism_count": 0,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": [
+        {
+          "id": 903,
+          "raw_family_name": "Friedel-Crafts Alkylation",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Friedel-Crafts alkylation of benzene with tert-butyl chloride to tert-butylbenzene.",
+          "reactants_text": "benzene and tert-butyl chloride",
+          "products_text": "tert-butylbenzene"
+        },
+        {
+          "id": 904,
+          "raw_family_name": "Friedel-Crafts Alkylation",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Friedel-Crafts alkylation of toluene with isopropyl chloride to cymene.",
+          "reactants_text": "toluene and isopropyl chloride",
+          "products_text": "cymene"
+        }
+      ]
+    },
+    {
+      "family": "Alkyne Metathesis",
+      "raw_family_names_collapsed": [
+        "Alkyne Metathesis"
+      ],
+      "extract_count": 4,
+      "overview_count": 0,
+      "application_count": 3,
+      "mechanism_count": 0,
+      "extract_with_reactant": 0,
+      "extract_with_product": 1,
+      "extract_with_both": 0,
+      "queryable_reactants": 0,
+      "queryable_products": 1,
+      "molecule_rows": 34,
+      "unique_queryable_pair_count": 0,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": true,
+      "recent_curated_extract_summaries": []
+    }
+  ]
+}

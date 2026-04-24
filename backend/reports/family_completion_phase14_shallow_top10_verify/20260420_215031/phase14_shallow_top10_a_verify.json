@@ -1,0 +1,201 @@
+{
+  "db": "app\\labint.db",
+  "batch": "a",
+  "verify": [
+    {
+      "family": "Furukawa Modification",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        928,
+        929
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 928,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Furukawa modification cyclopropanation of styrene to phenylcyclopropane.",
+          "reactants_text": "styrene",
+          "products_text": "phenylcyclopropane"
+        },
+        {
+          "id": 929,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Furukawa modification cyclopropanation of 4-methoxystyrene to 1-cyclopropyl-4-methoxybenzene.",
+          "reactants_text": "4-methoxystyrene",
+          "products_text": "1-cyclopropyl-4-methoxybenzene"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Gattermann and Gattermann-Koch Formylation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        930,
+        931
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 930,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: para-formylation of anisole to 4-anisaldehyde under Gattermann/Gattermann-Koch conditions.",
+          "reactants_text": "anisole",
+          "products_text": "4-anisaldehyde"
+        },
+        {
+          "id": 931,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: para-formylation of chlorobenzene to 4-chlorobenzaldehyde under Gattermann/Gattermann-Koch conditions.",
+          "reactants_text": "chlorobenzene",
+          "products_text": "4-chlorobenzaldehyde"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Hunsdiecker Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        932,
+        933
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 932,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Hunsdiecker decarboxylative bromination of benzoic acid to bromobenzene.",
+          "reactants_text": "benzoic acid",
+          "products_text": "bromobenzene"
+        },
+        {
+          "id": 933,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Hunsdiecker decarboxylative bromination of 4-methylbenzoic acid to 4-bromotoluene.",
+          "reactants_text": "4-methylbenzoic acid",
+          "products_text": "4-bromotoluene"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Jacobsen-Katsuki Epoxidation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        934,
+        935
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 934,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Jacobsen-Katsuki epoxidation of styrene to styrene oxide.",
+          "reactants_text": "styrene",
+          "products_text": "styrene oxide"
+        },
+        {
+          "id": 935,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Jacobsen-Katsuki epoxidation of 4-methoxystyrene to 4-methoxystyrene oxide.",
+          "reactants_text": "4-methoxystyrene",
+          "products_text": "4-methoxystyrene oxide"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Jones Oxidation",
+      "extract_count": 4,
+      "overview_count": 2,
+      "application_count": 2,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        936,
+        937
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 936,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Jones oxidation of cyclohexanol to cyclohexanone.",
+          "reactants_text": "cyclohexanol",
+          "products_text": "cyclohexanone"
+        },
+        {
+          "id": 937,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Jones oxidation of benzyl alcohol to benzoic acid.",
+          "reactants_text": "benzyl alcohol",
+          "products_text": "benzoic acid"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    }
+  ]
+}

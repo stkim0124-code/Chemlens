@@ -1,0 +1,120 @@
+{
+  "phase": "phase4_gateC_apply_redo",
+  "task_id": 126,
+  "timestamp": "2026-04-24T21:06:00",
+  "snapshot": "reports/phase4/gateC/apply_20260424_210600_redo",
+  "baseline": "reports/phase4/gateB/iter2_20260424_203319",
+  "predecessor_run": "reports/phase4/gateC/apply_20260424_204941 (INVALIDATED — stale engine, see root_cause)",
+  "status": "PASS",
+  "gate_verdict": {
+    "pass": true,
+    "reason": "admission top1 gained +1 case (+0.0131 rate); coverage r@5 non-regressive (+0.0006). Zero per-case PASS->FAIL flips on any layer. All deltas explained by alias merge accounting.",
+    "hard_rollback_thresholds": {
+      "adm_top1": {"threshold": 0.745, "observed": 0.7930, "status": "PASS", "margin": 0.0480},
+      "cov_r5":   {"threshold": 0.875, "observed": 0.8867, "status": "PASS", "margin": 0.0117}
+    }
+  },
+  "applied_change": {
+    "file": "final_state_verifier.py",
+    "patch": "Added 3 entries to MANUAL_ALIAS_OVERRIDES dict",
+    "aliases": {
+      "Keck Macrolactonization": "Corey-Nicolaou Macrolactonization",
+      "Yamaguchi Macrolactonization": "Corey-Nicolaou Macrolactonization",
+      "Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation": "Ullmann Reaction / Coupling / Biaryl Synthesis"
+    },
+    "rationale": "Greedy-family audit (task #118) identified 3 macrolactonization variants and 2 Ullmann variants as mergeable aliases. Used existing canonical labels (CN Macrolactonization, Ullmann generic) to avoid DB schema change.",
+    "backup_pre_edit": "final_state_verifier.py.bak_gateC_pre_20260424_204845"
+  },
+  "headline_metrics": {
+    "admission": {
+      "iter2":  {"total": 259, "top1": 202, "top1_acc": 0.7799, "top3": 227, "top3_acc": 0.8764, "confused_pairs": 57},
+      "gateC":  {"total": 256, "top1": 203, "top1_acc": 0.7930, "top3": 224, "top3_acc": 0.8750, "confused_pairs": 53},
+      "delta":  {"top1_count": 1, "top1_acc": 0.0131, "top3_count": -3, "top3_acc": -0.0014, "confused_pairs": -4}
+    },
+    "broad": {
+      "iter2":  {"total": 259, "top1_acc": 0.7799, "top3_acc": 0.8764},
+      "gateC":  {"total": 256, "top1_acc": 0.7930, "top3_acc": 0.8750}
+    },
+    "coverage": {
+      "iter2":  {"total": 518, "r@1": 0.7432, "r@3": 0.8436, "r@5": 0.8861, "h@1": 385, "h@3": 437, "h@5": 459, "no_confident_hit": 4},
+      "gateC":  {"total": 512, "r@1": 0.7539, "r@3": 0.8438, "r@5": 0.8867, "h@1": 386, "h@3": 432, "h@5": 454, "no_confident_hit": 4},
+      "delta":  {"r@1": 0.0107, "r@3": 0.0002, "r@5": 0.0006, "h@1": 1, "h@3": -5, "h@5": -5}
+    }
+  },
+  "per_case_flips_vs_iter2": {
+    "admission_top1_P2F": 0,
+    "admission_top1_F2P": 0,
+    "admission_top3_P2F": 0,
+    "admission_top3_F2P": 0,
+    "coverage_h1_P2F": 0,
+    "coverage_h1_F2P": 0,
+    "coverage_h3_P2F": 0,
+    "coverage_h3_F2P": 0,
+    "coverage_h5_P2F": 0,
+    "coverage_h5_F2P": 0
+  },
+  "merge_accounting": {
+    "admission": {
+      "dropped_case_ids": [
+        "adm_keck_macrolactonization_1015",
+        "adm_ullmann_biaryl_ether_and_biaryl_amine_synthesis_/_condensation_1348",
+        "adm_ullmann_reaction_/_coupling_/_biaryl_synthesis_1351",
+        "adm_yamaguchi_macrolactonization_1399"
+      ],
+      "added_case_ids": [
+        "adm_ullmann_reaction_/_coupling_/_biaryl_synthesis_1348 (top1=PASS, top3=PASS)"
+      ],
+      "net_case_change": -3,
+      "note": "All 4 dropped had top1=False, top3=True under their original labels. After merge, 1 consolidated case (ullmann 1348) passes top1 and top3 under the canonical. top1 nets +1, top3 nets -3 (4 previously-counted top3 passes consolidate into 1)."
+    },
+    "coverage": {
+      "dropped_case_ids": [
+        "cov_keck_macrolactonization_1015", "cov_keck_macrolactonization_1016",
+        "cov_ullmann_biaryl_ether_and_biaryl_amine_synthesis_/_condensation_1348",
+        "cov_ullmann_biaryl_ether_and_biaryl_amine_synthesis_/_condensation_1349",
+        "cov_ullmann_reaction_/_coupling_/_biaryl_synthesis_1351",
+        "cov_ullmann_reaction_/_coupling_/_biaryl_synthesis_1352",
+        "cov_yamaguchi_macrolactonization_1399",
+        "cov_yamaguchi_macrolactonization_1400"
+      ],
+      "added_case_ids": [
+        "cov_ullmann_reaction_/_coupling_/_biaryl_synthesis_1348 (h1=T, h5=T)",
+        "cov_ullmann_reaction_/_coupling_/_biaryl_synthesis_1349 (h1=T, h5=T)"
+      ],
+      "net_case_change": -6,
+      "note": "h5 went from 459 (518 denom) to 454 (512 denom): -5 raw hits = 7 dropped h5-hits - 2 added h5-hits. Rate +0.0006."
+    }
+  },
+  "root_cause_of_first_run_failure": {
+    "summary": "First Gate C run at apply_20260424_204941 showed Sandmeyer 1237 and Schmidt 1240 top1 regressions NOT related to the alias merges. Root cause: evidence_search.py was silently reverted from 124010 bytes (post-iterate1/iter2 patched state) to 122083 bytes (pre-iterate1 Gate B first-apply) at some point between iter2 (20:37) and Gate C apply (20:49). The revert removed the iterate1 Sandmeyer/Schmidt guard softening + iter2 Simmons-Smith guard. The Gate C alias changes themselves were correct; the stale engine masked them.",
+    "diagnostic_commands": [
+      "conda run -n chemlens python scripts\\_probe_sandmeyer_now.py  # showed Sandmeyer 2.472 top1=Balz-Schiemann under stale code",
+      "conda run -n chemlens python scripts\\_diff_es_vs_iter2pre.py  # showed 67-line diff: missing Sandmeyer/Schmidt softening + Simmons-Smith guard"
+    ],
+    "fix": "Restored from app/evidence_search.py.bak_gateB_iter2_pre_20260424_203111 (the backup made BEFORE any theoretical iter2 modifications, but iter2 ran without modifying it — identical to iter1-patched state). Re-ran all 3 benchmark layers.",
+    "safety_backups_added": [
+      "app/evidence_search.py.bak_gateC_preretrieve_20260424_210538 (122083 stale state, saved before restore)",
+      "app/evidence_search.py.KNOWN_GOOD_post_gateC_124010_20260424_210600 (the validated state)"
+    ]
+  },
+  "category_A_verify": {
+    "adm_sandmeyer_reaction_1237": {"top1": "Sandmeyer Reaction", "pass": true, "score_top1": 5.386},
+    "adm_schmidt_reaction_1240":  {"top1": "Schmidt Reaction",  "pass": true, "score_top1": 3.543}
+  },
+  "artifacts": [
+    "admission/family_admission_results.json",
+    "admission/family_admission_results.csv",
+    "admission/family_admission_report.md",
+    "admission/family_admission_confusion.csv",
+    "broad/broad_results.json",
+    "broad/broad_results.csv",
+    "broad/broad_report.md",
+    "coverage/corpus_coverage_results.json",
+    "coverage/corpus_coverage_results.csv",
+    "coverage/corpus_coverage_report.md",
+    "benchmark_backup/family_admission_benchmark.post.json",
+    "benchmark_backup/named_reaction_benchmark_broad.post.json",
+    "benchmark_backup/corpus_coverage_benchmark.post.json",
+    "_gateC_redo_diff.txt"
+  ]
+}

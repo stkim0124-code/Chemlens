@@ -1,0 +1,323 @@
+{
+  "command": "preview",
+  "started_at": "2026-04-21T06:05:54",
+  "backend_root": "C:\\chemlens\\backend",
+  "report_dir": "C:\\chemlens\\backend\\reports\\phase3a_bis_v2\\preview_20260421_060554",
+  "stamp": "20260421_060554",
+  "stages": [
+    {
+      "stage": "validate_entries",
+      "ok": true,
+      "details": [
+        {
+          "from": "Baeyer-Villiger Oxidation/rearrangement",
+          "to": "Baeyer-Villiger Oxidation/Rearrangement",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Barton Radical Decarboxylation",
+          "to": "Barton Radical Decarboxylation Reaction",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Simmons-Smith Reaction",
+          "to": "Simmons-Smith Cyclopropanation",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Suzuki Cross-Coupling",
+          "to": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+          "from_in_db": true,
+          "to_in_db": true
+        }
+      ]
+    },
+    {
+      "stage": "snapshot",
+      "saved": [
+        "final_state_verifier.py",
+        "named_reaction_benchmark_broad.json",
+        "family_admission_benchmark.json",
+        "corpus_coverage_benchmark.json"
+      ]
+    },
+    {
+      "stage": "patch",
+      "ok": true,
+      "applied": [
+        {
+          "from": "Baeyer-Villiger Oxidation/rearrangement",
+          "to": "Baeyer-Villiger Oxidation/Rearrangement",
+          "note": "id=13 -> id=291 (case variant on /rearrangement tail)"
+        },
+        {
+          "from": "Barton Radical Decarboxylation",
+          "to": "Barton Radical Decarboxylation Reaction",
+          "note": "id=44 -> id=43 (missing Reaction suffix)"
+        },
+        {
+          "from": "Simmons-Smith Reaction",
+          "to": "Simmons-Smith Cyclopropanation",
+          "note": "id=151 -> id=199 (generic -> mechanism-specific)"
+        },
+        {
+          "from": "Suzuki Cross-Coupling",
+          "to": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+          "note": "id=148 -> id=217 (full DB canonical with trailing Cross-Coupling)"
+        }
+      ],
+      "skipped": []
+    },
+    {
+      "stage": "rebuild_benchmarks",
+      "rc": 0
+    },
+    {
+      "stage": "diff",
+      "result": {
+        "named_reaction_benchmark_broad.json": {
+          "total_before": 264,
+          "total_after": 261,
+          "target_changes": {
+            "Oxidation/rearrangement": {
+              "expected_before": 0,
+              "expected_after": 0,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Barton Radical Decarboxylation": {
+              "expected_before": 1,
+              "expected_after": 0,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Simmons-Smith Reaction": {
+              "expected_before": 1,
+              "expected_after": 0,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Suzuki Cross-Coupling": {
+              "expected_before": 1,
+              "expected_after": 0,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Barton-McCombie": {
+              "expected_before": 0,
+              "expected_after": 0,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Horner-Wadsworth-Emmons": {
+              "expected_before": 0,
+              "expected_after": 0,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Baeyer-Villiger Oxidation/Rearrangement": {
+              "expected_before": 1,
+              "expected_after": 1,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Barton Radical Decarboxylation Reaction": {
+              "expected_before": 1,
+              "expected_after": 1,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Simmons-Smith Cyclopropanation": {
+              "expected_before": 1,
+              "expected_after": 1,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Horner-Wadsworth-Emmons Olefination": {
+              "expected_before": 1,
+              "expected_after": 1,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            }
+          }
+        },
+        "family_admission_benchmark.json": {
+          "total_before": 264,
+          "total_after": 261,
+          "target_changes": {
+            "Oxidation/rearrangement": {
+              "expected_before": 0,
+              "expected_after": 0,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Barton Radical Decarboxylation": {
+              "expected_before": 1,
+              "expected_after": 0,
+              "in_accept_before": 1,
+              "in_accept_after": 1,
+              "in_accept_delta": 0
+            },
+            "Simmons-Smith Reaction": {
+              "expected_before": 1,
+              "expected_after": 0,
+              "in_accept_before": 1,
+              "in_accept_after": 1,
+              "in_accept_delta": 0
+            },
+            "Suzuki Cross-Coupling": {
+              "expected_before": 1,
+              "expected_after": 0,
+              "in_accept_before": 1,
+              "in_accept_after": 1,
+              "in_accept_delta": 0
+            },
+            "Barton-McCombie": {
+              "expected_before": 0,
+              "expected_after": 0,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Horner-Wadsworth-Emmons": {
+              "expected_before": 0,
+              "expected_after": 0,
+              "in_accept_before": 1,
+              "in_accept_after": 1,
+              "in_accept_delta": 0
+            },
+            "Baeyer-Villiger Oxidation/Rearrangement": {
+              "expected_before": 1,
+              "expected_after": 1,
+              "in_accept_before": 1,
+              "in_accept_after": 1,
+              "in_accept_delta": 0
+            },
+            "Barton Radical Decarboxylation Reaction": {
+              "expected_before": 1,
+              "expected_after": 1,
+              "in_accept_before": 1,
+              "in_accept_after": 1,
+              "in_accept_delta": 0
+            },
+            "Simmons-Smith Cyclopropanation": {
+              "expected_before": 1,
+              "expected_after": 1,
+              "in_accept_before": 1,
+              "in_accept_after": 1,
+              "in_accept_delta": 0
+            },
+            "Horner-Wadsworth-Emmons Olefination": {
+              "expected_before": 1,
+              "expected_after": 1,
+              "in_accept_before": 1,
+              "in_accept_after": 1,
+              "in_accept_delta": 0
+            }
+          }
+        },
+        "corpus_coverage_benchmark.json": {
+          "total_before": 528,
+          "total_after": 522,
+          "target_changes": {
+            "Oxidation/rearrangement": {
+              "expected_before": 0,
+              "expected_after": 0,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Barton Radical Decarboxylation": {
+              "expected_before": 2,
+              "expected_after": 0,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Simmons-Smith Reaction": {
+              "expected_before": 2,
+              "expected_after": 0,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Suzuki Cross-Coupling": {
+              "expected_before": 2,
+              "expected_after": 0,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Barton-McCombie": {
+              "expected_before": 0,
+              "expected_after": 0,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Horner-Wadsworth-Emmons": {
+              "expected_before": 0,
+              "expected_after": 0,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Baeyer-Villiger Oxidation/Rearrangement": {
+              "expected_before": 2,
+              "expected_after": 2,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Barton Radical Decarboxylation Reaction": {
+              "expected_before": 2,
+              "expected_after": 2,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Simmons-Smith Cyclopropanation": {
+              "expected_before": 2,
+              "expected_after": 2,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            },
+            "Horner-Wadsworth-Emmons Olefination": {
+              "expected_before": 2,
+              "expected_after": 2,
+              "in_accept_before": 0,
+              "in_accept_after": 0,
+              "in_accept_delta": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "stage": "restore",
+      "restored": [
+        "final_state_verifier.py",
+        "benchmark/named_reaction_benchmark_broad.json",
+        "benchmark/family_admission_benchmark.json",
+        "benchmark/corpus_coverage_benchmark.json"
+      ]
+    }
+  ],
+  "overall_ok": true,
+  "finished_at": "2026-04-21T06:05:55"
+}

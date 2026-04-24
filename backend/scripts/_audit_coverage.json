@@ -1,0 +1,1764 @@
+{
+  "summary": {
+    "pdf_total_entries": 250,
+    "tier_A_deep_queryable": 248,
+    "tier_B_surfaced_candidate_only": 0,
+    "tier_C_alias_only_mapping": 0,
+    "tier_D_missing": 2,
+    "coverage_strict_pct": 99.2,
+    "coverage_broad_pct": 99.2,
+    "coverage_including_aliases_pct": 99.2
+  },
+  "results": [
+    {
+      "pdf_name": "Acetoacetic Ester Synthesis",
+      "pdf_page": 54,
+      "chemlens_canonical": "Acetoacetic Ester Synthesis",
+      "match_key": "acetoacetic ester synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Acyloin Condensation",
+      "pdf_page": 56,
+      "chemlens_canonical": "Acyloin Condensation",
+      "match_key": "acyloin condensation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Alder(ene) Reaction (Hydro-Allyl Addition)",
+      "pdf_page": 58,
+      "chemlens_canonical": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "match_key": "alder reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Aldol Reaction",
+      "pdf_page": 60,
+      "chemlens_canonical": "Aldol Reaction",
+      "match_key": "aldol reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Alkene (Olefin) Metathesis",
+      "pdf_page": 62,
+      "chemlens_canonical": "Alkene (Olefin) Metathesis",
+      "match_key": "alkene metathesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Alkyne Metathesis",
+      "pdf_page": 64,
+      "chemlens_canonical": "Alkyne Metathesis",
+      "match_key": "alkyne metathesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Amadori Reaction / Rearrangement",
+      "pdf_page": 66,
+      "chemlens_canonical": "Amadori Reaction / Rearrangement",
+      "match_key": "amadori reaction rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "pdf_page": 68,
+      "chemlens_canonical": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "match_key": "arbuzov reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Arndt-Eistert Homologation / Synthesis",
+      "pdf_page": 70,
+      "chemlens_canonical": "Arndt-Eistert Homologation / Synthesis",
+      "match_key": "arndt eistert homologation synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "pdf_page": 72,
+      "chemlens_canonical": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "match_key": "aza claisen rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Aza-Cope Rearrangement",
+      "pdf_page": 74,
+      "chemlens_canonical": "Aza-Cope Rearrangement",
+      "match_key": "aza cope rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Aza-Wittig Reaction",
+      "pdf_page": 76,
+      "chemlens_canonical": "Aza-Wittig Reaction",
+      "match_key": "aza wittig reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Aza-[2,3]-Wittig Rearrangement",
+      "pdf_page": 78,
+      "chemlens_canonical": "Aza-[2,3]-Wittig Rearrangement",
+      "match_key": "aza 2 3 wittig rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Baeyer-Villiger Oxidation/Rearrangement",
+      "pdf_page": 80,
+      "chemlens_canonical": "Baeyer-Villiger Oxidation/Rearrangement",
+      "match_key": "baeyer villiger oxidation rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Baker-Venkataraman Rearrangement",
+      "pdf_page": 82,
+      "chemlens_canonical": "Baker-Venkataraman Rearrangement",
+      "match_key": "baker venkataraman rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Baldwin’s Rules / Guidelines for Ring-Closing Reactions",
+      "pdf_page": 84,
+      "chemlens_canonical": "Baldwin's Rules / Guidelines for Ring-Closing Reactions",
+      "match_key": "baldwin s rules guidelines for ring closing reactions",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Balz-Schiemann Reaction(Schiemann Reaction)",
+      "pdf_page": 86,
+      "chemlens_canonical": "Balz-Schiemann Reaction (Schiemann Reaction)",
+      "match_key": "balz schiemann reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Bamford-Stevens-Shapiro Olefination",
+      "pdf_page": 88,
+      "chemlens_canonical": "Bamford-Stevens-Shapiro Olefination",
+      "match_key": "bamford stevens shapiro olefination",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Barbier Coupling Reaction",
+      "pdf_page": 90,
+      "chemlens_canonical": "Barbier Coupling Reaction",
+      "match_key": "barbier coupling reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Bartoli Indole Synthesis",
+      "pdf_page": 92,
+      "chemlens_canonical": "Bartoli Indole Synthesis",
+      "match_key": "bartoli indole synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Barton Nitrite Ester Reaction",
+      "pdf_page": 94,
+      "chemlens_canonical": "Barton Nitrite Ester Reaction",
+      "match_key": "barton nitrite ester reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Barton Radical Decarboxylation Reaction",
+      "pdf_page": 96,
+      "chemlens_canonical": "Barton Radical Decarboxylation Reaction",
+      "match_key": "barton radical decarboxylation reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Barton-Mccombie Radical Deoxygenation Reaction",
+      "pdf_page": 98,
+      "chemlens_canonical": "Barton-McCombie Radical Deoxygenation Reaction",
+      "match_key": "barton mccombie radical deoxygenation reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Baylis-Hillman Reaction",
+      "pdf_page": 100,
+      "chemlens_canonical": "Baylis-Hillman Reaction",
+      "match_key": "baylis hillman reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Beckmann Rearrangement",
+      "pdf_page": 102,
+      "chemlens_canonical": "Beckmann Rearrangement",
+      "match_key": "beckmann rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Benzilic Acid Rearrangement",
+      "pdf_page": 104,
+      "chemlens_canonical": "Benzilic Acid Rearrangement",
+      "match_key": "benzilic acid rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Benzoin and Retro-Benzoin Condensation",
+      "pdf_page": 106,
+      "chemlens_canonical": "Benzoin and Retro-Benzoin Condensation",
+      "match_key": "benzoin and retro benzoin condensation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Bergman Cycloaromatization Reaction",
+      "pdf_page": 108,
+      "chemlens_canonical": "Bergman Cycloaromatization Reaction",
+      "match_key": "bergman cycloaromatization reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Biginelli Reaction",
+      "pdf_page": 110,
+      "chemlens_canonical": "Biginelli Reaction",
+      "match_key": "biginelli reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Birch Reduction",
+      "pdf_page": 112,
+      "chemlens_canonical": "Birch Reduction",
+      "match_key": "birch reduction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Bischler-Napieralski Isoqinoline Synthesis",
+      "pdf_page": 114,
+      "chemlens_canonical": null,
+      "match_key": null,
+      "tier": "D_missing"
+    },
+    {
+      "pdf_name": "Brook Rearrangement",
+      "pdf_page": 116,
+      "chemlens_canonical": "Brook Rearrangement",
+      "match_key": "brook rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Brown Hydroboration Reaction",
+      "pdf_page": 118,
+      "chemlens_canonical": "Brown Hydroboration Reaction",
+      "match_key": "brown hydroboration reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Buchner Method of Ring Expansion",
+      "pdf_page": 120,
+      "chemlens_canonical": "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "match_key": "buchner method of ring expansion",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Buchwald-Hartwig Cross-Coupling",
+      "pdf_page": 122,
+      "chemlens_canonical": "Buchwald-Hartwig Cross-Coupling",
+      "match_key": "buchwald hartwig cross coupling",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Burgess Dehydration Reaction",
+      "pdf_page": 124,
+      "chemlens_canonical": "Burgess Dehydration Reaction",
+      "match_key": "burgess dehydration reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Cannizzaro Reaction",
+      "pdf_page": 126,
+      "chemlens_canonical": "Cannizzaro Reaction",
+      "match_key": "cannizzaro reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Carroll Rearrangement(Kimel-Cope Rearrangement)",
+      "pdf_page": 128,
+      "chemlens_canonical": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "match_key": "carroll rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Castro-Stephens Coupling",
+      "pdf_page": 130,
+      "chemlens_canonical": "Castro-Stephens Coupling",
+      "match_key": "castro stephens coupling",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Chichibabin Amination Reaction",
+      "pdf_page": 132,
+      "chemlens_canonical": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "match_key": "chichibabin amination reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Chugaev Elimination Reaction(Xanthate Ester Pyrolysis)",
+      "pdf_page": 134,
+      "chemlens_canonical": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "match_key": "chugaev elimination reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Ciamician-Dennstedt Rearrangement",
+      "pdf_page": 136,
+      "chemlens_canonical": "Ciamician-Dennstedt Rearrangement",
+      "match_key": "ciamician dennstedt rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Claisen Condensation / Claisen Reaction",
+      "pdf_page": 138,
+      "chemlens_canonical": "Claisen Condensation / Claisen Reaction",
+      "match_key": "claisen condensation claisen reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Claisen Rearrangement",
+      "pdf_page": 140,
+      "chemlens_canonical": "Claisen Rearrangement",
+      "match_key": "claisen rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Claisen-Ireland Rearrangement",
+      "pdf_page": 142,
+      "chemlens_canonical": "Claisen-Ireland Rearrangement",
+      "match_key": "claisen ireland rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Clemmensen Reduction",
+      "pdf_page": 144,
+      "chemlens_canonical": "Clemmensen Reduction",
+      "match_key": "clemmensen reduction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Combes Quinoline Synthesis",
+      "pdf_page": 146,
+      "chemlens_canonical": "Combes Quinoline Synthesis",
+      "match_key": "combes quinoline synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Cope Elimination / Cope Reaction",
+      "pdf_page": 148,
+      "chemlens_canonical": "Cope Elimination / Cope Reaction",
+      "match_key": "cope elimination cope reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Cope Rearrangement",
+      "pdf_page": 150,
+      "chemlens_canonical": "Cope Rearrangement",
+      "match_key": "cope rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Corey-Bakshi-Shibata Reduction (Cbs Reduction)",
+      "pdf_page": 152,
+      "chemlens_canonical": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "match_key": "corey bakshi shibata reduction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "pdf_page": 154,
+      "chemlens_canonical": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "match_key": "corey chaykovsky epoxidation and cyclopropanation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Corey-Fuchs Alkyne Synthesis",
+      "pdf_page": 156,
+      "chemlens_canonical": "Corey-Fuchs Alkyne Synthesis",
+      "match_key": "corey fuchs alkyne synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Corey-Kim Oxidation",
+      "pdf_page": 158,
+      "chemlens_canonical": "Corey-Kim Oxidation",
+      "match_key": "corey kim oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Corey-Nicolaou Macrolactonization",
+      "pdf_page": 160,
+      "chemlens_canonical": "Corey-Nicolaou Macrolactonization",
+      "match_key": "corey nicolaou macrolactonization",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Corey-Winter Olefination",
+      "pdf_page": 162,
+      "chemlens_canonical": "Corey-Winter Olefination",
+      "match_key": "corey winter olefination",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Cornforth Rearrangement",
+      "pdf_page": 164,
+      "chemlens_canonical": "Cornforth Rearrangement",
+      "match_key": "cornforth rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Criegee Oxidation",
+      "pdf_page": 166,
+      "chemlens_canonical": "Criegee Oxidation",
+      "match_key": "criegee oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Curtius Rearrangement",
+      "pdf_page": 168,
+      "chemlens_canonical": "Curtius Rearrangement",
+      "match_key": "curtius rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Dakin Oxidation",
+      "pdf_page": 170,
+      "chemlens_canonical": "Dakin Oxidation",
+      "match_key": "dakin oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Dakin-West Reaction",
+      "pdf_page": 172,
+      "chemlens_canonical": "Dakin-West Reaction",
+      "match_key": "dakin west reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Danheiser Benzannulation",
+      "pdf_page": 174,
+      "chemlens_canonical": "Danheiser Benzannulation",
+      "match_key": "danheiser benzannulation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Danheiser Cyclopentene Annulation",
+      "pdf_page": 176,
+      "chemlens_canonical": "Danheiser Cyclopentene Annulation",
+      "match_key": "danheiser cyclopentene annulation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Danishefsky’s Diene Cycloaddition",
+      "pdf_page": 178,
+      "chemlens_canonical": "Danishefsky's Diene Cycloaddition",
+      "match_key": "danishefsky s diene cycloaddition",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Darzens Glycidic Ester Condensation",
+      "pdf_page": 180,
+      "chemlens_canonical": "Darzens Glycidic Ester Condensation",
+      "match_key": "darzens glycidic ester condensation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Davis’ Oxaziridine Oxidations",
+      "pdf_page": 182,
+      "chemlens_canonical": "Davis' Oxaziridine Oxidations",
+      "match_key": "davis oxaziridine oxidations",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "De Mayo Cycloaddition (Enone-Alkene [2+2] Photocycloaddition)",
+      "pdf_page": 184,
+      "chemlens_canonical": "De Mayo Cycloaddition",
+      "match_key": "de mayo cycloaddition",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Demjanov and Tiffeneau-Demjanov Rearrangement",
+      "pdf_page": 186,
+      "chemlens_canonical": "Demjanov Rearrangement and Tiffeneau-Demjanov Rearrangement",
+      "match_key": "demjanov and tiffeneau demjanov rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Dess-Martin Oxidation",
+      "pdf_page": 188,
+      "chemlens_canonical": "Dess-Martin Oxidation",
+      "match_key": "dess martin oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Dieckmann Condensation",
+      "pdf_page": 190,
+      "chemlens_canonical": "Dieckmann Condensation",
+      "match_key": "dieckmann condensation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Diels-Alder Cycloaddition",
+      "pdf_page": 192,
+      "chemlens_canonical": "Diels-Alder Cycloaddition",
+      "match_key": "diels alder cycloaddition",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Dienone-Phenol Rearrangement",
+      "pdf_page": 194,
+      "chemlens_canonical": "Dienone-Phenol Rearrangement",
+      "match_key": "dienone phenol rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Dimroth Rearrangement",
+      "pdf_page": 196,
+      "chemlens_canonical": "Dimroth Rearrangement",
+      "match_key": "dimroth rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Doering-Laflamme Allene Synthesis",
+      "pdf_page": 198,
+      "chemlens_canonical": "Doering-Laflamme Allene Synthesis",
+      "match_key": "doering laflamme allene synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "DÖTz Benzannulation Reaction",
+      "pdf_page": 200,
+      "chemlens_canonical": "Dötz Benzannulation Reaction",
+      "match_key": "d tz benzannulation reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Enders Samp/Ramp Hydrazone Alkylation",
+      "pdf_page": 202,
+      "chemlens_canonical": "Enders SAMP/RAMP Hydrazone Alkylation",
+      "match_key": "enders samp ramp hydrazone alkylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Enyne Metathesis",
+      "pdf_page": 204,
+      "chemlens_canonical": "Enyne Metathesis",
+      "match_key": "enyne metathesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Eschenmoser Methenylation",
+      "pdf_page": 206,
+      "chemlens_canonical": "Eschenmoser Methenylation",
+      "match_key": "eschenmoser methenylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Eschenmoser-Claisen Rearrangement",
+      "pdf_page": 208,
+      "chemlens_canonical": "Eschenmoser-Claisen Rearrangement",
+      "match_key": "eschenmoser claisen rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Eschenmoser-Tanabe Fragmentation",
+      "pdf_page": 210,
+      "chemlens_canonical": "Eschenmoser-Tanabe Fragmentation",
+      "match_key": "eschenmoser tanabe fragmentation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Eschweiler-Clarke Methylation(Reductive Alkylation)",
+      "pdf_page": 212,
+      "chemlens_canonical": "Eschweiler-Clarke Methylation",
+      "match_key": "eschweiler clarke methylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Evans Aldol Reaction",
+      "pdf_page": 214,
+      "chemlens_canonical": "Evans Aldol Reaction",
+      "match_key": "evans aldol reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Favorskii and Homo-Favorskii Rearrangement",
+      "pdf_page": 216,
+      "chemlens_canonical": "Favorskii Rearrangement",
+      "match_key": "favorskii and homo favorskii rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Feist-BÉNary Furan Synthesis",
+      "pdf_page": 218,
+      "chemlens_canonical": "Feist-Bénary Furan Synthesis",
+      "match_key": "feist b nary furan synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Ferrier Reaction / Rearrangement",
+      "pdf_page": 220,
+      "chemlens_canonical": "Ferrier Reaction",
+      "match_key": "ferrier reaction rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Finkelstein Reaction",
+      "pdf_page": 222,
+      "chemlens_canonical": "Finkelstein Reaction",
+      "match_key": "finkelstein reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Fischer Indole Synthesis",
+      "pdf_page": 224,
+      "chemlens_canonical": "Fischer Indole Synthesis",
+      "match_key": "fischer indole synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Fleming-Tamao Oxidation",
+      "pdf_page": 226,
+      "chemlens_canonical": "Fleming-Tamao Oxidation",
+      "match_key": "fleming tamao oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Friedel-Crafts Acylation",
+      "pdf_page": 228,
+      "chemlens_canonical": "Friedel-Crafts Acylation",
+      "match_key": "friedel crafts acylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Friedel-Crafts Alkylation",
+      "pdf_page": 230,
+      "chemlens_canonical": "Friedel-Crafts Alkylation",
+      "match_key": "friedel crafts alkylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+      "pdf_page": 232,
+      "chemlens_canonical": "Fries Rearrangement",
+      "match_key": "fries photo fries and anionic ortho fries rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Gabriel Synthesis",
+      "pdf_page": 234,
+      "chemlens_canonical": "Gabriel Synthesis",
+      "match_key": "gabriel synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Gattermann and Gattermann-Koch Formylation",
+      "pdf_page": 236,
+      "chemlens_canonical": "Gattermann and Gattermann-Koch Formylation",
+      "match_key": "gattermann and gattermann koch formylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Glaser Coupling",
+      "pdf_page": 238,
+      "chemlens_canonical": "Glaser Coupling",
+      "match_key": "glaser coupling",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Grignard Reaction",
+      "pdf_page": 240,
+      "chemlens_canonical": "Grignard Reaction",
+      "match_key": "grignard reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Grob Fragmentation",
+      "pdf_page": 242,
+      "chemlens_canonical": "Grob Fragmentation",
+      "match_key": "grob fragmentation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Hajos-Parrish Reaction",
+      "pdf_page": 244,
+      "chemlens_canonical": "Hajos-Parrish Reaction",
+      "match_key": "hajos parrish reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Hantzsch Dihydropyridine Synthesis",
+      "pdf_page": 246,
+      "chemlens_canonical": "Hantzsch Dihydropyridine Synthesis",
+      "match_key": "hantzsch dihydropyridine synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Heck Reaction",
+      "pdf_page": 248,
+      "chemlens_canonical": "Heck Reaction",
+      "match_key": "heck reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Heine Reaction",
+      "pdf_page": 250,
+      "chemlens_canonical": "Heine Reaction",
+      "match_key": "heine reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Hell-Volhard-Zelinsky Reaction",
+      "pdf_page": 252,
+      "chemlens_canonical": "Hell-Volhard-Zelinsky Reaction",
+      "match_key": "hell volhard zelinsky reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Henry Reaction",
+      "pdf_page": 254,
+      "chemlens_canonical": "Henry Reaction",
+      "match_key": "henry reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Hetero Diels-Alder Cycloaddition",
+      "pdf_page": 256,
+      "chemlens_canonical": "Hetero Diels-Alder Cycloaddition (HDA)",
+      "match_key": "hetero diels alder cycloaddition",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Hofmann Elimination",
+      "pdf_page": 258,
+      "chemlens_canonical": "Hofmann Elimination",
+      "match_key": "hofmann elimination",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Hofmann-LÖFfler-Freytag Reaction(Remote Functionalization)",
+      "pdf_page": 260,
+      "chemlens_canonical": "Hofmann-Loffler-Freytag Reaction",
+      "match_key": "remote functionalization",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Hofmann Rearrangement",
+      "pdf_page": 262,
+      "chemlens_canonical": "Hofmann Rearrangement",
+      "match_key": "hofmann rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Horner-Wadsworth-Emmons Olefination",
+      "pdf_page": 264,
+      "chemlens_canonical": "Horner-Wadsworth-Emmons Olefination",
+      "match_key": "horner wadsworth emmons olefination",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification",
+      "pdf_page": 266,
+      "chemlens_canonical": "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification",
+      "match_key": "horner wadsworth emmons olefination still gennari modification",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Houben-Hoesch Reaction / Synthesis",
+      "pdf_page": 268,
+      "chemlens_canonical": "Houben-Hoesch Reaction",
+      "match_key": "houben hoesch reaction synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Hunsdiecker Reaction",
+      "pdf_page": 270,
+      "chemlens_canonical": "Hunsdiecker Reaction",
+      "match_key": "hunsdiecker reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Jacobsen Hydrolytic Kinetic Resolution",
+      "pdf_page": 272,
+      "chemlens_canonical": "Jacobsen Hydrolytic Kinetic Resolution",
+      "match_key": "jacobsen hydrolytic kinetic resolution",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Jacobsen-Katsuki Epoxidation",
+      "pdf_page": 274,
+      "chemlens_canonical": "Jacobsen-Katsuki Epoxidation",
+      "match_key": "jacobsen katsuki epoxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Japp-Klingemann Reaction",
+      "pdf_page": 276,
+      "chemlens_canonical": "Japp-Klingemann Reaction",
+      "match_key": "japp klingemann reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Johnson-Claisen Rearrangement",
+      "pdf_page": 278,
+      "chemlens_canonical": "Johnson-Claisen Rearrangement",
+      "match_key": "johnson claisen rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Jones Oxidation / Oxidation of Alcohols by Chromium Reagents",
+      "pdf_page": 280,
+      "chemlens_canonical": "Jones Oxidation",
+      "match_key": "jones oxidation oxidation of alcohols by chromium reagents",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Julia-Lythgoe Olefination",
+      "pdf_page": 282,
+      "chemlens_canonical": "Julia-Lythgoe Olefination",
+      "match_key": "julia lythgoe olefination",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Kagan-Molander Samarium Diiodide-Mediated Coupling",
+      "pdf_page": 284,
+      "chemlens_canonical": "Kagan-Molander Samarium Diiodide-Mediated Coupling",
+      "match_key": "kagan molander samarium diiodide mediated coupling",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Kahne Glycosidation",
+      "pdf_page": 286,
+      "chemlens_canonical": "Kahne Glycosidation",
+      "match_key": "kahne glycosidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Keck Asymmetric Allylation",
+      "pdf_page": 288,
+      "chemlens_canonical": "Keck Asymmetric Allylation",
+      "match_key": "keck asymmetric allylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Keck Macrolactonization",
+      "pdf_page": 290,
+      "chemlens_canonical": "Corey-Nicolaou Macrolactonization",
+      "match_key": "keck macrolactonization",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Keck Radical Allylation",
+      "pdf_page": 292,
+      "chemlens_canonical": "Keck Radical Allylation",
+      "match_key": "keck radical allylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Knoevenagel Condensation",
+      "pdf_page": 294,
+      "chemlens_canonical": "Knoevenagel Condensation",
+      "match_key": "knoevenagel condensation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Knorr Pyrrole Synthesis",
+      "pdf_page": 296,
+      "chemlens_canonical": "Knorr Pyrrole Synthesis",
+      "match_key": "knorr pyrrole synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Koenigs-Knorr Glycosidation",
+      "pdf_page": 298,
+      "chemlens_canonical": "Koenigs-Knorr Glycosidation",
+      "match_key": "koenigs knorr glycosidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Kolbe-Schmitt Reaction",
+      "pdf_page": 300,
+      "chemlens_canonical": "Kolbe-Schmitt Reaction",
+      "match_key": "kolbe schmitt reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Kornblum Oxidation",
+      "pdf_page": 302,
+      "chemlens_canonical": "Kornblum Oxidation",
+      "match_key": "kornblum oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+      "pdf_page": 304,
+      "chemlens_canonical": "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+      "match_key": "krapcho dealkoxycarbonylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "KrÖHnke Pyridine Synthesis",
+      "pdf_page": 306,
+      "chemlens_canonical": "Kröhnke Pyridine Synthesis",
+      "match_key": "kr hnke pyridine synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Kulinkovich Reaction",
+      "pdf_page": 308,
+      "chemlens_canonical": "Kulinkovich Reaction",
+      "match_key": "kulinkovich reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Kumada Cross-Coupling",
+      "pdf_page": 310,
+      "chemlens_canonical": "Kumada Cross-Coupling",
+      "match_key": "kumada cross coupling",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Larock Indole Synthesis",
+      "pdf_page": 312,
+      "chemlens_canonical": "Larock Indole Synthesis",
+      "match_key": "larock indole synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Ley Oxidation",
+      "pdf_page": 314,
+      "chemlens_canonical": "Ley Oxidation",
+      "match_key": "ley oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Lieben Haloform Reaction",
+      "pdf_page": 316,
+      "chemlens_canonical": "Lieben Haloform Reaction",
+      "match_key": "lieben haloform reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Lossen Rearrangement",
+      "pdf_page": 318,
+      "chemlens_canonical": "Lossen Rearrangement",
+      "match_key": "lossen rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Luche Reduction",
+      "pdf_page": 320,
+      "chemlens_canonical": "Luche Reduction",
+      "match_key": "luche reduction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Madelung Indole Synthesis",
+      "pdf_page": 322,
+      "chemlens_canonical": "Madelung Indole Synthesis",
+      "match_key": "madelung indole synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Malonic Ester Synthesis",
+      "pdf_page": 324,
+      "chemlens_canonical": "Malonic Ester Synthesis",
+      "match_key": "malonic ester synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Mannich Reaction",
+      "pdf_page": 326,
+      "chemlens_canonical": "Mannich Reaction",
+      "match_key": "mannich reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Mcmurry Coupling",
+      "pdf_page": 328,
+      "chemlens_canonical": "McMurry Coupling",
+      "match_key": "mcmurry coupling",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Meerwein Arylation",
+      "pdf_page": 330,
+      "chemlens_canonical": "Meerwein Arylation",
+      "match_key": "meerwein arylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Meerwein-Ponndorf-Verley Reduction",
+      "pdf_page": 332,
+      "chemlens_canonical": "Meerwein-Ponndorf-Verley Reduction",
+      "match_key": "meerwein ponndorf verley reduction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Meisenheimer Rearrangement",
+      "pdf_page": 334,
+      "chemlens_canonical": "Meisenheimer Rearrangement",
+      "match_key": "meisenheimer rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Meyer-Schuster and Rupe Rearrangement",
+      "pdf_page": 336,
+      "chemlens_canonical": "Meyer-Schuster and Rupe Rearrangement",
+      "match_key": "meyer schuster and rupe rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Michael Addition/Reaction",
+      "pdf_page": 338,
+      "chemlens_canonical": "Michael Addition Reaction",
+      "match_key": "michael addition reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Midland Alpine-Borane® Reduction (Midland Reduction)",
+      "pdf_page": 340,
+      "chemlens_canonical": "Midland Alpine Borane Reduction",
+      "match_key": "midland alpine borane reduction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Minisci Reaction",
+      "pdf_page": 342,
+      "chemlens_canonical": "Minisci Reaction",
+      "match_key": "minisci reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Mislow-Evans Rearrangement",
+      "pdf_page": 344,
+      "chemlens_canonical": "Mislow-Evans Rearrangement",
+      "match_key": "mislow evans rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Mitsunobu Reaction",
+      "pdf_page": 346,
+      "chemlens_canonical": "Mitsunobu Reaction",
+      "match_key": "mitsunobu reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Miyaura Boration",
+      "pdf_page": 348,
+      "chemlens_canonical": "Miyaura Boration",
+      "match_key": "miyaura boration",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Mukaiyama Aldol Reaction",
+      "pdf_page": 350,
+      "chemlens_canonical": "Mukaiyama Aldol Reaction",
+      "match_key": "mukaiyama aldol reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Myers Asymmetric Alkylation",
+      "pdf_page": 352,
+      "chemlens_canonical": "Myers Asymmetric Alkylation",
+      "match_key": "myers asymmetric alkylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Nagata Hydrocyanation",
+      "pdf_page": 354,
+      "chemlens_canonical": "Nagata Hydrocyanation",
+      "match_key": "nagata hydrocyanation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Nazarov Cyclization",
+      "pdf_page": 356,
+      "chemlens_canonical": "Nazarov Cyclization",
+      "match_key": "nazarov cyclization",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Neber Rearrangement",
+      "pdf_page": 358,
+      "chemlens_canonical": "Neber Rearrangement",
+      "match_key": "neber rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Nef Reaction",
+      "pdf_page": 360,
+      "chemlens_canonical": "Nef Reaction",
+      "match_key": "nef reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Negishi Cross-Coupling",
+      "pdf_page": 362,
+      "chemlens_canonical": "Negishi Cross-Coupling",
+      "match_key": "negishi cross coupling",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Nenitzescu Indole Synthesis",
+      "pdf_page": 364,
+      "chemlens_canonical": "Nenitzescu Indole Synthesis",
+      "match_key": "nenitzescu indole synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Nicholas Reaction",
+      "pdf_page": 366,
+      "chemlens_canonical": "Nicholas Reaction",
+      "match_key": "nicholas reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Noyori Asymmetric Hydrogenation",
+      "pdf_page": 368,
+      "chemlens_canonical": "Noyori Asymmetric Hydrogenation",
+      "match_key": "noyori asymmetric hydrogenation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Nozaki-Hiyama-Kishi Reaction",
+      "pdf_page": 370,
+      "chemlens_canonical": "Nozaki-Hiyama-Kishi Reaction",
+      "match_key": "nozaki hiyama kishi reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Oppenauer Oxidation",
+      "pdf_page": 372,
+      "chemlens_canonical": "Oppenauer Oxidation",
+      "match_key": "oppenauer oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Overman Rearrangement",
+      "pdf_page": 374,
+      "chemlens_canonical": "Overman Rearrangement",
+      "match_key": "overman rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Oxy-Cope Rearrangement and Anionic Oxy-Cope Rearrangement",
+      "pdf_page": 376,
+      "chemlens_canonical": "Oxy-Cope Rearrangement and Anionic Oxy-Cope Rearrangement",
+      "match_key": "oxy cope rearrangement and anionic oxy cope rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Paal-Knorr Furan Synthesis",
+      "pdf_page": 378,
+      "chemlens_canonical": "Paal-Knorr Furan Synthesis",
+      "match_key": "paal knorr furan synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Paal-Knorr Pyrrole Synthesis",
+      "pdf_page": 380,
+      "chemlens_canonical": "Paal-Knorr Pyrrole Synthesis",
+      "match_key": "paal knorr pyrrole synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Passerini Multicomponent Reaction",
+      "pdf_page": 382,
+      "chemlens_canonical": "Passerini Multicomponent Reaction",
+      "match_key": "passerini multicomponent reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Paterno-BÜChi Reaction",
+      "pdf_page": 384,
+      "chemlens_canonical": null,
+      "match_key": null,
+      "tier": "D_missing"
+    },
+    {
+      "pdf_name": "Pauson-Khand Reaction",
+      "pdf_page": 386,
+      "chemlens_canonical": "Pauson-Khand Reaction",
+      "match_key": "pauson khand reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Payne Rearrangement",
+      "pdf_page": 388,
+      "chemlens_canonical": "Payne Rearrangement",
+      "match_key": "payne rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Perkin Reaction",
+      "pdf_page": 390,
+      "chemlens_canonical": "Perkin Reaction",
+      "match_key": "perkin reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Petasis Boronic Acid-Mannich Reaction",
+      "pdf_page": 392,
+      "chemlens_canonical": "Petasis Boronic Acid-Mannich Reaction",
+      "match_key": "petasis boronic acid mannich reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Petasis-Ferrier Rearrangement",
+      "pdf_page": 394,
+      "chemlens_canonical": "Petasis-Ferrier Rearrangement",
+      "match_key": "petasis ferrier rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Peterson Olefination",
+      "pdf_page": 396,
+      "chemlens_canonical": "Peterson Olefination",
+      "match_key": "peterson olefination",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Pfitzner-Moffatt Oxidation",
+      "pdf_page": 398,
+      "chemlens_canonical": "Pfitzner-Moffatt Oxidation",
+      "match_key": "pfitzner moffatt oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Pictet-Spengler Tetrahydroisoquinoline Synthesis",
+      "pdf_page": 400,
+      "chemlens_canonical": "Pictet-Spengler Tetrahydroisoquinoline Synthesis",
+      "match_key": "pictet spengler tetrahydroisoquinoline synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Pinacol and Semipinacol Rearrangement",
+      "pdf_page": 402,
+      "chemlens_canonical": "Pinacol and Semipinacol Rearrangement",
+      "match_key": "pinacol and semipinacol rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Pinner Reaction",
+      "pdf_page": 404,
+      "chemlens_canonical": "Pinner Reaction",
+      "match_key": "pinner reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Pinnick Oxidation",
+      "pdf_page": 406,
+      "chemlens_canonical": "Pinnick Oxidation",
+      "match_key": "pinnick oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Polonovski Reaction",
+      "pdf_page": 408,
+      "chemlens_canonical": "Polonovski Reaction",
+      "match_key": "polonovski reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Pomeranz-Fritsch Reaction",
+      "pdf_page": 410,
+      "chemlens_canonical": "Pomeranz-Fritsch Reaction",
+      "match_key": "pomeranz fritsch reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "PrÉVost Reaction",
+      "pdf_page": 412,
+      "chemlens_canonical": "Prévost Reaction",
+      "match_key": "pr vost reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Prilezhaev Reaction",
+      "pdf_page": 414,
+      "chemlens_canonical": "Prilezhaev Reaction",
+      "match_key": "prilezhaev reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Prins Reaction",
+      "pdf_page": 416,
+      "chemlens_canonical": "Prins Reaction",
+      "match_key": "prins reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Prins-Pinacol Rearrangement",
+      "pdf_page": 418,
+      "chemlens_canonical": "Prins-Pinacol Rearrangement",
+      "match_key": "prins pinacol rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Pummerer Rearrangement",
+      "pdf_page": 420,
+      "chemlens_canonical": "Pummerer Rearrangement",
+      "match_key": "pummerer rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Quasi-Favorskii Rearrangement",
+      "pdf_page": 422,
+      "chemlens_canonical": "Quasi-Favorskii Rearrangement",
+      "match_key": "quasi favorskii rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Ramberg-BÄCklund Rearrangement",
+      "pdf_page": 424,
+      "chemlens_canonical": "Ramberg-Bäcklund Rearrangement",
+      "match_key": "ramberg b cklund rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Reformatsky Reaction",
+      "pdf_page": 426,
+      "chemlens_canonical": "Reformatsky Reaction",
+      "match_key": "reformatsky reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Regitz Diazo Transfer",
+      "pdf_page": 428,
+      "chemlens_canonical": "Regitz Diazo Transfer",
+      "match_key": "regitz diazo transfer",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Reimer-Tiemann Reaction",
+      "pdf_page": 430,
+      "chemlens_canonical": "Reimer-Tiemann Reaction",
+      "match_key": "reimer tiemann reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Riley Selenium Dioxide Oxidation",
+      "pdf_page": 432,
+      "chemlens_canonical": "Riley Selenium Dioxide Oxidation",
+      "match_key": "riley selenium dioxide oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Ritter Reaction",
+      "pdf_page": 434,
+      "chemlens_canonical": "Ritter Reaction",
+      "match_key": "ritter reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Robinson Annulation",
+      "pdf_page": 436,
+      "chemlens_canonical": "Robinson Annulation",
+      "match_key": "robinson annulation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Roush Asymmetric Allylation",
+      "pdf_page": 438,
+      "chemlens_canonical": "Roush Asymmetric Allylation",
+      "match_key": "roush asymmetric allylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Rubottom Oxidation",
+      "pdf_page": 440,
+      "chemlens_canonical": "Rubottom Oxidation",
+      "match_key": "rubottom oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Saegusa Oxidation",
+      "pdf_page": 442,
+      "chemlens_canonical": "Saegusa Oxidation",
+      "match_key": "saegusa oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Sakurai Allylation",
+      "pdf_page": 444,
+      "chemlens_canonical": "Sakurai Allylation",
+      "match_key": "sakurai allylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Sandmeyer Reaction",
+      "pdf_page": 446,
+      "chemlens_canonical": "Sandmeyer Reaction",
+      "match_key": "sandmeyer reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Schmidt Reaction",
+      "pdf_page": 448,
+      "chemlens_canonical": "Schmidt Reaction",
+      "match_key": "schmidt reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Schotten-Baumann Reaction",
+      "pdf_page": 450,
+      "chemlens_canonical": "Schotten-Baumann Reaction",
+      "match_key": "schotten baumann reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Schwartz Hydrozirconation",
+      "pdf_page": 452,
+      "chemlens_canonical": "Schwartz Hydrozirconation",
+      "match_key": "schwartz hydrozirconation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Seyferth-Gilbert Homologation",
+      "pdf_page": 454,
+      "chemlens_canonical": "Seyferth-Gilbert Homologation",
+      "match_key": "seyferth gilbert homologation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Sharpless Asymmetric Aminohydroxylation",
+      "pdf_page": 456,
+      "chemlens_canonical": "Sharpless Asymmetric Aminohydroxylation",
+      "match_key": "sharpless asymmetric aminohydroxylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Sharpless Asymmetric Dihydroxylation",
+      "pdf_page": 458,
+      "chemlens_canonical": "Sharpless Asymmetric Dihydroxylation",
+      "match_key": "sharpless asymmetric dihydroxylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Sharpless Asymmetric Epoxidation",
+      "pdf_page": 460,
+      "chemlens_canonical": "Sharpless Asymmetric Epoxidation",
+      "match_key": "sharpless asymmetric epoxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Shi Asymmetric Epoxidation",
+      "pdf_page": 462,
+      "chemlens_canonical": "Shi Asymmetric Epoxidation",
+      "match_key": "shi asymmetric epoxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Simmons-Smith Cyclopropanation",
+      "pdf_page": 464,
+      "chemlens_canonical": "Simmons-Smith Cyclopropanation",
+      "match_key": "simmons smith cyclopropanation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Skraup and Doebner-Miller Quinoline Synthesis",
+      "pdf_page": 466,
+      "chemlens_canonical": "Skraup and Doebner-Miller Quinoline Synthesis",
+      "match_key": "skraup and doebner miller quinoline synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Smiles Rearrangement",
+      "pdf_page": 468,
+      "chemlens_canonical": "Smiles Rearrangement",
+      "match_key": "smiles rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Smith-Tietze Multicomponent Dithiane Linchpin Coupling",
+      "pdf_page": 470,
+      "chemlens_canonical": "Smith-Tietze Multicomponent Dithiane Linchpin Coupling",
+      "match_key": "smith tietze multicomponent dithiane linchpin coupling",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Snieckus Directed Ortho Metalation",
+      "pdf_page": 472,
+      "chemlens_canonical": "Snieckus Directed Ortho Metalation",
+      "match_key": "snieckus directed ortho metalation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Sommelet-Hauser Rearrangement",
+      "pdf_page": 474,
+      "chemlens_canonical": "Sommelet-Hauser Rearrangement",
+      "match_key": "sommelet hauser rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Sonogashira Cross-Coupling",
+      "pdf_page": 476,
+      "chemlens_canonical": "Sonogashira Cross-Coupling",
+      "match_key": "sonogashira cross coupling",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Staudinger Ketene Cycloaddition",
+      "pdf_page": 478,
+      "chemlens_canonical": "Staudinger Ketene Cycloaddition",
+      "match_key": "staudinger ketene cycloaddition",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Staudinger Reaction",
+      "pdf_page": 480,
+      "chemlens_canonical": "Staudinger Reaction",
+      "match_key": "staudinger reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Stephen Aldehyde Synthesis (Stephen Reduction)",
+      "pdf_page": 482,
+      "chemlens_canonical": "Stephen Aldehyde Synthesis (Stephen Reduction)",
+      "match_key": "stephen aldehyde synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Stetter Reaction",
+      "pdf_page": 484,
+      "chemlens_canonical": "Stetter Reaction",
+      "match_key": "stetter reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Stevens Rearrangement",
+      "pdf_page": 486,
+      "chemlens_canonical": "Stevens Rearrangement",
+      "match_key": "stevens rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Stille Carbonylative Cross-Coupling",
+      "pdf_page": 488,
+      "chemlens_canonical": "Stille Carbonylative Cross-Coupling",
+      "match_key": "stille carbonylative cross coupling",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Stille Cross-Coupling(Migita-Kosugi-Stille Coupling)",
+      "pdf_page": 490,
+      "chemlens_canonical": "Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)",
+      "match_key": "stille cross coupling",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Stille-Kelly Coupling",
+      "pdf_page": 492,
+      "chemlens_canonical": "Stille-Kelly Coupling",
+      "match_key": "stille kelly coupling",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Stobbe Condensation",
+      "pdf_page": 494,
+      "chemlens_canonical": "Stobbe Condensation",
+      "match_key": "stobbe condensation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Stork Enamine Synthesis",
+      "pdf_page": 496,
+      "chemlens_canonical": "Stork Enamine Synthesis",
+      "match_key": "stork enamine synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Strecker Reaction",
+      "pdf_page": 498,
+      "chemlens_canonical": "Strecker Reaction",
+      "match_key": "strecker reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Suzuki Cross-Coupling(Suzuki-Miyaura Cross-Coupling)",
+      "pdf_page": 500,
+      "chemlens_canonical": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+      "match_key": "suzuki cross coupling",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Swern Oxidation",
+      "pdf_page": 502,
+      "chemlens_canonical": "Swern Oxidation",
+      "match_key": "swern oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Takai-Utimoto Olefination (Takai Reaction)",
+      "pdf_page": 504,
+      "chemlens_canonical": "Takai-Utimoto Olefination (Takai Reaction)",
+      "match_key": "takai utimoto olefination",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Tebbe Olefination / Petasis-Tebbe Olefination",
+      "pdf_page": 506,
+      "chemlens_canonical": "Tebbe Olefination/Petasis-Tebbe Olefination",
+      "match_key": "tebbe olefination petasis tebbe olefination",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Tishchenko Reaction",
+      "pdf_page": 508,
+      "chemlens_canonical": "Tishchenko Reaction",
+      "match_key": "tishchenko reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Tsuji-Trost Reaction / Allylation",
+      "pdf_page": 510,
+      "chemlens_canonical": "Tsuji-Trost Reaction / Allylation",
+      "match_key": "tsuji trost reaction allylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Tsuji-Wilkinson Decarbonylation Reaction",
+      "pdf_page": 512,
+      "chemlens_canonical": "Tsuji-Wilkinson Decarbonylation Reaction",
+      "match_key": "tsuji wilkinson decarbonylation reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Ugi Multicomponent Reaction",
+      "pdf_page": 514,
+      "chemlens_canonical": "Ugi Multicomponent Reaction",
+      "match_key": "ugi multicomponent reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation",
+      "pdf_page": 516,
+      "chemlens_canonical": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+      "match_key": "ullmann biaryl ether and biaryl amine synthesis condensation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+      "pdf_page": 518,
+      "chemlens_canonical": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+      "match_key": "ullmann reaction coupling biaryl synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Vilsmeier-Haack Formylation",
+      "pdf_page": 520,
+      "chemlens_canonical": "Vilsmeier-Haack Formylation",
+      "match_key": "vilsmeier haack formylation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Vinylcyclopropane-Cyclopentene Rearrangement",
+      "pdf_page": 522,
+      "chemlens_canonical": "Vinylcyclopropane-Cyclopentene Rearrangement",
+      "match_key": "vinylcyclopropane cyclopentene rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Von Pechmann Reaction",
+      "pdf_page": 524,
+      "chemlens_canonical": "von Pechmann Reaction",
+      "match_key": "von pechmann reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Wacker Oxidation",
+      "pdf_page": 526,
+      "chemlens_canonical": "Wacker Oxidation",
+      "match_key": "wacker oxidation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Wagner-Meerwein Rearrangement",
+      "pdf_page": 528,
+      "chemlens_canonical": "Wagner-Meerwein Rearrangement",
+      "match_key": "wagner meerwein rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Weinreb Ketone Synthesis",
+      "pdf_page": 530,
+      "chemlens_canonical": "Weinreb Ketone Synthesis",
+      "match_key": "weinreb ketone synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Wharton Fragmentation",
+      "pdf_page": 532,
+      "chemlens_canonical": "Wharton Fragmentation",
+      "match_key": "wharton fragmentation",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Wharton Olefin Synthesis (Wharton Transposition)",
+      "pdf_page": 534,
+      "chemlens_canonical": "Wharton Olefin Synthesis (Wharton Transposition)",
+      "match_key": "wharton olefin synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Williamson Ether Synthesis",
+      "pdf_page": 536,
+      "chemlens_canonical": "Williamson Ether Synthesis",
+      "match_key": "williamson ether synthesis",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Wittig Reaction",
+      "pdf_page": 538,
+      "chemlens_canonical": "Wittig Reaction",
+      "match_key": "wittig reaction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Wittig Reaction - Schlosser Modification",
+      "pdf_page": 540,
+      "chemlens_canonical": "Wittig Reaction - Schlosser Modification",
+      "match_key": "wittig reaction schlosser modification",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Wittig-[1,2]- and [2,3]-Rearrangement",
+      "pdf_page": 542,
+      "chemlens_canonical": "Wittig-[1,2]- and [2,3]-Rearrangement",
+      "match_key": "wittig 1 2 and 2 3 rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Wohl-Ziegler Bromination",
+      "pdf_page": 544,
+      "chemlens_canonical": "Wohl-Ziegler Bromination",
+      "match_key": "wohl ziegler bromination",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Wolff Rearrangement",
+      "pdf_page": 546,
+      "chemlens_canonical": "Wolff Rearrangement",
+      "match_key": "wolff rearrangement",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Wolff-Kishner Reduction",
+      "pdf_page": 548,
+      "chemlens_canonical": "Wolff-Kishner Reduction",
+      "match_key": "wolff kishner reduction",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Wurtz Coupling",
+      "pdf_page": 550,
+      "chemlens_canonical": "Wurtz Coupling",
+      "match_key": "wurtz coupling",
+      "tier": "A_deep"
+    },
+    {
+      "pdf_name": "Yamaguchi Macrolactonization",
+      "pdf_page": 552,
+      "chemlens_canonical": "Corey-Nicolaou Macrolactonization",
+      "match_key": "yamaguchi macrolactonization",
+      "tier": "A_deep"
+    }
+  ]
+}

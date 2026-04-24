@@ -1,0 +1,80 @@
+﻿expected_canonical,predicted_top1,count
+Aldol Reaction,Stetter Reaction,1
+Alkene (Olefin) Metathesis,Heck Reaction,1
+Amadori Reaction / Rearrangement,Arndt-Eistert Homologation / Synthesis,1
+Baldwin's Rules / Guidelines for Ring-Closing Reactions,Acetoacetic Ester Synthesis,1
+Bamford-Stevens-Shapiro Olefination,Schwartz Hydrozirconation,1
+Barbier Coupling Reaction,Sakurai Allylation,1
+Barton Radical Decarboxylation Reaction,Diels-Alder Cycloaddition,1
+Barton-McCombie Radical Deoxygenation Reaction,Paternò-Büchi Reaction,1
+Beckmann Rearrangement,Eschenmoser Methenylation,1
+Biginelli Reaction,Horner-Wadsworth-Emmons Olefination,1
+Charette Asymmetric Cyclopropanation,Buchner Method of Ring Expansion (Buchner Reaction),1
+Chugaev Elimination Reaction (Xanthate Ester Pyrolysis),Cope Elimination / Cope Reaction,1
+Corey-Kim Oxidation,Ley Oxidation,1
+Corey-Nicolaou Macrolactonization,Baeyer-Villiger Oxidation/Rearrangement,1
+Criegee Oxidation,Baeyer-Villiger Oxidation/Rearrangement,1
+Curtius Rearrangement,Lossen Rearrangement,1
+Dakin-West Reaction,Claisen Condensation / Claisen Reaction,1
+Darzens Glycidic Ester Condensation,Horner-Wadsworth-Emmons Olefination,1
+Davis' Oxaziridine Oxidations,Wolff-Kishner Reduction,1
+De Mayo Cycloaddition,Robinson Annulation,1
+Dess-Martin Oxidation,Ley Oxidation,1
+Enyne Metathesis,Schwartz Hydrozirconation,1
+Feist-Bénary Furan Synthesis,Horner-Wadsworth-Emmons Olefination,1
+Glaser Coupling,Aza-Wittig Reaction,1
+Hantzsch Dihydropyridine Synthesis,Acetoacetic Ester Synthesis,1
+Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification,Horner-Wadsworth-Emmons Olefination,1
+Hunsdiecker Reaction,Aza-Wittig Reaction,1
+Jacobsen-Katsuki Epoxidation,Shi Asymmetric Epoxidation,1
+Keck Macrolactonization,Baeyer-Villiger Oxidation/Rearrangement,1
+Knoevenagel Condensation,Julia-Lythgoe Olefination,1
+Kumada Cross-Coupling,Aza-Wittig Reaction,1
+Larock Indole Synthesis,Ullmann Reaction / Coupling / Biaryl Synthesis,1
+McMurry Coupling,Lieben Haloform Reaction,1
+Meerwein-Ponndorf-Verley Reduction,Noyori Asymmetric Hydrogenation,1
+Michael Addition Reaction,Malonic Ester Synthesis,1
+Minisci Reaction,Barton Radical Decarboxylation Reaction,1
+Mitsunobu Reaction,Claisen Condensation / Claisen Reaction,1
+Miyaura Boration,Ullmann Reaction / Coupling / Biaryl Synthesis,1
+Mukaiyama Aldol Reaction,Henry Reaction,1
+Negishi Cross-Coupling,Aza-Wittig Reaction,1
+Nicholas Reaction,Barton-McCombie Radical Deoxygenation Reaction,1
+Nozaki-Hiyama-Kishi Reaction,Julia-Lythgoe Olefination,1
+Oppenauer Oxidation,Mitsunobu Reaction,1
+Paal-Knorr Pyrrole Synthesis,Paal-Knorr Furan Synthesis,1
+Passerini Multicomponent Reaction,Horner-Wadsworth-Emmons Olefination,1
+Petasis Boronic Acid-Mannich Reaction,Aza-Wittig Reaction,1
+Peterson Olefination,Noyori Asymmetric Hydrogenation,1
+Pfitzner-Moffatt Oxidation,Ley Oxidation,1
+Pinnick Oxidation,Aza-Wittig Reaction,1
+Prilezhaev Reaction,Shi Asymmetric Epoxidation,1
+Prins Reaction,Alder (Ene) Reaction (Hydro-Allyl Addition),1
+Quasi-Favorskii Rearrangement,Pinacol and Semipinacol Rearrangement,1
+Reformatsky Reaction,Horner-Wadsworth-Emmons Olefination,1
+Roush Asymmetric Allylation,Keck Asymmetric Allylation,1
+Sakurai Allylation,Keck Asymmetric Allylation,1
+Schotten-Baumann Reaction,Aza-Wittig Reaction,1
+Seyferth-Gilbert Homologation,Corey-Fuchs Alkyne Synthesis,1
+Simmons-Smith Cyclopropanation,Furukawa Modification,1
+Sonogashira Cross-Coupling,Heck Reaction,1
+Staudinger Reaction,Hofmann Rearrangement,1
+Stephen Aldehyde Synthesis (Stephen Reduction),Ley Oxidation,1
+Stille Carbonylative Cross-Coupling,Friedel-Crafts Acylation,1
+Stille Cross-Coupling (Migita-Kosugi-Stille Coupling),Heck Reaction,1
+Stille-Kelly Coupling,Heck Reaction,1
+Stobbe Condensation,Horner-Wadsworth-Emmons Olefination,1
+Strecker Reaction,Wittig Reaction,1
+Swern Oxidation,Ley Oxidation,1
+Takai-Utimoto Olefination (Takai Reaction),Wittig Reaction,1
+Tishchenko Reaction,Horner-Wadsworth-Emmons Olefination,1
+Tsuji-Wilkinson Decarbonylation Reaction,Julia-Lythgoe Olefination,1
+Ugi Multicomponent Reaction,Aza-Wittig Reaction,1
+Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation,Aza-Wittig Reaction,1
+Ullmann Reaction / Coupling / Biaryl Synthesis,Wittig Reaction,1
+Weinreb Ketone Synthesis,Snieckus Directed Ortho Metalation,1
+Wittig Reaction - Schlosser Modification,Julia-Lythgoe Olefination,1
+"Wittig-[1,2]- and [2,3]-Rearrangement",Noyori Asymmetric Hydrogenation,1
+Wurtz Coupling,Tsuji-Wilkinson Decarbonylation Reaction,1
+Yamaguchi Macrolactonization,Baeyer-Villiger Oxidation/Rearrangement,1
+von Pechmann Reaction,Acetoacetic Ester Synthesis,1

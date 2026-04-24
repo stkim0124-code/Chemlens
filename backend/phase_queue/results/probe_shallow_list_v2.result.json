@@ -1,0 +1,26 @@
+{
+  "script": "probe_shallow_list_v2.py",
+  "phase_tag": "probe_shallow_list_v2",
+  "started_at": "2026-04-20T23:40:02.912413",
+  "stages": [
+    {
+      "cmd": [
+        "C:\\Users\\tmdxo\\miniconda3\\envs\\chemlens\\python.exe",
+        "C:\\chemlens\\backend\\phase_queue\\processing\\probe_shallow_list_v2.py",
+        "--db",
+        "C:\\chemlens\\backend\\app\\labint.db",
+        "--report-dir",
+        "C:\\chemlens\\backend\\reports\\family_completion_probe_shallow_list_v2"
+      ],
+      "exit_code": 1,
+      "duration_sec": 0.65,
+      "log": "C:\\chemlens\\backend\\phase_queue\\logs\\probe_shallow_list_v2_20260420_234002.log",
+      "stage": "apply"
+    }
+  ],
+  "apply_ok": false,
+  "verify_ok": null,
+  "dashboard_ok": null,
+  "finished_at": "2026-04-20T23:40:03.564188",
+  "overall_ok": false
+}

@@ -1,0 +1,4518 @@
+{
+  "summary": {
+    "pdf_total_entries": 250,
+    "typo_fixes_applied": 2,
+    "T1_admission_top1_PASS": 200,
+    "T2_admission_top3_only": 19,
+    "T3_coverage_h1_only": 6,
+    "T4_coverage_h5_only": 8,
+    "T5_name_present_only": 17,
+    "T6_not_in_chemlens": 0,
+    "pct_strict_top1": 80.0,
+    "pct_top3_or_better": 87.6,
+    "pct_top5_or_better": 93.2,
+    "pct_name_known": 100.0
+  },
+  "rows": [
+    {
+      "pdf_name": "Acetoacetic Ester Synthesis",
+      "pdf_page": 54,
+      "chemlens_canonical": "Acetoacetic Ester Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Acyloin Condensation",
+      "pdf_page": 56,
+      "chemlens_canonical": "Acyloin Condensation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Alder(ene) Reaction (Hydro-Allyl Addition)",
+      "pdf_page": 58,
+      "chemlens_canonical": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Aldol Reaction",
+      "pdf_page": 60,
+      "chemlens_canonical": "Aldol Reaction",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Alkene (Olefin) Metathesis",
+      "pdf_page": 62,
+      "chemlens_canonical": "Alkene (Olefin) Metathesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Alkyne Metathesis",
+      "pdf_page": 64,
+      "chemlens_canonical": "Alkyne Metathesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Amadori Reaction / Rearrangement",
+      "pdf_page": 66,
+      "chemlens_canonical": "Amadori Reaction / Rearrangement",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "pdf_page": 68,
+      "chemlens_canonical": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Arndt-Eistert Homologation / Synthesis",
+      "pdf_page": 70,
+      "chemlens_canonical": "Arndt-Eistert Homologation / Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "pdf_page": 72,
+      "chemlens_canonical": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Aza-Cope Rearrangement",
+      "pdf_page": 74,
+      "chemlens_canonical": "Aza-Cope Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Aza-Wittig Reaction",
+      "pdf_page": 76,
+      "chemlens_canonical": "Aza-Wittig Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Aza-[2,3]-Wittig Rearrangement",
+      "pdf_page": 78,
+      "chemlens_canonical": "Aza-[2,3]-Wittig Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Baeyer-Villiger Oxidation/Rearrangement",
+      "pdf_page": 80,
+      "chemlens_canonical": "Baeyer-Villiger Oxidation/Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Baker-Venkataraman Rearrangement",
+      "pdf_page": 82,
+      "chemlens_canonical": "Baker-Venkataraman Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Baldwin’s Rules / Guidelines for Ring-Closing Reactions",
+      "pdf_page": 84,
+      "chemlens_canonical": "Baldwin's Rules / Guidelines for Ring-Closing Reactions",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Balz-Schiemann Reaction(Schiemann Reaction)",
+      "pdf_page": 86,
+      "chemlens_canonical": "Balz-Schiemann Reaction (Schiemann Reaction)",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Bamford-Stevens-Shapiro Olefination",
+      "pdf_page": 88,
+      "chemlens_canonical": "Bamford-Stevens-Shapiro Olefination",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Barbier Coupling Reaction",
+      "pdf_page": 90,
+      "chemlens_canonical": "Barbier Coupling Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Bartoli Indole Synthesis",
+      "pdf_page": 92,
+      "chemlens_canonical": "Bartoli Indole Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Barton Nitrite Ester Reaction",
+      "pdf_page": 94,
+      "chemlens_canonical": "Barton Nitrite Ester Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Barton Radical Decarboxylation Reaction",
+      "pdf_page": 96,
+      "chemlens_canonical": "Barton Radical Decarboxylation Reaction",
+      "tier": "T3_cov_h1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Barton-Mccombie Radical Deoxygenation Reaction",
+      "pdf_page": 98,
+      "chemlens_canonical": "Barton-McCombie Radical Deoxygenation Reaction",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Baylis-Hillman Reaction",
+      "pdf_page": 100,
+      "chemlens_canonical": "Baylis-Hillman Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Beckmann Rearrangement",
+      "pdf_page": 102,
+      "chemlens_canonical": "Beckmann Rearrangement",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Benzilic Acid Rearrangement",
+      "pdf_page": 104,
+      "chemlens_canonical": "Benzilic Acid Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Benzoin and Retro-Benzoin Condensation",
+      "pdf_page": 106,
+      "chemlens_canonical": "Benzoin and Retro-Benzoin Condensation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Bergman Cycloaromatization Reaction",
+      "pdf_page": 108,
+      "chemlens_canonical": "Bergman Cycloaromatization Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Biginelli Reaction",
+      "pdf_page": 110,
+      "chemlens_canonical": "Biginelli Reaction",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Birch Reduction",
+      "pdf_page": 112,
+      "chemlens_canonical": "Birch Reduction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Bischler-Napieralski Isoqinoline Synthesis",
+      "pdf_page": 114,
+      "chemlens_canonical": "Bischler-Napieralski Isoquinoline Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Brook Rearrangement",
+      "pdf_page": 116,
+      "chemlens_canonical": "Brook Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Brown Hydroboration Reaction",
+      "pdf_page": 118,
+      "chemlens_canonical": "Brown Hydroboration Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Buchner Method of Ring Expansion",
+      "pdf_page": 120,
+      "chemlens_canonical": "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Buchwald-Hartwig Cross-Coupling",
+      "pdf_page": 122,
+      "chemlens_canonical": "Buchwald-Hartwig Cross-Coupling",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Burgess Dehydration Reaction",
+      "pdf_page": 124,
+      "chemlens_canonical": "Burgess Dehydration Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Cannizzaro Reaction",
+      "pdf_page": 126,
+      "chemlens_canonical": "Cannizzaro Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Carroll Rearrangement(Kimel-Cope Rearrangement)",
+      "pdf_page": 128,
+      "chemlens_canonical": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Castro-Stephens Coupling",
+      "pdf_page": 130,
+      "chemlens_canonical": "Castro-Stephens Coupling",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Chichibabin Amination Reaction",
+      "pdf_page": 132,
+      "chemlens_canonical": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Chugaev Elimination Reaction(Xanthate Ester Pyrolysis)",
+      "pdf_page": 134,
+      "chemlens_canonical": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Ciamician-Dennstedt Rearrangement",
+      "pdf_page": 136,
+      "chemlens_canonical": "Ciamician-Dennstedt Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Claisen Condensation / Claisen Reaction",
+      "pdf_page": 138,
+      "chemlens_canonical": "Claisen Condensation / Claisen Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Claisen Rearrangement",
+      "pdf_page": 140,
+      "chemlens_canonical": "Claisen Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Claisen-Ireland Rearrangement",
+      "pdf_page": 142,
+      "chemlens_canonical": "Claisen-Ireland Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Clemmensen Reduction",
+      "pdf_page": 144,
+      "chemlens_canonical": "Clemmensen Reduction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Combes Quinoline Synthesis",
+      "pdf_page": 146,
+      "chemlens_canonical": "Combes Quinoline Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Cope Elimination / Cope Reaction",
+      "pdf_page": 148,
+      "chemlens_canonical": "Cope Elimination / Cope Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Cope Rearrangement",
+      "pdf_page": 150,
+      "chemlens_canonical": "Cope Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Corey-Bakshi-Shibata Reduction (Cbs Reduction)",
+      "pdf_page": 152,
+      "chemlens_canonical": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "pdf_page": 154,
+      "chemlens_canonical": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Corey-Fuchs Alkyne Synthesis",
+      "pdf_page": 156,
+      "chemlens_canonical": "Corey-Fuchs Alkyne Synthesis",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Corey-Kim Oxidation",
+      "pdf_page": 158,
+      "chemlens_canonical": "Corey-Kim Oxidation",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Corey-Nicolaou Macrolactonization",
+      "pdf_page": 160,
+      "chemlens_canonical": "Corey-Nicolaou Macrolactonization",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Corey-Winter Olefination",
+      "pdf_page": 162,
+      "chemlens_canonical": "Corey-Winter Olefination",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Cornforth Rearrangement",
+      "pdf_page": 164,
+      "chemlens_canonical": "Cornforth Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Criegee Oxidation",
+      "pdf_page": 166,
+      "chemlens_canonical": "Criegee Oxidation",
+      "tier": "T4_cov_h5",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Curtius Rearrangement",
+      "pdf_page": 168,
+      "chemlens_canonical": "Curtius Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Dakin Oxidation",
+      "pdf_page": 170,
+      "chemlens_canonical": "Dakin Oxidation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Dakin-West Reaction",
+      "pdf_page": 172,
+      "chemlens_canonical": "Dakin-West Reaction",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Danheiser Benzannulation",
+      "pdf_page": 174,
+      "chemlens_canonical": "Danheiser Benzannulation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Danheiser Cyclopentene Annulation",
+      "pdf_page": 176,
+      "chemlens_canonical": "Danheiser Cyclopentene Annulation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Danishefsky’s Diene Cycloaddition",
+      "pdf_page": 178,
+      "chemlens_canonical": "Danishefsky's Diene Cycloaddition",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Darzens Glycidic Ester Condensation",
+      "pdf_page": 180,
+      "chemlens_canonical": "Darzens Glycidic Ester Condensation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Davis’ Oxaziridine Oxidations",
+      "pdf_page": 182,
+      "chemlens_canonical": "Davis' Oxaziridine Oxidations",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "De Mayo Cycloaddition (Enone-Alkene [2+2] Photocycloaddition)",
+      "pdf_page": 184,
+      "chemlens_canonical": "De Mayo Cycloaddition",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Demjanov and Tiffeneau-Demjanov Rearrangement",
+      "pdf_page": 186,
+      "chemlens_canonical": "Demjanov Rearrangement and Tiffeneau-Demjanov Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Dess-Martin Oxidation",
+      "pdf_page": 188,
+      "chemlens_canonical": "Dess-Martin Oxidation",
+      "tier": "T4_cov_h5",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Dieckmann Condensation",
+      "pdf_page": 190,
+      "chemlens_canonical": "Dieckmann Condensation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Diels-Alder Cycloaddition",
+      "pdf_page": 192,
+      "chemlens_canonical": "Diels-Alder Cycloaddition",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Dienone-Phenol Rearrangement",
+      "pdf_page": 194,
+      "chemlens_canonical": "Dienone-Phenol Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Dimroth Rearrangement",
+      "pdf_page": 196,
+      "chemlens_canonical": "Dimroth Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Doering-Laflamme Allene Synthesis",
+      "pdf_page": 198,
+      "chemlens_canonical": "Doering-Laflamme Allene Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "DÖTz Benzannulation Reaction",
+      "pdf_page": 200,
+      "chemlens_canonical": "Dötz Benzannulation Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Enders Samp/Ramp Hydrazone Alkylation",
+      "pdf_page": 202,
+      "chemlens_canonical": "Enders SAMP/RAMP Hydrazone Alkylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Enyne Metathesis",
+      "pdf_page": 204,
+      "chemlens_canonical": "Enyne Metathesis",
+      "tier": "T3_cov_h1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Eschenmoser Methenylation",
+      "pdf_page": 206,
+      "chemlens_canonical": "Eschenmoser Methenylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Eschenmoser-Claisen Rearrangement",
+      "pdf_page": 208,
+      "chemlens_canonical": "Eschenmoser-Claisen Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Eschenmoser-Tanabe Fragmentation",
+      "pdf_page": 210,
+      "chemlens_canonical": "Eschenmoser-Tanabe Fragmentation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Eschweiler-Clarke Methylation(Reductive Alkylation)",
+      "pdf_page": 212,
+      "chemlens_canonical": "Eschweiler-Clarke Methylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Evans Aldol Reaction",
+      "pdf_page": 214,
+      "chemlens_canonical": "Evans Aldol Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Favorskii and Homo-Favorskii Rearrangement",
+      "pdf_page": 216,
+      "chemlens_canonical": "Favorskii Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Feist-BÉNary Furan Synthesis",
+      "pdf_page": 218,
+      "chemlens_canonical": "Feist-Bénary Furan Synthesis",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Ferrier Reaction / Rearrangement",
+      "pdf_page": 220,
+      "chemlens_canonical": "Ferrier Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Finkelstein Reaction",
+      "pdf_page": 222,
+      "chemlens_canonical": "Finkelstein Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Fischer Indole Synthesis",
+      "pdf_page": 224,
+      "chemlens_canonical": "Fischer Indole Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Fleming-Tamao Oxidation",
+      "pdf_page": 226,
+      "chemlens_canonical": "Fleming-Tamao Oxidation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Friedel-Crafts Acylation",
+      "pdf_page": 228,
+      "chemlens_canonical": "Friedel-Crafts Acylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Friedel-Crafts Alkylation",
+      "pdf_page": 230,
+      "chemlens_canonical": "Friedel-Crafts Alkylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+      "pdf_page": 232,
+      "chemlens_canonical": "Fries Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Gabriel Synthesis",
+      "pdf_page": 234,
+      "chemlens_canonical": "Gabriel Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Gattermann and Gattermann-Koch Formylation",
+      "pdf_page": 236,
+      "chemlens_canonical": "Gattermann and Gattermann-Koch Formylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Glaser Coupling",
+      "pdf_page": 238,
+      "chemlens_canonical": "Glaser Coupling",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Grignard Reaction",
+      "pdf_page": 240,
+      "chemlens_canonical": "Grignard Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Grob Fragmentation",
+      "pdf_page": 242,
+      "chemlens_canonical": "Grob Fragmentation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Hajos-Parrish Reaction",
+      "pdf_page": 244,
+      "chemlens_canonical": "Hajos-Parrish Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Hantzsch Dihydropyridine Synthesis",
+      "pdf_page": 246,
+      "chemlens_canonical": "Hantzsch Dihydropyridine Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Heck Reaction",
+      "pdf_page": 248,
+      "chemlens_canonical": "Heck Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Heine Reaction",
+      "pdf_page": 250,
+      "chemlens_canonical": "Heine Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Hell-Volhard-Zelinsky Reaction",
+      "pdf_page": 252,
+      "chemlens_canonical": "Hell-Volhard-Zelinsky Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Henry Reaction",
+      "pdf_page": 254,
+      "chemlens_canonical": "Henry Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Hetero Diels-Alder Cycloaddition",
+      "pdf_page": 256,
+      "chemlens_canonical": "Hetero Diels-Alder Cycloaddition (HDA)",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Hofmann Elimination",
+      "pdf_page": 258,
+      "chemlens_canonical": "Hofmann Elimination",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Hofmann-LÖFfler-Freytag Reaction(Remote Functionalization)",
+      "pdf_page": 260,
+      "chemlens_canonical": "Hofmann-Loffler-Freytag Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Hofmann Rearrangement",
+      "pdf_page": 262,
+      "chemlens_canonical": "Hofmann Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Horner-Wadsworth-Emmons Olefination",
+      "pdf_page": 264,
+      "chemlens_canonical": "Horner-Wadsworth-Emmons Olefination",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification",
+      "pdf_page": 266,
+      "chemlens_canonical": "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Houben-Hoesch Reaction / Synthesis",
+      "pdf_page": 268,
+      "chemlens_canonical": "Houben-Hoesch Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Hunsdiecker Reaction",
+      "pdf_page": 270,
+      "chemlens_canonical": "Hunsdiecker Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Jacobsen Hydrolytic Kinetic Resolution",
+      "pdf_page": 272,
+      "chemlens_canonical": "Jacobsen Hydrolytic Kinetic Resolution",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Jacobsen-Katsuki Epoxidation",
+      "pdf_page": 274,
+      "chemlens_canonical": "Jacobsen-Katsuki Epoxidation",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Japp-Klingemann Reaction",
+      "pdf_page": 276,
+      "chemlens_canonical": "Japp-Klingemann Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Johnson-Claisen Rearrangement",
+      "pdf_page": 278,
+      "chemlens_canonical": "Johnson-Claisen Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Jones Oxidation / Oxidation of Alcohols by Chromium Reagents",
+      "pdf_page": 280,
+      "chemlens_canonical": "Jones Oxidation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Julia-Lythgoe Olefination",
+      "pdf_page": 282,
+      "chemlens_canonical": "Julia-Lythgoe Olefination",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Kagan-Molander Samarium Diiodide-Mediated Coupling",
+      "pdf_page": 284,
+      "chemlens_canonical": "Kagan-Molander Samarium Diiodide-Mediated Coupling",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Kahne Glycosidation",
+      "pdf_page": 286,
+      "chemlens_canonical": "Kahne Glycosidation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Keck Asymmetric Allylation",
+      "pdf_page": 288,
+      "chemlens_canonical": "Keck Asymmetric Allylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Keck Macrolactonization",
+      "pdf_page": 290,
+      "chemlens_canonical": "Corey-Nicolaou Macrolactonization",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Keck Radical Allylation",
+      "pdf_page": 292,
+      "chemlens_canonical": "Keck Radical Allylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Knoevenagel Condensation",
+      "pdf_page": 294,
+      "chemlens_canonical": "Knoevenagel Condensation",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Knorr Pyrrole Synthesis",
+      "pdf_page": 296,
+      "chemlens_canonical": "Knorr Pyrrole Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Koenigs-Knorr Glycosidation",
+      "pdf_page": 298,
+      "chemlens_canonical": "Koenigs-Knorr Glycosidation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Kolbe-Schmitt Reaction",
+      "pdf_page": 300,
+      "chemlens_canonical": "Kolbe-Schmitt Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Kornblum Oxidation",
+      "pdf_page": 302,
+      "chemlens_canonical": "Kornblum Oxidation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+      "pdf_page": 304,
+      "chemlens_canonical": "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "KrÖHnke Pyridine Synthesis",
+      "pdf_page": 306,
+      "chemlens_canonical": "Kröhnke Pyridine Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Kulinkovich Reaction",
+      "pdf_page": 308,
+      "chemlens_canonical": "Kulinkovich Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Kumada Cross-Coupling",
+      "pdf_page": 310,
+      "chemlens_canonical": "Kumada Cross-Coupling",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Larock Indole Synthesis",
+      "pdf_page": 312,
+      "chemlens_canonical": "Larock Indole Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Ley Oxidation",
+      "pdf_page": 314,
+      "chemlens_canonical": "Ley Oxidation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Lieben Haloform Reaction",
+      "pdf_page": 316,
+      "chemlens_canonical": "Lieben Haloform Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Lossen Rearrangement",
+      "pdf_page": 318,
+      "chemlens_canonical": "Lossen Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Luche Reduction",
+      "pdf_page": 320,
+      "chemlens_canonical": "Luche Reduction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Madelung Indole Synthesis",
+      "pdf_page": 322,
+      "chemlens_canonical": "Madelung Indole Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Malonic Ester Synthesis",
+      "pdf_page": 324,
+      "chemlens_canonical": "Malonic Ester Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Mannich Reaction",
+      "pdf_page": 326,
+      "chemlens_canonical": "Mannich Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Mcmurry Coupling",
+      "pdf_page": 328,
+      "chemlens_canonical": "McMurry Coupling",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Meerwein Arylation",
+      "pdf_page": 330,
+      "chemlens_canonical": "Meerwein Arylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Meerwein-Ponndorf-Verley Reduction",
+      "pdf_page": 332,
+      "chemlens_canonical": "Meerwein-Ponndorf-Verley Reduction",
+      "tier": "T3_cov_h1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Meisenheimer Rearrangement",
+      "pdf_page": 334,
+      "chemlens_canonical": "Meisenheimer Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Meyer-Schuster and Rupe Rearrangement",
+      "pdf_page": 336,
+      "chemlens_canonical": "Meyer-Schuster and Rupe Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Michael Addition/Reaction",
+      "pdf_page": 338,
+      "chemlens_canonical": "Michael Addition Reaction",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Midland Alpine-Borane® Reduction (Midland Reduction)",
+      "pdf_page": 340,
+      "chemlens_canonical": "Midland Alpine Borane Reduction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Minisci Reaction",
+      "pdf_page": 342,
+      "chemlens_canonical": "Minisci Reaction",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Mislow-Evans Rearrangement",
+      "pdf_page": 344,
+      "chemlens_canonical": "Mislow-Evans Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Mitsunobu Reaction",
+      "pdf_page": 346,
+      "chemlens_canonical": "Mitsunobu Reaction",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Miyaura Boration",
+      "pdf_page": 348,
+      "chemlens_canonical": "Miyaura Boration",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Mukaiyama Aldol Reaction",
+      "pdf_page": 350,
+      "chemlens_canonical": "Mukaiyama Aldol Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Myers Asymmetric Alkylation",
+      "pdf_page": 352,
+      "chemlens_canonical": "Myers Asymmetric Alkylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Nagata Hydrocyanation",
+      "pdf_page": 354,
+      "chemlens_canonical": "Nagata Hydrocyanation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Nazarov Cyclization",
+      "pdf_page": 356,
+      "chemlens_canonical": "Nazarov Cyclization",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Neber Rearrangement",
+      "pdf_page": 358,
+      "chemlens_canonical": "Neber Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Nef Reaction",
+      "pdf_page": 360,
+      "chemlens_canonical": "Nef Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Negishi Cross-Coupling",
+      "pdf_page": 362,
+      "chemlens_canonical": "Negishi Cross-Coupling",
+      "tier": "T4_cov_h5",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Nenitzescu Indole Synthesis",
+      "pdf_page": 364,
+      "chemlens_canonical": "Nenitzescu Indole Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Nicholas Reaction",
+      "pdf_page": 366,
+      "chemlens_canonical": "Nicholas Reaction",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Noyori Asymmetric Hydrogenation",
+      "pdf_page": 368,
+      "chemlens_canonical": "Noyori Asymmetric Hydrogenation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Nozaki-Hiyama-Kishi Reaction",
+      "pdf_page": 370,
+      "chemlens_canonical": "Nozaki-Hiyama-Kishi Reaction",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Oppenauer Oxidation",
+      "pdf_page": 372,
+      "chemlens_canonical": "Oppenauer Oxidation",
+      "tier": "T4_cov_h5",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Overman Rearrangement",
+      "pdf_page": 374,
+      "chemlens_canonical": "Overman Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Oxy-Cope Rearrangement and Anionic Oxy-Cope Rearrangement",
+      "pdf_page": 376,
+      "chemlens_canonical": "Oxy-Cope Rearrangement and Anionic Oxy-Cope Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Paal-Knorr Furan Synthesis",
+      "pdf_page": 378,
+      "chemlens_canonical": "Paal-Knorr Furan Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Paal-Knorr Pyrrole Synthesis",
+      "pdf_page": 380,
+      "chemlens_canonical": "Paal-Knorr Pyrrole Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Passerini Multicomponent Reaction",
+      "pdf_page": 382,
+      "chemlens_canonical": "Passerini Multicomponent Reaction",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Paterno-BÜChi Reaction",
+      "pdf_page": 384,
+      "chemlens_canonical": "Paternò-Büchi Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Pauson-Khand Reaction",
+      "pdf_page": 386,
+      "chemlens_canonical": "Pauson-Khand Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Payne Rearrangement",
+      "pdf_page": 388,
+      "chemlens_canonical": "Payne Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Perkin Reaction",
+      "pdf_page": 390,
+      "chemlens_canonical": "Perkin Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Petasis Boronic Acid-Mannich Reaction",
+      "pdf_page": 392,
+      "chemlens_canonical": "Petasis Boronic Acid-Mannich Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Petasis-Ferrier Rearrangement",
+      "pdf_page": 394,
+      "chemlens_canonical": "Petasis-Ferrier Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Peterson Olefination",
+      "pdf_page": 396,
+      "chemlens_canonical": "Peterson Olefination",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Pfitzner-Moffatt Oxidation",
+      "pdf_page": 398,
+      "chemlens_canonical": "Pfitzner-Moffatt Oxidation",
+      "tier": "T4_cov_h5",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Pictet-Spengler Tetrahydroisoquinoline Synthesis",
+      "pdf_page": 400,
+      "chemlens_canonical": "Pictet-Spengler Tetrahydroisoquinoline Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Pinacol and Semipinacol Rearrangement",
+      "pdf_page": 402,
+      "chemlens_canonical": "Pinacol and Semipinacol Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Pinner Reaction",
+      "pdf_page": 404,
+      "chemlens_canonical": "Pinner Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Pinnick Oxidation",
+      "pdf_page": 406,
+      "chemlens_canonical": "Pinnick Oxidation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Polonovski Reaction",
+      "pdf_page": 408,
+      "chemlens_canonical": "Polonovski Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Pomeranz-Fritsch Reaction",
+      "pdf_page": 410,
+      "chemlens_canonical": "Pomeranz-Fritsch Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "PrÉVost Reaction",
+      "pdf_page": 412,
+      "chemlens_canonical": "Prévost Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Prilezhaev Reaction",
+      "pdf_page": 414,
+      "chemlens_canonical": "Prilezhaev Reaction",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Prins Reaction",
+      "pdf_page": 416,
+      "chemlens_canonical": "Prins Reaction",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Prins-Pinacol Rearrangement",
+      "pdf_page": 418,
+      "chemlens_canonical": "Prins-Pinacol Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Pummerer Rearrangement",
+      "pdf_page": 420,
+      "chemlens_canonical": "Pummerer Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Quasi-Favorskii Rearrangement",
+      "pdf_page": 422,
+      "chemlens_canonical": "Quasi-Favorskii Rearrangement",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Ramberg-BÄCklund Rearrangement",
+      "pdf_page": 424,
+      "chemlens_canonical": "Ramberg-Bäcklund Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Reformatsky Reaction",
+      "pdf_page": 426,
+      "chemlens_canonical": "Reformatsky Reaction",
+      "tier": "T4_cov_h5",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Regitz Diazo Transfer",
+      "pdf_page": 428,
+      "chemlens_canonical": "Regitz Diazo Transfer",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Reimer-Tiemann Reaction",
+      "pdf_page": 430,
+      "chemlens_canonical": "Reimer-Tiemann Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Riley Selenium Dioxide Oxidation",
+      "pdf_page": 432,
+      "chemlens_canonical": "Riley Selenium Dioxide Oxidation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Ritter Reaction",
+      "pdf_page": 434,
+      "chemlens_canonical": "Ritter Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Robinson Annulation",
+      "pdf_page": 436,
+      "chemlens_canonical": "Robinson Annulation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Roush Asymmetric Allylation",
+      "pdf_page": 438,
+      "chemlens_canonical": "Roush Asymmetric Allylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Rubottom Oxidation",
+      "pdf_page": 440,
+      "chemlens_canonical": "Rubottom Oxidation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Saegusa Oxidation",
+      "pdf_page": 442,
+      "chemlens_canonical": "Saegusa Oxidation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Sakurai Allylation",
+      "pdf_page": 444,
+      "chemlens_canonical": "Sakurai Allylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Sandmeyer Reaction",
+      "pdf_page": 446,
+      "chemlens_canonical": "Sandmeyer Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Schmidt Reaction",
+      "pdf_page": 448,
+      "chemlens_canonical": "Schmidt Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Schotten-Baumann Reaction",
+      "pdf_page": 450,
+      "chemlens_canonical": "Schotten-Baumann Reaction",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Schwartz Hydrozirconation",
+      "pdf_page": 452,
+      "chemlens_canonical": "Schwartz Hydrozirconation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Seyferth-Gilbert Homologation",
+      "pdf_page": 454,
+      "chemlens_canonical": "Seyferth-Gilbert Homologation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Sharpless Asymmetric Aminohydroxylation",
+      "pdf_page": 456,
+      "chemlens_canonical": "Sharpless Asymmetric Aminohydroxylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Sharpless Asymmetric Dihydroxylation",
+      "pdf_page": 458,
+      "chemlens_canonical": "Sharpless Asymmetric Dihydroxylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Sharpless Asymmetric Epoxidation",
+      "pdf_page": 460,
+      "chemlens_canonical": "Sharpless Asymmetric Epoxidation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Shi Asymmetric Epoxidation",
+      "pdf_page": 462,
+      "chemlens_canonical": "Shi Asymmetric Epoxidation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Simmons-Smith Cyclopropanation",
+      "pdf_page": 464,
+      "chemlens_canonical": "Simmons-Smith Cyclopropanation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Skraup and Doebner-Miller Quinoline Synthesis",
+      "pdf_page": 466,
+      "chemlens_canonical": "Skraup and Doebner-Miller Quinoline Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Smiles Rearrangement",
+      "pdf_page": 468,
+      "chemlens_canonical": "Smiles Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Smith-Tietze Multicomponent Dithiane Linchpin Coupling",
+      "pdf_page": 470,
+      "chemlens_canonical": "Smith-Tietze Multicomponent Dithiane Linchpin Coupling",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Snieckus Directed Ortho Metalation",
+      "pdf_page": 472,
+      "chemlens_canonical": "Snieckus Directed Ortho Metalation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Sommelet-Hauser Rearrangement",
+      "pdf_page": 474,
+      "chemlens_canonical": "Sommelet-Hauser Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Sonogashira Cross-Coupling",
+      "pdf_page": 476,
+      "chemlens_canonical": "Sonogashira Cross-Coupling",
+      "tier": "T4_cov_h5",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Staudinger Ketene Cycloaddition",
+      "pdf_page": 478,
+      "chemlens_canonical": "Staudinger Ketene Cycloaddition",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Staudinger Reaction",
+      "pdf_page": 480,
+      "chemlens_canonical": "Staudinger Reaction",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Stephen Aldehyde Synthesis (Stephen Reduction)",
+      "pdf_page": 482,
+      "chemlens_canonical": "Stephen Aldehyde Synthesis (Stephen Reduction)",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Stetter Reaction",
+      "pdf_page": 484,
+      "chemlens_canonical": "Stetter Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Stevens Rearrangement",
+      "pdf_page": 486,
+      "chemlens_canonical": "Stevens Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Stille Carbonylative Cross-Coupling",
+      "pdf_page": 488,
+      "chemlens_canonical": "Stille Carbonylative Cross-Coupling",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Stille Cross-Coupling(Migita-Kosugi-Stille Coupling)",
+      "pdf_page": 490,
+      "chemlens_canonical": "Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Stille-Kelly Coupling",
+      "pdf_page": 492,
+      "chemlens_canonical": "Stille-Kelly Coupling",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Stobbe Condensation",
+      "pdf_page": 494,
+      "chemlens_canonical": "Stobbe Condensation",
+      "tier": "T4_cov_h5",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Stork Enamine Synthesis",
+      "pdf_page": 496,
+      "chemlens_canonical": "Stork Enamine Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Strecker Reaction",
+      "pdf_page": 498,
+      "chemlens_canonical": "Strecker Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Suzuki Cross-Coupling(Suzuki-Miyaura Cross-Coupling)",
+      "pdf_page": 500,
+      "chemlens_canonical": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Swern Oxidation",
+      "pdf_page": 502,
+      "chemlens_canonical": "Swern Oxidation",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Takai-Utimoto Olefination (Takai Reaction)",
+      "pdf_page": 504,
+      "chemlens_canonical": "Takai-Utimoto Olefination (Takai Reaction)",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Tebbe Olefination / Petasis-Tebbe Olefination",
+      "pdf_page": 506,
+      "chemlens_canonical": "Tebbe Olefination/Petasis-Tebbe Olefination",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Tishchenko Reaction",
+      "pdf_page": 508,
+      "chemlens_canonical": "Tishchenko Reaction",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Tsuji-Trost Reaction / Allylation",
+      "pdf_page": 510,
+      "chemlens_canonical": "Tsuji-Trost Reaction / Allylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Tsuji-Wilkinson Decarbonylation Reaction",
+      "pdf_page": 512,
+      "chemlens_canonical": "Tsuji-Wilkinson Decarbonylation Reaction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Ugi Multicomponent Reaction",
+      "pdf_page": 514,
+      "chemlens_canonical": "Ugi Multicomponent Reaction",
+      "tier": "T3_cov_h1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation",
+      "pdf_page": 516,
+      "chemlens_canonical": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+      "pdf_page": 518,
+      "chemlens_canonical": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Vilsmeier-Haack Formylation",
+      "pdf_page": 520,
+      "chemlens_canonical": "Vilsmeier-Haack Formylation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Vinylcyclopropane-Cyclopentene Rearrangement",
+      "pdf_page": 522,
+      "chemlens_canonical": "Vinylcyclopropane-Cyclopentene Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Von Pechmann Reaction",
+      "pdf_page": 524,
+      "chemlens_canonical": "von Pechmann Reaction",
+      "tier": "T3_cov_h1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Wacker Oxidation",
+      "pdf_page": 526,
+      "chemlens_canonical": "Wacker Oxidation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Wagner-Meerwein Rearrangement",
+      "pdf_page": 528,
+      "chemlens_canonical": "Wagner-Meerwein Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Weinreb Ketone Synthesis",
+      "pdf_page": 530,
+      "chemlens_canonical": "Weinreb Ketone Synthesis",
+      "tier": "T3_cov_h1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Wharton Fragmentation",
+      "pdf_page": 532,
+      "chemlens_canonical": "Wharton Fragmentation",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Wharton Olefin Synthesis (Wharton Transposition)",
+      "pdf_page": 534,
+      "chemlens_canonical": "Wharton Olefin Synthesis (Wharton Transposition)",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Williamson Ether Synthesis",
+      "pdf_page": 536,
+      "chemlens_canonical": "Williamson Ether Synthesis",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 1,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Wittig Reaction",
+      "pdf_page": 538,
+      "chemlens_canonical": "Wittig Reaction",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Wittig Reaction - Schlosser Modification",
+      "pdf_page": 540,
+      "chemlens_canonical": "Wittig Reaction - Schlosser Modification",
+      "tier": "T5_name_only",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 0,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 0,
+        "cov_h5_hits": 0,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 0
+      }
+    },
+    {
+      "pdf_name": "Wittig-[1,2]- and [2,3]-Rearrangement",
+      "pdf_page": 542,
+      "chemlens_canonical": "Wittig-[1,2]- and [2,3]-Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Wohl-Ziegler Bromination",
+      "pdf_page": 544,
+      "chemlens_canonical": "Wohl-Ziegler Bromination",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Wolff Rearrangement",
+      "pdf_page": 546,
+      "chemlens_canonical": "Wolff Rearrangement",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Wolff-Kishner Reduction",
+      "pdf_page": 548,
+      "chemlens_canonical": "Wolff-Kishner Reduction",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Wurtz Coupling",
+      "pdf_page": 550,
+      "chemlens_canonical": "Wurtz Coupling",
+      "tier": "T2_adm_top3",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 0,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 0,
+        "cov_h3_hits": 1,
+        "cov_h5_hits": 1,
+        "brd_cases": 1,
+        "brd_top1_hits": 0,
+        "brd_top3_hits": 1
+      }
+    },
+    {
+      "pdf_name": "Yamaguchi Macrolactonization",
+      "pdf_page": 552,
+      "chemlens_canonical": "Corey-Nicolaou Macrolactonization",
+      "tier": "T1_adm_top1",
+      "bench_stats": {
+        "adm_cases": 1,
+        "adm_top1_hits": 1,
+        "adm_top3_hits": 1,
+        "cov_cases": 2,
+        "cov_h1_hits": 2,
+        "cov_h3_hits": 2,
+        "cov_h5_hits": 2,
+        "brd_cases": 1,
+        "brd_top1_hits": 1,
+        "brd_top3_hits": 1
+      }
+    }
+  ]
+}

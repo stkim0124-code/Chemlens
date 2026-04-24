@@ -1,0 +1,32 @@
+Total distinct family_name rows: 305
+========================================================================
+
+--- contains 'baeyer' (3 hits) ---
+  id=  42  'Baeyer-Villiger Oxidation'
+  id= 291  'Baeyer-Villiger Oxidation/Rearrangement'
+  id=  13  'Baeyer-Villiger Oxidation/rearrangement'
+
+--- contains 'villiger' (3 hits) ---
+  id=  42  'Baeyer-Villiger Oxidation'
+  id= 291  'Baeyer-Villiger Oxidation/Rearrangement'
+  id=  13  'Baeyer-Villiger Oxidation/rearrangement'
+
+--- contains 'favorskii' (3 hits) ---
+  id= 811  'Favorskii Rearrangement'
+  id= 359  'Favorskii and Homo-Favorskii Rearrangement'
+  id= 178  'Quasi-Favorskii Rearrangement'
+
+--- contains 'homo-favorskii' (1 hits) ---
+  id= 359  'Favorskii and Homo-Favorskii Rearrangement'
+
+--- contains 'simmons' (2 hits) ---
+  id= 199  'Simmons-Smith Cyclopropanation'
+  id= 151  'Simmons-Smith Reaction'
+
+--- contains 'cyclopropanation' (3 hits) ---
+  id= 153  'Charette Asymmetric Cyclopropanation'
+  id= 328  'Corey-Chaykovsky Epoxidation and Cyclopropanation'
+  id= 199  'Simmons-Smith Cyclopropanation'
+
+--- contains 'furukawa' (1 hits) ---
+  id= 152  'Furukawa Modification'

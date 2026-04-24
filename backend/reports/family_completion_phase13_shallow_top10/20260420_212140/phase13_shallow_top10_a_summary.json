@@ -1,0 +1,233 @@
+{
+  "tag": "phase13_shallow_top10_completion_v1",
+  "db": "app\\labint.db",
+  "batch": "a",
+  "dry_run": true,
+  "before": {
+    "queryable_family_count": 267,
+    "queryable_count": 1357
+  },
+  "after": {
+    "queryable_family_count": 267,
+    "queryable_count": 1381
+  },
+  "alias_updates": [
+    {
+      "table": "reaction_extracts",
+      "from": "Glaser Reaction",
+      "to": "Glaser Coupling",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Glaser Reaction",
+      "to": "Glaser Coupling",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Hell Volhard Zelinsky Reaction",
+      "to": "Hell-Volhard-Zelinsky Reaction",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Hell Volhard Zelinsky Reaction",
+      "to": "Hell-Volhard-Zelinsky Reaction",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "HVZ Reaction",
+      "to": "Hell-Volhard-Zelinsky Reaction",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "HVZ Reaction",
+      "to": "Hell-Volhard-Zelinsky Reaction",
+      "rows_updated": 0
+    }
+  ],
+  "backfill_updates": [
+    {
+      "family": "Glaser Coupling",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Grignard Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Heck Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Hell-Volhard-Zelinsky Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Henry Reaction",
+      "extract_rows_touched": 1
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Glaser Coupling",
+      "status": "inserted",
+      "extract_id": 915,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Glaser Coupling",
+      "status": "inserted",
+      "extract_id": 916,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Grignard Reaction",
+      "status": "inserted",
+      "extract_id": 917,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Grignard Reaction",
+      "status": "inserted",
+      "extract_id": 918,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Heck Reaction",
+      "status": "inserted",
+      "extract_id": 919,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Heck Reaction",
+      "status": "inserted",
+      "extract_id": 920,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Hell-Volhard-Zelinsky Reaction",
+      "status": "inserted",
+      "extract_id": 921,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Hell-Volhard-Zelinsky Reaction",
+      "status": "inserted",
+      "extract_id": 922,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Henry Reaction",
+      "status": "inserted",
+      "extract_id": 923,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Henry Reaction",
+      "status": "inserted",
+      "extract_id": 924,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    }
+  ],
+  "verify": [
+    {
+      "family": "Glaser Coupling",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": false
+    },
+    {
+      "family": "Grignard Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 4,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Heck Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Hell-Volhard-Zelinsky Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": false
+    },
+    {
+      "family": "Henry Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    }
+  ]
+}

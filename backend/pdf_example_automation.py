@@ -14,6 +14,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Tuple
+from urllib.parse import urlsplit, urlunsplit
 
 try:
     import fitz  # PyMuPDF
@@ -389,9 +390,78 @@ def build_lean_user_text(family_name: str, paragraph_text: str, nearby_text: str
     parts.append("Important: ignore minor side steps; pick the main example only.")
     return "\n".join(parts)
 
-def gemini_call(api_key: str, model: str, family_name: str, paragraph_text: str, nearby_text: str, image_path: Path, timeout_s: int = 120) -> Dict[str, Any]:
+
+def sanitize_error_message(message: str, api_key: Optional[str] = None) -> str:
+    msg = str(message or "")
+    if api_key:
+        msg = msg.replace(api_key, "<REDACTED>")
+    msg = re.sub(r"([?&]key=)[^&\s]+", r"\1<REDACTED>", msg)
+    msg = re.sub(r"(x-goog-api-key[:=]\s*)[^,;\s]+", r"\1<REDACTED>", msg, flags=re.IGNORECASE)
+    return msg
+
+
+def _response_preview(resp: Any, limit: int = 240) -> str:
+    try:
+        text = resp.text or ""
+    except Exception:
+        return ""
+    text = re.sub(r"\s+", " ", text).strip()
+    if len(text) > limit:
+        return text[:limit] + " ..."
+    return text
+
+
+def _exception_status_code(exc: Exception) -> Optional[int]:
+    response = getattr(exc, "response", None)
+    if response is not None:
+        return getattr(response, "status_code", None)
+    return None
+
+
+def _is_retryable_transport_error(exc: Exception) -> bool:
+    if requests is None:
+        return False
+    try:
+        timeout_types = (requests.exceptions.Timeout,)
+        connection_types = (requests.exceptions.ConnectionError,)
+    except Exception:
+        return False
+    if isinstance(exc, timeout_types + connection_types):
+        return True
+    msg = str(exc or "").lower()
+    return (
+        "read timed out" in msg
+        or "timed out" in msg
+        or "connection reset" in msg
+        or "connection aborted" in msg
+        or "temporary failure" in msg
+    )
+
+
+def _build_gemini_url(model: str, api_auth: str, api_key: str) -> str:
+    base = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+    if api_auth == "query":
+        return f"{base}?key={api_key}"
+    return base
+
+
+def gemini_call(
+    api_key: str,
+    model: str,
+    family_name: str,
+    paragraph_text: str,
+    nearby_text: str,
+    image_path: Path,
+    timeout_s: int = 180,
+    max_retries: int = 2,
+    retry_initial_sleep: float = 20.0,
+    retry_backoff: float = 2.0,
+    retry_statuses: Optional[Sequence[int]] = None,
+    api_auth: str = "header",
+) -> Dict[str, Any]:
     if requests is None:
         raise RuntimeError("requests is required for Gemini mode")
+    retry_statuses = tuple(int(x) for x in (retry_statuses or (429, 500, 503)))
     with image_path.open("rb") as f:
         b64 = base64.b64encode(f.read()).decode("ascii")
     user_text = build_lean_user_text(family_name, paragraph_text, nearby_text)
@@ -410,22 +480,53 @@ def gemini_call(api_key: str, model: str, family_name: str, paragraph_text: str,
             "responseMimeType": "application/json",
         },
     }
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
-    r = requests.post(url, json=body, timeout=timeout_s)
-    r.raise_for_status()
-    data = r.json()
-    text = None
-    for cand in data.get("candidates", []):
-        parts = cand.get("content", {}).get("parts", [])
-        for p in parts:
-            if "text" in p:
-                text = p["text"]
-                break
-        if text:
-            break
-    if not text:
-        raise RuntimeError("Gemini returned no text payload")
-    return json.loads(text)
+    headers = {"Content-Type": "application/json"}
+    if api_auth == "header":
+        headers["x-goog-api-key"] = api_key
+    url = _build_gemini_url(model, api_auth, api_key)
+    attempts = max(1, int(max_retries) + 1)
+    sleep_s = max(0.0, float(retry_initial_sleep))
+
+    last_err: Optional[Exception] = None
+    for attempt in range(1, attempts + 1):
+        try:
+            r = requests.post(url, json=body, headers=headers, timeout=(30, timeout_s))
+            if r.status_code >= 400:
+                preview = _response_preview(r)
+                if preview:
+                    print(f"    [HTTP {r.status_code}] {family_name} attempt {attempt}/{attempts}: {preview}")
+            r.raise_for_status()
+            data = r.json()
+            text = None
+            for cand in data.get("candidates", []):
+                parts = cand.get("content", {}).get("parts", [])
+                for p in parts:
+                    if "text" in p:
+                        text = p["text"]
+                        break
+                if text:
+                    break
+            if not text:
+                raise RuntimeError("Gemini returned no text payload")
+            return json.loads(text)
+        except Exception as e:
+            last_err = e
+            status = _exception_status_code(e)
+            err_msg = sanitize_error_message(str(e), api_key=api_key)
+            retryable_transport = _is_retryable_transport_error(e)
+            if (status in retry_statuses or retryable_transport) and attempt < attempts:
+                retry_label = f"status={status}" if status is not None else "transport=timeout_or_connection"
+                print(
+                    f"    [RETRY] {family_name} attempt {attempt}/{attempts} {retry_label} "
+                    f"sleep={sleep_s:.1f}s error={err_msg}"
+                )
+                if sleep_s > 0:
+                    time.sleep(sleep_s)
+                sleep_s = max(sleep_s * max(1.0, float(retry_backoff)), sleep_s + 1.0) if sleep_s > 0 else max(1.0, float(retry_backoff))
+                continue
+            raise RuntimeError(err_msg) from e
+
+    raise RuntimeError(sanitize_error_message(str(last_err), api_key=api_key) if last_err else "Gemini call failed")
 
 
 def write_json(path: Path, obj: Any) -> None:
@@ -532,7 +633,24 @@ def resolve_pdf_path(backend_root: Path, pdf_arg: Path) -> Path:
     raise FileNotFoundError('\n'.join(msg))
 
 
+def _parse_retry_statuses(raw: Any) -> Tuple[int, ...]:
+    if raw is None:
+        return (429, 500, 503)
+    if isinstance(raw, (list, tuple, set)):
+        vals = list(raw)
+    else:
+        vals = [x.strip() for x in str(raw).split(",") if x.strip()]
+    out = []
+    for v in vals:
+        try:
+            out.append(int(v))
+        except Exception:
+            continue
+    return tuple(out) if out else (429, 500, 503)
+
+
 def run(args: argparse.Namespace) -> int:
+    args.retry_statuses = _parse_retry_statuses(args.retry_statuses)
     backend_root = Path(args.backend_root).resolve()
     db_path = (backend_root / args.db).resolve()
     pdf_path = resolve_pdf_path(backend_root, args.pdf)
@@ -564,6 +682,11 @@ def run(args: argparse.Namespace) -> int:
         print(f"report_dir:   {report_dir}")
         print(f"mode:         {'GEMINI' if args.call_gemini else 'DRY-RUN'}")
         print(f"page_offset:  {offset}")
+        if args.call_gemini:
+            print(f"api_auth:     {args.api_auth}")
+            print(f"model:        {args.model}")
+            print(f"retry_status: {args.retry_statuses}")
+            print(f"max_retries:  {args.max_retries}")
 
         api_key = None
         if args.call_gemini:
@@ -624,7 +747,20 @@ def run(args: argparse.Namespace) -> int:
                     if args.call_gemini:
                         try:
                             print(f"    [CALL] {row.family_name} r{idx} -> Gemini")
-                            payload = gemini_call(api_key, args.model, row.family_name, para, nearby, crop_path, timeout_s=args.timeout)
+                            payload = gemini_call(
+                                api_key,
+                                args.model,
+                                row.family_name,
+                                para,
+                                nearby,
+                                crop_path,
+                                timeout_s=args.timeout,
+                                max_retries=args.max_retries,
+                                retry_initial_sleep=args.retry_initial_sleep,
+                                retry_backoff=args.retry_backoff,
+                                retry_statuses=args.retry_statuses,
+                                api_auth=args.api_auth,
+                            )
                             extraction_entry["status"] = "ok"
                             extraction_entry["raw_json_path"] = str(json_dir / (crop_name.replace('.png', '.json')))
                             write_json(Path(extraction_entry["raw_json_path"]), payload)
@@ -652,7 +788,7 @@ def run(args: argparse.Namespace) -> int:
                             time.sleep(args.sleep)
                         except Exception as e:
                             extraction_entry["status"] = "error"
-                            extraction_entry["error"] = str(e)
+                            extraction_entry["error"] = sanitize_error_message(str(e), api_key=api_key)
                             stage.execute(
                                 "INSERT OR REPLACE INTO pdf_example_extractions(page_knowledge_id,family_name,family_name_norm,book_page_no,pdf_page_no,region_index,model_name,prompt_version,status,example_target_name,example_summary,region_confidence,raw_json,error_message,report_run) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                                 (
@@ -669,7 +805,7 @@ def run(args: argparse.Namespace) -> int:
                                     None,
                                     None,
                                     None,
-                                    str(e),
+                                    sanitize_error_message(str(e), api_key=api_key),
                                     report_run,
                                 ),
                             )
@@ -740,13 +876,18 @@ def build_argparser() -> argparse.ArgumentParser:
     p.add_argument("--reports-dir", type=Path, default=DEFAULT_REPORTS)
     p.add_argument("--families", default=None, help="Comma/semicolon separated family names to limit the run")
     p.add_argument("--limit-pages", type=int, default=0)
-    p.add_argument("--dpi", type=int, default=160)
+    p.add_argument("--dpi", type=int, default=120)
     p.add_argument("--call-gemini", action="store_true")
     p.add_argument("--api-key", default=None, help="Gemini API key passed directly on the command line (not recommended for shared terminals)")
     p.add_argument("--prompt-api-key", action="store_true", help="Prompt for Gemini API key interactively in the current Anaconda Prompt session")
-    p.add_argument("--model", default="gemini-2.5-pro")
-    p.add_argument("--timeout", type=int, default=120)
+    p.add_argument("--model", default="gemini-2.5-flash")
+    p.add_argument("--api-auth", choices=["header", "query"], default="header", help="How to send the Gemini API key. 'header' matches the official curl examples.")
+    p.add_argument("--timeout", type=int, default=180, help="Read timeout seconds for Gemini response body; connect timeout is fixed at 30s")
     p.add_argument("--sleep", type=float, default=30.0, help="Seconds between successful LLM calls")
+    p.add_argument("--max-retries", type=int, default=2, help="Retry count for transient Gemini HTTP errors such as 429/500/503")
+    p.add_argument("--retry-initial-sleep", type=float, default=20.0, help="Initial backoff sleep in seconds after a transient Gemini HTTP error")
+    p.add_argument("--retry-backoff", type=float, default=2.0, help="Multiplier applied to retry sleep after each transient Gemini HTTP error")
+    p.add_argument("--retry-statuses", default="429,500,503", help="Comma-separated HTTP statuses that should be retried")
     p.add_argument("--max-regions-per-page", type=int, default=1, help="Process only the first N detected example regions per page")
     p.add_argument("--cooldown-on-429", type=float, default=0.0, help="Cooldown seconds after first 429 before stopping the run")
     return p

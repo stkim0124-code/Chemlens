@@ -1,0 +1,451 @@
+{
+  "tag": "phase28_shallow_top10_v1",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "batch": "all",
+  "dry_run": false,
+  "before": {
+    "queryable_family_count": 264,
+    "queryable_count": 2195
+  },
+  "after": {
+    "queryable_family_count": 264,
+    "queryable_count": 2255
+  },
+  "alias_updates": [],
+  "backfill_updates": [
+    {
+      "family": "Takai-Utimoto Olefination (Takai Reaction)",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Tebbe Olefination/Petasis-Tebbe Olefination",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Tishchenko Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Tsuji-Trost Reaction / Allylation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Ugi Multicomponent Reaction",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Vilsmeier-Haack Formylation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Vinylcyclopropane-Cyclopentene Rearrangement",
+      "extract_rows_touched": 1
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Takai-Utimoto Olefination (Takai Reaction)",
+      "status": "inserted",
+      "extract_id": 1330,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Takai-Utimoto Olefination (Takai Reaction)",
+      "status": "inserted",
+      "extract_id": 1331,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Takai-Utimoto Olefination (Takai Reaction)",
+      "status": "inserted",
+      "extract_id": 1332,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Tebbe Olefination/Petasis-Tebbe Olefination",
+      "status": "inserted",
+      "extract_id": 1333,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Tebbe Olefination/Petasis-Tebbe Olefination",
+      "status": "inserted",
+      "extract_id": 1334,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Tebbe Olefination/Petasis-Tebbe Olefination",
+      "status": "inserted",
+      "extract_id": 1335,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Tishchenko Reaction",
+      "status": "inserted",
+      "extract_id": 1336,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Tishchenko Reaction",
+      "status": "inserted",
+      "extract_id": 1337,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Tishchenko Reaction",
+      "status": "inserted",
+      "extract_id": 1338,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Tsuji-Trost Reaction / Allylation",
+      "status": "inserted",
+      "extract_id": 1339,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Tsuji-Trost Reaction / Allylation",
+      "status": "inserted",
+      "extract_id": 1340,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Tsuji-Trost Reaction / Allylation",
+      "status": "inserted",
+      "extract_id": 1341,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+      "status": "inserted",
+      "extract_id": 1342,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+      "status": "inserted",
+      "extract_id": 1343,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+      "status": "inserted",
+      "extract_id": 1344,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Ugi Multicomponent Reaction",
+      "status": "inserted",
+      "extract_id": 1345,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Ugi Multicomponent Reaction",
+      "status": "inserted",
+      "extract_id": 1346,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Ugi Multicomponent Reaction",
+      "status": "inserted",
+      "extract_id": 1347,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation",
+      "status": "inserted",
+      "extract_id": 1348,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation",
+      "status": "inserted",
+      "extract_id": 1349,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation",
+      "status": "inserted",
+      "extract_id": 1350,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+      "status": "inserted",
+      "extract_id": 1351,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+      "status": "inserted",
+      "extract_id": 1352,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+      "status": "inserted",
+      "extract_id": 1353,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Vilsmeier-Haack Formylation",
+      "status": "inserted",
+      "extract_id": 1354,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Vilsmeier-Haack Formylation",
+      "status": "inserted",
+      "extract_id": 1355,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Vilsmeier-Haack Formylation",
+      "status": "inserted",
+      "extract_id": 1356,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Vinylcyclopropane-Cyclopentene Rearrangement",
+      "status": "inserted",
+      "extract_id": 1357,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Vinylcyclopropane-Cyclopentene Rearrangement",
+      "status": "inserted",
+      "extract_id": 1358,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Vinylcyclopropane-Cyclopentene Rearrangement",
+      "status": "inserted",
+      "extract_id": 1359,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Takai-Utimoto Olefination (Takai Reaction)",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Tebbe Olefination/Petasis-Tebbe Olefination",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Tishchenko Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Tsuji-Trost Reaction / Allylation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Tsuji-Wilkinson Decarbonylation Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Ugi Multicomponent Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 7,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Vilsmeier-Haack Formylation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Vinylcyclopropane-Cyclopentene Rearrangement",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    }
+  ]
+}

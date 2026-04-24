@@ -1,0 +1,902 @@
+{
+  "generated_at": "2026-04-20 01:22:22",
+  "source_verifier_json": "reports\\final_state_verifier\\20260420_012220\\final_state_verifier.json",
+  "canonical_totals": {
+    "registry_family_total_raw": 305,
+    "registry_family_distinct_total_raw": 291,
+    "registry_duplicate_name_rows_raw": 14,
+    "registry_family_distinct_total_canonicalized": 280,
+    "families_with_extracts_canonicalized": 280,
+    "queryable_family_count_canonicalized": 271,
+    "reaction_extract_count": 545,
+    "extract_molecule_count": 2842,
+    "queryable_molecule_count": 1014,
+    "extracts_with_both_smiles": 276
+  },
+  "completion_bucket_counts": {
+    "missing_count_canonicalized": 0,
+    "shallow_count_canonicalized": 265,
+    "rich_count_canonicalized": 15,
+    "collision_prone_candidate_count_canonicalized": 27,
+    "recent_completed_family_count_canonicalized": 7,
+    "missing_count_raw_uncollapsed": 10,
+    "missing_sample_display_count": 0
+  },
+  "focus_families": [
+    {
+      "family": "Alkene (Olefin) Metathesis",
+      "raw_family_names_collapsed": [
+        "Alkene (Olefin) Metathesis",
+        "Alkene (olefin) Metathesis"
+      ],
+      "extract_count": 11,
+      "overview_count": 5,
+      "application_count": 5,
+      "mechanism_count": 0,
+      "extract_with_reactant": 4,
+      "extract_with_product": 5,
+      "extract_with_both": 3,
+      "queryable_reactants": 5,
+      "queryable_products": 5,
+      "molecule_rows": 36,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "completion_bucket": "rich",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": [
+        {
+          "id": 792,
+          "raw_family_name": "Alkene (Olefin) Metathesis",
+          "extract_kind": "canonical_overview",
+          "transformation_text": "Curated representative seed: ring-closing metathesis of 1,7-octadiene to cyclohexene.",
+          "reactants_text": "1,7-octadiene",
+          "products_text": "cyclohexene"
+        },
+        {
+          "id": 793,
+          "raw_family_name": "Alkene (Olefin) Metathesis",
+          "extract_kind": "application_example",
+          "transformation_text": "Curated representative seed: cross-metathesis of styrene with methyl acrylate to methyl cinnamate.",
+          "reactants_text": "styrene | methyl acrylate",
+          "products_text": "methyl cinnamate"
+        },
+        {
+          "id": 794,
+          "raw_family_name": "Alkene (Olefin) Metathesis",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: ring-closing metathesis toward the (+)-Prelaureatin precursor.",
+          "reactants_text": "C=C[C@H](O[Si](C)(C)C(C)(C)C)[C@H](O[Si](C)(C)C(C)(C)C)[C@@H](C=C)OCc1ccccc1",
+          "products_text": "c1ccccc1CO[C@@H]2[C@H](O[Si](C)(C)C(C)(C)C)[C@H](O[Si](C)(C)C(C)(C)C)/C=C\\C2"
+        }
+      ]
+    },
+    {
+      "family": "Barton-McCombie Radical Deoxygenation Reaction",
+      "raw_family_names_collapsed": [
+        "Barton-McCombie Radical Deoxygenation Reaction",
+        "Barton-Mccombie Radical Deoxygenation Reaction"
+      ],
+      "extract_count": 8,
+      "overview_count": 2,
+      "application_count": 3,
+      "mechanism_count": 0,
+      "extract_with_reactant": 5,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 6,
+      "queryable_products": 4,
+      "molecule_rows": 38,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "completion_bucket": "rich",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": [
+        {
+          "id": 795,
+          "raw_family_name": "Barton-McCombie Radical Deoxygenation Reaction",
+          "extract_kind": "canonical_overview",
+          "transformation_text": "Curated representative seed: 1-phenylethanol is deoxygenated to ethylbenzene via a xanthate intermediate under Barton-McCombie conditions.",
+          "reactants_text": "1-phenylethanol",
+          "products_text": "ethylbenzene"
+        },
+        {
+          "id": 796,
+          "raw_family_name": "Barton-McCombie Radical Deoxygenation Reaction",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Barton-McCombie deoxygenation in the synthesis of (±)-Δ9(12)-Capnellene.",
+          "reactants_text": "CSC(=S)O[C@H]1C[C@H]2C3C[C@H](C(C)(C)O3)[C@@H]12",
+          "products_text": "CC1(C)O[C@H]2CC3[C@H]4C[C@@H]3C421"
+        },
+        {
+          "id": 797,
+          "raw_family_name": "Barton-McCombie Radical Deoxygenation Reaction",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Barton-McCombie deoxygenation in the synthesis of the octenoic acid side chain of zaragozic acid.",
+          "reactants_text": "CON(C)C(=O)[C@@H](C(C)C)[C@H](C)[C@H](C)OC(=S)SC",
+          "products_text": "CON(C)C(=O)[C@@H](C(C)C)[C@H](C)C"
+        }
+      ]
+    },
+    {
+      "family": "Fries Rearrangement",
+      "raw_family_names_collapsed": [
+        "Fries Rearrangement",
+        "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement"
+      ],
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "mechanism_count": 0,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 6,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "completion_bucket": "rich",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Hofmann-Loffler-Freytag Reaction",
+      "raw_family_names_collapsed": [
+        "Hofmann-Loffler-Freytag Reaction",
+        "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)"
+      ],
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "mechanism_count": 0,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "completion_bucket": "rich",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Houben-Hoesch Reaction",
+      "raw_family_names_collapsed": [
+        "Houben-Hoesch Reaction",
+        "Houben-Hoesch Reaction/Synthesis"
+      ],
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "mechanism_count": 0,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 5,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "completion_bucket": "rich",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    }
+  ],
+  "recent_completed_families_canonicalized": [
+    "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+    "Alkene (Olefin) Metathesis",
+    "Amadori Reaction / Rearrangement",
+    "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+    "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+    "Baeyer-Villiger Oxidation/Rearrangement",
+    "Barton-McCombie Radical Deoxygenation Reaction"
+  ],
+  "missing_family_sample_canonicalized": [],
+  "missing_family_sample_raw_uncollapsed": [
+    "Alder (ene) Reaction",
+    "Alder Ene Reaction",
+    "Alkene (olefin) Metathesis",
+    "Amadori Rearrangement",
+    "Arbuzov Reaction",
+    "Aza-Claisen Rearrangement",
+    "Barton-Mccombie Radical Deoxygenation Reaction",
+    "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+    "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+    "Houben-Hoesch Reaction/Synthesis"
+  ],
+  "top_shallow_families_canonicalized": [
+    {
+      "family": "Baldwin's Rules / Guidelines for Ring-Closing Reactions",
+      "raw_family_names_collapsed": [
+        "Baldwin's Rules / Guidelines for Ring-Closing Reactions"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Balz-Schiemann Reaction (Schiemann Reaction)",
+      "raw_family_names_collapsed": [
+        "Balz-Schiemann Reaction (Schiemann Reaction)"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "raw_family_names_collapsed": [
+        "Buchner Method of Ring Expansion (Buchner Reaction)"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 1,
+      "molecule_rows": 4,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Buchner Reaction",
+      "raw_family_names_collapsed": [
+        "Buchner Reaction"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 1,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "raw_family_names_collapsed": [
+        "Carroll Rearrangement (Kimel-Cope Rearrangement)"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 2,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Charette Asymmetric Cyclopropanation",
+      "raw_family_names_collapsed": [
+        "Charette Asymmetric Cyclopropanation"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "raw_family_names_collapsed": [
+        "Chichibabin Amination Reaction (Chichibabin Reaction)"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "raw_family_names_collapsed": [
+        "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 2,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Claisen Condensation / Claisen Reaction",
+      "raw_family_names_collapsed": [
+        "Claisen Condensation / Claisen Reaction"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 1,
+      "molecule_rows": 4,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Combes Quinoline Synthesis",
+      "raw_family_names_collapsed": [
+        "Combes Quinoline Synthesis"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 1,
+      "molecule_rows": 4,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Cope Elimination / Cope Reaction",
+      "raw_family_names_collapsed": [
+        "Cope Elimination / Cope Reaction"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 2,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Cope Rearrangement",
+      "raw_family_names_collapsed": [
+        "Cope Rearrangement"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "raw_family_names_collapsed": [
+        "Corey-Bakshi-Shibata Reduction (CBS Reduction)"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 4,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "raw_family_names_collapsed": [
+        "Corey-Chaykovsky Epoxidation and Cyclopropanation"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 6,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Corey-Fuchs Alkyne Synthesis",
+      "raw_family_names_collapsed": [
+        "Corey-Fuchs Alkyne Synthesis"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Corey-Kim Oxidation",
+      "raw_family_names_collapsed": [
+        "Corey-Kim Oxidation"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 6,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Corey-Nicolaou Macrolactonization",
+      "raw_family_names_collapsed": [
+        "Corey-Nicolaou Macrolactonization"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 5,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Corey-Winter Olefination",
+      "raw_family_names_collapsed": [
+        "Corey-Winter Olefination"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 5,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Cornforth Rearrangement",
+      "raw_family_names_collapsed": [
+        "Cornforth Rearrangement"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 3,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Criegee Oxidation",
+      "raw_family_names_collapsed": [
+        "Criegee Oxidation"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 4,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Curtius Rearrangement",
+      "raw_family_names_collapsed": [
+        "Curtius Rearrangement"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 5,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Dakin Oxidation",
+      "raw_family_names_collapsed": [
+        "Dakin Oxidation"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 5,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Dakin-West Reaction",
+      "raw_family_names_collapsed": [
+        "Dakin-West Reaction"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 1,
+      "queryable_products": 1,
+      "molecule_rows": 5,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Danheiser Benzannulation",
+      "raw_family_names_collapsed": [
+        "Danheiser Benzannulation"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 1,
+      "molecule_rows": 4,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Danheiser Cyclopentene Annulation",
+      "raw_family_names_collapsed": [
+        "Danheiser Cyclopentene Annulation"
+      ],
+      "extract_count": 1,
+      "overview_count": 1,
+      "application_count": 0,
+      "mechanism_count": 0,
+      "extract_with_reactant": 1,
+      "extract_with_product": 1,
+      "extract_with_both": 1,
+      "queryable_reactants": 2,
+      "queryable_products": 1,
+      "molecule_rows": 4,
+      "unique_queryable_pair_count": 1,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false,
+      "completion_bucket": "shallow",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    }
+  ],
+  "duplicate_pattern_name_sample": [
+    {
+      "family": "Arndt-Eistert Homologation / Synthesis",
+      "row_count": 2
+    },
+    {
+      "family": "Aza-Cope Rearrangement",
+      "row_count": 2
+    },
+    {
+      "family": "Aza-Wittig Reaction",
+      "row_count": 2
+    },
+    {
+      "family": "Aza-[2,3]-Wittig Rearrangement",
+      "row_count": 2
+    },
+    {
+      "family": "Baker-Venkataraman Rearrangement",
+      "row_count": 2
+    },
+    {
+      "family": "Balz-Schiemann Reaction",
+      "row_count": 2
+    },
+    {
+      "family": "Bamford-Stevens-Shapiro Olefination",
+      "row_count": 2
+    },
+    {
+      "family": "Baylis-Hillman Reaction",
+      "row_count": 2
+    },
+    {
+      "family": "Benzoin and Retro-Benzoin Condensation",
+      "row_count": 2
+    },
+    {
+      "family": "Bischler-Napieralski Isoquinoline Synthesis",
+      "row_count": 2
+    },
+    {
+      "family": "Buchwald-Hartwig Cross-Coupling",
+      "row_count": 2
+    },
+    {
+      "family": "Castro-Stephens Coupling",
+      "row_count": 2
+    },
+    {
+      "family": "Ciamician-Dennstedt Rearrangement",
+      "row_count": 2
+    },
+    {
+      "family": "Claisen-Ireland Rearrangement",
+      "row_count": 2
+    }
+  ],
+  "canonical_alias_groups_sample": [
+    {
+      "canonical_name": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "raw_names": [
+        "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+        "Alder (ene) Reaction",
+        "Alder Ene Reaction"
+      ]
+    },
+    {
+      "canonical_name": "Alkene (Olefin) Metathesis",
+      "raw_names": [
+        "Alkene (Olefin) Metathesis",
+        "Alkene (olefin) Metathesis"
+      ]
+    },
+    {
+      "canonical_name": "Amadori Reaction / Rearrangement",
+      "raw_names": [
+        "Amadori Reaction / Rearrangement",
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "canonical_name": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "raw_names": [
+        "Arbuzov Reaction",
+        "Arbuzov Reaction (Michaelis-Arbuzov Reaction)"
+      ]
+    },
+    {
+      "canonical_name": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "raw_names": [
+        "Aza-Claisen Rearrangement",
+        "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)"
+      ]
+    },
+    {
+      "canonical_name": "Baeyer-Villiger Oxidation/Rearrangement",
+      "raw_names": [
+        "Baeyer-Villiger Oxidation/Rearrangement",
+        "Baeyer-Villiger Oxidation/rearrangement"
+      ]
+    },
+    {
+      "canonical_name": "Barton-McCombie Radical Deoxygenation Reaction",
+      "raw_names": [
+        "Barton-McCombie Radical Deoxygenation Reaction",
+        "Barton-Mccombie Radical Deoxygenation Reaction"
+      ]
+    },
+    {
+      "canonical_name": "Fries Rearrangement",
+      "raw_names": [
+        "Fries Rearrangement",
+        "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement"
+      ]
+    },
+    {
+      "canonical_name": "Hofmann-Loffler-Freytag Reaction",
+      "raw_names": [
+        "Hofmann-Loffler-Freytag Reaction",
+        "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)"
+      ]
+    },
+    {
+      "canonical_name": "Houben-Hoesch Reaction",
+      "raw_names": [
+        "Houben-Hoesch Reaction",
+        "Houben-Hoesch Reaction/Synthesis"
+      ]
+    }
+  ],
+  "display_notes": [
+    "This dashboard is derived from final_state_verifier JSON and is intended as a display/triage layer, not a replacement for canonical DB truth.",
+    "Verifier v2 already collapses registry aliases before missing/shallow/rich classification; dashboard mainly renders canonical family view.",
+    "If raw/un-collapsed counts are present, they are shown as diagnostics only."
+  ]
+}

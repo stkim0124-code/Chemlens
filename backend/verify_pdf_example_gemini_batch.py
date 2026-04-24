@@ -19,6 +19,15 @@ def build_argparser():
     return p
 
 
+def redact_secrets(value):
+    if value is None:
+        return None
+    text = str(value)
+    text = re.sub(r"([?&]key=)([^&\s]+)", r"\1<REDACTED>", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bAIza[0-9A-Za-z_\-]{20,}\b", "<REDACTED_API_KEY>", text)
+    return text
+
+
 def normalize_family_name(value: str) -> str:
     value = unicodedata.normalize('NFKD', value)
     value = value.encode('ascii', 'ignore').decode('ascii')
@@ -301,7 +310,7 @@ def main():
         if status_val.lower() == 'error':
             msg = derived['error_text']
             if is_nonempty(msg):
-                msg = re.sub(r'\s+', ' ', str(msg)).strip()
+                msg = redact_secrets(re.sub(r'\s+', ' ', str(msg)).strip())
                 error_top[msg[:240]] += 1
             else:
                 error_top['<no_error_message_captured>'] += 1

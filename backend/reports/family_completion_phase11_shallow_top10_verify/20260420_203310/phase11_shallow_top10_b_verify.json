@@ -1,0 +1,201 @@
+{
+  "db": "app\\labint.db",
+  "batch": "b",
+  "verify": [
+    {
+      "family": "Diels-Alder Cycloaddition",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 5,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        875,
+        876
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 875,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Diels-Alder cycloaddition of 1,3-butadiene with maleic anhydride to a cyclohexene anhydride.",
+          "reactants_text": "1,3-butadiene and maleic anhydride",
+          "products_text": "cyclohexene anhydride adduct"
+        },
+        {
+          "id": 876,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Diels-Alder cycloaddition of 1,3-butadiene with acrylonitrile to a cyclohexene nitrile.",
+          "reactants_text": "1,3-butadiene and acrylonitrile",
+          "products_text": "cyclohexene nitrile adduct"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Dienone-Phenol Rearrangement",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        877,
+        878
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 877,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: acid-promoted dienone-phenol rearrangement of a 4,4-dimethylcyclohexadienone to a substituted phenol.",
+          "reactants_text": "substituted cyclohexadienone",
+          "products_text": "substituted phenol"
+        },
+        {
+          "id": 878,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: dienone-phenol rearrangement of an alkyl-substituted cyclohexadienone to an alkyl phenol.",
+          "reactants_text": "alkyl-substituted cyclohexadienone",
+          "products_text": "alkyl phenol"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Enyne Metathesis",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 6,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        879,
+        880
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 879,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: ring-closing enyne metathesis of a tethered enyne to a cyclic diene.",
+          "reactants_text": "tethered enyne substrate",
+          "products_text": "cyclic diene product"
+        },
+        {
+          "id": 880,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: enyne metathesis of a substituted tethered enyne to a substituted cyclic diene.",
+          "reactants_text": "substituted tethered enyne",
+          "products_text": "substituted cyclic diene"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Eschenmoser-Claisen Rearrangement",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 4,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        881,
+        882
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 881,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Eschenmoser-Claisen rearrangement of an allylic amino acetal to a gamma,delta-unsaturated amide.",
+          "reactants_text": "allylic amino acetal precursor",
+          "products_text": "gamma,delta-unsaturated amide"
+        },
+        {
+          "id": 882,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Eschenmoser-Claisen rearrangement of an allylic amino isopropyl acetal to a substituted unsaturated amide.",
+          "reactants_text": "allylic amino isopropyl acetal precursor",
+          "products_text": "substituted gamma,delta-unsaturated amide"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Eschweiler-Clarke Methylation",
+      "extract_count": 4,
+      "overview_count": 2,
+      "application_count": 2,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 13,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        883,
+        884
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 883,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Eschweiler-Clarke methylation of phenethylamine to N,N-dimethylphenethylamine.",
+          "reactants_text": "phenethylamine",
+          "products_text": "N,N-dimethylphenethylamine"
+        },
+        {
+          "id": 884,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Eschweiler-Clarke methylation of benzylamine to N,N-dimethylbenzylamine.",
+          "reactants_text": "benzylamine",
+          "products_text": "N,N-dimethylbenzylamine"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    }
+  ]
+}

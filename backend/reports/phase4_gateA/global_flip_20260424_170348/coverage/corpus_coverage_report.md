@@ -1,0 +1,369 @@
+# CHEMLENS corpus coverage benchmark phase2_mvp
+
+## Summary
+
+- total_cases: 518
+- recall@1: 0.6988
+- recall@3: 0.8263
+- recall@5: 0.8784
+- no_confident_hit_cases: 1
+- unique_families: 259
+
+## Per-family recall
+
+| family | cases | r@1 | r@3 | r@5 |
+|---|---:|---:|---:|---:|
+| Acetoacetic Ester Synthesis | 2 | 2/2 | 2/2 | 2/2 |
+| Acyloin Condensation | 2 | 2/2 | 2/2 | 2/2 |
+| Alder (Ene) Reaction (Hydro-Allyl Addition) | 2 | 2/2 | 2/2 | 2/2 |
+| Aldol Reaction | 2 | 1/2 | 2/2 | 2/2 |
+| Alkene (Olefin) Metathesis | 2 | 2/2 | 2/2 | 2/2 |
+| Alkyne Metathesis | 2 | 2/2 | 2/2 | 2/2 |
+| Amadori Reaction / Rearrangement | 2 | 0/2 | 0/2 | 0/2 |
+| Arbuzov Reaction (Michaelis-Arbuzov Reaction) | 2 | 2/2 | 2/2 | 2/2 |
+| Arndt-Eistert Homologation / Synthesis | 2 | 2/2 | 2/2 | 2/2 |
+| Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement) | 2 | 0/2 | 2/2 | 2/2 |
+| Aza-Cope Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Aza-Wittig Reaction | 2 | 0/2 | 0/2 | 0/2 |
+| Aza-[2,3]-Wittig Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Baeyer-Villiger Oxidation/Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Baker-Venkataraman Rearrangement | 2 | 0/2 | 2/2 | 2/2 |
+| Baldwin's Rules / Guidelines for Ring-Closing Reactions | 2 | 2/2 | 2/2 | 2/2 |
+| Balz-Schiemann Reaction (Schiemann Reaction) | 2 | 1/2 | 2/2 | 2/2 |
+| Bamford-Stevens-Shapiro Olefination | 2 | 0/2 | 0/2 | 0/2 |
+| Barbier Coupling Reaction | 2 | 0/2 | 0/2 | 1/2 |
+| Bartoli Indole Synthesis | 2 | 2/2 | 2/2 | 2/2 |
+| Barton Nitrite Ester Reaction | 2 | 1/2 | 1/2 | 1/2 |
+| Barton Radical Decarboxylation Reaction | 2 | 1/2 | 1/2 | 1/2 |
+| Barton-McCombie Radical Deoxygenation Reaction | 2 | 0/2 | 0/2 | 0/2 |
+| Baylis-Hillman Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Beckmann Rearrangement | 2 | 0/2 | 0/2 | 0/2 |
+| Benzilic Acid Rearrangement | 2 | 0/2 | 1/2 | 2/2 |
+| Benzoin and Retro-Benzoin Condensation | 2 | 1/2 | 2/2 | 2/2 |
+| Bergman Cycloaromatization Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Biginelli Reaction | 2 | 0/2 | 0/2 | 0/2 |
+| Birch Reduction | 2 | 2/2 | 2/2 | 2/2 |
+| Bischler-Napieralski Isoquinoline Synthesis | 2 | 2/2 | 2/2 | 2/2 |
+| Brook Rearrangement | 2 | 1/2 | 1/2 | 2/2 |
+| Brown Hydroboration Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Buchner Method of Ring Expansion (Buchner Reaction) | 2 | 2/2 | 2/2 | 2/2 |
+| Buchwald-Hartwig Cross-Coupling | 2 | 0/2 | 1/2 | 1/2 |
+| Burgess Dehydration Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Cannizzaro Reaction | 2 | 1/2 | 1/2 | 2/2 |
+| Carroll Rearrangement (Kimel-Cope Rearrangement) | 2 | 2/2 | 2/2 | 2/2 |
+| Castro-Stephens Coupling | 2 | 0/2 | 1/2 | 1/2 |
+| Charette Asymmetric Cyclopropanation | 2 | 0/2 | 2/2 | 2/2 |
+| Chichibabin Amination Reaction (Chichibabin Reaction) | 2 | 1/2 | 2/2 | 2/2 |
+| Chugaev Elimination Reaction (Xanthate Ester Pyrolysis) | 2 | 0/2 | 0/2 | 0/2 |
+| Ciamician-Dennstedt Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Claisen Condensation / Claisen Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Claisen Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Claisen-Ireland Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Clemmensen Reduction | 2 | 2/2 | 2/2 | 2/2 |
+| Combes Quinoline Synthesis | 2 | 2/2 | 2/2 | 2/2 |
+| Cope Elimination / Cope Reaction | 2 | 0/2 | 0/2 | 0/2 |
+| Cope Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Corey-Bakshi-Shibata Reduction (CBS Reduction) | 2 | 2/2 | 2/2 | 2/2 |
+| Corey-Chaykovsky Epoxidation and Cyclopropanation | 2 | 2/2 | 2/2 | 2/2 |
+| Corey-Fuchs Alkyne Synthesis | 2 | 0/2 | 0/2 | 0/2 |
+| Corey-Kim Oxidation | 2 | 0/2 | 2/2 | 2/2 |
+| Corey-Nicolaou Macrolactonization | 2 | 2/2 | 2/2 | 2/2 |
+| Corey-Winter Olefination | 2 | 2/2 | 2/2 | 2/2 |
+| Cornforth Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Criegee Oxidation | 2 | 0/2 | 0/2 | 1/2 |
+| Curtius Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Dakin Oxidation | 2 | 2/2 | 2/2 | 2/2 |
+| Dakin-West Reaction | 2 | 1/2 | 2/2 | 2/2 |
+| Danheiser Benzannulation | 2 | 2/2 | 2/2 | 2/2 |
+| Danheiser Cyclopentene Annulation | 2 | 2/2 | 2/2 | 2/2 |
+| Danishefsky's Diene Cycloaddition | 2 | 2/2 | 2/2 | 2/2 |
+| Darzens Glycidic Ester Condensation | 2 | 1/2 | 2/2 | 2/2 |
+| Davis' Oxaziridine Oxidations | 2 | 0/2 | 0/2 | 0/2 |
+| De Mayo Cycloaddition | 2 | 0/2 | 2/2 | 2/2 |
+| Demjanov Rearrangement and Tiffeneau-Demjanov Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Dess-Martin Oxidation | 2 | 0/2 | 1/2 | 2/2 |
+| Dieckmann Condensation | 2 | 0/2 | 2/2 | 2/2 |
+| Diels-Alder Cycloaddition | 2 | 2/2 | 2/2 | 2/2 |
+| Dienone-Phenol Rearrangement | 2 | 1/2 | 2/2 | 2/2 |
+| Dimroth Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Doering-Laflamme Allene Synthesis | 2 | 2/2 | 2/2 | 2/2 |
+| Dötz Benzannulation Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Enders SAMP/RAMP Hydrazone Alkylation | 2 | 2/2 | 2/2 | 2/2 |
+| Enyne Metathesis | 2 | 2/2 | 2/2 | 2/2 |
+| Eschenmoser Methenylation | 2 | 2/2 | 2/2 | 2/2 |
+| Eschenmoser-Claisen Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Eschenmoser-Tanabe Fragmentation | 2 | 2/2 | 2/2 | 2/2 |
+| Eschweiler-Clarke Methylation | 2 | 2/2 | 2/2 | 2/2 |
+| Evans Aldol Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Favorskii Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Feist-Bénary Furan Synthesis | 2 | 0/2 | 0/2 | 2/2 |
+| Ferrier Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Finkelstein Reaction | 2 | 1/2 | 2/2 | 2/2 |
+| Fischer Indole Synthesis | 2 | 2/2 | 2/2 | 2/2 |
+| Fleming-Tamao Oxidation | 2 | 2/2 | 2/2 | 2/2 |
+| Friedel-Crafts Acylation | 2 | 1/2 | 2/2 | 2/2 |
+| Friedel-Crafts Alkylation | 2 | 2/2 | 2/2 | 2/2 |
+| Fries Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Furukawa Modification | 2 | 2/2 | 2/2 | 2/2 |
+| Gabriel Synthesis | 2 | 1/2 | 2/2 | 2/2 |
+| Gattermann and Gattermann-Koch Formylation | 2 | 2/2 | 2/2 | 2/2 |
+| Glaser Coupling | 2 | 2/2 | 2/2 | 2/2 |
+| Grignard Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Grob Fragmentation | 2 | 2/2 | 2/2 | 2/2 |
+| Hajos-Parrish Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Hantzsch Dihydropyridine Synthesis | 2 | 0/2 | 2/2 | 2/2 |
+| Heck Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Heine Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Hell-Volhard-Zelinsky Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Henry Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Hetero Diels-Alder Cycloaddition (HDA) | 2 | 2/2 | 2/2 | 2/2 |
+| Hofmann Elimination | 2 | 2/2 | 2/2 | 2/2 |
+| Hofmann Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Hofmann-Loffler-Freytag Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Horner-Wadsworth-Emmons Olefination | 2 | 2/2 | 2/2 | 2/2 |
+| Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification | 2 | 0/2 | 0/2 | 0/2 |
+| Houben-Hoesch Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Hunsdiecker Reaction | 2 | 1/2 | 1/2 | 2/2 |
+| Intramolecular Nitrile Oxide Cycloaddition | 2 | 2/2 | 2/2 | 2/2 |
+| Jacobsen Hydrolytic Kinetic Resolution | 2 | 2/2 | 2/2 | 2/2 |
+| Jacobsen-Katsuki Epoxidation | 2 | 1/2 | 2/2 | 2/2 |
+| Japp-Klingemann Reaction | 2 | 0/2 | 0/2 | 1/2 |
+| Johnson-Claisen Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Jones Oxidation | 2 | 2/2 | 2/2 | 2/2 |
+| Julia-Lythgoe Olefination | 2 | 2/2 | 2/2 | 2/2 |
+| Kagan-Molander Samarium Diiodide-Mediated Coupling | 2 | 0/2 | 1/2 | 1/2 |
+| Kahne Glycosidation | 2 | 2/2 | 2/2 | 2/2 |
+| Keck Asymmetric Allylation | 2 | 0/2 | 2/2 | 2/2 |
+| Keck Macrolactonization | 2 | 0/2 | 2/2 | 2/2 |
+| Keck Radical Allylation | 2 | 2/2 | 2/2 | 2/2 |
+| Knoevenagel Condensation | 2 | 0/2 | 1/2 | 2/2 |
+| Knorr Pyrrole Synthesis | 2 | 0/2 | 0/2 | 2/2 |
+| Koenigs-Knorr Glycosidation | 2 | 2/2 | 2/2 | 2/2 |
+| Kolbe-Schmitt Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Kornblum Oxidation | 2 | 2/2 | 2/2 | 2/2 |
+| Krapcho Dealkoxycarbonylation (Krapcho Reaction) | 2 | 2/2 | 2/2 | 2/2 |
+| Kröhnke Pyridine Synthesis | 2 | 1/2 | 2/2 | 2/2 |
+| Kulinkovich Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Kulinovich Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Kumada Cross-Coupling | 2 | 0/2 | 0/2 | 0/2 |
+| Larock Indole Synthesis | 2 | 1/2 | 2/2 | 2/2 |
+| Ley Oxidation | 2 | 1/2 | 1/2 | 2/2 |
+| Lieben Haloform Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Lossen Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Luche Reduction | 2 | 2/2 | 2/2 | 2/2 |
+| Madelung Indole Synthesis | 2 | 2/2 | 2/2 | 2/2 |
+| Malonic Ester Synthesis | 2 | 2/2 | 2/2 | 2/2 |
+| Mannich Reaction | 2 | 1/2 | 2/2 | 2/2 |
+| McMurry Coupling | 2 | 0/2 | 0/2 | 0/2 |
+| Meerwein Arylation | 2 | 2/2 | 2/2 | 2/2 |
+| Meerwein-Ponndorf-Verley Reduction | 2 | 1/2 | 1/2 | 1/2 |
+| Meisenheimer Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Meyer-Schuster and Rupe Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Michael Addition Reaction | 2 | 0/2 | 2/2 | 2/2 |
+| Midland Alpine Borane Reduction | 2 | 2/2 | 2/2 | 2/2 |
+| Minisci Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Mislow-Evans Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Mitsunobu Reaction | 2 | 0/2 | 0/2 | 0/2 |
+| Miyaura Boration | 2 | 2/2 | 2/2 | 2/2 |
+| Mukaiyama Aldol Reaction | 2 | 0/2 | 0/2 | 0/2 |
+| Myers Asymmetric Alkylation | 2 | 2/2 | 2/2 | 2/2 |
+| Nagata Hydrocyanation | 2 | 2/2 | 2/2 | 2/2 |
+| Nazarov Cyclization | 2 | 2/2 | 2/2 | 2/2 |
+| Neber Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Nef Reaction | 2 | 1/2 | 2/2 | 2/2 |
+| Negishi Cross-Coupling | 2 | 0/2 | 0/2 | 1/2 |
+| Nenitzescu Indole Synthesis | 2 | 1/2 | 1/2 | 2/2 |
+| Nicholas Reaction | 2 | 0/2 | 2/2 | 2/2 |
+| Noyori Asymmetric Hydrogenation | 2 | 1/2 | 2/2 | 2/2 |
+| Nozaki-Hiyama-Kishi Reaction | 2 | 0/2 | 0/2 | 0/2 |
+| Oppenauer Oxidation | 2 | 0/2 | 0/2 | 2/2 |
+| Overman Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Oxy-Cope Rearrangement and Anionic Oxy-Cope Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Paal-Knorr Furan Synthesis | 2 | 2/2 | 2/2 | 2/2 |
+| Paal-Knorr Pyrrole Synthesis | 2 | 2/2 | 2/2 | 2/2 |
+| Passerini Multicomponent Reaction | 2 | 0/2 | 0/2 | 0/2 |
+| Paternò-Büchi Reaction | 2 | 1/2 | 2/2 | 2/2 |
+| Pauson-Khand Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Payne Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Perkin Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Petasis Boronic Acid-Mannich Reaction | 2 | 1/2 | 2/2 | 2/2 |
+| Petasis-Ferrier Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Peterson Olefination | 2 | 1/2 | 1/2 | 2/2 |
+| Pfitzner-Moffatt Oxidation | 2 | 0/2 | 0/2 | 1/2 |
+| Pictet-Spengler Tetrahydroisoquinoline Synthesis | 2 | 2/2 | 2/2 | 2/2 |
+| Pinacol and Semipinacol Rearrangement | 2 | 1/2 | 2/2 | 2/2 |
+| Pinner Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Pinnick Oxidation | 2 | 2/2 | 2/2 | 2/2 |
+| Polonovski Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Pomeranz-Fritsch Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Prilezhaev Reaction | 2 | 1/2 | 2/2 | 2/2 |
+| Prins Reaction | 2 | 0/2 | 0/2 | 0/2 |
+| Prins-Pinacol Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Prévost Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Pummerer Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Quasi-Favorskii Rearrangement | 2 | 0/2 | 2/2 | 2/2 |
+| Ramberg-Bäcklund Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Reformatsky Reaction | 2 | 0/2 | 1/2 | 1/2 |
+| Regitz Diazo Transfer | 2 | 2/2 | 2/2 | 2/2 |
+| Reimer-Tiemann Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Retro-Claisen Reaction | 2 | 1/2 | 1/2 | 1/2 |
+| Riley Selenium Dioxide Oxidation | 2 | 2/2 | 2/2 | 2/2 |
+| Ring-Closing Alkyne Metathesis | 2 | 2/2 | 2/2 | 2/2 |
+| Ring-Closing Metathesis | 2 | 2/2 | 2/2 | 2/2 |
+| Ring-Opening Metathesis | 2 | 2/2 | 2/2 | 2/2 |
+| Ring-Opening Metathesis Polymerization | 2 | 2/2 | 2/2 | 2/2 |
+| Ritter Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Robinson Annulation | 2 | 2/2 | 2/2 | 2/2 |
+| Roush Asymmetric Allylation | 2 | 2/2 | 2/2 | 2/2 |
+| Rubottom Oxidation | 2 | 2/2 | 2/2 | 2/2 |
+| Saegusa Oxidation | 2 | 2/2 | 2/2 | 2/2 |
+| Sakurai Allylation | 2 | 2/2 | 2/2 | 2/2 |
+| Sandmeyer Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Schmidt Reaction | 2 | 1/2 | 2/2 | 2/2 |
+| Schotten-Baumann Reaction | 2 | 1/2 | 2/2 | 2/2 |
+| Schwartz Hydrozirconation | 2 | 2/2 | 2/2 | 2/2 |
+| Seyferth-Gilbert Homologation | 2 | 2/2 | 2/2 | 2/2 |
+| Sharpless Asymmetric Aminohydroxylation | 2 | 1/2 | 2/2 | 2/2 |
+| Sharpless Asymmetric Dihydroxylation | 2 | 2/2 | 2/2 | 2/2 |
+| Sharpless Asymmetric Epoxidation | 2 | 2/2 | 2/2 | 2/2 |
+| Shi Asymmetric Epoxidation | 2 | 2/2 | 2/2 | 2/2 |
+| Simmons-Smith Cyclopropanation | 2 | 1/2 | 2/2 | 2/2 |
+| Skraup and Doebner-Miller Quinoline Synthesis | 2 | 2/2 | 2/2 | 2/2 |
+| Smiles Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Smith-Tietze Multicomponent Dithiane Linchpin Coupling | 2 | 2/2 | 2/2 | 2/2 |
+| Snieckus Directed Ortho Metalation | 2 | 2/2 | 2/2 | 2/2 |
+| Sommelet-Hauser Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Sonogashira Cross-Coupling | 2 | 0/2 | 0/2 | 1/2 |
+| Staudinger Ketene Cycloaddition | 2 | 2/2 | 2/2 | 2/2 |
+| Staudinger Reaction | 2 | 1/2 | 2/2 | 2/2 |
+| Stephen Aldehyde Synthesis (Stephen Reduction) | 2 | 1/2 | 2/2 | 2/2 |
+| Stetter Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Stevens Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Stille Carbonylative Cross-Coupling | 2 | 0/2 | 0/2 | 0/2 |
+| Stille Cross-Coupling (Migita-Kosugi-Stille Coupling) | 2 | 0/2 | 0/2 | 0/2 |
+| Stille-Kelly Coupling | 2 | 1/2 | 1/2 | 2/2 |
+| Stobbe Condensation | 2 | 0/2 | 0/2 | 1/2 |
+| Stork Enamine Synthesis | 2 | 2/2 | 2/2 | 2/2 |
+| Strecker Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling) | 2 | 2/2 | 2/2 | 2/2 |
+| Swern Oxidation | 2 | 0/2 | 0/2 | 0/2 |
+| Takai-Utimoto Olefination (Takai Reaction) | 2 | 2/2 | 2/2 | 2/2 |
+| Tebbe Olefination/Petasis-Tebbe Olefination | 2 | 2/2 | 2/2 | 2/2 |
+| Tishchenko Reaction | 2 | 1/2 | 2/2 | 2/2 |
+| Tsuji-Trost Reaction / Allylation | 2 | 2/2 | 2/2 | 2/2 |
+| Tsuji-Wilkinson Decarbonylation Reaction | 2 | 2/2 | 2/2 | 2/2 |
+| Ugi Multicomponent Reaction | 2 | 1/2 | 1/2 | 2/2 |
+| Ullmann Biaryl Ether and Biaryl Amine Synthesis / Condensation | 2 | 1/2 | 2/2 | 2/2 |
+| Ullmann Reaction / Coupling / Biaryl Synthesis | 2 | 0/2 | 1/2 | 1/2 |
+| Vilsmeier-Haack Formylation | 2 | 1/2 | 2/2 | 2/2 |
+| Vinylcyclopropane-Cyclopentene Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Wacker Oxidation | 2 | 1/2 | 2/2 | 2/2 |
+| Wagner-Meerwein Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Weinreb Ketone Synthesis | 2 | 1/2 | 1/2 | 2/2 |
+| Wharton Fragmentation | 2 | 2/2 | 2/2 | 2/2 |
+| Wharton Olefin Synthesis (Wharton Transposition) | 2 | 2/2 | 2/2 | 2/2 |
+| Williamson Ether Synthesis | 2 | 1/2 | 2/2 | 2/2 |
+| Wittig Reaction | 2 | 0/2 | 0/2 | 0/2 |
+| Wittig Reaction - Schlosser Modification | 2 | 0/2 | 0/2 | 0/2 |
+| Wittig-[1,2]- and [2,3]-Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Wohl-Ziegler Bromination | 2 | 2/2 | 2/2 | 2/2 |
+| Wolff Rearrangement | 2 | 2/2 | 2/2 | 2/2 |
+| Wolff-Kishner Reduction | 2 | 2/2 | 2/2 | 2/2 |
+| Wurtz Coupling | 2 | 0/2 | 0/2 | 1/2 |
+| Yamaguchi Macrolactonization | 2 | 0/2 | 2/2 | 2/2 |
+| von Pechmann Reaction | 2 | 0/2 | 1/2 | 2/2 |
+
+## Miss table (recall@3 miss)
+
+| case_id | expected | top3 | top3_scores |
+|---|---|---|---|
+| cov_amadori_reaction_/_rearrangement_806 | Amadori Reaction / Rearrangement | Snieckus Directed Ortho Metalation, Pinner Reaction, Sandmeyer Reaction | 1.534 | 1.147 | 1.082 |
+| cov_amadori_reaction_/_rearrangement_807 | Amadori Reaction / Rearrangement | Oppenauer Oxidation, Snieckus Directed Ortho Metalation, Lieben Haloform Reaction | 0.81 | 0.81 | 0.725 |
+| cov_aza-wittig_reaction_1501 | Aza-Wittig Reaction | Evans Aldol Reaction, Dess-Martin Oxidation, Snieckus Directed Ortho Metalation | 0.961 | 0.803 | 0.567 |
+| cov_aza-wittig_reaction_1502 | Aza-Wittig Reaction | Corey-Chaykovsky Epoxidation and Cyclopropanation, Roush Asymmetric Allylation, Cannizzaro Reaction | 1.673 | 1.664 | 1.664 |
+| cov_bamford-stevens-shapiro_olefination_1531 | Bamford-Stevens-Shapiro Olefination | Schwartz Hydrozirconation, Wacker Oxidation, Enders SAMP/RAMP Hydrazone Alkylation | 1.295 | 0.979 | 0.962 |
+| cov_bamford-stevens-shapiro_olefination_1532 | Bamford-Stevens-Shapiro Olefination | Eschenmoser Methenylation, Enders SAMP/RAMP Hydrazone Alkylation, Stork Enamine Synthesis | 2.205 | 2.128 | 1.993 |
+| cov_barbier_coupling_reaction_1408 | Barbier Coupling Reaction | Roush Asymmetric Allylation, Keck Asymmetric Allylation, Grignard Reaction | 2.758 | 2.002 | 1.693 |
+| cov_barbier_coupling_reaction_1409 | Barbier Coupling Reaction | Wittig-[1,2]- and [2,3]-Rearrangement, Roush Asymmetric Allylation, Alder (Ene) Reaction (Hydro-Allyl Addition) | 1.872 | 1.765 | 1.392 |
+| cov_barton_nitrite_ester_reaction_1481 | Barton Nitrite Ester Reaction | Pfitzner-Moffatt Oxidation, Corey-Kim Oxidation, Hunsdiecker Reaction | 0.787 | 0.697 | 0.462 |
+| cov_barton_radical_decarboxylation_reaction_357 | Barton Radical Decarboxylation Reaction | Riley Selenium Dioxide Oxidation, Ramberg-Bäcklund Rearrangement, HOFMANN ELIMINATION | 4.743 | 2.97 | 2.835 |
+| cov_barton-mccombie_radical_deoxygenation_reaction_796 | Barton-McCombie Radical Deoxygenation Reaction | Myers Asymmetric Alkylation, Oppenauer Oxidation, Snieckus Directed Ortho Metalation | 0.81 | 0.81 | 0.81 |
+| cov_barton-mccombie_radical_deoxygenation_reaction_797 | Barton-McCombie Radical Deoxygenation Reaction | Weinreb Ketone Synthesis, Snieckus Directed Ortho Metalation, Dötz Benzannulation Reaction | 1.461 | 1.06 | 0.81 |
+| cov_beckmann_rearrangement_1435 | Beckmann Rearrangement | Eschenmoser Methenylation, Enders SAMP/RAMP Hydrazone Alkylation, Ciamician-Dennstedt Rearrangement | 1.469 | 1.401 | 1.143 |
+| cov_beckmann_rearrangement_1436 | Beckmann Rearrangement | Lieben Haloform Reaction, Mannich Reaction, Noyori Asymmetric Hydrogenation | 2.319 | 2.17 | 1.931 |
+| cov_benzilic_acid_rearrangement_401 | Benzilic Acid Rearrangement | HOFMANN ELIMINATION, Ramberg-Bäcklund Rearrangement, Riley Selenium Dioxide Oxidation | 2.97 | 2.97 | 2.794 |
+| cov_biginelli_reaction_1441 | Biginelli Reaction | Acetoacetic Ester Synthesis, Darzens Glycidic Ester Condensation, Riley Selenium Dioxide Oxidation | 2.198 | 1.685 | 1.674 |
+| cov_biginelli_reaction_1442 | Biginelli Reaction | Acetoacetic Ester Synthesis, Riley Selenium Dioxide Oxidation, Knorr Pyrrole Synthesis | 2.304 | 1.674 | 1.372 |
+| cov_brook_rearrangement_416 | Brook Rearrangement | HOFMANN ELIMINATION, Ramberg-Bäcklund Rearrangement, Riley Selenium Dioxide Oxidation | 2.97 | 2.97 | 2.659 |
+| cov_buchwald-hartwig_cross-coupling_368 | Buchwald-Hartwig Cross-Coupling | Pictet-Spengler Tetrahydroisoquinoline Synthesis, Simmons-Smith Reaction, Snieckus Directed Ortho Metalation | 0.614 | 0.437 | 0.324 |
+| cov_cannizzaro_reaction_1465 | Cannizzaro Reaction | Lieben Haloform Reaction, Stetter Reaction, Pinnick Oxidation | 3.291 | 3.068 | 3.033 |
+| cov_castro-stephens_coupling_378 | Castro-Stephens Coupling | Sandmeyer Reaction, Snieckus Directed Ortho Metalation, Kolbe-Schmitt Reaction | 0.945 | 0.747 | 0.725 |
+| cov_chugaev_elimination_reaction_(xanthate_ester_pyrolysis)_826 | Chugaev Elimination Reaction (Xanthate Ester Pyrolysis) | Ring-Closing Metathesis, Alkene (Olefin) Metathesis, HOFMANN ELIMINATION | 1.323 | 1.26 | 1.257 |
+| cov_chugaev_elimination_reaction_(xanthate_ester_pyrolysis)_827 | Chugaev Elimination Reaction (Xanthate Ester Pyrolysis) | Tebbe Olefination/Petasis-Tebbe Olefination, Kornblum Oxidation, Corey-Winter Olefination | 2.063 | 1.707 | 1.369 |
+| cov_cope_elimination_/_cope_reaction_835 | Cope Elimination / Cope Reaction | Kornblum Oxidation, Tebbe Olefination/Petasis-Tebbe Olefination, Ramberg-Bäcklund Rearrangement | 1.859 | 1.797 | 1.565 |
+| cov_cope_elimination_/_cope_reaction_836 | Cope Elimination / Cope Reaction | HOFMANN ELIMINATION, Ring-Closing Metathesis, Alkene (Olefin) Metathesis | 2.525 | 1.701 | 1.6 |
+| cov_corey-fuchs_alkyne_synthesis_841 | Corey-Fuchs Alkyne Synthesis | Corey-Chaykovsky Epoxidation and Cyclopropanation, Pinner Reaction, Roush Asymmetric Allylation | 1.748 | 1.682 | 1.678 |
+| cov_corey-fuchs_alkyne_synthesis_842 | Corey-Fuchs Alkyne Synthesis | Seyferth-Gilbert Homologation, Pinnick Oxidation, Takai-Utimoto Olefination (Takai Reaction) | 4.388 | 1.633 | 1.574 |
+| cov_criegee_oxidation_855 | Criegee Oxidation | Baeyer-Villiger Oxidation/Rearrangement, Baeyer-Villiger Oxidation, Eschenmoser Methenylation | 5.573 | 3.443 | 3.112 |
+| cov_criegee_oxidation_856 | Criegee Oxidation | Baeyer-Villiger Oxidation/Rearrangement, Lieben Haloform Reaction, Mannich Reaction | 3.487 | 3.118 | 3.004 |
+| cov_davis'_oxaziridine_oxidations_863 | Davis' Oxaziridine Oxidations | Sandmeyer Reaction, Clemmensen Reduction, Dess-Martin Oxidation | 1.529 | 1.268 | 1.231 |
+| cov_davis'_oxaziridine_oxidations_864 | Davis' Oxaziridine Oxidations | Enders SAMP/RAMP Hydrazone Alkylation, Eschenmoser Methenylation, Stork Enamine Synthesis | 3.309 | 3.043 | 2.817 |
+| cov_dess-martin_oxidation_871 | Dess-Martin Oxidation | Ley Oxidation, Corey-Kim Oxidation, Kornblum Oxidation | 4.388 | 4.388 | 3.403 |
+| cov_feist-bénary_furan_synthesis_895 | Feist-Bénary Furan Synthesis | Acetoacetic Ester Synthesis, Retro-Claisen Reaction, Claisen Condensation / Claisen Reaction | 2.198 | 2.191 | 1.989 |
+| cov_feist-bénary_furan_synthesis_896 | Feist-Bénary Furan Synthesis | Robinson Annulation, Paal-Knorr Furan Synthesis, Regitz Diazo Transfer | 2.803 | 2.292 | 2.183 |
+| cov_horner-wadsworth-emmons_olefination_–_still-gennari_modification_944 | Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification | Pinnick Oxidation, Stetter Reaction, Alkene (Olefin) Metathesis | 2.193 | 2.154 | 2.07 |
+| cov_horner-wadsworth-emmons_olefination_–_still-gennari_modification_945 | Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification | Cannizzaro Reaction, Roush Asymmetric Allylation, Corey-Chaykovsky Epoxidation and Cyclopropanation | 1.809 | 1.72 | 1.688 |
+| cov_hunsdiecker_reaction_933 | Hunsdiecker Reaction | Barton Radical Decarboxylation, Barton Radical Decarboxylation Reaction, Arndt-Eistert Homologation / Synthesis | 1.52 | 1.041 | 0.902 |
+| cov_japp-klingemann_reaction_942 | Japp-Klingemann Reaction | Acetoacetic Ester Synthesis, Retro-Claisen Reaction, Regitz Diazo Transfer | 2.304 | 1.791 | 1.733 |
+| cov_japp-klingemann_reaction_943 | Japp-Klingemann Reaction | Claisen Condensation / Claisen Reaction, Mannich Reaction, Retro-Claisen Reaction | 1.874 | 1.801 | 1.765 |
+| cov_kagan-molander_samarium_diiodide-mediated_coupling_1006 | Kagan-Molander Samarium Diiodide-Mediated Coupling | Wolff-Kishner Reduction, Noyori Asymmetric Hydrogenation, Lieben Haloform Reaction | 3.508 | 3.265 | 3.23 |
+| cov_knoevenagel_condensation_949 | Knoevenagel Condensation | Roush Asymmetric Allylation, Corey-Chaykovsky Epoxidation and Cyclopropanation, Cannizzaro Reaction | 1.72 | 1.688 | 1.678 |
+| cov_knorr_pyrrole_synthesis_950 | Knorr Pyrrole Synthesis | Robinson Annulation, Regitz Diazo Transfer, Michael Addition Reaction | 1.969 | 1.595 | 1.59 |
+| cov_knorr_pyrrole_synthesis_951 | Knorr Pyrrole Synthesis | Robinson Annulation, Regitz Diazo Transfer, Michael Addition Reaction | 1.969 | 1.595 | 1.59 |
+| cov_kumada_cross-coupling_956 | Kumada Cross-Coupling | Clemmensen Reduction, Eschweiler-Clarke Methylation, Arbuzov Reaction (Michaelis-Arbuzov Reaction) | 3.128 | 2.206 | 1.779 |
+| cov_kumada_cross-coupling_957 | Kumada Cross-Coupling | Friedel-Crafts Acylation, Pinner Reaction, Gattermann and Gattermann-Koch Formylation | 1.747 | 1.73 | 1.397 |
+| cov_ley_oxidation_959 | Ley Oxidation | Jones Oxidation, Dess-Martin Oxidation, Demjanov Rearrangement and Tiffeneau-Demjanov Rearrangement | 4.118 | 3.3 | 2.816 |
+| cov_mcmurry_coupling_1045 | McMurry Coupling | Wolff-Kishner Reduction, Lieben Haloform Reaction, Mannich Reaction | 3.377 | 3.363 | 3.194 |
+| cov_mcmurry_coupling_1046 | McMurry Coupling | Corey-Winter Olefination, Kornblum Oxidation, Pinnick Oxidation | 3.156 | 2.311 | 2.233 |
+| cov_meerwein-ponndorf-verley_reduction_1051 | Meerwein-Ponndorf-Verley Reduction | Noyori Asymmetric Hydrogenation, Corey-Bakshi-Shibata Reduction (CBS Reduction), Midland Alpine Borane Reduction | 4.447 | 4.054 | 3.564 |
+| cov_mitsunobu_reaction_1072 | Mitsunobu Reaction | Aldol Reaction, Corey-Bakshi-Shibata Reduction (CBS Reduction), Lieben Haloform Reaction | 1.631 | 1.335 | 1.262 |
+| cov_mitsunobu_reaction_1073 | Mitsunobu Reaction | Barton-McCombie Radical Deoxygenation Reaction, Eschweiler-Clarke Methylation, Arbuzov Reaction (Michaelis-Arbuzov Reaction) | 1.273 | 0.709 | 0.632 |
+| cov_mukaiyama_aldol_reaction_1078 | Mukaiyama Aldol Reaction | Stetter Reaction, Aldol Reaction, Benzoin and Retro-Benzoin Condensation | 3.125 | 2.166 | 2.028 |
+| cov_mukaiyama_aldol_reaction_1079 | Mukaiyama Aldol Reaction | Wolff-Kishner Reduction, Noyori Asymmetric Hydrogenation, Corey-Bakshi-Shibata Reduction (CBS Reduction) | 2.976 | 2.771 | 2.634 |
+| cov_negishi_cross-coupling_1096 | Negishi Cross-Coupling | Sandmeyer Reaction, Kumada Cross-Coupling, Kornblum Oxidation | 1.914 | 1.766 | 1.75 |
+| cov_negishi_cross-coupling_1097 | Negishi Cross-Coupling | Friedel-Crafts Alkylation, Eschenmoser-Tanabe Fragmentation, Sandmeyer Reaction | 1.673 | 1.286 | 1.218 |
+| cov_nenitzescu_indole_synthesis_1100 | Nenitzescu Indole Synthesis | Knorr Pyrrole Synthesis, Knoevenagel Condensation, Stobbe Condensation | 2.583 | 1.588 | 1.454 |
+| cov_nozaki-hiyama-kishi_reaction_1108 | Nozaki-Hiyama-Kishi Reaction | Sharpless Asymmetric Dihydroxylation, Pinnick Oxidation, Takai-Utimoto Olefination (Takai Reaction) | 2.854 | 2.576 | 2.504 |
+| cov_nozaki-hiyama-kishi_reaction_1109 | Nozaki-Hiyama-Kishi Reaction | Seyferth-Gilbert Homologation, Keck Radical Allylation, Takai-Utimoto Olefination (Takai Reaction) | 1.994 | 1.286 | 1.172 |
+| cov_oppenauer_oxidation_1111 | Oppenauer Oxidation | Mitsunobu Reaction, Corey-Kim Oxidation, Dess-Martin Oxidation | 3.431 | 3.407 | 3.407 |
+| cov_oppenauer_oxidation_1112 | Oppenauer Oxidation | Jones Oxidation, Dess-Martin Oxidation, Demjanov Rearrangement and Tiffeneau-Demjanov Rearrangement | 4.118 | 3.3 | 2.816 |
+| cov_passerini_multicomponent_reaction_1126 | Passerini Multicomponent Reaction | Aldol Reaction, Baeyer-Villiger Oxidation/Rearrangement, Corey-Bakshi-Shibata Reduction (CBS Reduction) | 0.814 | 0.672 | 0.667 |
+| cov_passerini_multicomponent_reaction_1127 | Passerini Multicomponent Reaction | Lieben Haloform Reaction, Mannich Reaction, Clemmensen Reduction | 1.064 | 1.025 | 0.991 |
+| cov_peterson_olefination_1147 | Peterson Olefination | Wolff-Kishner Reduction, Noyori Asymmetric Hydrogenation, Lieben Haloform Reaction | 3.152 | 2.942 | 2.903 |
+| cov_pfitzner-moffatt_oxidation_1150 | Pfitzner-Moffatt Oxidation | Ley Oxidation, Corey-Kim Oxidation, Kornblum Oxidation | 4.388 | 4.388 | 3.403 |
+| cov_pfitzner-moffatt_oxidation_1151 | Pfitzner-Moffatt Oxidation | Mitsunobu Reaction, Corey-Kim Oxidation, Dess-Martin Oxidation | 3.431 | 3.407 | 3.407 |
+| cov_prins_reaction_1174 | Prins Reaction | Alder (Ene) Reaction (Hydro-Allyl Addition), Hetero Diels-Alder Cycloaddition (HDA), Sharpless Asymmetric Epoxidation | 1.917 | 1.843 | 1.132 |
+| cov_prins_reaction_1175 | Prins Reaction | Alder (Ene) Reaction (Hydro-Allyl Addition), Roush Asymmetric Allylation, Aldol Reaction | 1.98 | 1.891 | 1.87 |
+| cov_reformatsky_reaction_1192 | Reformatsky Reaction | Benzoin and Retro-Benzoin Condensation, Darzens Glycidic Ester Condensation, Arbuzov Reaction (Michaelis-Arbuzov Reaction) | 1.924 | 1.764 | 1.761 |
+| cov_retro-claisen_reaction_1201 | Retro-Claisen Reaction | Malonic Ester Synthesis, Krapcho Dealkoxycarbonylation (Krapcho Reaction), Regitz Diazo Transfer | 3.601 | 2.149 | 2.09 |
+| cov_sonogashira_cross-coupling_1285 | Sonogashira Cross-Coupling | Friedel-Crafts Alkylation, Sandmeyer Reaction, Balz-Schiemann Reaction (Schiemann Reaction) | 1.822 | 1.567 | 1.256 |
+| cov_sonogashira_cross-coupling_1286 | Sonogashira Cross-Coupling | Friedel-Crafts Acylation, Pinner Reaction, Gattermann and Gattermann-Koch Formylation | 1.938 | 1.711 | 1.602 |
+| cov_stille_carbonylative_cross-coupling_1303 | Stille Carbonylative Cross-Coupling | Friedel-Crafts Acylation, Dess-Martin Oxidation, Lieben Haloform Reaction | 3.275 | 2.367 | 2.359 |
+| cov_stille_carbonylative_cross-coupling_1304 | Stille Carbonylative Cross-Coupling | Friedel-Crafts Acylation, Pinner Reaction, Corey-Bakshi-Shibata Reduction (CBS Reduction) | 1.988 | 1.943 | 1.432 |
+| cov_stille_cross-coupling_(migita-kosugi-stille_coupling)_1306 | Stille Cross-Coupling (Migita-Kosugi-Stille Coupling) | Heck Reaction, Tebbe Olefination/Petasis-Tebbe Olefination, Corey-Winter Olefination | 2.963 | 2.303 | 2.119 |
+| cov_stille_cross-coupling_(migita-kosugi-stille_coupling)_1307 | Stille Cross-Coupling (Migita-Kosugi-Stille Coupling) | Friedel-Crafts Acylation, Gattermann and Gattermann-Koch Formylation, Pinner Reaction | 2.101 | 1.751 | 1.73 |
+| cov_stille-kelly_coupling_1310 | Stille-Kelly Coupling | Sandmeyer Reaction, Kornblum Oxidation, Corey-Winter Olefination | 1.72 | 1.561 | 1.532 |
+| cov_stobbe_condensation_1312 | Stobbe Condensation | Knoevenagel Condensation, Darzens Glycidic Ester Condensation, Wolff-Kishner Reduction | 2.288 | 1.856 | 1.71 |
+| cov_stobbe_condensation_1313 | Stobbe Condensation | Malonic Ester Synthesis, Regitz Diazo Transfer, Acetoacetic Ester Synthesis | 3.089 | 2.305 | 2.145 |
+| cov_swern_oxidation_1327 | Swern Oxidation | Ley Oxidation, Corey-Kim Oxidation, Kornblum Oxidation | 4.388 | 4.388 | 3.403 |
+| cov_swern_oxidation_1328 | Swern Oxidation | Mitsunobu Reaction, Corey-Kim Oxidation, Dess-Martin Oxidation | 3.431 | 3.407 | 3.407 |
+| cov_ugi_multicomponent_reaction_1345 | Ugi Multicomponent Reaction | Aldol Reaction, Aza-Wittig Reaction, Combes Quinoline Synthesis | 0.846 | 0.805 | 0.741 |
+| cov_ullmann_reaction_/_coupling_/_biaryl_synthesis_1352 | Ullmann Reaction / Coupling / Biaryl Synthesis | Friedel-Crafts Alkylation, Sandmeyer Reaction, Eschenmoser-Tanabe Fragmentation | 1.624 | 1.518 | 1.416 |
+| cov_weinreb_ketone_synthesis_1366 | Weinreb Ketone Synthesis | Snieckus Directed Ortho Metalation, Friedel-Crafts Acylation, Lieben Haloform Reaction | 2.927 | 2.8 | 2.703 |
+| cov_wittig_reaction_1378 | Wittig Reaction | Corey-Winter Olefination, Pinnick Oxidation, Takai-Utimoto Olefination (Takai Reaction) | 2.336 | 2.086 | 1.971 |
+| cov_wittig_reaction_1379 | Wittig Reaction | HOFMANN ELIMINATION, Ramberg-Bäcklund Rearrangement, Schmidt Reaction | 1.35 | 1.35 | 1.165 |
+| cov_wittig_reaction_-_schlosser_modification_1381 | Wittig Reaction - Schlosser Modification | Takai-Utimoto Olefination (Takai Reaction), Pinnick Oxidation, Wolff-Kishner Reduction | 1.817 | 1.773 | 1.767 |
+| cov_wittig_reaction_-_schlosser_modification_1382 | Wittig Reaction - Schlosser Modification | HOFMANN ELIMINATION, Takai-Utimoto Olefination (Takai Reaction), Ramberg-Bäcklund Rearrangement | 1.658 | 1.385 | 1.35 |
+| cov_wurtz_coupling_1396 | Wurtz Coupling | Finkelstein Reaction, Gabriel Synthesis, Brown Hydroboration Reaction | 1.54 | 1.305 | 1.194 |
+| cov_wurtz_coupling_1397 | Wurtz Coupling | Kornblum Oxidation, Eschweiler-Clarke Methylation, Arbuzov Reaction (Michaelis-Arbuzov Reaction) | 2.954 | 2.561 | 2.347 |
+| cov_von_pechmann_reaction_1402 | von Pechmann Reaction | Acetoacetic Ester Synthesis, Michael Addition Reaction, Regitz Diazo Transfer | 2.304 | 0.892 | 0.874 |

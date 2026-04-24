@@ -1,0 +1,70 @@
+{
+  "phase": "3e-b-3",
+  "timestamp": "2026-04-21T02:44:59.936981Z",
+  "apply_dir": "C:\\chemlens\\backend\\reports\\phase3e\\apply_3e_b3_20260421_140000",
+  "prior_dir": "C:\\chemlens\\backend\\reports\\phase3e\\apply_3e_b2_20260421_130000",
+  "baseline_dir": "C:\\chemlens\\backend\\reports\\phase3c\\apply_3c_b_20260421_094500",
+  "changes": {
+    "evidence_search.py": {
+      "new_guards": [
+        "miyaura boration",
+        "corey-fuchs alkyne synthesis"
+      ],
+      "softened": [
+        "finkelstein (now only penalizes when carbonyl+amine dominant)"
+      ]
+    }
+  },
+  "metrics": {
+    "admission": {
+      "3c-b": {
+        "top1": 185,
+        "top3": 218,
+        "confused_pairs": 74
+      },
+      "3e-b-2": {
+        "top1": 190,
+        "top3": 221,
+        "confused_pairs": 69
+      },
+      "3e-b-3": {
+        "top1": 191,
+        "top3": 222,
+        "confused_pairs": 68
+      },
+      "delta_vs_baseline": {
+        "top1": 6,
+        "top3": 4,
+        "confused_pairs": -6
+      }
+    },
+    "broad": {
+      "top1": 191,
+      "top3": 222,
+      "disallow_top3": 0
+    },
+    "coverage": {
+      "r@1": 0.7162,
+      "r@3": 0.834,
+      "r@5": 0.8784
+    }
+  },
+  "gate": {
+    "admission_confused_pairs_lt_74": true,
+    "admission_top3_ge_217": true,
+    "broad_disallow_top3_eq_0": true,
+    "coverage_r5_ge_0.868": true
+  },
+  "gate_passed": true,
+  "flips_vs_prior": {
+    "positive": [
+      "adm_finkelstein_reaction (Williamson->Finkelstein, fix)",
+      "adm_seyferth-gilbert_homologation (Corey-Fuchs->Seyferth-Gilbert)"
+    ],
+    "negative": [
+      "adm_corey-fuchs_alkyne_synthesis (own guard misfires when PPh3 in reagent field, not reactant)"
+    ],
+    "net_top1": 1
+  },
+  "notes": "Phase 3e-b-3 ships Miyaura Boration + Corey-Fuchs guards + softens Finkelstein. Net +1 top1, +1 top3, -1 confused_pairs vs 3e-b-2. Cumulative 3c-b -> 3e-b-3: +6 top1, +4 top3, -6 confused_pairs, +0.0058 cov r@5. Gate PASS."
+}

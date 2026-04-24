@@ -1,0 +1,101 @@
+{
+  "phase": "phase4_optionF_apply_iter2b",
+  "task_id": [131, 132, 133, 134, 135, 136, 137],
+  "timestamp": "2026-04-24T22:30:49",
+  "snapshot": "reports/phase4/optionF/apply_iter2b_20260424_223049",
+  "baseline": "reports/phase4/gateC/apply_20260424_210600_redo",
+  "status": "PASS",
+  "gate_verdict": {
+    "pass": true,
+    "reason": "adm_top1 0.8024 (+0.0094), cov_r5 0.9051 (+0.0184), confused_pairs 53→50 (-3). Zero per-case PASS→FAIL flips on any layer.",
+    "hard_rollback_thresholds": {
+      "adm_top1": {"threshold": 0.745, "observed": 0.8024, "margin": 0.0574, "status": "PASS"},
+      "cov_r5":   {"threshold": 0.875, "observed": 0.9051, "margin": 0.0301, "status": "PASS"}
+    }
+  },
+  "changes": {
+    "D_safety": {
+      "artifact": "scripts/_prebench_canary.py",
+      "description": "Pre-bench canary checks evidence_search.py file size + Sandmeyer/Schmidt probe scores + DB queryable count. Size lockfile at scripts/_prebench_canary.sizes.",
+      "known_good_size_bytes": 132233,
+      "backup_lock": "app/evidence_search.py.KNOWN_GOOD_post_optionF_final_<ts>"
+    },
+    "A_aliases": {
+      "file": "final_state_verifier.py",
+      "entries_added": 5,
+      "aliases": {
+        "Stille Carbonylative Cross-Coupling": "Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)",
+        "Wittig Reaction - Schlosser Modification": "Wittig Reaction",
+        "Wittig Reaction \u2013 Schlosser Modification": "Wittig Reaction",
+        "Horner-Wadsworth-Emmons Olefination \u2013 Still-Gennari Modification": "Horner-Wadsworth-Emmons Olefination",
+        "Horner-Wadsworth-Emmons Olefination - Still-Gennari Modification": "Horner-Wadsworth-Emmons Olefination"
+      },
+      "backup_pre_edit": "final_state_verifier.py.bak_optionF_A_pre_20260424"
+    },
+    "B_smarts_guards": {
+      "file": "app/evidence_search.py",
+      "new_features": ["urea", "vinyl_halide"],
+      "new_guards": ["Mitsunobu", "Nozaki-Hiyama-Kishi", "McMurry (relaxed; 1-eq signature)", "Prins"],
+      "modified_guards": [
+        "Biginelli: add urea N-source recognition",
+        "Corey-Fuchs: drop hard phosphorus penalty, positive-boost only",
+        "Aldol: anti-Mitsunobu (alcohol+acid→ester) penalty",
+        "Sharpless-AD: anti-NHK (halide+carbonyl) penalty",
+        "RCM / Olefin Metathesis: anti-Chugaev (xanthate) penalty",
+        "Wolff-Kishner: strengthened anti-McMurry signal (1-eq variant)",
+        "Darzens / Knoevenagel: anti-Biginelli (urea) penalty",
+        "Alder-Ene: anti-Prins (carbonyl→alcohol) penalty"
+      ],
+      "backup_pre_edit": "app/evidence_search.py.bak_optionF_B_pre_20260424 (124010 bytes)",
+      "post_apply_size_bytes_on_disk_crlf": 132233
+    }
+  },
+  "headline_metrics": {
+    "admission": {
+      "gateC":   {"total": 256, "top1": 203, "top1_acc": 0.7930, "top3": 224, "top3_acc": 0.8750, "confused_pairs": 53},
+      "optionF": {"total": 253, "top1": 203, "top1_acc": 0.8024, "top3": 225, "top3_acc": 0.8893, "confused_pairs": 50},
+      "delta":   {"top1_count": 0, "top1_acc": 0.0094, "top3_count": 1, "top3_acc": 0.0143, "confused_pairs": -3}
+    },
+    "coverage": {
+      "gateC":   {"total": 512, "r@1": 0.7539, "r@3": 0.8438, "r@5": 0.8867},
+      "optionF": {"total": 506, "r@1": 0.7648, "r@3": 0.8577, "r@5": 0.9051},
+      "delta":   {"r@1": 0.0109, "r@3": 0.0139, "r@5": 0.0184}
+    }
+  },
+  "pdf_audit_coverage_delta": {
+    "gateC":   {"name": "100.0%", "T1_top1": 200, "T2_top3": 19, "T3_cov_h1": 6, "T4_cov_h5": 8, "T5_residual": 17, "top5_pct": 93.2},
+    "optionF": {"name": "100.0%", "T1_top1": 201, "T2_top3": 21, "T3_cov_h1": 6, "T4_cov_h5": 9, "T5_residual": 13, "top5_pct": 94.8},
+    "recovered_from_T5": ["Corey-Fuchs Alkyne Synthesis", "Prins Reaction (via Prins-Pinacol passing)", "HWE Still-Gennari (merged into HWE)", "Wittig-Schlosser (merged into Wittig)"]
+  },
+  "residual_T5_13": {
+    "count": 13,
+    "verdict": "UNSOLVABLE_FROM_SMILES_ALONE",
+    "rationale": "Anti-greed iter2 test showed that demoting the #1 competitor only surfaces #2 — long-tail of same-score competitors outscores the target family which has thin own-fingerprint. This is the third independent confirmation (after Phase 3f-1 and Phase 3g-5) of 'own-family boost exhaustion'. Further recovery requires reagent-text-aware scoring (Phase 5) or DB-row enrichment (Phase 3f-2).",
+    "families": [
+      "Amadori Reaction / Rearrangement (niche N-glycoside rearrangement)",
+      "Bamford-Stevens-Shapiro Olefination (tosylhydrazone reagent invisible)",
+      "Beckmann Rearrangement (test SMILES has malformed nitroso repr)",
+      "Biginelli Reaction (urea+β-ketoester beats Darzens but Retro-Claisen rises)",
+      "Chugaev Elimination (xanthate guard beats RCM but VCP-rearrangement rises)",
+      "Davis' Oxaziridine Oxidations (oxaziridine reagent invisible)",
+      "McMurry Coupling (Ti/Zn reagent invisible + 1-eq self-coupling)",
+      "Mitsunobu Reaction (DIAD/PPh3 reagent invisible)",
+      "Nozaki-Hiyama-Kishi Reaction (Cr/Ni reagent invisible)",
+      "Passerini MCR (isocyanide present but BV/CBS compete on raw fingerprint)",
+      "Stille Carbonylative Cross-Coupling (Sn + CO reagents invisible)",
+      "Stille Cross-Coupling (Sn reagent invisible)",
+      "Swern Oxidation (DMSO reagent invisible; siblings Ley/Corey-Kim indistinguishable by SMILES)"
+    ]
+  },
+  "artifacts": [
+    "admission/family_admission_results.{json,csv,md}",
+    "broad/broad_results.{json,csv,md}",
+    "coverage/corpus_coverage_results.{json,csv,md}",
+    "benchmark_backup/*.post.json",
+    "scripts/_audit_coverage_optionF_practical.json",
+    "scripts/_audit_coverage_optionF_name.json",
+    "scripts/_prebench_canary.py",
+    "scripts/_prebench_canary.sizes",
+    "scripts/_probe_mitsunobu_direct.py"
+  ]
+}

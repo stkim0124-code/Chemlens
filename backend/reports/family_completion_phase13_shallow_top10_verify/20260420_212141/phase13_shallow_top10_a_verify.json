@@ -1,0 +1,201 @@
+{
+  "db": "app\\labint.db",
+  "batch": "a",
+  "verify": [
+    {
+      "family": "Glaser Coupling",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": false,
+      "curated_extract_ids": [
+        915,
+        916
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 915,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Glaser coupling of phenylacetylene to diphenylbutadiyne.",
+          "reactants_text": "phenylacetylene",
+          "products_text": "1,4-diphenyl-1,3-butadiyne"
+        },
+        {
+          "id": 916,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Glaser coupling of 4-ethynyltoluene to bis(4-methylphenyl)butadiyne.",
+          "reactants_text": "4-ethynyltoluene",
+          "products_text": "1,4-bis(4-methylphenyl)-1,3-butadiyne"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Grignard Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 4,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        917,
+        918
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 917,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Grignard addition of phenylmagnesium bromide to benzaldehyde giving benzhydrol.",
+          "reactants_text": "benzaldehyde and phenylmagnesium bromide",
+          "products_text": "benzhydrol"
+        },
+        {
+          "id": 918,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Grignard addition of methylmagnesium bromide to cyclohexanone giving 1-methylcyclohexanol.",
+          "reactants_text": "cyclohexanone and methylmagnesium bromide",
+          "products_text": "1-methylcyclohexanol"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Heck Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        919,
+        920
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 919,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Heck coupling of iodobenzene with methyl acrylate to methyl cinnamate.",
+          "reactants_text": "iodobenzene and methyl acrylate",
+          "products_text": "methyl cinnamate"
+        },
+        {
+          "id": 920,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Heck coupling of bromobenzene with styrene to stilbene.",
+          "reactants_text": "bromobenzene and styrene",
+          "products_text": "stilbene"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Hell-Volhard-Zelinsky Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": false,
+      "curated_extract_ids": [
+        921,
+        922
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 921,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Hell-Volhard-Zelinsky bromination of propionic acid to 2-bromopropionic acid.",
+          "reactants_text": "propionic acid",
+          "products_text": "2-bromopropionic acid"
+        },
+        {
+          "id": 922,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Hell-Volhard-Zelinsky bromination of butyric acid to 2-bromobutyric acid.",
+          "reactants_text": "butyric acid",
+          "products_text": "2-bromobutyric acid"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Henry Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        923,
+        924
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 923,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Henry reaction of benzaldehyde with nitromethane to 2-nitro-1-phenylethanol.",
+          "reactants_text": "benzaldehyde and nitromethane",
+          "products_text": "2-nitro-1-phenylethanol"
+        },
+        {
+          "id": 924,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Henry reaction of anisaldehyde with nitroethane to a beta-nitro alcohol.",
+          "reactants_text": "4-anisaldehyde and nitroethane",
+          "products_text": "1-(4-methoxyphenyl)-2-nitropropan-1-ol"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    }
+  ]
+}

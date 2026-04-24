@@ -1,0 +1,364 @@
+{
+  "tag": "phase5_shallow_top5_completion_v1",
+  "db": "app\\labint.db",
+  "dry_run": true,
+  "before": {
+    "queryable_family_count": 284,
+    "queryable_count": 1090
+  },
+  "alias_updates": [
+    {
+      "table": "reaction_extracts",
+      "from": "Alder Ene Reaction",
+      "to": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "rows_updated": 1
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Alder Ene Reaction",
+      "to": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Alder (ene) Reaction",
+      "to": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "rows_updated": 5
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Alder (ene) Reaction",
+      "to": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "rows_updated": 21
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Amadori Rearrangement",
+      "to": "Amadori Reaction / Rearrangement",
+      "rows_updated": 3
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Amadori Rearrangement",
+      "to": "Amadori Reaction / Rearrangement",
+      "rows_updated": 25
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Arbuzov Reaction",
+      "to": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "rows_updated": 7
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Arbuzov Reaction",
+      "to": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "rows_updated": 50
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Aza-Claisen Rearrangement",
+      "to": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "rows_updated": 6
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Aza-Claisen Rearrangement",
+      "to": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "rows_updated": 31
+    }
+  ],
+  "backfill": [
+    {
+      "family": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "extract_rows_touched": 7
+    },
+    {
+      "family": "Amadori Reaction / Rearrangement",
+      "extract_rows_touched": 4
+    },
+    {
+      "family": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "extract_rows_touched": 8
+    },
+    {
+      "family": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "extract_rows_touched": 7
+    },
+    {
+      "family": "Baeyer-Villiger Oxidation/Rearrangement",
+      "extract_rows_touched": 1
+    }
+  ],
+  "inserted": [
+    {
+      "family": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "status": "inserted",
+      "extract_id": 804,
+      "page_no": 60,
+      "image_filename": "named reactions_60.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "status": "inserted",
+      "extract_id": 805,
+      "page_no": 60,
+      "image_filename": "named reactions_60.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Amadori Reaction / Rearrangement",
+      "status": "inserted",
+      "extract_id": 806,
+      "page_no": 67,
+      "image_filename": "named reactions_67.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Amadori Reaction / Rearrangement",
+      "status": "inserted",
+      "extract_id": 807,
+      "page_no": 67,
+      "image_filename": "named reactions_67.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "status": "inserted",
+      "extract_id": 808,
+      "page_no": 69,
+      "image_filename": "named reactions_69.jpg",
+      "inserted_molecules": 4
+    },
+    {
+      "family": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "status": "inserted",
+      "extract_id": 809,
+      "page_no": 69,
+      "image_filename": "named reactions_69.jpg",
+      "inserted_molecules": 4
+    },
+    {
+      "family": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "status": "inserted",
+      "extract_id": 810,
+      "page_no": 73,
+      "image_filename": "named reactions_73.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "status": "inserted",
+      "extract_id": 811,
+      "page_no": 73,
+      "image_filename": "named reactions_73.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Baeyer-Villiger Oxidation/Rearrangement",
+      "status": "inserted",
+      "extract_id": 812,
+      "page_no": 81,
+      "image_filename": "named reactions_81.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Baeyer-Villiger Oxidation/Rearrangement",
+      "status": "inserted",
+      "extract_id": 813,
+      "page_no": 81,
+      "image_filename": "named reactions_81.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "after": {
+    "queryable_family_count": 280,
+    "queryable_count": 1116
+  },
+  "verify": [
+    {
+      "family": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "extract_count": 9,
+      "overview_count": 2,
+      "application_count": 6,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 8,
+      "queryable_products": 4,
+      "molecule_rows": 30,
+      "unique_queryable_pair_count": 4,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        804,
+        805
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 804,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: carbonyl-ene addition of isobutene to formaldehyde to give 3-methyl-3-buten-1-ol.",
+          "reactants_text": "isobutene | formaldehyde",
+          "products_text": "3-methyl-3-buten-1-ol"
+        },
+        {
+          "id": 805,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: carbonyl-ene addition of cyclohexene to formaldehyde to give 2-methylenecyclohexan-1-ol.",
+          "reactants_text": "cyclohexene | formaldehyde",
+          "products_text": "2-methylenecyclohexan-1-ol"
+        }
+      ]
+    },
+    {
+      "family": "Amadori Reaction / Rearrangement",
+      "extract_count": 6,
+      "overview_count": 1,
+      "application_count": 4,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 32,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        806,
+        807
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 806,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Amadori rearrangement of the p-anisidine glycosylamine of D-glucose to the corresponding 1-deoxy-1-(p-anisidino)-D-fructose derivative.",
+          "reactants_text": "p-anisidine D-glucosylamine",
+          "products_text": "1-deoxy-1-(p-anisidino)-D-fructose derivative"
+        },
+        {
+          "id": 807,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Amadori rearrangement of the p-toluidine glycosylamine of D-glucose to the corresponding 1-deoxy-1-(p-toluidino)-D-fructose derivative.",
+          "reactants_text": "p-toluidine D-glucosylamine",
+          "products_text": "1-deoxy-1-(p-toluidino)-D-fructose derivative"
+        }
+      ]
+    },
+    {
+      "family": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "extract_count": 10,
+      "overview_count": 4,
+      "application_count": 5,
+      "extract_with_reactant": 6,
+      "extract_with_product": 6,
+      "extract_with_both": 6,
+      "queryable_reactants": 12,
+      "queryable_products": 12,
+      "molecule_rows": 62,
+      "unique_queryable_pair_count": 4,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        808,
+        809
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 808,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Arbuzov reaction of triethyl phosphite with ethyl bromoacetate to give diethyl phosphonoacetate.",
+          "reactants_text": "triethyl phosphite | ethyl bromoacetate",
+          "products_text": "diethyl phosphonoacetate | bromoethane"
+        },
+        {
+          "id": 809,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Arbuzov reaction of trimethyl phosphite with benzyl bromide to give dimethyl benzylphosphonate.",
+          "reactants_text": "trimethyl phosphite | benzyl bromide",
+          "products_text": "dimethyl benzylphosphonate | bromomethane"
+        }
+      ]
+    },
+    {
+      "family": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "extract_count": 9,
+      "overview_count": 2,
+      "application_count": 6,
+      "extract_with_reactant": 5,
+      "extract_with_product": 5,
+      "extract_with_both": 5,
+      "queryable_reactants": 5,
+      "queryable_products": 5,
+      "molecule_rows": 37,
+      "unique_queryable_pair_count": 5,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        810,
+        811
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 810,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Aza-Claisen rearrangement of a crotyl-substituted cyclohexenyl enamine to a γ,δ-unsaturated imine.",
+          "reactants_text": "crotyl cyclohexenyl enamine",
+          "products_text": "crotyl-shifted cyclohexyl imine"
+        },
+        {
+          "id": 811,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Aza-Claisen rearrangement of a methyl-substituted cyclopentenyl enamine to a γ,δ-unsaturated imine.",
+          "reactants_text": "methyl-substituted cyclopentenyl enamine",
+          "products_text": "rearranged cyclopentyl imine"
+        }
+      ]
+    },
+    {
+      "family": "Baeyer-Villiger Oxidation/Rearrangement",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        812,
+        813
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 812,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Baeyer-Villiger oxidation of acetophenone to phenyl acetate.",
+          "reactants_text": "acetophenone",
+          "products_text": "phenyl acetate"
+        },
+        {
+          "id": 813,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Baeyer-Villiger oxidation of cyclobutanone to γ-butyrolactone.",
+          "reactants_text": "cyclobutanone",
+          "products_text": "γ-butyrolactone"
+        }
+      ]
+    }
+  ],
+  "registry_alias_rows_left_untouched": [
+    "Alder Ene Reaction",
+    "Alder (ene) Reaction",
+    "Amadori Rearrangement",
+    "Arbuzov Reaction",
+    "Aza-Claisen Rearrangement"
+  ],
+  "note": "This patch intentionally does not mutate reaction_family_patterns. final_state_verifier/dashboard should continue to collapse these short-form aliases for display."
+}

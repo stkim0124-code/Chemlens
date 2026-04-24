@@ -1,0 +1,190 @@
+{
+  "phase_tag": "phase3d_tier1_v1",
+  "dry_run": false,
+  "seeds_submitted": 15,
+  "target_families": [
+    "Hantzsch Dihydropyridine Synthesis",
+    "Feist-Bénary Furan Synthesis",
+    "Knoevenagel Condensation",
+    "Kumada Cross-Coupling",
+    "Dess-Martin Oxidation"
+  ],
+  "before_queryable_families": 264,
+  "after_queryable_families": 264,
+  "before_queryable_rows": 2603,
+  "after_queryable_rows": 2642,
+  "per_seed_results": [
+    {
+      "family": "Knoevenagel Condensation",
+      "status": "inserted",
+      "extract_id": 1534,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Knoevenagel Condensation",
+      "status": "inserted",
+      "extract_id": 1535,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Knoevenagel Condensation",
+      "status": "inserted",
+      "extract_id": 1536,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Hantzsch Dihydropyridine Synthesis",
+      "status": "inserted",
+      "extract_id": 1537,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 4
+    },
+    {
+      "family": "Hantzsch Dihydropyridine Synthesis",
+      "status": "inserted",
+      "extract_id": 1538,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Hantzsch Dihydropyridine Synthesis",
+      "status": "inserted",
+      "extract_id": 1539,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Feist-Bénary Furan Synthesis",
+      "status": "inserted",
+      "extract_id": 1540,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Feist-Bénary Furan Synthesis",
+      "status": "inserted",
+      "extract_id": 1541,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Feist-Bénary Furan Synthesis",
+      "status": "inserted",
+      "extract_id": 1542,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Kumada Cross-Coupling",
+      "status": "inserted",
+      "extract_id": 1543,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Kumada Cross-Coupling",
+      "status": "inserted",
+      "extract_id": 1544,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Kumada Cross-Coupling",
+      "status": "inserted",
+      "extract_id": 1545,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Dess-Martin Oxidation",
+      "status": "inserted",
+      "extract_id": 1546,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Dess-Martin Oxidation",
+      "status": "inserted",
+      "extract_id": 1547,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Dess-Martin Oxidation",
+      "status": "inserted",
+      "extract_id": 1548,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "per_family_verify": [
+    {
+      "family": "Hantzsch Dihydropyridine Synthesis",
+      "extract_count": 6,
+      "overview_count": 1,
+      "application_count": 5,
+      "queryable_reactants": 15,
+      "queryable_products": 6,
+      "molecule_rows": 24,
+      "unique_queryable_pair_count": 6
+    },
+    {
+      "family": "Feist-Bénary Furan Synthesis",
+      "extract_count": 6,
+      "overview_count": 1,
+      "application_count": 5,
+      "queryable_reactants": 12,
+      "queryable_products": 6,
+      "molecule_rows": 20,
+      "unique_queryable_pair_count": 6
+    },
+    {
+      "family": "Knoevenagel Condensation",
+      "extract_count": 6,
+      "overview_count": 1,
+      "application_count": 5,
+      "queryable_reactants": 12,
+      "queryable_products": 6,
+      "molecule_rows": 20,
+      "unique_queryable_pair_count": 6
+    },
+    {
+      "family": "Kumada Cross-Coupling",
+      "extract_count": 6,
+      "overview_count": 1,
+      "application_count": 5,
+      "queryable_reactants": 7,
+      "queryable_products": 6,
+      "molecule_rows": 17,
+      "unique_queryable_pair_count": 6
+    },
+    {
+      "family": "Dess-Martin Oxidation",
+      "extract_count": 6,
+      "overview_count": 1,
+      "application_count": 5,
+      "queryable_reactants": 6,
+      "queryable_products": 6,
+      "molecule_rows": 14,
+      "unique_queryable_pair_count": 5
+    }
+  ]
+}

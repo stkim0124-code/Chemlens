@@ -4,6 +4,15 @@ from datetime import datetime
 from pathlib import Path
 
 
+def redact_secrets(value):
+    if value is None:
+        return None
+    text = str(value)
+    text = re.sub(r"([?&]key=)([^&\s]+)", r"\1<REDACTED>", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bAIza[0-9A-Za-z_\-]{20,}\b", "<REDACTED_API_KEY>", text)
+    return text
+
+
 def build_argparser():
     p = argparse.ArgumentParser(description='Inspect latest PDF example automation extraction errors from stage DB')
     p.add_argument('--backend-root', default='.', help='Backend root path')
@@ -99,7 +108,7 @@ def main():
                         break
         if not msg:
             msg = '<no_error_message_captured>'
-        msg = re.sub(r'\s+', ' ', str(msg)).strip()
+        msg = redact_secrets(re.sub(r'\s+', ' ', str(msg)).strip())
         top_errors[msg[:240]] += 1
         if len(samples) < args.limit:
             samples.append({

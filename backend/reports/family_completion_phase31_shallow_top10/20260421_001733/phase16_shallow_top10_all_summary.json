@@ -1,0 +1,451 @@
+{
+  "tag": "phase31_shallow_top10_v1",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "batch": "all",
+  "dry_run": false,
+  "before": {
+    "queryable_family_count": 264,
+    "queryable_count": 2375
+  },
+  "after": {
+    "queryable_family_count": 264,
+    "queryable_count": 2435
+  },
+  "alias_updates": [],
+  "backfill_updates": [
+    {
+      "family": "Corey-Kim Oxidation",
+      "extract_rows_touched": 3
+    },
+    {
+      "family": "Darzens Glycidic Ester Condensation",
+      "extract_rows_touched": 3
+    },
+    {
+      "family": "Friedel-Crafts Acylation",
+      "extract_rows_touched": 3
+    },
+    {
+      "family": "Friedel-Crafts Alkylation",
+      "extract_rows_touched": 3
+    },
+    {
+      "family": "Alkyne Metathesis",
+      "extract_rows_touched": 4
+    },
+    {
+      "family": "Beckmann Rearrangement",
+      "extract_rows_touched": 4
+    },
+    {
+      "family": "Bergman Cycloaromatization Reaction",
+      "extract_rows_touched": 4
+    },
+    {
+      "family": "Biginelli Reaction",
+      "extract_rows_touched": 4
+    },
+    {
+      "family": "Brown Hydroboration Reaction",
+      "extract_rows_touched": 4
+    },
+    {
+      "family": "Aza-Cope Rearrangement",
+      "extract_rows_touched": 4
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Corey-Kim Oxidation",
+      "status": "inserted",
+      "extract_id": 1420,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Corey-Kim Oxidation",
+      "status": "inserted",
+      "extract_id": 1421,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Corey-Kim Oxidation",
+      "status": "inserted",
+      "extract_id": 1422,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Darzens Glycidic Ester Condensation",
+      "status": "inserted",
+      "extract_id": 1423,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Darzens Glycidic Ester Condensation",
+      "status": "inserted",
+      "extract_id": 1424,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Darzens Glycidic Ester Condensation",
+      "status": "inserted",
+      "extract_id": 1425,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Friedel-Crafts Acylation",
+      "status": "inserted",
+      "extract_id": 1426,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Friedel-Crafts Acylation",
+      "status": "inserted",
+      "extract_id": 1427,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Friedel-Crafts Acylation",
+      "status": "inserted",
+      "extract_id": 1428,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Friedel-Crafts Alkylation",
+      "status": "inserted",
+      "extract_id": 1429,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Friedel-Crafts Alkylation",
+      "status": "inserted",
+      "extract_id": 1430,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Friedel-Crafts Alkylation",
+      "status": "inserted",
+      "extract_id": 1431,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Alkyne Metathesis",
+      "status": "inserted",
+      "extract_id": 1432,
+      "page_no": 65,
+      "image_filename": "named reactions_65.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Alkyne Metathesis",
+      "status": "inserted",
+      "extract_id": 1433,
+      "page_no": 65,
+      "image_filename": "named reactions_65.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Alkyne Metathesis",
+      "status": "inserted",
+      "extract_id": 1434,
+      "page_no": 65,
+      "image_filename": "named reactions_65.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Beckmann Rearrangement",
+      "status": "inserted",
+      "extract_id": 1435,
+      "page_no": 103,
+      "image_filename": "named reactions_103.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Beckmann Rearrangement",
+      "status": "inserted",
+      "extract_id": 1436,
+      "page_no": 103,
+      "image_filename": "named reactions_103.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Beckmann Rearrangement",
+      "status": "inserted",
+      "extract_id": 1437,
+      "page_no": 103,
+      "image_filename": "named reactions_103.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bergman Cycloaromatization Reaction",
+      "status": "inserted",
+      "extract_id": 1438,
+      "page_no": 108,
+      "image_filename": "named reactions_108.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bergman Cycloaromatization Reaction",
+      "status": "inserted",
+      "extract_id": 1439,
+      "page_no": 108,
+      "image_filename": "named reactions_108.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Bergman Cycloaromatization Reaction",
+      "status": "inserted",
+      "extract_id": 1440,
+      "page_no": 108,
+      "image_filename": "named reactions_108.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Biginelli Reaction",
+      "status": "inserted",
+      "extract_id": 1441,
+      "page_no": 110,
+      "image_filename": "named reactions_110.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Biginelli Reaction",
+      "status": "inserted",
+      "extract_id": 1442,
+      "page_no": 110,
+      "image_filename": "named reactions_110.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Biginelli Reaction",
+      "status": "inserted",
+      "extract_id": 1443,
+      "page_no": 110,
+      "image_filename": "named reactions_110.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Brown Hydroboration Reaction",
+      "status": "inserted",
+      "extract_id": 1444,
+      "page_no": 118,
+      "image_filename": "named reactions_118.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Brown Hydroboration Reaction",
+      "status": "inserted",
+      "extract_id": 1445,
+      "page_no": 118,
+      "image_filename": "named reactions_118.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Brown Hydroboration Reaction",
+      "status": "inserted",
+      "extract_id": 1446,
+      "page_no": 118,
+      "image_filename": "named reactions_118.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aza-Cope Rearrangement",
+      "status": "inserted",
+      "extract_id": 1447,
+      "page_no": 75,
+      "image_filename": "named reactions_75.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aza-Cope Rearrangement",
+      "status": "inserted",
+      "extract_id": 1448,
+      "page_no": 75,
+      "image_filename": "named reactions_75.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Aza-Cope Rearrangement",
+      "status": "inserted",
+      "extract_id": 1449,
+      "page_no": 75,
+      "image_filename": "named reactions_75.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Corey-Kim Oxidation",
+      "extract_count": 6,
+      "overview_count": 1,
+      "application_count": 5,
+      "extract_with_reactant": 6,
+      "extract_with_product": 6,
+      "extract_with_both": 6,
+      "queryable_reactants": 6,
+      "queryable_products": 6,
+      "molecule_rows": 16,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Darzens Glycidic Ester Condensation",
+      "extract_count": 6,
+      "overview_count": 1,
+      "application_count": 5,
+      "extract_with_reactant": 6,
+      "extract_with_product": 6,
+      "extract_with_both": 6,
+      "queryable_reactants": 9,
+      "queryable_products": 6,
+      "molecule_rows": 16,
+      "unique_queryable_pair_count": 6,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Friedel-Crafts Acylation",
+      "extract_count": 6,
+      "overview_count": 1,
+      "application_count": 5,
+      "extract_with_reactant": 6,
+      "extract_with_product": 6,
+      "extract_with_both": 6,
+      "queryable_reactants": 9,
+      "queryable_products": 6,
+      "molecule_rows": 17,
+      "unique_queryable_pair_count": 6,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Friedel-Crafts Alkylation",
+      "extract_count": 6,
+      "overview_count": 1,
+      "application_count": 5,
+      "extract_with_reactant": 6,
+      "extract_with_product": 6,
+      "extract_with_both": 6,
+      "queryable_reactants": 9,
+      "queryable_products": 6,
+      "molecule_rows": 17,
+      "unique_queryable_pair_count": 6,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Alkyne Metathesis",
+      "extract_count": 7,
+      "overview_count": 0,
+      "application_count": 6,
+      "extract_with_reactant": 3,
+      "extract_with_product": 4,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 4,
+      "molecule_rows": 40,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false
+    },
+    {
+      "family": "Beckmann Rearrangement",
+      "extract_count": 7,
+      "overview_count": 0,
+      "application_count": 6,
+      "extract_with_reactant": 3,
+      "extract_with_product": 6,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 6,
+      "molecule_rows": 38,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false
+    },
+    {
+      "family": "Bergman Cycloaromatization Reaction",
+      "extract_count": 7,
+      "overview_count": 1,
+      "application_count": 4,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 23,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Biginelli Reaction",
+      "extract_count": 7,
+      "overview_count": 2,
+      "application_count": 3,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 39,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Brown Hydroboration Reaction",
+      "extract_count": 7,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 4,
+      "queryable_products": 3,
+      "molecule_rows": 36,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Aza-Cope Rearrangement",
+      "extract_count": 7,
+      "overview_count": 0,
+      "application_count": 6,
+      "extract_with_reactant": 6,
+      "extract_with_product": 6,
+      "extract_with_both": 6,
+      "queryable_reactants": 6,
+      "queryable_products": 6,
+      "molecule_rows": 34,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": false,
+      "rich_completion_pass": false
+    }
+  ]
+}

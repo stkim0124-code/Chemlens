@@ -1,0 +1,208 @@
+{
+  "db": "app\\labint.db",
+  "verify": [
+    {
+      "family": "Charette Asymmetric Cyclopropanation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 5,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        824,
+        825
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 824,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: cyclopropanation of styrene with ethyl diazoacetate to give an aryl-substituted cyclopropane carboxylate.",
+          "reactants_text": "styrene | ethyl diazoacetate",
+          "products_text": "ethyl 2-phenylcyclopropane-1-carboxylate"
+        },
+        {
+          "id": 825,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: cyclopropanation of p-methoxystyrene with ethyl diazoacetate to give an anisyl-substituted cyclopropane carboxylate.",
+          "reactants_text": "p-methoxystyrene | ethyl diazoacetate",
+          "products_text": "ethyl 2-(4-methoxyphenyl)cyclopropane-1-carboxylate"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "extract_count": 14,
+      "overview_count": 3,
+      "application_count": 10,
+      "extract_with_reactant": 3,
+      "extract_with_product": 4,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 4,
+      "molecule_rows": 45,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        826,
+        827
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 826,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: pyrolysis of cyclohexyl xanthate to cyclohexene.",
+          "reactants_text": "cyclohexyl xanthate",
+          "products_text": "cyclohexene"
+        },
+        {
+          "id": 827,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: pyrolysis of 2-phenethyl xanthate to styrene.",
+          "reactants_text": "2-phenethyl xanthate",
+          "products_text": "styrene"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Combes Quinoline Synthesis",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        828,
+        829
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 828,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: condensation of aniline with acetylacetone to give 2,4-dimethylquinoline.",
+          "reactants_text": "aniline | acetylacetone",
+          "products_text": "2,4-dimethylquinoline"
+        },
+        {
+          "id": 829,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: condensation of p-anisidine with acetylacetone to give a methoxy-substituted dimethylquinoline.",
+          "reactants_text": "p-anisidine | acetylacetone",
+          "products_text": "6-methoxy-2,4-dimethylquinoline"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Curtius Rearrangement",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        830,
+        831
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 830,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: thermolysis of benzoyl azide to phenyl isocyanate.",
+          "reactants_text": "benzoyl azide",
+          "products_text": "phenyl isocyanate"
+        },
+        {
+          "id": 831,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: thermolysis of p-methoxybenzoyl azide to p-methoxyphenyl isocyanate.",
+          "reactants_text": "p-methoxybenzoyl azide",
+          "products_text": "p-methoxyphenyl isocyanate"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Dakin Oxidation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        832,
+        833,
+        834
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 832,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Dakin oxidation of salicylaldehyde to catechol.",
+          "reactants_text": "salicylaldehyde",
+          "products_text": "catechol"
+        },
+        {
+          "id": 833,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Dakin oxidation of p-hydroxybenzaldehyde to hydroquinone.",
+          "reactants_text": "p-hydroxybenzaldehyde",
+          "products_text": "hydroquinone"
+        },
+        {
+          "id": 834,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Dakin oxidation of vanillin to methoxyhydroquinone.",
+          "reactants_text": "vanillin",
+          "products_text": "methoxyhydroquinone"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "family": "Pinacol and Semipinacol Rearrangement",
+    "role": "reactant",
+    "name": "tertiary-secondary diol (branched)",
+    "smiles": "OC(C)(C)C(OH)C1CCCCC1",
+    "reasons": [
+      "tokenization_failed"
+    ]
+  }
+]

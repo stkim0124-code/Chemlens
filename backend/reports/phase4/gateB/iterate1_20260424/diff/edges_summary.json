@@ -1,0 +1,87 @@
+{
+  "_meta": {
+    "before_snap_dir": "/sessions/amazing-adoring-ramanujan/mnt/chemlens/backend/reports/phase3g/apply_3g_5_20260422_000000",
+    "after_snap_dir": "/sessions/amazing-adoring-ramanujan/mnt/chemlens/backend/reports/phase4/gateB/iterate1_20260424",
+    "out_dir": "/sessions/amazing-adoring-ramanujan/mnt/chemlens/backend/reports/phase4/gateB/iterate1_20260424/diff"
+  },
+  "_defects": {
+    "enabled": true,
+    "registry_path": "/sessions/amazing-adoring-ramanujan/mnt/chemlens/backend/benchmark/defects/benchmark_defects_registry.json",
+    "defect_count": 3,
+    "case_ids": [
+      "adm_stille_carbonylative_cross-coupling_1303",
+      "adm_stille_cross-coupling_(migita-kosugi-stille_coupling)_1306",
+      "adm_wittig_reaction_466"
+    ]
+  },
+  "_guard_registry": "scripts/gateB_guard_registry.json",
+  "admission": {
+    "edges_gained": 5,
+    "edges_lost": 0,
+    "net_edge_delta": 5,
+    "stayed_pass": 197,
+    "stayed_fail": 54,
+    "total_cases_compared": 256,
+    "defects_excluded": 3,
+    "edges_gained_by_source_kind": {
+      "canonical_overview": 2,
+      "application_example": 3
+    },
+    "edges_lost_by_source_kind": {},
+    "gained_case_ids": [
+      "adm_cope_elimination_/_cope_reaction_480",
+      "adm_hantzsch_dihydropyridine_synthesis_905",
+      "adm_larock_indole_synthesis_1036",
+      "adm_miyaura_boration_564",
+      "adm_peterson_olefination_1147"
+    ],
+    "lost_case_ids": []
+  },
+  "broad": {
+    "edges_gained": 5,
+    "edges_lost": 0,
+    "net_edge_delta": 5,
+    "stayed_pass": 197,
+    "stayed_fail": 57,
+    "total_cases_compared": 259,
+    "defects_excluded": 0,
+    "edges_gained_by_source_kind": {
+      "unknown": 5
+    },
+    "edges_lost_by_source_kind": {},
+    "gained_case_ids": [
+      "broad_cope_elimination_/_cope_reaction_480",
+      "broad_hantzsch_dihydropyridine_synthesis_905",
+      "broad_larock_indole_synthesis_1036",
+      "broad_miyaura_boration_564",
+      "broad_peterson_olefination_1147"
+    ],
+    "lost_case_ids": []
+  },
+  "coverage": {
+    "edges_gained": 2,
+    "edges_lost": 1,
+    "net_edge_delta": 1,
+    "stayed_pass": 457,
+    "stayed_fail": 58,
+    "total_cases_compared": 518,
+    "defects_excluded": 0,
+    "edges_gained_by_source_kind": {
+      "application_example": 2
+    },
+    "edges_lost_by_source_kind": {
+      "application_example": 1
+    },
+    "gained_case_ids": [
+      "cov_cope_elimination_/_cope_reaction_835",
+      "cov_cope_elimination_/_cope_reaction_836"
+    ],
+    "lost_case_ids": [
+      "cov_hofmann_elimination_910"
+    ]
+  },
+  "_gate_verdict": {
+    "pass": true,
+    "reason": "admission net=+5, coverage net=+1; heuristic rule: admission must gain and coverage must not regress."
+  }
+}

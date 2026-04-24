@@ -1,0 +1,29 @@
+[
+  {
+    "family": "Knoevenagel Condensation",
+    "role": "product",
+    "name": "(2E)-3-(furan-2-yl)acrylic acid",
+    "smiles": "OC(=O)/C=C/c1ccco1",
+    "reasons": [
+      "blacklist:stereo_slash_followed_by_aromatic_lowercase"
+    ]
+  },
+  {
+    "family": "Kumada Cross-Coupling",
+    "role": "reactant",
+    "name": "(E)-β-bromostyrene",
+    "smiles": "Br/C=C/c1ccccc1",
+    "reasons": [
+      "blacklist:stereo_slash_followed_by_aromatic_lowercase"
+    ]
+  },
+  {
+    "family": "Kumada Cross-Coupling",
+    "role": "product",
+    "name": "(E)-β-methylstyrene",
+    "smiles": "C/C=C/c1ccccc1",
+    "reasons": [
+      "blacklist:stereo_slash_followed_by_aromatic_lowercase"
+    ]
+  }
+]

@@ -1,0 +1,371 @@
+{
+  "tag": "phase16b_shallow_top10_supplement_v1",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "batch": "all",
+  "dry_run": false,
+  "before": {
+    "queryable_family_count": 264,
+    "queryable_count": 1495
+  },
+  "after": {
+    "queryable_family_count": 264,
+    "queryable_count": 1535
+  },
+  "alias_updates": [],
+  "backfill_updates": [
+    {
+      "family": "Baldwin's Rules / Guidelines for Ring-Closing Reactions",
+      "extract_rows_touched": 2
+    },
+    {
+      "family": "Dimroth Rearrangement",
+      "extract_rows_touched": 2
+    },
+    {
+      "family": "Doering-Laflamme Allene Synthesis",
+      "extract_rows_touched": 2
+    },
+    {
+      "family": "Dötz Benzannulation Reaction",
+      "extract_rows_touched": 2
+    },
+    {
+      "family": "Enders SAMP/RAMP Hydrazone Alkylation",
+      "extract_rows_touched": 2
+    },
+    {
+      "family": "Eschenmoser Methenylation",
+      "extract_rows_touched": 2
+    },
+    {
+      "family": "Eschenmoser-Tanabe Fragmentation",
+      "extract_rows_touched": 2
+    },
+    {
+      "family": "Favorskii and Homo-Favorskii Rearrangement",
+      "extract_rows_touched": 2
+    },
+    {
+      "family": "Grob Fragmentation",
+      "extract_rows_touched": 2
+    },
+    {
+      "family": "Hajos-Parrish Reaction",
+      "extract_rows_touched": 2
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Baldwin's Rules / Guidelines for Ring-Closing Reactions",
+      "status": "inserted",
+      "extract_id": 980,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Baldwin's Rules / Guidelines for Ring-Closing Reactions",
+      "status": "inserted",
+      "extract_id": 981,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Dimroth Rearrangement",
+      "status": "inserted",
+      "extract_id": 982,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Dimroth Rearrangement",
+      "status": "inserted",
+      "extract_id": 983,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Doering-Laflamme Allene Synthesis",
+      "status": "inserted",
+      "extract_id": 984,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Doering-Laflamme Allene Synthesis",
+      "status": "inserted",
+      "extract_id": 985,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Dötz Benzannulation Reaction",
+      "status": "inserted",
+      "extract_id": 986,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Dötz Benzannulation Reaction",
+      "status": "inserted",
+      "extract_id": 987,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Enders SAMP/RAMP Hydrazone Alkylation",
+      "status": "inserted",
+      "extract_id": 988,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Enders SAMP/RAMP Hydrazone Alkylation",
+      "status": "inserted",
+      "extract_id": 989,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Eschenmoser Methenylation",
+      "status": "inserted",
+      "extract_id": 990,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Eschenmoser Methenylation",
+      "status": "inserted",
+      "extract_id": 991,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Eschenmoser-Tanabe Fragmentation",
+      "status": "inserted",
+      "extract_id": 992,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Eschenmoser-Tanabe Fragmentation",
+      "status": "inserted",
+      "extract_id": 993,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Favorskii and Homo-Favorskii Rearrangement",
+      "status": "inserted",
+      "extract_id": 994,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Favorskii and Homo-Favorskii Rearrangement",
+      "status": "inserted",
+      "extract_id": 995,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Grob Fragmentation",
+      "status": "inserted",
+      "extract_id": 996,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Grob Fragmentation",
+      "status": "inserted",
+      "extract_id": 997,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Hajos-Parrish Reaction",
+      "status": "inserted",
+      "extract_id": 998,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Hajos-Parrish Reaction",
+      "status": "inserted",
+      "extract_id": 999,
+      "page_no": 54,
+      "image_filename": "named reactions_54.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Baldwin's Rules / Guidelines for Ring-Closing Reactions",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Dimroth Rearrangement",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Doering-Laflamme Allene Synthesis",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Dötz Benzannulation Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Enders SAMP/RAMP Hydrazone Alkylation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 4,
+      "molecule_rows": 14,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Eschenmoser Methenylation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Eschenmoser-Tanabe Fragmentation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 5,
+      "queryable_products": 6,
+      "molecule_rows": 12,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Favorskii and Homo-Favorskii Rearrangement",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Grob Fragmentation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 5,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    },
+    {
+      "family": "Hajos-Parrish Reaction",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true
+    }
+  ]
+}

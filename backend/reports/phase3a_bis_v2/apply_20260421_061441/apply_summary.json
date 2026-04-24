@@ -1,0 +1,140 @@
+{
+  "command": "apply",
+  "started_at": "2026-04-21T06:14:42",
+  "backend_root": "C:\\chemlens\\backend",
+  "report_dir": "C:\\chemlens\\backend\\reports\\phase3a_bis_v2\\apply_20260421_061441",
+  "stamp": "20260421_061442",
+  "baseline": {
+    "broad_top3_accuracy": 0.8068,
+    "admission_top3_accuracy": 0.8068,
+    "admission_confused_pairs": 84,
+    "coverage_r5": 0.8693
+  },
+  "stages": [
+    {
+      "stage": "validate_entries",
+      "ok": true,
+      "details": [
+        {
+          "from": "Baeyer-Villiger Oxidation/rearrangement",
+          "to": "Baeyer-Villiger Oxidation/Rearrangement",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Barton Radical Decarboxylation",
+          "to": "Barton Radical Decarboxylation Reaction",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Simmons-Smith Reaction",
+          "to": "Simmons-Smith Cyclopropanation",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Suzuki Cross-Coupling",
+          "to": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+          "from_in_db": true,
+          "to_in_db": true
+        }
+      ]
+    },
+    {
+      "stage": "snapshot",
+      "backup_dir": "C:\\chemlens\\backend\\reports\\phase3a_bis_v2\\apply_20260421_061441\\backup"
+    },
+    {
+      "stage": "patch",
+      "ok": true,
+      "applied": [
+        {
+          "from": "Baeyer-Villiger Oxidation/rearrangement",
+          "to": "Baeyer-Villiger Oxidation/Rearrangement",
+          "note": "id=13 -> id=291 (case variant on /rearrangement tail)"
+        },
+        {
+          "from": "Barton Radical Decarboxylation",
+          "to": "Barton Radical Decarboxylation Reaction",
+          "note": "id=44 -> id=43 (missing Reaction suffix)"
+        },
+        {
+          "from": "Simmons-Smith Reaction",
+          "to": "Simmons-Smith Cyclopropanation",
+          "note": "id=151 -> id=199 (generic -> mechanism-specific)"
+        },
+        {
+          "from": "Suzuki Cross-Coupling",
+          "to": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+          "note": "id=148 -> id=217 (full DB canonical with trailing Cross-Coupling)"
+        }
+      ],
+      "skipped": []
+    },
+    {
+      "stage": "rebuild_benchmarks",
+      "rc": 0
+    },
+    {
+      "stage": "bench_runs",
+      "results": {
+        "broad": {
+          "rc": 0,
+          "summary": {
+            "benchmark_name": "CHEMLENS broad benchmark phase2_mvp",
+            "total_cases": 261,
+            "reaction_cases": 261,
+            "top1_correct": 180,
+            "top1_accuracy": 0.6897,
+            "top3_correct": 211,
+            "top3_accuracy": 0.8084,
+            "disallow_top3_violations": 0,
+            "disallow_violation_rate": 0.0,
+            "unique_families": 261
+          }
+        },
+        "admission": {
+          "rc": 0,
+          "summary": {
+            "benchmark_name": "CHEMLENS family admission benchmark phase2_mvp",
+            "total_cases": 261,
+            "top1_correct": 180,
+            "top1_accuracy": 0.6897,
+            "top3_correct": 211,
+            "top3_accuracy": 0.8084,
+            "unique_families": 261,
+            "confused_pairs": 81
+          }
+        },
+        "coverage": {
+          "rc": 0,
+          "summary": {
+            "benchmark_name": "CHEMLENS corpus coverage benchmark phase2_mvp",
+            "total_cases": 522,
+            "recall_at_1": 0.6897,
+            "recall_at_3": 0.8103,
+            "recall_at_5": 0.8678,
+            "hit_at_1": 360,
+            "hit_at_3": 423,
+            "hit_at_5": 453,
+            "no_confident_hit_cases": 3,
+            "unique_families": 261
+          }
+        }
+      }
+    },
+    {
+      "stage": "eval_gates",
+      "gates": {
+        "broad_top3_ok": true,
+        "admission_top3_ok": true,
+        "admission_confused_pairs_ok": true,
+        "disallow_ok": true,
+        "all_pass": true
+      }
+    }
+  ],
+  "overall_ok": true,
+  "finished_at": "2026-04-21T06:16:43"
+}

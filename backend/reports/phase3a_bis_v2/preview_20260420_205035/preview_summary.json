@@ -1,0 +1,91 @@
+{
+  "command": "preview",
+  "started_at": "2026-04-20T20:50:35",
+  "backend_root": "/sessions/elegant-modest-bardeen/mnt/chemlens/backend",
+  "report_dir": "/sessions/elegant-modest-bardeen/mnt/chemlens/backend/reports/phase3a_bis_v2/preview_20260420_205035",
+  "stamp": "20260420_205035",
+  "stages": [
+    {
+      "stage": "validate_entries",
+      "ok": true,
+      "details": [
+        {
+          "from": "Baeyer-Villiger Oxidation/rearrangement",
+          "to": "Baeyer-Villiger Oxidation/Rearrangement",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Barton Radical Decarboxylation",
+          "to": "Barton Radical Decarboxylation Reaction",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Simmons-Smith Reaction",
+          "to": "Simmons-Smith Cyclopropanation",
+          "from_in_db": true,
+          "to_in_db": true
+        },
+        {
+          "from": "Suzuki Cross-Coupling",
+          "to": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+          "from_in_db": true,
+          "to_in_db": true
+        }
+      ]
+    },
+    {
+      "stage": "snapshot",
+      "saved": [
+        "final_state_verifier.py",
+        "named_reaction_benchmark_broad.json",
+        "family_admission_benchmark.json",
+        "corpus_coverage_benchmark.json"
+      ]
+    },
+    {
+      "stage": "patch",
+      "ok": true,
+      "applied": [
+        {
+          "from": "Baeyer-Villiger Oxidation/rearrangement",
+          "to": "Baeyer-Villiger Oxidation/Rearrangement",
+          "note": "id=13 -> id=291 (case variant on /rearrangement tail)"
+        },
+        {
+          "from": "Barton Radical Decarboxylation",
+          "to": "Barton Radical Decarboxylation Reaction",
+          "note": "id=44 -> id=43 (missing Reaction suffix)"
+        },
+        {
+          "from": "Simmons-Smith Reaction",
+          "to": "Simmons-Smith Cyclopropanation",
+          "note": "id=151 -> id=199 (generic -> mechanism-specific)"
+        },
+        {
+          "from": "Suzuki Cross-Coupling",
+          "to": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+          "note": "id=148 -> id=217 (full DB canonical with trailing Cross-Coupling)"
+        }
+      ],
+      "skipped": []
+    },
+    {
+      "stage": "rebuild_benchmarks",
+      "rc": 2
+    },
+    {
+      "stage": "restore",
+      "restored": [
+        "final_state_verifier.py",
+        "benchmark/named_reaction_benchmark_broad.json",
+        "benchmark/family_admission_benchmark.json",
+        "benchmark/corpus_coverage_benchmark.json"
+      ]
+    }
+  ],
+  "overall_ok": false,
+  "error": "benchmark_builder.py exited 2",
+  "finished_at": "2026-04-20T20:50:36"
+}

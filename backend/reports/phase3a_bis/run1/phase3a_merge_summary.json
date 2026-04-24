@@ -1,0 +1,315 @@
+{
+  "phase_tag": "phase3a_bis_merge_aliases",
+  "started_at": "2026-04-21T04:46:58.050425",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "out_dir": "C:\\chemlens\\backend\\reports\\phase3a_bis\\run1",
+  "dry_run": false,
+  "include_review": false,
+  "overall_ok": true,
+  "snapshot": "C:\\chemlens\\backend\\reports\\phase3a_bis\\run1\\db_backups\\labint.phase3a_merge.20260421_044658.db",
+  "pre_counts": {
+    "reaction_family_patterns": 305,
+    "reaction_family_aliases": 17
+  },
+  "merge": {
+    "ok": true,
+    "count": 5,
+    "details": [
+      {
+        "label": "Baeyer-Villiger Oxidation/Rearrangement",
+        "winning_id": 291,
+        "winning_name": "Baeyer-Villiger Oxidation/Rearrangement",
+        "losing_ids": [
+          13,
+          42
+        ],
+        "losing_names": [
+          "Baeyer-Villiger Oxidation/rearrangement",
+          "Baeyer-Villiger Oxidation"
+        ],
+        "before": {
+          "winning_counts": {
+            "ev": 0,
+            "ov": 1,
+            "app": 1,
+            "mech": 1
+          },
+          "winning_synonyms": "Baeyer-Villiger Oxidation|Rearrangement|Baeyer-Villiger oxidation|Baeyer-Villiger rearrangement|B-V oxidation",
+          "losing_counts": [
+            {
+              "id": 13,
+              "ev": 1,
+              "ov": 0,
+              "app": 0,
+              "mech": 0
+            },
+            {
+              "id": 42,
+              "ev": 5,
+              "ov": 5,
+              "app": 0,
+              "mech": 0
+            }
+          ],
+          "losing_synonyms": [
+            null,
+            null
+          ]
+        },
+        "after": {
+          "winning_counts": {
+            "ev": 6,
+            "ov": 6,
+            "app": 1,
+            "mech": 1
+          },
+          "winning_synonyms": "Baeyer-Villiger Oxidation|Rearrangement|Baeyer-Villiger rearrangement|B-V oxidation|Baeyer-Villiger Oxidation/rearrangement"
+        }
+      },
+      {
+        "label": "Barton Radical Decarboxylation Reaction",
+        "winning_id": 43,
+        "winning_name": "Barton Radical Decarboxylation Reaction",
+        "losing_ids": [
+          44
+        ],
+        "losing_names": [
+          "Barton Radical Decarboxylation"
+        ],
+        "before": {
+          "winning_counts": {
+            "ev": 4,
+            "ov": 1,
+            "app": 1,
+            "mech": 2
+          },
+          "winning_synonyms": "Barton decarboxylation|Barton ester decarboxylation",
+          "losing_counts": [
+            {
+              "id": 44,
+              "ev": 2,
+              "ov": 0,
+              "app": 2,
+              "mech": 0
+            }
+          ],
+          "losing_synonyms": [
+            null
+          ]
+        },
+        "after": {
+          "winning_counts": {
+            "ev": 6,
+            "ov": 1,
+            "app": 3,
+            "mech": 2
+          },
+          "winning_synonyms": "Barton decarboxylation|Barton ester decarboxylation|Barton Radical Decarboxylation"
+        }
+      },
+      {
+        "label": "Simmons-Smith Cyclopropanation",
+        "winning_id": 199,
+        "winning_name": "Simmons-Smith Cyclopropanation",
+        "losing_ids": [
+          151
+        ],
+        "losing_names": [
+          "Simmons-Smith Reaction"
+        ],
+        "before": {
+          "winning_counts": {
+            "ev": 0,
+            "ov": 1,
+            "app": 1,
+            "mech": 1
+          },
+          "winning_synonyms": "Simmons-Smith Reaction|Simmons-Smith cyclopropanation",
+          "losing_counts": [
+            {
+              "id": 151,
+              "ev": 0,
+              "ov": 0,
+              "app": 0,
+              "mech": 0
+            }
+          ],
+          "losing_synonyms": [
+            "Simmons-Smith cyclopropanation|Simmons and Smith reaction"
+          ]
+        },
+        "after": {
+          "winning_counts": {
+            "ev": 0,
+            "ov": 1,
+            "app": 1,
+            "mech": 1
+          },
+          "winning_synonyms": "Simmons-Smith Reaction|Simmons-Smith cyclopropanation|Simmons and Smith reaction"
+        }
+      },
+      {
+        "label": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+        "winning_id": 217,
+        "winning_name": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+        "losing_ids": [
+          148
+        ],
+        "losing_names": [
+          "Suzuki Cross-Coupling"
+        ],
+        "before": {
+          "winning_counts": {
+            "ev": 0,
+            "ov": 1,
+            "app": 1,
+            "mech": 1
+          },
+          "winning_synonyms": "Suzuki-Miyaura Cross-Coupling|Suzuki Cross-Coupling|Suzuki-Miyaura coupling|Suzuki coupling",
+          "losing_counts": [
+            {
+              "id": 148,
+              "ev": 0,
+              "ov": 0,
+              "app": 0,
+              "mech": 0
+            }
+          ],
+          "losing_synonyms": [
+            "Suzuki coupling|Suzuki-Miyaura coupling|Suzuki cross-coupling"
+          ]
+        },
+        "after": {
+          "winning_counts": {
+            "ev": 0,
+            "ov": 1,
+            "app": 1,
+            "mech": 1
+          },
+          "winning_synonyms": "Suzuki-Miyaura Cross-Coupling|Suzuki Cross-Coupling|Suzuki-Miyaura coupling|Suzuki coupling"
+        }
+      },
+      {
+        "label": "Horner-Wadsworth-Emmons Olefination",
+        "winning_id": 383,
+        "winning_name": "Horner-Wadsworth-Emmons Olefination",
+        "losing_ids": [
+          155
+        ],
+        "losing_names": [
+          "Horner-Wadsworth-Emmons"
+        ],
+        "before": {
+          "winning_counts": {
+            "ev": 0,
+            "ov": 1,
+            "app": 1,
+            "mech": 1
+          },
+          "winning_synonyms": "HWE Olefination|Wadsworth-Emmons Reaction|Horner-Wittig Reaction",
+          "losing_counts": [
+            {
+              "id": 155,
+              "ev": 0,
+              "ov": 0,
+              "app": 0,
+              "mech": 0
+            }
+          ],
+          "losing_synonyms": [
+            "Horner-Wadsworth-Emmons|HWE olefination|Wadsworth-Emmons reaction"
+          ]
+        },
+        "after": {
+          "winning_counts": {
+            "ev": 0,
+            "ov": 1,
+            "app": 1,
+            "mech": 1
+          },
+          "winning_synonyms": "HWE Olefination|Wadsworth-Emmons Reaction|Horner-Wittig Reaction|Horner-Wadsworth-Emmons"
+        }
+      }
+    ]
+  },
+  "alias_inserts": {
+    "ok": true,
+    "inserted_count": 13,
+    "duplicate_count": 0,
+    "skipped_review_count": 3,
+    "inserted": [
+      {
+        "alias": "Baeyer-Villiger Oxidation/Rearrangement",
+        "canonical": "Baeyer-Villiger Oxidation/Rearrangement"
+      },
+      {
+        "alias": "Baeyer-Villiger Oxidation",
+        "canonical": "Baeyer-Villiger Oxidation/Rearrangement"
+      },
+      {
+        "alias": "B-V oxidation",
+        "canonical": "Baeyer-Villiger Oxidation/Rearrangement"
+      },
+      {
+        "alias": "Barton Radical Decarboxylation Reaction",
+        "canonical": "Barton Radical Decarboxylation Reaction"
+      },
+      {
+        "alias": "Barton Radical Decarboxylation",
+        "canonical": "Barton Radical Decarboxylation Reaction"
+      },
+      {
+        "alias": "Simmons-Smith Cyclopropanation",
+        "canonical": "Simmons-Smith Cyclopropanation"
+      },
+      {
+        "alias": "Simmons-Smith Reaction",
+        "canonical": "Simmons-Smith Cyclopropanation"
+      },
+      {
+        "alias": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+        "canonical": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)"
+      },
+      {
+        "alias": "Suzuki Cross-Coupling",
+        "canonical": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)"
+      },
+      {
+        "alias": "Suzuki-Miyaura Cross-Coupling",
+        "canonical": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)"
+      },
+      {
+        "alias": "Horner-Wadsworth-Emmons Olefination",
+        "canonical": "Horner-Wadsworth-Emmons Olefination"
+      },
+      {
+        "alias": "Horner-Wadsworth-Emmons",
+        "canonical": "Horner-Wadsworth-Emmons Olefination"
+      },
+      {
+        "alias": "HWE Olefination",
+        "canonical": "Horner-Wadsworth-Emmons Olefination"
+      }
+    ],
+    "duplicates": [],
+    "skipped_review": [
+      {
+        "alias": "Favorskii and Homo-Favorskii Rearrangement",
+        "canonical": "Favorskii Rearrangement"
+      },
+      {
+        "alias": "Still-Gennari HWE",
+        "canonical": "Still-Gennari Modification"
+      },
+      {
+        "alias": "Furukawa-Simmons-Smith",
+        "canonical": "Furukawa Modification"
+      }
+    ]
+  },
+  "post_counts": {
+    "reaction_family_patterns": 299,
+    "reaction_family_aliases": 30
+  },
+  "finished_at": "2026-04-21T04:46:58.085333"
+}

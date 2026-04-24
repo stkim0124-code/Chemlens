@@ -1,0 +1,89 @@
+{
+  "phase": "3g-5",
+  "applied_at": "2026-04-22T00:00:00+09:00",
+  "summary": "Grignard Reaction and Regitz Diazo Transfer anti-greed guards, adding isocyanide penalty 0.45 to both. Motivated by 3g-4 residual greed migration — Passerini_1126 top1 had shifted to Grignard, Passerini_1127 top1 to Regitz. 3g-5 demotes these correctly but NO HIT GAIN because real Passerini is not in top5 of those cases. Zero-ROI outcome signals Phase 3g guard-tuning has exhausted its reach for MCR cases; Phase 3f (hand-curated DB seed rows for MCR variants) is the next frontier.",
+  "files_touched": [
+    "C:\\chemlens\\backend\\app\\evidence_search.py"
+  ],
+  "change_lines": {
+    "grignard_anti_greed": "elif fam == 'grignard reaction' or startswith('grignard reaction') — penalize isocyanide 0.45",
+    "regitz_anti_greed": "elif fam == 'regitz diazo transfer' or startswith('regitz diazo transfer') — penalize isocyanide 0.45"
+  },
+  "baselines_compared": {
+    "3g_4": {
+      "adm_top1": 0.7606,
+      "adm_top3": 0.861,
+      "confused_pairs": 62,
+      "brd_top1": 0.7606,
+      "brd_top3": 0.861,
+      "brd_disallow_top3": 0,
+      "cov_r1": 0.7317,
+      "cov_r3": 0.8378,
+      "cov_r5": 0.8842
+    },
+    "3g_5": {
+      "adm_top1": 0.7606,
+      "adm_top3": 0.861,
+      "confused_pairs": 62,
+      "brd_top1": 0.7606,
+      "brd_top3": 0.861,
+      "brd_disallow_top3": 0,
+      "cov_r1": 0.7317,
+      "cov_r3": 0.8378,
+      "cov_r5": 0.8842
+    }
+  },
+  "deltas_vs_3g_4": {
+    "adm_top1": "0 (197->197)",
+    "adm_top3": "0 (223->223)",
+    "confused_pairs": "0 (62->62)",
+    "brd_top1": "0",
+    "brd_top3": "0",
+    "brd_disallow_top3": "0",
+    "cov_r1": "0 (379->379)",
+    "cov_r3": "0 (434->434)",
+    "cov_r5": "0 (458->458)"
+  },
+  "strict_non_regression_status": "PASS — all 9 metrics == 3g-4 baseline; 0 improved, 9 unchanged, 0 regressed",
+  "gate_criteria_vs_3c_b": {
+    "confused_under_74": "PASS (62 < 74)",
+    "adm_top3_over_838": "PASS (0.861 >= 0.838)",
+    "brd_disallow_top3_zero": "PASS (0)",
+    "cov_r5_over_868": "PASS (0.8842 >= 0.868)"
+  },
+  "gained_cases": {
+    "all_buckets": []
+  },
+  "lost_cases": {
+    "all_buckets": []
+  },
+  "diagnostic_journey": [
+    "Probe 3g-4 residual MCR misses: Passerini_1126 top1=Grignard, Passerini_1127 top1=Regitz Diazo Transfer; Ugi_1345 top1=Aldol Reaction (already penalized 0.50 — moved rank 2→1 after Benzoin demotion).",
+    "DB probe probe_3g_5_rows.py: Grignard 3 rows iso=0, Regitz 4 rows iso=0, Aldol 12 rows iso=0 — all candidates safe for iso-penalty.",
+    "Patched evidence_search.py with two new elif blocks. Smoke test smoke_3g_5.py (9 checks) PASS.",
+    "Post-benchmark check_targets_5.py: penalty FIRES correctly — Grignard demoted from Passerini_1126 top1 (Aldol moves to top1); Regitz demoted from Passerini_1127 top1 (Lieben Haloform moves to top1). But Passerini itself is not in top5 of either case, so demotion alone produces zero hit gain.",
+    "This is the ROI-drop signal: per-family anti-greed has exhausted its reach for MCR cases. Remaining misses need Passerini/Ugi/Petasis to BOOST (not just competitors to demote). Next lever is seed-DB expansion = Phase 3f."
+  ],
+  "roi_analysis": {
+    "3g_1b": "gained 5 cases",
+    "3g_2c": "gained 6 cases",
+    "3g_3": "gained 2 cases",
+    "3g_4": "gained 4 cases",
+    "3g_5": "gained 0 cases — ROI=0, Phase 3g exhausted",
+    "next_step": "Transition to Phase 3f: hand-curated DB seed SMILES for Passerini/Ugi/Petasis-Mannich MCR variants so the own-family score can out-compete demoted greedy families. Per user directive '3g 계속, 3g ROI 하락하면 3f 진입'."
+  },
+  "shipping_decision": "KEEP 3g-5 patch despite zero gain — guards are strictly non-regressive and provide defensive anti-greed for future DB rows that may contain MCR-like SMILES mis-labeled as Grignard/Regitz. Cost is 6 lines of code; benefit is robustness.",
+  "smoke_tests": [
+    "smoke_3g_5.py — 9 PASS / 0 FAIL covering Grignard clean, Passerini/Ugi→Grignard penalty, Regitz clean, Passerini/Ugi→Regitz penalty, Mannich/Friedel-Crafts not affected, Grignard startswith variant",
+    "probe_3g_5_rows.py — all 19 own-family DB rows (Grignard 3 + Regitz 4 + Aldol 12) verified iso=0 clean"
+  ],
+  "cumulative_deltas_vs_3c_b": {
+    "adm_top1": "0.7104->0.7606 (+0.0502)",
+    "adm_top3": "0.8417->0.8610 (+0.0193)",
+    "confused_pairs": "74->62 (-12)",
+    "cov_r1": "0.7124->0.7317 (+0.0193)",
+    "cov_r3": "0.8243->0.8378 (+0.0135)",
+    "cov_r5": "0.8726->0.8842 (+0.0116)"
+  },
+  "apply_dir": "C:\\chemlens\\backend\\reports\\phase3g\\apply_3g_5_20260422_000000"
+}

@@ -1,0 +1,127 @@
+{
+  "tag": "phase3_family_completion_metathesis_barton_v1",
+  "db": "app\\labint.db",
+  "dry_run": true,
+  "before": {
+    "queryable_family_count": 284,
+    "queryable_count": 1063
+  },
+  "alias_updates": [
+    {
+      "table": "reaction_extracts",
+      "from": "Alkene (olefin) Metathesis",
+      "to": "Alkene (Olefin) Metathesis",
+      "rows_updated": 8
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Alkene (olefin) Metathesis",
+      "to": "Alkene (Olefin) Metathesis",
+      "rows_updated": 29
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Barton-Mccombie Radical Deoxygenation Reaction",
+      "to": "Barton-McCombie Radical Deoxygenation Reaction",
+      "rows_updated": 5
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Barton-Mccombie Radical Deoxygenation Reaction",
+      "to": "Barton-McCombie Radical Deoxygenation Reaction",
+      "rows_updated": 32
+    }
+  ],
+  "backfill": [
+    {
+      "family": "Alkene (Olefin) Metathesis",
+      "extract_rows_touched": 8
+    },
+    {
+      "family": "Barton-McCombie Radical Deoxygenation Reaction",
+      "extract_rows_touched": 5
+    }
+  ],
+  "inserted": [
+    {
+      "family": "Alkene (Olefin) Metathesis",
+      "status": "inserted",
+      "extract_id": 792,
+      "page_no": 62,
+      "image_filename": "named reactions_62.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Alkene (Olefin) Metathesis",
+      "status": "inserted",
+      "extract_id": 793,
+      "page_no": 63,
+      "image_filename": "named reactions_63.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Alkene (Olefin) Metathesis",
+      "status": "inserted",
+      "extract_id": 794,
+      "page_no": 63,
+      "image_filename": "named reactions_63.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Barton-McCombie Radical Deoxygenation Reaction",
+      "status": "inserted",
+      "extract_id": 795,
+      "page_no": 98,
+      "image_filename": "named reactions_98.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Barton-McCombie Radical Deoxygenation Reaction",
+      "status": "inserted",
+      "extract_id": 796,
+      "page_no": 99,
+      "image_filename": "named reactions_99.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Barton-McCombie Radical Deoxygenation Reaction",
+      "status": "inserted",
+      "extract_id": 797,
+      "page_no": 99,
+      "image_filename": "named reactions_99.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "after": {
+    "queryable_family_count": 284,
+    "queryable_count": 1076
+  },
+  "verify": [
+    {
+      "family": "Alkene (Olefin) Metathesis",
+      "extract_count": 11,
+      "overview_count": 5,
+      "application_count": 5,
+      "extract_with_reactant": 4,
+      "extract_with_product": 5,
+      "extract_with_both": 3,
+      "queryable_reactants": 5,
+      "queryable_products": 5,
+      "molecule_rows": 36,
+      "completion_gate_minimum_pass": true
+    },
+    {
+      "family": "Barton-McCombie Radical Deoxygenation Reaction",
+      "extract_count": 8,
+      "overview_count": 2,
+      "application_count": 3,
+      "extract_with_reactant": 5,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 6,
+      "queryable_products": 4,
+      "molecule_rows": 38,
+      "completion_gate_minimum_pass": true
+    }
+  ]
+}

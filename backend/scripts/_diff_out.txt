@@ -1,0 +1,69 @@
+﻿--- current_122083
++++ iter2_pre_124010
+@@ -300,2 +300,9 @@
+     # --- end Phase 4 Gate B feature SMARTS ---
++    # --- Phase 4 Gate B iter2 feature SMARTS start (20260424_simmons) ---
++    # cyclopropane: 3-membered all-carbon ring (saturated). Required FORMATION
++    # is the key Simmons-Smith signature (alkene �넂 cyclopropane via CH2I2/Zn).
++    # Fixes cov_buchwald-hartwig_cross-coupling_368 where a bystander cyclopropyl
++    # substituent in substrate + product was letting Simmons-Smith win top1.
++    "cyclopropane": "C1CC1",
++    # --- end Phase 4 Gate B iter2 feature SMARTS ---
+ }
+@@ -1373,9 +1380,12 @@
+         # Require acid/acid_chloride or ketone substrate.
+-        # Phase 4 Gate B: add HN3/azide hard requirement. Schmidt has NO
+-        # mechanism without an azide source. Absence �넂 hard anti-signal vs
+-        # Schotten-Baumann / Beckmann / Curtius confusions.
++        # Phase 4 Gate B iterate1 (2026-04-24): HN3/azide is a REAGENT, not part
++        # of the benchmark SMILES (substrate>>product). Previous hard penalty
++        # for missing azide cost us legitimate Schmidt cases (e.g. adm_1240
++        # benzophenone>>N-phenyl benzamide). Reverted to positive-boost only:
++        # if azide IS present �넂 strong boost; if absent �넂 neutral (let baseline
++        # scoring decide vs Lieben/Schotten-Baumann). Same pattern as Category A.
+         if (r.get("carboxylic_acid", 0) + r.get("acid_chloride", 0) + r.get("carbonyl", 0)) < 1:
+             penalize(0.30, "Schmidt: �궛/�궛�뿼�솕臾�/移대낫�땺 湲곗쭏 遺�議�")
+-        if r.get("azide", 0) < 1 and r.get("diazo", 0) < 1:
+-            penalize(0.40, "Schmidt: �븘吏��뱶/HN3 �쟾援ъ껜 遺��옱 ��� �빑�떖 reagent �늻�씫")
++        if r.get("azide", 0) >= 1 or r.get("diazo", 0) >= 1:
++            boost(1.25, "Schmidt: �븘吏��뱶/HN3 �쟾援ъ껜 議댁옱 ��� �빑�떖 reagent �쟻�빀")
+         if d.get("amide", 0) > 0 or d.get("amine", 0) > 0:
+@@ -1662,10 +1672,14 @@
+     elif "sandmeyer" in fam:
+-        # Sandmeyer: Ar-N2+ + CuX -> Ar-X (Cl/Br/CN). HARD requirement: diazonium
+-        # on reactants. Product has aryl_halide. Without N2+ �넂 it's not Sandmeyer.
+-        if r.get("diazonium", 0) < 1:
+-            penalize(0.22, "Sandmeyer: aryl diazonium(N2+) �쟾援ъ껜 遺��옱 ��� �빑�떖 reagent �늻�씫")
++        # Sandmeyer: Ar-N2+ + CuX -> Ar-X (Cl/Br/CN). Diazonium is formed in situ
++        # from ArNH2 + NaNO2/HCl in most textbook representations, so benchmark
++        # SMILES usually show ArNH2>>ArX directly (e.g. adm_1237 Nc1ccccc1>>Clc1ccccc1).
++        # Phase 4 Gate B iterate1 (2026-04-24): removed hard diazonium penalty
++        # ��� it was killing legitimate Sandmeyer whose SMILES omits the diazonium
++        # intermediate. Replaced with "aniline-or-diazonium" positive-boost.
++        has_diazonium_precursor = (r.get("diazonium", 0) >= 1 or
++                                   r.get("aromatic_amine", 0) >= 1)
+         if p.get("aryl_halide", 0) < 1:
+             penalize(0.35, "Sandmeyer: �깮�꽦臾� aryl halide �떆洹몃땲泥� 遺��옱")
+-        if r.get("diazonium", 0) >= 1 and p.get("aryl_halide", 0) >= 1:
+-            boost(1.20, "Sandmeyer: diazonium + aryl halide �깮�꽦 議고빀 �쟻�빀")
++        if has_diazonium_precursor and p.get("aryl_halide", 0) >= 1:
++            boost(1.20, "Sandmeyer: (�븘由댁븘誘�/diazonium) + aryl halide �깮�꽦 �쟻�빀")
+     elif "peterson" in fam and "olefination" in fam:
+@@ -1724,2 +1738,15 @@
+ 
++    # --- Phase 4 Gate B iter2 Simmons-Smith guard start (20260424_simmons) ---
++    # Addresses cov_buchwald-hartwig_cross-coupling_368: bystander cyclopropyl
++    # (C1CC1) in reactant AND product (delta=0) let Simmons-Smith win top1 over
++    # the expected Buchwald-Hartwig family. True Simmons-Smith requires
++    # FORMATION of cyclopropane (d>=1) from an alkene substrate (CH2I2/Zn).
++    elif "simmons" in fam:
++        if r.get("alkene", 0) < 1:
++            penalize(0.30, "Simmons-Smith: alkene �쟾援ъ껜 遺�議�")
++        if d.get("cyclopropane", 0) < 1:
++            penalize(0.25, "Simmons-Smith: cyclopropane �깮�꽦 �떊�샇 遺�議� (bystander only)")
++        if r.get("alkene", 0) >= 1 and d.get("cyclopropane", 0) >= 1:
++            boost(1.20, "Simmons-Smith: alkene �넂 cyclopropane �삎�꽦 �쟻�빀")
++    # --- end Phase 4 Gate B iter2 Simmons-Smith guard ---
+     mult = max(0.05, min(mult, 2.0))
+---
+total diff lines: 67

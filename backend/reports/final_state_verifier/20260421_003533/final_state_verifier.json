@@ -1,0 +1,764 @@
+{
+  "generated_at": "2026-04-21 00:35:34",
+  "db_path": "C:\\chemlens\\backend\\app\\labint.db",
+  "integrity": {
+    "quick_check": "ok",
+    "integrity_check_head": "ok"
+  },
+  "canonical_totals": {
+    "registry_family_total_raw": 305,
+    "registry_family_distinct_total_raw": 291,
+    "registry_duplicate_name_rows_raw": 14,
+    "registry_family_distinct_total_canonicalized": 264,
+    "families_with_extracts_canonicalized": 264,
+    "queryable_family_count_canonicalized": 264,
+    "reaction_extract_count": 1265,
+    "extract_molecule_count": 4329,
+    "queryable_molecule_count": 2501,
+    "extracts_with_both_smiles": 1032
+  },
+  "completion_overview": {
+    "missing_count": 0,
+    "shallow_count": 0,
+    "rich_count": 264,
+    "collision_prone_candidate_count": 0,
+    "recent_completed_family_count": 82,
+    "recent_completed_families": [
+      "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "Alkene (Olefin) Metathesis",
+      "Amadori Reaction / Rearrangement",
+      "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "Baeyer-Villiger Oxidation/Rearrangement",
+      "Balz-Schiemann Reaction (Schiemann Reaction)",
+      "Barton-McCombie Radical Deoxygenation Reaction",
+      "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "Charette Asymmetric Cyclopropanation",
+      "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "Claisen Condensation / Claisen Reaction",
+      "Combes Quinoline Synthesis",
+      "Cope Elimination / Cope Reaction",
+      "Cope Rearrangement",
+      "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "Corey-Fuchs Alkyne Synthesis",
+      "Corey-Kim Oxidation",
+      "Corey-Nicolaou Macrolactonization",
+      "Corey-Winter Olefination",
+      "Cornforth Rearrangement",
+      "Criegee Oxidation",
+      "Curtius Rearrangement",
+      "Dakin Oxidation",
+      "Dakin-West Reaction",
+      "Danheiser Benzannulation",
+      "Danheiser Cyclopentene Annulation",
+      "Danishefsky's Diene Cycloaddition",
+      "Darzens Glycidic Ester Condensation",
+      "Davis' Oxaziridine Oxidations",
+      "De Mayo Cycloaddition",
+      "Demjanov Rearrangement and Tiffeneau-Demjanov Rearrangement",
+      "Dess-Martin Oxidation",
+      "Dieckmann Condensation",
+      "Diels-Alder Cycloaddition",
+      "Dienone-Phenol Rearrangement",
+      "Enyne Metathesis",
+      "Eschenmoser-Claisen Rearrangement",
+      "Eschweiler-Clarke Methylation",
+      "Evans Aldol Reaction",
+      "Favorskii Rearrangement",
+      "Feist-Bénary Furan Synthesis",
+      "Ferrier Reaction",
+      "Finkelstein Reaction",
+      "Fischer Indole Synthesis",
+      "Fleming-Tamao Oxidation",
+      "Friedel-Crafts Acylation",
+      "Friedel-Crafts Alkylation",
+      "Furukawa Modification",
+      "Gabriel Synthesis",
+      "Gattermann and Gattermann-Koch Formylation",
+      "Glaser Coupling",
+      "Grignard Reaction",
+      "Hantzsch Dihydropyridine Synthesis",
+      "Heck Reaction",
+      "Hell-Volhard-Zelinsky Reaction",
+      "Henry Reaction",
+      "Hetero Diels-Alder Cycloaddition (HDA)",
+      "Hofmann Elimination",
+      "Hofmann Rearrangement",
+      "Horner-Wadsworth-Emmons Olefination",
+      "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification",
+      "Hunsdiecker Reaction",
+      "Jacobsen Hydrolytic Kinetic Resolution",
+      "Jacobsen-Katsuki Epoxidation",
+      "Japp-Klingemann Reaction",
+      "Johnson-Claisen Rearrangement",
+      "Jones Oxidation",
+      "Julia-Lythgoe Olefination",
+      "Knoevenagel Condensation",
+      "Knorr Pyrrole Synthesis",
+      "Kornblum Oxidation",
+      "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+      "Kumada Cross-Coupling",
+      "Ley Oxidation",
+      "Lieben Haloform Reaction",
+      "Lossen Rearrangement",
+      "Luche Reduction",
+      "Mannich Reaction"
+    ],
+    "collision_prone_candidates": []
+  },
+  "completion_overview_raw": {
+    "missing_count": 26,
+    "shallow_count": 1,
+    "rich_count": 264,
+    "collision_prone_candidate_count": 0,
+    "recent_completed_family_count": 82,
+    "recent_completed_families": [
+      "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "Alkene (Olefin) Metathesis",
+      "Amadori Reaction / Rearrangement",
+      "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "Baeyer-Villiger Oxidation/Rearrangement",
+      "Balz-Schiemann Reaction (Schiemann Reaction)",
+      "Barton-McCombie Radical Deoxygenation Reaction",
+      "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "Charette Asymmetric Cyclopropanation",
+      "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "Claisen Condensation / Claisen Reaction",
+      "Combes Quinoline Synthesis",
+      "Cope Elimination / Cope Reaction",
+      "Cope Rearrangement",
+      "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "Corey-Fuchs Alkyne Synthesis",
+      "Corey-Kim Oxidation",
+      "Corey-Nicolaou Macrolactonization",
+      "Corey-Winter Olefination",
+      "Cornforth Rearrangement",
+      "Criegee Oxidation",
+      "Curtius Rearrangement",
+      "Dakin Oxidation",
+      "Dakin-West Reaction",
+      "Danheiser Benzannulation",
+      "Danheiser Cyclopentene Annulation",
+      "Danishefsky's Diene Cycloaddition",
+      "Darzens Glycidic Ester Condensation",
+      "Davis' Oxaziridine Oxidations",
+      "De Mayo Cycloaddition",
+      "Demjanov Rearrangement and Tiffeneau-Demjanov Rearrangement",
+      "Dess-Martin Oxidation",
+      "Dieckmann Condensation",
+      "Diels-Alder Cycloaddition",
+      "Dienone-Phenol Rearrangement",
+      "Enyne Metathesis",
+      "Eschenmoser-Claisen Rearrangement",
+      "Eschweiler-Clarke Methylation",
+      "Evans Aldol Reaction",
+      "Favorskii Rearrangement",
+      "Feist-Bénary Furan Synthesis",
+      "Ferrier Reaction",
+      "Finkelstein Reaction",
+      "Fischer Indole Synthesis",
+      "Fleming-Tamao Oxidation",
+      "Friedel-Crafts Acylation",
+      "Friedel-Crafts Alkylation",
+      "Furukawa Modification",
+      "Gabriel Synthesis",
+      "Gattermann and Gattermann-Koch Formylation",
+      "Glaser Coupling",
+      "Grignard Reaction",
+      "Hantzsch Dihydropyridine Synthesis",
+      "Heck Reaction",
+      "Hell-Volhard-Zelinsky Reaction",
+      "Henry Reaction",
+      "Hetero Diels-Alder Cycloaddition (HDA)",
+      "Hofmann Elimination",
+      "Hofmann Rearrangement",
+      "Horner-Wadsworth-Emmons Olefination",
+      "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification",
+      "Hunsdiecker Reaction",
+      "Jacobsen Hydrolytic Kinetic Resolution",
+      "Jacobsen-Katsuki Epoxidation",
+      "Japp-Klingemann Reaction",
+      "Johnson-Claisen Rearrangement",
+      "Jones Oxidation",
+      "Julia-Lythgoe Olefination",
+      "Knoevenagel Condensation",
+      "Knorr Pyrrole Synthesis",
+      "Kornblum Oxidation",
+      "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+      "Kumada Cross-Coupling",
+      "Ley Oxidation",
+      "Lieben Haloform Reaction",
+      "Lossen Rearrangement",
+      "Luche Reduction",
+      "Mannich Reaction"
+    ],
+    "collision_prone_candidates": []
+  },
+  "focus_families": [
+    {
+      "family": "Alkene (Olefin) Metathesis",
+      "raw_family_names_collapsed": [
+        "Alkene (Olefin) Metathesis",
+        "Alkene (olefin) Metathesis"
+      ],
+      "extract_count": 11,
+      "overview_count": 5,
+      "application_count": 5,
+      "mechanism_count": 0,
+      "extract_with_reactant": 4,
+      "extract_with_product": 5,
+      "extract_with_both": 3,
+      "queryable_reactants": 5,
+      "queryable_products": 5,
+      "molecule_rows": 36,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "completion_bucket": "rich",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": [
+        {
+          "id": 792,
+          "raw_family_name": "Alkene (Olefin) Metathesis",
+          "extract_kind": "canonical_overview",
+          "transformation_text": "Curated representative seed: ring-closing metathesis of 1,7-octadiene to cyclohexene.",
+          "reactants_text": "1,7-octadiene",
+          "products_text": "cyclohexene"
+        },
+        {
+          "id": 793,
+          "raw_family_name": "Alkene (Olefin) Metathesis",
+          "extract_kind": "application_example",
+          "transformation_text": "Curated representative seed: cross-metathesis of styrene with methyl acrylate to methyl cinnamate.",
+          "reactants_text": "styrene | methyl acrylate",
+          "products_text": "methyl cinnamate"
+        },
+        {
+          "id": 794,
+          "raw_family_name": "Alkene (Olefin) Metathesis",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: ring-closing metathesis toward the (+)-Prelaureatin precursor.",
+          "reactants_text": "C=C[C@H](O[Si](C)(C)C(C)(C)C)[C@H](O[Si](C)(C)C(C)(C)C)[C@@H](C=C)OCc1ccccc1",
+          "products_text": "c1ccccc1CO[C@@H]2[C@H](O[Si](C)(C)C(C)(C)C)[C@H](O[Si](C)(C)C(C)(C)C)/C=C\\C2"
+        }
+      ]
+    },
+    {
+      "family": "Barton-McCombie Radical Deoxygenation Reaction",
+      "raw_family_names_collapsed": [
+        "Barton-McCombie Radical Deoxygenation Reaction",
+        "Barton-Mccombie Radical Deoxygenation Reaction"
+      ],
+      "extract_count": 8,
+      "overview_count": 2,
+      "application_count": 3,
+      "mechanism_count": 0,
+      "extract_with_reactant": 5,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 6,
+      "queryable_products": 4,
+      "molecule_rows": 38,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "completion_bucket": "rich",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": [
+        {
+          "id": 795,
+          "raw_family_name": "Barton-McCombie Radical Deoxygenation Reaction",
+          "extract_kind": "canonical_overview",
+          "transformation_text": "Curated representative seed: 1-phenylethanol is deoxygenated to ethylbenzene via a xanthate intermediate under Barton-McCombie conditions.",
+          "reactants_text": "1-phenylethanol",
+          "products_text": "ethylbenzene"
+        },
+        {
+          "id": 796,
+          "raw_family_name": "Barton-McCombie Radical Deoxygenation Reaction",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Barton-McCombie deoxygenation in the synthesis of (±)-Δ9(12)-Capnellene.",
+          "reactants_text": "CSC(=S)O[C@H]1C[C@H]2C3C[C@H](C(C)(C)O3)[C@@H]12",
+          "products_text": "CC1(C)O[C@H]2CC3[C@H]4C[C@@H]3C421"
+        },
+        {
+          "id": 797,
+          "raw_family_name": "Barton-McCombie Radical Deoxygenation Reaction",
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Barton-McCombie deoxygenation in the synthesis of the octenoic acid side chain of zaragozic acid.",
+          "reactants_text": "CON(C)C(=O)[C@@H](C(C)C)[C@H](C)[C@H](C)OC(=S)SC",
+          "products_text": "CON(C)C(=O)[C@@H](C(C)C)[C@H](C)C"
+        }
+      ]
+    },
+    {
+      "family": "Fries Rearrangement",
+      "raw_family_names_collapsed": [
+        "Fries Rearrangement",
+        "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement"
+      ],
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "mechanism_count": 0,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 6,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "completion_bucket": "rich",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Hofmann-Loffler-Freytag Reaction",
+      "raw_family_names_collapsed": [
+        "Hofmann-Loffler-Freytag Reaction",
+        "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)"
+      ],
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "mechanism_count": 0,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "completion_bucket": "rich",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    },
+    {
+      "family": "Houben-Hoesch Reaction",
+      "raw_family_names_collapsed": [
+        "Houben-Hoesch Reaction",
+        "Houben-Hoesch Reaction/Synthesis"
+      ],
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "mechanism_count": 0,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 5,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "completion_bucket": "rich",
+      "collision_prone_candidate": false,
+      "recent_curated_extract_summaries": []
+    }
+  ],
+  "alias_residue": {
+    "reaction_extracts": {
+      "case_aliases": [
+        {
+          "name": "Baeyer-Villiger Oxidation/rearrangement",
+          "row_count": 1,
+          "canonical_target": "Baeyer-Villiger Oxidation/Rearrangement"
+        }
+      ],
+      "unknown_family_names": []
+    },
+    "extract_molecules": {
+      "case_aliases": [],
+      "unknown_family_names": []
+    }
+  },
+  "duplicate_pattern_name_sample": [
+    {
+      "family": "Arndt-Eistert Homologation / Synthesis",
+      "row_count": 2
+    },
+    {
+      "family": "Aza-Cope Rearrangement",
+      "row_count": 2
+    },
+    {
+      "family": "Aza-Wittig Reaction",
+      "row_count": 2
+    },
+    {
+      "family": "Aza-[2,3]-Wittig Rearrangement",
+      "row_count": 2
+    },
+    {
+      "family": "Baker-Venkataraman Rearrangement",
+      "row_count": 2
+    },
+    {
+      "family": "Balz-Schiemann Reaction",
+      "row_count": 2
+    },
+    {
+      "family": "Bamford-Stevens-Shapiro Olefination",
+      "row_count": 2
+    },
+    {
+      "family": "Baylis-Hillman Reaction",
+      "row_count": 2
+    },
+    {
+      "family": "Benzoin and Retro-Benzoin Condensation",
+      "row_count": 2
+    },
+    {
+      "family": "Bischler-Napieralski Isoquinoline Synthesis",
+      "row_count": 2
+    },
+    {
+      "family": "Buchwald-Hartwig Cross-Coupling",
+      "row_count": 2
+    },
+    {
+      "family": "Castro-Stephens Coupling",
+      "row_count": 2
+    },
+    {
+      "family": "Ciamician-Dennstedt Rearrangement",
+      "row_count": 2
+    },
+    {
+      "family": "Claisen-Ireland Rearrangement",
+      "row_count": 2
+    }
+  ],
+  "canonical_alias_groups_sample": [
+    {
+      "canonical_name": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+      "raw_names": [
+        "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+        "Alder (ene) Reaction",
+        "Alder Ene Reaction"
+      ]
+    },
+    {
+      "canonical_name": "Alkene (Olefin) Metathesis",
+      "raw_names": [
+        "Alkene (Olefin) Metathesis",
+        "Alkene (olefin) Metathesis"
+      ]
+    },
+    {
+      "canonical_name": "Amadori Reaction / Rearrangement",
+      "raw_names": [
+        "Amadori Reaction / Rearrangement",
+        "Amadori Rearrangement"
+      ]
+    },
+    {
+      "canonical_name": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+      "raw_names": [
+        "Arbuzov Reaction",
+        "Arbuzov Reaction (Michaelis-Arbuzov Reaction)"
+      ]
+    },
+    {
+      "canonical_name": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+      "raw_names": [
+        "Aza-Claisen Rearrangement",
+        "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)"
+      ]
+    },
+    {
+      "canonical_name": "Baeyer-Villiger Oxidation/Rearrangement",
+      "raw_names": [
+        "Baeyer-Villiger Oxidation/Rearrangement",
+        "Baeyer-Villiger Oxidation/rearrangement"
+      ]
+    },
+    {
+      "canonical_name": "Balz-Schiemann Reaction (Schiemann Reaction)",
+      "raw_names": [
+        "Balz-Schiemann Reaction",
+        "Balz-Schiemann Reaction (Schiemann Reaction)"
+      ]
+    },
+    {
+      "canonical_name": "Barton-McCombie Radical Deoxygenation Reaction",
+      "raw_names": [
+        "Barton-McCombie Radical Deoxygenation Reaction",
+        "Barton-Mccombie Radical Deoxygenation Reaction"
+      ]
+    },
+    {
+      "canonical_name": "Buchner Method of Ring Expansion (Buchner Reaction)",
+      "raw_names": [
+        "Buchner Method of Ring Expansion",
+        "Buchner Method of Ring Expansion (Buchner Reaction)",
+        "Buchner Reaction"
+      ]
+    },
+    {
+      "canonical_name": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+      "raw_names": [
+        "Carroll Rearrangement",
+        "Carroll Rearrangement (Kimel-Cope Rearrangement)"
+      ]
+    },
+    {
+      "canonical_name": "Chichibabin Amination Reaction (Chichibabin Reaction)",
+      "raw_names": [
+        "Chichibabin Amination Reaction",
+        "Chichibabin Amination Reaction (Chichibabin Reaction)"
+      ]
+    },
+    {
+      "canonical_name": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "raw_names": [
+        "Chugaev Elimination Reaction",
+        "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)"
+      ]
+    },
+    {
+      "canonical_name": "Claisen Condensation / Claisen Reaction",
+      "raw_names": [
+        "Claisen Condensation",
+        "Claisen Condensation / Claisen Reaction"
+      ]
+    },
+    {
+      "canonical_name": "De Mayo Cycloaddition",
+      "raw_names": [
+        "De Mayo Cycloaddition",
+        "De Mayo Cycloaddition (Enone-Alkene [2+2] Photocycloaddition)"
+      ]
+    },
+    {
+      "canonical_name": "Demjanov Rearrangement and Tiffeneau-Demjanov Rearrangement",
+      "raw_names": [
+        "Demjanov Rearrangement and Tiffeneau-Demjanov Rearrangement",
+        "Demjanov and Tiffeneau-Demjanov Rearrangement"
+      ]
+    },
+    {
+      "canonical_name": "Eschweiler-Clarke Methylation",
+      "raw_names": [
+        "Eschweiler-Clarke Methylation",
+        "Eschweiler-Clarke Methylation (Reductive Alkylation)"
+      ]
+    },
+    {
+      "canonical_name": "Ferrier Reaction",
+      "raw_names": [
+        "Ferrier Reaction",
+        "Ferrier Reaction/Rearrangement"
+      ]
+    },
+    {
+      "canonical_name": "Fries Rearrangement",
+      "raw_names": [
+        "Fries Rearrangement",
+        "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement"
+      ]
+    },
+    {
+      "canonical_name": "Hetero Diels-Alder Cycloaddition (HDA)",
+      "raw_names": [
+        "Hetero Diels-Alder Cycloaddition",
+        "Hetero Diels-Alder Cycloaddition (HDA)"
+      ]
+    },
+    {
+      "canonical_name": "Hofmann-Loffler-Freytag Reaction",
+      "raw_names": [
+        "Hofmann-Loffler-Freytag Reaction",
+        "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)"
+      ]
+    },
+    {
+      "canonical_name": "Horner-Wadsworth-Emmons Olefination",
+      "raw_names": [
+        "Horner-Wadsworth-Emmons",
+        "Horner-Wadsworth-Emmons Olefination"
+      ]
+    },
+    {
+      "canonical_name": "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification",
+      "raw_names": [
+        "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification",
+        "Still-Gennari Modification"
+      ]
+    },
+    {
+      "canonical_name": "Houben-Hoesch Reaction",
+      "raw_names": [
+        "Houben-Hoesch Reaction",
+        "Houben-Hoesch Reaction/Synthesis"
+      ]
+    },
+    {
+      "canonical_name": "Jones Oxidation",
+      "raw_names": [
+        "Jones Oxidation",
+        "Jones Oxidation/Oxidation of Alcohols by Chromium Reagents"
+      ]
+    },
+    {
+      "canonical_name": "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+      "raw_names": [
+        "Krapcho Dealkoxycarbonylation",
+        "Krapcho Dealkoxycarbonylation (Krapcho Reaction)"
+      ]
+    }
+  ],
+  "alias_collapse_events": [
+    {
+      "raw_name": "Alder (ene) Reaction",
+      "canonical_name": "Alder (Ene) Reaction (Hydro-Allyl Addition)"
+    },
+    {
+      "raw_name": "Alder Ene Reaction",
+      "canonical_name": "Alder (Ene) Reaction (Hydro-Allyl Addition)"
+    },
+    {
+      "raw_name": "Alkene (olefin) Metathesis",
+      "canonical_name": "Alkene (Olefin) Metathesis"
+    },
+    {
+      "raw_name": "Amadori Rearrangement",
+      "canonical_name": "Amadori Reaction / Rearrangement"
+    },
+    {
+      "raw_name": "Arbuzov Reaction",
+      "canonical_name": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)"
+    },
+    {
+      "raw_name": "Aza-Claisen Rearrangement",
+      "canonical_name": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)"
+    },
+    {
+      "raw_name": "Baeyer-Villiger Oxidation/rearrangement",
+      "canonical_name": "Baeyer-Villiger Oxidation/Rearrangement"
+    },
+    {
+      "raw_name": "Balz-Schiemann Reaction",
+      "canonical_name": "Balz-Schiemann Reaction (Schiemann Reaction)"
+    },
+    {
+      "raw_name": "Barton-Mccombie Radical Deoxygenation Reaction",
+      "canonical_name": "Barton-McCombie Radical Deoxygenation Reaction"
+    },
+    {
+      "raw_name": "Buchner Method of Ring Expansion",
+      "canonical_name": "Buchner Method of Ring Expansion (Buchner Reaction)"
+    },
+    {
+      "raw_name": "Buchner Reaction",
+      "canonical_name": "Buchner Method of Ring Expansion (Buchner Reaction)"
+    },
+    {
+      "raw_name": "Carroll Rearrangement",
+      "canonical_name": "Carroll Rearrangement (Kimel-Cope Rearrangement)"
+    },
+    {
+      "raw_name": "Chichibabin Amination Reaction",
+      "canonical_name": "Chichibabin Amination Reaction (Chichibabin Reaction)"
+    },
+    {
+      "raw_name": "Chugaev Elimination Reaction",
+      "canonical_name": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)"
+    },
+    {
+      "raw_name": "Claisen Condensation",
+      "canonical_name": "Claisen Condensation / Claisen Reaction"
+    },
+    {
+      "raw_name": "De Mayo Cycloaddition (Enone-Alkene [2+2] Photocycloaddition)",
+      "canonical_name": "De Mayo Cycloaddition"
+    },
+    {
+      "raw_name": "Demjanov and Tiffeneau-Demjanov Rearrangement",
+      "canonical_name": "Demjanov Rearrangement and Tiffeneau-Demjanov Rearrangement"
+    },
+    {
+      "raw_name": "Eschweiler-Clarke Methylation (Reductive Alkylation)",
+      "canonical_name": "Eschweiler-Clarke Methylation"
+    },
+    {
+      "raw_name": "Ferrier Reaction/Rearrangement",
+      "canonical_name": "Ferrier Reaction"
+    },
+    {
+      "raw_name": "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+      "canonical_name": "Fries Rearrangement"
+    },
+    {
+      "raw_name": "Hetero Diels-Alder Cycloaddition",
+      "canonical_name": "Hetero Diels-Alder Cycloaddition (HDA)"
+    },
+    {
+      "raw_name": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+      "canonical_name": "Hofmann-Loffler-Freytag Reaction"
+    },
+    {
+      "raw_name": "Horner-Wadsworth-Emmons",
+      "canonical_name": "Horner-Wadsworth-Emmons Olefination"
+    },
+    {
+      "raw_name": "Still-Gennari Modification",
+      "canonical_name": "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification"
+    },
+    {
+      "raw_name": "Houben-Hoesch Reaction/Synthesis",
+      "canonical_name": "Houben-Hoesch Reaction"
+    },
+    {
+      "raw_name": "Jones Oxidation/Oxidation of Alcohols by Chromium Reagents",
+      "canonical_name": "Jones Oxidation"
+    },
+    {
+      "raw_name": "Krapcho Dealkoxycarbonylation",
+      "canonical_name": "Krapcho Dealkoxycarbonylation (Krapcho Reaction)"
+    }
+  ],
+  "top_shallow_families": [],
+  "missing_family_sample": [],
+  "missing_family_sample_raw": [
+    "Alder (ene) Reaction",
+    "Alder Ene Reaction",
+    "Alkene (olefin) Metathesis",
+    "Amadori Rearrangement",
+    "Arbuzov Reaction",
+    "Aza-Claisen Rearrangement",
+    "Balz-Schiemann Reaction",
+    "Barton-Mccombie Radical Deoxygenation Reaction",
+    "Buchner Method of Ring Expansion",
+    "Buchner Reaction",
+    "Carroll Rearrangement",
+    "Chichibabin Amination Reaction",
+    "Chugaev Elimination Reaction",
+    "Claisen Condensation",
+    "De Mayo Cycloaddition (Enone-Alkene [2+2] Photocycloaddition)",
+    "Demjanov and Tiffeneau-Demjanov Rearrangement",
+    "Eschweiler-Clarke Methylation (Reductive Alkylation)",
+    "Ferrier Reaction/Rearrangement",
+    "Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement",
+    "Hetero Diels-Alder Cycloaddition",
+    "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+    "Horner-Wadsworth-Emmons",
+    "Houben-Hoesch Reaction/Synthesis",
+    "Jones Oxidation/Oxidation of Alcohols by Chromium Reagents",
+    "Krapcho Dealkoxycarbonylation",
+    "Still-Gennari Modification"
+  ]
+}

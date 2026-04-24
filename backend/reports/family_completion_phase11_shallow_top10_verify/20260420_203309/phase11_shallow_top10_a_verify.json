@@ -1,0 +1,201 @@
+{
+  "db": "app\\labint.db",
+  "batch": "a",
+  "verify": [
+    {
+      "family": "Danishefsky's Diene Cycloaddition",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        865,
+        866
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 865,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Danishefsky's diene cycloaddition of Danishefsky's diene with acrolein to a substituted cyclohexenone.",
+          "reactants_text": "Danishefsky's diene and acrolein",
+          "products_text": "methoxy cyclohexenone aldehyde adduct"
+        },
+        {
+          "id": 866,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Danishefsky's diene cycloaddition of Danishefsky's diene with methyl vinyl ketone to a substituted cyclohexenone.",
+          "reactants_text": "Danishefsky's diene and methyl vinyl ketone",
+          "products_text": "methoxy cyclohexenone ketone adduct"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "De Mayo Cycloaddition",
+      "extract_count": 4,
+      "overview_count": 2,
+      "application_count": 2,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 8,
+      "queryable_products": 4,
+      "molecule_rows": 14,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        867,
+        868
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 867,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: De Mayo cycloaddition of acetylacetone with cyclohexene to a 1,5-dicarbonyl adduct after retro-aldol fragmentation.",
+          "reactants_text": "acetylacetone and cyclohexene",
+          "products_text": "cyclohexyl-substituted 1,5-dicarbonyl adduct"
+        },
+        {
+          "id": 868,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: De Mayo cycloaddition of acetylacetone with cyclopentene to a ring-substituted 1,5-dicarbonyl adduct.",
+          "reactants_text": "acetylacetone and cyclopentene",
+          "products_text": "cyclopentyl-substituted 1,5-dicarbonyl adduct"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Demjanov Rearrangement and Tiffeneau-Demjanov Rearrangement",
+      "extract_count": 4,
+      "overview_count": 2,
+      "application_count": 2,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        869,
+        870
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 869,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Tiffeneau-Demjanov ring expansion of 1-aminomethylcyclohexanol to cycloheptanone.",
+          "reactants_text": "1-aminomethylcyclohexanol",
+          "products_text": "cycloheptanone"
+        },
+        {
+          "id": 870,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Tiffeneau-Demjanov ring expansion of 1-aminomethylcyclopentanol to cyclohexanone.",
+          "reactants_text": "1-aminomethylcyclopentanol",
+          "products_text": "cyclohexanone"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Dess-Martin Oxidation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        871,
+        872
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 871,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Dess-Martin oxidation of benzyl alcohol to benzaldehyde.",
+          "reactants_text": "benzyl alcohol",
+          "products_text": "benzaldehyde"
+        },
+        {
+          "id": 872,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Dess-Martin oxidation of 1-phenylethanol to acetophenone.",
+          "reactants_text": "1-phenylethanol",
+          "products_text": "acetophenone"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Dieckmann Condensation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        873,
+        874
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 873,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Dieckmann condensation of diethyl pimelate to ethyl 2-oxocyclohexane-1-carboxylate.",
+          "reactants_text": "diethyl pimelate",
+          "products_text": "ethyl 2-oxocyclohexane-1-carboxylate"
+        },
+        {
+          "id": 874,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Dieckmann condensation of diethyl suberate to ethyl 2-oxocycloheptane-1-carboxylate.",
+          "reactants_text": "diethyl suberate",
+          "products_text": "ethyl 2-oxocycloheptane-1-carboxylate"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    }
+  ]
+}

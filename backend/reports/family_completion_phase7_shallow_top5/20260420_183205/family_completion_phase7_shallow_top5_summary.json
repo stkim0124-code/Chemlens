@@ -1,0 +1,385 @@
+{
+  "tag": "phase7_shallow_top5_completion_v1",
+  "db": "app\\labint.db",
+  "dry_run": true,
+  "families": [
+    "Charette Asymmetric Cyclopropanation",
+    "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+    "Combes Quinoline Synthesis",
+    "Curtius Rearrangement",
+    "Dakin Oxidation"
+  ],
+  "before": {
+    "queryable_family_count": 274,
+    "queryable_count": 1139,
+    "reaction_extract_count": 555,
+    "extract_molecule_count": 2865
+  },
+  "after": {
+    "queryable_family_count": 273,
+    "queryable_count": 1165,
+    "reaction_extract_count": 566,
+    "extract_molecule_count": 2891
+  },
+  "alias_updates": [
+    {
+      "table": "reaction_extracts",
+      "from": "Charette Cyclopropanation",
+      "to": "Charette Asymmetric Cyclopropanation",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Charette Cyclopropanation",
+      "to": "Charette Asymmetric Cyclopropanation",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Chugaev Elimination",
+      "to": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Chugaev Elimination",
+      "to": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Chugaev Elimination Reaction",
+      "to": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "rows_updated": 11
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Chugaev Elimination Reaction",
+      "to": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "rows_updated": 39
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Combes Reaction",
+      "to": "Combes Quinoline Synthesis",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Combes Reaction",
+      "to": "Combes Quinoline Synthesis",
+      "rows_updated": 0
+    },
+    {
+      "table": "reaction_extracts",
+      "from": "Dakin Oxidation / Dakin Reaction",
+      "to": "Dakin Oxidation",
+      "rows_updated": 0
+    },
+    {
+      "table": "extract_molecules",
+      "from": "Dakin Oxidation / Dakin Reaction",
+      "to": "Dakin Oxidation",
+      "rows_updated": 0
+    }
+  ],
+  "backfill": [
+    {
+      "family": "Charette Asymmetric Cyclopropanation",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "extract_rows_touched": 12
+    },
+    {
+      "family": "Combes Quinoline Synthesis",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Curtius Rearrangement",
+      "extract_rows_touched": 1
+    },
+    {
+      "family": "Dakin Oxidation",
+      "extract_rows_touched": 1
+    }
+  ],
+  "seed_results": [
+    {
+      "family": "Charette Asymmetric Cyclopropanation",
+      "status": "inserted",
+      "extract_id": 824,
+      "page_no": 103,
+      "image_filename": "named reactions_155.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Charette Asymmetric Cyclopropanation",
+      "status": "inserted",
+      "extract_id": 825,
+      "page_no": 103,
+      "image_filename": "named reactions_155.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "status": "inserted",
+      "extract_id": 826,
+      "page_no": 107,
+      "image_filename": "named reactions_159.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "status": "inserted",
+      "extract_id": 827,
+      "page_no": 107,
+      "image_filename": "named reactions_159.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Combes Quinoline Synthesis",
+      "status": "inserted",
+      "extract_id": 828,
+      "page_no": 111,
+      "image_filename": "named reactions_163.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Combes Quinoline Synthesis",
+      "status": "inserted",
+      "extract_id": 829,
+      "page_no": 111,
+      "image_filename": "named reactions_163.jpg",
+      "inserted_molecules": 3
+    },
+    {
+      "family": "Curtius Rearrangement",
+      "status": "inserted",
+      "extract_id": 830,
+      "page_no": 131,
+      "image_filename": "named reactions_183.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Curtius Rearrangement",
+      "status": "inserted",
+      "extract_id": 831,
+      "page_no": 131,
+      "image_filename": "named reactions_183.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Dakin Oxidation",
+      "status": "inserted",
+      "extract_id": 832,
+      "page_no": 139,
+      "image_filename": "named reactions_191.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Dakin Oxidation",
+      "status": "inserted",
+      "extract_id": 833,
+      "page_no": 139,
+      "image_filename": "named reactions_191.jpg",
+      "inserted_molecules": 2
+    },
+    {
+      "family": "Dakin Oxidation",
+      "status": "inserted",
+      "extract_id": 834,
+      "page_no": 139,
+      "image_filename": "named reactions_191.jpg",
+      "inserted_molecules": 2
+    }
+  ],
+  "verify": [
+    {
+      "family": "Charette Asymmetric Cyclopropanation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 5,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        824,
+        825
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 824,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: cyclopropanation of styrene with ethyl diazoacetate to give an aryl-substituted cyclopropane carboxylate.",
+          "reactants_text": "styrene | ethyl diazoacetate",
+          "products_text": "ethyl 2-phenylcyclopropane-1-carboxylate"
+        },
+        {
+          "id": 825,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: cyclopropanation of p-methoxystyrene with ethyl diazoacetate to give an anisyl-substituted cyclopropane carboxylate.",
+          "reactants_text": "p-methoxystyrene | ethyl diazoacetate",
+          "products_text": "ethyl 2-(4-methoxyphenyl)cyclopropane-1-carboxylate"
+        }
+      ]
+    },
+    {
+      "family": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+      "extract_count": 14,
+      "overview_count": 3,
+      "application_count": 10,
+      "extract_with_reactant": 3,
+      "extract_with_product": 4,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 4,
+      "molecule_rows": 45,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        826,
+        827
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 826,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: pyrolysis of cyclohexyl xanthate to cyclohexene.",
+          "reactants_text": "cyclohexyl xanthate",
+          "products_text": "cyclohexene"
+        },
+        {
+          "id": 827,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: pyrolysis of 2-phenethyl xanthate to styrene.",
+          "reactants_text": "2-phenethyl xanthate",
+          "products_text": "styrene"
+        }
+      ]
+    },
+    {
+      "family": "Combes Quinoline Synthesis",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        828,
+        829
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 828,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: condensation of aniline with acetylacetone to give 2,4-dimethylquinoline.",
+          "reactants_text": "aniline | acetylacetone",
+          "products_text": "2,4-dimethylquinoline"
+        },
+        {
+          "id": 829,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: condensation of p-anisidine with acetylacetone to give a methoxy-substituted dimethylquinoline.",
+          "reactants_text": "p-anisidine | acetylacetone",
+          "products_text": "6-methoxy-2,4-dimethylquinoline"
+        }
+      ]
+    },
+    {
+      "family": "Curtius Rearrangement",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        830,
+        831
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 830,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: thermolysis of benzoyl azide to phenyl isocyanate.",
+          "reactants_text": "benzoyl azide",
+          "products_text": "phenyl isocyanate"
+        },
+        {
+          "id": 831,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: thermolysis of p-methoxybenzoyl azide to p-methoxyphenyl isocyanate.",
+          "reactants_text": "p-methoxybenzoyl azide",
+          "products_text": "p-methoxyphenyl isocyanate"
+        }
+      ]
+    },
+    {
+      "family": "Dakin Oxidation",
+      "extract_count": 4,
+      "overview_count": 1,
+      "application_count": 3,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_gate_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        832,
+        833,
+        834
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 832,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Dakin oxidation of salicylaldehyde to catechol.",
+          "reactants_text": "salicylaldehyde",
+          "products_text": "catechol"
+        },
+        {
+          "id": 833,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Dakin oxidation of p-hydroxybenzaldehyde to hydroquinone.",
+          "reactants_text": "p-hydroxybenzaldehyde",
+          "products_text": "hydroquinone"
+        },
+        {
+          "id": 834,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Dakin oxidation of vanillin to methoxyhydroquinone.",
+          "reactants_text": "vanillin",
+          "products_text": "methoxyhydroquinone"
+        }
+      ]
+    }
+  ],
+  "rich_count": 5,
+  "shallow_count": 0
+}

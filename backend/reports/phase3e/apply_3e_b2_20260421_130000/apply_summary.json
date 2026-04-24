@@ -1,0 +1,94 @@
+{
+  "phase": "3e-b-2",
+  "timestamp": "2026-04-21T02:39:28.514448Z",
+  "apply_dir": "C:\\chemlens\\backend\\reports\\phase3e\\apply_3e_b2_20260421_130000",
+  "prior_dir": "C:\\chemlens\\backend\\reports\\phase3e\\apply_3e_b1_20260421_110300",
+  "baseline_dir": "C:\\chemlens\\backend\\reports\\phase3c\\apply_3c_b_20260421_094500",
+  "changes": {
+    "evidence_search.py": {
+      "elif_branches_added": [
+        "wittig reaction (exact/startswith)",
+        "perkin reaction",
+        "schmidt reaction",
+        "swern oxidation",
+        "corey-kim",
+        "friedel-crafts alkylation",
+        "finkelstein"
+      ]
+    }
+  },
+  "metrics": {
+    "admission": {
+      "3c-b_baseline": {
+        "top1": 185,
+        "top3": 218,
+        "confused_pairs": 74
+      },
+      "3e-b-1_prior": {
+        "top1": 188,
+        "top3": 220,
+        "confused_pairs": 71
+      },
+      "3e-b-2_new": {
+        "top1": 190,
+        "top3": 221,
+        "confused_pairs": 69
+      },
+      "delta_vs_prior": {
+        "top1": 2,
+        "top3": 1,
+        "confused_pairs": -2
+      },
+      "delta_vs_baseline": {
+        "top1": 5,
+        "top3": 3,
+        "confused_pairs": -5
+      }
+    },
+    "broad": {
+      "top1": 190,
+      "top3": 221,
+      "disallow_top3": 0
+    },
+    "coverage": {
+      "3e-b-2_new": {
+        "r@1": 0.7143,
+        "r@3": 0.832,
+        "r@5": 0.8745
+      },
+      "3e-b-1_prior": {
+        "r@1": 0.7085,
+        "r@3": 0.8359,
+        "r@5": 0.8764
+      }
+    }
+  },
+  "gate": {
+    "admission_confused_pairs_lt_74": true,
+    "admission_top3_ge_217": true,
+    "broad_disallow_top3_eq_0": true,
+    "coverage_r5_ge_0.868": true
+  },
+  "gate_passed": true,
+  "individual_flips_vs_prior": {
+    "top1_positive": 4,
+    "top1_negative": 2,
+    "top1_net": 2,
+    "positive_cases": [
+      "adm_kumada_cross-coupling",
+      "adm_pinnick_oxidation",
+      "adm_takai-utimoto_olefination",
+      "adm_tsuji-wilkinson_decarbonylation"
+    ],
+    "negative_cases": [
+      "adm_finkelstein (Finkelstein->Williamson \u2014 guard checks aryl_halide but Finkelstein uses alkyl halide)",
+      "adm_wittig_reaction (Wittig->Aza-Wittig bleed \u2014 real Wittig case has azide-like feature)"
+    ]
+  },
+  "known_follow_ups": [
+    "Finkelstein guard uses aryl_halide feature, but Finkelstein typically uses alkyl halide \u2014 need new feature 'alkyl_halide' or softer penalty",
+    "Wittig case redirects to Aza-Wittig when azide-like features present \u2014 investigate specific row",
+    "6 Wittig-bleed cases still wrong but redirected to other bleed destinations (Corey-Fuchs, Miyaura Boration, Keck, Perkin)"
+  ],
+  "notes": "Phase 3e-b-2 ships Wittig Reaction guard + 6 defensive guards. Net +2 top1, +1 top3, -2 confused_pairs vs 3e-b-1. Cumulative vs 3c-b: +5 top1, +3 top3, -5 confused_pairs. Gate: all criteria PASS."
+}

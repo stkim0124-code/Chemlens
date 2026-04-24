@@ -1,0 +1,50 @@
+{
+  "script": "complete_family_evidence_phase26_shallow_top10_hotfix1.py",
+  "phase_tag": "phase26_shallow_top10_hotfix1",
+  "started_at": "2026-04-21T00:05:40.820174",
+  "stages": [
+    {
+      "cmd": [
+        "C:\\Users\\tmdxo\\miniconda3\\envs\\chemlens\\python.exe",
+        "C:\\chemlens\\backend\\phase_queue\\processing\\complete_family_evidence_phase26_shallow_top10_hotfix1.py",
+        "--db",
+        "C:\\chemlens\\backend\\app\\labint.db",
+        "--report-dir",
+        "C:\\chemlens\\backend\\reports\\family_completion_phase26_shallow_top10_hotfix1"
+      ],
+      "exit_code": 0,
+      "duration_sec": 0.64,
+      "log": "C:\\chemlens\\backend\\phase_queue\\logs\\phase26_shallow_top10_hotfix1_20260421_000540.log",
+      "stage": "apply"
+    },
+    {
+      "cmd": [
+        "C:\\Users\\tmdxo\\miniconda3\\envs\\chemlens\\python.exe",
+        "C:\\chemlens\\backend\\final_state_verifier.py",
+        "--db",
+        "C:\\chemlens\\backend\\app\\labint.db"
+      ],
+      "exit_code": 0,
+      "duration_sec": 1.1,
+      "log": "C:\\chemlens\\backend\\phase_queue\\logs\\phase26_shallow_top10_hotfix1_20260421_000540_verifier.log",
+      "stage": "verifier"
+    },
+    {
+      "cmd": [
+        "C:\\Users\\tmdxo\\miniconda3\\envs\\chemlens\\python.exe",
+        "C:\\chemlens\\backend\\family_completion_dashboard.py",
+        "--backend-root",
+        "C:\\chemlens\\backend"
+      ],
+      "exit_code": 0,
+      "duration_sec": 0.22,
+      "log": "C:\\chemlens\\backend\\phase_queue\\logs\\phase26_shallow_top10_hotfix1_20260421_000540_dashboard.log",
+      "stage": "dashboard"
+    }
+  ],
+  "apply_ok": true,
+  "verify_ok": true,
+  "dashboard_ok": true,
+  "finished_at": "2026-04-21T00:05:42.778576",
+  "overall_ok": true
+}

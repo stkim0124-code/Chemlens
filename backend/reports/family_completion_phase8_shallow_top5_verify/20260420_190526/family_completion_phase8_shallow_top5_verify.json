@@ -1,0 +1,200 @@
+{
+  "db": "app\\labint.db",
+  "verify": [
+    {
+      "family": "Cope Elimination / Cope Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 4,
+      "molecule_rows": 7,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        835,
+        836
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 835,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: thermal Cope elimination of 2-phenethyl dimethylamine N-oxide to styrene.",
+          "reactants_text": "2-phenethyl dimethylamine N-oxide",
+          "products_text": "styrene"
+        },
+        {
+          "id": 836,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: thermal Cope elimination of cycloheptyl dimethylamine N-oxide to cycloheptene.",
+          "reactants_text": "cycloheptyl dimethylamine N-oxide",
+          "products_text": "cycloheptene"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 8,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        837,
+        838
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 837,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: CBS reduction of propiophenone to 1-phenyl-1-propanol.",
+          "reactants_text": "propiophenone",
+          "products_text": "1-phenyl-1-propanol"
+        },
+        {
+          "id": 838,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: CBS reduction of 4-methoxyacetophenone to 1-(4-methoxyphenyl)ethanol.",
+          "reactants_text": "4-methoxyacetophenone",
+          "products_text": "1-(4-methoxyphenyl)ethanol"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Corey-Chaykovsky Epoxidation and Cyclopropanation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        839,
+        840
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 839,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Chaykovsky epoxidation of benzaldehyde to styrene oxide.",
+          "reactants_text": "benzaldehyde",
+          "products_text": "styrene oxide"
+        },
+        {
+          "id": 840,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Chaykovsky epoxidation of p-anisaldehyde to 4-methoxystyrene oxide.",
+          "reactants_text": "p-anisaldehyde",
+          "products_text": "4-methoxystyrene oxide"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Corey-Fuchs Alkyne Synthesis",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 11,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        841,
+        842
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 841,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Fuchs homologation of p-anisaldehyde to 4-ethynylanisole.",
+          "reactants_text": "p-anisaldehyde",
+          "products_text": "4-ethynylanisole"
+        },
+        {
+          "id": 842,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Fuchs homologation of cyclohexanecarboxaldehyde to ethynylcyclohexane.",
+          "reactants_text": "cyclohexanecarboxaldehyde",
+          "products_text": "ethynylcyclohexane"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Corey-Kim Oxidation",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 3,
+      "molecule_rows": 10,
+      "unique_queryable_pair_count": 2,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": false,
+      "curated_extract_ids": [
+        843,
+        844
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 843,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Kim oxidation of benzyl alcohol to benzaldehyde.",
+          "reactants_text": "benzyl alcohol",
+          "products_text": "benzaldehyde"
+        },
+        {
+          "id": 844,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Corey-Kim oxidation of 1-phenylethanol to acetophenone.",
+          "reactants_text": "1-phenylethanol",
+          "products_text": "acetophenone"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    }
+  ]
+}

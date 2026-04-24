@@ -1,0 +1,201 @@
+{
+  "db": "app\\labint.db",
+  "batch": "b",
+  "verify": [
+    {
+      "family": "Jacobsen Hydrolytic Kinetic Resolution",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 3,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        938,
+        939
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 938,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Jacobsen hydrolytic kinetic resolution of styrene oxide to 1-phenyl-1,2-ethanediol.",
+          "reactants_text": "styrene oxide",
+          "products_text": "1-phenyl-1,2-ethanediol"
+        },
+        {
+          "id": 939,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Jacobsen hydrolytic kinetic resolution of epichlorohydrin to 3-chloro-1,2-propanediol.",
+          "reactants_text": "epichlorohydrin",
+          "products_text": "3-chloro-1,2-propanediol"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Johnson-Claisen Rearrangement",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 4,
+      "queryable_products": 3,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        940,
+        941
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 940,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Johnson-Claisen rearrangement of allyl alcohol to ethyl 4-pentenoate.",
+          "reactants_text": "allyl alcohol",
+          "products_text": "ethyl 4-pentenoate"
+        },
+        {
+          "id": 941,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Johnson-Claisen rearrangement of cinnamyl alcohol to ethyl 6-phenylhex-4-enoate.",
+          "reactants_text": "cinnamyl alcohol",
+          "products_text": "ethyl 6-phenylhex-4-enoate"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Japp-Klingemann Reaction",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 4,
+      "queryable_products": 4,
+      "molecule_rows": 9,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        942,
+        943
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 942,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Japp-Klingemann coupling of ethyl acetoacetate-derived enolate with benzenediazonium to give a phenylhydrazone.",
+          "reactants_text": "ethyl acetoacetate and benzenediazonium equivalent",
+          "products_text": "ethyl 2-oxo-3-(2-phenylhydrazono)butanoate"
+        },
+        {
+          "id": 943,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Japp-Klingemann coupling of ethyl benzoylacetate-derived enolate with benzenediazonium to give a phenylhydrazone.",
+          "reactants_text": "ethyl benzoylacetate and benzenediazonium equivalent",
+          "products_text": "ethyl 2-benzoyl-2-(2-phenylhydrazono)acetate"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification",
+      "extract_count": 4,
+      "overview_count": 2,
+      "application_count": 2,
+      "extract_with_reactant": 4,
+      "extract_with_product": 4,
+      "extract_with_both": 4,
+      "queryable_reactants": 6,
+      "queryable_products": 4,
+      "molecule_rows": 15,
+      "unique_queryable_pair_count": 4,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        944,
+        945
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 944,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Still-Gennari olefination of benzaldehyde to methyl cinnamate.",
+          "reactants_text": "benzaldehyde and Still-Gennari phosphonate reagent",
+          "products_text": "methyl cinnamate"
+        },
+        {
+          "id": 945,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Still-Gennari olefination of anisaldehyde to methyl 4-methoxycinnamate.",
+          "reactants_text": "4-anisaldehyde and Still-Gennari phosphonate reagent",
+          "products_text": "methyl 4-methoxycinnamate"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    },
+    {
+      "family": "Julia-Lythgoe Olefination",
+      "extract_count": 3,
+      "overview_count": 1,
+      "application_count": 2,
+      "extract_with_reactant": 3,
+      "extract_with_product": 3,
+      "extract_with_both": 3,
+      "queryable_reactants": 6,
+      "queryable_products": 3,
+      "molecule_rows": 13,
+      "unique_queryable_pair_count": 3,
+      "completion_minimum_pass": true,
+      "rich_completion_pass": true,
+      "curated_extract_ids": [
+        946,
+        947
+      ],
+      "curated_extract_summaries": [
+        {
+          "id": 946,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Julia-Lythgoe olefination delivering stilbene from benzaldehyde and benzyl phenyl sulfone.",
+          "reactants_text": "benzaldehyde and benzyl phenyl sulfone",
+          "products_text": "stilbene"
+        },
+        {
+          "id": 947,
+          "extract_kind": "application_example",
+          "transformation_text": "Application example: Julia-Lythgoe olefination delivering 4-methoxystilbene from anisaldehyde and benzyl phenyl sulfone.",
+          "reactants_text": "4-anisaldehyde and benzyl phenyl sulfone",
+          "products_text": "4-methoxystilbene"
+        }
+      ],
+      "alias_residue": {
+        "reaction_extracts": [],
+        "extract_molecules": []
+      }
+    }
+  ]
+}

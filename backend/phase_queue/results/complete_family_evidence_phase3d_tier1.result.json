@@ -1,0 +1,26 @@
+{
+  "script": "complete_family_evidence_phase3d_tier1.py",
+  "phase_tag": "phase3d_tier1",
+  "started_at": "2026-04-21T10:37:49.099233",
+  "stages": [
+    {
+      "cmd": [
+        "C:\\Users\\tmdxo\\miniconda3\\envs\\chemlens\\python.exe",
+        "C:\\chemlens\\backend\\phase_queue\\processing\\complete_family_evidence_phase3d_tier1.py",
+        "--db",
+        "C:\\chemlens\\backend\\app\\labint.db",
+        "--report-dir",
+        "C:\\chemlens\\backend\\reports\\family_completion_phase3d_tier1"
+      ],
+      "exit_code": 1,
+      "duration_sec": 0.69,
+      "log": "C:\\chemlens\\backend\\phase_queue\\logs\\phase3d_tier1_20260421_103749.log",
+      "stage": "apply"
+    }
+  ],
+  "apply_ok": false,
+  "verify_ok": null,
+  "dashboard_ok": null,
+  "finished_at": "2026-04-21T10:37:49.786556",
+  "overall_ok": false
+}

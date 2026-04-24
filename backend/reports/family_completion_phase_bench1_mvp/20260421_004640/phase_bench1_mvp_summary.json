@@ -1,0 +1,76 @@
+{
+  "phase_tag": "phase_bench1_mvp",
+  "started_at": "2026-04-21T00:46:40.094267",
+  "db": "C:\\chemlens\\backend\\app\\labint.db",
+  "out_dir": "C:\\chemlens\\backend\\reports\\family_completion_phase_bench1_mvp\\20260421_004640",
+  "stages": [
+    {
+      "stage": "builder",
+      "ok": true,
+      "stats": {
+        "rich_families": 264,
+        "broad_cases": 264,
+        "admission_cases": 264,
+        "coverage_cases": 528,
+        "extracts_scanned": 1189,
+        "broad_path": "C:\\chemlens\\backend\\benchmark\\named_reaction_benchmark_broad.json",
+        "admission_path": "C:\\chemlens\\backend\\benchmark\\family_admission_benchmark.json",
+        "coverage_path": "C:\\chemlens\\backend\\benchmark\\corpus_coverage_benchmark.json"
+      }
+    },
+    {
+      "stage": "broad",
+      "ok": true,
+      "exit_code": 0,
+      "summary": {
+        "benchmark_name": "CHEMLENS broad benchmark phase2_mvp",
+        "total_cases": 264,
+        "reaction_cases": 264,
+        "top1_correct": 180,
+        "top1_accuracy": 0.6818,
+        "top3_correct": 213,
+        "top3_accuracy": 0.8068,
+        "disallow_top3_violations": 0,
+        "disallow_violation_rate": 0.0,
+        "unique_families": 264
+      },
+      "tail": "CHEMLENS broad benchmark phase2_mvp\n{\n  \"benchmark_name\": \"CHEMLENS broad benchmark phase2_mvp\",\n  \"total_cases\": 264,\n  \"reaction_cases\": 264,\n  \"top1_correct\": 180,\n  \"top1_accuracy\": 0.6818,\n  \"top3_correct\": 213,\n  \"top3_accuracy\": 0.8068,\n  \"disallow_top3_violations\": 0,\n  \"disallow_violation_rate\": 0.0,\n  \"unique_families\": 264\n}\nCSV:  C:\\chemlens\\backend\\reports\\family_completion_phase_bench1_mvp\\20260421_004640\\broad_results.csv\nJSON: C:\\chemlens\\backend\\reports\\family_completion_phase_bench1_mvp\\20260421_004640\\broad_results.json\nMD:   C:\\chemlens\\backend\\reports\\family_completion_phase_bench1_mvp\\20260421_004640\\broad_report.md"
+    },
+    {
+      "stage": "admission",
+      "ok": true,
+      "exit_code": 0,
+      "summary": {
+        "benchmark_name": "CHEMLENS family admission benchmark phase2_mvp",
+        "total_cases": 264,
+        "top1_correct": 180,
+        "top1_accuracy": 0.6818,
+        "top3_correct": 213,
+        "top3_accuracy": 0.8068,
+        "unique_families": 264,
+        "confused_pairs": 84
+      },
+      "tail": "CHEMLENS family admission benchmark phase2_mvp\n{\n  \"benchmark_name\": \"CHEMLENS family admission benchmark phase2_mvp\",\n  \"total_cases\": 264,\n  \"top1_correct\": 180,\n  \"top1_accuracy\": 0.6818,\n  \"top3_correct\": 213,\n  \"top3_accuracy\": 0.8068,\n  \"unique_families\": 264,\n  \"confused_pairs\": 84\n}\nCSV:       C:\\chemlens\\backend\\reports\\family_completion_phase_bench1_mvp\\20260421_004640\\family_admission_results.csv\nJSON:      C:\\chemlens\\backend\\reports\\family_completion_phase_bench1_mvp\\20260421_004640\\family_admission_results.json\nConfusion: C:\\chemlens\\backend\\reports\\family_completion_phase_bench1_mvp\\20260421_004640\\family_admission_confusion.csv\nMD:        C:\\chemlens\\backend\\reports\\family_completion_phase_bench1_mvp\\20260421_004640\\family_admission_report.md"
+    },
+    {
+      "stage": "coverage",
+      "ok": true,
+      "exit_code": 0,
+      "summary": {
+        "benchmark_name": "CHEMLENS corpus coverage benchmark phase2_mvp",
+        "total_cases": 528,
+        "recall_at_1": 0.6875,
+        "recall_at_3": 0.8106,
+        "recall_at_5": 0.8693,
+        "hit_at_1": 363,
+        "hit_at_3": 428,
+        "hit_at_5": 459,
+        "no_confident_hit_cases": 3,
+        "unique_families": 264
+      },
+      "tail": "CHEMLENS corpus coverage benchmark phase2_mvp\n{\n  \"benchmark_name\": \"CHEMLENS corpus coverage benchmark phase2_mvp\",\n  \"total_cases\": 528,\n  \"recall_at_1\": 0.6875,\n  \"recall_at_3\": 0.8106,\n  \"recall_at_5\": 0.8693,\n  \"hit_at_1\": 363,\n  \"hit_at_3\": 428,\n  \"hit_at_5\": 459,\n  \"no_confident_hit_cases\": 3,\n  \"unique_families\": 264\n}\nCSV:  C:\\chemlens\\backend\\reports\\family_completion_phase_bench1_mvp\\20260421_004640\\corpus_coverage_results.csv\nJSON: C:\\chemlens\\backend\\reports\\family_completion_phase_bench1_mvp\\20260421_004640\\corpus_coverage_results.json\nMD:   C:\\chemlens\\backend\\reports\\family_completion_phase_bench1_mvp\\20260421_004640\\corpus_coverage_report.md"
+    }
+  ],
+  "finished_at": "2026-04-21T00:48:42.402419",
+  "overall_ok": true
+}

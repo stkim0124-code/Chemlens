@@ -1,0 +1,151 @@
+Total distinct family_name rows: 305
+========================================================================
+
+--- contains 'oxidation' (25 hits) ---
+  id=  42  'Baeyer-Villiger Oxidation'
+  id= 291  'Baeyer-Villiger Oxidation/Rearrangement'
+  id=  13  'Baeyer-Villiger Oxidation/rearrangement'
+  id= 328  'Corey-Chaykovsky Epoxidation and Cyclopropanation'
+  id= 330  'Corey-Kim Oxidation'
+  id= 334  'Criegee Oxidation'
+  id= 150  'Dakin Oxidation'
+  id= 342  "Davis' Oxaziridine Oxidations"
+  id= 345  'Dess-Martin Oxidation'
+  id= 364  'Fleming-Tamao Oxidation'
+  id= 388  'Jacobsen-Katsuki Epoxidation'
+  id= 857  'Jones Oxidation'
+  id= 391  'Jones Oxidation/Oxidation of Alcohols by Chromium Reagents'
+  id= 402  'Kornblum Oxidation'
+  id= 408  'Ley Oxidation'
+  id= 270  'Oppenauer Oxidation'
+  id= 166  'Pfitzner-Moffatt Oxidation'
+  id= 170  'Pinnick Oxidation'
+  id= 183  'Riley Selenium Dioxide Oxidation'
+  id= 187  'Rubottom Oxidation'
+  id= 188  'Saegusa Oxidation'
+  id= 197  'Sharpless Asymmetric Epoxidation'
+  id= 198  'Shi Asymmetric Epoxidation'
+  id= 149  'Swern Oxidation'
+  id= 230  'Wacker Oxidation'
+
+--- contains 'rearrangement' (58 hits) ---
+  id= 284  'Amadori Reaction / Rearrangement'
+  id=   7  'Amadori Rearrangement'
+  id=  41  'Aza-Claisen Rearrangement'
+  id= 287  'Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)'
+  id=  10  'Aza-Cope Rearrangement'
+  id= 288  'Aza-Cope Rearrangement'
+  id=  12  'Aza-[2,3]-Wittig Rearrangement'
+  id= 290  'Aza-[2,3]-Wittig Rearrangement'
+  id= 291  'Baeyer-Villiger Oxidation/Rearrangement'
+  id=  13  'Baeyer-Villiger Oxidation/rearrangement'
+  id=  14  'Baker-Venkataraman Rearrangement'
+  id= 292  'Baker-Venkataraman Rearrangement'
+  id=  22  'Beckmann Rearrangement'
+  id=  23  'Benzilic Acid Rearrangement'
+  id=  29  'Brook Rearrangement'
+  id=  33  'Carroll Rearrangement'
+  id= 315  'Carroll Rearrangement (Kimel-Cope Rearrangement)'
+  id=  37  'Ciamician-Dennstedt Rearrangement'
+  id= 319  'Ciamician-Dennstedt Rearrangement'
+  id=  39  'Claisen Rearrangement'
+  id=  46  'Claisen-Ireland Rearrangement'
+  id= 322  'Claisen-Ireland Rearrangement'
+  id= 326  'Cope Rearrangement'
+  id= 333  'Cornforth Rearrangement'
+  id= 335  'Curtius Rearrangement'
+  id= 344  'Demjanov Rearrangement and Tiffeneau-Demjanov Rearrangement'
+  id= 796  'Demjanov and Tiffeneau-Demjanov Rearrangement'
+  id= 348  'Dienone-Phenol Rearrangement'
+  id= 349  'Dimroth Rearrangement'
+  id= 355  'Eschenmoser-Claisen Rearrangement'
+  id= 811  'Favorskii Rearrangement'
+  id= 359  'Favorskii and Homo-Favorskii Rearrangement'
+  id= 361  'Ferrier Reaction/Rearrangement'
+  id= 819  'Fries Rearrangement'
+  id= 367  'Fries-, Photo-Fries, and Anionic Ortho-Fries Rearrangement'
+  id= 382  'Hofmann Rearrangement'
+  id= 390  'Johnson-Claisen Rearrangement'
+  id= 410  'Lossen Rearrangement'
+  id= 251  'Meisenheimer Rearrangement'
+  id= 252  'Meyer-Schuster and Rupe Rearrangement'
+  id= 256  'Mislow-Evans Rearrangement'
+  id= 263  'Neber Rearrangement'
+  id= 271  'Overman Rearrangement'
+  id= 272  'Oxy-Cope Rearrangement and Anionic Oxy-Cope Rearrangement'
+  id= 161  'Payne Rearrangement'
+  id= 164  'Petasis-Ferrier Rearrangement'
+  id= 168  'Pinacol and Semipinacol Rearrangement'
+  id= 176  'Prins-Pinacol Rearrangement'
+  id= 177  'Pummerer Rearrangement'
+  id= 178  'Quasi-Favorskii Rearrangement'
+  id= 179  'Ramberg-Bäcklund Rearrangement'
+  id= 201  'Smiles Rearrangement'
+  id= 204  'Sommelet-Hauser Rearrangement'
+  id= 210  'Stevens Rearrangement'
+  id= 228  'Vinylcyclopropane-Cyclopentene Rearrangement'
+  id= 231  'Wagner-Meerwein Rearrangement'
+  id= 238  'Wittig-[1,2]- and [2,3]-Rearrangement'
+  id= 240  'Wolff Rearrangement'
+
+--- contains 'baeyer' (3 hits) ---
+  id=  42  'Baeyer-Villiger Oxidation'
+  id= 291  'Baeyer-Villiger Oxidation/Rearrangement'
+  id=  13  'Baeyer-Villiger Oxidation/rearrangement'
+
+--- contains 'villiger' (3 hits) ---
+  id=  42  'Baeyer-Villiger Oxidation'
+  id= 291  'Baeyer-Villiger Oxidation/Rearrangement'
+  id=  13  'Baeyer-Villiger Oxidation/rearrangement'
+
+--- contains 'suzuki' (2 hits) ---
+  id= 148  'Suzuki Cross-Coupling'
+  id= 217  'Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)'
+
+--- contains 'miyaura' (2 hits) ---
+  id= 258  'Miyaura Boration'
+  id= 217  'Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)'
+
+--- contains 'mccombie' (2 hits) ---
+  id= 300  'Barton-McCombie Radical Deoxygenation Reaction'
+  id=  20  'Barton-Mccombie Radical Deoxygenation Reaction'
+
+--- contains 'barton' (5 hits) ---
+  id=  19  'Barton Nitrite Ester Reaction'
+  id=  44  'Barton Radical Decarboxylation'
+  id=  43  'Barton Radical Decarboxylation Reaction'
+  id= 300  'Barton-McCombie Radical Deoxygenation Reaction'
+  id=  20  'Barton-Mccombie Radical Deoxygenation Reaction'
+
+--- contains 'simmons' (2 hits) ---
+  id= 199  'Simmons-Smith Cyclopropanation'
+  id= 151  'Simmons-Smith Reaction'
+
+--- contains 'smith' (3 hits) ---
+  id= 199  'Simmons-Smith Cyclopropanation'
+  id= 151  'Simmons-Smith Reaction'
+  id= 202  'Smith-Tietze Multicomponent Dithiane Linchpin Coupling'
+
+--- contains 'cyclopropanation' (3 hits) ---
+  id= 153  'Charette Asymmetric Cyclopropanation'
+  id= 328  'Corey-Chaykovsky Epoxidation and Cyclopropanation'
+  id= 199  'Simmons-Smith Cyclopropanation'
+
+--- contains 'horner' (3 hits) ---
+  id= 155  'Horner-Wadsworth-Emmons'
+  id= 383  'Horner-Wadsworth-Emmons Olefination'
+  id= 384  'Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification'
+
+--- contains 'wadsworth' (3 hits) ---
+  id= 155  'Horner-Wadsworth-Emmons'
+  id= 383  'Horner-Wadsworth-Emmons Olefination'
+  id= 384  'Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification'
+
+--- contains 'emmons' (3 hits) ---
+  id= 155  'Horner-Wadsworth-Emmons'
+  id= 383  'Horner-Wadsworth-Emmons Olefination'
+  id= 384  'Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification'
+
+--- contains 'decarboxyl' (2 hits) ---
+  id=  44  'Barton Radical Decarboxylation'
+  id=  43  'Barton Radical Decarboxylation Reaction'

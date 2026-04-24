@@ -1,0 +1,153 @@
+{
+  "command": "apply",
+  "started_at": "2026-04-21T09:27:29",
+  "backend_root": "C:\\chemlens\\backend",
+  "report_dir": "C:\\chemlens\\backend\\reports\\phase3c\\apply_3c_a_20260421_092729",
+  "stamp": "20260421_092729",
+  "phase": "3c-a",
+  "note": "Pattern-tuning sprint. Two surgical edits to app/evidence_search.py::_family_delta_adjustment wrapped in '# --- Phase 3c-a ... start/end ---' markers so future phases can cumulatively re-apply or rollback. No DB writes; MANUAL_ALIAS_OVERRIDES unchanged; no benchmark rebuild required because benchmark JSONs did not change — only predictor scoring did.",
+  "baseline": {
+    "source": "phase3a_bis_v2/apply_3b_20260421_064001/apply_summary.json",
+    "broad_top1_correct": 180,
+    "broad_top3_correct": 209,
+    "broad_total": 259,
+    "admission_top1_correct": 180,
+    "admission_top3_correct": 209,
+    "admission_total": 259,
+    "admission_confused_pairs": 79,
+    "coverage_r1": 0.6911,
+    "coverage_r3": 0.8089,
+    "coverage_r5": 0.8668,
+    "coverage_total": 518,
+    "disallow_top3_violations": 0
+  },
+  "stages": [
+    {
+      "stage": "design",
+      "doc": "C:\\Users\\tmdxo\\OneDrive\\문서\\Claude\\Projects\\유기합성 앱 개발 프로젝트\\phase3c_pattern_tuning\\PHASE3C_PLAN.md",
+      "top6_offenders_3b": [
+        {"predicted_top1_wrong": "Aza-Wittig Reaction",                 "count": 9, "addressable_3c_a": false, "lever": "needs new azide SMARTS — defer to 3c-b"},
+        {"predicted_top1_wrong": "Horner-Wadsworth-Emmons Olefination", "count": 8, "addressable_3c_a": false, "lever": "needs phosphonate SMARTS — defer to 3c-b"},
+        {"predicted_top1_wrong": "Heck Reaction",                       "count": 4, "addressable_3c_a": true,  "lever": "new elif in _family_delta_adjustment using existing aryl_halide/alkene/alkyne/boron features"},
+        {"predicted_top1_wrong": "Ley Oxidation",                       "count": 4, "addressable_3c_a": false, "lever": "reagent-level disambiguation — defer indefinitely"},
+        {"predicted_top1_wrong": "Julia-Lythgoe Olefination",           "count": 4, "addressable_3c_a": false, "lever": "needs sulfone SMARTS — defer to 3c-b"},
+        {"predicted_top1_wrong": "Baeyer-Villiger Oxidation/Rearr.",    "count": 4, "addressable_3c_a": true,  "lever": "strengthen existing BV elif with macrolactonization + diol-cleavage guards"}
+      ]
+    },
+    {
+      "stage": "snapshot",
+      "backup_dir": "C:\\chemlens\\backend\\reports\\phase3c\\apply_3c_a_20260421_092729\\backup",
+      "files_backed_up": ["app/evidence_search.py"]
+    },
+    {
+      "stage": "patch",
+      "ok": true,
+      "file": "C:\\chemlens\\backend\\app\\evidence_search.py",
+      "edits": [
+        {
+          "name": "BV-strengthening",
+          "location": "inside existing 'elif \"baeyer-villiger\" in fam:' branch",
+          "marker_start": "# --- Phase 3c-a BV-strengthening start (20260421_092729) ---",
+          "marker_end": "# --- end Phase 3c-a BV-strengthening ---",
+          "rules": [
+            {"condition": "r[carboxylic_acid]>=1 and d[carboxylic_acid]<0 and d[ester]>0", "multiplier": 0.40, "reason": "macrolactonization 신호 — BV 가능성 하락"},
+            {"condition": "r[alcohol]>=2 and d[alcohol]<0 and d[carbonyl]>0",               "multiplier": 0.55, "reason": "vicinal diol 개열 — Criegee 등 경합"}
+          ]
+        },
+        {
+          "name": "Heck-guard",
+          "location": "new elif after chugaev branch, before mult=max(...) tail",
+          "marker_start": "# --- Phase 3c-a pattern guards start (20260421_092729) ---",
+          "marker_end": "# --- end Phase 3c-a pattern guards ---",
+          "rules": [
+            {"condition": "r[aryl_halide]<1",                                "multiplier": 0.30, "reason": "Heck: aryl halide 전구체 부족"},
+            {"condition": "r[alkene]<1 and d[alkene]<=0",                    "multiplier": 0.35, "reason": "Heck: alkene 전구체/생성물 부족"},
+            {"condition": "r[alkyne]>=1",                                    "multiplier": 0.60, "reason": "Heck: alkyne 존재 — Sonogashira 등 경합"},
+            {"condition": "r[boron]>=1",                                     "multiplier": 0.60, "reason": "Heck: boron 존재 — Suzuki 등 경합"}
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "bench_runs",
+      "results": {
+        "broad": {
+          "rc": 0,
+          "summary": {
+            "benchmark_name": "CHEMLENS broad benchmark phase2_mvp",
+            "total_cases": 259,
+            "reaction_cases": 259,
+            "top1_correct": 182,
+            "top1_accuracy": 0.7027,
+            "top3_correct": 211,
+            "top3_accuracy": 0.8147,
+            "disallow_top3_violations": 0,
+            "disallow_violation_rate": 0.0,
+            "unique_families": 259
+          }
+        },
+        "admission": {
+          "rc": 0,
+          "summary": {
+            "benchmark_name": "CHEMLENS family admission benchmark phase2_mvp",
+            "total_cases": 259,
+            "top1_correct": 182,
+            "top1_accuracy": 0.7027,
+            "top3_correct": 211,
+            "top3_accuracy": 0.8147,
+            "unique_families": 259,
+            "confused_pairs": 77
+          }
+        },
+        "coverage": {
+          "rc": 0,
+          "summary": {
+            "benchmark_name": "CHEMLENS corpus coverage benchmark phase2_mvp",
+            "total_cases": 518,
+            "recall_at_1": 0.6969,
+            "recall_at_3": 0.8166,
+            "recall_at_5": 0.8668,
+            "hit_at_1": 361,
+            "hit_at_3": 423,
+            "hit_at_5": 449,
+            "no_confident_hit_cases": 3,
+            "unique_families": 259
+          },
+          "note": "Parent PowerShell killed by MCP 60s cap after runner had already written corpus_coverage_results.json; summary extracted from JSON output."
+        }
+      }
+    },
+    {
+      "stage": "eval_gates",
+      "gates": {
+        "broad_top3_ok": true,
+        "admission_top3_ok": true,
+        "admission_confused_pairs_ok": true,
+        "disallow_ok": true,
+        "coverage_r5_ok": true,
+        "details": {
+          "broad":      {"base_correct": 209, "new_correct": 211, "delta": +2, "threshold": "delta >= -1 (≈0.004 rate)"},
+          "admission":  {"base_correct": 209, "new_correct": 211, "delta": +2, "threshold": "delta >= -1 (≈0.004 rate)"},
+          "confused_pairs": {"base": 79, "new": 77, "delta": -2, "threshold": "new <= base, primary success metric < base"},
+          "disallow":   {"base": 0,   "new": 0,   "delta": 0,  "threshold": "new == 0"},
+          "coverage_r5":{"base": 0.8668, "new": 0.8668, "delta": 0.0, "threshold": "new >= base - 0.004"}
+        },
+        "all_pass": true
+      }
+    }
+  ],
+  "delta_summary": {
+    "broad_top1":              {"base": 180, "new": 182, "delta": +2},
+    "broad_top3":              {"base": 209, "new": 211, "delta": +2},
+    "admission_top1":          {"base": 180, "new": 182, "delta": +2},
+    "admission_top3":          {"base": 209, "new": 211, "delta": +2},
+    "admission_confused_pairs":{"base": 79,  "new": 77,  "delta": -2},
+    "coverage_r1":             {"base": 0.6911, "new": 0.6969, "delta": +0.0058},
+    "coverage_r3":             {"base": 0.8089, "new": 0.8166, "delta": +0.0077},
+    "coverage_r5":             {"base": 0.8668, "new": 0.8668, "delta": 0.0},
+    "disallow_top3_violations":{"base": 0, "new": 0, "delta": 0}
+  },
+  "overall_ok": true,
+  "commit_decision": "KEEP — every gate passes and every metric improved or held (top1/top3 +2, confused_pairs -2, r@1/r@3 up, r@5 held, disallow 0). Predictor module stays live at C:\\chemlens\\backend\\app\\evidence_search.py.",
+  "finished_at": "2026-04-21T09:42:10"
+}
